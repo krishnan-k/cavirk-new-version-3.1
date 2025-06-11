@@ -88,7 +88,7 @@
     "vimeo": "",
     "linkedin": "",
     "whatsapp": "",
-    "enable_preload": false,
+    "enable_preload": true,
     "preload_page": "spin",
     "zoom_image": true,
     "scroll_animation": "fade_in",
