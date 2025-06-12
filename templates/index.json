@@ -1,1 +1,623 @@
-{"sections":{"collection_list_VmEYkJ":{"type":"collection-list","blocks":{"collection_r7aTxN":{"type":"collection","settings":{"collection":"summer-collection","collection_image":"shopify:\/\/shop_images\/Summer_Collection.png","collection_title":"Summer Collection"}},"collection_FUAzK4":{"type":"collection","settings":{"collection":"cavirk-curates","collection_image":"shopify:\/\/shop_images\/vows_in_motion.png","collection_title":"Cavirk Curates"}},"collection_kUA3MH":{"type":"collection","settings":{"collection":"indo-western-dresses","collection_image":"shopify:\/\/shop_images\/Designer_Showcase.png","collection_title":"Designer Showcase"}},"collection_ctTBpd":{"type":"collection","settings":{"collection":"gen-z-meets-heritage","collection_image":"shopify:\/\/shop_images\/This_image_for_GenZ_circle.png","collection_title":"Gen Z Meets Heritage"}},"collection_fyfMEN":{"type":"collection","settings":{"collection":"the-artisan-floor","collection_image":"shopify:\/\/shop_images\/This_is_for_Studio_Earth.png","collection_title":"Studio Earth"}},"collection_qdMHYe":{"type":"collection","settings":{"collection":"the-warm-embrace","collection_image":"shopify:\/\/shop_images\/The_Warm_Embrace.png","collection_title":"The Warm Embrace"}},"collection_8WEV8X":{"type":"collection","settings":{"collection":"","collection_title":""}}},"block_order":["collection_r7aTxN","collection_FUAzK4","collection_kUA3MH","collection_ctTBpd","collection_fyfMEN","collection_qdMHYe","collection_8WEV8X"],"settings":{"section_width":"full_width","color_scheme":"","heading":"","description":"","show_view_all_button":false,"header_size":"medium","header_alignment":"center","display_mode":"carousel","image_ratio":"square","custom_ratio":"","items_per_row":7,"column_gap":30,"collection_information_position":"below_image","design":"default","text_alignment":"center","show_product_count":false,"show_icon":false,"show_description":false,"font_size":16,"font_weight":"heading_weight","information_spacing":12,"rounded_image":true,"image_custom_width":true,"image_width":145,"show_arrow":false,"carousel_pagination":"show_dots_on_mobile","infinite":false,"autoplay":false,"autorotate_speed":5,"reveal":false,"items_per_row_mobile":3,"padding_top":30,"padding_bottom":0,"reset_spacing":false}},"collection_tab_ApTJUB":{"type":"collection-tab","blocks":{"collection_TxeiAw":{"type":"collection","settings":{"collection":"sequins-pearls-by-vivek","collection_title":"Men's Ethnic"}},"collection_wHyjV3":{"type":"collection","settings":{"collection":"indo-western-dresses","collection_title":"Women's Designer Wear"}},"collection_MbWARG":{"type":"collection","settings":{"collection":"sarees-dynamic-collections","collection_title":"Sarees"}},"collection_nddLVN":{"type":"collection","settings":{"collection":"accessories-dynamic-collections","collection_title":"Accessories"}}},"block_order":["collection_TxeiAw","collection_wHyjV3","collection_MbWARG","collection_nddLVN"],"name":"t:sections.collection-tab.name","settings":{"section_width":"fluid_container","color_scheme":"","heading":"New Arrivals","description":"","header_size":"medium","header_alignment":"center","tab_header_style":"horizontal","horizontal_tab_style":"underline","display_mode":"carousel","items_to_show":8,"items_per_row":5,"column_gap":30,"show_arrow":true,"carousel_pagination":"disable","infinite":false,"autoplay":false,"autorotate_speed":5,"reveal":false,"rows":2,"show_load_more_button":false,"button_label":"Load more","carousel_on_mobile":true,"items_per_row_mobile":2,"padding_top":0,"padding_bottom":0,"reset_spacing":false}},"collection_list_mrVidg":{"type":"collection-list","blocks":{"collection_r7aTxN":{"type":"collection","settings":{"collection":"pattachitra-saree","collection_image":"shopify:\/\/shop_images\/Patachitra.jpg","collection_title":"Pattachitra Sarees"}},"collection_FUAzK4":{"type":"collection","settings":{"collection":"madhubani-saree","collection_image":"shopify:\/\/shop_images\/Madhubani.jpg","collection_title":"Madhubani Sarees"}},"collection_kUA3MH":{"type":"collection","settings":{"collection":"kantha-stitch-saree","collection_image":"shopify:\/\/shop_images\/Katha_Sarees.jpg","collection_title":"Kantha Sarees"}},"collection_ctTBpd":{"type":"collection","settings":{"collection":"jamdani","collection_image":"shopify:\/\/shop_images\/Jamdani.jpg","collection_title":"Jamdani"}},"collection_fyfMEN":{"type":"collection","settings":{"collection":"dhakai-1","collection_image":"shopify:\/\/shop_images\/Dhaka.jpg","collection_title":"Dhakai"}},"collection_N9qV8Q":{"type":"collection","settings":{"collection":"twaksati","collection_image":"shopify:\/\/shop_images\/Twaksati.jpg","collection_title":"Silver Speaks"}}},"block_order":["collection_r7aTxN","collection_FUAzK4","collection_kUA3MH","collection_ctTBpd","collection_fyfMEN","collection_N9qV8Q"],"settings":{"section_width":"fluid_container","color_scheme":"scheme-3d10de96-a479-49bd-819c-e044746b4f3e","background_image":"shopify:\/\/shop_images\/bg.png","heading":"curated collection","description":"","show_view_all_button":false,"header_size":"medium","header_alignment":"center","display_mode":"carousel","image_ratio":"adapt","custom_ratio":"","items_per_row":4,"column_gap":20,"collection_information_position":"overlay_image","design":"morden","text_alignment":"left","show_product_count":true,"show_icon":true,"show_description":false,"font_size":16,"font_weight":"heading_weight","information_spacing":12,"rounded_image":false,"image_custom_width":false,"image_width":185,"show_arrow":true,"carousel_pagination":"show_dots_on_mobile","infinite":false,"autoplay":false,"autorotate_speed":5,"reveal":false,"items_per_row_mobile":1.5,"padding_top":80,"padding_bottom":80,"reset_spacing":false}},"shopable_video_Yq73J7":{"type":"shopable-video","blocks":{"video_ynrTVT":{"type":"video","settings":{"product":"dive-into-the-ocean","local_video":"shopify:\/\/files\/videos\/Ocean Threads.mp4"}},"video_pkVB9F":{"type":"video","settings":{"product":"ember-eclipse","local_video":"shopify:\/\/files\/videos\/Eclipse in Silk.mp4"}},"video_6kwxbU":{"type":"video","settings":{"product":"evergreen","local_video":"shopify:\/\/files\/videos\/Evergreen Threads.mp4"}},"video_gaHXPF":{"type":"video","settings":{"product":"pink-rose","local_video":"shopify:\/\/files\/videos\/Pink Rose Elegance.mp4"}},"video_d9xDqn":{"type":"video","settings":{"product":"soul-sisters","local_video":"shopify:\/\/files\/videos\/Twins of Tradition.mp4"}}},"block_order":["video_ynrTVT","video_pkVB9F","video_6kwxbU","video_gaHXPF","video_d9xDqn"],"settings":{"section_width":"fluid_container","color_scheme":"scheme-4524de6e-9628-4f31-bb5c-05ea7e33c1c1","heading":"watch & buy","description":"","header_size":"medium","header_alignment":"center","image_ratio":"adapt","custom_ratio":"","video_autoplay":true,"items_per_row":5,"column_gap":15,"show_arrow":true,"carousel_pagination":"show_dots_on_mobile","infinite":false,"autoplay":false,"autorotate_speed":5,"reveal":false,"items_per_row_mobile":1,"padding_top":0,"padding_bottom":0,"reset_spacing":false}},"product_testimonials_ADpfgF":{"type":"product-testimonials","blocks":{"testimonials_items_D4xR7G":{"type":"testimonials_items","settings":{"author_rating":5,"author_text":"<p>I’m truly mesmerized by the Pattachitra saree ,’Festive Threads’ I bought from your collection. The visual storytelling on the pallu is nothing short of captivating — every motif feels like a scene from folklore brought to life through vibrant colors and fine craftsmanship. It’s not just attire, I’ll call it wearable art. The silk is lush and comfortable, and the saree drapes effortlessly, giving it a graceful fall. I wore it to a cultural event, and it turned heads all evening — so many people asked where it was from! Thank you for the wonderful addition to my wardrobe.<\/p>","select_product":"deep-sea-drape","author_name":"Shivani Sharma,Perth, Australia"}},"testimonials_items_7na7pp":{"type":"testimonials_items","settings":{"author_rating":5,"author_text":"<p>I’m thrilled with my Cavirk saree—the quality of the fabric and exquisite Kantha stitching are simply unmatched. The vibrant colors make it truly special!<\/p>","select_product":"golden-vows","author_name":"Ritu Arora, Gurgaon"}},"testimonials_items_M8Nm79":{"type":"testimonials_items","settings":{"author_rating":5,"author_text":"<p>The saree and the shawl are very pretty. Loved both of them.<\/p>","select_product":"emerald-divine","author_name":"Ananya Mishra, Bangalore"}},"testimonials_items_cBDEfL":{"type":"testimonials_items","settings":{"author_rating":5,"author_text":"<p>I recently purchased a Madhubani saree from Cavirk, and I couldn’t be happier with my choice! The saree is absolutely beautiful and exquisitely crafted, with intricate artwork that truly stands out. The detailing is stunning, reflecting the rich heritage of Madhubani artistry. The fabric feels premium, and the colors are vibrant yet elegant. It’s a perfect blend of tradition and exclusivity. I highly recommend Cavirk’s collection.<\/p>","select_product":"majestic-melody","author_name":"Himani Tyagi, Bangalore"}}},"block_order":["testimonials_items_D4xR7G","testimonials_items_7na7pp","testimonials_items_M8Nm79","testimonials_items_cBDEfL"],"settings":{"section_width":"fluid_container","color_scheme":"","heading":"","description":"","header_alignment":"center","header_size":"medium","design":"morden","show_image":false,"show_verified_buyer":true,"img_position":"top","image_ratio":"square","custom_ratio":"","img_width":30,"framed":true,"rate_color":"#ff9c05","items_per_row":1,"column_gap":20,"show_arrow":true,"carousel_pagination":"show_dots_on_mobile","infinite":false,"autoplay":true,"autorotate_speed":6,"reveal":false,"items_per_row_mobile":1,"padding_top":0,"padding_bottom":0,"reset_spacing":false}},"blog_posts_twXijH":{"type":"blog-posts","name":"t:sections.blog-post.presets.name","settings":{"section_width":"fluid_container","color_scheme":"","heading":"blogs & articles","description":"","show_view_all":false,"header_size":"medium","header_alignment":"center","blog":"blog","image_ratio":"adapt","custom_ratio":"","show_category":false,"show_author":false,"show_date":false,"show_comment_count":true,"show_excerpt":true,"content_alignment":"left","design":"default","items_to_show":5,"items_per_row":4,"column_gap":30,"show_arrow":true,"carousel_pagination":"disable","infinite":false,"autoplay":false,"autorotate_speed":5,"reveal":false,"items_per_row_mobile":2,"padding_top":0,"padding_bottom":0,"reset_spacing":false}},"1748693476a9e4a7fd":{"type":"apps","blocks":{"instafeed_app_block_TV7cbq":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"Follow @Cavirk","title_color":"","title_size_v2":0,"alignment":"center","instafeed_margin_top":0,"instafeed_margin_bottom":0,"instafeed_margin_sides":80,"show_instagram_link":false,"link_alignment":"left","link_color":"#000000","background_color":"","feed_id":"","html_area":""}}},"block_order":["instafeed_app_block_TV7cbq"],"settings":{}}},"order":["collection_list_VmEYkJ","collection_tab_ApTJUB","collection_list_mrVidg","shopable_video_Yq73J7","product_testimonials_ADpfgF","blog_posts_twXijH","1748693476a9e4a7fd"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_8KKtNU": {
+      "type": "slideshow",
+      "blocks": {
+        "slider_item_YipJd4": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_12.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/morden_furniture_demo_mb1_f04ec2fe-ad1b-409e-952d-88347ac7e100.jpg",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeinup",
+            "subheading": "TOP COLLECTIONS",
+            "heading": "Sofas Collection",
+            "description": "",
+            "first_button_label": "Shop Collection",
+            "first_button_link": "shopify:\/\/collections\/sofas",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "full_width",
+            "content_max_width": 100,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_iAiXpe": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_13.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/morden_furniture_demo_mb3_0a96fae0-8519-4dc3-b173-b50706325792.jpg",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "BY SILO—COPENHAGEN",
+            "heading": "Interior Design",
+            "description": "",
+            "first_button_label": "Shop Collection",
+            "first_button_link": "shopify:\/\/collections",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "full_width",
+            "content_max_width": 100,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_jiLA39": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_14.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/morden_furniture_demo_mb2_2a10dba9-f4d7-4ee8-b5cd-94177c2bf9ab.jpg",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_zoomout",
+            "subheading": "BY SILO—COPENHAGEN",
+            "heading": "High-Top Design",
+            "description": "",
+            "first_button_label": "Shop Collection",
+            "first_button_link": "shopify:\/\/collections",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "full_width",
+            "content_max_width": 100,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_YipJd4",
+        "slider_item_iAiXpe",
+        "slider_item_jiLA39"
+      ],
+      "settings": {
+        "section_width": "stretch_width",
+        "slide_height": "full_screen",
+        "desktop_height": 650,
+        "mobile_height": 300,
+        "color_scheme": "scheme-c4fa9b2e-e94e-477a-a1f0-ab1da4f2a676",
+        "subheading_font_size": 13,
+        "subheading_font_weight": "subheading_weight",
+        "subheading_spacing_bottom": 0,
+        "heading_font_size": 60,
+        "heading_font_weight": "heading_weight",
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 12,
+        "des_font_size": 19,
+        "des_font_weight": "heading_weight",
+        "des_spacing_bottom": 60,
+        "show_arrow": false,
+        "carousel_pagination": "show_dots",
+        "pagination_position": "center",
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "content_below_image": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "collection_list_VmEYkJ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_r7aTxN": {
+          "type": "collection",
+          "settings": {
+            "collection": "summer-collection",
+            "collection_image": "shopify://shop_images/Summer_Collection.png",
+            "collection_title": "Summer Collection"
+          }
+        },
+        "collection_FUAzK4": {
+          "type": "collection",
+          "settings": {
+            "collection": "cavirk-curates",
+            "collection_image": "shopify://shop_images/vows_in_motion.png",
+            "collection_title": "Cavirk Curates"
+          }
+        },
+        "collection_kUA3MH": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western-dresses",
+            "collection_image": "shopify://shop_images/Designer_Showcase.png",
+            "collection_title": "Designer Showcase"
+          }
+        },
+        "collection_ctTBpd": {
+          "type": "collection",
+          "settings": {
+            "collection": "gen-z-meets-heritage",
+            "collection_image": "shopify://shop_images/This_image_for_GenZ_circle.png",
+            "collection_title": "Gen Z Meets Heritage"
+          }
+        },
+        "collection_fyfMEN": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-artisan-floor",
+            "collection_image": "shopify://shop_images/This_is_for_Studio_Earth.png",
+            "collection_title": "Studio Earth"
+          }
+        },
+        "collection_qdMHYe": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-warm-embrace",
+            "collection_image": "shopify://shop_images/The_Warm_Embrace.png",
+            "collection_title": "The Warm Embrace"
+          }
+        },
+        "collection_8WEV8X": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_r7aTxN",
+        "collection_FUAzK4",
+        "collection_kUA3MH",
+        "collection_ctTBpd",
+        "collection_fyfMEN",
+        "collection_qdMHYe",
+        "collection_8WEV8X"
+      ],
+      "settings": {
+        "section_width": "full_width",
+        "color_scheme": "",
+        "heading": "",
+        "description": "",
+        "show_view_all_button": false,
+        "header_size": "medium",
+        "header_alignment": "center",
+        "display_mode": "carousel",
+        "image_ratio": "square",
+        "custom_ratio": "",
+        "items_per_row": 7,
+        "column_gap": 30,
+        "collection_information_position": "below_image",
+        "design": "default",
+        "text_alignment": "center",
+        "show_product_count": false,
+        "show_icon": false,
+        "show_description": false,
+        "font_size": 16,
+        "font_weight": "heading_weight",
+        "information_spacing": 12,
+        "rounded_image": true,
+        "image_custom_width": true,
+        "image_width": 145,
+        "show_arrow": false,
+        "carousel_pagination": "show_dots_on_mobile",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 3,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "collection_tab_ApTJUB": {
+      "type": "collection-tab",
+      "blocks": {
+        "collection_TxeiAw": {
+          "type": "collection",
+          "settings": {
+            "collection": "sequins-pearls-by-vivek",
+            "collection_title": "Men's Ethnic"
+          }
+        },
+        "collection_wHyjV3": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western-dresses",
+            "collection_title": "Women's Designer Wear"
+          }
+        },
+        "collection_MbWARG": {
+          "type": "collection",
+          "settings": {
+            "collection": "sarees-dynamic-collections",
+            "collection_title": "Sarees"
+          }
+        },
+        "collection_nddLVN": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories-dynamic-collections",
+            "collection_title": "Accessories"
+          }
+        }
+      },
+      "block_order": [
+        "collection_TxeiAw",
+        "collection_wHyjV3",
+        "collection_MbWARG",
+        "collection_nddLVN"
+      ],
+      "name": "t:sections.collection-tab.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "heading": "New Arrivals",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "tab_header_style": "horizontal",
+        "horizontal_tab_style": "underline",
+        "display_mode": "carousel",
+        "items_to_show": 8,
+        "items_per_row": 5,
+        "column_gap": 30,
+        "show_arrow": true,
+        "carousel_pagination": "disable",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "rows": 2,
+        "show_load_more_button": false,
+        "button_label": "Load more",
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": 2,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "collection_list_mrVidg": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_r7aTxN": {
+          "type": "collection",
+          "settings": {
+            "collection": "pattachitra-saree",
+            "collection_image": "shopify://shop_images/Patachitra.jpg",
+            "collection_title": "Pattachitra Sarees"
+          }
+        },
+        "collection_FUAzK4": {
+          "type": "collection",
+          "settings": {
+            "collection": "madhubani-saree",
+            "collection_image": "shopify://shop_images/Madhubani.jpg",
+            "collection_title": "Madhubani Sarees"
+          }
+        },
+        "collection_kUA3MH": {
+          "type": "collection",
+          "settings": {
+            "collection": "kantha-stitch-saree",
+            "collection_image": "shopify://shop_images/Katha_Sarees.jpg",
+            "collection_title": "Kantha Sarees"
+          }
+        },
+        "collection_ctTBpd": {
+          "type": "collection",
+          "settings": {
+            "collection": "jamdani",
+            "collection_image": "shopify://shop_images/Jamdani.jpg",
+            "collection_title": "Jamdani"
+          }
+        },
+        "collection_fyfMEN": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhakai-1",
+            "collection_image": "shopify://shop_images/Dhaka.jpg",
+            "collection_title": "Dhakai"
+          }
+        },
+        "collection_N9qV8Q": {
+          "type": "collection",
+          "settings": {
+            "collection": "twaksati",
+            "collection_image": "shopify://shop_images/Twaksati.jpg",
+            "collection_title": "Silver Speaks"
+          }
+        }
+      },
+      "block_order": [
+        "collection_r7aTxN",
+        "collection_FUAzK4",
+        "collection_kUA3MH",
+        "collection_ctTBpd",
+        "collection_fyfMEN",
+        "collection_N9qV8Q"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-3d10de96-a479-49bd-819c-e044746b4f3e",
+        "background_image": "shopify://shop_images/bg.png",
+        "heading": "curated collection",
+        "description": "",
+        "show_view_all_button": false,
+        "header_size": "medium",
+        "header_alignment": "center",
+        "display_mode": "carousel",
+        "image_ratio": "adapt",
+        "custom_ratio": "",
+        "items_per_row": 4,
+        "column_gap": 20,
+        "collection_information_position": "overlay_image",
+        "design": "morden",
+        "text_alignment": "left",
+        "show_product_count": true,
+        "show_icon": true,
+        "show_description": false,
+        "font_size": 16,
+        "font_weight": "heading_weight",
+        "information_spacing": 12,
+        "rounded_image": false,
+        "image_custom_width": false,
+        "image_width": 185,
+        "show_arrow": true,
+        "carousel_pagination": "show_dots_on_mobile",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 1.5,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "reset_spacing": false
+      }
+    },
+    "shopable_video_Yq73J7": {
+      "type": "shopable-video",
+      "blocks": {
+        "video_ynrTVT": {
+          "type": "video",
+          "settings": {
+            "product": "dive-into-the-ocean",
+            "local_video": "shopify://files/videos/Ocean Threads.mp4"
+          }
+        },
+        "video_pkVB9F": {
+          "type": "video",
+          "settings": {
+            "product": "ember-eclipse",
+            "local_video": "shopify://files/videos/Eclipse in Silk.mp4"
+          }
+        },
+        "video_6kwxbU": {
+          "type": "video",
+          "settings": {
+            "product": "evergreen",
+            "local_video": "shopify://files/videos/Evergreen Threads.mp4"
+          }
+        },
+        "video_gaHXPF": {
+          "type": "video",
+          "settings": {
+            "product": "pink-rose",
+            "local_video": "shopify://files/videos/Pink Rose Elegance.mp4"
+          }
+        },
+        "video_d9xDqn": {
+          "type": "video",
+          "settings": {
+            "product": "soul-sisters",
+            "local_video": "shopify://files/videos/Twins of Tradition.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_ynrTVT",
+        "video_pkVB9F",
+        "video_6kwxbU",
+        "video_gaHXPF",
+        "video_d9xDqn"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-4524de6e-9628-4f31-bb5c-05ea7e33c1c1",
+        "heading": "watch & buy",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "image_ratio": "adapt",
+        "custom_ratio": "",
+        "video_autoplay": true,
+        "items_per_row": 5,
+        "column_gap": 15,
+        "show_arrow": true,
+        "carousel_pagination": "show_dots_on_mobile",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "product_testimonials_ADpfgF": {
+      "type": "product-testimonials",
+      "blocks": {
+        "testimonials_items_D4xR7G": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>I’m truly mesmerized by the Pattachitra saree ,’Festive Threads’ I bought from your collection. The visual storytelling on the pallu is nothing short of captivating — every motif feels like a scene from folklore brought to life through vibrant colors and fine craftsmanship. It’s not just attire, I’ll call it wearable art. The silk is lush and comfortable, and the saree drapes effortlessly, giving it a graceful fall. I wore it to a cultural event, and it turned heads all evening — so many people asked where it was from! Thank you for the wonderful addition to my wardrobe.</p>",
+            "select_product": "deep-sea-drape",
+            "author_name": "Shivani Sharma,Perth, Australia"
+          }
+        },
+        "testimonials_items_7na7pp": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>I’m thrilled with my Cavirk saree—the quality of the fabric and exquisite Kantha stitching are simply unmatched. The vibrant colors make it truly special!</p>",
+            "select_product": "golden-vows",
+            "author_name": "Ritu Arora, Gurgaon"
+          }
+        },
+        "testimonials_items_M8Nm79": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>The saree and the shawl are very pretty. Loved both of them.</p>",
+            "select_product": "emerald-divine",
+            "author_name": "Ananya Mishra, Bangalore"
+          }
+        },
+        "testimonials_items_cBDEfL": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>I recently purchased a Madhubani saree from Cavirk, and I couldn’t be happier with my choice! The saree is absolutely beautiful and exquisitely crafted, with intricate artwork that truly stands out. The detailing is stunning, reflecting the rich heritage of Madhubani artistry. The fabric feels premium, and the colors are vibrant yet elegant. It’s a perfect blend of tradition and exclusivity. I highly recommend Cavirk’s collection.</p>",
+            "select_product": "majestic-melody",
+            "author_name": "Himani Tyagi, Bangalore"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_items_D4xR7G",
+        "testimonials_items_7na7pp",
+        "testimonials_items_M8Nm79",
+        "testimonials_items_cBDEfL"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "heading": "",
+        "description": "",
+        "header_alignment": "center",
+        "header_size": "medium",
+        "design": "morden",
+        "show_image": false,
+        "show_verified_buyer": true,
+        "img_position": "top",
+        "image_ratio": "square",
+        "custom_ratio": "",
+        "img_width": 30,
+        "framed": true,
+        "rate_color": "#ff9c05",
+        "items_per_row": 1,
+        "column_gap": 20,
+        "show_arrow": true,
+        "carousel_pagination": "show_dots_on_mobile",
+        "infinite": false,
+        "autoplay": true,
+        "autorotate_speed": 6,
+        "reveal": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "blog_posts_twXijH": {
+      "type": "blog-posts",
+      "name": "t:sections.blog-post.presets.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "heading": "blogs & articles",
+        "description": "",
+        "show_view_all": false,
+        "header_size": "medium",
+        "header_alignment": "center",
+        "blog": "blog",
+        "image_ratio": "adapt",
+        "custom_ratio": "",
+        "show_category": false,
+        "show_author": false,
+        "show_date": false,
+        "show_comment_count": true,
+        "show_excerpt": true,
+        "content_alignment": "left",
+        "design": "default",
+        "items_to_show": 5,
+        "items_per_row": 4,
+        "column_gap": 30,
+        "show_arrow": true,
+        "carousel_pagination": "disable",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 2,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "1748693476a9e4a7fd": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_TV7cbq": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Follow @Cavirk",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 80,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_TV7cbq"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow_8KKtNU",
+    "collection_list_VmEYkJ",
+    "collection_tab_ApTJUB",
+    "collection_list_mrVidg",
+    "shopable_video_Yq73J7",
+    "product_testimonials_ADpfgF",
+    "blog_posts_twXijH",
+    "1748693476a9e4a7fd"
+  ]
+}
