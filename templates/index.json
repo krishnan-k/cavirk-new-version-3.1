@@ -116,7 +116,7 @@
         "des_font_weight": "heading_weight",
         "des_spacing_bottom": 60,
         "slide_effect": "fade",
-        "show_arrow": true,
+        "show_arrow": false,
         "carousel_pagination": "show_dots",
         "pagination_position": "right",
         "autoplay": false,
