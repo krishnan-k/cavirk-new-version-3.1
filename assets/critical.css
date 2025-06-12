@@ -1502,6 +1502,9 @@ picture {
 .min-h-55 {
   min-height: 55px;
 }
+.min-h-45 {
+  min-height: 45px;
+}
 .border-0 {
   border: 0;
 }
