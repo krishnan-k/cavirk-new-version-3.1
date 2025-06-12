@@ -100,11 +100,11 @@
         "slider_item_jiLA39"
       ],
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "full_width",
         "slide_height": "full_screen",
         "desktop_height": 650,
         "mobile_height": 300,
-        "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
+        "color_scheme": "default",
         "subheading_font_size": 13,
         "subheading_font_weight": "subheading_weight",
         "subheading_spacing_bottom": 0,
