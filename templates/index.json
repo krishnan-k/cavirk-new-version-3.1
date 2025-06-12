@@ -29,7 +29,7 @@
             "second_button_link": "",
             "second_button_style": false,
             "content_alignment": "center",
-            "content_position": "middle-center",
+            "content_position": "bottom-center",
             "content_width": "full_width",
             "content_max_width": 60,
             "content_padding_block": 50,
