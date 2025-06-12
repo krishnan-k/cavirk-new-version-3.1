@@ -9,128 +9,87 @@
  */
 {
   "sections": {
-    "slideshow_with_banner_CQyGi3": {
-      "type": "slideshow-with-banner",
-      "blocks": {
-        "slideshow_parent_mVxAWp": {
-          "type": "slideshow_parent",
-          "settings": {
-            "color_scheme": "",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "body_weight",
-            "subheading_spacing_bottom": 10,
-            "heading_font_size": 70,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 10,
-            "des_font_size": 14,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 40,
-            "slide_effect": "fade",
-            "show_arrow": false,
-            "carousel_pagination": "disable",
-            "pagination_position": "center",
-            "autoplay": false,
-            "autorotate_speed": 5
-          }
-        },
-        "banner_parent_w6xLc3": {
-          "type": "banner_parent",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "slideshow_parent_mVxAWp",
-        "banner_parent_w6xLc3"
-      ],
-      "name": "t:sections.slideshow-with-banner.name",
-      "settings": {
-        "section_width": "full_width",
-        "column_gap": 30,
-        "slide_width": 50,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "reset_spacing": false
-      }
-    },
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
+        "slider_item_UwJ3Hg": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider-1-swatch.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/slide-1-swatch-mobile.jpg",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "THE ULTIMATE SET",
+            "heading": "Echelon Style <br> High-Performance",
+            "description": "",
+            "first_button_label": "Shop Collection",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "center",
+            "content_position": "bottom-center",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 100,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "center"
+          }
+        },
         "slider_item_YipJd4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/b1.jpg",
+            "image": "shopify:\/\/shop_images\/slider-2-swatch.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/slide-2-swatch-mobile.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeinup",
-            "subheading": "TOP COLLECTIONS",
-            "heading": "Sofas Collection",
+            "subheading": "STEEL PERPETUAL",
+            "heading": "Limited Edition\n<br>\nClean—Classic Design",
             "description": "",
             "first_button_label": "Shop Collection",
-            "first_button_link": "shopify://collections/sofas",
+            "first_button_link": "shopify:\/\/collections\/new-in",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "full_width",
+            "content_alignment": "center",
+            "content_position": "bottom-center",
+            "content_width": "fluid_container",
             "content_max_width": 100,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
+            "content_padding_block": 100,
+            "content_padding_inline": 30,
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
             "content_alignment_mobile": "left"
           }
         },
-        "slider_item_iAiXpe": {
+        "slider_item_JjzPgk": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/b2.jpg",
+            "image": "shopify:\/\/shop_images\/slider-3-swatch.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/slide-3-swatch-mobile.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeindown",
-            "subheading": "BY SILO—COPENHAGEN",
-            "heading": "Interior Design",
+            "subheading": "TOP COLLECTIONS",
+            "heading": "Special Edition <br> Super Perpetual Steel",
             "description": "",
             "first_button_label": "Shop Collection",
-            "first_button_link": "shopify://collections",
+            "first_button_link": "",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "full_width",
+            "content_alignment": "center",
+            "content_position": "bottom-center",
+            "content_width": "container",
             "content_max_width": 100,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
-            "show_content_background": false,
-            "content_background": "#ffffff",
-            "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
-          }
-        },
-        "slider_item_jiLA39": {
-          "type": "slider_item",
-          "settings": {
-            "image": "shopify://shop_images/b3.jpg",
-            "overlay_opacity": 0,
-            "slider_effect": "effect_zoomin",
-            "subheading": "BY SILO—COPENHAGEN",
-            "heading": "High-Top Design",
-            "description": "",
-            "first_button_label": "Shop Collection",
-            "first_button_link": "shopify://collections",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "full_width",
-            "content_max_width": 100,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
+            "content_padding_block": 100,
+            "content_padding_inline": 30,
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
@@ -139,30 +98,32 @@
         }
       },
       "block_order": [
+        "slider_item_UwJ3Hg",
         "slider_item_YipJd4",
-        "slider_item_iAiXpe",
-        "slider_item_jiLA39"
+        "slider_item_JjzPgk"
+      ],
+      "custom_css": [
+        ".fs-big {line-height: 1;}"
       ],
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "full_width",
         "slide_height": "full_screen",
-        "desktop_height": 650,
+        "desktop_height": 800,
         "mobile_height": 300,
-        "color_scheme": "scheme-c4fa9b2e-e94e-477a-a1f0-ab1da4f2a676",
-        "subheading_font_size": 13,
-        "subheading_font_weight": "subheading_weight",
-        "subheading_spacing_bottom": 0,
+        "color_scheme": "scheme-bb1431b0-be4a-4b03-a450-f572c07e3904",
+        "subheading_font_size": 12,
+        "subheading_font_weight": "heading_weight",
+        "subheading_spacing_bottom": 15,
         "heading_font_size": 60,
         "heading_font_weight": "heading_weight",
         "heading_uppercase": false,
-        "heading_spacing_bottom": 12,
-        "des_font_size": 19,
-        "des_font_weight": "heading_weight",
-        "des_spacing_bottom": 60,
-        "slide_effect": "fade",
-        "show_arrow": false,
+        "heading_spacing_bottom": 30,
+        "des_font_size": 16,
+        "des_font_weight": "body_weight",
+        "des_spacing_bottom": 40,
+        "show_arrow": true,
         "carousel_pagination": "show_dots",
-        "pagination_position": "right",
+        "pagination_position": "center",
         "autoplay": false,
         "autorotate_speed": 5,
         "content_below_image": false,
@@ -653,7 +614,6 @@
     }
   },
   "order": [
-    "slideshow_with_banner_CQyGi3",
     "slideshow_8KKtNU",
     "collection_list_VmEYkJ",
     "collection_tab_ApTJUB",
