@@ -70,6 +70,7 @@
           "type": "slider_item",
           "settings": {
             "image": "shopify://shop_images/b3.jpg",
+            "local_video": "shopify://files/videos/cavirk-popup-1.mp4.mp4",
             "overlay_opacity": 0,
             "slider_effect": "effect_zoomout",
             "subheading": "",
