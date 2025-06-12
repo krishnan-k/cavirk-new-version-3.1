@@ -59,7 +59,7 @@
             "content_alignment": "left",
             "content_position": "bottom-left",
             "content_width": "full_width",
-            "content_max_width": 100,
+            "content_max_width": 40,
             "content_padding_block": 50,
             "content_padding_inline": 50,
             "show_content_background": false,
