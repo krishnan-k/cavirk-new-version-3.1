@@ -113,7 +113,7 @@
         "heading_font_size": 45,
         "heading_font_weight": "heading_weight",
         "heading_uppercase": false,
-        "heading_spacing_bottom": 12,
+        "heading_spacing_bottom": 30,
         "des_font_size": 14,
         "des_font_weight": "heading_weight",
         "des_spacing_bottom": 60,
