@@ -40,33 +40,6 @@
             "content_alignment_mobile": "center"
           }
         },
-        "slider_item_jiLA39": {
-          "type": "slider_item",
-          "settings": {
-            "local_video": "shopify://files/videos/cavirk-hero-video-new (1).mp4.mp4",
-            "overlay_opacity": 0,
-            "slider_effect": "effect_zoomout",
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "first_button_label": "",
-            "first_button_link": "shopify://collections",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "full_width",
-            "content_max_width": 100,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
-            "show_content_background": false,
-            "content_background": "#ffffff",
-            "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
-          }
-        },
         "slider_item_iAiXpe": {
           "type": "slider_item",
           "settings": {
@@ -94,12 +67,39 @@
             "content_box_opacity": 23,
             "content_alignment_mobile": "left"
           }
+        },
+        "slider_item_jiLA39": {
+          "type": "slider_item",
+          "settings": {
+            "local_video": "shopify://files/videos/cavirk-hero-video-new (1).mp4.mp4",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_zoomout",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "shopify://collections",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "full_width",
+            "content_max_width": 100,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
         }
       },
       "block_order": [
         "slider_item_YipJd4",
-        "slider_item_jiLA39",
-        "slider_item_iAiXpe"
+        "slider_item_iAiXpe",
+        "slider_item_jiLA39"
       ],
       "settings": {
         "section_width": "full_width",
