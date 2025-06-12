@@ -43,7 +43,7 @@
         "slider_item_iAiXpe": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/b2.jpg",
+            "image": "shopify://shop_images/banner_2.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeindown",
             "subheading": "",
