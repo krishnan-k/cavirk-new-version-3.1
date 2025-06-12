@@ -19,7 +19,7 @@
     "fluid_container_width": 1450,
     "enable_rounded": false,
     "rounded_corner": 5,
-    "spacing_desktop": 70,
+    "spacing_desktop": 50,
     "space_mobile": 30,
     "font_type_body": "google",
     "font_body_system": "poppins_n4",
