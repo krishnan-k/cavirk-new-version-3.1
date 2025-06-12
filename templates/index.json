@@ -15,8 +15,7 @@
         "slider_item_UwJ3Hg": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slider-1-swatch.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/slide-1-swatch-mobile.jpg",
+            "image": "shopify://shop_images/b1.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeindown",
             "subheading": "THE ULTIMATE SET",
@@ -43,15 +42,13 @@
         "slider_item_YipJd4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slider-2-swatch.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/slide-2-swatch-mobile.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeinup",
             "subheading": "STEEL PERPETUAL",
             "heading": "Limited Edition\n<br>\nClean—Classic Design",
             "description": "",
             "first_button_label": "Shop Collection",
-            "first_button_link": "shopify:\/\/collections\/new-in",
+            "first_button_link": "shopify://collections/new-in",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
@@ -71,8 +68,6 @@
         "slider_item_JjzPgk": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slider-3-swatch.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/slide-3-swatch-mobile.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeindown",
             "subheading": "TOP COLLECTIONS",
@@ -121,6 +116,7 @@
         "des_font_size": 16,
         "des_font_weight": "body_weight",
         "des_spacing_bottom": 40,
+        "slide_effect": "fade",
         "show_arrow": true,
         "carousel_pagination": "show_dots",
         "pagination_position": "center",
