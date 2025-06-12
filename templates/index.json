@@ -9,6 +9,50 @@
  */
 {
   "sections": {
+    "slideshow_with_banner_CQyGi3": {
+      "type": "slideshow-with-banner",
+      "blocks": {
+        "slideshow_parent_mVxAWp": {
+          "type": "slideshow_parent",
+          "settings": {
+            "color_scheme": "",
+            "subheading_font_size": 14,
+            "subheading_font_weight": "body_weight",
+            "subheading_spacing_bottom": 10,
+            "heading_font_size": 70,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 14,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 40,
+            "slide_effect": "fade",
+            "show_arrow": false,
+            "carousel_pagination": "disable",
+            "pagination_position": "center",
+            "autoplay": false,
+            "autorotate_speed": 5
+          }
+        },
+        "banner_parent_w6xLc3": {
+          "type": "banner_parent",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "slideshow_parent_mVxAWp",
+        "banner_parent_w6xLc3"
+      ],
+      "name": "t:sections.slideshow-with-banner.name",
+      "settings": {
+        "section_width": "full_width",
+        "column_gap": 30,
+        "slide_width": 50,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
@@ -609,6 +653,7 @@
     }
   },
   "order": [
+    "slideshow_with_banner_CQyGi3",
     "slideshow_8KKtNU",
     "collection_list_VmEYkJ",
     "collection_tab_ApTJUB",
