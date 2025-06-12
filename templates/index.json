@@ -101,7 +101,7 @@
       ],
       "settings": {
         "section_width": "stretch_width",
-        "slide_height": "adapt",
+        "slide_height": "full_screen",
         "desktop_height": 650,
         "mobile_height": 300,
         "color_scheme": "scheme-c4fa9b2e-e94e-477a-a1f0-ab1da4f2a676",
@@ -116,7 +116,7 @@
         "des_font_weight": "heading_weight",
         "des_spacing_bottom": 60,
         "slide_effect": "fade",
-        "show_arrow": false,
+        "show_arrow": true,
         "carousel_pagination": "show_dots",
         "pagination_position": "right",
         "autoplay": false,
