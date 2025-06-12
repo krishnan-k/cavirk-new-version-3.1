@@ -118,7 +118,7 @@
         "slide_effect": "fade",
         "show_arrow": false,
         "carousel_pagination": "show_dots",
-        "pagination_position": "center",
+        "pagination_position": "right",
         "autoplay": false,
         "autorotate_speed": 5,
         "content_below_image": false,
