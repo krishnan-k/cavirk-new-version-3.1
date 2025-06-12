@@ -91,7 +91,7 @@
     "enable_preload": true,
     "preload_page": "spin",
     "zoom_image": true,
-    "scroll_animation": "zoom_in",
+    "scroll_animation": "fade_in",
     "store_phone": "9147422150",
     "store_email": "hello@cavirk.com",
     "store_page": "our-store",
