@@ -115,7 +115,7 @@
         "des_font_size": 19,
         "des_font_weight": "heading_weight",
         "des_spacing_bottom": 60,
-        "slide_effect": "slide",
+        "slide_effect": "fade",
         "show_arrow": false,
         "carousel_pagination": "show_dots",
         "pagination_position": "right",
