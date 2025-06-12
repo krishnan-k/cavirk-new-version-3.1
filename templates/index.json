@@ -101,7 +101,7 @@
       ],
       "settings": {
         "section_width": "full_width",
-        "slide_height": "full_screen",
+        "slide_height": "adapt",
         "desktop_height": 650,
         "mobile_height": 300,
         "color_scheme": "default",
