@@ -105,7 +105,7 @@
         "section_width": "full_width",
         "slide_height": "custom",
         "desktop_height": 780,
-        "mobile_height": 300,
+        "mobile_height": 500,
         "color_scheme": "default",
         "subheading_font_size": 13,
         "subheading_font_weight": "subheading_weight",
