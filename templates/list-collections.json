@@ -161,10 +161,80 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "multi_content_AHdcCj": {
+      "type": "multi-content",
+      "blocks": {
+        "image_MfJjAq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cavirk-founders.jpg",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_UVRgWU": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "start",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Our Story",
+            "description": "<p>Cavirk was founded by<strong>Debdeep Mukherjee</strong>and<strong>Bhanu Gupta</strong>with a vision to preserve and promote<strong>India’s rich heritage of handcrafted luxury</strong>. Initially established as a curated brand for artisanal products, Cavirk is now evolving into a<strong>premier marketplace for authentic, GI-registered handicrafts</strong>, offering a seamless platform for manufacturers, boutique owners and artisans to connect directly with discerning global customers.<br/><br/><strong>The name “Cavirk” reflects our ethos.</strong>With this transition into a<strong>marketplace in May 2025</strong>, Cavirk is set to become a trusted global destination, enabling customers to explore and acquire<strong>heritage-rich textiles and handcrafted masterpieces</strong>while empowering India’s most skilled artisans and craftspeople</p>",
+            "collection": "",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 38,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 18,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_MfJjAq",
+        "text_UVRgWU"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
     "heading",
-    "main"
+    "main",
+    "multi_content_AHdcCj"
   ]
 }
