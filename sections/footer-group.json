@@ -1,1 +1,86 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"store_info_tUhcyD":{"type":"store_info","settings":{"image_width":70,"store_heading":"Help Customers","store_description":"<p>Find a location nearest you to reduce shipping costs and make <br\/>shopping easier. <a href=\"https:\/\/www.google.com\/maps\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\"><strong>Show on google maps.<\/strong><\/a><\/p>","store_address":true,"store_phone":true,"store_email":true,"content_width":"33.333%"}},"link_list_JTq77M":{"type":"link_list","settings":{"heading":"Top Collections","menu":"men","content_width":"16%"}},"link_list_x4zwRH":{"type":"link_list","settings":{"heading":"Quick links","menu":"footer-quick-links","content_width":"16%"}},"newsletter_Rk8BD6":{"type":"newsletter","settings":{"heading":"Sign Up to Newsletter","description":"Sign up now for free shipping on your first order! Be the first to hear about exclusive offers and upcoming sales.","email_placeholder":"Enter your email...","button_label":"Sign Up","note":"","content_width":"33.333%"}}},"block_order":["store_info_tUhcyD","link_list_JTq77M","link_list_x4zwRH","newsletter_Rk8BD6"],"settings":{"section_width":"fluid_container","color_scheme":"scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9","enable_back_top":true,"separator_line":"all-page","enable_country_selector":true,"enable_language_selector":false,"enable_follow_on_shop":true,"show_social":true,"payment_enable":true,"payment_width":340,"policy_menu":false,"copyright_text":"© 2024 Glozin store. All rights reserved.","footer_heading_size":16,"padding_top":60,"padding_bottom":45,"reset_spacing_on_homepage":false}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "store_info_tUhcyD": {
+          "type": "store_info",
+          "settings": {
+            "image_width": 70,
+            "store_heading": "Help Customers",
+            "store_description": "<p>Find a location nearest you to reduce shipping costs and make <br/>shopping easier. <a href=\"https://www.google.com/maps\" target=\"_blank\" title=\"https://www.google.com/maps\"><strong>Show on google maps.</strong></a></p>",
+            "store_address": true,
+            "store_phone": true,
+            "store_email": true,
+            "content_width": "33.333%"
+          }
+        },
+        "link_list_JTq77M": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Top Collections",
+            "menu": "men",
+            "content_width": "16%"
+          }
+        },
+        "link_list_x4zwRH": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer-quick-links",
+            "content_width": "16%"
+          }
+        },
+        "newsletter_Rk8BD6": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Sign Up to Newsletter",
+            "description": "Sign up now for free shipping on your first order! Be the first to hear about exclusive offers and upcoming sales.",
+            "email_placeholder": "Enter your email...",
+            "button_label": "Sign Up",
+            "note": "",
+            "content_width": "33.333%"
+          }
+        }
+      },
+      "block_order": [
+        "store_info_tUhcyD",
+        "link_list_JTq77M",
+        "link_list_x4zwRH",
+        "newsletter_Rk8BD6"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
+        "enable_back_top": true,
+        "separator_line": "all-page",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "payment_enable": true,
+        "payment_width": 340,
+        "policy_menu": false,
+        "copyright_text": "© 2024 Cavirk store. All rights reserved.",
+        "footer_heading_size": 16,
+        "padding_top": 60,
+        "padding_bottom": 45,
+        "reset_spacing_on_homepage": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
