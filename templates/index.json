@@ -168,23 +168,8 @@
           "type": "collection",
           "settings": {
             "collection": "gen-z-meets-heritage",
-            "collection_image": "shopify://shop_images/This_image_for_GenZ_circle.png",
+            "collection_image": "shopify://shop_images/Brass_Statues.png",
             "collection_title": "Rugs and Carpets"
-          }
-        },
-        "collection_qdMHYe": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-warm-embrace",
-            "collection_image": "shopify://shop_images/The_Warm_Embrace.png",
-            "collection_title": "The Warm Embrace"
-          }
-        },
-        "collection_8WEV8X": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "collection_title": ""
           }
         }
       },
@@ -193,9 +178,7 @@
         "collection_THd6NU",
         "collection_kUA3MH",
         "collection_fyfMEN",
-        "collection_ctTBpd",
-        "collection_qdMHYe",
-        "collection_8WEV8X"
+        "collection_ctTBpd"
       ],
       "settings": {
         "section_width": "fluid_container",
