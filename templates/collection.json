@@ -85,6 +85,7 @@
       "blocks": {
         "categories_LYDr6p": {
           "type": "categories",
+          "disabled": true,
           "settings": {
             "title": "Products Category",
             "menu": "brand"
