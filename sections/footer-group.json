@@ -47,7 +47,7 @@
           "type": "newsletter",
           "settings": {
             "heading": "Sign Up to Newsletter",
-            "description": "Sign up now for free shipping on your first order! Be the first to hear about exclusive offers and upcoming sales.",
+            "description": "",
             "email_placeholder": "Enter your email...",
             "button_label": "Sign Up",
             "note": "",
