@@ -118,7 +118,6 @@
         "popular_product_Xwjqcf",
         "image_banner_UUJxtT"
       ],
-      "disabled": true,
       "settings": {
         "section_width": "fluid_container",
         "enable_filtering": true,
@@ -143,15 +142,6 @@
     },
     "f19e65bc-bc65-4bb4-b4cf-5aa21c51729f": {
       "type": "apps",
-      "blocks": {
-        "ff4737d4-5eba-47ae-8136-6f9b20a262b3": {
-          "type": "shopify://apps/boost-ai-search-discovery/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "ff4737d4-5eba-47ae-8136-6f9b20a262b3"
-      ],
       "settings": {}
     }
   },
