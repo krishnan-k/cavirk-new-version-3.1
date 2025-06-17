@@ -53,77 +53,77 @@
         "collection_k6UJWD": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts",
+            "collection": "cashmere-shawl",
             "collection_title": ""
           }
         },
         "collection_Dh49Wa": {
           "type": "collection",
           "settings": {
-            "collection": "tops",
+            "collection": "designer-showcase",
             "collection_title": ""
           }
         },
         "collection_qag64J": {
           "type": "collection",
           "settings": {
-            "collection": "activewear",
+            "collection": "dhakai-1",
             "collection_title": ""
           }
         },
         "collection_Kk8pDP": {
           "type": "collection",
           "settings": {
-            "collection": "best-seller",
+            "collection": "fine-wool-stoles",
             "collection_title": ""
           }
         },
         "collection_ACrmpU": {
           "type": "collection",
           "settings": {
-            "collection": "blazers",
+            "collection": "gen-z-meets-heritage",
             "collection_title": ""
           }
         },
         "collection_zpFtkQ": {
           "type": "collection",
           "settings": {
-            "collection": "demin",
+            "collection": "jamdani",
             "collection_title": ""
           }
         },
         "collection_Lb3mRX": {
           "type": "collection",
           "settings": {
-            "collection": "handbags",
+            "collection": "kantha-stitch-saree",
             "collection_title": ""
           }
         },
         "collection_qirikr": {
           "type": "collection",
           "settings": {
-            "collection": "crop-top",
+            "collection": "kinnauri-shawls",
             "collection_title": ""
           }
         },
         "collection_HLUY4E": {
           "type": "collection",
           "settings": {
-            "collection": "dress",
+            "collection": "kinnauri-stoles",
             "collection_title": ""
           }
         },
         "collection_dHMiiC": {
           "type": "collection",
           "settings": {
-            "collection": "trending",
+            "collection": "madhubani-saree",
             "collection_title": ""
           }
         },
         "collection_pip9Fw": {
           "type": "collection",
           "settings": {
-            "collection": "shorts-1",
+            "collection": "pattachitra-saree",
             "collection_title": ""
           }
         }
@@ -147,8 +147,8 @@
         "color_scheme": "default",
         "type": "selected",
         "sort_collections": "alphabetical",
-        "image_ratio": "adapt",
-        "show_product_count": false,
+        "image_ratio": "portrait",
+        "show_product_count": true,
         "design": "default",
         "text_alignment": "center",
         "font_size": 16,
