@@ -145,15 +145,15 @@
           "settings": {
             "collection": "cavirk-curates",
             "collection_image": "shopify://shop_images/vows_in_motion.png",
-            "collection_title": "Bridal Wear"
+            "collection_title": "Indo Western"
           }
         },
         "collection_kUA3MH": {
           "type": "collection",
           "settings": {
-            "collection": "indo-western-dresses",
-            "collection_image": "shopify://shop_images/Designer_Showcase.png",
-            "collection_title": "Indo Western"
+            "collection": "kurta-set-collections",
+            "collection_image": "shopify://shop_images/BKpkU1UIpx_ae901dae-8245-4d42-8e67-20e3d1884de0.png",
+            "collection_title": "Kurta Sets"
           }
         },
         "collection_ctTBpd": {
@@ -161,16 +161,15 @@
           "settings": {
             "collection": "gen-z-meets-heritage",
             "collection_image": "shopify://shop_images/This_image_for_GenZ_circle.png",
-            "collection_title": "Leather Bags"
+            "collection_title": "Bridal Wear"
           }
         },
         "collection_fyfMEN": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "the-artisan-floor",
-            "collection_image": "shopify://shop_images/This_is_for_Studio_Earth.png",
-            "collection_title": "Studio Earth"
+            "collection_image": "shopify://shop_images/gA1Iqvc2gF_1b6b6953-4d1b-4747-8977-75c508bb71cb.png",
+            "collection_title": "Bridal Wear"
           }
         },
         "collection_qdMHYe": {
