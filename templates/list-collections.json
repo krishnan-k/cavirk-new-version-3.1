@@ -46,7 +46,7 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "sweaters",
+            "collection": "all",
             "collection_title": ""
           }
         },
@@ -75,7 +75,6 @@
           "type": "collection",
           "settings": {
             "collection": "best-seller",
-            "collection_image": "shopify://shop_images/coat.jpg",
             "collection_title": ""
           }
         },
@@ -83,7 +82,6 @@
           "type": "collection",
           "settings": {
             "collection": "blazers",
-            "collection_image": "shopify://shop_images/bazzer.jpg",
             "collection_title": ""
           }
         },
@@ -91,7 +89,6 @@
           "type": "collection",
           "settings": {
             "collection": "demin",
-            "collection_image": "shopify://shop_images/Denim_Shirt.jpg",
             "collection_title": ""
           }
         },
@@ -99,7 +96,6 @@
           "type": "collection",
           "settings": {
             "collection": "handbags",
-            "collection_image": "shopify://shop_images/handbag.jpg",
             "collection_title": ""
           }
         },
@@ -107,7 +103,6 @@
           "type": "collection",
           "settings": {
             "collection": "crop-top",
-            "collection_image": "shopify://shop_images/collection-1.jpg",
             "collection_title": ""
           }
         },
@@ -115,7 +110,6 @@
           "type": "collection",
           "settings": {
             "collection": "dress",
-            "collection_image": "shopify://shop_images/collection-2.jpg",
             "collection_title": ""
           }
         },
@@ -123,7 +117,6 @@
           "type": "collection",
           "settings": {
             "collection": "trending",
-            "collection_image": "shopify://shop_images/collection-3.jpg",
             "collection_title": ""
           }
         },
@@ -131,7 +124,6 @@
           "type": "collection",
           "settings": {
             "collection": "shorts-1",
-            "collection_image": "shopify://shop_images/collection-14.jpg",
             "collection_title": ""
           }
         }
