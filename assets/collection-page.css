@@ -223,8 +223,8 @@ filter-sort[selected="selected"] {
   font-weight: var(--heading-weight);
 }
 .collapsible-content > *:not(.swatch-option, .featured-product) {
-  max-height: 23.5rem;
-  overflow: hidden auto;
+  /* max-height: 23.5rem;
+  overflow: hidden auto; */
 }
 .collection-filter.open {
   opacity: 1;

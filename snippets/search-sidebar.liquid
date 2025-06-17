@@ -64,7 +64,7 @@
           class="filter-item{% if enable_filtering and filter_layout == 'drawer' %} px-30{% else %} px-30 px-1025-0{% endif %}"
         >
           <collapsible-block class="collection {% if forloop.first and active_filter contains "active" and filter_layout != 'horizontal' %} active {% endif %} {% if enable_filtering and filter_layout != 'horizontal' and default_filter != "first_open" %} {{ active_filter }} {% endif %} border-bottom block pb-5{% if enable_filtering and filter_layout == 'horizontal' %} relative border-1025-bottom-0 pb-1025-0{% endif %}">
-            <h3 class="collapsible-heading w-full relative my-0{% if enable_filtering and filter_layout != 'horizontal' %} heading-letter-spacing h6 pt-25 pb-20{% else %} heading-style pt-25 pb-20 text-size py-1025-15 px-1025-25 inline-flex gap-10 align-center justify-between border-1025 pointer transition rounded-5{% endif %}">
+            <h3 class="collapsible-heading w-full relative my-0{% if enable_filtering and filter_layout != 'horizontal' %} heading-letter-spacing h6 pt-25 pb-20{% else %} heading-style pt-25 pb-20 text-size py-1025-15 px-1025-25 inline-flex gap-10 align-center justify-between border-1025 pointer transition rounded-5{% endif %}" style="font-family: var(--body-font);font-weight: 600;">
               <span class="inline-flex gap-10 align-center lh-normal">
                 {{- filter.label | escape -}}
                 {% if filter.active_values.size > 0 %}
