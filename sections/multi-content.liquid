@@ -866,8 +866,8 @@
                           {% endif %}
                           {% if block_st.description2 != blank %}
                             <div
-                              class="sec__icon-box-content-des rich__text-m0 fs-custom"
-                              style="--font-size: 15;"
+                              class="sec__icon-box-content-des rich__text-m0 fs-custom w-custom"
+                              style="--font-size: 15;--custom-width: {{ block_st.description_width2 }}px"
                             >
                               {{ block_st.description2 }}
                             </div>
@@ -912,8 +912,8 @@
                           {% endif %}
                           {% if block_st.description3 != blank %}
                             <div
-                              class="sec__icon-box-content-des rich__text-m0 fs-custom"
-                              style="--font-size: 15;"
+                              class="sec__icon-box-content-des rich__text-m0 fs-custom w-custom"
+                              style="--font-size: 15;--custom-width: {{ block_st.description_width3 }}px"
                             >
                               {{ block_st.description3 }}
                             </div>
@@ -958,8 +958,8 @@
                           {% endif %}
                           {% if block_st.description4 != blank %}
                             <div
-                              class="sec__icon-box-content-des rich__text-m0 fs-custom"
-                              style="--font-size: 15;"
+                              class="sec__icon-box-content-des rich__text-m0 fs-custom w-custom"
+                              style="--font-size: 15;--custom-width: {{ block_st.description_width4 }}px"
                             >
                               {{ block_st.description4 }}
                             </div>
@@ -3150,7 +3150,7 @@
           "label": "t:sections.icon_box.settings.description_width.label",
           "default": 150,
           "min": 150,
-          "max": 300,
+          "max": 400,
           "step": 5,
           "unit": "px"
         },
@@ -3186,6 +3186,16 @@
           "default": "<p>Tell about your service.</p>"
         },
         {
+          "type": "range",
+          "id": "description_width2",
+          "label": "t:sections.icon_box.settings.description_width.label",
+          "default": 150,
+          "min": 150,
+          "max": 400,
+          "step": 5,
+          "unit": "px"
+        },
+        {
           "type": "header",
           "content": "t:sections.multi_content.block_settings.header.Content_3"
         },
@@ -3217,6 +3227,16 @@
           "default": "<p>Tell about your service.</p>"
         },
         {
+          "type": "range",
+          "id": "description_width3",
+          "label": "t:sections.icon_box.settings.description_width.label",
+          "default": 150,
+          "min": 150,
+          "max": 400,
+          "step": 5,
+          "unit": "px"
+        },
+        {
           "type": "header",
           "content": "t:sections.multi_content.block_settings.header.content_4"
         },
@@ -3246,6 +3266,16 @@
           "id": "description4",
           "label": "t:sections.all.contents.description.label",
           "default": "<p>Tell about your service.</p>"
+        },
+        {
+          "type": "range",
+          "id": "description_width4",
+          "label": "t:sections.icon_box.settings.description_width.label",
+          "default": 150,
+          "min": 150,
+          "max": 400,
+          "step": 5,
+          "unit": "px"
         },
       ]
     }
