@@ -190,7 +190,7 @@
                       {% endif %}
                       {%- if block_st.description != blank -%}
                         <div
-                          class="sec__content-des rich__text-m0 {% if block_st.des_spacing_bottom > 41 %} mb-big{% elsif block_st.des_spacing_bottom > 30 %} mb-medium {% else %} mb-custom{% endif %}{% if block_st.des_font_size > 24 %} fs-medium {% else %} fs-custom{% endif %} {{ block_st.des_font_weight }} w-custom"
+                          class="sec__content-des rich__text-m0 {% if block_st.des_spacing_bottom > 41 %} mb-big{% elsif block_st.des_spacing_bottom > 30 %} mb-medium {% else %} mb-custom{% endif %}{% if block_st.des_font_size > 24 %} fs-medium {% else %} fs-custom{% endif %} {{ block_st.des_font_weight }} w-custom max-767-w-full"
                           style="--font-size: {{ block_st.des_font_size }};--space-bottom: {{ block_st.des_spacing_bottom }};--custom-width: {{ block_st.description_width_1 }}px;"
                           {{ block.shopify_attributes }}
                         >
