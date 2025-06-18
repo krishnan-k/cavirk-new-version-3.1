@@ -772,6 +772,8 @@
               {%- when 'icon_box' -%}
                 {% assign image = block_st.icon_image %}
                 {% assign image_2 = block_st.icon_image2 %}
+                {% assign image_3 = block_st.icon_image3 %}
+                {% assign image_4 = block_st.icon_image4 %}
                 <motion-element
                   data-motion="fade-up-lg"
                   {% if scroll_animation != 'slide_in' %}
@@ -868,6 +870,52 @@
                               style="--font-size: 15;"
                             >
                               {{ block_st.description2 }}
+                            </div>
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div
+                    class="sec__icon-switch-slide py-20 flex flex-column gap-custom align-center justify-center "
+                  >
+                    <div
+                      class="sec__icon-box-item flex flex-column align-center"
+                    >
+                      {%- if image_3 != blank -%}
+                        <div
+                          class="sec__icon-box-content-icon lh-1{% if image != blank %} w-custom max-w-100 flex-auto mb-20 {% endif %}"
+                          style="--custom-width: {{ block_st.icon_size3 }}px"
+                        >
+                          {%- if image_3 != blank -%}
+                            {%- assign sizes = block_st.icon_size3 | append: 'px' -%}
+                            {%- assign image_alt = image_3.alt | default: 'images' -%}
+                            {% render 'responsive-image',
+                              type: 'other',
+                              image: image_3,
+                              image_alt: image_alt,
+                              sizes: sizes,
+                              custom_widths: '185, 120, 60, 30',
+                              no_animate: true
+                            %}
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                      {% if block_st.heading3 != blank or block_st.description3 != blank %}
+                        <div class="sec__icon-box-content text-center word-break">
+                          {% if block_st.heading3 != blank %}
+                            <h3
+                              class="sec__icon-box-content-heading mt-0 mb-10 fs-18"
+                            >
+                              {{ block_st.heading3 }}
+                            </h3>
+                          {% endif %}
+                          {% if block_st.description3 != blank %}
+                            <div
+                              class="sec__icon-box-content-des rich__text-m0 fs-custom"
+                              style="--font-size: 15;"
+                            >
+                              {{ block_st.description3 }}
                             </div>
                           {% endif %}
                         </div>
