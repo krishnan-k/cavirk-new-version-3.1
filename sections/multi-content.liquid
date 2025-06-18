@@ -821,7 +821,7 @@
                         {% if block_st.description != blank %}
                           <div
                             class="sec__icon-box-content-des rich__text-m0 fs-custom"
-                            style="--font-size: 15;"
+                            style="--font-size: 15;--custom-width: {{ block_st.description_size }}px"
                           >
                             {{ block_st.description }}
                           </div>
@@ -3143,6 +3143,16 @@
           "id": "description",
           "label": "t:sections.all.contents.description.label",
           "default": "<p>Tell about your service.</p>"
+        },
+        {
+          "type": "range",
+          "id": "description_size",
+          "label": "t:sections.icon_box.settings.description_size.label",
+          "default": 32,
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px"
         },
         {
           "type": "header",
