@@ -880,7 +880,7 @@
                     class="sec__icon-switch-slide py-20 flex flex-column gap-custom align-center justify-center "
                   >
                     <div
-                      class="sec__icon-box-item flex flex-column align-center"
+                      class="sec__icon-box-item flex {% if block.settings.flex_direction %} flex-md-row flex-start gap-15 {% else %} flex-column align-center {% endif %}"
                     >
                       {%- if image_3 != blank -%}
                         <div
@@ -926,7 +926,7 @@
                     class="sec__icon-switch-slide py-20 flex flex-column gap-custom align-center justify-center "
                   >
                     <div
-                      class="sec__icon-box-item flex flex-column align-center"
+                      class="sec__icon-box-item flex {% if block.settings.flex_direction %} flex-md-row flex-start gap-15 {% else %} flex-column align-center {% endif %}"
                     >
                       {%- if image_4 != blank -%}
                         <div
