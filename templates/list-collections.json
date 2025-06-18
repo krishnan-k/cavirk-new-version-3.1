@@ -918,6 +918,76 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "multi_content_7RdmUG": {
+      "type": "multi-content",
+      "blocks": {
+        "image_wL4wnh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/unique-tales.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_BdbN66": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "Heritage",
+            "heading": "Your Craft, Our Platform ",
+            "description": "<p>Cavirk is where heritage meets innovation. We are a curated multi-brand digital platform designed to connect passionate creators with buyers who appreciate the charm of unique, handcrafted, and premium products. </p><p>If you create something exquisite, one-of-a-kind, and rooted in craftsmanship, Cavirk is the place to bring it to the world. Whether you're just starting or looking to grow, we offer the tools and support to help your brand flourish. </p>",
+            "description_width_text": 375,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "Start Selling",
+            "first_button_link": "shopify://pages/sell-with-us",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "left",
+            "subheading_font_size": 16,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_wL4wnh",
+        "text_BdbN66"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -932,6 +1002,7 @@
     "multi_content_zWDzJT",
     "multi_content_jkyjcn",
     "multi_content_EHEQBx",
-    "multi_content_nDhpXY"
+    "multi_content_nDhpXY",
+    "multi_content_7RdmUG"
   ]
 }
