@@ -922,6 +922,52 @@
                       {% endif %}
                     </div>
                   </div>
+                  <div
+                    class="sec__icon-switch-slide py-20 flex flex-column gap-custom align-center justify-center "
+                  >
+                    <div
+                      class="sec__icon-box-item flex flex-column align-center"
+                    >
+                      {%- if image_4 != blank -%}
+                        <div
+                          class="sec__icon-box-content-icon lh-1{% if image != blank %} w-custom max-w-100 flex-auto mb-20 {% endif %}"
+                          style="--custom-width: {{ block_st.icon_size4 }}px"
+                        >
+                          {%- if image_4 != blank -%}
+                            {%- assign sizes = block_st.icon_size4 | append: 'px' -%}
+                            {%- assign image_alt = image_4.alt | default: 'images' -%}
+                            {% render 'responsive-image',
+                              type: 'other',
+                              image: image_4,
+                              image_alt: image_alt,
+                              sizes: sizes,
+                              custom_widths: '185, 120, 60, 30',
+                              no_animate: true
+                            %}
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                      {% if block_st.heading4 != blank or block_st.description4 != blank %}
+                        <div class="sec__icon-box-content text-center word-break">
+                          {% if block_st.heading4 != blank %}
+                            <h3
+                              class="sec__icon-box-content-heading mt-0 mb-10 fs-18"
+                            >
+                              {{ block_st.heading4 }}
+                            </h3>
+                          {% endif %}
+                          {% if block_st.description4 != blank %}
+                            <div
+                              class="sec__icon-box-content-des rich__text-m0 fs-custom"
+                              style="--font-size: 15;"
+                            >
+                              {{ block_st.description4 }}
+                            </div>
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
                 </motion-element>
             {%- endcase -%}
           </motion-element>
