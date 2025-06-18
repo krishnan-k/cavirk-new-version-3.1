@@ -752,7 +752,7 @@
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 15,
-            "des_font_size": 14,
+            "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
@@ -813,7 +813,7 @@
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 15,
-            "des_font_size": 14,
+            "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
@@ -870,7 +870,7 @@
             "image_link": "",
             "subheading": "Heritage",
             "heading": "Tradition, reimagined.",
-            "description": "<p>Our idea of luxury is quiet refinement — curated details, rich textures, and timeless simplicity.</p>",
+            "description": "<p>Rooted in culture, our designs revive legacy through a modern lens, season after season. </p>",
             "description_width_text": 375,
             "collection": "",
             "timer": "",
@@ -892,7 +892,7 @@
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 15,
-            "des_font_size": 14,
+            "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
