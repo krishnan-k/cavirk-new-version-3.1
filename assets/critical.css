@@ -2886,6 +2886,14 @@ header-inner .button-localization {
   .max-767-w-full{
     width: 100%;
   }
+  .toolbar.toolbar-products{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    padding: 20px 30px;
+  }
 }
 mobile-navigation-bar {
   transform: translateY(100%);
