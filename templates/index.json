@@ -391,6 +391,7 @@
       "blocks": {
         "video_ynrTVT": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "product": "dive-into-the-ocean",
             "local_video": "shopify://files/videos/Ocean Threads.mp4"
@@ -398,6 +399,7 @@
         },
         "video_pkVB9F": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "product": "ember-eclipse",
             "local_video": "shopify://files/videos/Eclipse in Silk.mp4"
@@ -405,6 +407,7 @@
         },
         "video_6kwxbU": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "product": "evergreen",
             "local_video": "shopify://files/videos/Evergreen Threads.mp4"
@@ -412,6 +415,7 @@
         },
         "video_gaHXPF": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "product": "pink-rose",
             "local_video": "shopify://files/videos/Pink Rose Elegance.mp4"
@@ -419,6 +423,7 @@
         },
         "video_d9xDqn": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "product": "soul-sisters",
             "local_video": "shopify://files/videos/Twins of Tradition.mp4"
@@ -437,6 +442,13 @@
             "product": "golden-vows",
             "local_video": "shopify://files/videos/Golden Vows video (1).mp4"
           }
+        },
+        "video_djLJgH": {
+          "type": "video",
+          "settings": {
+            "product": "vows-in-motion",
+            "local_video": "shopify://files/videos/Vows in Motion video (1).mp4"
+          }
         }
       },
       "block_order": [
@@ -446,7 +458,8 @@
         "video_gaHXPF",
         "video_d9xDqn",
         "video_BAkjKB",
-        "video_KLmzFE"
+        "video_KLmzFE",
+        "video_djLJgH"
       ],
       "settings": {
         "section_width": "fluid_container",
