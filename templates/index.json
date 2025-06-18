@@ -423,6 +423,13 @@
             "product": "soul-sisters",
             "local_video": "shopify://files/videos/Twins of Tradition.mp4"
           }
+        },
+        "video_BAkjKB": {
+          "type": "video",
+          "settings": {
+            "product": "ivory-harmony",
+            "local_video": "shopify://files/videos/Ivory Harmony video (1).mp4"
+          }
         }
       },
       "block_order": [
@@ -430,7 +437,8 @@
         "video_pkVB9F",
         "video_6kwxbU",
         "video_gaHXPF",
-        "video_d9xDqn"
+        "video_d9xDqn",
+        "video_BAkjKB"
       ],
       "settings": {
         "section_width": "fluid_container",
