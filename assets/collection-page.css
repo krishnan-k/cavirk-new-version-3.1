@@ -72,17 +72,17 @@
   .select-custom__content{
     overflow: unset;
   }
-    .toolbar.toolbar-products {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      z-index: 2;
-      background-color: white;
-      padding: 20px 30px;
-      margin-bottom: 0;
-      left: 0;
-      justify-content: space-around;
-    }
+  .toolbar.toolbar-products {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    padding: 20px 30px;
+    margin-bottom: 0;
+    left: 0;
+    justify-content: space-around;
+  }
     .toolbar.toolbar-products .btn-filter{
     width: 150px;
     height: 47px;
@@ -99,7 +99,6 @@
     padding-right: 20px;
     }
   }
-}
 
 :where(.grid-mode) {
   color: #cbcbcb;
