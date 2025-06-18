@@ -430,6 +430,13 @@
             "product": "ivory-harmony",
             "local_video": "shopify://files/videos/Ivory Harmony video (1).mp4"
           }
+        },
+        "video_KLmzFE": {
+          "type": "video",
+          "settings": {
+            "product": "golden-vows",
+            "local_video": "shopify://files/videos/Golden Vows video (1).mp4"
+          }
         }
       },
       "block_order": [
@@ -438,7 +445,8 @@
         "video_6kwxbU",
         "video_gaHXPF",
         "video_d9xDqn",
-        "video_BAkjKB"
+        "video_BAkjKB",
+        "video_KLmzFE"
       ],
       "settings": {
         "section_width": "fluid_container",
