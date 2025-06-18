@@ -83,22 +83,22 @@
     left: 0;
     justify-content: space-around;
   }
-    .toolbar.toolbar-products .btn-filter{
+  .toolbar.toolbar-products .btn-filter{
     width: 150px;
     height: 47px;
-    }
-    .toolbar.toolbar-products .show-type-products{
-      display: none;
-    }
-    .toolbar.toolbar-products :where(.toolbar-left,.toolbar-sorter){
-      width: 100%;
-      justify-content: center;
-     }
-    .toolbar.toolbar-products .toolbar-left{
+  }
+  .toolbar.toolbar-products .show-type-products{
+    display: none;
+  }
+  .toolbar.toolbar-products :where(.toolbar-left,.toolbar-sorter){
+    width: 100%;
+    justify-content: center;
+   }
+  .toolbar.toolbar-products .toolbar-left{
     border-right: 1px solid #0000002e;
     padding-right: 20px;
-    }
   }
+}
 
 :where(.grid-mode) {
   color: #cbcbcb;
