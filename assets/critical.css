@@ -3320,6 +3320,7 @@ nav.mobile {
     padding: 20px 30px;
     margin-bottom: 0;
     left: 0;
+    justify-content: space-around;
   }
   .toolbar.toolbar-products .show-type-products{
     display: none;
