@@ -616,6 +616,68 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "multi_content_zWDzJT": {
+      "type": "multi-content",
+      "blocks": {
+        "image_iHHJUd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cavirk_-about_us_2.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "center"
+          }
+        },
+        "icon_box_CzdKdd": {
+          "type": "icon_box",
+          "settings": {
+            "content_width": "45%",
+            "vertical_align": "center",
+            "box_alignment": "left",
+            "flex_direction": true,
+            "icon_image": "shopify://shop_images/checkbox.png",
+            "icon_size": 25,
+            "heading": "Bridge Tradition with Modernity",
+            "description": "<p>Bringing India’s heritage crafts to the global stage.</p>",
+            "description_width": 350,
+            "icon_image2": "shopify://shop_images/checkbox.png",
+            "icon_size2": 25,
+            "heading2": "Ensure Quality & Transparency",
+            "description2": "<p>Every product is meticulously vetted before reaching customers.</p>",
+            "description_width2": 350,
+            "icon_image3": "shopify://shop_images/checkbox.png",
+            "icon_size3": 25,
+            "heading3": "Enhance Customer Experience",
+            "description3": "<p>Providing a seamless, refined, and enriching shopping journey.</p>",
+            "description_width3": 350,
+            "icon_size4": 25,
+            "heading4": "",
+            "description4": "",
+            "description_width4": 350
+          }
+        }
+      },
+      "block_order": [
+        "image_iHHJUd",
+        "icon_box_CzdKdd"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "Cavirk: A Multi-Store Management Marketplace for Heritage and Luxury ",
+        "description": "<p>Cavirk Marketplace is designed to serve as a distinguished platform for authentic handcrafted goods, ensuring: </p>",
+        "header_size": "small",
+        "header_alignment": "left",
+        "column_gap": 50,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -626,6 +688,7 @@
     "multi_content_EPA9gP",
     "multi_content_izDQLW",
     "icon_box_8NLGXC",
-    "icon_box_mYgJt6"
+    "icon_box_mYgJt6",
+    "multi_content_zWDzJT"
   ]
 }
