@@ -464,6 +464,7 @@
         "icon_box_FD7XJf": {
           "type": "icon_box",
           "settings": {
+            "icon_image": "shopify://shop_images/label.png",
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Handmade Heritage",
@@ -473,6 +474,7 @@
         "icon_box_jwNKPi": {
           "type": "icon_box",
           "settings": {
+            "icon_image": "shopify://shop_images/save-the-world.png",
             "icon_svg": "message_communications",
             "custom_svg": "",
             "heading": "Ethical & Sustainable Practices",
@@ -482,9 +484,20 @@
         "icon_box_KA6L9c": {
           "type": "icon_box",
           "settings": {
+            "icon_image": "shopify://shop_images/diamond.png",
             "icon_svg": "none",
             "custom_svg": "",
             "heading": "Luxury with a Purpose",
+            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>"
+          }
+        },
+        "icon_box_BiHcfp": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/experience.png",
+            "icon_svg": "none",
+            "custom_svg": "",
+            "heading": "Seamless Shopping Experience",
             "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>"
           }
         }
@@ -493,7 +506,8 @@
         "icon_box_yGFgNq",
         "icon_box_FD7XJf",
         "icon_box_jwNKPi",
-        "icon_box_KA6L9c"
+        "icon_box_KA6L9c",
+        "icon_box_BiHcfp"
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
