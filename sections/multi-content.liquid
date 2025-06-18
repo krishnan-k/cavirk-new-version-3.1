@@ -834,7 +834,7 @@
                           style="
                             {%- if scroll_animation != 'none' -%}
                               --animation-order: 1
-                            {% endif %};--custom-width: {{ block_st.description_width2 }}px;
+                            {% endif %};--custom-width: {{ block_st.description_width_1 }}px;
                           "
                         >
                           {{ block_st.description1 }}
@@ -3184,7 +3184,7 @@
         },
         {
         "type": "range",
-        "id": "description_width1",
+        "id": "description_width_1",
         "label": "t:sections.icon_box.settings.description_width.label",
         "default": 250,
         "min": 250,
