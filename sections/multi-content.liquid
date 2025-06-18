@@ -830,11 +830,11 @@
                           {% if scroll_animation != 'slide_in' %}
                             hold
                           {% endif %}
-                          class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0"
+                          class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0 w-custom"
                           style="
                             {%- if scroll_animation != 'none' -%}
                               --animation-order: 1
-                            {% endif %}
+                            {% endif %};--custom-width: {{ block_st.description_width2 }}px;
                           "
                         >
                           {{ block_st.description1 }}
