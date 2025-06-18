@@ -1327,7 +1327,7 @@
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
-            "spacing_bottom": 24
+            "spacing_bottom": 0
           }
         }
       },
