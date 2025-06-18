@@ -810,7 +810,7 @@
                       </div>
                     {% endif %}
                     {% if block_st.heading != blank or block_st.description != blank %}
-                      <div class="sec__icon-box-content text-center word-break">
+                      <div class="sec__icon-box-content text-{{ section_st.header_alignment }} word-break">
                         {% if block_st.heading != blank %}
                           <h3
                             class="sec__icon-box-content-heading mt-0 mb-10 fs-18"
@@ -856,7 +856,7 @@
                         </div>
                       {% endif %}
                       {% if block_st.heading2 != blank or block_st.description2 != blank %}
-                        <div class="sec__icon-box-content text-center word-break">
+                        <div class="sec__icon-box-content text-{{ section_st.header_alignment }} word-break">
                           {% if block_st.heading2 != blank %}
                             <h3
                               class="sec__icon-box-content-heading mt-0 mb-10 fs-18"
@@ -902,7 +902,7 @@
                         </div>
                       {% endif %}
                       {% if block_st.heading3 != blank or block_st.description3 != blank %}
-                        <div class="sec__icon-box-content text-center word-break">
+                        <div class="sec__icon-box-content text-{{ section_st.header_alignment }} word-break">
                           {% if block_st.heading3 != blank %}
                             <h3
                               class="sec__icon-box-content-heading mt-0 mb-10 fs-18"
@@ -948,7 +948,7 @@
                         </div>
                       {% endif %}
                       {% if block_st.heading4 != blank or block_st.description4 != blank %}
-                        <div class="sec__icon-box-content text-center word-break">
+                        <div class="sec__icon-box-content text-{{ section_st.header_alignment }} word-break">
                           {% if block_st.heading4 != blank %}
                             <h3
                               class="sec__icon-box-content-heading mt-0 mb-10 fs-18"
