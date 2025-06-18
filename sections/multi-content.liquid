@@ -821,7 +821,7 @@
                         {% if block_st.description != blank %}
                           <div
                             class="sec__icon-box-content-des rich__text-m0 fs-custom"
-                            style="--font-size: 15;--custom-width: {{ block_st.description_size }}px"
+                            style="--font-size: 15;--custom-width: {{ block_st.description_width }}px"
                           >
                             {{ block_st.description }}
                           </div>
@@ -3146,12 +3146,12 @@
         },
         {
           "type": "range",
-          "id": "description_size",
-          "label": "t:sections.icon_box.settings.description_size.label",
-          "default": 32,
-          "min": 10,
-          "max": 60,
-          "step": 1,
+          "id": "description_width",
+          "label": "t:sections.icon_box.settings.description_width.label",
+          "default": 150,
+          "min": 150,
+          "max": 300,
+          "step": 5,
           "unit": "px"
         },
         {
