@@ -988,6 +988,61 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "icon_box_wYVEpe": {
+      "type": "icon-box",
+      "blocks": {
+        "icon_box_jerDMb": {
+          "type": "icon_box",
+          "settings": {
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Free Shipping",
+            "description": "<p>Enjoy free worldwide shipping and returns, with customs and duties taxes included.</p>"
+          }
+        },
+        "icon_box_ycUYab": {
+          "type": "icon_box",
+          "settings": {
+            "icon_svg": "check_badge",
+            "custom_svg": "",
+            "heading": "Free Returns",
+            "description": "<p>Free returns within 15 days, please make sure the itemsare in undamaged condition.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_jerDMb",
+        "icon_box_ycUYab"
+      ],
+      "name": "t:sections.icon_box.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "type": "default",
+        "column_gap": 30,
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "icon_position": "top",
+        "icon_size": 32,
+        "spacing": 11,
+        "background": "",
+        "enable_background": false,
+        "content_alignment": "center",
+        "heading_font_size": 16,
+        "heading_font_weight": "heading_weight",
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 10,
+        "des_font_size": 14,
+        "des_font_weight": "body_weight",
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -1003,6 +1058,7 @@
     "multi_content_jkyjcn",
     "multi_content_EHEQBx",
     "multi_content_nDhpXY",
-    "multi_content_7RdmUG"
+    "multi_content_7RdmUG",
+    "icon_box_wYVEpe"
   ]
 }
