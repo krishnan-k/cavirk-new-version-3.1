@@ -389,46 +389,6 @@
     "shopable_video_Yq73J7": {
       "type": "shopable-video",
       "blocks": {
-        "video_ynrTVT": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "product": "dive-into-the-ocean",
-            "local_video": "shopify://files/videos/Ocean Threads.mp4"
-          }
-        },
-        "video_pkVB9F": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "product": "ember-eclipse",
-            "local_video": "shopify://files/videos/Eclipse in Silk.mp4"
-          }
-        },
-        "video_6kwxbU": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "product": "evergreen",
-            "local_video": "shopify://files/videos/Evergreen Threads.mp4"
-          }
-        },
-        "video_gaHXPF": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "product": "pink-rose",
-            "local_video": "shopify://files/videos/Pink Rose Elegance.mp4"
-          }
-        },
-        "video_d9xDqn": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "product": "soul-sisters",
-            "local_video": "shopify://files/videos/Twins of Tradition.mp4"
-          }
-        },
         "video_BAkjKB": {
           "type": "video",
           "settings": {
@@ -450,6 +410,13 @@
             "local_video": "shopify://files/videos/Vows in Motion video (1).mp4"
           }
         },
+        "video_tRxLUb": {
+          "type": "video",
+          "settings": {
+            "product": "mystic-magenta-petals",
+            "local_video": "shopify://files/videos/Mystic Magenta Petals video (1).mp4"
+          }
+        },
         "video_iprWEj": {
           "type": "video",
           "settings": {
@@ -459,14 +426,10 @@
         }
       },
       "block_order": [
-        "video_ynrTVT",
-        "video_pkVB9F",
-        "video_6kwxbU",
-        "video_gaHXPF",
-        "video_d9xDqn",
         "video_BAkjKB",
         "video_KLmzFE",
         "video_djLJgH",
+        "video_tRxLUb",
         "video_iprWEj"
       ],
       "settings": {
