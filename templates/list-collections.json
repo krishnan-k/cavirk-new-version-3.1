@@ -657,14 +657,14 @@
         "image_with_text_overlay_LPABgm": {
           "type": "image_with_text_overlay",
           "settings": {
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-10eb57dc-9656-458a-9ad8-c07035d6dbae",
             "content_width": "50%",
             "vertical_align": "center",
             "image": "shopify://shop_images/cavirk_-about_us_2.png",
             "image_link": "",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 21,
             "custom_svg": "",
-            "subheading": "Subheading",
+            "subheading": "",
             "heading": "Our Commitment",
             "description": "<p>Cavirk Marketplace is dedicated to fostering a<strong>culture of trust, authenticity, and excellence</strong>. Our mission is to:<br/><br/>Discover the<strong>timeless elegance of handcrafted luxury</strong>with<strong>Cavirk Marketplace</strong>– where tradition meets innovation, and artisans connect with the world.</p>",
             "first_button_label": "",
@@ -686,7 +686,7 @@
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 10,
-            "des_font_size": 14,
+            "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 10
           }
