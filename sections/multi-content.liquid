@@ -788,7 +788,7 @@
                   "
                 >
                   <div
-                    class="sec__icon-box-item py-20 flex flex-column align-center {% if block.settings.flex_direction %} flex-md-row flex-start gap-15{% endif %}"
+                    class="sec__icon-box-item py-20 flex {% if block.settings.flex_direction %} flex-md-row flex-start gap-15 {% else %} flex-column {% endif %}"
                   >
                     {%- if image != blank -%}
                       <div
