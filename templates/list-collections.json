@@ -1006,8 +1006,8 @@
           "settings": {
             "icon_svg": "check_badge",
             "custom_svg": "",
-            "heading": "Free Returns",
-            "description": "<p>Free returns within 15 days, please make sure the itemsare in undamaged condition.</p>"
+            "heading": "Simple and Seamless",
+            "description": "<p>List, manage, and grow your product offerings with a user-friendly dashboard designed for all tech comfort levels. </p>"
           }
         }
       },
@@ -1021,7 +1021,7 @@
         "color_scheme": "",
         "type": "default",
         "column_gap": 30,
-        "heading": "",
+        "heading": "Why Sell on Cavirk?",
         "description": "",
         "header_size": "medium",
         "header_alignment": "center",
