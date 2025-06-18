@@ -2894,8 +2894,6 @@ header-inner .button-localization {
     background-color: white;
     padding: 20px 30px;
     margin-bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 mobile-navigation-bar {
