@@ -790,11 +790,19 @@
                   {% for block in section.blocks %}
       {%- liquid
         assign block_st = block.settings
+          assign heading1 = section_st.heading
+  assign description1 = section_st.description
+  assign header_size = ''
+  if section_st.header_size == 'small'
+    assign header_size = 'h3'
+  elsif section_st.header_size == 'large'
+    assign header_size = 'h1-size'
+  endif
           -%}
                     {% endfor %}
-                  {%- if heading != blank or description != blank -%}
+                  {%- if heading1 != blank or description1 != blank -%}
       <div class="section__header mb-33 mb-sm-20 text-{{ block_st.header_alignment }}{% if block_st.section_width == 'full_width' %} px-20{% endif %}">
-        {%- if block_st.heading != blank -%}
+        {%- if block_st.heading1 != blank -%}
           <motion-element
             data-motion="fade-up-lg"
             data-motion-delay="50"
@@ -811,11 +819,11 @@
             <h2
               class="section__header-heading heading-letter-spacing {{ header_size  }} mt-0{% if block_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
             >
-              {{ block_st.heading }}
+              {{ block_st.heading1 }}
             </h2>
           </motion-element>
         {% endif %}
-        {%- if block_st.description != blank -%}
+        {%- if block_st.description1 != blank -%}
           <motion-element
             data-motion="fade-up-lg"
             data-motion-delay="150"
@@ -829,7 +837,7 @@
               {% endif %}
             "
           >
-            {{ block_st.description }}
+            {{ block_st.description1 }}
           </motion-element>
         {% endif %}
       </div>
