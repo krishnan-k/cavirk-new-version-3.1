@@ -1052,7 +1052,7 @@
         "icon_box_k4jBdq": {
           "type": "icon_box",
           "settings": {
-            "icon_image": "shopify://shop_images/s1.png",
+            "icon_image": "shopify://shop_images/s3.png",
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Marketing That Works for You ",
@@ -1062,7 +1062,7 @@
         "icon_box_wgigic": {
           "type": "icon_box",
           "settings": {
-            "icon_image": "shopify://shop_images/s2.png",
+            "icon_image": "shopify://shop_images/s4.png",
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Transparent & Secure Payments ",
@@ -1109,7 +1109,7 @@
         "icon_box_EJMpnp": {
           "type": "icon_box",
           "settings": {
-            "icon_image": "shopify://shop_images/s1.png",
+            "icon_image": "shopify://shop_images/s5.png",
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Smart Insights, Better Sales ",
@@ -1119,7 +1119,7 @@
         "icon_box_7mn7AG": {
           "type": "icon_box",
           "settings": {
-            "icon_image": "shopify://shop_images/s2.png",
+            "icon_image": "shopify://shop_images/s6.png",
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Support Every Step of the Way ",
