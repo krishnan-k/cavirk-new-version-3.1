@@ -512,7 +512,7 @@
         "design": "morden",
         "show_image": false,
         "show_verified_buyer": true,
-        "img_position": "top",
+        "img_position": "bottom",
         "image_ratio": "square",
         "custom_ratio": "",
         "img_width": 30,
