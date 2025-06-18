@@ -2880,7 +2880,7 @@ header-inner .button-localization {
   .header__normal-logo {
     width: var(--header-logo-width-mobile);
   }
-  .max-w-full{
+  .max-767-w-full{
     width: 100%;
   }
 }
