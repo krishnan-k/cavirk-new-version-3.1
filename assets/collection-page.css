@@ -45,7 +45,7 @@
     text-transform: var(--btn-text-transform);
     width: 150px;
     justify-content: space-evenly;
-}
+  }
   .select-custom .select-custom__content {
     position: fixed;
     left: 0;
