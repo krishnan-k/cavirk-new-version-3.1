@@ -645,7 +645,7 @@
             "box_alignment": "left",
             "flex_direction": true,
             "heading1": "Our Commitment",
-            "description1": "",
+            "description1": "<p>Cavirk Marketplace is dedicated to fostering a <strong>culture of trust, authenticity, and excellence</strong>. Our mission is to:</p>",
             "header_size1": "medium",
             "header_alignment1": "left",
             "icon_image": "shopify://shop_images/checkbox.png",
