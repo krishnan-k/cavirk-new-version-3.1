@@ -33,6 +33,19 @@
   endif
   assign scroll_animation = settings.scroll_animation
 -%}
+{% for block in section.blocks %}
+  {%- liquid
+    assign block_st = block.settings
+    assign heading1 = block_st.heading
+    assign description1 = block_st.description
+    assign header_size1 = ''
+    if block_st.header_size1 == 'small'
+      assign header_size1 = 'h3'
+    elsif block_st.header_size1 == 'large'
+      assign header_size1 = 'h1-size'
+    endif
+  -%}
+{% endfor %}
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }};{% if column_gap < 31 %}--col-gap: {{ column_gap }}px;{% else %}--col-gap: 15px;--col-gap-desktop: {{  column_gap }}px;{% endif %}
 {%- endcapture -%}
