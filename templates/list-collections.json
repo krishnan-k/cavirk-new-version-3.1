@@ -1019,8 +1019,8 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "fluid_container",
-        "color_scheme": "",
+        "section_width": "stretch_width",
+        "color_scheme": "scheme-7b36d545-db22-4522-b7e3-6022401b54ef",
         "type": "default",
         "column_gap": 30,
         "heading": "Why Sell on Cavirk?",
