@@ -1017,7 +1017,7 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "container",
+        "section_width": "fluid_container",
         "color_scheme": "",
         "type": "default",
         "column_gap": 30,
