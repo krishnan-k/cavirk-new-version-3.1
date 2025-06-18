@@ -787,54 +787,6 @@
                     {% endif %}
                   "
                 >
-                  {% for block in section.blocks %}
-      {%- liquid
-        assign block_st = block.settings
-          -%}
-                    {% endfor %}
-                  {%- if heading != blank or description != blank -%}
-      <div class="section__header mb-33 mb-sm-20 text-{{ block_st.header_alignment }}{% if block_st.section_width == 'full_width' %} px-20{% endif %}">
-        {%- if block_st.heading != blank -%}
-          <motion-element
-            data-motion="fade-up-lg"
-            data-motion-delay="50"
-            {% if scroll_animation != 'slide_in' %}
-              hold
-            {% endif %}
-            class="block  {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %}"
-            style="
-              {%- if scroll_animation != 'none' -%}
-                --animation-order: 0;
-              {% endif %}
-            "
-          >
-            <h2
-              class="section__header-heading heading-letter-spacing {{ header_size  }} mt-0{% if block_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
-            >
-              {{ block_st.heading }}
-            </h2>
-          </motion-element>
-        {% endif %}
-        {%- if block_st.description != blank -%}
-          <motion-element
-            data-motion="fade-up-lg"
-            data-motion-delay="150"
-            {% if scroll_animation != 'slide_in' %}
-              hold
-            {% endif %}
-            class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0"
-            style="
-              {%- if scroll_animation != 'none' -%}
-                --animation-order: 1
-              {% endif %}
-            "
-          >
-            {{ block_st.description }}
-          </motion-element>
-        {% endif %}
-      </div>
-    {% endif %}
-              
                   <div
                     class="sec__icon-box-item py-20 flex {% if block.settings.flex_direction %} flex-md-row flex-start gap-15 align-center justify-center {% else %} flex-column align-center {% endif %}"
                   >
