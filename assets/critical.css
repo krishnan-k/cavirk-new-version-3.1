@@ -2886,15 +2886,6 @@ header-inner .button-localization {
   .max-767-w-full{
     width: 100%;
   }
-  .toolbar.toolbar-products {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: white;
-    padding: 20px 30px;
-    margin-bottom: 0;
-  }
 }
 mobile-navigation-bar {
   transform: translateY(100%);
@@ -3316,5 +3307,18 @@ nav.mobile {
   }
   multi-content .section__block{
     --col-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .toolbar.toolbar-products {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    padding: 20px 30px;
+    margin-bottom: 0;
+    left: 0;
   }
 }
