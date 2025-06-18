@@ -371,7 +371,7 @@
         "description": "<p>Cavirk Marketplace is designed to serve as a distinguished platform for authentic handcrafted goods, ensuring: </p>",
         "header_size": "small",
         "header_alignment": "left",
-        "column_gap": 30,
+        "column_gap": 50,
         "content_background_color": "",
         "equal_height_adjustment": false,
         "carousel_on_mobile": false,
