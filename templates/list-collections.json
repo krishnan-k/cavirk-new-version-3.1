@@ -459,7 +459,8 @@
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Guaranteed Authenticity",
-            "description": "<p>Only <strong>verified, GI-registered, and artisan-certified</strong> products are available.</p>"
+            "description": "<p>Only <strong>verified, GI-registered, and artisan-certified</strong> products are available.</p>",
+            "description_width": 250
           }
         },
         "icon_box_FD7XJf": {
@@ -469,7 +470,8 @@
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Handmade Heritage",
-            "description": "<p>Showcasingcraftsmanship that has been passed down through generations.</p>"
+            "description": "<p>Showcasingcraftsmanship that has been passed down through generations.</p>",
+            "description_width": 250
           }
         },
         "icon_box_jwNKPi": {
@@ -479,7 +481,8 @@
             "icon_svg": "message_communications",
             "custom_svg": "",
             "heading": "Ethical & Sustainable Practices",
-            "description": "<p>Supporting responsible sourcing and fair wages for artisans.</p>"
+            "description": "<p>Supporting responsible sourcing and fair wages for artisans.</p>",
+            "description_width": 250
           }
         },
         "icon_box_KA6L9c": {
@@ -489,7 +492,8 @@
             "icon_svg": "none",
             "custom_svg": "",
             "heading": "Luxury with a Purpose",
-            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>"
+            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>",
+            "description_width": 250
           }
         },
         "icon_box_BiHcfp": {
@@ -499,7 +503,8 @@
             "icon_svg": "none",
             "custom_svg": "",
             "heading": "Seamless Shopping Experience",
-            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>"
+            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>",
+            "description_width": 250
           }
         }
       },
@@ -549,7 +554,8 @@
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Secure Payments",
-            "description": "<p>Partnered with <strong>Razorpay</strong> for protected transactions.</p>"
+            "description": "<p>Partnered with <strong>Razorpay</strong> for protected transactions.</p>",
+            "description_width": 250
           }
         },
         "icon_box_YNRUaP": {
@@ -559,7 +565,8 @@
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Complimentary Shipping",
-            "description": "<p>Orders are dispatched the same day at no additional cost.</p>"
+            "description": "<p>Orders are dispatched the same day at no additional cost.</p>",
+            "description_width": 250
           }
         },
         "icon_box_jEnKaF": {
@@ -569,7 +576,8 @@
             "icon_svg": "message_communications",
             "custom_svg": "",
             "heading": "Hassle-Free Returns & Refunds",
-            "description": "<p>Products with manufacturing defects or incorrect shipments are immediately replaced or refunded.</p>"
+            "description": "<p>Products with manufacturing defects or incorrect shipments are immediately replaced or refunded.</p>",
+            "description_width": 250
           }
         },
         "icon_box_aAimHe": {
@@ -579,7 +587,8 @@
             "icon_svg": "none",
             "custom_svg": "",
             "heading": "Quality Assurance Videos",
-            "description": "<p> A <strong>pre-dispatch quality check video</strong> is shared with customers, ensuring complete transparency before shipping.</p>"
+            "description": "<p> A <strong>pre-dispatch quality check video</strong> is shared with customers, ensuring complete transparency before shipping.</p>",
+            "description_width": 250
           }
         }
       },
@@ -999,7 +1008,8 @@
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Reach a Global Audience",
-            "description": "<p>No shopfront? No problem. Get discovered by thousands of customers from India and around the world. S</p>"
+            "description": "<p>No shopfront? No problem. Get discovered by thousands of customers from India and around the world. S</p>",
+            "description_width": 350
           }
         },
         "icon_box_ycUYab": {
@@ -1009,7 +1019,8 @@
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Simple and Seamless",
-            "description": "<p>List, manage, and grow your product offerings with a user-friendly dashboard designed for all tech comfort levels. </p>"
+            "description": "<p>List, manage, and grow your product offerings with a user-friendly dashboard designed for all tech comfort levels. </p>",
+            "description_width": 350
           }
         }
       },
@@ -1056,7 +1067,8 @@
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Marketing That Works for You ",
-            "description": "<p>We amplify your brand with targeted marketing, social media campaigns, and partner collaborations to boost your visibility. </p>"
+            "description": "<p>We amplify your brand with targeted marketing, social media campaigns, and partner collaborations to boost your visibility. </p>",
+            "description_width": 350
           }
         },
         "icon_box_wgigic": {
@@ -1066,7 +1078,8 @@
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Transparent & Secure Payments ",
-            "description": "<p>No hidden charges. Just a simple, easy-to-understand model with reliable payouts—so you can focus on your craft, not the fine print. </p>"
+            "description": "<p>No hidden charges. Just a simple, easy-to-understand model with reliable payouts—so you can focus on your craft, not the fine print. </p>",
+            "description_width": 350
           }
         }
       },
@@ -1113,7 +1126,8 @@
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Smart Insights, Better Sales ",
-            "description": "<p>Get data-driven tips on pricing, promotions, and inventory management to keep your business sharp. </p>"
+            "description": "<p>Get data-driven tips on pricing, promotions, and inventory management to keep your business sharp. </p>",
+            "description_width": 350
           }
         },
         "icon_box_7mn7AG": {
@@ -1123,7 +1137,8 @@
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Support Every Step of the Way ",
-            "description": "<p>From onboarding videos to photography tips, we provide hands-on support to help you shine. </p>"
+            "description": "<p>From onboarding videos to photography tips, we provide hands-on support to help you shine. </p>",
+            "description_width": 350
           }
         }
       },
