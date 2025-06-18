@@ -1005,6 +1005,7 @@
         "icon_box_ycUYab": {
           "type": "icon_box",
           "settings": {
+            "icon_image": "shopify://shop_images/s2.png",
             "icon_svg": "check_badge",
             "custom_svg": "",
             "heading": "Simple and Seamless",
@@ -1027,7 +1028,7 @@
         "header_size": "medium",
         "header_alignment": "center",
         "icon_position": "top",
-        "icon_size": 60,
+        "icon_size": 100,
         "spacing": 11,
         "background": "",
         "enable_background": false,
