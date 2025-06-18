@@ -339,11 +339,11 @@
           "settings": {
             "content_width": "50%",
             "icon_size": 32,
-            "heading": "This is heading text",
-            "description": "<p>Tell about your service.</p>",
+            "heading": "Authenticity & Transparency",
+            "description": "<p>Every product listed is 100% genuine, handcrafted, and sourced directly from artisans or verified sellers.</p>",
             "icon_size2": 32,
-            "heading2": "This is heading text",
-            "description2": "<p>Tell about your service.</p>"
+            "heading2": "Fair Trade & Ethical Sourcing",
+            "description2": "<p>Our marketplace upholds fair compensation for artisans and promotes sustainable, ethical business practices.</p>"
           }
         }
       },
@@ -363,7 +363,7 @@
         "equal_height_adjustment": false,
         "carousel_on_mobile": false,
         "items_per_row_mobile": 1,
-        "padding_top": 0,
+        "padding_top": 30,
         "padding_bottom": 0,
         "reset_spacing": false
       }
