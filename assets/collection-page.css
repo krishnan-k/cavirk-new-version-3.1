@@ -91,7 +91,8 @@
       display: none;
     }
     .toolbar.toolbar-products :where(.toolbar-left,.toolbar-sorter){
-        width: 100%;
+      width: 100%;
+      justify-content: center;
      }
     .toolbar.toolbar-products .toolbar-left{
     border-right: 1px solid #0000002e;
