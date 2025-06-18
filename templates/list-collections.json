@@ -995,6 +995,7 @@
         "icon_box_jerDMb": {
           "type": "icon_box",
           "settings": {
+            "icon_image": "shopify://shop_images/s1.png",
             "icon_svg": "free_shipping",
             "custom_svg": "",
             "heading": "Reach a Global Audience",
@@ -1026,7 +1027,7 @@
         "header_size": "medium",
         "header_alignment": "center",
         "icon_position": "top",
-        "icon_size": 32,
+        "icon_size": 60,
         "spacing": 11,
         "background": "",
         "enable_background": false,
