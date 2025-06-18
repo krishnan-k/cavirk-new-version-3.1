@@ -622,6 +622,7 @@
       "blocks": {
         "image_with_text_below_RzfDAW": {
           "type": "image_with_text_below",
+          "disabled": true,
           "settings": {
             "color_scheme": "scheme-1",
             "content_width": "50%",
@@ -651,6 +652,43 @@
             "des_font_size": 14,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 20
+          }
+        },
+        "image_with_text_overlay_LPABgm": {
+          "type": "image_with_text_overlay",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image": "shopify://shop_images/cavirk_-about_us_2.png",
+            "image_link": "",
+            "image_overlay_opacity": 0,
+            "custom_svg": "",
+            "subheading": "Subheading",
+            "heading": "Our Commitment",
+            "description": "<p>Cavirk Marketplace is dedicated to fostering a<strong>culture of trust, authenticity, and excellence</strong>. Our mission is to:<br/><br/>Discover the<strong>timeless elegance of handcrafted luxury</strong>with<strong>Cavirk Marketplace</strong>– where tradition meets innovation, and artisans connect with the world.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "content_position": "top-left",
+            "content_padding_block": 30,
+            "content_padding_inline": 30,
+            "content_below_image": false,
+            "custom_svg_spacing_bottom": 10,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 10,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 14,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 10
           }
         },
         "icon_box_CzdKdd": {
@@ -684,6 +722,7 @@
       },
       "block_order": [
         "image_with_text_below_RzfDAW",
+        "image_with_text_overlay_LPABgm",
         "icon_box_CzdKdd"
       ],
       "name": "t:sections.multi_content.name",
