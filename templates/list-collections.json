@@ -338,6 +338,7 @@
           "type": "icon_box",
           "settings": {
             "content_width": "33.3333%",
+            "vertical_align": "center",
             "icon_size": 32,
             "heading": "Authenticity & Transparency",
             "description": "<p>Every product listed is 100% genuine, handcrafted, and sourced directly from artisans or verified sellers.</p>",
