@@ -665,8 +665,8 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
-        "heading": "Cavirk: A Multi-Store Management Marketplace for Heritage and Luxury ",
-        "description": "<p>Cavirk Marketplace is designed to serve as a distinguished platform for authentic handcrafted goods, ensuring: </p>",
+        "heading": "",
+        "description": "",
         "header_size": "small",
         "header_alignment": "left",
         "column_gap": 50,
