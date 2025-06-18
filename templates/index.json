@@ -523,7 +523,7 @@
         "show_arrow": true,
         "carousel_pagination": "show_dots_on_mobile",
         "infinite": false,
-        "autoplay": true,
+        "autoplay": false,
         "autorotate_speed": 6,
         "reveal": false,
         "items_per_row_mobile": 1,
