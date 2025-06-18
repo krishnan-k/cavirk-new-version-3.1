@@ -537,6 +537,85 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "icon_box_mYgJt6": {
+      "type": "icon-box",
+      "blocks": {
+        "icon_box_rf7nJr": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/credit-card_1.png",
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Secure Payments",
+            "description": "<p>Partnered with <strong>Razorpay</strong> for protected transactions.</p>"
+          }
+        },
+        "icon_box_YNRUaP": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/delivery-truck.png",
+            "icon_svg": "check_badge",
+            "custom_svg": "",
+            "heading": "Complimentary Shipping",
+            "description": "<p>Orders are dispatched the same day at no additional cost.</p>"
+          }
+        },
+        "icon_box_jEnKaF": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/refund.png",
+            "icon_svg": "message_communications",
+            "custom_svg": "",
+            "heading": "Hassle-Free Returns & Refunds",
+            "description": "<p>Products with manufacturing defects or incorrect shipments are immediately replaced or refunded.</p>"
+          }
+        },
+        "icon_box_aAimHe": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/quality-assurance.png",
+            "icon_svg": "none",
+            "custom_svg": "",
+            "heading": "Quality Assurance Videos",
+            "description": "<p> A <strong>pre-dispatch quality check video</strong> is shared with customers, ensuring complete transparency before shipping.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_rf7nJr",
+        "icon_box_YNRUaP",
+        "icon_box_jEnKaF",
+        "icon_box_aAimHe"
+      ],
+      "name": "t:sections.icon_box.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "type": "default",
+        "column_gap": 30,
+        "heading": "",
+        "description": "",
+        "header_size": "small",
+        "header_alignment": "center",
+        "icon_position": "top",
+        "icon_size": 40,
+        "spacing": 11,
+        "background": "",
+        "enable_background": false,
+        "content_alignment": "center",
+        "heading_font_size": 18,
+        "heading_font_weight": "heading_weight",
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 10,
+        "des_font_size": 15,
+        "des_font_weight": "body_weight",
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -546,6 +625,7 @@
     "multi_content_4TMyPx",
     "multi_content_EPA9gP",
     "multi_content_izDQLW",
-    "icon_box_8NLGXC"
+    "icon_box_8NLGXC",
+    "icon_box_mYgJt6"
   ]
 }
