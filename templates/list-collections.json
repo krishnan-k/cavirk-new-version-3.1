@@ -1222,6 +1222,79 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "multi_content_VDNATd": {
+      "type": "multi-content",
+      "blocks": {
+        "text_LUHyqD": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Start Selling Today",
+            "description": "<p>At Cavirk, every thread, every carving, every brushstroke has a place and a story.<br/><br/>We celebrate India’s handmade soul—state by state, craft by craft. In a world of mass production, your artistry won’t be lost in the noise. <br/><br/>Here, your work shines. Here, it matters.</p><p>Join us in weaving a marketplace where tradition finds its voice and every handcrafted piece finds its home.<br/></p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "Button label",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
+        "video_qcD8Gq": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_local": "shopify://files/videos/06 (1).mp4",
+            "autoplay": true,
+            "aspect_ratio": "adapt",
+            "custom_ratio": "",
+            "vertical_align": "start",
+            "content_width": "50%"
+          }
+        }
+      },
+      "block_order": [
+        "text_LUHyqD",
+        "video_qcD8Gq"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -1240,6 +1313,7 @@
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
     "icon_box_cH9Fe4",
-    "faq_WwfpMN"
+    "faq_WwfpMN",
+    "multi_content_VDNATd"
   ]
 }
