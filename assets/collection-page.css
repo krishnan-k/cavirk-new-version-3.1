@@ -30,9 +30,22 @@
     flex: unset;
   }
   .toolbar-sorter label {
-    color: var(--color-heading);
     border-color: var(--color-heading);
-  }
+    padding: 10px 10px;
+    font-size: var(--btn-font-size);
+    font-weight: var(--heading-weight);
+    font-family: var(--btn-font);
+    color: var(--btn-color);
+    background: var(--btn-bg);
+    transition: var(--transition);
+    border-radius: var(--btn-radius);
+    line-height: normal;
+    cursor: pointer;
+    letter-spacing: calc(var(--btn-letter-spacing));
+    text-transform: var(--btn-text-transform);
+    width: 150px;
+    justify-content: space-evenly;
+}
   .select-custom .select-custom__content {
     position: fixed;
     left: 0;
