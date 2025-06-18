@@ -1022,11 +1022,23 @@
             "description": "<p>List, manage, and grow your product offerings with a user-friendly dashboard designed for all tech comfort levels. </p>",
             "description_width": 350
           }
+        },
+        "icon_box_8xeCKQ": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/s3.png",
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Marketing That Works for You ",
+            "description": "<p>We amplify your brand with targeted marketing, social media campaigns, and partner collaborations to boost your visibility. </p>",
+            "description_width": 350
+          }
         }
       },
       "block_order": [
         "icon_box_jerDMb",
-        "icon_box_ycUYab"
+        "icon_box_ycUYab",
+        "icon_box_8xeCKQ"
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
@@ -1060,17 +1072,6 @@
     "icon_box_cH9Fe4": {
       "type": "icon-box",
       "blocks": {
-        "icon_box_k4jBdq": {
-          "type": "icon_box",
-          "settings": {
-            "icon_image": "shopify://shop_images/s3.png",
-            "icon_svg": "free_shipping",
-            "custom_svg": "",
-            "heading": "Marketing That Works for You ",
-            "description": "<p>We amplify your brand with targeted marketing, social media campaigns, and partner collaborations to boost your visibility. </p>",
-            "description_width": 350
-          }
-        },
         "icon_box_wgigic": {
           "type": "icon_box",
           "settings": {
@@ -1081,11 +1082,34 @@
             "description": "<p>No hidden charges. Just a simple, easy-to-understand model with reliable payouts—so you can focus on your craft, not the fine print. </p>",
             "description_width": 350
           }
+        },
+        "icon_box_r4akEK": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/s5.png",
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Smart Insights, Better Sales ",
+            "description": "<p>Get data-driven tips on pricing, promotions, and inventory management to keep your business sharp. </p>",
+            "description_width": 350
+          }
+        },
+        "icon_box_nzJEH4": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/s6.png",
+            "icon_svg": "check_badge",
+            "custom_svg": "",
+            "heading": "Support Every Step of the Way ",
+            "description": "<p>From onboarding videos to photography tips, we provide hands-on support to help you shine. </p>",
+            "description_width": 350
+          }
         }
       },
       "block_order": [
-        "icon_box_k4jBdq",
-        "icon_box_wgigic"
+        "icon_box_wgigic",
+        "icon_box_r4akEK",
+        "icon_box_nzJEH4"
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
@@ -1115,65 +1139,6 @@
         "padding_bottom": 30,
         "reset_spacing": true
       }
-    },
-    "icon_box_FWXhRx": {
-      "type": "icon-box",
-      "blocks": {
-        "icon_box_EJMpnp": {
-          "type": "icon_box",
-          "settings": {
-            "icon_image": "shopify://shop_images/s5.png",
-            "icon_svg": "free_shipping",
-            "custom_svg": "",
-            "heading": "Smart Insights, Better Sales ",
-            "description": "<p>Get data-driven tips on pricing, promotions, and inventory management to keep your business sharp. </p>",
-            "description_width": 350
-          }
-        },
-        "icon_box_7mn7AG": {
-          "type": "icon_box",
-          "settings": {
-            "icon_image": "shopify://shop_images/s6.png",
-            "icon_svg": "check_badge",
-            "custom_svg": "",
-            "heading": "Support Every Step of the Way ",
-            "description": "<p>From onboarding videos to photography tips, we provide hands-on support to help you shine. </p>",
-            "description_width": 350
-          }
-        }
-      },
-      "block_order": [
-        "icon_box_EJMpnp",
-        "icon_box_7mn7AG"
-      ],
-      "name": "t:sections.icon_box.name",
-      "settings": {
-        "section_width": "fluid_container",
-        "color_scheme": "default",
-        "type": "default",
-        "column_gap": 30,
-        "heading": "",
-        "description": "",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "icon_position": "top",
-        "icon_size": 100,
-        "spacing": 11,
-        "background": "",
-        "enable_background": false,
-        "content_alignment": "center",
-        "heading_font_size": 20,
-        "heading_font_weight": "heading_weight",
-        "heading_uppercase": false,
-        "heading_spacing_bottom": 10,
-        "des_font_size": 15,
-        "des_font_weight": "body_weight",
-        "carousel_on_mobile": true,
-        "items_per_row_mobile": "1",
-        "padding_top": 0,
-        "padding_bottom": 30,
-        "reset_spacing": false
-      }
     }
   },
   "order": [
@@ -1191,7 +1156,6 @@
     "multi_content_nDhpXY",
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
-    "icon_box_cH9Fe4",
-    "icon_box_FWXhRx"
+    "icon_box_cH9Fe4"
   ]
 }
