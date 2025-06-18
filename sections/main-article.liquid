@@ -154,6 +154,23 @@
                         </span>
                       </a>
                     </li>
+                    <li class="list-social__item lh-1">
+                      <a
+                        class="w-40 h-40 inline-flex content-center link list-social__link tooltip relative btn-sharing pointer"
+                        role="link"
+                        aria-label="share"
+                        data-name="youtube"
+                        data-social='https://www.youtube.com/share?url={{ canonical_url }}&p[images][0]={{ article.image | image_url: width: 480, height: 480 }}", "sharer", "toolbar=0,status=0,width=660,height=445'
+                      >
+                        <svg width="40" height="40" fill="none">
+                          <circle cx="20" cy="20" r="19.5" stroke="#EBEBEB"/>
+                          <path fill="#FF0000" d="M26.6 15.2c-.2-.8-.8-1.4-1.6-1.6C23.8 13 20 13 20 13s-3.8 0-5 .6c-.8.2-1.4.8-1.6 1.6-.6 1.2-.6 3.8-.6 3.8s0 2.6.6 3.8c.2.8.8 1.4 1.6 1.6 1.2.6 5 .6 5 .6s3.8 0 5-.6c.8-.2 1.4-.8 1.6-1.6.6-1.2.6-3.8.6-3.8s0-2.6-.6-3.8Zm-8.6 6V16l4 2.6-4 2.6Z"/>
+                        </svg>
+                        <span class="tooltip-content invisible rounded-3 absolute pointer-none">
+                          {{- 'general.social.links.youtube' | t -}}
+                        </span>
+                      </a>
+                    </li>
                   </ul>
                 </social-share>
               {% endif %}
@@ -252,7 +269,7 @@
                       data-motion-delay="150"
                       class="swiper-pagination  flex flex-wrap  {% if scroll_animation == 'slide_in' %} slide_in scroll-trigger {% endif %}   px-15 lh-1 bottom-30 {% if carousel_pagination == 'show_dots_on_mobile' %} hidden-md{% endif %} justify-content-center{% if section_st.content_below_image %} absolute-md-impo{% endif %}"
                       style="--swiper-pagination-bottom: 3rem;--swiper-pagination-position: static;z-index: 2"
-                    >   
+                    >
                     </motion-element>
                   </slide-section>
                 </div>
