@@ -792,11 +792,11 @@
         assign block_st = block.settings
           assign heading1 = section_st.heading
   assign description1 = section_st.description
-  assign header_size = ''
-  if section_st.header_size == 'small'
-    assign header_size = 'h3'
-  elsif section_st.header_size == 'large'
-    assign header_size = 'h1-size'
+  assign header_size1 = ''
+  if section_st.header_size1 == 'small'
+    assign header_size1 = 'h3'
+  elsif section_st.header_size1 == 'large'
+    assign header_size1 = 'h1-size'
   endif
           -%}
                     {% endfor %}
@@ -817,7 +817,7 @@
             "
           >
             <h2
-              class="section__header-heading heading-letter-spacing {{ header_size  }} mt-0{% if block_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
+              class="section__header-heading heading-letter-spacing {{ header_size1  }} mt-0{% if block_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
             >
               {{ block_st.heading1 }}
             </h2>
