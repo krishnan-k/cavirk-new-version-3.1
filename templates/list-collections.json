@@ -170,7 +170,7 @@
           "settings": {
             "image": "shopify://shop_images/cavirk-founders.jpg",
             "image_link": "",
-            "content_width": "40%",
+            "content_width": "45%",
             "vertical_align": "center"
           }
         },
@@ -178,7 +178,7 @@
           "type": "text",
           "settings": {
             "color_scheme": "scheme-1",
-            "content_width": "40%",
+            "content_width": "50%",
             "vertical_align": "center",
             "image_link": "",
             "subheading": "",
