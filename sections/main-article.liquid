@@ -131,7 +131,7 @@
                         data-social='https://www.facebook.com/sharer/sharer.php?u={{ canonical_url }}&p[images][0]={{ article.image | image_url: width: 480, height: 480 }}", "sharer", "toolbar=0,status=0,width=660,height=445'
                       >
                         <svg width="40" height="40" fill="none">
-                          <circle cx="20" cy="20" r="19.5" stroke="#EBEBEB"/><path fill="#444" d="M18.333 16.667V18H17v2h1.333v6H21v-6h1.773L23 18h-2v-1.167c0-.54.053-.826.887-.826H23V14h-1.787c-2.133 0-2.88 1-2.88 2.667Z"/>
+                          <circle cx="20" cy="20" r="19.5" stroke="currentColor"/><path fill="#444" d="M18.333 16.667V18H17v2h1.333v6H21v-6h1.773L23 18h-2v-1.167c0-.54.053-.826.887-.826H23V14h-1.787c-2.133 0-2.88 1-2.88 2.667Z"/>
                         </svg>
                         <span class="tooltip-content invisible rounded-3 absolute pointer-none">
                           {{- 'blogs.article.sharing.facebook' | t -}}
@@ -147,7 +147,7 @@
                         data-social='https://instagram.com/intent/tweet?text={{ article.title | truncate: 30 | url_param_escape }} {{ canonical_url }}", "sharertwt", "toolbar=0,status=0,width=640,height=445'
                       >
                         <svg width="40" height="40" fill="none">
-                          <circle cx="20" cy="20" r="19.5" stroke="#EBEBEB"/><path fill="#444" d="M23.6 14h-7.2a2.4 2.4 0 0 0-2.4 2.4v7.2a2.4 2.4 0 0 0 2.4 2.4h7.2a2.4 2.4 0 0 0 2.4-2.4v-7.2a2.4 2.4 0 0 0-2.4-2.4Zm-1.2 1.8h1.8v1.8h-1.8v-1.8ZM20 17.6a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8Zm4.8 6a1.2 1.2 0 0 1-1.2 1.2h-7.2a1.2 1.2 0 0 1-1.2-1.2v-4.2h1.26a3.6 3.6 0 1 0 7.08 0h1.26v4.2Z"/>
+                          <circle cx="20" cy="20" r="19.5" stroke="currentColor"/><path fill="#444" d="M23.6 14h-7.2a2.4 2.4 0 0 0-2.4 2.4v7.2a2.4 2.4 0 0 0 2.4 2.4h7.2a2.4 2.4 0 0 0 2.4-2.4v-7.2a2.4 2.4 0 0 0-2.4-2.4Zm-1.2 1.8h1.8v1.8h-1.8v-1.8ZM20 17.6a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8Zm4.8 6a1.2 1.2 0 0 1-1.2 1.2h-7.2a1.2 1.2 0 0 1-1.2-1.2v-4.2h1.26a3.6 3.6 0 1 0 7.08 0h1.26v4.2Z"/>
                         </svg>
                         <span class="tooltip-content invisible rounded-3 absolute pointer-none">
                           {{- 'general.social.links.instagram' | t -}}
@@ -160,7 +160,6 @@
                         role="link"
                         aria-label="youtube"
                         data-name="youtube"
-
                         data-social='https://www.youtube.com/@Cavirk?u={{ canonical_url }}&p[images][0]={{ article.image | image_url: width: 480, height: 480 }}", "sharer", "toolbar=0,status=0,width=660,height=445'
                         target="_blank"
                         rel="noopener"
