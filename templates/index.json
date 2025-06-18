@@ -480,6 +480,7 @@
         "testimonials_items_M8Nm79": {
           "type": "testimonials_items",
           "settings": {
+            "author_image": "shopify://shop_images/s5.png",
             "author_rating": 5,
             "author_text": "<p>The saree and the shawl are very pretty. Loved both of them.</p>",
             "select_product": "olive-weave",
