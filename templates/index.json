@@ -449,6 +449,13 @@
             "product": "vows-in-motion",
             "local_video": "shopify://files/videos/Vows in Motion video (1).mp4"
           }
+        },
+        "video_iprWEj": {
+          "type": "video",
+          "settings": {
+            "product": "floral-harmony-in-tangerine",
+            "local_video": "shopify://files/videos/Floral Harmony in Tangerine video (1).mp4"
+          }
         }
       },
       "block_order": [
@@ -459,7 +466,8 @@
         "video_d9xDqn",
         "video_BAkjKB",
         "video_KLmzFE",
-        "video_djLJgH"
+        "video_djLJgH",
+        "video_iprWEj"
       ],
       "settings": {
         "section_width": "fluid_container",
