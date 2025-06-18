@@ -3321,4 +3321,7 @@ nav.mobile {
     margin-bottom: 0;
     left: 0;
   }
+  .toolbar.toolbar-products .show-type-products{
+    display: none;
+  }
 }
