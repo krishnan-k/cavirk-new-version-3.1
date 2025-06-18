@@ -3669,7 +3669,8 @@
         },
         "header": {
           "Content_1": "Content 1",
-          "Content_2": "Content 2"
+          "Content_2": "Content 2",
+          "Content_3": "Content 3"
         },
         "label": "Block setting",
         "vertical_align": {
