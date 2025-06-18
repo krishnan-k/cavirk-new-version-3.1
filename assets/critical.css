@@ -3309,20 +3309,3 @@ nav.mobile {
     --col-width: 100% !important;
   }
 }
-
-@media screen and (max-width: 575px){
-  .toolbar.toolbar-products {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: white;
-    padding: 20px 30px;
-    margin-bottom: 0;
-    left: 0;
-    justify-content: space-around;
-  }
-  .toolbar.toolbar-products .show-type-products{
-    display: none;
-  }
-}
