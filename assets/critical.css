@@ -2887,7 +2887,7 @@ header-inner .button-localization {
     width: 100%;
   }
   .toolbar.toolbar-products{
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 9999;
