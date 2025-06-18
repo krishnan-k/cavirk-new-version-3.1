@@ -345,22 +345,22 @@
             "icon_size": 25,
             "heading": "Authenticity & Transparency",
             "description": "<p>Every product listed is 100% genuine, handcrafted, and sourced directly from artisans or verified sellers.</p>",
-            "description_width": 250,
+            "description_width": 300,
             "icon_image2": "shopify://shop_images/checkbox.png",
             "icon_size2": 25,
             "heading2": "Fair Trade & Ethical Sourcing",
             "description2": "<p>Our marketplace upholds fair compensation for artisans and promotes sustainable, ethical business practices.</p>",
-            "description_width2": 250,
+            "description_width2": 300,
             "icon_image3": "shopify://shop_images/checkbox.png",
             "icon_size3": 25,
             "heading3": "Artisan Empowerment",
             "description3": "<p>Providing direct access to a global market, ensuring artisans receive recognition and financial security for their craft.</p>",
-            "description_width3": 250,
+            "description_width3": 300,
             "icon_image4": "shopify://shop_images/checkbox.png",
             "icon_size4": 25,
             "heading4": "Exclusivity & Excellence",
             "description4": "<p>Each product embodies meticulous craftsmanship, blending traditional artistry with modern elegance.</p>",
-            "description_width4": 250
+            "description_width4": 300
           }
         }
       },
