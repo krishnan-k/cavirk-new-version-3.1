@@ -517,7 +517,7 @@
         "column_gap": 30,
         "heading": "Why Choose Cavirk? ",
         "description": "",
-        "header_size": "medium",
+        "header_size": "small",
         "header_alignment": "center",
         "icon_position": "top",
         "icon_size": 40,
