@@ -230,11 +230,103 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "multi_content_4TMyPx": {
+      "type": "multi-content",
+      "blocks": {
+        "image_with_text_below_fG4k3c": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "start",
+            "image": "shopify://shop_images/about-us-a-featherlight.jpg",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Cav",
+            "description": "<p><strong>“Cav”</strong>, inspired by<strong>“Caviar”</strong>, represents luxury, exclusivity, and refinement.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 25,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 15,
+            "des_font_size": 14,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 20
+          }
+        },
+        "image_with_text_below_XDiiUg": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "start",
+            "image": "shopify://shop_images/about-us-art-of-hub.jpg",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Virk",
+            "description": "<p><strong>“Virk”</strong>, meaning<strong>“people with open minds and open hearts”</strong>, signifies our commitment to inclusivity and craftsmanship.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 25,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 15,
+            "des_font_size": 14,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_below_fG4k3c",
+        "image_with_text_below_XDiiUg"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
     "heading",
     "main",
-    "multi_content_AHdcCj"
+    "multi_content_AHdcCj",
+    "multi_content_4TMyPx"
   ]
 }
