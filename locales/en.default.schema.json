@@ -3698,7 +3698,7 @@
         "flex_direction": {
           "label": "Icon direction"
         },
-        "description_size": {
+        "description_width": {
           "label": "Description width"
         }
       }
