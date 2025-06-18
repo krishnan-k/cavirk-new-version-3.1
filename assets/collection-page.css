@@ -30,7 +30,7 @@
     flex: unset;
   }
   .toolbar-sorter label {
-    border-color: var(--color-heading);
+    border-color: var(--border-color-base);
     padding: 10px 10px;
     font-size: var(--btn-font-size);
     font-weight: var(--heading-weight);
@@ -89,6 +89,18 @@
   }
   .toolbar.toolbar-products .show-type-products{
     display: none;
+  }
+  .toolbar.toolbar-products .toolbar-left{
+    position: relative;
+  }
+  .toolbar.toolbar-products .toolbar-left::after{
+     content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #0000002e;
+    right: -30px; 
+    }
   }
 }
 
