@@ -127,23 +127,6 @@
                         class="w-40 h-40 inline-flex content-center link list-social__link tooltip relative btn-sharing pointer"
                         role="link"
                         aria-label="share"
-                        data-name="twitter"
-                        data-social='https://twitter.com/intent/tweet?text={{ article.title | truncate: 30 | url_param_escape }} {{ canonical_url }}", "sharertwt", "toolbar=0,status=0,width=640,height=445'
-                      >
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="20" cy="20" r="19.5" fill="white" stroke="#EBEBEB"></circle>
-                          <path d="M25.6699 15.1753C25.1855 15.4746 24.656 15.6861 24.1039 15.801C23.6347 15.2878 22.9839 14.9982 22.3039 15.0001C20.9645 14.9896 19.8669 16.1062 19.8439 17.5028C19.8445 17.6967 19.8666 17.8899 19.9099 18.0785C17.9372 17.9814 16.0949 17.023 14.8339 15.4381C14.6182 15.8171 14.5023 16.2488 14.4979 16.6895C14.498 17.5392 14.9115 18.3309 15.596 18.7918C15.2051 18.7786 14.8227 18.6692 14.4799 18.4727C14.4799 18.4727 14.4799 18.4727 14.4799 18.504C14.476 19.7244 15.3048 20.7753 16.454 21.0068C16.0917 21.1075 15.7124 21.1224 15.344 21.0506C15.6753 22.0844 16.5968 22.787 17.642 22.8026C16.7719 23.5081 15.7021 23.8932 14.6 23.8975C14.3995 23.8973 14.1991 23.8848 14 23.86C15.1291 24.6048 16.4379 24.9998 17.774 24.9988C21.5841 25.0714 24.7292 21.9092 24.7989 17.9359C24.7996 17.8938 24.8 17.8517 24.8 17.8095C24.8 17.701 24.8 17.5926 24.8 17.4841C25.2702 17.1247 25.6764 16.6821 26 16.1764C25.5496 16.3821 25.0724 16.517 24.584 16.5769C25.0976 16.2633 25.4838 15.7649 25.6699 15.1753Z" fill="#111111"></path>
-                        </svg>
-                        <span class="tooltip-content invisible rounded-3 absolute pointer-none">
-                          {{- 'blogs.article.sharing.twitter' | t -}}
-                        </span>
-                      </a>
-                    </li>
-                    <li class="list-social__item lh-1">
-                      <a
-                        class="w-40 h-40 inline-flex content-center link list-social__link tooltip relative btn-sharing pointer"
-                        role="link"
-                        aria-label="share"
                         data-name="facebook"
                         data-social='https://www.facebook.com/sharer/sharer.php?u={{ canonical_url }}&p[images][0]={{ article.image | image_url: width: 480, height: 480 }}", "sharer", "toolbar=0,status=0,width=660,height=445'
                       >
@@ -160,15 +143,14 @@
                         class="w-40 h-40 inline-flex content-center link list-social__link tooltip relative btn-sharing pointer"
                         role="link"
                         aria-label="share"
-                        data-name="pinterest"
-                        data-social='http://pinterest.com/pin/create/button/?url={{ canonical_url }}&amp;media={{ article.image | image_url: width: 480, height: 480 }}", "sharerpinterest", "toolbar=0,status=0,width=660,height=445'
+                        data-name="youtube"
+                        data-social='https://youtube/intent/tweet?text={{ article.title | truncate: 30 | url_param_escape }} {{ canonical_url }}", "sharertwt", "toolbar=0,status=0,width=640,height=445'
                       >
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="19.5" stroke="#EBEBEB"/>
-                          <path d="M20.1674 14C16.7934 14.0005 15 16.108 15 18.4061C15 19.4716 15.6108 20.8011 16.5888 21.2226C16.8678 21.3451 16.8309 21.1956 17.0709 20.3006C17.0899 20.2261 17.0801 20.1616 17.0186 20.0921C15.6205 18.5156 16.7457 15.2745 19.9679 15.2745C24.6313 15.2745 23.7599 21.5656 20.7793 21.5656C20.011 21.5656 19.4387 20.9776 19.6197 20.2501C19.8392 19.3836 20.269 18.4521 20.269 17.8276C20.269 16.2535 17.8637 16.487 17.8637 18.5726C17.8637 19.2171 18.0976 19.6521 18.0976 19.6521C18.0976 19.6521 17.3237 22.7001 17.1801 23.2696C16.937 24.2336 17.2129 25.7942 17.237 25.9287C17.2519 26.0027 17.337 26.0262 17.3847 25.9652C17.4612 25.8677 18.3966 24.5667 18.6586 23.6261C18.754 23.2836 19.1453 21.8936 19.1453 21.8936C19.4033 22.3476 20.1469 22.7276 20.9393 22.7276C23.2963 22.7276 25 20.7076 25 18.2011C24.9918 15.798 22.8825 14 20.1674 14Z" fill="#444"/>
+                        <svg width="40" height="40" fill="none">
+                          <circle cx="20" cy="20" r="19.5" stroke="#EBEBEB"/><path fill="#444" d="M23.6 14h-7.2a2.4 2.4 0 0 0-2.4 2.4v7.2a2.4 2.4 0 0 0 2.4 2.4h7.2a2.4 2.4 0 0 0 2.4-2.4v-7.2a2.4 2.4 0 0 0-2.4-2.4Zm-1.2 1.8h1.8v1.8h-1.8v-1.8ZM20 17.6a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8Zm4.8 6a1.2 1.2 0 0 1-1.2 1.2h-7.2a1.2 1.2 0 0 1-1.2-1.2v-4.2h1.26a3.6 3.6 0 1 0 7.08 0h1.26v4.2Z"/>
                         </svg>
                         <span class="tooltip-content invisible rounded-3 absolute pointer-none">
-                          {{- 'blogs.article.sharing.pinterest' | t -}}
+                          {{- 'general.social.links.youtube' | t -}}
                         </span>
                       </a>
                     </li>
