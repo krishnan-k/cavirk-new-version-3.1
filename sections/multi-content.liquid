@@ -33,19 +33,6 @@
   endif
   assign scroll_animation = settings.scroll_animation
 -%}
-{% for block in section.blocks %}
-  {%- liquid
-    assign block_st = block.settings
-    assign heading1 = block_st.heading
-    assign description1 = block_st.description
-    assign header_size1 = ''
-    if block_st.header_size1 == 'small'
-      assign header_size1 = 'h3'
-    elsif block_st.header_size1 == 'large'
-      assign header_size1 = 'h1-size'
-    endif
-  -%}
-{% endfor %}
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }};{% if column_gap < 31 %}--col-gap: {{ column_gap }}px;{% else %}--col-gap: 15px;--col-gap-desktop: {{  column_gap }}px;{% endif %}
 {%- endcapture -%}
@@ -800,48 +787,6 @@
                     {% endif %}
                   "
                 >
-                  {%- if heading1 != blank or description1 != blank -%}
-                    <div class="section__header mb-33 mb-sm-20 text-{{ block_st.header_alignment1 }}{% if section_st.section_width == 'full_width' %} px-20{% endif %}">
-                      {%- if block_st.heading1 != blank -%}
-                        <motion-element
-                          data-motion="fade-up-lg"
-                          data-motion-delay="50"
-                          {% if scroll_animation != 'slide_in' %}
-                            hold
-                          {% endif %}
-                          class="block  {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %}"
-                          style="
-                            {%- if scroll_animation != 'none' -%}
-                              --animation-order: 0;
-                            {% endif %}
-                          "
-                        >
-                          <h2
-                            class="section__header-heading heading-letter-spacing {{ header_size1  }} mt-0{% if block_st.description1 != blank %} mb-10{% else %} mb-0{% endif %}"
-                          >
-                            {{ block_st.heading1 }}
-                          </h2>
-                        </motion-element>
-                      {% endif %}
-                      {%- if block_st.description1 != blank -%}
-                        <motion-element
-                          data-motion="fade-up-lg"
-                          data-motion-delay="150"
-                          {% if scroll_animation != 'slide_in' %}
-                            hold
-                          {% endif %}
-                          class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0 w-custom"
-                          style="
-                            {%- if scroll_animation != 'none' -%}
-                              --animation-order: 1
-                            {% endif %};--custom-width: {{ block_st.description_width_1 }}px;
-                          "
-                        >
-                          {{ block_st.description1 }}
-                        </motion-element>
-                      {% endif %}
-                    </div>
-                  {% endif %}
                   <div
                     class="sec__icon-box-item py-20 flex {% if block.settings.flex_direction %} flex-md-row flex-start gap-15 align-center justify-center {% else %} flex-column align-center {% endif %}"
                   >
@@ -3168,70 +3113,6 @@
           "id": "flex_direction",
           "label": "t:sections.multi_content.block_settings.flex_direction.label"
         },
-        {
-        "type": "header",
-        "content": "t:sections.all.section_header.label"
-        },
-        {
-        "type": "text",
-        "id": "heading1",
-        "label": "t:sections.all.section_header.heading.label"
-        },
-        {
-        "type": "richtext",
-        "id": "description1",
-        "label": "t:sections.all.section_header.description.label"
-        },
-        {
-        "type": "range",
-        "id": "description_width_1",
-        "label": "t:sections.icon_box.settings.description_width.label",
-        "default": 250,
-        "min": 250,
-        "max": 500,
-        "step": 5,
-        "unit": "px"
-        },
-      {
-      "type": "select",
-      "id": "header_size1",
-      "label": "t:sections.all.section_header.header_size.label",
-      "default": "medium",
-      "options": [
-        {
-          "value": "small",
-          "label": "t:sections.all.section_header.header_size.small.label"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.all.section_header.header_size.medium.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.all.section_header.header_size.large.label"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "header_alignment1",
-      "label": "t:sections.all.section_header.alignment.label",
-      "default": "center",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.all.content_settings.content_alignment.left.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.all.content_settings.content_alignment.center.label"
-        },
-        {
-          "value": "right",
-          "label": "t:sections.all.content_settings.content_alignment.right.label"
-        }
-      ]
-    },
         {
           "type": "header",
           "content": "t:sections.multi_content.block_settings.header.Content_1"
