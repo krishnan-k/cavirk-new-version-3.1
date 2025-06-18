@@ -3694,6 +3694,9 @@
         },
         "text": {
           "label": "Text"
+        },
+        "flex_direction": {
+          "label": "Icon direction"
         }
       }
     },
