@@ -344,7 +344,13 @@
             "description": "<p>Every product listed is 100% genuine, handcrafted, and sourced directly from artisans or verified sellers.</p>",
             "icon_size2": 32,
             "heading2": "Fair Trade & Ethical Sourcing",
-            "description2": "<p>Our marketplace upholds fair compensation for artisans and promotes sustainable, ethical business practices.</p>"
+            "description2": "<p>Our marketplace upholds fair compensation for artisans and promotes sustainable, ethical business practices.</p>",
+            "icon_size3": 32,
+            "heading3": "Artisan Empowerment",
+            "description3": "<p>Providing direct access to a global market, ensuring artisans receive recognition and financial security for their craft.</p>",
+            "icon_size4": 32,
+            "heading4": "Exclusivity & Excellence",
+            "description4": "<p>Each product embodies meticulous craftsmanship, blending traditional artistry with modern elegance.</p>"
           }
         }
       },
