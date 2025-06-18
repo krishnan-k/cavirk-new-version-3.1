@@ -380,6 +380,65 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "multi_content_izDQLW": {
+      "type": "multi-content",
+      "blocks": {
+        "icon_box_hPWW9P": {
+          "type": "icon_box",
+          "settings": {
+            "content_width": "50%",
+            "vertical_align": "center",
+            "box_alignment": "left",
+            "flex_direction": true,
+            "icon_image": "shopify://shop_images/checkbox.png",
+            "icon_size": 25,
+            "heading": "Authenticity & Transparency",
+            "description": "<p>Every product listed is 100% genuine, handcrafted, and sourced directly from artisans or verified sellers.</p>",
+            "icon_image2": "shopify://shop_images/checkbox.png",
+            "icon_size2": 25,
+            "heading2": "Fair Trade & Ethical Sourcing",
+            "description2": "<p>Our marketplace upholds fair compensation for artisans and promotes sustainable, ethical business practices.</p>",
+            "icon_image3": "shopify://shop_images/checkbox.png",
+            "icon_size3": 25,
+            "heading3": "Artisan Empowerment",
+            "description3": "<p>Providing direct access to a global market, ensuring artisans receive recognition and financial security for their craft.</p>",
+            "icon_image4": "shopify://shop_images/checkbox.png",
+            "icon_size4": 25,
+            "heading4": "Exclusivity & Excellence",
+            "description4": "<p>Each product embodies meticulous craftsmanship, blending traditional artistry with modern elegance.</p>"
+          }
+        },
+        "image_xHLKDV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cavirk_-about_us_1.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_hPWW9P",
+        "image_xHLKDV"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "Cavirk: A Multi-Store Management Marketplace for Heritage and Luxury ",
+        "description": "<p>Cavirk Marketplace is designed to serve as a distinguished platform for authentic handcrafted goods, ensuring: </p>",
+        "header_size": "small",
+        "header_alignment": "left",
+        "column_gap": 50,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -387,6 +446,7 @@
     "main",
     "multi_content_AHdcCj",
     "multi_content_4TMyPx",
-    "multi_content_EPA9gP"
+    "multi_content_EPA9gP",
+    "multi_content_izDQLW"
   ]
 }
