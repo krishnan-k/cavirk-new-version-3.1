@@ -3553,6 +3553,9 @@
         },
         "icon_size": {
           "label": "Icon size"
+        },
+        "description_width": {
+          "label": "Description width"
         }
       }
     },
@@ -3698,9 +3701,6 @@
         "flex_direction": {
           "label": "Icon direction"
         },
-        "description_width": {
-          "label": "Description width"
-        }
       }
     },
     "custom-colors": {
