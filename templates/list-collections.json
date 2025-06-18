@@ -1099,7 +1099,64 @@
         "carousel_on_mobile": false,
         "items_per_row_mobile": "1",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 30,
+        "reset_spacing": true
+      }
+    },
+    "icon_box_FWXhRx": {
+      "type": "icon-box",
+      "blocks": {
+        "icon_box_EJMpnp": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/s1.png",
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Smart Insights, Better Sales ",
+            "description": "<p>Get data-driven tips on pricing, promotions, and inventory management to keep your business sharp. </p>"
+          }
+        },
+        "icon_box_7mn7AG": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/s2.png",
+            "icon_svg": "check_badge",
+            "custom_svg": "",
+            "heading": "Support Every Step of the Way ",
+            "description": "<p>From onboarding videos to photography tips, we provide hands-on support to help you shine. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_EJMpnp",
+        "icon_box_7mn7AG"
+      ],
+      "name": "t:sections.icon_box.name",
+      "settings": {
+        "section_width": "stretch_width",
+        "color_scheme": "scheme-7b36d545-db22-4522-b7e3-6022401b54ef",
+        "type": "default",
+        "column_gap": 30,
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "icon_position": "top",
+        "icon_size": 100,
+        "spacing": 11,
+        "background": "",
+        "enable_background": false,
+        "content_alignment": "center",
+        "heading_font_size": 16,
+        "heading_font_weight": "heading_weight",
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 10,
+        "des_font_size": 14,
+        "des_font_weight": "body_weight",
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 30,
         "reset_spacing": false
       }
     }
@@ -1119,6 +1176,7 @@
     "multi_content_nDhpXY",
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
-    "icon_box_cH9Fe4"
+    "icon_box_cH9Fe4",
+    "icon_box_FWXhRx"
   ]
 }
