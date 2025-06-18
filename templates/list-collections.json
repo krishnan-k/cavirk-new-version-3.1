@@ -673,7 +673,7 @@
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
-            "content_alignment": "center",
+            "content_alignment": "left",
             "content_position": "middle-center",
             "content_padding_block": 30,
             "content_padding_inline": 30,
