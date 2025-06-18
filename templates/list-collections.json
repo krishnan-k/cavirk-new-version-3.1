@@ -1139,6 +1139,89 @@
         "padding_bottom": 30,
         "reset_spacing": true
       }
+    },
+    "faq_WwfpMN": {
+      "type": "faq",
+      "blocks": {
+        "faq_items_ErnRzD": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Do I need a GST number to sell on Cavirk? ",
+            "faq_content": "<p>If you have a GST number, you're ready to start listing your products.  For non-GST sellers, onboarding is still possible—we’ll connect with you to understand your setup and guide you through the next steps.</p>"
+          }
+        },
+        "faq_items_9QkcV4": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "How much does it cost to start selling? ",
+            "faq_content": "<p>There are no setup or listing charges. Our model is simple and seller-friendly—you only pay once you start earning, with no upfront costs.</p><p><strong>🎉 Special Offer</strong><br/>LIFETIME ZERO ONBOARDING FEE for our first 15 partners.<br/>No listing charges. No setup costs. Just real earning, real fast.</p>"
+          }
+        },
+        "faq_items_eh4Bak": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "What kind of support will I receive as a seller?",
+            "faq_content": "<p>From onboarding tutorials to content and inventory support, our team is here to help. You’ll also have access to product photography tips, pricing insights, and marketing assistance.</p>"
+          }
+        },
+        "faq_items_4Mx3Df": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Can I choose my own pricing?",
+            "faq_content": "<p> Yes, pricing is entirely up to you. We do provide smart insights and suggestions to help you stay competitive and maximize sales.</p>"
+          }
+        },
+        "faq_items_FCVzUD": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "What kind of products can I sell? ",
+            "faq_content": "<p>Cavirk is focused on handcrafted, artisanal, and heritage-rich products—like sarees, shawls, stoles, home décor, and accessories. If your craft tells a story, it belongs here.</p>"
+          }
+        },
+        "faq_items_FhRehB": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "How do payments work?",
+            "faq_content": "<p>Payments are processed securely and transferred directly to your account. You'll always have full transparency on your sales and earnings.</p>"
+          }
+        },
+        "faq_items_pNKrCp": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Who will take care of my logistics, inventory, and seller account? ",
+            "faq_content": "<p>As a seller, you will be responsible for your logistics and inventory. We provide an initial onboarding session to guide you on how to list your products on our seller portal. After that, you will manage your catalogue and orders. Need extra help? We offer <strong>premium services</strong> where we take care of this for you. Get in touch with us to learn more.</p>"
+          }
+        },
+        "faq_items_eQWcVW": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "I still have queries. How can I get in touch with you? ",
+            "faq_content": "<p>You can reach out to us at <strong>hello@cavirk.com</strong> and our team will be happy to help.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_items_ErnRzD",
+        "faq_items_9QkcV4",
+        "faq_items_eh4Bak",
+        "faq_items_4Mx3Df",
+        "faq_items_FCVzUD",
+        "faq_items_FhRehB",
+        "faq_items_pNKrCp",
+        "faq_items_eQWcVW"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "heading": "Frequently Asked Questions",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -1156,6 +1239,7 @@
     "multi_content_nDhpXY",
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
-    "icon_box_cH9Fe4"
+    "icon_box_cH9Fe4",
+    "faq_WwfpMN"
   ]
 }
