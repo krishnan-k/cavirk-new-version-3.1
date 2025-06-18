@@ -3670,7 +3670,8 @@
         "header": {
           "Content_1": "Content 1",
           "Content_2": "Content 2",
-          "Content_3": "Content 3"
+          "Content_3": "Content 3",
+          "content_4": "Content 4"
         },
         "label": "Block setting",
         "vertical_align": {
