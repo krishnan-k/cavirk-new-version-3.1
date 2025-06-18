@@ -337,7 +337,7 @@
         "icon_box_pHd744": {
           "type": "icon_box",
           "settings": {
-            "content_width": "33.3333%",
+            "content_width": "50%",
             "vertical_align": "center",
             "box_alignment": "left",
             "flex_direction": true,
