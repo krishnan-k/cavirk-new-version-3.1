@@ -1019,7 +1019,7 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "fluid_container",
         "color_scheme": "default",
         "type": "default",
         "column_gap": 30,
@@ -1076,7 +1076,7 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "fluid_container",
         "color_scheme": "default",
         "type": "default",
         "column_gap": 30,
@@ -1133,7 +1133,7 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "fluid_container",
         "color_scheme": "default",
         "type": "default",
         "column_gap": 30,
