@@ -225,8 +225,8 @@
                     {% endif %}
                     {% if block_st.description != blank %}
                       <div
-                        class="sec__icon-box-content-des rich__text-m0 fs-custom {{ section_st.des_font_weight }}"
-                        style="--font-size: {{ section_st.des_font_size }}"
+                        class="sec__icon-box-content-des rich__text-m0 fs-custom {{ section_st.des_font_weight }} w-custom max-767-w-full"
+                        style="--font-size: {{ section_st.des_font_size }};--custom-width: {{ block_st.description_box }}px;"
                       >
                         {{ block_st.description }}
                       </div>
