@@ -138,6 +138,7 @@
       <div class="select-custom pointer user-select-none">
         {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
         <select-sorter class="select-selected user-select-none inline-flex align-center gap-10 gap-lg-20 lh-normal pointer overlay">
+          {% render 'icon-filter' %}
           <label class="border border-1025-0 rounded-3 pointer inline-flex align-center lh-normal gap-5 py-5 px-10">
             {{- 'products.facets.sort_by_label' | t }}
             <svg class="icon-down transition active-rotated block hidden-1025" width="10" height="6">
