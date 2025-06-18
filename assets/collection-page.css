@@ -90,7 +90,7 @@
     .toolbar.toolbar-products .show-type-products{
       display: none;
     }
-    .toolbar.toolbar-products :where (.toolbar-left,.toolbar-sorter){
+    .toolbar.toolbar-products :where(.toolbar-left,.toolbar-sorter){
         width: 100%;
      }
     .toolbar.toolbar-products .toolbar-left{
