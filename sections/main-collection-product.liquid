@@ -60,7 +60,7 @@
       default_filter: default_filter,
       collection_url: collection.url
     -%}
-    {% endif %}
+  {% endif %}
   <grid-list
     {% if scroll_animation != 'slide_in' %}
       hold
@@ -240,30 +240,31 @@
                           collection_product: true
                         %}
                       {%- else -%}
-                        {% if product.price > 50000 %}
-                          {% render 'product-item',
-                          scroll_animation: scroll_animation,
-                          card_product: product,
-                          section_id: section.id,
-                          template_enable_action: true,
-                          template_enable_price: true,
-                          template_enable_product_vendor: true,
-                          template_enable_rate: true,
-                          template_enable_add_cart: true,
-                          template_enable_color_swatches: true,
-                          template_enable_product_badges: true,
-                          template_enable_product_short_description: true,
-                          type: 'grid',
-                          type_collections: 'true',
-                          indexFor: forloop.index,
-                          container: section_width,
-                          colunm: column,
-                          colunm_mobile: section_st.items_per_row_mobile,
-                          padding: section_st.column_gap,
-                          collection_product: true
-                        %}
-                        {% endif %}
-                        
+                        {% for product in collection.products %}
+                          {% if product.price > 50000 %}
+                            {% render 'product-item',
+                              scroll_animation: scroll_animation,
+                              card_product: product,
+                              section_id: section.id,
+                              template_enable_action: true,
+                              template_enable_price: true,
+                              template_enable_product_vendor: true,
+                              template_enable_rate: true,
+                              template_enable_add_cart: true,
+                              template_enable_color_swatches: true,
+                              template_enable_product_badges: true,
+                              template_enable_product_short_description: true,
+                              type: 'grid',
+                              type_collections: 'true',
+                              indexFor: forloop.index,
+                              container: section_width,
+                              colunm: column,
+                              colunm_mobile: section_st.items_per_row_mobile,
+                              padding: section_st.column_gap,
+                              collection_product: true
+                            %}
+                          {% endif %}
+                        {% endfor %}
                       {% endif %}
                     </div>
                   {%- endfor -%}
