@@ -9,12 +9,6 @@
  */
 {
   "sections": {
-    "price_AH7Adr": {
-      "type": "price",
-      "disabled": true,
-      "name": "Price",
-      "settings": {}
-    },
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
@@ -612,7 +606,6 @@
     }
   },
   "order": [
-    "price_AH7Adr",
     "slideshow_8KKtNU",
     "collection_list_VmEYkJ",
     "collection_tab_ApTJUB",
