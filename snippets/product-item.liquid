@@ -492,7 +492,8 @@
           <a
             aria-label="{{ card_product.title }}"
             class="{% if product_truncation_title != 'none' %}product-title__truncate {% endif %}product-item__name {{ settings.product_name_text_transform }} heading-style no-underline fs-custom block lh-normal"
-            style="--font-size: {{ settings.product_size }};{% if product_truncation_title != 'none' %} --line-clamp: {{ product_truncation_title }};{% endif %}"            {% if template_disable_product_url == true %}
+            style="--font-size: {{ settings.product_size }};{% if product_truncation_title != 'none' %} --line-clamp: {{ product_truncation_title }};{% endif %}"
+            {% if template_disable_product_url == true %}
               role="link" aria-disabled="true"
             {% else %}
               href="{{ card_product.url }}"
@@ -840,78 +841,82 @@
   </div>
 {% else %}
   {% comment %} Case card product has no data, handle default data with shopify placeholder {% endcomment %}
-  <div class="product-item{{ class }} {{ product_style }}">
-    <motion-element
-      {% if indexFor and scroll_animation %}
-        data-cascade
-      {% endif %}
-      data-motion="fade-up-lg"
-      {% if scroll_animation != 'slide_in' or collection_product == true %}
-        hold
-      {% endif %}
-      {% if collection_product == true %}
-        data-margin="0px 0px 5 0px"
-      {% endif %}
-      data-motion-delay="{{ indexFor | minus: 1 | times: 50  }}"
-      style="{% if indexFor and scroll_animation %}--animation-order: {{ indexFor }};  {% endif %}{% if type == 'list' %}--gap: 15{% endif %}"
-      class="product-item__wrapper  {% if type == 'list' or type == 'sticky' %} flex gap-15{% else %} product-grid block{% endif %}{% if scroll_animation != 'none' and scroll_animation != null %} scroll-trigger {{ scroll_animation }}  {% endif %} {%if direction == 'horizontal' %} flex-column {% endif %}"
-    >
-      <div class="product-item__inner relative{% if type == 'list' or type == 'sticky' %} col-w-custom{% endif %}">
-        <div class="product-item__media">
-          <a
-            role="link"
-            aria-disabled="true"
-            title="{{ 'onboarding.product_title_example' | t }}"
-            aria-label="{{ 'onboarding.product_title_example' | t }}"
-          >
-            {%- liquid
-              assign ratio = ''
-              if product_image_ratio != 'adapt'
-                case product_image_ratio
-                  when 'square'
-                    assign ratio = '1/1'
-                  when 'landscape'
-                    assign ratio = '4/3'
-                  when 'portrait'
-                    assign ratio = '3/4'
+  {% for card_product in collection.products %}
+    {% if card_product and card_product.price < 11000 %}
+      <div class="product-item{{ class }} {{ product_style }}">
+        <motion-element
+          {% if indexFor and scroll_animation %}
+            data-cascade
+          {% endif %}
+          data-motion="fade-up-lg"
+          {% if scroll_animation != 'slide_in' or collection_product == true %}
+            hold
+          {% endif %}
+          {% if collection_product == true %}
+            data-margin="0px 0px 5 0px"
+          {% endif %}
+          data-motion-delay="{{ indexFor | minus: 1 | times: 50  }}"
+          style="{% if indexFor and scroll_animation %}--animation-order: {{ indexFor }};  {% endif %}{% if type == 'list' %}--gap: 15{% endif %}"
+          class="product-item__wrapper  {% if type == 'list' or type == 'sticky' %} flex gap-15{% else %} product-grid block{% endif %}{% if scroll_animation != 'none' and scroll_animation != null %} scroll-trigger {{ scroll_animation }}  {% endif %} {%if direction == 'horizontal' %} flex-column {% endif %}"
+        >
+          <div class="product-item__inner relative{% if type == 'list' or type == 'sticky' %} col-w-custom{% endif %}">
+            <div class="product-item__media">
+              <a
+                role="link"
+                aria-disabled="true"
+                title="{{ 'onboarding.product_title_example' | t }}"
+                aria-label="{{ 'onboarding.product_title_example' | t }}"
+              >
+                {%- liquid
+                  assign ratio = ''
+                  if product_image_ratio != 'adapt'
+                    case product_image_ratio
+                      when 'square'
+                        assign ratio = '1/1'
+                      when 'landscape'
+                        assign ratio = '4/3'
+                      when 'portrait'
+                        assign ratio = '3/4'
+                      else
+                        if product_custom_ratio != empty
+                          assign ratio = product_custom_ratio | replace: ':', '/'
+                        else
+                          assign ratio = '3/4'
+                        endif
+                    endcase
                   else
-                    if product_custom_ratio != empty
-                      assign ratio = product_custom_ratio | replace: ':', '/'
-                    else
-                      assign ratio = '3/4'
-                    endif
-                endcase
-              else
-                assign ratio = '3/4'
-              endif
-            -%}
-            <div
-              class="product-item__media--ratio rounded"
-              style="--aspect-ratio: {{ ratio }};"
-            >
-              {%- render 'placeholder-render', class: 'rounded' -%}
+                    assign ratio = '3/4'
+                  endif
+                -%}
+                <div
+                  class="product-item__media--ratio rounded"
+                  style="--aspect-ratio: {{ ratio }};"
+                >
+                  {%- render 'placeholder-render', class: 'rounded' -%}
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
+          </div>
+          <div class="product-item__information word-break{% if type == 'list' or type == 'sticky' %} text-start align-self-center type-list{% else %} text-{{ settings.product_alignment }} mt-15{% endif %}">
+            <a
+              draggable="false"
+              aria-disabled="true"
+              role="link"
+              class="product-item__name"
+              title="{{ 'onboarding.product_title_example' | t }}"
+              aria-label="{{ 'onboarding.product_title_example' | t }}"
+            >
+              {{ 'onboarding.product_title_example' | t }}
+            </a>
+            <div
+              class="product-item__price mt-5 justify-content-{{ settings.product_alignment }} fs-custom flex"
+              style="--font-size: {{ settings.price_size }}"
+            >
+              {%- render 'price' | scope: 'item', show_badges: false, class: priceclass -%}
+            </div>
+          </div>
+        </motion-element>
       </div>
-      <div class="product-item__information word-break{% if type == 'list' or type == 'sticky' %} text-start align-self-center type-list{% else %} text-{{ settings.product_alignment }} mt-15{% endif %}">
-        <a
-          draggable="false"
-          aria-disabled="true"
-          role="link"
-          class="product-item__name"
-          title="{{ 'onboarding.product_title_example' | t }}"
-          aria-label="{{ 'onboarding.product_title_example' | t }}"
-        >
-          {{ 'onboarding.product_title_example' | t }}
-        </a>
-        <div
-          class="product-item__price mt-5 justify-content-{{ settings.product_alignment }} fs-custom flex"
-          style="--font-size: {{ settings.price_size }}"
-        >
-          {%- render 'price' | scope: 'item', show_badges: false, class: priceclass -%}
-        </div>
-      </div>
-    </motion-element>
-  </div>
+    {% endif %}
+  {% endfor %}
 {% endif %}
