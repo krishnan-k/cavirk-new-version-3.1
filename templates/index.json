@@ -11,6 +11,7 @@
   "sections": {
     "price_AH7Adr": {
       "type": "price",
+      "disabled": true,
       "name": "Price",
       "settings": {}
     },
