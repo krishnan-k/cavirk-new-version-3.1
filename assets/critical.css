@@ -572,9 +572,11 @@ blockquote {
 .subheading_weight {
   font-weight: var(--subheading-weight, 600);
 }
-.heading_weight,
-strong {
+.heading_weight{
   font-weight: var(--heading-weight, 600);
+}
+strong{
+  font-weight: 600;
 }
 .sec__content-des strong {
     font-weight: 600;
