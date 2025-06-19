@@ -214,10 +214,11 @@
                       {% endif %}
                     {% endif %}
                     <div
-                      class="grid__item kk {% if pagination == 'load_more_button' or pagination == 'infinit_scrolling' %} loadmore-item{% endif %}"
+                      class="grid__item{% if pagination == 'load_more_button' or pagination == 'infinit_scrolling' %} loadmore-item{% endif %}"
                     >
                       {%- if view == 'list' -%}
-                        {% render 'product-item',
+                        {% if product.price < 500 %}
+                          {% render 'product-item',
                           scroll_animation: scroll_animation,
                           card_product: product,
                           section_id: section.id,
@@ -239,7 +240,8 @@
                           padding: section_st.column_gap,
                           collection_product: true
                         %}
-                        <div class="">kk</div>
+                        {% endif %}
+                        
                       {%- else -%}
                         {% render 'product-item',
                           scroll_animation: scroll_animation,
