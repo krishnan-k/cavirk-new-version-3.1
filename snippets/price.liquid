@@ -21,59 +21,56 @@
   endif
 -%}
 
-{%- if price < 11000 -%}
-  <div class="card-product-price {{ class }} flex align-center flex-wrap gap-5 relative">
-    {%- if compare_at_price > price -%}
-      <div class="price-regular primary-color">
-        <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price heading_weight primary-color price-same-style {{ special_class }}">
-          {{ money_price }}
-        </span>
-      </div>
-      <div class="price-regular">
-        <span class="visually-hidden">
-          {{- 'products.product.price.regular_price' | t -}}
-        </span>
-        <s class="price-item compare-price dark-grey">
+<div class="card-product-price {{ class }} flex align-center flex-wrap gap-5 relative">
+  {%- if compare_at_price > price -%}
+    <div class="price-regular primary-color">
+      <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+      <span class="price heading_weight primary-color price-same-style {{ special_class }}">
+        {{ money_price }}
+      </span>
+    </div>
+    <div class="price-regular">
+      <span class="visually-hidden">
+        {{- 'products.product.price.regular_price' | t -}}
+      </span>
+      <s class="price-item compare-price dark-grey">
+        {%- if theme_st.show_currency_code -%}
+          {{ compare_at_price | money_with_currency }}
+        {%- else -%}
+          {{ compare_at_price | money }}
+        {%- endif -%}
+      </s>
+    </div>
+  {%- else -%}
+    <div class="price-regular">
+      <span class="visually-hidden">
+        {{- 'products.product.price.regular_price' | t -}}
+      </span>
+      <span class="price price-same-style">
+        {{ money_price }}
+      </span>
+    </div>
+  {%- endif -%}
+  {% if target.unit_price_measurement != null %}
+    <small class="unit-price">
+      <span class="visually-hidden-price">{{ 'products.product.price.unit_price' | t }}</span>
+      <span class="price-item price-item--last">
+        <span class="number">
           {%- if theme_st.show_currency_code -%}
-            {{ compare_at_price | money_with_currency }}
+            {{- target.unit_price | money_with_currency -}}
           {%- else -%}
-            {{ compare_at_price | money }}
+            {{- target.unit_price | money -}}
           {%- endif -%}
-        </s>
-      </div>
-    {%- else -%}
-      <div class="price-regular">
-        <span class="visually-hidden">
-          {{- 'products.product.price.regular_price' | t -}}
         </span>
-        <span class="price price-same-style">
-          {{ money_price }}
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;{{ 'products.product.price.unit_price_separator' | t }}&nbsp;</span>
+        <span class="unit">
+          {%- if target.unit_price_measurement.reference_value != 1 -%}
+            {{- target.unit_price_measurement.reference_value -}}
+          {%- endif -%}
+          {{ target.unit_price_measurement.reference_unit }}
         </span>
-      </div>
-    {%- endif -%}
-
-    {% if target.unit_price_measurement != null %}
-      <small class="unit-price">
-        <span class="visually-hidden-price">{{ 'products.product.price.unit_price' | t }}</span>
-        <span class="price-item price-item--last">
-          <span class="number">
-            {%- if theme_st.show_currency_code -%}
-              {{- target.unit_price | money_with_currency -}}
-            {%- else -%}
-              {{- target.unit_price | money -}}
-            {%- endif -%}
-          </span>
-          <span aria-hidden="true">/</span>
-          <span class="visually-hidden">&nbsp;{{ 'products.product.price.unit_price_separator' | t }}&nbsp;</span>
-          <span class="unit">
-            {%- if target.unit_price_measurement.reference_value != 1 -%}
-              {{- target.unit_price_measurement.reference_value -}}
-            {%- endif -%}
-            {{ target.unit_price_measurement.reference_unit }}
-          </span>
-        </span>
-      </small>
-    {% endif %}
-  </div>
-{%- endif -%}
+      </span>
+    </small>
+  {% endif %}
+</div>
