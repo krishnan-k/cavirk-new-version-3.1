@@ -69,12 +69,12 @@
                   {% endif %}
                 "
               >
-                <h2
-                  class="section__header-heading  heading-letter-spacing {{ header_size  }} mt-0{% if section_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
-                >
-                  {{ section_st.heading }}
-                </h2>
-              </motion-element>
+              <h2
+                class="section__header-heading  heading-letter-spacing {{ header_size  }} mt-0{% if section_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
+              >
+                {{ section_st.heading }}
+              </h2>
+            </motion-element>
             {% endif %}
             {%- if section_st.description != blank -%}
               <motion-element
@@ -99,22 +99,22 @@
           and action_with_additional_products == 'view_all'
           and section_st.header_alignment != 'center'
         %}
-          <motion-element
-            data-motion="fade-up-lg"
-            data-motion-delay="150"
-            {% if scroll_animation != 'slide_in' %}
-              hold
-            {% endif %}
-            class="block"
+        <motion-element
+          data-motion="fade-up-lg"
+          data-motion-delay="150"
+          {% if scroll_animation != 'slide_in' %}
+            hold
+          {% endif %}
+          class="block"
+        >
+          <a
+            class="btn_view-all no-underline inline-flex btn-link"
+            href="{{ collection.url }}"
+            aria-label="{{ button_label }}"
           >
-            <a
-              class="btn_view-all no-underline inline-flex btn-link"
-              href="{{ collection.url }}"
-              aria-label="{{ button_label }}"
-            >
-              {{ button_label }}
-            </a>
-          </motion-element>
+            {{ button_label }}
+          </a>
+        </motion-element>
         {% endif %}
       </div>
     {% endif %}
@@ -318,7 +318,7 @@
                   {%- if video_url.type == 'youtube' -%}
                     <div style="--aspect-ratio: 16/9">
                       <iframe
-                        src="https://www.youtube.com/embed/{{ video_url.id }}?enablejsapi=1&autoplay=1&mute=1&loop=1&controls=0&playlist={{ video_url.id }}"
+                         src="https://www.youtube.com/embed/{{ video_url.id }}?enablejsapi=1&autoplay=1&mute=1&loop=1&controls=0&playlist={{ video_url.id }}"
                         class="js-youtube rounded w-full"
                         allow="autoplay"
                       ></iframe>
@@ -364,16 +364,13 @@
               >
                 {{ section_st.banner_button_label }}
               </a>
-            {% endif %}
+              {% endif %}
           </div>
         </div>
       </div>
     {% endif %}
     {% if show_banner %}</div>{% endif %}
   </div>
-</div>
-<div class="krishnan">
-  {% render 'product-item' %}
 </div>
 {% schema %}
 {
