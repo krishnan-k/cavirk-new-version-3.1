@@ -339,7 +339,7 @@
           "settings": {
             "collection": "jewellery",
             "collection_image": "shopify://shop_images/jewellery.gif",
-            "collection_title": "Jewellery"
+            "collection_title": "Accessories"
           }
         },
         "collection_ctTBpd": {
@@ -374,7 +374,7 @@
         "collection_information_position": "overlay_image",
         "design": "morden",
         "text_alignment": "left",
-        "show_product_count": true,
+        "show_product_count": false,
         "show_icon": true,
         "show_description": false,
         "font_size": 16,
