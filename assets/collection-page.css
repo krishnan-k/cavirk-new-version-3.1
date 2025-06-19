@@ -72,6 +72,7 @@
   .select-custom__content{
     overflow: unset;
   }
+  /*sticky filter css*/
   .toolbar.toolbar-products {
     position: fixed;
     bottom: 0;
@@ -88,16 +89,6 @@
     height: 43px;
     max-width: 150px;
   }
-  .search .toolbar.toolbar-products .btn-filter{
-    width: 35%;
-    height: 43px;
-  }
-  .search .toolbar.toolbar-products .toolbar-sorter {
-    width: 45%;
-    border-left: 1px solid #0000002e;
-    padding-left: 30px;
-    margin-left: 0px;
-  }
   .search .toolbar-sorter >*,.select-custom >* {
     width: 100%;
   }
@@ -111,6 +102,20 @@
   .toolbar.toolbar-products .toolbar-left{
     border-right: 1px solid #0000002e;
     padding-right: 20px;
+  }
+  /*seach filter css*/
+  .search .toolbar.toolbar-products .btn-filter{
+    width: 35%;
+    height: 43px;
+  }
+  .search .toolbar.toolbar-products .toolbar-sorter {
+    width: 45%;
+    border-left: 1px solid #0000002e;
+    padding-left: 30px;
+    margin-left: 0px;
+  }
+  .search .toolbar-sorter label{
+    padding: 11px 10px;
   }
 }
 
