@@ -111,6 +111,9 @@
     padding-left: 40px;
     margin-left: 0px;
   }
+  .search .toolbar-sorter label{
+    padding: 8px 20px;
+  }
   .search .toolbar-sorter >*,.select-custom >* {
     width: 100%;
     justify-content: center;
