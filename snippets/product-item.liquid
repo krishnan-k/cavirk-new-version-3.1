@@ -65,7 +65,7 @@
 {% comment %} Case card product has data, handle data {% endcomment %}
 {% if card_product and card_product != empty %}
   {% for card_product in collection.products %}
-    {% if card_product and card_product.price < 11000 %}
+    {% if card_product and card_product.price >= 11000 %}
       <div
     class="product-item product__item-js {{ class }} style-as-{{ product_style }}"
     {% if type == 'sticky' %}
