@@ -578,9 +578,7 @@ blockquote {
 strong{
   font-weight: 600;
 }
-.sec__content-des strong {
-    font-weight: 600;
-}
+
 .gradient {
   background: var(--color-background);
   background: var(--gradient-background);
