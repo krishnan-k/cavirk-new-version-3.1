@@ -45,7 +45,7 @@
         {%- assign sort_by = search.sort_by | default: search.default_sort_by -%}
         <select-sorter class="select-selected user-select-none inline-flex align-center gap-10 gap-lg-20 lh-normal pointer overlay">
           <label class="border border-1025-0 rounded-3 pointer inline-flex align-center lh-normal gap-5 py-5 px-10">
-            {{- 'products.facets.sort_by_label' | t }}
+            {% render 'icon-filter' %} {{- 'products.facets.sort_by_label' | t }}
             <svg class="icon-down transition active-rotated block hidden-1025" width="10" height="6">
               <use href="#icon-arrow-down"></use>
             </svg>
