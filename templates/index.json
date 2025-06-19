@@ -117,9 +117,9 @@
             "content_max_width": 40,
             "content_padding_block": 50,
             "content_padding_inline": 50,
-            "show_content_background": false,
+            "show_content_background": true,
             "content_background": "#e0d1cc",
-            "content_box_opacity": 23,
+            "content_box_opacity": 40,
             "content_alignment_mobile": "left"
           }
         }
