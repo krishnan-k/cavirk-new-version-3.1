@@ -98,6 +98,9 @@
     padding-left: 30px;
     margin-left: 0px;
   }
+  .search .toolbar-sorter >*,.select-custom >* {
+    width: 100%;
+  }
   .toolbar.toolbar-products .show-type-products{
     display: none;
   }
