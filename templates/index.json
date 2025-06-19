@@ -99,7 +99,7 @@
           "type": "slider_item",
           "settings": {
             "image": "shopify://shop_images/b4.jpg",
-            "image_mobile": "shopify://shop_images/M2.png",
+            "image_mobile": "shopify://shop_images/m4.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeindown",
             "subheading": "",
