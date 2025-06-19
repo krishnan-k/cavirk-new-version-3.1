@@ -88,6 +88,10 @@
     height: 43px;
     max-width: 150px;
   }
+  .search .toolbar.toolbar-products .btn-filter{
+    width: 35%;
+    height: 43px;
+  }
   .toolbar.toolbar-products .show-type-products{
     display: none;
   }
