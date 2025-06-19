@@ -915,3 +915,41 @@
     </motion-element>
   </div>
 {% endif %}
+
+                      <div class="krish">
+                        {% for card_product in collection.products %}
+  {% if card_product and card_product.price < 15000 %}
+    <div class="product-item{{ class }} {{ product_style }}">
+      <motion-element
+        {% if indexFor and scroll_animation %}
+          data-cascade
+        {% endif %}
+        data-motion="fade-up-lg"
+        {% if scroll_animation != 'slide_in' or collection_product == true %}
+          hold
+        {% endif %}
+        {% if collection_product == true %}
+          data-margin="0px 0px 5 0px"
+        {% endif %}
+        data-motion-delay="{{ indexFor | minus: 1 | times: 50 }}"
+        style="{% if indexFor and scroll_animation %}--animation-order: {{ indexFor }};{% endif %}{% if type == 'list' %}--gap: 15{% endif %}"
+        class="product-item__wrapper {% if type == 'list' or type == 'sticky' %} flex gap-15{% else %} product-grid block{% endif %}{% if scroll_animation != 'none' and scroll_animation != null %} scroll-trigger {{ scroll_animation }} {% endif %}{% if direction == 'horizontal' %} flex-column {% endif %}"
+      >
+        <!-- ✅ Your existing full product content goes here -->
+        <!-- product-item__media, product-item__information, price, cart button, wishlist, etc. -->
+        <!-- DO NOT REMOVE any Liquid render/conditions inside this motion-element -->
+
+        <!-- example -->
+        <div class="product-item__information">
+          <a href="{{ card_product.url }}" class="product-item__name">{{ card_product.title }}</a>
+          <div class="product-item__price">
+            {% render 'price', product: card_product %}
+          </div>
+        </div>
+
+      </motion-element>
+    </div>
+  {% endif %}
+{% endfor %}
+
+                      </div>
