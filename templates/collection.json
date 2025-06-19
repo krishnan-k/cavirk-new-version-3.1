@@ -34,7 +34,7 @@
         "description_FAmcR8"
       ],
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "container",
         "color_scheme": "",
         "alignment": "center",
         "background_image": "shopify://shop_images/breadcrumb.jpg",
@@ -120,7 +120,7 @@
         "image_banner_UUJxtT"
       ],
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "enable_filtering": true,
         "show_filter_counts": true,
         "default_filter": "open_all",
