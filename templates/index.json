@@ -484,7 +484,7 @@
         "testimonials_items_cBDEfL"
       ],
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "color_scheme": "",
         "heading": "Happy customers",
         "description": "",
@@ -517,7 +517,7 @@
       "type": "blog-posts",
       "name": "t:sections.blog-post.presets.name",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "color_scheme": "",
         "heading": "blogs & articles",
         "description": "",
