@@ -917,8 +917,8 @@
 {% endif %}
 
   <div class="product-item kk {{ class }} {{ product_style }}">
-    {%- render 'price' | scope: 'item', show_badges: false, class: priceclass -%}
+    
     {% if card_product.price <= 20 %}
-    krishnan
+    {%- render 'price' | scope: 'item', show_badges: false, class: priceclass -%}
     {% endif %}
   </div>
