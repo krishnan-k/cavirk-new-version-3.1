@@ -59,9 +59,9 @@
         "contact_E6FKVE": {
           "type": "contact",
           "settings": {
-            "heading": "Contact Us",
-            "description": "<p>Please submit all general enquiries in the contact form below and we look forward to hearing from you soon.</p>",
-            "show_privacy": true,
+            "heading": "Talk to us!",
+            "description": "",
+            "show_privacy": false,
             "name": "Your name",
             "email": "",
             "your_comment": "",
