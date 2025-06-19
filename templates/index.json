@@ -65,7 +65,7 @@
             "show_content_background": false,
             "content_background": "#e0d1cc",
             "content_box_opacity": 23,
-            "content_alignment_mobile": "left"
+            "content_alignment_mobile": "center"
           }
         },
         "slider_item_jiLA39": {
@@ -120,7 +120,7 @@
             "show_content_background": false,
             "content_background": "#e0d1cc",
             "content_box_opacity": 40,
-            "content_alignment_mobile": "left"
+            "content_alignment_mobile": "center"
           }
         }
       },
