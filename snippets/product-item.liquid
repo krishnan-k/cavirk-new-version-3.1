@@ -479,11 +479,14 @@
           </div>
         {% endif %}
       </div>
-                              {%- if card_product.price <= 11000 -%} 
+                             
                               <div class="krishnan">
   kk
+                                 {%- if card_product.price <= 11000 -%} 
+                                   krishnan krishnan
+                                   {% endif %}
                               </div>
-                                {% endif %}
+                                
       {% comment %} Product information {% endcomment %}
       <div class="product-item__information word-break{% if type == 'list' or type == 'sticky' %} text-start align-self-center type-list{% else %} text-{{ settings.product_alignment }} mt-15{% endif %}">
         {% comment %} Product item vendor {% endcomment %}
