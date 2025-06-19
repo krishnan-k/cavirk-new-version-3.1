@@ -374,9 +374,8 @@
 </div>
     <div class="krishnan">
       krish
-      {% assign shown = 0 %}
 {% for product in collection.products %}
-  {% if product.price < 1500 and shown < limit_products_paginate %}
+  {% if product.price < 1500 %}
     {% render 'product-item',
       card_product: product,
       section_id: section.id,
@@ -387,12 +386,10 @@
       template_enable_product_short_description: true,
       template_enable_color_swatches: true,
       template_enable_price: true,
-      indexFor: shown,
       scroll_animation: scroll_animation,
       template_enable_product_badges: true,
       template_enable_add_cart: true
     %}
-    {% assign shown = shown | plus: 1 %}
   {% endif %}
 {% endfor %}
 
