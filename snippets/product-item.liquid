@@ -64,9 +64,7 @@
 %}
 {% comment %} Case card product has data, handle data {% endcomment %}
 {% if card_product and card_product != empty %}
-  {% for card_product in collection.products %}
-    {% if card_product and card_product.price >= 11000 %}
-      <div
+  <div
     class="product-item product__item-js {{ class }} style-as-{{ product_style }}"
     {% if type == 'sticky' %}
       data-section="{{ section_id }}"
@@ -494,8 +492,7 @@
           <a
             aria-label="{{ card_product.title }}"
             class="{% if product_truncation_title != 'none' %}product-title__truncate {% endif %}product-item__name {{ settings.product_name_text_transform }} heading-style no-underline fs-custom block lh-normal"
-            style="--font-size: {{ settings.product_size }};{% if product_truncation_title != 'none' %} --line-clamp: {{ product_truncation_title }};{% endif %}"
-            {% if template_disable_product_url == true %}
+            style="--font-size: {{ settings.product_size }};{% if product_truncation_title != 'none' %} --line-clamp: {{ product_truncation_title }};{% endif %}"            {% if template_disable_product_url == true %}
               role="link" aria-disabled="true"
             {% else %}
               href="{{ card_product.url }}"
@@ -841,9 +838,6 @@
       </script>
     {%- endunless -%}
   </div>
-    {% endif %}
-  {% endfor %}
-  
 {% else %}
   {% comment %} Case card product has no data, handle default data with shopify placeholder {% endcomment %}
   <div class="product-item{{ class }} {{ product_style }}">
