@@ -240,8 +240,7 @@
                           collection_product: true
                         %}
                       {%- else -%}
-                        {% for product in collection.products %}
-                          {% if card_product.price < 500 %}
+                          {% if product.price < 500 %}
                             {% render 'product-item',
                               scroll_animation: scroll_animation,
                               card_product: product,
@@ -264,7 +263,6 @@
                               collection_product: true
                             %}
                           {% endif %}
-                        {% endfor %}
                       {% endif %}
                     </div>
                   {%- endfor -%}
