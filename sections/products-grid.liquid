@@ -375,7 +375,7 @@
     <div class="kk">
       kk
       {% for product in collection.products %}
-        {%- if product.price < 15000 -%}
+        
           {% render 'product-item',
                 card_product: product,
                 section_id: section.id,
@@ -391,7 +391,6 @@
                 template_enable_product_badges: true,
                 template_enable_add_cart: true
               %}
-          {% endif %}
                 
         {% endfor %}
     </div>
