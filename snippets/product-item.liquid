@@ -915,10 +915,3 @@
     </motion-element>
   </div>
 {% endif %}
-
-  <div class="product-item kk {{ class }} {{ product_style }}">
-    
-    {% if card_product.price <= 11000 %}
-    {%- render 'price' | scope: 'item', show_badges: false, class: priceclass -%}
-    {% endif %}
-  </div>
