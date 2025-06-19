@@ -398,7 +398,8 @@
   "platform_customizations": {
     "custom_css": [
       "@media screen and (max-width: 767px) {body .shopify-block.shopify-app-block #insta-feed {margin-left: 25px !important; margin-right: 25px !important; margin-bottom: 0 !important; }}",
-      ".shopify-policy__container {max-width: 100ch;}"
+      ".shopify-policy__container {max-width: 100ch;}",
+      ".shopify-policy__body strong {font-weight: 600; font-size: 20px;}"
     ]
   }
 }
