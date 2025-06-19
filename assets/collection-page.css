@@ -89,9 +89,6 @@
     height: 43px;
     max-width: 150px;
   }
-  .search .toolbar-sorter >*,.select-custom >* {
-    width: 100%;
-  }
   .toolbar.toolbar-products .show-type-products{
     display: none;
   }
@@ -111,11 +108,15 @@
   .search .toolbar.toolbar-products .toolbar-sorter {
     width: 45%;
     border-left: 1px solid #0000002e;
-    padding-left: 30px;
+    padding-left: 40px;
     margin-left: 0px;
   }
   .search .toolbar-sorter label{
     padding: 11px 10px;
+  }
+  .search .toolbar-sorter >*,.select-custom >* {
+    width: 100%;
+    justify-content: center;
   }
 }
 
