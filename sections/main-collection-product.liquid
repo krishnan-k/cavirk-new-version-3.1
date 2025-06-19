@@ -240,7 +240,7 @@
                           collection_product: true
                         %}
                       {%- else -%}
-                        {% if product.price <= 500 %}
+                        {% if product.price %}
                           {% render 'product-item',
                           scroll_animation: scroll_animation,
                           card_product: product,
