@@ -14,6 +14,7 @@
   elsif section_st.header_size == 'large'
     assign header_size = 'h1-size'
   endif
+  assign scroll_animation = settings.scroll_animation
 -%}
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }}
