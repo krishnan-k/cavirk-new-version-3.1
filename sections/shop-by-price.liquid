@@ -16,8 +16,6 @@
   assign scroll_animation = settings.scroll_animation
   assign carousel_on_mobile = section_st.carousel_on_mobile
   assign items_per_row_mobile = section_st.items_per_row_mobile
-
-  
 -%}
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }}
@@ -62,11 +60,11 @@
             {% if scroll_animation != 'slide_in' %}
               hold
             {% endif %}
-            class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0"
+            class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0 w-custom max-767-w-full"
             style="
               {%- if scroll_animation != 'none' -%}
                 --animation-order: 1
-              {% endif %}
+              {% endif %};--custom-width: {{ block_st.description_width }}px;
             "
           >
             {{ section_st.description }}
@@ -164,6 +162,16 @@
       "id": "description",
       "label": "t:sections.all.section_header.description.label",
       "default": "Best Selling Unmatched design—superior performance and customer satisfaction in one."
+    },
+    {
+      "type": "range",
+      "id": "description_width",
+      "label": "t:sections.icon_box.settings.description_width.label",
+      "default": 250,
+      "min": 250,
+      "max": 500,
+      "step": 5,
+      "unit": "px"
     },
     {
       "type": "select",
