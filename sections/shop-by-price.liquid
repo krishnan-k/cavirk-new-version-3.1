@@ -73,7 +73,13 @@
       </div>
     {% endif %}
     <div class="price-range-filter">
-      <div class="price-ranges grid grid-cols gap" style="{{ price_box_style | strip | strip_newlines }}">
+      <div
+        class="price-ranges grid grid-cols gap"
+        data-enable="{{ carousel_on_mobile }}"
+        data-mobile="{{ items_per_row_mobile }}"
+        data-spacing="{{ section_st.column_gap }}"
+        style="{{ price_box_style | strip | strip_newlines }}"
+      >
         {% assign price_ranges = '500-1000,1000-1500,1500-2000,2500-3000,3000-4000,4000-4500,4500-5000,5000-6000,6000-7000'
           | split: ','
         %}
@@ -184,6 +190,32 @@
         {
           "value": "right",
           "label": "t:sections.all.section_header.alignment.right.label"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.mobile_options.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "carousel_on_mobile",
+      "label": "t:sections.all.mobile_options.carousel_on_mobile.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "items_per_row_mobile",
+      "label": "t:sections.all.items.items_per_row.label",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
         }
       ]
     },
