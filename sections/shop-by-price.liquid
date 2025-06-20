@@ -120,7 +120,7 @@
           {% assign label_to = parts[1] | plus: 0 %}
 
           {%- comment -%} Format display_from {%- endcomment -%}
-          {% if label_from >= 1000 and label_from < 100000 %}
+          {% if label_from >= 10000 and label_from < 100000 %}
             {% assign display_from = label_from | divided_by: 1000 | append: 'k' %}
           {% else %}
             {% assign display_from = label_from %}
