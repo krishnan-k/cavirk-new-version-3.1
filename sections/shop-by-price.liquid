@@ -5,7 +5,6 @@
   if section_st.reset_spacing
     assign reset_spacing = ' remove_spacing'
   endif
-  assign button_label = section_st.button_label
   assign heading = section_st.heading
   assign description = section_st.description
   assign header_size = ''
@@ -68,7 +67,6 @@
       </div>
     {% endif %}
     <div class="price-range-filter">
-      <h4 class="filter-title">Price</h4>
       <ul class="price-ranges">
         {% assign price_ranges = '500-1000,1000-1500,1500-2000,2500-3000,3000-4000,4000-4500,4500-5000,5000-6000,6000-7000'
           | split: ','
