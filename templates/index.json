@@ -569,7 +569,7 @@
         "rate_color": "#ff9c05",
         "items_per_row": 1,
         "column_gap": 20,
-        "hide_price": true,
+        "hide_price": false,
         "show_arrow": true,
         "carousel_pagination": "show_dots_on_mobile",
         "infinite": false,
