@@ -96,6 +96,14 @@
             >
               ₹{{ parts[0] }} – ₹{{ parts[1] }}
             </a>
+            <div class="price_range_btn text-center">
+              <a
+                href="{{ current_collection_url }}?filter.v.price.gte=7001"
+                class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-full"
+              >
+                Above ₹7000
+              </a>
+            </div>
           </div>
         {% endfor %}
       </div>
