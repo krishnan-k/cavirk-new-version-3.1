@@ -82,32 +82,47 @@
         data-spacing="{{ section_st.column_gap }}"
         style="{{ price_box_style | strip | strip_newlines }}"
       >
-        {% assign price_ranges = '0-500,500-1000,1000-3500,3500-6000,6000-10000,10000-30000,30000-50000,50000-60000,60000-70000,70000-80000'
-          | split: ','
-        %}
-        {% for range in price_ranges %}
-          {% assign parts = range | split: '-' %}
-          <div class="price_range_btn text-center">
-            <a
-              href="collections/all?filter.v.price.gte={{ parts[0] }}&filter.v.price.lte={{ parts[1] }}"
-              class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-full"
-              target="_blank"
-              style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;border: 1px solid var(--color-border)"
-            >
-              ₹{{ parts[0] }} – ₹{{ parts[1] }}
-            </a>
-          </div>
-        {% endfor %}
-        <div class="price_range_btn text-center">
-          <a
-            href="collections/all?filter.v.price.gte=80001"
-            class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-full"
-            target="_blank"
-            style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;"
-          >
-            Above ₹80000
-          </a>
-        </div>
+        {% assign price_ranges = '0-500,500-1000,1000-3500,3500-6000,6000-10000,10000-30000,30000-50000,50000-60000,60000-70000,70000-80000' | split: ',' %}
+
+<div class="price-range-grid">
+  {% for range in price_ranges %}
+    {% assign parts = range | split: '-' %}
+    {% assign label_from = parts[0] | plus: 0 %}
+    {% assign label_to = parts[1] | plus: 0 %}
+
+    {%- comment -%} Format display_from {%- endcomment -%}
+    {% if label_from >= 1000 and label_from < 100000 %}
+      {% assign display_from = label_from | divided_by: 1000 | append: 'k' %}
+    {% else %}
+      {% assign display_from = label_from %}
+    {% endif %}
+
+    {%- comment -%} Format display_to {%- endcomment -%}
+    {% if label_to >= 1000 and label_to < 100000 %}
+      {% assign display_to = label_to | divided_by: 1000 | append: 'k' %}
+    {% else %}
+      {% assign display_to = label_to %}
+    {% endif %}
+
+    <a
+      href="/collections/all?filter.v.price.gte={{ parts[0] }}&filter.v.price.lte={{ parts[1] }}"
+      class="price-range-box"
+      target="_self"
+    >
+      ₹{{ display_from }} – ₹{{ display_to }}
+    </a>
+  {% endfor %}
+
+  <!-- Above ₹80000 Option -->
+  <a
+    href="/collections/all?filter.v.price.gte=80001"
+    class="price-range-box"
+    target="_self"
+  >
+    Above ₹80k
+  </a>
+</div>
+
       </div>
     </div>
   </div>
