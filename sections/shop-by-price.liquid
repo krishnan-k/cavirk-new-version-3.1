@@ -16,6 +16,9 @@
   assign scroll_animation = settings.scroll_animation
   assign carousel_on_mobile = section_st.carousel_on_mobile
   assign items_per_row_mobile = section_st.items_per_row_mobile
+  assign icon_box_blocks = section.blocks | where: "type", "icon_box"
+  assign icon_box_count = icon_box_blocks | size
+  
 -%}
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }}
