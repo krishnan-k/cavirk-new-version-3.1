@@ -21,7 +21,7 @@
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }}
 {%- endcapture -%}
 
-{% capture icon_box_style %}
+{% capture price_box_style %}
 --col-gap: {{ section_st.column_gap }}px; --col-number: {{ section_st.items_per_row_mobile }};{% if icon_box_count > 3 %}--col-tablet: 2;--col-desktop-small: 2;{% endif %} --col-desktop: {{ icon_box_count }};
 
 {% endcapture %}
@@ -79,7 +79,7 @@
         %}
         {% for range in price_ranges %}
           {% assign parts = range | split: '-' %}
-          <div style="{{ icon_box_style | strip | strip_newlines }}">
+          <div style="{{ price_box_style | strip | strip_newlines }}">
             <a
               href="collections/all?filter.v.price.gte={{ parts[0] }}&filter.v.price.lte={{ parts[1] }}"
               class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center"
