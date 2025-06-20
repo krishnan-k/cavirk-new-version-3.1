@@ -9,6 +9,19 @@
  */
 {
   "sections": {
+    "shop_by_price_efBym8": {
+      "type": "shop-by-price",
+      "name": "t:sections.shop-by-price.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "default",
+        "heading": "Shop by price",
+        "description": "Best Selling Unmatched design—superior performance and customer satisfaction in one.",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "reset_spacing": false
+      }
+    },
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
@@ -602,11 +615,6 @@
       "block_order": [
         "instafeed_app_block_TV7cbq"
       ],
-      "settings": {}
-    },
-    "shop_by_price_efBym8": {
-      "type": "shop-by-price",
-      "name": "t:sections.shop-by-price.name",
       "settings": {}
     }
   },
