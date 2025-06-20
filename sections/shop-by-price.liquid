@@ -21,7 +21,7 @@
 {%- endcapture -%}
 
 <div
-  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} gradient {{ reset_spacing }}"
+  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} color-{{ color_scheme }} gradient{{ reset_spacing }} {{ reset_spacing }}"
   style="{{ style | strip | strip_newlines }}"
 >
   <div class="{{ section_width }}">
