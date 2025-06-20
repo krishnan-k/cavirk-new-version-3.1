@@ -414,6 +414,7 @@
         "column_gap": 30,
         "heading": "Shop by price",
         "description": "Quickly find products that fit your budget. Browse collections based on price ranges and discover the best items in your preferred price bracket.",
+        "description_width": 500,
         "header_size": "medium",
         "header_alignment": "center",
         "carousel_on_mobile": false,
