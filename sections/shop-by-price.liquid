@@ -127,7 +127,7 @@
           {% endif %}
 
           {%- comment -%} Format display_to {%- endcomment -%}
-          {% if label_to >= 1000 and label_to < 100000 %}
+          {% if label_to >= 10000 and label_to < 100000 %}
             {% assign display_to = label_to | divided_by: 1000 | append: 'k' %}
           {% else %}
             {% assign display_to = label_to %}
