@@ -401,7 +401,7 @@
       "settings": {
         "section_width": "full_width",
         "border_height": 1,
-        "border_color": "#C5B27B",
+        "border_color": "#c5b27b",
         "reset_spacing": true
       }
     },
@@ -411,10 +411,13 @@
       "settings": {
         "section_width": "container",
         "color_scheme": "scheme-7b36d545-db22-4522-b7e3-6022401b54ef",
+        "column_gap": 30,
         "heading": "Shop by price",
-        "description": "Best Selling Unmatched design—superior performance and customer satisfaction in one.",
+        "description": "",
         "header_size": "medium",
         "header_alignment": "center",
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": "1",
         "padding_top": 50,
         "padding_bottom": 50,
         "reset_spacing": true
@@ -426,7 +429,7 @@
       "settings": {
         "section_width": "full_width",
         "border_height": 1,
-        "border_color": "#C5B27B",
+        "border_color": "#c5b27b",
         "reset_spacing": true
       }
     },
