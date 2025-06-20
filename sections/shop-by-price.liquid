@@ -82,7 +82,7 @@
         data-spacing="{{ section_st.column_gap }}"
         style="{{ price_box_style | strip | strip_newlines }}"
       >
-        {% assign price_ranges = '0-500,500-1000,1000-3500,3500-6000,6000-10k,10k-30k,30k-50k,50k-60k,60k-70k,70k-80k'
+        {% assign price_ranges = '0-500,500-1000,1000-3500,3500-6000,6000-10000,10000-30000,30000-50000,50000-60000,60000-70000,70000-80000'
           | split: ','
         %}
         {% for range in price_ranges %}
@@ -105,7 +105,7 @@
             target="_blank"
             style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;"
           >
-            Above ₹80K
+            Above ₹80000
           </a>
         </div>
       </div>
