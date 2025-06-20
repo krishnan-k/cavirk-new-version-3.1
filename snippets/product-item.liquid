@@ -61,7 +61,6 @@
   if direction == 'horizontal'
     assign priceclass = 'justify-center'
   endif
-   assign testimonial_price = section.settings.hide_price
 %}
 {% comment %} Case card product has data, handle data {% endcomment %}
 {% if card_product and card_product != empty %}
@@ -526,9 +525,7 @@
               class="product-item__price{% if type == 'list' or type == 'sticky' %} text-start{% else %} justify-content-{{ settings.product_alignment }} fs-custom{% endif %} flex gap-custom lh-normal {{ priceclass }}"
               style="--font-size: {{ settings.price_size }}; --gap: 3px;"
             >
-              {% if testimonial_price != true %}
               {%- render 'price', scope: 'item', product: card_product, show_badges: false, class: priceclass -%}
-                {% endif %}
             </div>
           {% endif %}
         {% endif %}
