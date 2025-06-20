@@ -603,9 +603,15 @@
         "instafeed_app_block_TV7cbq"
       ],
       "settings": {}
+    },
+    "shop_by_price_efBym8": {
+      "type": "shop-by-price",
+      "name": "t:sections.shop-by-price.name",
+      "settings": {}
     }
   },
   "order": [
+    "shop_by_price_efBym8",
     "slideshow_8KKtNU",
     "collection_list_VmEYkJ",
     "collection_tab_ApTJUB",
