@@ -61,7 +61,7 @@
   if direction == 'horizontal'
     assign priceclass = 'justify-center'
   endif
-   assign testimonial_price = block.settings.hide_price
+   assign testimonial_price = section.settings.hide_price
 %}
 {% comment %} Case card product has data, handle data {% endcomment %}
 {% if card_product and card_product != empty %}
