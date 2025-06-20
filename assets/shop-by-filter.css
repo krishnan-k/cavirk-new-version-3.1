@@ -1,21 +1,23 @@
-.price_filter_range.grid{
-  grid-template-columns: repeat(12,1fr);
-}
-.price_filter_range .price_range_btn{
-  grid-column: span 2;
-}
-.price_filter_range .price_range_btn:nth-last-child(5) {
+@media screen and (min-width: 992px) {
+  .price_filter_range.grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .price_filter_range .price_range_btn {
+    grid-column: span 2;
+  }
+  .price_filter_range .price_range_btn:nth-last-child(5) {
     grid-column-end: 4;
-}
-.price_filter_range .price_range_btn:nth-last-child(4) {
+  }
+  .price_filter_range .price_range_btn:nth-last-child(4) {
     grid-column-end: 6;
-}
-.price_filter_range .price_range_btn:nth-last-child(3) {
+  }
+  .price_filter_range .price_range_btn:nth-last-child(3) {
     grid-column-end: 8;
-}
-.price_filter_range .price_range_btn:nth-last-child(2) {
+  }
+  .price_filter_range .price_range_btn:nth-last-child(2) {
     grid-column-end: 10;
-}
-.price_filter_range .price_range_btn:nth-last-child(1) {
+  }
+  .price_filter_range .price_range_btn:nth-last-child(1) {
     grid-column-end: 12;
+  }
 }
