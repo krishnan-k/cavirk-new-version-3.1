@@ -1,0 +1,6 @@
+.price_filter_range.grid{
+  grid-template-columns: repeat(12,1fr);
+}
+.price_filter_range .price_range_btn{
+  grid-column: span 2;
+}
