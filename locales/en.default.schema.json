@@ -2684,6 +2684,15 @@
         "name": "Product testimonials"
       }
     },
+    "shop-by-price":{
+      "name": "Shop by price",
+      "settings":{
+        
+      },
+      "presets": {
+        "name": "Shop by price"
+      }
+    },
     "image-comparison-slider": {
       "name": "Image comparison slider",
       "settings": {
@@ -3736,6 +3745,7 @@
         }
       }
     },
+    
     "products-grid": {
       "name": "Products grid",
       "settings": {
