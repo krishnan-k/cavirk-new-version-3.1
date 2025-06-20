@@ -16,8 +16,7 @@
   assign scroll_animation = settings.scroll_animation
   assign carousel_on_mobile = section_st.carousel_on_mobile
   assign items_per_row_mobile = section_st.items_per_row_mobile
-  assign icon_box_blocks = section.blocks | where: "type", "icon_box"
-  assign icon_box_count = icon_box_blocks | size
+
   
 -%}
 {%- capture style -%}
@@ -25,7 +24,7 @@
 {%- endcapture -%}
 
 {% capture price_box_style %}
---col-gap: {{ section_st.column_gap }}px; --col-number: {{ section_st.items_per_row_mobile }};{% if icon_box_count > 3 %}--col-tablet: 2;--col-desktop-small: 2;{% endif %} --col-desktop: {{ icon_box_count }};
+--col-gap: {{ section_st.column_gap }}px; --col-number: {{ section_st.items_per_row_mobile }};{% if icon_box_count > 3 %}--col-tablet: 2;--col-desktop-small: 2;{% endif %} --col-desktop: {{ 5 }};
 
 {% endcapture %}
 <div
