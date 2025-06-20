@@ -521,12 +521,12 @@
         {%- endif -%}
         {% comment %} Product item price {% endcomment %}
         {% if template_enable_price == true %}
-          {% if hidden_price != true or testimonial_price != true %}
+          {% if hidden_price != true %}
             <div
               class="product-item__price{% if type == 'list' or type == 'sticky' %} text-start{% else %} justify-content-{{ settings.product_alignment }} fs-custom{% endif %} flex gap-custom lh-normal {{ priceclass }}"
               style="--font-size: {{ settings.price_size }}; --gap: 3px;"
             >
-              {%- render 'price', scope: 'item', product: card_product, show_badges: false, class: priceclass -%}
+              {%- render 'price', scope: 'item', product: card_product, show_badges: false, class: priceclass, testimonial_price: testimonial_price_hidden -%}
             </div>
           {% endif %}
         {% endif %}
