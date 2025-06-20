@@ -22,7 +22,7 @@
 {%- endcapture -%}
 
 {% capture price_box_style %}
---col-gap: {{ section_st.column_gap }}px; --col-number: {{ section_st.items_per_row_mobile }}; --col-tablet: 3;--col-desktop-small: 4;--col-desktop: 5;
+--col-gap: {{ section_st.column_gap }}px; --col-number: {{ section_st.items_per_row_mobile }}; --col-tablet: 3;--col-desktop-small: 4;--col-desktop: 6;
 
 {% endcapture %}
 <div
@@ -88,7 +88,7 @@
           <div class="text-center">
             <a
               href="collections/all?filter.v.price.gte={{ parts[0] }}&filter.v.price.lte={{ parts[1] }}"
-              class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center"
+              class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-full"
               target="_blank"
               style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;"
             >
