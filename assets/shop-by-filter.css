@@ -4,3 +4,15 @@
 .price_filter_range .price_range_btn{
   grid-column: span 2;
 }
+.price_filter_range .price_range_btn:nth-last-child(4) {
+    grid-column-end: 5;
+}
+.price_filter_range .price_range_btn:nth-last-child(3) {
+    grid-column-end: 7;
+}
+.price_filter_range .price_range_btn:nth-last-child(2) {
+    grid-column-end: 9;
+}
+.price_filter_range .price_range_btn:nth-last-child(1) {
+    grid-column-end: 11;
+}
