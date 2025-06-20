@@ -73,7 +73,7 @@
       </div>
     {% endif %}
     <div class="price-range-filter">
-      <div class="price-ranges" style="{{ price_box_style | strip | strip_newlines }}">
+      <div class="price-ranges grid grid-cols gap" style="{{ price_box_style | strip | strip_newlines }}">
         {% assign price_ranges = '500-1000,1000-1500,1500-2000,2500-3000,3000-4000,4000-4500,4500-5000,5000-6000,6000-7000'
           | split: ','
         %}
