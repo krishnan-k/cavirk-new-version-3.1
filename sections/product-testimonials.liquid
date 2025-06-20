@@ -264,7 +264,7 @@
                     {%
                       render 'product-item',
                       card_product: block_st.select_product,
-                      testimonial_price:block_st.hide_price
+                      testimonial_price:section_st.hide_price
                       template_enable_price: true,
                       custom_widths: '240, 120, 60',
                       type: 'list',
@@ -526,6 +526,11 @@
       "unit": "px"
     },
     {
+      "type": "checkbox",
+      "id": "hide_price",
+      "label": "t:sections.testimonials_product.settings.hide_price"
+    },
+    {
       "type": "header",
       "content": "t:sections.all.carousel_settings.label"
     },
@@ -666,11 +671,6 @@
           "type": "product",
           "id": "select_product",
           "label": "t:sections.testimonials_product.settings.select_product"
-        },
-        {
-          "type": "checkbox",
-          "id": "hide_price",
-          "label": "t:sections.testimonials_product.settings.hide_price"
         },
         {
           "type": "text",
