@@ -1,3 +1,16 @@
+{%- liquid
+  assign section_st = section.settings
+  assign section_width = section_st.section_width
+-%}
+<div class="{{ section_width }}">
+  {%- if heading != blank
+      or description != blank
+      or button_label != blank
+      and action_with_additional_products == 'view_all'
+    -%}
+    
+    {% endif %}
+</div>
 <div class="price-range-filter">
   <h4 class="filter-title">Price</h4>
   <ul class="price-ranges">
