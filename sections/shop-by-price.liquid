@@ -82,7 +82,7 @@
         data-spacing="{{ section_st.column_gap }}"
         style="{{ price_box_style | strip | strip_newlines }}"
       >
-        {% assign price_ranges = '500-1000,1000-1500,1500-2000,2500-3000,3000-4000,4000-4500,4500-5000,5000-6000,6000-7000'
+        {% assign price_ranges = '0-500,500-1000,1000-3500,3500-6000,6000-10000,10000-30000,30000-50000,50000-60000,60000-70000,70000-80000'
           | split: ','
         %}
         {% for range in price_ranges %}
