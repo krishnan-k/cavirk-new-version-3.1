@@ -9,6 +9,39 @@
  */
 {
   "sections": {
+    "heading": {
+      "type": "page-heading",
+      "blocks": {
+        "heading_B3DXTc": {
+          "type": "heading",
+          "settings": {
+            "page_title": "Collections List",
+            "header_size": "default"
+          }
+        },
+        "description_tLPCVn": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "description": "<p>Explore our thoughtfully curated collections: Sweaters, Handbags, Denim, and more—each <br/>perfect for enhancing every style on every special occasion and daily wear.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_B3DXTc",
+        "description_tLPCVn"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "alignment": "center",
+        "background_image": "shopify://shop_images/Frame_1000009792.png",
+        "overlay_opacity": 0,
+        "height": "based_on_content",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "image_with_text_overlay_YeTEim": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -445,6 +478,7 @@
     }
   },
   "order": [
+    "heading",
     "image_with_text_overlay_YeTEim",
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
