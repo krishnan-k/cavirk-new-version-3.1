@@ -101,6 +101,7 @@
     "store_address": "Cavirk Fashions Pvt. Ltd. 1st Floor, 37/1, Bosepukur Purbapara, Bosepukur, Kasba, Kolkata, West Bengal - 700042.",
     "store_page": "our-store",
     "show_currency_code": true,
+    "enable_cookies": false,
     "heading_cookies": "",
     "content_cookies": "<p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffics. By clicking \"<strong>Allow Cookies</strong>\" you consent to our use of cookie.</p>",
     "label_allow": "Allow Cookies",
@@ -176,7 +177,9 @@
       },
       "mobile-navigation-bar": {
         "type": "mobile-navigation-bar",
-        "settings": {}
+        "settings": {
+          "color_scheme": ""
+        }
       },
       "fake-order": {
         "type": "fake-order",
@@ -403,7 +406,7 @@
     "custom_css": [
       "@media screen and (max-width: 767px) {body .shopify-block.shopify-app-block #insta-feed {margin-left: 25px !important; margin-right: 25px !important; margin-bottom: 0 !important; }}",
       ".shopify-policy__container {max-width: 100ch;}",
-      ".shopify-policy__body strong {font-weight: 600; font-size: 20px;}"
+      ".shopify-policy__body strong {font-size: 20px;}"
     ]
   }
 }
