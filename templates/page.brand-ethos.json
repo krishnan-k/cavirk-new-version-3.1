@@ -17,19 +17,19 @@
         "padding_bottom": 0
       }
     },
-    "multi_content_7qypkM": {
+    "multi_content_jkyjcn": {
       "type": "multi-content",
       "blocks": {
-        "image_DGTz4q": {
+        "image_Dinmdc": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/e1.png",
             "image_link": "",
             "content_width": "50%",
-            "vertical_align": "center"
+            "vertical_align": "start"
           }
         },
-        "text_ycBmbU": {
+        "text_JFfyKy": {
           "type": "text",
           "settings": {
             "color_scheme": "scheme-1",
@@ -38,10 +38,11 @@
             "image_link": "",
             "subheading": "Craftsmanship",
             "heading": "Artistry in every thread.",
-            "description": "<p>Each piece is handcrafted with precision, honouring age-old techniques while embracing contemporary design.</p>",
+            "description": "<p>Each piece is handcrafted with precision, honouring age-old techniques while embracing contemporary design.<br/><br/></p>",
+            "description_width_text": 375,
             "collection": "",
             "timer": "",
-            "expired_message": "Time expired",
+            "expired_message": "",
             "style": "default",
             "font_size": 36,
             "spacing_bottom": 30,
@@ -52,120 +53,28 @@
             "second_button_link": "",
             "second_button_type": "primary",
             "content_alignment": "left",
-            "subheading_font_size": 14,
+            "subheading_font_size": 16,
             "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "text_e4jLdk": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Luxury",
-            "heading": "Elegance, thoughtfully crafted.",
-            "description": "<p>Our idea of luxury is quiet refinement — curated details, rich textures, and timeless simplicity.</p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "image_cjATFG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e2.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "image_gYkVwb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e3.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "text_zfLhhy": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Heritage",
-            "heading": "Tradition, reimagined.",
-            "description": "<p>Rooted in culture, our designs revive legacy through a modern lens, season after season. </p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
         }
       },
       "block_order": [
-        "image_DGTz4q",
-        "text_ycBmbU",
-        "text_e4jLdk",
-        "image_cjATFG",
-        "image_gYkVwb",
-        "text_zfLhhy"
+        "image_Dinmdc",
+        "text_JFfyKy"
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
-        "heading": "Brand Ethos",
-        "description": "<p>At Cavirk, we stand on three timeless pillars —<strong>Craftsmanship, Luxury, and Heritage</strong>—<br/> blending tradition with modern elegance to create a distinctive brand <br/>experience. Together, these values make Cavirk not just a brand, but a <br/>story of legacy and artistry.</p>",
+        "heading": "",
+        "description": "",
         "header_size": "medium",
         "header_alignment": "center",
         "column_gap": 30,
@@ -177,10 +86,152 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
-    }
+    },
+    "multi_content_EHEQBx": {
+      "type": "multi-content",
+      "blocks": {
+        "text_pqxzmL": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "Luxury",
+            "heading": "Elegance, thoughtfully crafted.",
+            "description": "<p>Our idea of luxury is quiet refinement — curated details, rich textures, and timeless simplicity.</p>",
+            "description_width_text": 375,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "left",
+            "subheading_font_size": 16,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
+        "image_BGQRmV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/e2.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_pqxzmL",
+        "image_BGQRmV"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_nDhpXY": {
+      "type": "multi-content",
+      "blocks": {
+        "image_PG3FEG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/e3.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_TR9nB6": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "Heritage",
+            "heading": "Tradition, reimagined.",
+            "description": "<p>Rooted in culture, our designs revive legacy through a modern lens, season after season. </p>",
+            "description_width_text": 375,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "left",
+            "subheading_font_size": 16,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_PG3FEG",
+        "text_TR9nB6"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
   },
   "order": [
     "main",
-    "multi_content_7qypkM"
+    "multi_content_jkyjcn",
+    "multi_content_EHEQBx",
+    "multi_content_nDhpXY",
   ]
 }
