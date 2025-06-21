@@ -100,7 +100,7 @@
     "store_email": "hello@cavirk.com",
     "store_address": "",
     "store_page": "our-store",
-    "show_currency_code": true,
+    "show_currency_code": false,
     "enable_cookies": false,
     "heading_cookies": "",
     "content_cookies": "<p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffics. By clicking \"<strong>Allow Cookies</strong>\" you consent to our use of cookie.</p>",
