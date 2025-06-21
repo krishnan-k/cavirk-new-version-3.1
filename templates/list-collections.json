@@ -35,10 +35,11 @@
         "section_width": "fluid_container",
         "color_scheme": "",
         "alignment": "center",
+        "background_image": "shopify://shop_images/Frame_1000009792.png",
         "overlay_opacity": 0,
-        "height": "adapt",
-        "padding_top": 67,
-        "padding_bottom": 0
+        "height": "based_on_content",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "main": {
