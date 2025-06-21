@@ -8,15 +8,7 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "page-default",
-      "settings": {
-        "section_width": "stretch_width",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
+  "sections": {    
     "page-heading": {
       "type": "page-heading",
       "blocks": {
@@ -259,7 +251,6 @@
     },
   },
   "order": [
-    "main",
     "page-heading",
     "multi_content_jkyjcn",
     "multi_content_EHEQBx",
