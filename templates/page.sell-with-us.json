@@ -130,7 +130,7 @@
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "heading": "",
         "description": "",
         "header_size": "medium",
@@ -189,7 +189,7 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "color_scheme": "default",
         "type": "default",
         "column_gap": 30,
@@ -260,7 +260,7 @@
       ],
       "name": "t:sections.icon_box.name",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "color_scheme": "default",
         "type": "default",
         "column_gap": 30,
@@ -428,7 +428,7 @@
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "heading": "",
         "description": "",
         "header_size": "medium",
