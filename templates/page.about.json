@@ -31,708 +31,542 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_qMbJGD": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_aXhCec": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Welcome to Glozin",
-            "font_size": 15,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 10
-          }
-        },
-        "heading_LbN4kp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Best Store<br> Available to Everyone!",
-            "font_size": 50,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 10
-          }
-        },
-        "description_4JjTUX": {
-          "type": "description",
-          "settings": {
-            "description": "<p>Over 15 years of experience, we have meticulously curated collections that transcend fleeting trends, <br\/>embodying a timeless elegance that resonates with our discerning clientele.<\/p>",
-            "font_size": 15,
-            "font_weight": "body_weight",
-            "spacing_bottom": 10
-          }
-        }
-      },
-      "block_order": [
-        "subheading_aXhCec",
-        "heading_LbN4kp",
-        "description_4JjTUX"
-      ],
-      "settings": {
-        "section_width": "container",
-        "color_scheme": "",
-        "content_alignment": "center",
-        "content_max_width": 70,
-        "enable_expand_content": false,
-        "expand_content_button": "See all Information",
-        "padding_top": 0,
-        "padding_bottom": 43,
-        "reset_spacing": true
-      }
-    },
-    "multi_content_mBYATd": {
+    "multi_content_AHdcCj": {
       "type": "multi-content",
       "blocks": {
-        "image_V9PiPt": {
+        "image_MfJjAq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about-us-banner.jpg",
+            "image": "shopify://shop_images/cavirk-founders.jpg",
             "image_link": "",
-            "content_width": "100%",
-            "vertical_align": "start"
+            "content_width": "45%",
+            "vertical_align": "center"
+          }
+        },
+        "text_UVRgWU": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Our Story",
+            "description": "<p>Cavirk was founded by <strong>Debdeep Mukherjee </strong>and <strong>Bhanu Gupta </strong>with a vision to preserve and promote <strong>India’s rich heritage of handcrafted luxury</strong>. Initially established as a curated brand for artisanal products, Cavirk is now evolving into a<strong>premier marketplace for authentic, GI-registered handicrafts</strong>, offering a seamless platform for manufacturers, boutique owners and artisans to connect directly with discerning global customers.<br/><br/><strong>The name “Cavirk” reflects our ethos. </strong>With this transition into a <strong>marketplace in May 2025</strong>, Cavirk is set to become a trusted global destination, enabling customers to explore and acquire <strong>heritage-rich textiles and handcrafted masterpieces </strong>while empowering India’s most skilled artisans and craftspeople.</p>",
+            "description_width_text": 600,
+            "collection": "",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 38,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 18,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
           }
         }
       },
       "block_order": [
-        "image_V9PiPt"
+        "image_MfJjAq",
+        "text_UVRgWU"
       ],
+      "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "container",
+        "section_width": "fluid_container",
         "heading": "",
         "description": "",
         "header_size": "medium",
         "header_alignment": "center",
         "column_gap": 30,
+        "content_background_color": "",
         "equal_height_adjustment": false,
-        "carousel_on_mobile": true,
+        "carousel_on_mobile": false,
         "items_per_row_mobile": 1,
         "padding_top": 0,
-        "padding_bottom": 72,
-        "reset_spacing": true
+        "padding_bottom": 0,
+        "reset_spacing": false
       }
     },
-    "counter_bjDJxc": {
-      "type": "counter",
+    "multi_content_4TMyPx": {
+      "type": "multi-content",
       "blocks": {
-        "counter_3z4qyg": {
-          "type": "counter",
+        "image_with_text_below_fG4k3c": {
+          "type": "image_with_text_below",
           "settings": {
-            "starting_number": 10,
-            "ending_number": 53,
-            "unit": "k",
-            "heading": "Products for Sale",
-            "description": "<p>That's why we strive to offer a diverse range of products that cater to all styles.<\/p>"
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "start",
+            "image": "shopify://shop_images/about-us-a-featherlight.jpg",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Cav",
+            "description": "<p><strong>“Cav”</strong>, inspired by<strong>“Caviar”</strong>, represents luxury, exclusivity, and refinement.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 25,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 24,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 15,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 20
           }
         },
-        "counter_jQdJhG": {
-          "type": "counter",
+        "image_with_text_below_XDiiUg": {
+          "type": "image_with_text_below",
           "settings": {
-            "starting_number": 0,
-            "ending_number": 8.5,
-            "unit": "k",
-            "heading": "Happy Customer",
-            "description": "<p>We pride ourselves on creating great products and experiences with our valued customers.<\/p>"
-          }
-        },
-        "counter_FmWY3q": {
-          "type": "counter",
-          "settings": {
-            "starting_number": 0,
-            "ending_number": 13,
-            "unit": "k",
-            "heading": "Partner Brand",
-            "description": "<p>Partner with brands that share our values, striving to protect our environment.<\/p>"
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "start",
+            "image": "shopify://shop_images/about-us-art-of-hub.jpg",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Virk",
+            "description": "<p><strong>“Virk”</strong>, meaning<strong>“people with open minds and open hearts”</strong>, signifies our commitment to inclusivity and craftsmanship.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 25,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 24,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 15,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 20
           }
         }
       },
       "block_order": [
-        "counter_3z4qyg",
-        "counter_jQdJhG",
-        "counter_FmWY3q"
+        "image_with_text_below_fG4k3c",
+        "image_with_text_below_XDiiUg"
       ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_EPA9gP": {
+      "type": "multi-content",
+      "blocks": {
+        "image_Lc6TNg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cavirk_-about_us_1.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "center"
+          }
+        },
+        "icon_box_pHd744": {
+          "type": "icon_box",
+          "settings": {
+            "content_width": "45%",
+            "vertical_align": "center",
+            "box_alignment": "left",
+            "flex_direction": true,
+            "icon_image": "shopify://shop_images/checkbox.png",
+            "icon_size": 25,
+            "heading": "Authenticity & Transparency",
+            "description": "<p>Every product listed is 100% genuine, handcrafted, and sourced directly from artisans or verified sellers.</p>",
+            "description_width": 350,
+            "icon_image2": "shopify://shop_images/checkbox.png",
+            "icon_size2": 25,
+            "heading2": "Fair Trade & Ethical Sourcing",
+            "description2": "<p>Our marketplace upholds fair compensation for artisans and promotes sustainable, ethical business practices.</p>",
+            "description_width2": 350,
+            "icon_image3": "shopify://shop_images/checkbox.png",
+            "icon_size3": 25,
+            "heading3": "Artisan Empowerment",
+            "description3": "<p>Providing direct access to a global market, ensuring artisans receive recognition and financial security for their craft.</p>",
+            "description_width3": 350,
+            "icon_image4": "shopify://shop_images/checkbox.png",
+            "icon_size4": 25,
+            "heading4": "Exclusivity & Excellence",
+            "description4": "<p>Each product embodies meticulous craftsmanship, blending traditional artistry with modern elegance.</p>",
+            "description_width4": 350
+          }
+        }
+      },
+      "block_order": [
+        "image_Lc6TNg",
+        "icon_box_pHd744"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "Cavirk: A Multi-Store Management Marketplace for Heritage and Luxury ",
+        "description": "<p>Cavirk Marketplace is designed to serve as a distinguished platform for authentic handcrafted goods, ensuring: </p>",
+        "header_size": "small",
+        "header_alignment": "left",
+        "column_gap": 50,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_izDQLW": {
+      "type": "multi-content",
+      "blocks": {
+        "icon_box_hPWW9P": {
+          "type": "icon_box",
+          "settings": {
+            "content_width": "50%",
+            "vertical_align": "center",
+            "box_alignment": "left",
+            "flex_direction": true,
+            "icon_image": "shopify://shop_images/checkbox.png",
+            "icon_size": 25,
+            "heading": "Traditional Indian Art Forms",
+            "description": "<p>Madhubani, Pattachitra, Kantha stitch, and other indigenous crafts are showcased, preserving centuries-old techniques.</p>",
+            "description_width": 350,
+            "icon_image2": "shopify://shop_images/checkbox.png",
+            "icon_size2": 25,
+            "heading2": "Nature-Inspired Designs",
+            "description2": "<p>All artisans utilize <strong>natural dyes, motifs, and sustainable materials</strong>, aligning with eco-conscious practices.</p>",
+            "description_width2": 350,
+            "icon_image3": "shopify://shop_images/checkbox.png",
+            "icon_size3": 25,
+            "heading3": "Premium Textiles & Materials",
+            "description3": "<p>Featuring <strong>Pashmina, Tussar Silk, and other high-quality fabrics</strong>, known for their durability, texture, and breathability.</p>",
+            "description_width3": 350,
+            "icon_image4": "shopify://shop_images/checkbox.png",
+            "icon_size4": 25,
+            "heading4": "Handcrafted Excellence",
+            "description4": "<p>Each product embodies meticulous craftsmanship, blending traditional artistry with modern elegance.</p>",
+            "description_width4": 350
+          }
+        },
+        "image_xHLKDV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cavirk_-about_us.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_hPWW9P",
+        "image_xHLKDV"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "heading": "Commitment to Craftsmanship ",
+        "description": "<p>The artisans and sellers on Cavirk adhere to the highest standards of craftsmanship, incorporating</p>",
+        "header_size": "small",
+        "header_alignment": "center",
+        "column_gap": 50,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "icon_box_8NLGXC": {
+      "type": "icon-box",
+      "blocks": {
+        "icon_box_yGFgNq": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/guarantee.png",
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Guaranteed Authenticity",
+            "description": "<p>Only <strong>verified, GI-registered, and artisan-certified</strong> products are available.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_FD7XJf": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/label.png",
+            "icon_svg": "check_badge",
+            "custom_svg": "",
+            "heading": "Handmade Heritage",
+            "description": "<p>Showcasingcraftsmanship that has been passed down through generations.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_jwNKPi": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/save-the-world.png",
+            "icon_svg": "message_communications",
+            "custom_svg": "",
+            "heading": "Ethical & Sustainable Practices",
+            "description": "<p>Supporting responsible sourcing and fair wages for artisans.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_KA6L9c": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/diamond.png",
+            "icon_svg": "none",
+            "custom_svg": "",
+            "heading": "Luxury with a Purpose",
+            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_BiHcfp": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/experience.png",
+            "icon_svg": "none",
+            "custom_svg": "",
+            "heading": "Seamless Shopping Experience",
+            "description": "<p> Every purchase contributes to the preservation of traditional art forms.</p>",
+            "description_width": 250
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_yGFgNq",
+        "icon_box_FD7XJf",
+        "icon_box_jwNKPi",
+        "icon_box_KA6L9c",
+        "icon_box_BiHcfp"
+      ],
+      "name": "t:sections.icon_box.name",
       "settings": {
         "section_width": "container",
         "color_scheme": "",
-        "heading": "",
-        "description": "",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "speed": 5,
-        "items_per_row": 3,
+        "type": "default",
         "column_gap": 30,
+        "heading": "Why Choose Cavirk? ",
+        "description": "",
+        "header_size": "small",
+        "header_alignment": "center",
+        "icon_position": "top",
+        "icon_size": 40,
+        "spacing": 11,
+        "background": "",
+        "enable_background": false,
         "content_alignment": "center",
-        "number_font_size": 36,
-        "number_font_weight": "subheading_weight",
-        "number_spacing_bottom": 13,
         "heading_font_size": 18,
         "heading_font_weight": "heading_weight",
-        "heading_spacing_bottom": 12,
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 10,
         "des_font_size": 15,
         "des_font_weight": "body_weight",
-        "des_spacing_bottom": 0,
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": "1",
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "icon_box_mYgJt6": {
+      "type": "icon-box",
+      "blocks": {
+        "icon_box_rf7nJr": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/credit-card_1.png",
+            "icon_svg": "free_shipping",
+            "custom_svg": "",
+            "heading": "Secure Payments",
+            "description": "<p>Partnered with <strong>Razorpay</strong> for protected transactions.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_YNRUaP": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/delivery-truck.png",
+            "icon_svg": "check_badge",
+            "custom_svg": "",
+            "heading": "Complimentary Shipping",
+            "description": "<p>Orders are dispatched the same day at no additional cost.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_jEnKaF": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/refund.png",
+            "icon_svg": "message_communications",
+            "custom_svg": "",
+            "heading": "Hassle-Free Returns & Refunds",
+            "description": "<p>Products with manufacturing defects or incorrect shipments are immediately replaced or refunded.</p>",
+            "description_width": 250
+          }
+        },
+        "icon_box_aAimHe": {
+          "type": "icon_box",
+          "settings": {
+            "icon_image": "shopify://shop_images/quality-assurance.png",
+            "icon_svg": "none",
+            "custom_svg": "",
+            "heading": "Quality Assurance Videos",
+            "description": "<p> A <strong>pre-dispatch quality check video</strong> is shared with customers, ensuring complete transparency before shipping.</p>",
+            "description_width": 250
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_rf7nJr",
+        "icon_box_YNRUaP",
+        "icon_box_jEnKaF",
+        "icon_box_aAimHe"
+      ],
+      "name": "t:sections.icon_box.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "type": "default",
+        "column_gap": 30,
+        "heading": "",
+        "description": "",
+        "header_size": "small",
+        "header_alignment": "center",
+        "icon_position": "top",
+        "icon_size": 40,
+        "spacing": 11,
+        "background": "",
+        "enable_background": false,
+        "content_alignment": "center",
+        "heading_font_size": 18,
+        "heading_font_weight": "heading_weight",
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 10,
+        "des_font_size": 15,
+        "des_font_weight": "body_weight",
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": "1",
         "padding_top": 0,
         "padding_bottom": 0,
         "reset_spacing": false
       }
     },
-    "divider_jTBGQJ": {
-      "type": "divider",
-      "settings": {
-        "section_width": "container",
-        "border_height": 1,
-        "border_color": "#ebebeb",
-        "reset_spacing": false
-      }
-    },
-    "rich_text_td9KN9": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_HdJBLD": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Why Choose Us",
-            "font_size": 15,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 4
-          }
-        },
-        "heading_izj8pi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Peculiar Things",
-            "font_size": 36,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 10
-          }
-        },
-        "description_Jpw6Dw": {
-          "type": "description",
-          "settings": {
-            "description": "<p>Our fashion products are characterized by innovative and on—trend designs. We pride ourselves in pushing the <br\/>boundaries of conventional fashion, delivering new, bold and captivating styles.<\/p>",
-            "font_size": 15,
-            "font_weight": "body_weight",
-            "spacing_bottom": 10
-          }
-        }
-      },
-      "block_order": [
-        "subheading_HdJBLD",
-        "heading_izj8pi",
-        "description_Jpw6Dw"
-      ],
-      "settings": {
-        "section_width": "container",
-        "color_scheme": "",
-        "content_alignment": "center",
-        "content_max_width": 70,
-        "enable_expand_content": false,
-        "expand_content_button": "See all Information",
-        "padding_top": 0,
-        "padding_bottom": 25,
-        "reset_spacing": true
-      }
-    },
-    "multi_content_VbbiBa": {
+    "multi_content_zWDzJT": {
       "type": "multi-content",
       "blocks": {
-        "image_with_text_below_MP8tHt": {
-          "type": "image_with_text_below",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "33.3333%",
-            "vertical_align": "start",
-            "image": "shopify:\/\/shop_images\/about_banner_1.jpg",
-            "image_link": "",
-            "subheading": "",
-            "heading": "Cultural Standards",
-            "description": "<p>We are committed to setting high ethical standards in production and ensuring mindful manufacturing through audits, training and education.<\/p>",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "spacing_top": 28,
-            "spacing_bottom": 0,
-            "content_padding_inline": 0,
-            "subheading_font_size": 12,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 8,
-            "heading_font_size": 18,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 8,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 0
-          }
-        },
-        "image_with_text_below_MWmL4Q": {
-          "type": "image_with_text_below",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "33.3333%",
-            "vertical_align": "start",
-            "image": "shopify:\/\/shop_images\/about_banner_2.jpg",
-            "image_link": "",
-            "subheading": "",
-            "heading": "Designed to Last",
-            "description": "<p>From traditional tailoring to the most informal pieces. Our Glozin collections feature the latest trends with the maximum comfort.<\/p>",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "spacing_top": 28,
-            "spacing_bottom": 0,
-            "content_padding_inline": 0,
-            "subheading_font_size": 12,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 18,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 8,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 0
-          }
-        },
-        "image_with_text_below_fA66be": {
-          "type": "image_with_text_below",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "33.3333%",
-            "vertical_align": "start",
-            "image": "shopify:\/\/shop_images\/about_banner_3.jpg",
-            "image_link": "",
-            "subheading": "",
-            "heading": "Freedom for Everyone",
-            "description": "<p>The designs have been created adopting the current trends, while leaving room for personal expression among young people.<\/p>",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "spacing_top": 28,
-            "spacing_bottom": 0,
-            "content_padding_inline": 0,
-            "subheading_font_size": 12,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 18,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 8,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_below_MP8tHt",
-        "image_with_text_below_MWmL4Q",
-        "image_with_text_below_fA66be"
-      ],
-      "settings": {
-        "section_width": "container",
-        "heading": "",
-        "description": "",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "column_gap": 30,
-        "equal_height_adjustment": false,
-        "carousel_on_mobile": false,
-        "items_per_row_mobile": 1,
-        "padding_top": 0,
-        "padding_bottom": 72,
-        "reset_spacing": true
-      }
-    },
-    "rich_text_yjfBc8": {
-      "type": "rich-text",
-      "blocks": {
-        "custom_html_hgJBeG": {
-          "type": "custom_html",
-          "settings": {
-            "html_custom": "<div class=\"text-center\" style=\"color: #111;\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n<path d=\"M15.9566 6.05028C16.0087 6.21336 16.0139 6.38188 15.9722 6.55583C15.9305 6.72978 15.8419 6.87656 15.7065 6.99615L12.2206 10.1925L13.2523 14.9219C13.2835 15.0958 13.2679 15.2643 13.2054 15.4274C13.1533 15.5905 13.0595 15.7264 12.924 15.8351C12.7781 15.9438 12.6218 15.9982 12.4551 15.9982C12.2883 16.0091 12.132 15.971 11.9861 15.884L8 13.3889L4.0139 15.884C3.95137 15.9166 3.87842 15.9438 3.79505 15.9656C3.7221 15.9873 3.64915 15.9982 3.57621 15.9982C3.49284 15.9982 3.40426 15.9819 3.31046 15.9493C3.2271 15.9275 3.14894 15.8895 3.07599 15.8351C2.94051 15.7264 2.84151 15.5905 2.77898 15.4274C2.72688 15.2643 2.71646 15.0958 2.74772 14.9219L3.77942 10.1925L0.29353 6.99615C0.158055 6.87656 0.0694746 6.72978 0.0277898 6.55583C-0.0138949 6.38188 -0.00868433 6.21336 0.0434216 6.05028C0.0955276 5.87633 0.184108 5.73499 0.309162 5.62627C0.444637 5.51755 0.595745 5.45232 0.762484 5.43058L5.38949 5.00657L7.21841 0.538165C7.28094 0.375085 7.38515 0.244621 7.53105 0.146772C7.67694 0.0489241 7.83326 0 8 0C8.16674 0 8.32306 0.0489241 8.46895 0.146772C8.61485 0.244621 8.71906 0.375085 8.78159 0.538165L10.6105 5.00657L15.2375 5.43058C15.4043 5.45232 15.5502 5.51755 15.6752 5.62627C15.8107 5.73499 15.9045 5.87633 15.9566 6.05028Z\" fill=\"#F3FC81\"><\/path>\n<\/svg>\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n<path d=\"M15.9566 6.05028C16.0087 6.21336 16.0139 6.38188 15.9722 6.55583C15.9305 6.72978 15.8419 6.87656 15.7065 6.99615L12.2206 10.1925L13.2523 14.9219C13.2835 15.0958 13.2679 15.2643 13.2054 15.4274C13.1533 15.5905 13.0595 15.7264 12.924 15.8351C12.7781 15.9438 12.6218 15.9982 12.4551 15.9982C12.2883 16.0091 12.132 15.971 11.9861 15.884L8 13.3889L4.0139 15.884C3.95137 15.9166 3.87842 15.9438 3.79505 15.9656C3.7221 15.9873 3.64915 15.9982 3.57621 15.9982C3.49284 15.9982 3.40426 15.9819 3.31046 15.9493C3.2271 15.9275 3.14894 15.8895 3.07599 15.8351C2.94051 15.7264 2.84151 15.5905 2.77898 15.4274C2.72688 15.2643 2.71646 15.0958 2.74772 14.9219L3.77942 10.1925L0.29353 6.99615C0.158055 6.87656 0.0694746 6.72978 0.0277898 6.55583C-0.0138949 6.38188 -0.00868433 6.21336 0.0434216 6.05028C0.0955276 5.87633 0.184108 5.73499 0.309162 5.62627C0.444637 5.51755 0.595745 5.45232 0.762484 5.43058L5.38949 5.00657L7.21841 0.538165C7.28094 0.375085 7.38515 0.244621 7.53105 0.146772C7.67694 0.0489241 7.83326 0 8 0C8.16674 0 8.32306 0.0489241 8.46895 0.146772C8.61485 0.244621 8.71906 0.375085 8.78159 0.538165L10.6105 5.00657L15.2375 5.43058C15.4043 5.45232 15.5502 5.51755 15.6752 5.62627C15.8107 5.73499 15.9045 5.87633 15.9566 6.05028Z\" fill=\"#F3FC81\"><\/path>\n<\/svg>\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n<path d=\"M15.9566 6.05028C16.0087 6.21336 16.0139 6.38188 15.9722 6.55583C15.9305 6.72978 15.8419 6.87656 15.7065 6.99615L12.2206 10.1925L13.2523 14.9219C13.2835 15.0958 13.2679 15.2643 13.2054 15.4274C13.1533 15.5905 13.0595 15.7264 12.924 15.8351C12.7781 15.9438 12.6218 15.9982 12.4551 15.9982C12.2883 16.0091 12.132 15.971 11.9861 15.884L8 13.3889L4.0139 15.884C3.95137 15.9166 3.87842 15.9438 3.79505 15.9656C3.7221 15.9873 3.64915 15.9982 3.57621 15.9982C3.49284 15.9982 3.40426 15.9819 3.31046 15.9493C3.2271 15.9275 3.14894 15.8895 3.07599 15.8351C2.94051 15.7264 2.84151 15.5905 2.77898 15.4274C2.72688 15.2643 2.71646 15.0958 2.74772 14.9219L3.77942 10.1925L0.29353 6.99615C0.158055 6.87656 0.0694746 6.72978 0.0277898 6.55583C-0.0138949 6.38188 -0.00868433 6.21336 0.0434216 6.05028C0.0955276 5.87633 0.184108 5.73499 0.309162 5.62627C0.444637 5.51755 0.595745 5.45232 0.762484 5.43058L5.38949 5.00657L7.21841 0.538165C7.28094 0.375085 7.38515 0.244621 7.53105 0.146772C7.67694 0.0489241 7.83326 0 8 0C8.16674 0 8.32306 0.0489241 8.46895 0.146772C8.61485 0.244621 8.71906 0.375085 8.78159 0.538165L10.6105 5.00657L15.2375 5.43058C15.4043 5.45232 15.5502 5.51755 15.6752 5.62627C15.8107 5.73499 15.9045 5.87633 15.9566 6.05028Z\" fill=\"#F3FC81\"><\/path>\n<\/svg>\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n<path d=\"M15.9566 6.05028C16.0087 6.21336 16.0139 6.38188 15.9722 6.55583C15.9305 6.72978 15.8419 6.87656 15.7065 6.99615L12.2206 10.1925L13.2523 14.9219C13.2835 15.0958 13.2679 15.2643 13.2054 15.4274C13.1533 15.5905 13.0595 15.7264 12.924 15.8351C12.7781 15.9438 12.6218 15.9982 12.4551 15.9982C12.2883 16.0091 12.132 15.971 11.9861 15.884L8 13.3889L4.0139 15.884C3.95137 15.9166 3.87842 15.9438 3.79505 15.9656C3.7221 15.9873 3.64915 15.9982 3.57621 15.9982C3.49284 15.9982 3.40426 15.9819 3.31046 15.9493C3.2271 15.9275 3.14894 15.8895 3.07599 15.8351C2.94051 15.7264 2.84151 15.5905 2.77898 15.4274C2.72688 15.2643 2.71646 15.0958 2.74772 14.9219L3.77942 10.1925L0.29353 6.99615C0.158055 6.87656 0.0694746 6.72978 0.0277898 6.55583C-0.0138949 6.38188 -0.00868433 6.21336 0.0434216 6.05028C0.0955276 5.87633 0.184108 5.73499 0.309162 5.62627C0.444637 5.51755 0.595745 5.45232 0.762484 5.43058L5.38949 5.00657L7.21841 0.538165C7.28094 0.375085 7.38515 0.244621 7.53105 0.146772C7.67694 0.0489241 7.83326 0 8 0C8.16674 0 8.32306 0.0489241 8.46895 0.146772C8.61485 0.244621 8.71906 0.375085 8.78159 0.538165L10.6105 5.00657L15.2375 5.43058C15.4043 5.45232 15.5502 5.51755 15.6752 5.62627C15.8107 5.73499 15.9045 5.87633 15.9566 6.05028Z\" fill=\"#F3FC81\"><\/path>\n<\/svg>\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n<path d=\"M15.9566 6.05028C16.0087 6.21336 16.0139 6.38188 15.9722 6.55583C15.9305 6.72978 15.8419 6.87656 15.7065 6.99615L12.2206 10.1925L13.2523 14.9219C13.2835 15.0958 13.2679 15.2643 13.2054 15.4274C13.1533 15.5905 13.0595 15.7264 12.924 15.8351C12.7781 15.9438 12.6218 15.9982 12.4551 15.9982C12.2883 16.0091 12.132 15.971 11.9861 15.884L8 13.3889L4.0139 15.884C3.95137 15.9166 3.87842 15.9438 3.79505 15.9656C3.7221 15.9873 3.64915 15.9982 3.57621 15.9982C3.49284 15.9982 3.40426 15.9819 3.31046 15.9493C3.2271 15.9275 3.14894 15.8895 3.07599 15.8351C2.94051 15.7264 2.84151 15.5905 2.77898 15.4274C2.72688 15.2643 2.71646 15.0958 2.74772 14.9219L3.77942 10.1925L0.29353 6.99615C0.158055 6.87656 0.0694746 6.72978 0.0277898 6.55583C-0.0138949 6.38188 -0.00868433 6.21336 0.0434216 6.05028C0.0955276 5.87633 0.184108 5.73499 0.309162 5.62627C0.444637 5.51755 0.595745 5.45232 0.762484 5.43058L5.38949 5.00657L7.21841 0.538165C7.28094 0.375085 7.38515 0.244621 7.53105 0.146772C7.67694 0.0489241 7.83326 0 8 0C8.16674 0 8.32306 0.0489241 8.46895 0.146772C8.61485 0.244621 8.71906 0.375085 8.78159 0.538165L10.6105 5.00657L15.2375 5.43058C15.4043 5.45232 15.5502 5.51755 15.6752 5.62627C15.8107 5.73499 15.9045 5.87633 15.9566 6.05028Z\" fill=\"#F3FC81\"><\/path>\n<\/svg>\n<\/div>",
-            "spacing_bottom": 12
-          }
-        },
-        "description_NKGpBk": {
-          "type": "description",
-          "settings": {
-            "description": "<p><em>\" Glozin will become an example of the responsible business model by doing business with kindness, profit and bringing practical and long—term values to customers, employees, partners, the community for the environment and for shareholders. \"<\/em><\/p>",
-            "font_size": 18,
-            "font_weight": "body_weight",
-            "spacing_bottom": 15
-          }
-        },
-        "subheading_RLCEF7": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Carie—Gosée Hera",
-            "font_size": 16,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 0
-          }
-        },
-        "description_jRcfa7": {
-          "type": "description",
-          "settings": {
-            "description": "<p>CEO and Founder Glozin Store<\/p>",
-            "font_size": 14,
-            "font_weight": "body_weight",
-            "spacing_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "custom_html_hgJBeG",
-        "description_NKGpBk",
-        "subheading_RLCEF7",
-        "description_jRcfa7"
-      ],
-      "settings": {
-        "section_width": "container",
-        "color_scheme": "scheme-bb1431b0-be4a-4b03-a450-f572c07e3904",
-        "content_alignment": "center",
-        "content_max_width": 63,
-        "enable_expand_content": false,
-        "expand_content_button": "See all Information",
-        "padding_top": 80,
-        "padding_bottom": 70,
-        "reset_spacing": false
-      }
-    },
-    "multi_content_yUFjXW": {
-      "type": "multi-content",
-      "blocks": {
-        "image_DrDQzr": {
+        "image_eeDyNc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about_banner_4.jpg",
+            "image": "shopify://shop_images/cavirk_-about_us_2_d8625e9b-1763-45f4-9680-dffcb859cb71.png",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "start"
           }
         },
-        "text_9rzjcF": {
-          "type": "text",
+        "icon_box_CzdKdd": {
+          "type": "icon_box",
           "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
+            "content_width": "45%",
             "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Our Factories",
-            "heading": "The Best Product",
-            "description": "<p>We spend a lot of time finding the best factories around the world—the same <br\/>factories that make your favorite designer brands. We visit them regularly and <br\/>build strong personal relationships with the owners. Each factory is audited for<br\/> compliance to assess factors such as fair wages.<\/p>",
-            "first_button_label": "Learn More",
-            "first_button_link": "shopify:\/\/collections\/best-seller",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "subheading_font_size": 15,
-            "subheading_font_weight": "heading_weight",
-            "subheading_spacing_bottom": 8,
-            "heading_font_size": 36,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 25,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "box_alignment": "left",
+            "flex_direction": true,
+            "icon_image": "shopify://shop_images/checkbox.png",
+            "icon_size": 25,
+            "heading": "Bridge Tradition with Modernity",
+            "description": "<p>Bringing India’s heritage crafts to the global stage.</p>",
+            "description_width": 350,
+            "icon_image2": "shopify://shop_images/checkbox.png",
+            "icon_size2": 25,
+            "heading2": "Ensure Quality & Transparency",
+            "description2": "<p>Every product is meticulously vetted before reaching customers.</p>",
+            "description_width2": 350,
+            "icon_image3": "shopify://shop_images/checkbox.png",
+            "icon_size3": 25,
+            "heading3": "Enhance Customer Experience",
+            "description3": "<p>Providing a seamless, refined, and enriching shopping journey.</p>",
+            "description_width3": 350,
+            "icon_size4": 25,
+            "heading4": "",
+            "description4": "",
+            "description_width4": 350
           }
         }
       },
       "block_order": [
-        "image_DrDQzr",
-        "text_9rzjcF"
+        "image_eeDyNc",
+        "icon_box_CzdKdd"
       ],
+      "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "container",
+        "section_width": "fluid_container",
         "heading": "",
         "description": "",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "column_gap": 30,
+        "header_size": "small",
+        "header_alignment": "left",
+        "column_gap": 50,
+        "content_background_color": "",
         "equal_height_adjustment": false,
         "carousel_on_mobile": false,
         "items_per_row_mobile": 1,
-        "padding_top": 0,
+        "padding_top": 30,
         "padding_bottom": 0,
         "reset_spacing": false
       }
     },
-    "multi_content_Phq6nD": {
-      "type": "multi-content",
-      "blocks": {
-        "text_4HeFjG": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Our Products",
-            "heading": "Timeless Products",
-            "description": "<p>At Glozin, we’re not big on trends. We want you to wear our pieces for years,<br\/> even decades, to come. That’s why we source the finest materials and factories<br\/> for our timeless products— like our Grade-A cashmere sweaters, Italian shoes, <br\/>and Peruvian Pima tees.<\/p>",
-            "first_button_label": "Learn More",
-            "first_button_link": "shopify:\/\/collections\/activewear",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "subheading_font_size": 15,
-            "subheading_font_weight": "heading_weight",
-            "subheading_spacing_bottom": 8,
-            "heading_font_size": 36,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 25,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "image_cMzQ9f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/about_banner_5.jpg",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "start"
-          }
-        }
-      },
-      "block_order": [
-        "text_4HeFjG",
-        "image_cMzQ9f"
-      ],
-      "settings": {
-        "section_width": "container",
-        "heading": "",
-        "description": "",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "column_gap": 30,
-        "equal_height_adjustment": false,
-        "carousel_on_mobile": false,
-        "items_per_row_mobile": 1,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "reset_spacing": false
-      }
-    },
-    "divider_TAXJn3": {
-      "type": "divider",
-      "settings": {
-        "section_width": "container",
-        "border_height": 1,
-        "border_color": "#ebebeb",
-        "reset_spacing": false
-      }
-    },
-    "rich_text_ej4aJ8": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_jyxhWF": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "How We Work",
-            "font_size": 15,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 3
-          }
-        },
-        "heading_NxNJtH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Expanding Horizons",
-            "font_size": 36,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 10
-          }
-        },
-        "description_3VEKaL": {
-          "type": "description",
-          "settings": {
-            "description": "<p>At Glozin, our work culture is deeply rooted in collaboration, innovation and passion. We believe that a positive and<br\/> inclusive work environment is the foundation for creativity and success.<\/p>",
-            "font_size": 15,
-            "font_weight": "body_weight",
-            "spacing_bottom": 10
-          }
-        }
-      },
-      "block_order": [
-        "subheading_jyxhWF",
-        "heading_NxNJtH",
-        "description_3VEKaL"
-      ],
-      "settings": {
-        "section_width": "container",
-        "color_scheme": "",
-        "content_alignment": "center",
-        "content_max_width": 73,
-        "enable_expand_content": false,
-        "expand_content_button": "See all Information",
-        "padding_top": 0,
-        "padding_bottom": 22,
-        "reset_spacing": true
-      }
-    },
-    "multi_content_cnGW9D": {
-      "type": "multi-content",
-      "blocks": {
-        "image_with_text_below_re4BzW": {
-          "type": "image_with_text_below",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "33.3333%",
-            "vertical_align": "start",
-            "image": "shopify:\/\/shop_images\/about_banner_6.jpg",
-            "image_link": "",
-            "subheading": "",
-            "heading": "The Core of Us",
-            "description": "<p>Adipisicing elit sed do eiusmod tempor labore et dolore dignissimos cumque. Excepteur sint occaecat cupidatat proident.<\/p>",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "spacing_top": 27,
-            "spacing_bottom": 0,
-            "content_padding_inline": 0,
-            "subheading_font_size": 13,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 18,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 10,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 0
-          }
-        },
-        "image_with_text_below_C7nCbK": {
-          "type": "image_with_text_below",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "33.3333%",
-            "vertical_align": "start",
-            "image": "shopify:\/\/shop_images\/about_banner_7.jpg",
-            "image_link": "",
-            "subheading": "",
-            "heading": "Our Products",
-            "description": "<p>Adipisicing elit sed do eiusmod tempor labore et dolore dignissimos cumque. Excepteur sint occaecat cupidatat proident.<\/p>",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "spacing_top": 27,
-            "spacing_bottom": 0,
-            "content_padding_inline": 0,
-            "subheading_font_size": 12,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 18,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 10,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 0
-          }
-        },
-        "image_with_text_below_Nyqy46": {
-          "type": "image_with_text_below",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "33.3333%",
-            "vertical_align": "start",
-            "image": "shopify:\/\/shop_images\/about_banner_8.jpg",
-            "image_link": "",
-            "subheading": "",
-            "heading": "Our Careers",
-            "description": "<p>Adipisicing elit sed do eiusmod tempor labore et dolore dignissimos cumque. Excepteur sint occaecat cupidatat proident.<\/p>",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "center",
-            "spacing_top": 27,
-            "spacing_bottom": 0,
-            "content_padding_inline": 0,
-            "subheading_font_size": 12,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 18,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 10,
-            "des_font_size": 15,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_below_re4BzW",
-        "image_with_text_below_C7nCbK",
-        "image_with_text_below_Nyqy46"
-      ],
-      "settings": {
-        "section_width": "container",
-        "heading": "",
-        "description": "",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "column_gap": 30,
-        "equal_height_adjustment": false,
-        "carousel_on_mobile": false,
-        "items_per_row_mobile": 1,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "reset_spacing": false
-      }
-    }
   },
   "order": [
     "page-heading",
-    "rich_text_qMbJGD",
-    "multi_content_mBYATd",
-    "counter_bjDJxc",
-    "divider_jTBGQJ",
-    "rich_text_td9KN9",
-    "multi_content_VbbiBa",
-    "rich_text_yjfBc8",
-    "multi_content_yUFjXW",
-    "multi_content_Phq6nD",
-    "divider_TAXJn3",
-    "rich_text_ej4aJ8",
-    "multi_content_cnGW9D"
+    "multi_content_AHdcCj",
+    "multi_content_4TMyPx",
+    "multi_content_EPA9gP",
+    "multi_content_izDQLW",
+    "icon_box_8NLGXC",
+    "icon_box_mYgJt6",
+    "multi_content_zWDzJT",
   ]
 }
