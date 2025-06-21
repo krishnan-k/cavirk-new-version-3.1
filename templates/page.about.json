@@ -20,7 +20,7 @@
           "type": "heading",
           "settings": {
             "page_title": "",
-            "header_size": "small"
+            "header_size": "default"
           }
         }
       },
