@@ -12,21 +12,21 @@
     "page-heading": {
       "type": "page-heading",
       "blocks": {
+        "breadcrumb_kg6gTP": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
         "heading_k374p7": {
           "type": "heading",
           "settings": {
             "page_title": "",
             "header_size": "small"
           }
-        },
-        "breadcrumb_kg6gTP": {
-          "type": "breadcrumb",
-          "settings": {}
         }
       },
       "block_order": [
-        "heading_k374p7",
-        "breadcrumb_kg6gTP"
+        "breadcrumb_kg6gTP",
+        "heading_k374p7"
       ],
       "settings": {
         "section_width": "container",
