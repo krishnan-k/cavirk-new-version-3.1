@@ -2678,7 +2678,8 @@
         },
         "select_product": "Select product",
         "show_image": "Show image",
-        "show_verified_buyer": "Show verified buyer"
+        "show_verified_buyer": "Show verified buyer",
+        "hide_price": "Hidden price"
       },
       "presets": {
         "name": "Product testimonials"

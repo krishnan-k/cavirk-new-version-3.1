@@ -29,6 +29,7 @@
   assign show_verified_buyer = section_st.show_verified_buyer
   assign image_ratio = section_st.image_ratio
   assign custom_ratio = section_st.custom_ratio
+  assign testimonial_hide_price = section_st.hide_price
   if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2
     assign data_free_scroll = 'true'
   endif
@@ -267,7 +268,8 @@
                       custom_widths: '240, 120, 60',
                       type: 'list',
                       sizes: '60px',
-                      direction: direction
+                      direction: direction,
+                      testimonial_hidden_price: testimonial_hide_price,
                     %}
                   </div>
                 </div>
@@ -522,6 +524,12 @@
       "step": 5,
       "default": 30,
       "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_price",
+      "label": "t:sections.testimonials_product.settings.hide_price",
+      "default": false
     },
     {
       "type": "header",
