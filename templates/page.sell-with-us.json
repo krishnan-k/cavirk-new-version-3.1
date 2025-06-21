@@ -9,14 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-default",
-      "settings": {
-        "section_width": "stretch_width",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_with_text_overlay_YeTEim": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -453,7 +445,6 @@
     }
   },
   "order": [
-    "main",
     "image_with_text_overlay_YeTEim",
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
