@@ -9,36 +9,6 @@
  */
 {
   "sections": {
-    "heading": {
-      "type": "page-heading",
-      "blocks": {
-        "breadcrumb_KPVbXN": {
-          "type": "breadcrumb",
-          "settings": {}
-        },
-        "heading_B3DXTc": {
-          "type": "heading",
-          "settings": {
-            "page_title": "Sell with us",
-            "header_size": "default"
-          }
-        }
-      },
-      "block_order": [
-        "breadcrumb_KPVbXN",
-        "heading_B3DXTc"
-      ],
-      "settings": {
-        "section_width": "fluid_container",
-        "color_scheme": "",
-        "alignment": "center",
-        "background_image": "shopify://shop_images/Frame_1000009792.png",
-        "overlay_opacity": 0,
-        "height": "based_on_content",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "image_with_text_overlay_YeTEim": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -475,7 +445,6 @@
     }
   },
   "order": [
-    "heading",
     "image_with_text_overlay_YeTEim",
     "multi_content_7RdmUG",
     "icon_box_wYVEpe",
