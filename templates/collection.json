@@ -40,9 +40,9 @@
         "background_image": "shopify://shop_images/breadcrumb.jpg",
         "show_collection_image": false,
         "overlay_opacity": 0,
-        "height": "adapt",
-        "padding_top": 28,
-        "padding_bottom": 28
+        "height": "based_on_content",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "subcollection": {
