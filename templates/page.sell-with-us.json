@@ -12,24 +12,21 @@
     "heading": {
       "type": "page-heading",
       "blocks": {
+        "breadcrumb_KPVbXN": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
         "heading_B3DXTc": {
           "type": "heading",
           "settings": {
-            "page_title": "Collections List",
+            "page_title": "Sell with us",
             "header_size": "default"
-          }
-        },
-        "description_tLPCVn": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "description": "<p>Explore our thoughtfully curated collections: Sweaters, Handbags, Denim, and more—each <br/>perfect for enhancing every style on every special occasion and daily wear.</p>"
           }
         }
       },
       "block_order": [
-        "heading_B3DXTc",
-        "description_tLPCVn"
+        "breadcrumb_KPVbXN",
+        "heading_B3DXTc"
       ],
       "settings": {
         "section_width": "fluid_container",
