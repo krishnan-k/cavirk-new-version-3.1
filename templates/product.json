@@ -157,7 +157,7 @@
             "discount_content_icon": "discount",
             "discount_content": "<p>Authentic Products</p>",
             "return_content_icon": "free_shipping",
-            "return_content": "<p>Free shipping: <strong>On all orders</strong></p>",
+            "return_content": "<p>Free shipping: On all orders</p>",
             "return_secure_icon": "secure_payment",
             "secure_content": "<p>Secure Payments</p>"
           }
