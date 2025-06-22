@@ -381,7 +381,7 @@
                     </div>
                   {% endif %}
                   {% if block_st.return_content != blank %}
-                    <div class="return {{ last_block }} flex-1 rich__text-m0 {% if block_st.delivery_design == 'horizontal' %}py-20 py-md-0 px-0 px-md-20{% endif %}">
+                    <div class="return {{ class }} flex-1 rich__text-m0 {% if block_st.delivery_design == 'horizontal' %}py-20 py-md-0 px-0 px-md-20{% endif %}">
                       {%- if block_st.return_content_icon != 'none' -%}
                         {% render 'icon_svg_list', icon: block_st.return_content_icon, custom_width: 25 %}
                       {% endif %}
@@ -393,7 +393,7 @@
                   {% if block_st.secure_content != blank %}
                     <div class="secure {{ last_block }} flex-1 rich__text-m0 {% if block_st.delivery_design == 'horizontal' %}py-20 py-md-0 px-0 px-md-20{% endif %}">
                       {%- if block_st.return_secure_icon != 'none' -%}
-                        {% render 'icon_svg_list', icon: block_st.return_secure_icon, custom_width: 25 %}
+                        {% render 'icon_svg_list', icon: block_st.return_secure_icon, custom_width: 24 %}
                       {% endif %}
                       <div class="rich__text-m0 {{ block_content }}">
                         {{ block_st.secure_content }}
@@ -411,7 +411,7 @@
                   style="--rounded-radius: 0px;border: 1px solid var(--color-border);"
                 >
                   {% if block_st.message != blank %}
-                    <div class="trust-badge__message heading-letter-spacing lh-normal mb-10 fs-big-1">
+                    <div class="trust-badge__message heading-letter-spacing lh-normal mb-10 fs-big-1" style="color: var(--color-heading);">
                       {{ block_st.message }}
                     </div>
                   {% endif %}
@@ -1770,6 +1770,14 @@
             {
               "value": "discount",
               "label": "t:sections.all.icon.discount.label"
+            },
+            {
+              "value": "secure_payment",
+              "label": "t:sections.all.icon.secure_payment.label"
+            },
+            {
+              "value": "authentic_products",
+              "label": "t:sections.all.icon.authentic_products.label"
             }
           ]
         },

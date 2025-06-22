@@ -1739,6 +1739,9 @@
         "secure_payment": {
           "label": "Secure payment"
         },
+        "authentic_products": {
+          "label": "Authentic products"
+        },
         "question": {
           "label": "Question"
         },

@@ -335,6 +335,8 @@ sticky-add-cart variant-group-sticky select {
   .delivery-return > div {
     flex: 0 0 auto;
     width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .thumbnail-slide__mobile--hidden {
     display: none;
