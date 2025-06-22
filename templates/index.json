@@ -16,7 +16,7 @@
           "type": "slider_item",
           "settings": {
             "image": "shopify://shop_images/cavirk_banner_1.jpg",
-            "image_mobile": "shopify://shop_images/M1.png",
+            "image_mobile": "shopify://shop_images/M1_png.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeinup",
             "subheading": "",
