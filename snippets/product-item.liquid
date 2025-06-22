@@ -132,7 +132,7 @@
               href="{{ card_product.url }}"
             {% endif %}
             aria-label="{{ card_product.title }}"
-            class="product__media product-item__media--ratio rounded block{% if card_product.media[1] != blank and show_secondary_image %} show_secondary{% endif %}"
+            class="product__media product-item__media--ratio block{% if card_product.media[1] != blank and show_secondary_image %} show_secondary{% endif %}"
             style="--aspect-ratio: {{ ratio }};"
           >
             {% if type_video %}

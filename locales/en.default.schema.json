@@ -1736,6 +1736,9 @@
         "truck": {
           "label": "Truck"
         },
+        "secure_payment": {
+          "label": "Secure payment"
+        },
         "question": {
           "label": "Question"
         },
@@ -4359,6 +4362,14 @@
             },
             "discount_content": {
               "header": "Discount content",
+              "icon": {
+                "label": "Icon",
+                "options__1": "Discount"
+              },
+              "content": "Content"
+            },
+            "secure_content": {
+              "header": "Secure payment",
               "icon": {
                 "label": "Icon",
                 "options__1": "Discount"

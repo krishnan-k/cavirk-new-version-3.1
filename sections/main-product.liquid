@@ -341,6 +341,7 @@
               {% if block_st.delivery_content != blank
                 or block_st.return_content != blank
                 or block_st.discount_content != blank
+                or block_st.secure_content != blank
               %}
                 {% liquid
                   if block_st.delivery_design == 'horizontal'
@@ -389,6 +390,16 @@
                       </div>
                     </div>
                   {% endif %}
+                  {% if block_st.secure_content != blank %}
+                    <div class="secure {{ last_block }} flex-1 rich__text-m0 {% if block_st.delivery_design == 'horizontal' %}py-20 py-md-0 px-0 px-md-20{% endif %}">
+                      {%- if block_st.return_secure_icon != 'none' -%}
+                        {% render 'icon_svg_list', icon: block_st.return_secure_icon, custom_width: 25 %}
+                      {% endif %}
+                      <div class="rich__text-m0 {{ block_content }}">
+                        {{ block_st.secure_content }}
+                      </div>
+                    </div>
+                  {% endif %}
                 </div>
               {% endif %}
             {%- when 'trust_badge' -%}
@@ -397,9 +408,10 @@
                 <div
                   class="trust-badge text-center mb-20 p-20 grey-bg rounded lh-normal{% if enable_skeleton_loading %} skeleton-loading{% endif %}"
                   {{ block.shopify_attributes }}
+                  style="--rounded-radius: 0px;border: 1px solid var(--color-border);"
                 >
                   {% if block_st.message != blank %}
-                    <div class="trust-badge__message h6 heading-letter-spacing lh-normal mt-0 fs-big-1">
+                    <div class="trust-badge__message heading-letter-spacing lh-normal mb-10 fs-big-1">
                       {{ block_st.message }}
                     </div>
                   {% endif %}
@@ -1728,6 +1740,10 @@
             {
               "value": "truck",
               "label": "t:sections.all.icon.truck.label"
+            },
+            {
+              "value": "secure_payment",
+              "label": "t:sections.all.icon.secure_payment.label"
             }
           ]
         },
@@ -1796,6 +1812,10 @@
             {
               "value": "truck",
               "label": "t:sections.all.icon.truck.label"
+            },
+            {
+              "value": "secure_payment",
+              "label": "t:sections.all.icon.secure_payment.label"
             }
           ]
         },
@@ -1804,7 +1824,53 @@
           "id": "return_content",
           "label": "t:sections.main-product.blocks.delivery_return.settings.return_content.content",
           "default": "<p>Free shipping and returns: <strong>On all orders over $150.</strong></p>"
-        }
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.delivery_return.settings.secure_content.header"
+        },
+        {
+          "type": "select",
+          "id": "return_secure_icon",
+          "label": "t:sections.all.svg.label",
+          "default": "secure_payment",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.all.icon.none.label"
+            },
+            {
+              "value": "free_shipping",
+              "label": "t:sections.all.icon.free_shipping.label"
+            },
+            {
+              "value": "check_badge",
+              "label": "t:sections.all.icon.check_badge.label"
+            },
+            {
+              "value": "message_communications",
+              "label": "t:sections.all.icon.message_communications.label"
+            },
+            {
+              "value": "boat",
+              "label": "t:sections.all.icon.boat.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.all.icon.truck.label"
+            },
+            {
+              "value": "secure_payment",
+              "label": "t:sections.all.icon.secure_payment.label"
+            }
+          ]
+        },   
+        {
+          "type": "richtext",
+          "id": "secure_content",
+          "label": "t:sections.main-product.blocks.delivery_return.settings.secure_content.content",
+          "default": "<p>Free shipping and returns: <strong>On all orders over $150.</strong></p>"
+        },     
       ]
     },
     {
