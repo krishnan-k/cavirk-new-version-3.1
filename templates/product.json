@@ -153,7 +153,7 @@
           "settings": {
             "delivery_design": "vertical",
             "delivery_content_icon": "truck",
-            "delivery_content": "<p>Estimate delivery times:<strong> 3-5 days International.</strong></p>",
+            "delivery_content": "<p>Same Day Shipment</p>",
             "discount_content_icon": "discount",
             "discount_content": "<p>Use code \"<strong>WELCOME15</strong>\" for discount 15% on your first order.</p>",
             "return_content_icon": "free_shipping",
