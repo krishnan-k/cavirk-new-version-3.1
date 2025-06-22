@@ -60,19 +60,6 @@
             "custom_liquid": "{{product.description}}"
           }
         },
-        "delivery_return_iJHeMD": {
-          "type": "delivery_return",
-          "disabled": true,
-          "settings": {
-            "delivery_design": "vertical",
-            "delivery_content_icon": "truck",
-            "delivery_content": "<p>Estimate delivery times:<strong> 3-5 days International.</strong></p>",
-            "discount_content_icon": "discount",
-            "discount_content": "<p>Use code \"<strong>WELCOME15</strong>\" for discount 15% on your first order.</p>",
-            "return_content_icon": "free_shipping",
-            "return_content": "<p>Free shipping & returns: <strong>On all orders over $150.</strong></p>"
-          }
-        },
         "live_view_rzDP6G": {
           "type": "live_view",
           "settings": {
@@ -120,6 +107,18 @@
             "show_gift_card_recipient": true,
             "show_wishlist": true,
             "show_compare": false
+          }
+        },
+        "delivery_return_iJHeMD": {
+          "type": "delivery_return",
+          "settings": {
+            "delivery_design": "vertical",
+            "delivery_content_icon": "truck",
+            "delivery_content": "<p>Estimate delivery times:<strong> 3-5 days International.</strong></p>",
+            "discount_content_icon": "discount",
+            "discount_content": "<p>Use code \"<strong>WELCOME15</strong>\" for discount 15% on your first order.</p>",
+            "return_content_icon": "free_shipping",
+            "return_content": "<p>Free shipping & returns: <strong>On all orders over $150.</strong></p>"
           }
         },
         "model_size_XM7z6E": {
@@ -226,13 +225,13 @@
         "price_VJ4N8m",
         "short_description_9BGxVm",
         "custom_liquid_GKeQdr",
-        "delivery_return_iJHeMD",
         "live_view_rzDP6G",
         "countdown_timer_QB4Ydn",
         "variant_picker_tcCihG",
         "product_addons_YRaprz",
         "stock_countdown_JNK9zi",
         "buy_buttons_LcQGtR",
+        "delivery_return_iJHeMD",
         "model_size_XM7z6E",
         "pickup_avaiability_cyVydQ",
         "product_grouped_6epkNf",
