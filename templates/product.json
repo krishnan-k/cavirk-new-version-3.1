@@ -151,7 +151,7 @@
         "delivery_return_iJHeMD": {
           "type": "delivery_return",
           "settings": {
-            "delivery_design": "vertical",
+            "delivery_design": "horizontal",
             "delivery_content_icon": "truck",
             "delivery_content": "<p>Same Day Shipment</p>",
             "discount_content_icon": "discount",
