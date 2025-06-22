@@ -154,7 +154,7 @@
             "delivery_design": "horizontal",
             "delivery_content_icon": "truck",
             "delivery_content": "<p>Same Day Shipment</p>",
-            "discount_content_icon": "discount",
+            "discount_content_icon": "authentic_products",
             "discount_content": "<p>Authentic Products</p>",
             "return_content_icon": "free_shipping",
             "return_content": "<p>Free shipping</p>",
