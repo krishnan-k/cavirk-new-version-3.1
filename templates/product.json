@@ -162,7 +162,6 @@
         },
         "trust_badge_qKXhpg": {
           "type": "trust_badge",
-          "disabled": true,
           "settings": {
             "message": "Guarantee Safe Checkout:",
             "trust_badge_image": "shopify://shop_images/payment.jpg",
