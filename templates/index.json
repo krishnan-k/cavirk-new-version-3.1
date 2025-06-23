@@ -122,13 +122,42 @@
             "content_box_opacity": 40,
             "content_alignment_mobile": "center"
           }
+        },
+        "slider_item_AyhUnU": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/banner_5.jpg",
+            "image_mobile": "shopify://shop_images/m4.jpg",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "Timeless Luxury, <br> Handcrafted for You",
+            "description": "",
+            "first_button_label": "shop now",
+            "first_button_link": "shopify://collections",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "center",
+            "content_position": "bottom-center",
+            "content_width": "full_width",
+            "content_max_width": 40,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#e0d1cc",
+            "content_box_opacity": 40,
+            "content_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slider_item_YipJd4",
         "slider_item_iAiXpe",
         "slider_item_jiLA39",
-        "slider_item_gxX3ak"
+        "slider_item_gxX3ak",
+        "slider_item_AyhUnU"
       ],
       "settings": {
         "section_width": "full_width",
