@@ -556,7 +556,7 @@
             "label": "Add to Cart"
           },
           "sold_out": {
-            "label": "Out of Stock"
+            "label": "sold"
           }
         },
         "add_to_bundle": {
@@ -584,7 +584,7 @@
         "type": "Type",
         "view_full_details": "View Full Details",
         "instock": "Instock",
-        "outstock": "Out of Stock",
+        "outstock": "sold",
         "pre_order": "Pre-Order",
         "add_to_cart": "Add to Cart"
       },
@@ -653,7 +653,7 @@
       "save": "Save",
       "sale": "{{discount}}% off",
       "value_unavailable": "{{ option_value }} - Unavailable",
-      "sold_out": "Out of Stock",
+      "sold_out": "sold",
       "pre_order": "Pre-Order",
       "unavailable": "Unavailable",
       "add_to_cart": "Add to Cart",
