@@ -65,12 +65,20 @@
             "collection": "kurta-sets",
             "collection_title": ""
           }
+        },
+        "collection_qH7YeP": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-wear",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
         "collection_GawBmm",
         "collection_TRkbXF",
-        "collection_aPkKRJ"
+        "collection_aPkKRJ",
+        "collection_qH7YeP"
       ],
       "settings": {
         "section_width": "container",
