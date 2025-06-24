@@ -37,6 +37,7 @@
         },
         "review_and_sold_AAbJC9": {
           "type": "review_and_sold",
+          "disabled": true,
           "settings": {
             "show_review": true,
             "show_sold_products": true,
