@@ -151,7 +151,7 @@
       "settings": {
         "section_width": "container",
         "heading": "Contact Us",
-        "description": "<p>If you have an issue or question that requires immediate assistance, you can click the button below to chat live with a Customer Service representative.</p><p>Please allow 3 - 5 business days from the time your package arrives back to us for a refund to be issued. </p>",
+        "description": "<p>If you have an issue or question that requires immediate assistance, you can click the button below to chat live with a Customer Service representative.</p>",
         "first_button_label": "Contact Us",
         "first_button_link": "shopify://pages/contact",
         "first_button_type": "outline",
