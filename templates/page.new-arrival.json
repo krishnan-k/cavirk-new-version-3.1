@@ -77,7 +77,6 @@
         "collection_MbWARG",
         "collection_nddLVN"
       ],
-      "disabled": true,
       "name": "t:sections.collection-tab.name",
       "settings": {
         "section_width": "fluid_container",
@@ -107,7 +106,7 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
-    },
+    }
   },
   "order": [
     "page-heading",
