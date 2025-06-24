@@ -344,7 +344,7 @@
                                   type="text"
                                   min="0"
                                   {%- if filter.max_value.value -%}
-                                    {%- if uses_comma_decimals -%}
+                                  
                                       value="{{ filter.max_value.value | money_without_currency | replace: '.', '' }}"
                                       {%- assign max_price = filter.max_value.value
                                         | money_without_currency
@@ -367,14 +367,14 @@
                                       | replace: '.', ''
                                     -%}
                                     value="{{ max_price | money_without_currency }}"
-                                  {%- endif -%}
-                                  {%- if uses_comma_decimals -%}
+                                  
+                                  <!-- {%- if uses_comma_decimals -%}
                                     placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
                                     max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
                                   {%- else -%}
                                     placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' | replace: '.00', '' }}"
                                     max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                                  {% endif %}
+                                  {% endif %} -->
                                 >
                               </div>
                             </price-range>
