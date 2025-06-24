@@ -58,11 +58,19 @@
             "collection": "pattachitra-painting",
             "collection_title": ""
           }
+        },
+        "collection_aPkKRJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "kurta-sets",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
         "collection_GawBmm",
-        "collection_TRkbXF"
+        "collection_TRkbXF",
+        "collection_aPkKRJ"
       ],
       "settings": {
         "section_width": "container",
