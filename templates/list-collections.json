@@ -52,97 +52,17 @@
             "collection_title": ""
           }
         },
-        "collection_k6UJWD": {
+        "collection_TRkbXF": {
           "type": "collection",
           "settings": {
-            "collection": "cashmere-shawl",
-            "collection_title": ""
-          }
-        },
-        "collection_Dh49Wa": {
-          "type": "collection",
-          "settings": {
-            "collection": "designer-showcase",
-            "collection_title": ""
-          }
-        },
-        "collection_qag64J": {
-          "type": "collection",
-          "settings": {
-            "collection": "dhakai-1",
-            "collection_title": ""
-          }
-        },
-        "collection_Kk8pDP": {
-          "type": "collection",
-          "settings": {
-            "collection": "fine-wool-stoles",
-            "collection_title": ""
-          }
-        },
-        "collection_ACrmpU": {
-          "type": "collection",
-          "settings": {
-            "collection": "gen-z-meets-heritage",
-            "collection_title": ""
-          }
-        },
-        "collection_zpFtkQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "jamdani",
-            "collection_title": ""
-          }
-        },
-        "collection_Lb3mRX": {
-          "type": "collection",
-          "settings": {
-            "collection": "kantha-stitch-saree",
-            "collection_title": ""
-          }
-        },
-        "collection_qirikr": {
-          "type": "collection",
-          "settings": {
-            "collection": "kinnauri-shawls",
-            "collection_title": ""
-          }
-        },
-        "collection_HLUY4E": {
-          "type": "collection",
-          "settings": {
-            "collection": "kinnauri-stoles",
-            "collection_title": ""
-          }
-        },
-        "collection_dHMiiC": {
-          "type": "collection",
-          "settings": {
-            "collection": "madhubani-saree",
-            "collection_title": ""
-          }
-        },
-        "collection_pip9Fw": {
-          "type": "collection",
-          "settings": {
-            "collection": "pattachitra-saree",
+            "collection": "pattachitra-painting",
             "collection_title": ""
           }
         }
       },
       "block_order": [
         "collection_GawBmm",
-        "collection_k6UJWD",
-        "collection_Dh49Wa",
-        "collection_qag64J",
-        "collection_Kk8pDP",
-        "collection_ACrmpU",
-        "collection_zpFtkQ",
-        "collection_Lb3mRX",
-        "collection_qirikr",
-        "collection_HLUY4E",
-        "collection_dHMiiC",
-        "collection_pip9Fw"
+        "collection_TRkbXF"
       ],
       "settings": {
         "section_width": "container",
