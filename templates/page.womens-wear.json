@@ -15,13 +15,21 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "kurta-sets",
+            "collection": "pattachitra-painting",
+            "collection_title": ""
+          }
+        },
+        "collection_jhjwB8": {
+          "type": "collection",
+          "settings": {
+            "collection": "madhubani-painting",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm"
+        "collection_GawBmm",
+        "collection_jhjwB8"
       ],
       "settings": {
         "section_width": "container",
@@ -44,6 +52,6 @@
     }
   },
   "order": [
-    "main",
+    "main"
   ]
 }
