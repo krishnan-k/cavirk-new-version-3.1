@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Brand Ethos",
+            "page_title": "Men's wear",
             "header_size": "default"
           }
         }
@@ -74,7 +74,7 @@
     }
   },
   "order": [
-    "main",
-    "page-heading"
+    "page-heading",
+    "main"
   ]
 }
