@@ -202,7 +202,7 @@
         "collection_THd6NU": {
           "type": "collection",
           "settings": {
-            "collection": "indo-western-1",
+            "collection": "indo-western",
             "collection_image": "shopify://shop_images/indo.png",
             "collection_title": "Indo Western",
             "first_button_link": ""
