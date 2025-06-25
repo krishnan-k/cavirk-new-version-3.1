@@ -56,7 +56,7 @@
         "image": "shopify://shop_images/sell_with_us.png",
         "image_behavior": "none",
         "overlay_opacity": 0,
-        "image_height": "custom",
+        "image_height": "adapt",
         "desktop_height": 400,
         "mobile_height": 300,
         "content_alignment": "left",
