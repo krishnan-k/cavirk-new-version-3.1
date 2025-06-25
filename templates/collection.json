@@ -84,14 +84,6 @@
     "main": {
       "type": "main-collection-product",
       "blocks": {
-        "categories_LYDr6p": {
-          "type": "categories",
-          "disabled": true,
-          "settings": {
-            "title": "Products Category",
-            "menu": "brand"
-          }
-        },
         "filter_giBtHK": {
           "type": "filter",
           "settings": {}
@@ -103,22 +95,11 @@
             "collection": "madhubani-saree",
             "items_to_show": 3
           }
-        },
-        "image_banner_UUJxtT": {
-          "type": "image_banner",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/SAR209-A_0aaa62c9-b782-419a-a093-73e7c3f02bd8.jpg",
-            "url": "shopify://products/floral-harmony-in-tangerine",
-            "open_link": true
-          }
         }
       },
       "block_order": [
-        "categories_LYDr6p",
         "filter_giBtHK",
-        "popular_product_Xwjqcf",
-        "image_banner_UUJxtT"
+        "popular_product_Xwjqcf"
       ],
       "settings": {
         "section_width": "container",
