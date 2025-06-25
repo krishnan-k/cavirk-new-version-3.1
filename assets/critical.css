@@ -1613,6 +1613,9 @@ header.active li.visible .submenu:not(.submenu-vertical) {
 .bottom-30 {
   bottom: 3rem;
 }
+.bottom-100{
+  bottom: 10rem;
+}
 .left-0 {
   left: 0;
 }
