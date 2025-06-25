@@ -60,7 +60,7 @@
       default_filter: default_filter,
       collection_url: collection.url
     -%}
-    {% endif %}
+  {% endif %}
   <grid-list
     {% if scroll_animation != 'slide_in' %}
       hold
@@ -287,6 +287,16 @@
     </div>
   </grid-list>
 </section>
+
+{% stylesheet %}
+  {% if request.page_type == 'collection' %}
+    @media screen and (max-width: 575px) {
+      .Avada-Faqs_Button {
+        bottom: 95px;
+      }
+    }
+  {% endif %}
+{% endstylesheet %}
 
 {% schema %}
 {
