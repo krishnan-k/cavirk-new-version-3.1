@@ -96,6 +96,7 @@
         },
         "stock_countdown_JNK9zi": {
           "type": "stock_countdown",
+          "disabled": true,
           "settings": {
             "message": "Hurry up! Only [count] items left in stock",
             "stock_items": 30
