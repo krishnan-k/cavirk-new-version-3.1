@@ -95,6 +95,7 @@
           "type": "collection",
           "settings": {
             "collection": "planters-and-pots",
+            "collection_image": "shopify://shop_images/1_ac69aa21-da75-4825-86d6-926cb5fd85b1.jpg",
             "collection_title": ""
           }
         },
