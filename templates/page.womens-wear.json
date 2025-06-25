@@ -25,11 +25,19 @@
             "collection": "madhubani-painting",
             "collection_title": ""
           }
+        },
+        "collection_JYKQ9r": {
+          "type": "collection",
+          "settings": {
+            "collection": "kantha-stitch-saree",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
         "collection_GawBmm",
-        "collection_jhjwB8"
+        "collection_jhjwB8",
+        "collection_JYKQ9r"
       ],
       "settings": {
         "section_width": "container",
