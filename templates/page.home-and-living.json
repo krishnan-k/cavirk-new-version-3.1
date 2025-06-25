@@ -45,13 +45,85 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "kurta-sets",
+            "collection": "hand-painted-lamps-1",
+            "collection_title": ""
+          }
+        },
+        "collection_AXWyFT": {
+          "type": "collection",
+          "settings": {
+            "collection": "coasters-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_E9mzHD": {
+          "type": "collection",
+          "settings": {
+            "collection": "blue-pottery-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_TKtyJw": {
+          "type": "collection",
+          "settings": {
+            "collection": "hand-painted-trays-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_eRJMeD": {
+          "type": "collection",
+          "settings": {
+            "collection": "hand-painted-boxes-1",
+            "collection_title": ""
+          }
+        },
+        "collection_4f9C89": {
+          "type": "collection",
+          "settings": {
+            "collection": "fridge-magnets-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_VCNLTW": {
+          "type": "collection",
+          "settings": {
+            "collection": "mandala-art-collections",
+            "collection_title": ""
+          }
+        },
+        "collection_RmKBzy": {
+          "type": "collection",
+          "settings": {
+            "collection": "planters-and-pots",
+            "collection_title": ""
+          }
+        },
+        "collection_b9x3fM": {
+          "type": "collection",
+          "settings": {
+            "collection": "brass-and-metal-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_drheLA": {
+          "type": "collection",
+          "settings": {
+            "collection": "table-decor-collection",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm"
+        "collection_GawBmm",
+        "collection_AXWyFT",
+        "collection_E9mzHD",
+        "collection_TKtyJw",
+        "collection_eRJMeD",
+        "collection_4f9C89",
+        "collection_VCNLTW",
+        "collection_RmKBzy",
+        "collection_b9x3fM",
+        "collection_drheLA"
       ],
       "settings": {
         "section_width": "container",
@@ -59,14 +131,14 @@
         "type": "selected",
         "sort_collections": "alphabetical",
         "image_ratio": "portrait",
-        "show_product_count": true,
+        "show_product_count": false,
         "design": "default",
         "text_alignment": "center",
         "font_size": 16,
-        "items_to_show": 8,
+        "items_to_show": 24,
         "items_per_row": 4,
         "column_gap": 30,
-        "pagination": "load_more_button",
+        "pagination": "default",
         "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0
