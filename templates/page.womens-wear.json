@@ -132,6 +132,13 @@
             "collection": "cashmere-shawls-and-stoles",
             "collection_title": ""
           }
+        },
+        "collection_iJzVwn": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western-1",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
@@ -147,7 +154,8 @@
         "collection_ezbkhP",
         "collection_R39AjE",
         "collection_6wmkBT",
-        "collection_yAKKCq"
+        "collection_yAKKCq",
+        "collection_iJzVwn"
       ],
       "settings": {
         "section_width": "container",
