@@ -204,6 +204,11 @@
                   style="--animation-order: {{  forloop.index }};"
                 {%- endif -%}
               >
+                {% if collection == blank %}
+                  {% liquid
+                    assign collection_landing_page = block_st.first_button_link
+                  %}
+                {% endif %}
                 {% render 'collection-item',
                   card_collection: block_st.collection,
                   section: section,
@@ -214,7 +219,8 @@
                   colunm: items_per_row,
                   index: forloop.index,
                   colunm_mobile: section_st.items_per_row_mobile,
-                  padding: column_gap
+                  padding: column_gap,
+                  collectoin_page: collection_landing_page
                 %}
               </motion-element>
             {% endfor %}
