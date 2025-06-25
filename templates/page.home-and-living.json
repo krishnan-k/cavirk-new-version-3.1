@@ -103,6 +103,7 @@
           "type": "collection",
           "settings": {
             "collection": "brass-and-metal-collection",
+            "collection_image": "shopify://shop_images/ganesha.jpg",
             "collection_title": ""
           }
         },
