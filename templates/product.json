@@ -67,7 +67,7 @@
             "min_number": 10,
             "max_number": 40,
             "interval_time": 10,
-            "content": "[count] peoples are viewing this right now"
+            "content": "[count] people are viewing this right now"
           }
         },
         "countdown_timer_QB4Ydn": {
