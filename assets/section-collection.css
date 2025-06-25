@@ -1,6 +1,6 @@
 .collection-item__name.btn-white {
   --btn-padding-x: 2rem;
-  width: 18rem;
+  width: 20rem;
   max-width: 100%;
 }
 .collection-item__media.morden:after {

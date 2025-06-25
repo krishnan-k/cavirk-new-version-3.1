@@ -147,13 +147,19 @@
                 style="--animation-order: {{  forloop.index }};"
               {%- endif -%}
             >
+              {% if collection == blank %}
+                {% liquid
+                  assign collection_landing_page = block_st.first_button_link
+                %}
+              {% endif %}
               {% render 'collection-item',
                 card_collection: block_st.collection,
                 section: section,
                 block: block,
                 index: forloop.index,
                 collection_information_position: collection_information_position,
-                design: design
+                design: design,
+                collectoin_page: collection_landing_page
               %}
             </motion-element>
           {% endfor %}
@@ -225,7 +231,7 @@
               data-motion-delay="150"
               class="swiper-pagination  flex flex-wrap  {% if scroll_animation == 'slide_in' %} slide_in scroll-trigger {% endif %}   px-15 lh-1 bottom-30 {% if carousel_pagination == 'show_dots_on_mobile' %} hidden-md{% endif %} justify-content-center{% if section_st.content_below_image %} absolute-md-impo{% endif %}"
               style="--swiper-pagination-bottom: 3rem;--swiper-pagination-position: static;z-index: 2"
-            >   
+            >
             </motion-element>
           {% endif %}
         </slide-section>
@@ -494,7 +500,7 @@
       "type": "checkbox",
       "id": "show_icon",
       "label": "t:sections.collection-list.settings.collection.show_icon",
-      "info"  : "t:sections.collection-list.settings.collection.info_show_icon"
+      "info": "t:sections.collection-list.settings.collection.info_show_icon"
     },
     {
       "type": "checkbox",
@@ -699,6 +705,11 @@
           "id": "collection_title",
           "label": "t:sections.collection-list.blocks.collection_title.label",
           "info": "t:sections.collection-list.blocks.collection_title.info"
+        },
+        {
+          "type": "url",
+          "id": "first_button_link",
+          "label": "t:sections.collection-list.blocks.first_button_link.label"
         }
       ]
     }

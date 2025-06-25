@@ -403,3 +403,15 @@
   background: var(--btn-primary-hover-bg-color);
   border-color: var(--btn-border-color);
 }
+.horizontal-list a.Sell.with {
+  background: linear-gradient(270deg, rgb(227, 194, 43) 0%, rgb(182, 127, 34) 100%);
+  color: #fff;
+  transition: all 0.3s linear;
+  border-width: 0px;
+}
+
+.horizontal-list a.Sell.with:hover {
+  background-position: right;
+  background-size: 200%;
+  color: black;
+}

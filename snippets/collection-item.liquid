@@ -237,6 +237,7 @@
         role="link"
         aria-disabled="true"
         title="{{- 'onboarding.collection_title' | t -}}"
+        href=" {% if collection == blank %} {{ collectoin_page }} {% endif %}"
         aria-label="{{- 'onboarding.collection_title' | t -}}"
         style="--aspect-ratio: {{ ratio }};"
       >
@@ -269,7 +270,7 @@
         style="--font-size: {{ font_size }};--space-bottom: {{ section_st.spacing }}"
         role="link"
       >
-        <span class="collection-item__name-inner lh-normal inline-block{% if collection_information_position == 'overlay_image' and design == 'morden' %} heading_weight{% endif %}">
+        <span class="collection-item__name-inner lh-normal inline-block{% if collection_information_position == 'overlay_image' and design == 'morden' %} heading_weight{% endif %}" {% if collection_information_position == 'overlay_image' and design == 'morden' %} style="color: var(--color-link);" {% endif %}>
           {% if collection_title != blank %}
             {{ collection_title }}
           {% else %}

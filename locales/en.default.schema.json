@@ -3992,6 +3992,9 @@
         "collection_title": {
           "label": "Collection title",
           "info": "Leave blank to use collection's title"
+        },
+        "first_button_link":{
+          "label": "Collection landing page url"
         }
       }
     },
