@@ -195,7 +195,8 @@
           "settings": {
             "collection": "pattachitra-painting",
             "collection_image": "shopify://shop_images/SAR131-E_37653960-06ec-43b6-97b4-db541e825eb4.jpg",
-            "collection_title": "Pattachitra Sarees"
+            "collection_title": "Pattachitra Sarees",
+            "first_button_link": ""
           }
         },
         "collection_THd6NU": {
@@ -203,7 +204,8 @@
           "settings": {
             "collection": "indo-western-1",
             "collection_image": "shopify://shop_images/indo.png",
-            "collection_title": "Indo Western"
+            "collection_title": "Indo Western",
+            "first_button_link": ""
           }
         },
         "collection_kUA3MH": {
@@ -211,7 +213,8 @@
           "settings": {
             "collection": "kurta-sets",
             "collection_image": "shopify://shop_images/BKpkU1UIpx_ae901dae-8245-4d42-8e67-20e3d1884de0.png",
-            "collection_title": "Kurta Sets"
+            "collection_title": "Kurta Sets",
+            "first_button_link": ""
           }
         },
         "collection_fyfMEN": {
@@ -219,7 +222,8 @@
           "settings": {
             "collection": "bridal-wear",
             "collection_image": "shopify://shop_images/gA1Iqvc2gF_1b6b6953-4d1b-4747-8977-75c508bb71cb.png",
-            "collection_title": "Bridal Wear"
+            "collection_title": "Bridal Wear",
+            "first_button_link": ""
           }
         },
         "collection_ctTBpd": {
@@ -227,7 +231,8 @@
           "settings": {
             "collection": "home-decor-1",
             "collection_image": "shopify://shop_images/Brass_Statues.png",
-            "collection_title": "Home and Living"
+            "collection_title": "Home and Living",
+            "first_button_link": ""
           }
         }
       },
@@ -283,7 +288,8 @@
           "settings": {
             "collection": "mens-wear",
             "collection_image": "shopify://shop_images/mens-wear.gif",
-            "collection_title": "Men's Wear"
+            "collection_title": "Men's Wear",
+            "first_button_link": "shopify://pages/mens-wear"
           }
         },
         "collection_FUAzK4": {
@@ -291,7 +297,8 @@
           "settings": {
             "collection": "womens-wear",
             "collection_image": "shopify://shop_images/women-wear.gif",
-            "collection_title": "Women's wear"
+            "collection_title": "Women's wear",
+            "first_button_link": "shopify://pages/womens-wear"
           }
         },
         "collection_kUA3MH": {
@@ -299,7 +306,8 @@
           "settings": {
             "collection": "jewellery",
             "collection_image": "shopify://shop_images/jewellery.gif",
-            "collection_title": "Accessories"
+            "collection_title": "Accessories",
+            "first_button_link": ""
           }
         },
         "collection_ctTBpd": {
@@ -307,7 +315,8 @@
           "settings": {
             "collection": "home-decor-1",
             "collection_image": "shopify://shop_images/home-decoor.gif",
-            "collection_title": "Home and Living"
+            "collection_title": "Home and Living",
+            "first_button_link": ""
           }
         }
       },
