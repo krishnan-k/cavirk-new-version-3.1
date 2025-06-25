@@ -286,7 +286,7 @@
         "collection_r7aTxN": {
           "type": "collection",
           "settings": {
-            "collection": "mens-wear",
+            "collection": "",
             "collection_image": "shopify://shop_images/mens-wear.gif",
             "collection_title": "Men's Wear",
             "first_button_link": "shopify://pages/mens-wear"
@@ -295,7 +295,7 @@
         "collection_FUAzK4": {
           "type": "collection",
           "settings": {
-            "collection": "womens-wear",
+            "collection": "",
             "collection_image": "shopify://shop_images/women-wear.gif",
             "collection_title": "Women's wear",
             "first_button_link": "shopify://pages/womens-wear"
@@ -304,7 +304,7 @@
         "collection_kUA3MH": {
           "type": "collection",
           "settings": {
-            "collection": "jewellery",
+            "collection": "",
             "collection_image": "shopify://shop_images/jewellery.gif",
             "collection_title": "Accessories",
             "first_button_link": "shopify://pages/accessories-1"
@@ -313,7 +313,7 @@
         "collection_ctTBpd": {
           "type": "collection",
           "settings": {
-            "collection": "home-decor-1",
+            "collection": "",
             "collection_image": "shopify://shop_images/home-decoor.gif",
             "collection_title": "Home and Living",
             "first_button_link": "shopify://pages/home-and-living"
