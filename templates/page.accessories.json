@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Brand Ethos",
+            "page_title": "Men's wear",
             "header_size": "default"
           }
         }
@@ -39,7 +39,7 @@
         "padding_bottom": 50
       }
     },
-     "main": {
+    "main": {
       "type": "main-list-collections",
       "blocks": {
         "collection_GawBmm": {
