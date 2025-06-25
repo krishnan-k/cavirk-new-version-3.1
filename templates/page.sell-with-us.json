@@ -54,6 +54,7 @@
         "section_width": "full_width",
         "color_scheme": "",
         "image": "shopify://shop_images/sell_with_us.png",
+        "image_mobile": "shopify://shop_images/sell_with_us_mobile.jpg",
         "image_behavior": "none",
         "overlay_opacity": 0,
         "image_height": "adapt",
@@ -69,7 +70,7 @@
         "content_background": "#ffffff",
         "content_box_opacity": 100,
         "content_below_image": false,
-        "content_alignment_mobile": "left",
+        "content_alignment_mobile": "center",
         "padding_top": 0,
         "padding_bottom": 0,
         "reset_spacing": false
