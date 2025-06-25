@@ -421,7 +421,6 @@
   "platform_customizations": {
     "custom_css": [
       "@media screen and (max-width: 767px) {body .shopify-block.shopify-app-block #insta-feed {margin-left: 25px !important; margin-right: 25px !important; margin-bottom: 0 !important; }}",
-      "@media screen and (max-width: 575px) {.Avada-Faqs_Button{bottom: 95px; }}",
       ".shopify-policy__container {max-width: 100ch;}",
       ".shopify-policy__body strong {font-size: 20px;}"
     ]
