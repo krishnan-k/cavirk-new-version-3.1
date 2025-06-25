@@ -366,7 +366,8 @@
                                       | replace: ',', ''
                                       | replace: '.', ''
                                     -%}
-                                    value="{{ max_price | money_without_currency }}"
+                                    {% comment %} value="{{ max_price | money_without_currency }}" {% endcomment %}
+                                    value="{{ filter.range_max | money_without_currency }}"
                                   {%- endif -%}
                                   {%- if uses_comma_decimals -%}
                                     placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
