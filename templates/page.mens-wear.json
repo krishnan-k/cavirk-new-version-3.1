@@ -9,6 +9,36 @@
  */
 {
   "sections": {
+    "page-heading": {
+      "type": "page-heading",
+      "blocks": {
+        "breadcrumb_kg6gTP": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
+        "heading_k374p7": {
+          "type": "heading",
+          "settings": {
+            "page_title": "Brand Ethos",
+            "header_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_kg6gTP",
+        "heading_k374p7"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "alignment": "center",
+        "background_image": "shopify://shop_images/Frame_1000009792.png",
+        "overlay_opacity": 0,
+        "height": "based_on_content",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "blocks": {
@@ -44,6 +74,7 @@
     }
   },
   "order": [
-    "main"
+    "main",
+    "page-heading"
   ]
 }
