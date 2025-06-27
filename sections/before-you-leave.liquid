@@ -42,7 +42,7 @@
   endif
 %}
 <before-you-leave
-  class="before-you-leave color-default bls__drawer h-full overflow-auto fixed z-16 inset-y-0 transition-popup{% if enable_rtl %} right left-0{% else %} left right-0{% endif %} custom-scrollbar {% if section_st.disable_on_mobile != blank %} disable_on_mobile {% endif %}"
+  class="before-you-leave color-default bls__drawer h-full overflow-auto fixed z-16 inset-y-0 transition-popup{% if enable_rtl %} right left-0{% else %} left right-0{% endif %} custom-scrollbar"
   data-time-delay="{{ show_time | times: 1 }}"
   data-section-id="{{ section.id }}"
   style="--drawer-width: 42rem;"
@@ -178,16 +178,6 @@
       "id": "banner",
       "label": "t:sections.before-you-leave.settings.banner.label",
       "info": "t:sections.before-you-leave.settings.banner.info"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.mobile_options.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "disable_on_mobile",
-      "label": "t:sections.before-you-leave.settings.disable_on_mobile.label",
-      "default": true
     },
     {
       "type": "header",
