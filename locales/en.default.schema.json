@@ -2829,6 +2829,9 @@
         "collection": {
           "label": "Collection"
         },
+        "disable_on_mobile": {
+          "label": "Disable on mobile"
+        },
         "heading": {
           "label": "Heading"
         },
