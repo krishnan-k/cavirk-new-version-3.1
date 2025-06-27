@@ -42,7 +42,7 @@
   endif
 %}
 <before-you-leave
-  class="before-you-leave color-default bls__drawer h-full overflow-auto fixed z-16 inset-y-0 transition-popup{% if enable_rtl %} right left-0{% else %} left right-0{% endif %} custom-scrollbar"
+  class="before-you-leave color-default bls__drawer h-full overflow-auto fixed z-16 inset-y-0 transition-popup{% if enable_rtl %} right left-0{% else %} left right-0{% endif %} custom-scrollbar {% if section_st.disable_on_mobile != blank %} before-you-leave {% endif %}"
   data-time-delay="{{ show_time | times: 1 }}"
   data-section-id="{{ section.id }}"
   style="--drawer-width: 42rem;"
