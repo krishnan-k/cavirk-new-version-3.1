@@ -19,9 +19,6 @@ before-you-leave .product-before-items:not(:last-child) {
   display: none !important;
 }
 @media screen and (max-width: 767.98px) {
-  .before-you-leave.before-you-leave{
-    display: none;
-  }
   .before-product-content .product-item__name{
     display: -webkit-box;
     -webkit-box-orient: vertical;
