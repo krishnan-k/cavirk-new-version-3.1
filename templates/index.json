@@ -72,7 +72,7 @@
           "type": "slider_item",
           "settings": {
             "local_video": "shopify://files/videos/CAVIRK REEL 01 (1).mp4",
-            "overlay_opacity": 25,
+            "overlay_opacity": 20,
             "slider_effect": "effect_zoomout",
             "subheading": "",
             "heading": "Explore Madhubani Sarees",
