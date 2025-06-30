@@ -366,7 +366,9 @@ body .tingle-modal-box__content {
 .ask-question {
   --popup-max-width: 58rem;
 }
-
+.ask-question-sell {
+  --popup-max-width: 90rem;
+}
 .share {
   --popup-max-width: 37rem;
 }

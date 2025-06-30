@@ -44,7 +44,8 @@
       "discount_code_error": "Discount code cannot be applied to your cart",
       "discount_code_remove": "Discount code has been removed.",
       "discount_code_applied": "Discount code has been applied.",
-      "discount_code_already": "Discount code already applied"
+      "discount_code_already": "Discount code already applied",
+      "start-selling":"Start selling"
     },
     "outfit-idea": {
          "view_products" : "View Products",
@@ -319,13 +320,26 @@
     "contact": {
       "form": {
         "title": "Contact form",
+        "form-name":"Apply to become a seller",
+        "form-description":"Leave your message and we will get back to you shortly.",
         "name": "Your name*",
+        "sell-name": "Your name",
+        "businessname": "Business name",
+        "state": "State",
+        "pincode": "Pincode",
+        "product-type": "Is your product Handmade or Machine made?",
+        "gst-pan":"Do you have GST or PAN?",
+        "product-sell":"What product do you sell?",
+        "referral-source":"How did you come to know about Cavirk Seller Program?",
         "email": "Your email *",
-        "phone": "Your phone number",
+        "email-sell": "Your email",
+        "phone": "Your phone number*",
+        "phone-sell": "Your phone number",
         "comment": "Your message*",
         "send": "Submit Now",
-        "note": "* Required fields cannot be left blank.",
+        "note": "Required fields cannot be left blank.",
         "send_contact": "Send Your Message",
+        "send_contact_sell": "Submit",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
       }

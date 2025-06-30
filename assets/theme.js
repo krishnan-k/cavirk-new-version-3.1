@@ -9242,3 +9242,18 @@ class ProductWithBanner extends HTMLElement {
   }
 }
 customElements.define('product-with-banner', ProductWithBanner);
+//sell with us popup js
+document.querySelectorAll('.open-modal-button').forEach(button => {
+  button.addEventListener('click', function () {
+    const contentId = this.getAttribute('data-modal-content');
+    const content = document.querySelector(contentId).innerHTML;
+
+    const modal = new tingle.modal({
+      closeMethods: ['overlay', 'button', 'escape'],
+      cssClass: ['ask-question-sell'],
+    });
+
+    modal.setContent(content);
+    modal.open();
+  });
+});

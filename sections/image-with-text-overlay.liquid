@@ -180,7 +180,7 @@
                   </motion-element>
                 {% endif %}
               {%- when 'button' -%}
-                {% if block_st.first_button_label != blank or block_st.second_button_label != blank %}
+                {% if block_st.first_button_label != blank or block_st.second_button_label != blank  or block_st.use_popup != blank %}
                   <motion-element
                     data-motion="fade-up-lg"
                     {% if scroll_animation != 'slide_in' %}
@@ -207,8 +207,7 @@
                       >
                         {{ block_st.first_button_label }}
                       </a>
-                    {% endif %}
-                    {% if block_st.second_button_label != blank %}
+                    {% elsif block_st.second_button_label != blank %}
                       <a
                         {% if block_st.second_button_link == blank %}
                           role="link" aria-disabled="true"
@@ -221,6 +220,27 @@
                       >
                         {{ block_st.second_button_label }}
                       </a>
+                    {% elsif block_st.use_popup != blank %}
+                      <button
+                        type="button"
+                        class="open-modal-button btn btn-black inline-flex no-underline btn-{{ block_st.first_button_type }} relative"
+                        data-modal-content="#ask-question-form"
+                      >
+                        {{ 'general.content.start-selling' | t }}
+                      </button>
+
+                      <div id="ask-question-form" style="display: none;">
+                        <div class="product-addons__content ask-question__content">
+                          <h2
+                            class="sec__content-heading  heading-letter-spacing mt-0 mb-custom  fs-medium heading_weight"
+                            style="--font-size: 36;--space-bottom: 15;"
+                          >
+                            {{ 'templates.contact.form.form-name' | t }}
+                          </h2>
+                          <p>{{ 'templates.contact.form.form-description' | t }}</p>
+                          {%- render 'ask-question-form-sell' -%}
+                        </div>
+                      </div>
                     {% endif %}
                   </motion-element>
                 {% endif %}
@@ -843,6 +863,17 @@
           "max": 30,
           "step": 1,
           "unit": "px"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.all.contents.popupbox.header.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_popup",
+          "label": "t:sections.all.contents.use_popup.label",
+          "info": "t:sections.all.contents.use_popup.info",
+          "default": false
         }
       ]
     },

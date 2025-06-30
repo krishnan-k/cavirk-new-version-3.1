@@ -1411,7 +1411,16 @@
               "label": "Link"
             }
           }
-        }
+        },
+        "popupbox":{
+          "header":{
+            "label":"Popup section"
+          },
+        },
+        "use_popup":{
+          "label":"Use popup box",
+          "info":"The popup box will only work if both the 'First button label' and 'Second button label' fields are empty. If either button is used, the popup section will not function."
+        },
       },
       "content_settings": {
         "label": "Content settings",
