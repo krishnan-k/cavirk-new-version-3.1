@@ -63,10 +63,31 @@
             "collection_title": ""
           }
         },
+        "collection_ezbkhP": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-wear",
+            "collection_title": ""
+          }
+        },
         "collection_bCzQMw": {
           "type": "collection",
           "settings": {
             "collection": "dhakai",
+            "collection_title": ""
+          }
+        },
+        "collection_iJzVwn": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western",
+            "collection_title": ""
+          }
+        },
+        "collection_CGTTY9": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-lehengas",
             "collection_title": ""
           }
         },
@@ -91,24 +112,10 @@
             "collection_title": ""
           }
         },
-        "collection_CGTTY9": {
-          "type": "collection",
-          "settings": {
-            "collection": "bridal-lehengas",
-            "collection_title": ""
-          }
-        },
         "collection_CahQaQ": {
           "type": "collection",
           "settings": {
             "collection": "kaftans",
-            "collection_title": ""
-          }
-        },
-        "collection_ezbkhP": {
-          "type": "collection",
-          "settings": {
-            "collection": "bridal-wear",
             "collection_title": ""
           }
         },
@@ -132,30 +139,23 @@
             "collection": "cashmere-shawls-and-stoles",
             "collection_title": ""
           }
-        },
-        "collection_iJzVwn": {
-          "type": "collection",
-          "settings": {
-            "collection": "indo-western",
-            "collection_title": ""
-          }
         }
       },
       "block_order": [
         "collection_GawBmm",
         "collection_jhjwB8",
         "collection_JYKQ9r",
+        "collection_ezbkhP",
         "collection_bCzQMw",
+        "collection_iJzVwn",
+        "collection_CGTTY9",
         "collection_G84npm",
         "collection_RFcTBE",
         "collection_hjiwb7",
-        "collection_CGTTY9",
         "collection_CahQaQ",
-        "collection_ezbkhP",
         "collection_R39AjE",
         "collection_6wmkBT",
-        "collection_yAKKCq",
-        "collection_iJzVwn"
+        "collection_yAKKCq"
       ],
       "settings": {
         "section_width": "container",

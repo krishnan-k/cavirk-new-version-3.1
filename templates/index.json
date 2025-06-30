@@ -72,7 +72,7 @@
           "type": "slider_item",
           "settings": {
             "local_video": "shopify://files/videos/CAVIRK REEL 01 (1).mp4",
-            "overlay_opacity": 0,
+            "overlay_opacity": 20,
             "slider_effect": "effect_zoomout",
             "subheading": "",
             "heading": "Explore Madhubani Sarees",
@@ -92,7 +92,7 @@
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
+            "content_alignment_mobile": "center"
           }
         },
         "slider_item_gxX3ak": {
@@ -229,7 +229,7 @@
         "collection_ctTBpd": {
           "type": "collection",
           "settings": {
-            "collection": "home-decor-1",
+            "collection": "home-and-living",
             "collection_image": "shopify://shop_images/Brass_Statues.png",
             "collection_title": "Home and Living",
             "first_button_link": ""

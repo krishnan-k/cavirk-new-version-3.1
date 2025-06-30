@@ -5179,9 +5179,11 @@ customElements.define('show-pass-word', ShowPassWord);
 class BeforeYouLeave extends HTMLElement {
   constructor() {
     super();
-    setTimeout(() => {
-      this.init();
-    }, 10000);
+    if (window.innerWidth >= 768) {
+      setTimeout(() => {
+        this.init();
+      }, 10000);
+    }
   }
   init() {
     const sectionId = this.dataset.sectionId;

@@ -37,7 +37,7 @@
     {%- case t -%}
       {%- when 'page' -%}
         <li class="breadcrumb-item dot-between inline-flex align-center">
-          <span class="breadcrumb-link no-underline heading-color" aria-current="page">{{ page.title }}</span>
+          <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">{{ page.title }}</span>
         </li>
       {%- when 'product' -%}
         {%- if collection.url -%}
@@ -46,7 +46,7 @@
           </li>
         {%- endif -%}
         <li class="breadcrumb-item dot-between inline-flex align-center {% if next_product %}breadcrumb-truncate{% endif %}">
-          <span class="breadcrumb-link no-underline heading-color" aria-current="page">{{ product.title }}</span>
+          <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">{{ product.title }}</span>
         </li>
       {%- when 'collection' and collection.handle -%}
         {%- if current_tags -%}
@@ -54,13 +54,13 @@
             {{ collection.title | link_to: collection.url }}
           </li>
           <li class="breadcrumb-item dot-between inline-flex align-center">
-            <span class="breadcrumb-link no-underline heading-color" aria-current="page">
+            <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">
               {{- current_tags | join: ' + ' -}}
             </span>
           </li>
         {%- else -%}
           <li class="breadcrumb-item dot-between inline-flex align-center">
-            <span class="breadcrumb-link no-underline heading-color" aria-current="page">
+            <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">
               {{- collection.title -}}
             </span>
           </li>
@@ -71,13 +71,13 @@
             {{ blog.title | link_to: blog.url }}
           </li>
           <li class="breadcrumb-item dot-between inline-flex align-center">
-            <span class="breadcrumb-link no-underline heading-color" aria-current="page">
+            <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">
               {{- current_tags | join: ' + ' -}}
             </span>
           </li>
         {%- else -%}
           <li class="breadcrumb-item dot-between inline-flex align-center">
-            <span class="breadcrumb-link no-underline heading-color" aria-current="page">{{ blog.title }}</span>
+            <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">{{ blog.title }}</span>
           </li>
         {%- endif -%}
       {%- when 'article' -%}
@@ -85,11 +85,11 @@
           {{ blog.title | link_to: blog.url }}
         </li>
         <li class="breadcrumb-item dot-between inline-flex align-center">
-          <span class="breadcrumb-link no-underline heading-color" aria-current="page">{{ article.title }}</span>
+          <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">{{ article.title }}</span>
         </li>
       {%- else -%}
         <li class="breadcrumb-item dot-between inline-flex align-center">
-          <span class="breadcrumb-link no-underline heading-color" aria-current="page">{{ page_title }}</span>
+          <span class="breadcrumb-link no-underline heading-color capitalize" aria-current="page">{{ page_title }}</span>
         </li>
     {%- endcase -%}
   </ul>
