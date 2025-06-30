@@ -344,7 +344,7 @@
           "type": "faq-items",
           "settings": {
             "faq_title": "I still have queries. How can I get in touch with you? ",
-            "faq_content": "<p>You can reach out to us at <strong>hello@cavirk.com</strong> and our team will be happy to help.</p>"
+            "faq_content": "<p>You can reach out to us at <a href=\"mailto:hello@cavirk.com\" target=\"_blank\"><strong>hello@cavirk.com</strong></a> and our team will be happy to help.</p>"
           }
         }
       },
