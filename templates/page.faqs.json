@@ -130,7 +130,7 @@
           "type": "faq",
           "settings": {
             "question": "How can I contact customer support? ",
-            "answer": "<p>You can reach our customer support team via email at hello@cavirk.com or by phone at +91 9147422150 or +91 33-48010498. We are here to assist you with any inquiries or concerns you may have.</p>"
+            "answer": "<p>You can reach our customer support team via email at <a href=\"mailto:hello@cavirk.com\" target=\"_blank\"><strong>hello@cavirk.com</strong></a> or by phone at +91 9147422150 or +91 33-48010498. We are here to assist you with any inquiries or concerns you may have.</p>"
           }
         }
       },
