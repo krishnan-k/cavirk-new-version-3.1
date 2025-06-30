@@ -34,13 +34,14 @@
         "button_pizzw8": {
           "type": "button",
           "settings": {
-            "first_button_label": "Start Selling",
+            "first_button_label": "",
             "first_button_link": "",
             "first_button_type": "primary",
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
-            "spacing_bottom": 0
+            "spacing_bottom": 0,
+            "use_popup": true
           }
         }
       },
@@ -105,12 +106,13 @@
             "style": "default",
             "font_size": 36,
             "spacing_bottom": 30,
-            "first_button_label": "Start Selling",
+            "first_button_label": "",
             "first_button_link": "shopify://pages/sell-with-us",
             "first_button_type": "primary",
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
+            "use_popup": true,
             "content_alignment": "left",
             "subheading_font_size": 16,
             "subheading_font_weight": "subheading_weight",
@@ -391,12 +393,13 @@
             "style": "default",
             "font_size": 36,
             "spacing_bottom": 30,
-            "first_button_label": "Start Selling",
+            "first_button_label": "",
             "first_button_link": "shopify://pages/sell-with-us",
             "first_button_type": "primary",
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
+            "use_popup": true,
             "content_alignment": "left",
             "subheading_font_size": 12,
             "subheading_font_weight": "subheading_weight",
