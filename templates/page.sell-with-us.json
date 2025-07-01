@@ -70,7 +70,7 @@
         "show_content_background": false,
         "content_background": "#ffffff",
         "content_box_opacity": 100,
-        "content_below_image": false,
+        "content_below_image": true,
         "content_alignment_mobile": "center",
         "padding_top": 0,
         "padding_bottom": 0,
