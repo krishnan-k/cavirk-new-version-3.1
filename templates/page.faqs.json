@@ -154,7 +154,7 @@
         "description": "<p>If you have an issue or question that requires immediate assistance, you can click the button below to chat live with a Customer Service representative.</p>",
         "first_button_label": "Contact Us",
         "first_button_link": "shopify://pages/contact",
-        "first_button_type": "outline",
+        "first_button_type": "primary",
         "second_button_label": "About us",
         "second_button_link": "shopify://pages/about",
         "second_button_type": "primary",
