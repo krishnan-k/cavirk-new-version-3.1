@@ -342,7 +342,7 @@
                 >
                   <span>{{ 'general.cart.viewcart' | t }}</span>
                 </a>
-                {% comment %} <button
+                <button
                   type="submit"
                   class="btn-primary w-full btn-checkout"
                   name="checkout"
@@ -352,13 +352,7 @@
                   {% endif %}
                 >
                   <span>{{ 'general.cart.checkout' | t }}</span>
-                </button> {% endcomment %}
-                <button type="submit" id="rzp-button" name="checkout"
-                form="minicart"
-                {% if theme_st.show_check_box_in_cart %}
-                  disabled
-                {% endif %}
-                class="btn-primary w-full btn-checkout checkout-button">Checkout</button>
+                </button>
               {%- endif -%}
             </div>
           </div>
@@ -370,34 +364,3 @@
 
   </div>
 {% endif %}
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-  var options = {
-    key: "rzp_live_Tfgu2auTqmsFVL", // Your Razorpay Key
-    amount: {{ cart.total_price | money_without_currency | remove: ',' }}00, // Razorpay needs paise
-    currency: "INR",
-    name: "Cavirk",
-    description: "Cart Checkout",
-    handler: function (response) {
-      window.location.href = "/pages/thank-you";
-    },
-    modal: {
-      ondismiss: function () {
-        window.location.href = "/pages/survey";
-      }
-    },
-    prefill: {
-      name: "{{ customer.name }}",
-      email: "{{ customer.email }}"
-    },
-    theme: {
-      color: "#000000"
-    }
-  };
-
-  document.getElementById("rzp-button").onclick = function(e) {
-    var rzp1 = new Razorpay(options);
-    rzp1.open();
-    e.preventDefault();
-  };
-</script>
