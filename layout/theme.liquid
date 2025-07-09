@@ -313,5 +313,28 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
+    <script>
+// Wait for Razorpay modal "Yes, exit" button to be clicked
+document.addEventListener('click', function (e) {
+  const exitBtn = e.target.closest('[data-testid="confirm-positive"]');
+  if (exitBtn) {
+    console.log("User clicked Razorpay exit.");
+
+    // OPTIONAL: Google Analytics Event
+    if (typeof gtag === 'function') {
+      gtag('event', 'checkout_exit', {
+        event_category: 'Checkout',
+        event_label: 'Razorpay Exit Button Clicked'
+      });
+    }
+
+    // Delay slightly to allow analytics to fire, then redirect
+    setTimeout(function () {
+      window.location.href = "/pages/exit-survey"; // 🔁 Replace with your actual survey URL if needed
+    }, 300);
+  }
+});
+</script>
+
   </body>
 </html>
