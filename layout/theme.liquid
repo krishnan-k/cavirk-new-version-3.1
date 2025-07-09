@@ -313,40 +313,5 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <script>
-  const observeRazorpayExit = new MutationObserver(() => {
-    const exitBtn = document.querySelector('[data-testid="confirm-positive"]');
-    if (exitBtn) {
-      // Avoid duplicate handlers
-      if (!exitBtn.classList.contains('survey-attached')) {
-        exitBtn.classList.add('survey-attached');
-
-        exitBtn.addEventListener('click', function () {
-          console.log('User clicked Razorpay Exit');
-
-          // Optional: Analytics
-          if (typeof gtag === 'function') {
-            gtag('event', 'checkout_exit', {
-              event_category: 'Checkout',
-              event_label: 'Razorpay Exit Button Clicked'
-            });
-          }
-
-          // Redirect to survey after slight delay
-          setTimeout(() => {
-            window.location.href = '/pages/exit-survey'; // change to your survey page URL
-          }, 300);
-        });
-      }
-    }
-  });
-
-  // Start observing the whole body
-  observeRazorpayExit.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
-</script>
-
   </body>
 </html>
