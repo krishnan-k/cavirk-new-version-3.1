@@ -342,7 +342,7 @@
                 >
                   <span>{{ 'general.cart.viewcart' | t }}</span>
                 </a>
-                <button
+                <!-- <button
                   type="submit"
                   class="btn-primary w-full btn-checkout"
                   name="checkout"
@@ -352,7 +352,8 @@
                   {% endif %}
                 >
                   <span>{{ 'general.cart.checkout' | t }}</span>
-                </button>
+                </button> -->
+               <button id="rzp-button">Checkout</button>
               {%- endif -%}
             </div>
           </div>
@@ -364,3 +365,42 @@
 
   </div>
 {% endif %}
+
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var options = {
+    key: "rzp_live_Tfgu2auTqmsFVL",
+    amount: {{ cart.total_price | money_without_currency | remove: ',' }}00,
+    currency: "INR",
+    name: "Cavirk",
+    description: "Checkout Payment",
+    handler: function (response) {
+      // ✅ Payment success
+      window.location.href = "/pages/thank-you";
+    },
+    modal: {
+      ondismiss: function () {
+        // ✅ Razorpay popup closed or cancelled
+        window.location.href = "/pages/survey";
+      }
+    },
+    prefill: {
+      name: "{{ customer.name }}",
+      email: "{{ customer.email }}"
+    },
+    theme: {
+      color: "#000000"
+    }
+  };
+
+  document.getElementById('rzp-button').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // OPTIONAL: Show a confirmation or custom survey modal BEFORE payment
+
+    // Then launch Razorpay
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+  });
+</script>
