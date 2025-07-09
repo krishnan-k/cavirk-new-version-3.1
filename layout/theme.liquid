@@ -314,8 +314,10 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      const exitButton = document.querySelector('.razorpay-container');
-      console.log(exitButton, 'll');
-    </script>
+  const razorpayContainer = document.querySelector('.razorpay-container');
+  console.log(razorpayContainer); // Logs the element
+  console.log(razorpayContainer?.innerHTML); // Logs its content (if any)
+</script>
+
   </body>
 </html>
