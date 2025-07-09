@@ -113,6 +113,13 @@
             "collection": "table-decor-collection",
             "collection_title": ""
           }
+        },
+        "collection_akMYan": {
+          "type": "collection",
+          "settings": {
+            "collection": "madhubani-painting",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
@@ -125,7 +132,8 @@
         "collection_VCNLTW",
         "collection_RmKBzy",
         "collection_b9x3fM",
-        "collection_drheLA"
+        "collection_drheLA",
+        "collection_akMYan"
       ],
       "settings": {
         "section_width": "container",
