@@ -92,7 +92,7 @@
         "items_per_row": 5,
         "column_gap": 30,
         "show_arrow": true,
-        "carousel_pagination": "disable",
+        "carousel_pagination": "show_dots_on_mobile",
         "infinite": false,
         "autoplay": false,
         "autorotate_speed": 5,
