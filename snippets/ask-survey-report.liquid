@@ -1,0 +1,136 @@
+{%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
+  
+{%- endform -%}
+<!-- Survey Container -->
+<div id="surveyForm" class="max-w-md mx-auto bg-white p-6 rounded shadow-md">
+  <!-- Pagination Dots -->
+  <div class="flex justify-center gap-2 mb-4">
+    <div class="w-6 h-1.5 rounded-full bg-black" id="dot1"></div>
+    <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot2"></div>
+    <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot3"></div>
+    <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot4"></div>
+  </div>
+
+  <!-- Multi-Step Form -->
+    <!-- Step 1 -->
+    <div class="step" id="step1">
+      <p class="font-medium mb-4">What’s the main reason you’re leaving?</p>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Found a better alternative" class="mr-2" required>
+        Found a better alternative
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Too expensive" class="mr-2">
+        Too expensive
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Missing features" class="mr-2">
+        Missing features
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Poor customer support" class="mr-2">
+        Poor customer support
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Technical issues" class="mr-2">
+        Technical issues
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="No longer need the product" class="mr-2">
+        No longer need the product
+      </label>
+      <div class="mt-4 flex justify-end">
+        <button type="button" class="bg-black text-white px-4 py-2 rounded" onclick="nextStep(1)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step hidden" id="step2">
+      <p class="font-medium mb-4">What could we have done better?</p>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="Improve features" class="mr-2" required>
+        Improve features
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="Lower price" class="mr-2">
+        Lower price
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="More support" class="mr-2">
+        More support
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="Better UI" class="mr-2">
+        Better UI
+      </label>
+      <div class="mt-4 flex justify-between">
+        <button type="button" class="bg-gray-300 px-4 py-2 rounded" onclick="prevStep(2)">← Previous</button>
+        <button type="button" class="bg-black text-white px-4 py-2 rounded" onclick="nextStep(2)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step hidden" id="step3">
+      <p class="font-medium mb-4">Would you consider returning in the future?</p>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason3" value="Yes" class="mr-2" required>
+        Yes
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason3" value="Maybe" class="mr-2">
+        Maybe
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason3" value="No" class="mr-2">
+        No
+      </label>
+      <div class="mt-4 flex justify-between">
+        <button type="button" class="bg-gray-300 px-4 py-2 rounded" onclick="prevStep(3)">← Previous</button>
+        <button type="button" class="bg-black text-white px-4 py-2 rounded" onclick="nextStep(3)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step hidden" id="step4">
+      <p class="font-medium mb-4">Any additional comments?</p>
+      <textarea name="comments" rows="4" class="w-full border rounded p-2" placeholder="Type here..."></textarea>
+      <div class="mt-4 flex justify-between">
+        <button type="button" class="bg-gray-300 px-4 py-2 rounded" onclick="prevStep(4)">← Previous</button>
+        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Submit</button>
+      </div>
+    </div>
+</div>
+
+<script>
+  function nextStep(currentStep) {
+    const current = document.getElementById(`step${currentStep}`);
+    const next = document.getElementById(`step${currentStep + 1}`);
+    const dotCurrent = document.getElementById(`dot${currentStep}`);
+    const dotNext = document.getElementById(`dot${currentStep + 1}`);
+
+    const selected = current.querySelector('input[type="radio"]:checked');
+    if (!selected) {
+      alert("Please select an option before continuing.");
+      return;
+    }
+
+    current.classList.add('hidden');
+    next.classList.remove('hidden');
+
+    dotCurrent.classList.replace('bg-black', 'bg-gray-300');
+    dotNext.classList.replace('bg-gray-300', 'bg-black');
+  }
+
+  function prevStep(currentStep) {
+    const current = document.getElementById(`step${currentStep}`);
+    const previous = document.getElementById(`step${currentStep - 1}`);
+    const dotCurrent = document.getElementById(`dot${currentStep}`);
+    const dotPrev = document.getElementById(`dot${currentStep - 1}`);
+
+    current.classList.add('hidden');
+    previous.classList.remove('hidden');
+
+    dotCurrent.classList.replace('bg-black', 'bg-gray-300');
+    dotPrev.classList.replace('bg-gray-300', 'bg-black');
+  }
+</script>
