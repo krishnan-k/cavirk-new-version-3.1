@@ -1,17 +1,15 @@
 {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
-  
-{%- endform -%}
-<!-- Survey Container -->
-<div id="surveyForm" class="max-w-md mx-auto bg-white p-6 rounded shadow-md">
-  <!-- Pagination Dots -->
-  <div class="flex justify-center gap-2 mb-4">
-    <div class="w-6 h-1.5 rounded-full bg-black" id="dot1"></div>
-    <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot2"></div>
-    <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot3"></div>
-    <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot4"></div>
-  </div>
+  <!-- Survey Container -->
+  <div id="surveyForm" class="max-w-md mx-auto bg-white p-6 rounded shadow-md">
+    <!-- Pagination Dots -->
+    <div class="flex justify-center gap-2 mb-4">
+      <div class="w-6 h-1.5 rounded-full bg-black" id="dot1"></div>
+      <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot2"></div>
+      <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot3"></div>
+      <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot4"></div>
+    </div>
 
-  <!-- Multi-Step Form -->
+    <!-- Multi-Step Form -->
     <!-- Step 1 -->
     <div class="step" id="step1">
       <p class="font-medium mb-4">What’s the main reason you’re leaving?</p>
@@ -99,7 +97,8 @@
         <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Submit</button>
       </div>
     </div>
-</div>
+  </div>
+{%- endform -%}
 
 <script>
   function nextStep(currentStep) {
