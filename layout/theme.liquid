@@ -314,21 +314,29 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      const interval = setInterval(() => {
-        const htmlTag = document.documentElement;
+      document.addEventListener("DOMContentLoaded", function () {
         const bodyTag = document.body;
+        const htmlTag = document.documentElement;
 
-        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
-          bodyTag.classList.add('razorpay-magic-scroll-body');
-        } else {
-          bodyTag.classList.remove('razorpay-magic-scroll-body');
+        // Function to toggle class on <body>
+        function toggleScrollBodyClass() {
+          if (htmlTag.classList.contains('razorpay-magic-scroll')) {
+            bodyTag.classList.add('razorpay-magic-scroll-body');
+          } else {
+            bodyTag.classList.remove('razorpay-magic-scroll-body');
+          }
         }
 
-        // Optionally stop checking after it appears
-        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
-          clearInterval(interval);
-        }
-      }, 500); // Check every 500ms
+        // Run once on initial load
+        toggleScrollBodyClass();
+
+        // Set up MutationObserver to watch for class changes on <html>
+        const observer = new MutationObserver(() => {
+          toggleScrollBodyClass();
+        });
+
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ['class'] });
+      });
     </script>
   </body>
 </html>
