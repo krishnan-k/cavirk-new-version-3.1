@@ -315,6 +315,21 @@
     {%- render 'content-bottom' -%}
     <!-- Keep hidden initially -->
     <div class="render_code" style="display: none;">
+      <button
+        id="closeRenderCode"
+        style="
+          position: absolute;
+          top: 8px;
+          right: 12px;
+          background: transparent;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+          line-height: 1;
+        "
+      >
+        &times;
+      </button>
       {%- render 'ask-question-form-sell' -%}
     </div>
 
