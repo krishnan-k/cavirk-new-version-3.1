@@ -313,29 +313,68 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
+    <div class="render_code" style="display: none;">
+      <div class="field flex-1 form-floating">
+        <label for="Ask-name">
+          {{ 'templates.contact.form.sell-name' | t -}}
+          <span class="required px-2">*</span>
+        </label>
+        <input
+          class="field__input w-full form-control"
+          autocomplete="name"
+          type="text"
+          id="Ask-name"
+          name="contact[{{ 'templates.contact.form.name' | t }}]"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.name' | t }}"
+          required
+        >
+      </div>
+      <div class="field flex-1 form-floating">
+        <label for="Ask-businessname">
+          {{ 'templates.contact.form.businessname' | t -}}
+          <span class="required px-2">*</span>
+        </label>
+        <input
+          class="field__input w-full form-control"
+          autocomplete="businessname"
+          type="text"
+          id="Ask-businessname"
+          name="contact[{{ 'templates.contact.form.businessname' | t }}]"
+          value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.businessname' | t }}"
+          required
+        >
+      </div>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const bodyTag = document.body;
         const htmlTag = document.documentElement;
+        const bodyTag = document.body;
+        const renderCode = document.querySelector(".render_code");
 
-        // Function to toggle class on <body>
-        function toggleScrollBodyClass() {
-          if (htmlTag.classList.contains('razorpay-magic-scroll')) {
-            bodyTag.classList.add('razorpay-magic-scroll-body');
+        function handlePopupTrigger() {
+          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+            // Add scroll body class
+            bodyTag.classList.add("razorpay-magic-scroll-body");
+
+            // Delay rendering for 3 seconds
+            setTimeout(() => {
+              renderCode.style.display = "block";
+            }, 3000);
           } else {
-            bodyTag.classList.remove('razorpay-magic-scroll-body');
+            bodyTag.classList.remove("razorpay-magic-scroll-body");
+            renderCode.style.display = "none";
           }
         }
 
-        // Run once on initial load
-        toggleScrollBodyClass();
+        // Observe html class changes
+        const observer = new MutationObserver(handlePopupTrigger);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        // Set up MutationObserver to watch for class changes on <html>
-        const observer = new MutationObserver(() => {
-          toggleScrollBodyClass();
-        });
-
-        observer.observe(htmlTag, { attributes: true, attributeFilter: ['class'] });
+        // Initial check
+        handlePopupTrigger();
       });
     </script>
   </body>
