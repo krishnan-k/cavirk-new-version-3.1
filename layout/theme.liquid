@@ -314,23 +314,28 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      function toggleScrollBodyClass() {
-        const htmlTag = document.documentElement;
+      document.addEventListener("DOMContentLoaded", function () {
         const bodyTag = document.body;
+        const htmlTag = document.documentElement;
 
-        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
-          bodyTag.classList.add('razorpay-magic-scroll-body');
-        } else {
-          bodyTag.classList.remove('razorpay-magic-scroll-body');
+        // Function to toggle class on <body>
+        function toggleScrollBodyClass() {
+          if (htmlTag.classList.contains('razorpay-magic-scroll')) {
+            bodyTag.classList.add('razorpay-magic-scroll-body');
+          } else {
+            bodyTag.classList.remove('razorpay-magic-scroll-body');
+          }
         }
-      }
 
-      // Run on initial load
-      document.addEventListener("DOMContentLoaded", toggleScrollBodyClass);
-
-      // Also run when Razorpay opens/closes
-      document.addEventListener('DOMSubtreeModified', function () {
+        // Run once on initial load
         toggleScrollBodyClass();
+
+        // Set up MutationObserver to watch for class changes on <html>
+        const observer = new MutationObserver(() => {
+          toggleScrollBodyClass();
+        });
+
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ['class'] });
       });
     </script>
   </body>
