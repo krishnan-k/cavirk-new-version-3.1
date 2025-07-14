@@ -313,7 +313,6 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <!-- Keep hidden initially -->
     <div class="render_code" style="display: none;">
       <div class="field flex-1 form-floating">
         <label for="Ask-name">
@@ -338,7 +337,7 @@
         </label>
         <input
           class="field__input w-full form-control"
-          autocomplete="organization"
+          autocomplete="businessname"
           type="text"
           id="Ask-businessname"
           name="contact[{{ 'templates.contact.form.businessname' | t }}]"
@@ -352,39 +351,30 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
+        const bodyTag = document.body;
         const renderCode = document.querySelector(".render_code");
 
-        function waitForRazorpayContainer(callback) {
-          const checkExist = setInterval(function () {
-            const container = document.querySelector(".razorpay-container");
-            if (container) {
-              clearInterval(checkExist);
-              callback(container);
-            }
-          }, 100);
-        }
-
-        function showRenderCode() {
-          // Show render_code after 3s delay, if popup is open
+        function handlePopupTrigger() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            waitForRazorpayContainer((container) => {
-              setTimeout(() => {
-                if (!container.contains(renderCode)) {
-                  container.appendChild(renderCode);
-                }
-                renderCode.style.display = "block";
-              }, 3000);
-            });
+            // Add scroll body class
+            bodyTag.classList.add("razorpay-magic-scroll-body");
+
+            // Delay rendering for 3 seconds
+            setTimeout(() => {
+              renderCode.style.display = "block";
+            }, 3000);
           } else {
-            // hide if popup closed
+            bodyTag.classList.remove("razorpay-magic-scroll-body");
             renderCode.style.display = "none";
           }
         }
 
-        const observer = new MutationObserver(showRenderCode);
+        // Observe html class changes
+        const observer = new MutationObserver(handlePopupTrigger);
         observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        showRenderCode(); // run on load as well
+        // Initial check
+        handlePopupTrigger();
       });
     </script>
   </body>
