@@ -314,25 +314,10 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      function openRazorpayQuickCheckout() {
-  Razorpay.open({
-    key: 'rzp_live_Tfgu2auTqmsFVL',
-    amount: calculateTotal(cart),
-    name: 'Cavirk',
-    description: 'Order Checkout',
-    handler: function (paymentResponse) {
-      // On successful payment
-      processOrder(paymentResponse);
-    },
-    modal: {
-      // Step 4: User clicks "Yes" or exits the Razorpay popup
-      ondismiss: function () {
-        // Redirect to survey page
-        window.location.href = 'https://cavirk.com/survey-page';
-      }
-    }
-  });
-}
+      const razorpayMagic = document.querySelector('.razorpay-magic-scroll');
+const razorpayContainer = razorpayMagic.querySelector('.razorpay-container'); // Use real class/tag here
+console.log(razorpayContainer);
+
     </script>
   </body>
 </html>
