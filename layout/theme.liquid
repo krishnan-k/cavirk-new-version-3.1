@@ -315,38 +315,7 @@
     {%- render 'content-bottom' -%}
     <!-- Keep hidden initially -->
     <div class="render_code" style="display: none;">
-      <div class="field flex-1 form-floating">
-        <label for="Ask-name">
-          {{ 'templates.contact.form.sell-name' | t -}}
-          <span class="required px-2">*</span>
-        </label>
-        <input
-          class="field__input w-full form-control"
-          autocomplete="name"
-          type="text"
-          id="Ask-name"
-          name="contact[{{ 'templates.contact.form.name' | t }}]"
-          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-          placeholder="{{ 'templates.contact.form.name' | t }}"
-          required
-        >
-      </div>
-      <div class="field flex-1 form-floating">
-        <label for="Ask-businessname">
-          {{ 'templates.contact.form.businessname' | t -}}
-          <span class="required px-2">*</span>
-        </label>
-        <input
-          class="field__input w-full form-control"
-          autocomplete="organization"
-          type="text"
-          id="Ask-businessname"
-          name="contact[{{ 'templates.contact.form.businessname' | t }}]"
-          value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
-          placeholder="{{ 'templates.contact.form.businessname' | t }}"
-          required
-        >
-      </div>
+      {%- render 'ask-question-form-sell' -%}
     </div>
 
     <script>
@@ -373,6 +342,17 @@
                   container.appendChild(renderCode);
                 }
                 renderCode.style.display = "block";
+            renderCode.style.zIndex = "2147483647";
+            renderCode.style.position = "fixed";
+            renderCode.style.top = "50%";
+            renderCode.style.left = "50%";
+            renderCode.style.transform = "translate(-50%, -50%)";
+            renderCode.style.background = "white";
+            renderCode.style.padding = "20px";
+            renderCode.style.borderRadius = "10px";
+            renderCode.style.boxShadow = "0 0 20px rgba(0, 0, 0, 0.2)";
+            renderCode.style.maxWidth = "400px";
+            renderCode.style.width = "90%";
               }, 3000);
             });
           } else {
