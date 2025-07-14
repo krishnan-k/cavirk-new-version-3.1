@@ -1,9 +1,13 @@
 {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
   <div
-    class="contact__fields field flex flex-wrap gap-10 mb-10 flex-cols"
+    class="contact__fields field flex flex-wrap gap-15 mb-20 flex-cols mt-20"
     style="--col-number: 1;--col-desktop: 2;"
   >
     <div class="field flex-1 form-floating">
+      <label for="Ask-name">
+        {{ 'templates.contact.form.sell-name' | t -}}
+        <span class="required px-2">*</span>
+      </label>
       <input
         class="field__input w-full form-control"
         autocomplete="name"
@@ -14,11 +18,28 @@
         placeholder="{{ 'templates.contact.form.name' | t }}"
         required
       >
-      <label for="Ask-name">
-        {{ 'templates.contact.form.name' | t -}}
-      </label>
     </div>
     <div class="field flex-1 form-floating">
+      <label for="Ask-businessname">
+        {{ 'templates.contact.form.businessname' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="businessname"
+        type="text"
+        id="Ask-businessname"
+        name="contact[{{ 'templates.contact.form.businessname' | t }}]"
+        value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.businessname' | t }}"
+        required
+      >
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-phone">
+        {{ 'templates.contact.form.phone-sell' | t }}
+        <span class="required px-2">*</span>
+      </label>
       <input
         type="tel"
         id="Ask-phone"
@@ -30,59 +51,157 @@
         placeholder="{{ 'templates.contact.form.phone' | t }}"
         required
       >
-      <label for="Ask-phone">
-        {{ 'templates.contact.form.phone' | t }}
+    </div>
+    <div class="field form-floating">
+      <label for="Ask-email">
+        {{ 'templates.contact.form.email-sell' | t }}
+        <span class="required px-2">*</span>
       </label>
+      <input
+        autocomplete="email"
+        type="email"
+        id="Ask-email"
+        class="field__input w-full form-control"
+        name="contact[email]"
+        spellcheck="false"
+        autocapitalize="off"
+        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+        aria-required="true"
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="ContactForm-email-error"
+        {% endif %}
+        placeholder="{{ 'templates.contact.form.email' | t }}"
+        required
+      >
+      {%- if form.errors contains 'email' -%}
+        <small class="contact__field-error" id="ContactForm-email-error">
+          <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+          <span class="form__message error">
+            {{- form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email -}}
+          </span>
+        </small>
+      {%- endif -%}
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-state">
+        {{ 'templates.contact.form.state' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="state"
+        type="text"
+        id="Ask-state"
+        name="contact[{{ 'templates.contact.form.state' | t }}]"
+        value="{% if form.state %}{{ form.state }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.state' | t }}"
+        required
+      >
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-pincode">
+        {{ 'templates.contact.form.pincode' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="pincode"
+        type="text"
+        id="Ask-pincode"
+        name="contact[{{ 'templates.contact.form.pincode' | t }}]"
+        value="{% if form.pincode %}{{ form.pincode }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.pincode' | t }}"
+        required
+      >
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-product-type">
+        {{ 'templates.contact.form.product-type' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <select
+        class="field__input w-full form-control"
+        autocomplete="product_type"
+        type="text"
+        id="Ask-product-type"
+        name="contact[{{ 'templates.contact.form.product-type' | t }}]"
+        value="{% if form.product_type %}{{ form.product_type }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.product-type' | t }}"
+        required
+      >
+        <option value="" disabled selected>Select</option>
+        <option value="Handmade">Handmade</option>
+        <option value="Machinemade">Machinemade</option>
+        <option value="Both">Both Handmade and Machinemade</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-gst-pan">
+        {{ 'templates.contact.form.gst-pan' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <select
+        class="field__input w-full form-control"
+        autocomplete="gst-pan"
+        type="text"
+        id="Ask-gst-pan"
+        name="contact[{{ 'templates.contact.form.gst-pan' | t }}]"
+        value="{% if form.gst_pan %}{{ form.gst_pan }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.gst-pan' | t }}"
+        required
+      >
+        <option value="" disabled selected>Select</option>
+        <option value="GST Only">I have GST Only</option>
+        <option value="PAN Only">I have PAN Only</option>
+        <option value="Both">I have both GST and PAN</option>
+        <option value="None">I don’t have GST & PAN</option>
+      </select>
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-product-sell">
+        {{ 'templates.contact.form.product-sell' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="product-sell"
+        type="text"
+        id="Ask-product-sell"
+        name="contact[{{ 'templates.contact.form.product-sell' | t }}]"
+        value="{% if form.product_sell %}{{ form.product_sell }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.product-sell' | t }}"
+        required
+      >
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-referral-source">
+        {{ 'templates.contact.form.referral-source' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <select
+        class="field__input w-full form-control"
+        autocomplete="referral-source"
+        type="text"
+        id="Ask-referral-source"
+        name="contact[{{ 'templates.contact.form.referral-source' | t }}]"
+        value="{% if form.referral_source %}{{ form.referral_source }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.referral-source' | t }}"
+        required
+      >
+        <option value="" disabled selected>Click to select</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Google Ads">Google Ads</option>
+        <option value="Friend or Colleague">Recommended by friend or colleague</option>
+        <option value="Others">Others</option>
+      </select>
     </div>
   </div>
-  <div class="field mb-10 form-floating">
-    <input
-      autocomplete="email"
-      type="email"
-      id="Ask-email"
-      class="field__input w-full form-control"
-      name="contact[email]"
-      spellcheck="false"
-      autocapitalize="off"
-      value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-      aria-required="true"
-      {% if form.errors contains 'email' %}
-        aria-invalid="true"
-        aria-describedby="ContactForm-email-error"
-      {% endif %}
-      placeholder="{{ 'templates.contact.form.email' | t }}"
-      required
-    >
-    <label for="Ask-email">
-      {{ 'templates.contact.form.email' | t }}
-    </label>
-    {%- if form.errors contains 'email' -%}
-      <small class="contact__field-error" id="ContactForm-email-error">
-        <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-        <span class="form__message error">
-          {{- form.errors.translated_fields.email | capitalize }}
-          {{ form.errors.messages.email -}}
-        </span>
-      </small>
-    {%- endif -%}
-  </div>
-  <div class="field mb-10 form-floating textarea">
-    <textarea
-      rows="10"
-      id="AskMessage"
-      class="text-area field__input w-full form-control"
-      name="contact[{{ 'templates.contact.form.comment' | t }}]"
-      placeholder="{{ 'templates.contact.form.comment' | t }}"
-      required
-    >
-        {{- form.body -}}
-      </textarea>
-    <label class="form__label" for="AskMessage">
-      {{ 'templates.contact.form.comment' | t }}
-    </label>
-  </div>
-  <div class="note my-25">{{ 'templates.contact.form.note' | t }}</div>
+  <div class="note my-25"><span class="required px-5">*</span>{{ 'templates.contact.form.note' | t }}</div>
   <button type="submit" class="button w-full btn-primary">
-    {{ 'templates.contact.form.send_contact' | t }}
+    {{ 'templates.contact.form.send_contact_sell' | t }}
   </button>
 {%- endform -%}
