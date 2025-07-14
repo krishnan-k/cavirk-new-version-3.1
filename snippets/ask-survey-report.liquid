@@ -34,28 +34,6 @@
         {{ 'templates.contact.form.phone' | t }}
       </label>
     </div>
-    <div class="field flex-1 form-floating">
-      <label for="Ask-product-type">
-        {{ 'templates.contact.form.product-type' | t -}}
-        <span class="required px-2">*</span>
-      </label>
-      <select
-        class="field__input w-full form-control"
-        autocomplete="product_type"
-        type="text"
-        id="Ask-product-type"
-        name="contact[{{ 'templates.contact.form.product-type' | t }}]"
-        value="{% if form.product_type %}{{ form.product_type }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.product-type' | t }}"
-        required
-      >
-        <option value="" disabled selected>Select</option>
-        <option value="Handmade">Handmade</option>
-        <option value="Machinemade">Machinemade</option>
-        <option value="Both">Both Handmade and Machinemade</option>
-        <option value="Others">Others</option>
-      </select>
-    </div>
   </div>
   <div class="field mb-10 form-floating">
     <input
