@@ -314,25 +314,8 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <div id="ask-question-form-template">
-  {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
-   <div class="field flex-1 form-floating">
-      <label for="Ask-name">
-        {{ 'templates.contact.form.sell-name' | t -}}
-        <span class="required px-2">*</span>
-      </label>
-      <input
-        class="field__input w-full form-control"
-        autocomplete="name"
-        type="text"
-        id="Ask-name"
-        name="contact[{{ 'templates.contact.form.name' | t }}]"
-        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.name' | t }}"
-        required
-      >
+      <img src="//cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1920" alt="Timeless Elegance,&lt;br&gt;Handcrafted for You" srcset="//cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1920 1920w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1500 1500w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1370 1370w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1100 1100w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=720 720w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=660 660w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=550 550w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=480 480w, //cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=360 360w" width="1920" height="550" loading="lazy" sizes="(min-width: 1200px) calc((100vw -  0px * 0) * 1), (min-width: 768px) calc( (100vw - 0px * 0 ) * 1), calc( (100vw - 0px * 0 ) * 1)">
     </div>
-  {%- endform -%}
-</div>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
     const checkInterval = setInterval(function () {
