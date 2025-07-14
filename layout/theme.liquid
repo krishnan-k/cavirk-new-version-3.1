@@ -314,14 +314,18 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const exitButton = document.querySelector('[data-testid="confirm-positive"]');
-        if (exitButton) {
-          exitButton.addEventListener('click', function () {
-            window.location.href = 'https://example.com/survey'; // Replace with your survey URL
-          });
-        }
+  const redirectURL = "https://forms.gle/zPc4a4q1rLHo3B6v8"; // Your form link
+
+  const waitForButton = setInterval(() => {
+    const exitBtn = document.querySelector('[data-testid="confirm-positive"]');
+    if (exitBtn) {
+      exitBtn.addEventListener('click', function () {
+        window.location.href = redirectURL;
       });
-    </script>
+      clearInterval(waitForButton); // Stop once added
+    }
+  }, 300); // Check every 300ms
+</script>
+
   </body>
 </html>
