@@ -313,5 +313,24 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Check every 500ms for the class `razorpay-magic-scroll`
+    const interval = setInterval(function () {
+      if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
+        clearInterval(interval); // Stop checking
+
+        // Wait 2 seconds after popup opens
+        setTimeout(function () {
+          // Insert the rendered form dynamically
+          const container = document.createElement("div");
+          container.innerHTML = `{% render 'ask-question-form-sell' %}`;
+          document.body.appendChild(container);
+        }, 2000);
+      }
+    }, 500);
+  });
+</script>
+
   </body>
 </html>
