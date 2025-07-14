@@ -4,32 +4,39 @@
     style="--col-number: 1;--col-desktop: 2;"
   >
     <div class="field flex-1 form-floating">
-      <label for="Ask-product-type">
-        <!-- {{ 'templates.contact.form.product-type' | t -}} -->
-        What’s the main reason you’re leaving?
-        <span class="required px-2">*</span>
-      </label>
-      <select
+      <input
         class="field__input w-full form-control"
-        autocomplete="product_type"
+        autocomplete="name"
         type="text"
-        id="Ask-product-type"
-        name="contact[{{ 'templates.contact.form.product-type' | t }}]"
-        value="{% if form.product_type %}{{ form.product_type }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.product-type' | t }}"
+        id="Ask-name"
+        name="contact[{{ 'templates.contact.form.name' | t }}]"
+        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.name' | t }}"
         required
       >
-        <option value="" disabled selected>Select</option>
-        <option value="Handmade">Found a better alternative</option>
-        <option value="Machinemade">Too expensive</option>
-        <option value="Both">Technical issues</option>
-        <option value="Others">No longer need the product</option>
-      </select>
+      <label for="Ask-name">
+        {{ 'templates.contact.form.name' | t -}}
+      </label>
+    </div>
+    <div class="field flex-1 form-floating">
+      <input
+        type="tel"
+        id="Ask-phone"
+        class="field__input w-full form-control"
+        autocomplete="tel"
+        name="contact[{{ 'templates.contact.form.phone' | t }}]"
+        pattern="[0-9\-]*"
+        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.phone' | t }}"
+        required
+      >
+      <label for="Ask-phone">
+        {{ 'templates.contact.form.phone' | t }}
+      </label>
     </div>
     <div class="field flex-1 form-floating">
       <label for="Ask-product-type">
-        <!-- {{ 'templates.contact.form.product-type' | t -}} -->
-        What could we have done better?
+        {{ 'templates.contact.form.product-type' | t -}}
         <span class="required px-2">*</span>
       </label>
       <select
@@ -43,10 +50,10 @@
         required
       >
         <option value="" disabled selected>Select</option>
-        <option value="Handmade">Improve features</option>
-        <option value="Machinemade">Lower price</option>
-        <option value="Both">More support</option>
-        <option value="Others">Better UI</option>
+        <option value="Handmade">Handmade</option>
+        <option value="Machinemade">Machinemade</option>
+        <option value="Both">Both Handmade and Machinemade</option>
+        <option value="Others">Others</option>
       </select>
     </div>
   </div>
