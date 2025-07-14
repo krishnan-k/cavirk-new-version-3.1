@@ -315,13 +315,38 @@
     {%- render 'content-bottom' -%}
     <template id="ask-question-form-template">
       <!-- Your image or form HTML -->
-      <img
-        src="//cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1920"
-        alt="Timeless Elegance, Handcrafted for You"
-        width="1920"
-        height="550"
-        loading="lazy"
+      <div class="field flex-1 form-floating">
+      <label for="Ask-name">
+        {{ 'templates.contact.form.sell-name' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="name"
+        type="text"
+        id="Ask-name"
+        name="contact[{{ 'templates.contact.form.name' | t }}]"
+        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.name' | t }}"
+        required
       >
+    </div>
+    <div class="field flex-1 form-floating">
+      <label for="Ask-businessname">
+        {{ 'templates.contact.form.businessname' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="businessname"
+        type="text"
+        id="Ask-businessname"
+        name="contact[{{ 'templates.contact.form.businessname' | t }}]"
+        value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.businessname' | t }}"
+        required
+      >
+    </div>
     </template>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
