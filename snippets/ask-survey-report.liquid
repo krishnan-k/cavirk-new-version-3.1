@@ -1,88 +1,135 @@
 {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
-  <div
-    class="contact__fields field flex flex-wrap gap-10 mb-10 flex-cols"
-    style="--col-number: 1;--col-desktop: 2;"
-  >
-    <div class="field flex-1 form-floating">
-      <input
-        class="field__input w-full form-control"
-        autocomplete="name"
-        type="text"
-        id="Ask-name"
-        name="contact[{{ 'templates.contact.form.name' | t }}]"
-        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.name' | t }}"
-        required
-      >
-      <label for="Ask-name">
-        {{ 'templates.contact.form.name' | t -}}
-      </label>
+  <!-- Survey Container -->
+  <div id="surveyForm" class="max-w-md mx-auto bg-white p-6 rounded shadow-md">
+    <!-- Pagination Dots -->
+    <div class="flex justify-center gap-2 mb-4">
+      <div class="w-6 h-1.5 rounded-full bg-black" id="dot1"></div>
+      <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot2"></div>
+      <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot3"></div>
+      <div class="w-6 h-1.5 rounded-full bg-gray-300" id="dot4"></div>
     </div>
-    <div class="field flex-1 form-floating">
-      <input
-        type="tel"
-        id="Ask-phone"
-        class="field__input w-full form-control"
-        autocomplete="tel"
-        name="contact[{{ 'templates.contact.form.phone' | t }}]"
-        pattern="[0-9\-]*"
-        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.phone' | t }}"
-        required
-      >
-      <label for="Ask-phone">
-        {{ 'templates.contact.form.phone' | t }}
+
+    <!-- Multi-Step Form -->
+    <!-- Step 1 -->
+    <div class="step" id="step1">
+      <p class="font-medium mb-4">What’s the main reason you’re leaving?</p>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Found a better alternative" class="mr-2" required>
+        Found a better alternative
       </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Too expensive" class="mr-2">
+        Too expensive
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Missing features" class="mr-2">
+        Missing features
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Poor customer support" class="mr-2">
+        Poor customer support
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="Technical issues" class="mr-2">
+        Technical issues
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason1" value="No longer need the product" class="mr-2">
+        No longer need the product
+      </label>
+      <div class="mt-25 flex justify-end">
+        <button type="button" class="button w-25 btn-primary" onclick="nextStep(1)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step hidden" id="step2">
+      <p class="font-medium mb-4">What could we have done better?</p>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="Improve features" class="mr-2" required>
+        Improve features
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="Lower price" class="mr-2">
+        Lower price
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="More support" class="mr-2">
+        More support
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason2" value="Better UI" class="mr-2">
+        Better UI
+      </label>
+      <div class="mt-25 flex justify-between">
+        <button type="button" class="button w-25 btn-primary" onclick="prevStep(2)">← Previous</button>
+        <button type="button" class="button w-25 btn-primary" onclick="nextStep(2)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step hidden" id="step3">
+      <p class="font-medium mb-4">Would you consider returning in the future?</p>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason3" value="Yes" class="mr-2" required>
+        Yes
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason3" value="Maybe" class="mr-2">
+        Maybe
+      </label>
+      <label class="block cursor-pointer mb-2">
+        <input type="radio" name="reason3" value="No" class="mr-2">
+        No
+      </label>
+      <div class="mt-25 flex justify-between">
+        <button type="button" class="button w-25 btn-primary" onclick="prevStep(3)">← Previous</button>
+        <button type="button" class="button w-25 btn-primary" onclick="nextStep(3)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step hidden" id="step4">
+      <p class="font-medium mb-4">Any additional comments?</p>
+      <textarea name="comments" rows="4" class="w-full border rounded p-2" placeholder="Type here..."></textarea>
+      <div class="mt-25 flex justify-between">
+        <button type="button" class="button w-25 btn-primary" onclick="prevStep(4)">← Previous</button>
+        <button type="submit" class="button w-25 btn-primary">Submit</button>
+      </div>
     </div>
   </div>
-  <div class="field mb-10 form-floating">
-    <input
-      autocomplete="email"
-      type="email"
-      id="Ask-email"
-      class="field__input w-full form-control"
-      name="contact[email]"
-      spellcheck="false"
-      autocapitalize="off"
-      value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-      aria-required="true"
-      {% if form.errors contains 'email' %}
-        aria-invalid="true"
-        aria-describedby="ContactForm-email-error"
-      {% endif %}
-      placeholder="{{ 'templates.contact.form.email' | t }}"
-      required
-    >
-    <label for="Ask-email">
-      {{ 'templates.contact.form.email' | t }}
-    </label>
-    {%- if form.errors contains 'email' -%}
-      <small class="contact__field-error" id="ContactForm-email-error">
-        <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-        <span class="form__message error">
-          {{- form.errors.translated_fields.email | capitalize }}
-          {{ form.errors.messages.email -}}
-        </span>
-      </small>
-    {%- endif -%}
-  </div>
-  <div class="field mb-10 form-floating textarea">
-    <textarea
-      rows="10"
-      id="AskMessage"
-      class="text-area field__input w-full form-control"
-      name="contact[{{ 'templates.contact.form.comment' | t }}]"
-      placeholder="{{ 'templates.contact.form.comment' | t }}"
-      required
-    >
-        {{- form.body -}}
-      </textarea>
-    <label class="form__label" for="AskMessage">
-      {{ 'templates.contact.form.comment' | t }}
-    </label>
-  </div>
-  <div class="note my-25">{{ 'templates.contact.form.note' | t }}</div>
-  <button type="submit" class="button w-full btn-primary">
-    {{ 'templates.contact.form.send_contact' | t }}
-  </button>
 {%- endform -%}
+
+<script>
+  function nextStep(currentStep) {
+    const current = document.getElementById(`step${currentStep}`);
+    const next = document.getElementById(`step${currentStep + 1}`);
+    const dotCurrent = document.getElementById(`dot${currentStep}`);
+    const dotNext = document.getElementById(`dot${currentStep + 1}`);
+
+    const selected = current.querySelector('input[type="radio"]:checked');
+    if (!selected) {
+      alert("Please select an option before continuing.");
+      return;
+    }
+
+    current.classList.add('hidden');
+    next.classList.remove('hidden');
+
+    dotCurrent.classList.replace('bg-black', 'bg-gray-300');
+    dotNext.classList.replace('bg-gray-300', 'bg-black');
+  }
+
+  function prevStep(currentStep) {
+    const current = document.getElementById(`step${currentStep}`);
+    const previous = document.getElementById(`step${currentStep - 1}`);
+    const dotCurrent = document.getElementById(`dot${currentStep}`);
+    const dotPrev = document.getElementById(`dot${currentStep - 1}`);
+
+    current.classList.add('hidden');
+    previous.classList.remove('hidden');
+
+    dotCurrent.classList.replace('bg-black', 'bg-gray-300');
+    dotPrev.classList.replace('bg-gray-300', 'bg-black');
+  }
+</script>
