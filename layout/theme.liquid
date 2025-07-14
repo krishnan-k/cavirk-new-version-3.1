@@ -315,7 +315,22 @@
     {%- render 'content-bottom' -%}
     <template id="ask-question-form-template">
   {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
-   {%- render 'ask-question-form-sell' -%}
+   <div class="field flex-1 form-floating">
+      <label for="Ask-name">
+        {{ 'templates.contact.form.sell-name' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <input
+        class="field__input w-full form-control"
+        autocomplete="name"
+        type="text"
+        id="Ask-name"
+        name="contact[{{ 'templates.contact.form.name' | t }}]"
+        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.name' | t }}"
+        required
+      >
+    </div>
   {%- endform -%}
 </template>
     <script>
