@@ -314,15 +314,21 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hasRazorpayScroll = document.querySelector('.razorpay-magic-scroll');
+      const interval = setInterval(() => {
+        const htmlTag = document.documentElement;
+        const bodyTag = document.body;
 
-        if (hasRazorpayScroll) {
-          document.body.classList.add('razorpay-magic-scroll-body');
+        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
+          bodyTag.classList.add('razorpay-magic-scroll-body');
         } else {
-          document.body.classList.remove('razorpay-magic-scroll-body');
+          bodyTag.classList.remove('razorpay-magic-scroll-body');
         }
-      });
+
+        // Optionally stop checking after it appears
+        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
+          clearInterval(interval);
+        }
+      }, 500); // Check every 500ms
     </script>
   </body>
 </html>
