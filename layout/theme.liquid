@@ -313,24 +313,28 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
+    <template id="ask-question-form-template">
+  {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
+   {%- render 'ask-question-form-sell' -%}
+  {%- endform -%}
+</template>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Check every 500ms for the class `razorpay-magic-scroll`
-    const interval = setInterval(function () {
+    const checkInterval = setInterval(function () {
       if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
-        clearInterval(interval); // Stop checking
+        clearInterval(checkInterval);
 
-        // Wait 2 seconds after popup opens
         setTimeout(function () {
-          // Insert the rendered form dynamically
-          const container = document.createElement("div");
-          container.innerHTML = `{% render 'ask-question-form-sell' %}`;
-          document.body.appendChild(container);
+          const template = document.getElementById("ask-question-form-template");
+          const placeholder = document.getElementById("ask-question-form-placeholder");
+
+          if (template && placeholder) {
+            placeholder.innerHTML = template.innerHTML;
+          }
         }, 2000);
       }
     }, 500);
   });
 </script>
-
   </body>
 </html>
