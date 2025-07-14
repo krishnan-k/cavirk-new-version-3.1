@@ -227,46 +227,46 @@
 
     <!-- Add GA4 Client ID as Cart Attribute -->
     <script>
-      function addGaClientIdToCart(ga4ClientId) {
-        if (!ga4ClientId) return;
+  function addGaClientIdToCart(ga4ClientId) {
+    if (!ga4ClientId) return;
 
-        if (typeof jQuery !== 'undefined') {
-          jQuery.ajax({
-            type: 'POST',
-            url: '/cart/update.js',
-            data: {
-              attributes: {
-                'ga_client_id': ga4ClientId
-              }
-            },
-            dataType: 'json'
-          });
-        }
-      }
-
-      window.dataLayer = window.dataLayer || [];
-
-      window.addEventListener('DOMContentLoaded', function () {
-        var ga4ClientId = window.dataLayer.find(item => item.ga_client_id !== undefined)?.ga_client_id;
-
-        if (ga4ClientId) {
-          addGaClientIdToCart(ga4ClientId);
-        } else {
-          // Wait for the ga_client_id to be pushed to the dataLayer
-          var originalPush = window.dataLayer.push;
-
-          window.dataLayer.push = function () {
-            for (var i = 0; i < arguments.length; i++) {
-              var item = arguments[i];
-              if (item && item.ga_client_id) {
-                addGaClientIdToCart(item.ga_client_id);
-              }
-            }
-            return originalPush.apply(window.dataLayer, arguments);
-          };
-        }
+    if (typeof jQuery !== 'undefined') {
+      jQuery.ajax({
+        type: 'POST',
+        url: '/cart/update.js',
+        data: {
+          attributes: {
+            'ga_client_id': ga4ClientId
+          }
+        },
+        dataType: 'json'
       });
-    </script>
+    }
+  }
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.addEventListener('DOMContentLoaded', function () {
+    var ga4ClientId = window.dataLayer.find(item => item.ga_client_id !== undefined)?.ga_client_id;
+
+    if (ga4ClientId) {
+      addGaClientIdToCart(ga4ClientId);
+    } else {
+      // Wait for the ga_client_id to be pushed to the dataLayer
+      var originalPush = window.dataLayer.push;
+
+      window.dataLayer.push = function () {
+        for (var i = 0; i < arguments.length; i++) {
+          var item = arguments[i];
+          if (item && item.ga_client_id) {
+            addGaClientIdToCart(item.ga_client_id);
+          }
+        }
+        return originalPush.apply(window.dataLayer, arguments);
+      };
+    }
+  });
+</script>
 
     <!-- Google Tag Manager -->
     <script>
@@ -313,57 +313,5 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <template id="ask-question-form-template">
-      <!-- Your image or form HTML -->
-      <div class="field flex-1 form-floating">
-      <label for="Ask-name">
-        {{ 'templates.contact.form.sell-name' | t -}}
-        <span class="required px-2">*</span>
-      </label>
-      <input
-        class="field__input w-full form-control"
-        autocomplete="name"
-        type="text"
-        id="Ask-name"
-        name="contact[{{ 'templates.contact.form.name' | t }}]"
-        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.name' | t }}"
-        required
-      >
-    </div>
-    <div class="field flex-1 form-floating">
-      <label for="Ask-businessname">
-        {{ 'templates.contact.form.businessname' | t -}}
-        <span class="required px-2">*</span>
-      </label>
-      <input
-        class="field__input w-full form-control"
-        autocomplete="businessname"
-        type="text"
-        id="Ask-businessname"
-        name="contact[{{ 'templates.contact.form.businessname' | t }}]"
-        value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.businessname' | t }}"
-        required
-      >
-    </div>
-    </template>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const checkInterval = setInterval(function () {
-          if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
-            clearInterval(checkInterval);
-            setTimeout(function () {
-              const template = document.getElementById("ask-question-form-template");
-              const placeholder = document.getElementById("ask-question-form-placeholder");
-
-              if (template && placeholder) {
-                placeholder.innerHTML = template.innerHTML;
-              }
-            }, 2000);
-          }
-        }, 500);
-      });
-    </script>
   </body>
 </html>
