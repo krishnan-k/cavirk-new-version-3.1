@@ -313,61 +313,16 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-  </body>
-  <template id="contact-snippet-template">
-      <div class="field flex-1 form-floating">
-        <label for="Ask-name">
-          {{ 'templates.contact.form.sell-name' | t -}}
-          <span class="required px-2">*</span>
-        </label>
-        <input
-          class="field__input w-full form-control"
-          autocomplete="name"
-          type="text"
-          id="Ask-name"
-          name="contact[{{ 'templates.contact.form.name' | t }}]"
-          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-          placeholder="{{ 'templates.contact.form.name' | t }}"
-          required
-        >
-      </div>
-      <div class="field flex-1 form-floating">
-        <label for="Ask-businessname">
-          {{ 'templates.contact.form.businessname' | t -}}
-          <span class="required px-2">*</span>
-        </label>
-        <input
-          class="field__input w-full form-control"
-          autocomplete="businessname"
-          type="text"
-          id="Ask-businessname"
-          name="contact[{{ 'templates.contact.form.businessname' | t }}]"
-          value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
-          placeholder="{{ 'templates.contact.form.businessname' | t }}"
-          required
-        >
-      </div>
-    </template>
-
-    <!-- Placeholder to insert the form -->
-    <div id="contact-snippet-placeholder" class="mt-5"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const checkInterval = setInterval(function () {
-          if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
-            clearInterval(checkInterval);
+        const hasRazorpayScroll = document.querySelector('.razorpay-magic-scroll');
 
-            // Wait 3 seconds after Razorpay opens
-            setTimeout(function () {
-              const template = document.getElementById("contact-snippet-template");
-              const placeholder = document.getElementById("contact-snippet-placeholder");
-
-              if (template && placeholder) {
-                placeholder.innerHTML = template.innerHTML;
-              }
-            }, 3000);
-          }
-        }, 500);
+        if (hasRazorpayScroll) {
+          document.body.classList.add('razorpay-magic-scroll-body');
+        } else {
+          document.body.classList.remove('razorpay-magic-scroll-body');
+        }
       });
     </script>
+  </body>
 </html>
