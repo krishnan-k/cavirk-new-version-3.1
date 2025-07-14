@@ -313,37 +313,37 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <template id="ask-question-form-template">
-      <!-- Your image or form HTML -->
-      <img
-        src="//cavirk.com/cdn/shop/files/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg?v=1750569225&amp;width=1920"
-        alt="Timeless Elegance, Handcrafted for You"
-        width="1920"
-        height="550"
-        loading="lazy"
-      >
-    </template>
+    <!-- Placeholder to load the Avada Survey -->
+    <div id="avada-survey-placeholder"></div>
+
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const checkInterval = setInterval(function () {
-                if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
-                  clearInterval(checkInterval);
-                  setTimeout(function () {
-                    const template = document.getElementById("ask-question-form-template");
-                    const placeholder = document.getElementById("ask-question-form-placeholder");
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkInterval = setInterval(function () {
+          // Check if Razorpay popup is open
+          if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
+            clearInterval(checkInterval);
 
-                    if (template && placeholder) {
-                      placeholder.innerHTML = template.innerHTML;
-                    }
-                  }, 2000);
-                }
-              }, 500);
-            });
-            console.log("Waiting for Razorpay...");
+            setTimeout(function () {
+              // Inject the survey embed div
+              const surveyDiv = document.createElement("div");
+              surveyDiv.className = "Avada-Survey__Embed survey-vdfDgKpiSSmHC7B5rZY1";
+              surveyDiv.setAttribute("data-survey-id", "vdfDgKpiSSmHC7B5rZY1");
+              surveyDiv.setAttribute("data-shop-id", "xaBCDSbxKmJbxcMGi6lW");
 
-      if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
-        console.log("Razorpay detected, injecting template...");
-      }
+              // Inject the script
+              const script = document.createElement("script");
+              script.src = "https://cdn.shopify.com/extensions/31aa3059-d70c-4bba-bdbd-94229853c9e8/0.0.0/assets/avada-survey-main.min.js?v=1752481749555&surveyId=vdfDgKpiSSmHC7B5rZY1&shopId=xaBCDSbxKmJbxcMGi6lW&type=widget";
+              script.async = true;
+
+              const placeholder = document.getElementById("avada-survey-placeholder");
+              if (placeholder) {
+                placeholder.appendChild(surveyDiv);
+                placeholder.appendChild(script);
+              }
+            }, 2000); // Wait 2 seconds after Razorpay opens
+          }
+        }, 500); // Check every 0.5s
+      });
     </script>
   </body>
 </html>
