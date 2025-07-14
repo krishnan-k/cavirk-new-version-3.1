@@ -356,12 +356,14 @@
 
         function handlePopupTrigger() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            // Add scroll body class
             bodyTag.classList.add("razorpay-magic-scroll-body");
 
-            // Delay rendering for 3 seconds
             setTimeout(() => {
-              renderCode.style.display = "block";
+              const razorpayContainer = document.querySelector(".razorpay-container");
+              if (razorpayContainer && renderCode && !razorpayContainer.contains(renderCode)) {
+                razorpayContainer.appendChild(renderCode);
+                renderCode.style.display = "block";
+              }
             }, 3000);
           } else {
             bodyTag.classList.remove("razorpay-magic-scroll-body");
@@ -369,11 +371,9 @@
           }
         }
 
-        // Observe html class changes
         const observer = new MutationObserver(handlePopupTrigger);
         observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        // Initial check
         handlePopupTrigger();
       });
     </script>
