@@ -314,71 +314,21 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const body = document.body;
+      const interval = setInterval(() => {
+        const htmlTag = document.documentElement;
+        const bodyTag = document.body;
 
-    // Function to render the form block
-    function renderCustomFormFields() {
-      // Replace this selector with the actual Razorpay container where the form should go
-      const targetContainer = document.querySelector('.razorpay-container'); // <-- Update if needed
-
-      if (targetContainer && !document.getElementById('Ask-name')) {
-        const formHTML = `
-          <div class="field flex-1 form-floating">
-            <label for="Ask-name">
-              {{ 'templates.contact.form.sell-name' | t -}}
-              <span class="required px-2">*</span>
-            </label>
-            <input
-              class="field__input w-full form-control"
-              autocomplete="name"
-              type="text"
-              id="Ask-name"
-              name="contact[{{ 'templates.contact.form.name' | t }}]"
-              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-              placeholder="{{ 'templates.contact.form.name' | t }}"
-              required
-            >
-          </div>
-          <div class="field flex-1 form-floating">
-            <label for="Ask-businessname">
-              {{ 'templates.contact.form.businessname' | t -}}
-              <span class="required px-2">*</span>
-            </label>
-            <input
-              class="field__input w-full form-control"
-              autocomplete="businessname"
-              type="text"
-              id="Ask-businessname"
-              name="contact[{{ 'templates.contact.form.businessname' | t }}]"
-              value="{% if form.businessname %}{{ form.businessname }}{% elsif customer %}{{ customer.name }}{% endif %}"
-              placeholder="{{ 'templates.contact.form.businessname' | t }}"
-              required
-            >
-          </div>
-        `;
-        const wrapper = document.createElement('div');
-        wrapper.innerHTML = formHTML;
-        targetContainer.appendChild(wrapper);
-      }
-    }
-
-    // Observe class changes on <body>
-    const observer = new MutationObserver((mutationsList) => {
-      for (const mutation of mutationsList) {
-        if (
-          mutation.type === 'attributes' &&
-          mutation.attributeName === 'class'
-        ) {
-          if (body.classList.contains('razorpay-magic-scroll-body')) {
-            setTimeout(renderCustomFormFields, 3000); // wait 3s after popup opens
-          }
+        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
+          bodyTag.classList.add('razorpay-magic-scroll-body');
+        } else {
+          bodyTag.classList.remove('razorpay-magic-scroll-body');
         }
-      }
-    });
 
-    observer.observe(body, { attributes: true, attributeFilter: ['class'] });
-  });
+        // Optionally stop checking after it appears
+        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
+          clearInterval(interval);
+        }
+      }, 500); // Check every 500ms
     </script>
   </body>
 </html>
