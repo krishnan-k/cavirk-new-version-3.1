@@ -76,7 +76,7 @@
     </div>
     <div class="field flex-1 form-floating">
       <label for="Ask-gst-pan">
-        {{ 'templates.contact.form.gst-pan' | t -}}
+        <!-- {{ 'templates.contact.form.gst-pan' | t -}} -->What could we have done better?
         <span class="required px-2">*</span>
       </label>
       <select
@@ -90,31 +90,15 @@
         required
       >
         <option value="" disabled selected>Select</option>
-        <option value="GST Only">I have GST Only</option>
-        <option value="PAN Only">I have PAN Only</option>
-        <option value="Both">I have both GST and PAN</option>
+        <option value="Lower price">Lower price</option>
+        <option value="More support">More support</option>
+        <option value="Better UI">Better UI</option>
         <option value="None">I don’t have GST & PAN</option>
       </select>
     </div>
     <div class="field flex-1 form-floating">
-      <label for="Ask-product-sell">
-        {{ 'templates.contact.form.product-sell' | t -}}
-        <span class="required px-2">*</span>
-      </label>
-      <input
-        class="field__input w-full form-control"
-        autocomplete="product-sell"
-        type="text"
-        id="Ask-product-sell"
-        name="contact[{{ 'templates.contact.form.product-sell' | t }}]"
-        value="{% if form.product_sell %}{{ form.product_sell }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.product-sell' | t }}"
-        required
-      >
-    </div>
-    <div class="field flex-1 form-floating">
       <label for="Ask-referral-source">
-        {{ 'templates.contact.form.referral-source' | t -}}
+        <!-- {{ 'templates.contact.form.referral-source' | t -}} -->Would you consider returning in the future?
         <span class="required px-2">*</span>
       </label>
       <select
@@ -128,11 +112,9 @@
         required
       >
         <option value="" disabled selected>Click to select</option>
-        <option value="Facebook">Facebook</option>
-        <option value="Instagram">Instagram</option>
-        <option value="Google Ads">Google Ads</option>
-        <option value="Friend or Colleague">Recommended by friend or colleague</option>
-        <option value="Others">Others</option>
+        <option value="Yes">Yes</option>
+        <option value="Maybe">Maybe</option>
+        <option value="No">No</option>
       </select>
     </div>
   </div>
