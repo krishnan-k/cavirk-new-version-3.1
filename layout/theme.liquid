@@ -313,7 +313,7 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <template id="ask-question-form-template">
+    <div id="ask-question-form-template">
   {%- form 'contact', id: 'ContactForm', class: 'isolate field' -%}
    <div class="field flex-1 form-floating">
       <label for="Ask-name">
@@ -332,7 +332,7 @@
       >
     </div>
   {%- endform -%}
-</template>
+</div>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
     const checkInterval = setInterval(function () {
