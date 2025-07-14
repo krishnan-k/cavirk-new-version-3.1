@@ -314,7 +314,7 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      const interval = setInterval(() => {
+      function toggleScrollBodyClass() {
         const htmlTag = document.documentElement;
         const bodyTag = document.body;
 
@@ -323,12 +323,15 @@
         } else {
           bodyTag.classList.remove('razorpay-magic-scroll-body');
         }
+      }
 
-        // Optionally stop checking after it appears
-        if (htmlTag.classList.contains('razorpay-magic-scroll')) {
-          clearInterval(interval);
-        }
-      }, 500); // Check every 500ms
+      // Run on initial load
+      document.addEventListener("DOMContentLoaded", toggleScrollBodyClass);
+
+      // Also run when Razorpay opens/closes
+      document.addEventListener('DOMSubtreeModified', function () {
+        toggleScrollBodyClass();
+      });
     </script>
   </body>
 </html>
