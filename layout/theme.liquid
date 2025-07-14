@@ -313,7 +313,7 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <!-- Hidden form initially -->
+    <!-- Keep hidden initially -->
     <div class="render_code" style="display: none;">
       <div class="field flex-1 form-floating">
         <label for="Ask-name">
@@ -331,7 +331,6 @@
           required
         >
       </div>
-
       <div class="field flex-1 form-floating">
         <label for="Ask-businessname">
           {{ 'templates.contact.form.businessname' | t -}}
@@ -353,34 +352,39 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
-        const bodyTag = document.body;
         const renderCode = document.querySelector(".render_code");
 
-        function handleRazorpayOpen() {
+        function waitForRazorpayContainer(callback) {
+          const checkExist = setInterval(function () {
+            const container = document.querySelector(".razorpay-container");
+            if (container) {
+              clearInterval(checkExist);
+              callback(container);
+            }
+          }, 100);
+        }
+
+        function showRenderCode() {
+          // Show render_code after 3s delay, if popup is open
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            bodyTag.classList.add("razorpay-magic-scroll-body");
-
-            // Wait 3 seconds before appending the form
-            setTimeout(() => {
-              const razorpayContainer = document.querySelector(".razorpay-container");
-
-              if (razorpayContainer && renderCode && !razorpayContainer.contains(renderCode)) {
-                razorpayContainer.appendChild(renderCode);
+            waitForRazorpayContainer((container) => {
+              setTimeout(() => {
+                if (!container.contains(renderCode)) {
+                  container.appendChild(renderCode);
+                }
                 renderCode.style.display = "block";
-              }
-            }, 3000);
+              }, 3000);
+            });
           } else {
-            bodyTag.classList.remove("razorpay-magic-scroll-body");
-            if (renderCode) renderCode.style.display = "none";
+            // hide if popup closed
+            renderCode.style.display = "none";
           }
         }
 
-        // Watch for class changes on <html> (to detect Razorpay popup open/close)
-        const observer = new MutationObserver(handleRazorpayOpen);
+        const observer = new MutationObserver(showRenderCode);
         observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        // Run on first load as well
-        handleRazorpayOpen();
+        showRenderCode(); // run on load as well
       });
     </script>
   </body>
