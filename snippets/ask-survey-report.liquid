@@ -2,10 +2,11 @@
   <div
     class="contact__fields field flex flex-wrap gap-10 mb-10 flex-cols"
     style="--col-number: 1;--col-desktop: 2;"
-  >   
+  >
     <div class="field flex-1 form-floating">
       <label for="Ask-product-type">
-        {{ 'templates.contact.form.product-type' | t -}}
+        <!-- {{ 'templates.contact.form.product-type' | t -}} -->
+        What’s the main reason you’re leaving?
         <span class="required px-2">*</span>
       </label>
       <select
@@ -19,10 +20,10 @@
         required
       >
         <option value="" disabled selected>Select</option>
-        <option value="Handmade">Handmade</option>
-        <option value="Machinemade">Machinemade</option>
-        <option value="Both">Both Handmade and Machinemade</option>
-        <option value="Others">Others</option>
+        <option value="Handmade">Found a better alternative</option>
+        <option value="Machinemade">Too expensive</option>
+        <option value="Both">Technical issues</option>
+        <option value="Others">No longer need the product</option>
       </select>
     </div>
     <div class="field flex-1 form-floating">
