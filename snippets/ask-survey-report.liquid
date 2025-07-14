@@ -2,37 +2,28 @@
   <div
     class="contact__fields field flex flex-wrap gap-10 mb-10 flex-cols"
     style="--col-number: 1;--col-desktop: 2;"
-  >
+  >   
     <div class="field flex-1 form-floating">
-      <input
+      <label for="Ask-product-type">
+        {{ 'templates.contact.form.product-type' | t -}}
+        <span class="required px-2">*</span>
+      </label>
+      <select
         class="field__input w-full form-control"
-        autocomplete="name"
+        autocomplete="product_type"
         type="text"
-        id="Ask-name"
-        name="contact[{{ 'templates.contact.form.name' | t }}]"
-        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.name' | t }}"
+        id="Ask-product-type"
+        name="contact[{{ 'templates.contact.form.product-type' | t }}]"
+        value="{% if form.product_type %}{{ form.product_type }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="{{ 'templates.contact.form.product-type' | t }}"
         required
       >
-      <label for="Ask-name">
-        {{ 'templates.contact.form.name' | t -}}
-      </label>
-    </div>
-    <div class="field flex-1 form-floating">
-      <input
-        type="tel"
-        id="Ask-phone"
-        class="field__input w-full form-control"
-        autocomplete="tel"
-        name="contact[{{ 'templates.contact.form.phone' | t }}]"
-        pattern="[0-9\-]*"
-        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.phone' | t }}"
-        required
-      >
-      <label for="Ask-phone">
-        {{ 'templates.contact.form.phone' | t }}
-      </label>
+        <option value="" disabled selected>Select</option>
+        <option value="Handmade">Handmade</option>
+        <option value="Machinemade">Machinemade</option>
+        <option value="Both">Both Handmade and Machinemade</option>
+        <option value="Others">Others</option>
+      </select>
     </div>
     <div class="field flex-1 form-floating">
       <label for="Ask-product-type">
