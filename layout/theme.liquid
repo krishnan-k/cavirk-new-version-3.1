@@ -324,21 +324,26 @@
       >
     </template>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const checkInterval = setInterval(function () {
-          if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
-            clearInterval(checkInterval);
-            setTimeout(function () {
-              const template = document.getElementById("ask-question-form-template");
-              const placeholder = document.getElementById("ask-question-form-placeholder");
+            document.addEventListener("DOMContentLoaded", function () {
+              const checkInterval = setInterval(function () {
+                if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
+                  clearInterval(checkInterval);
+                  setTimeout(function () {
+                    const template = document.getElementById("ask-question-form-template");
+                    const placeholder = document.getElementById("ask-question-form-placeholder");
 
-              if (template && placeholder) {
-                placeholder.innerHTML = template.innerHTML;
-              }
-            }, 2000);
-          }
-        }, 500);
-      });
+                    if (template && placeholder) {
+                      placeholder.innerHTML = template.innerHTML;
+                    }
+                  }, 2000);
+                }
+              }, 500);
+            });
+            console.log("Waiting for Razorpay...");
+
+      if (document.documentElement.classList.contains("razorpay-magic-scroll")) {
+        console.log("Razorpay detected, injecting template...");
+      }
     </script>
   </body>
 </html>
