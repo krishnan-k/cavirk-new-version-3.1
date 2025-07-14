@@ -380,6 +380,11 @@
         observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
         showRenderCode(); // run on load as well
+        document.addEventListener("click", function (e) {
+      if (e.target.id === "closeRenderCode") {
+        renderCode.style.display = "none";
+      }
+    });
       });
     </script>
   </body>
