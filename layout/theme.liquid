@@ -314,6 +314,44 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <!-- Keep hidden initially -->
+    <div class="render_code" style="display: none;">
+      <div class="tingle-modal ask-question-sell tingle-modal--visible" style="">
+        <div class="tingle-modal-box">
+          <button
+            type="button"
+            class="tingle-modal__close btn-reset hover-svg-zoom pointer absolute right-10 top-10 z-1 w-44 h-44 inline-flex content-center"
+          >
+            <span class="tingle-modal__closeIcon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" class="transition">
+                <use href="#icon-close"></use>
+              </svg></span
+            ><span class="tingle-modal__closeLabel">Close</span>
+          </button>
+          <div class="tingle-modal-box__content">
+            <h5
+              class="font-medium mb-4"
+              style="font-family: var(--body-font);color:var(--input-color);font-weight: 600;"
+            >
+              This is a survey related to your checkout experience
+            </h5>
+            <p>
+              This popup is a quick survey from the Cavirk website. If you chose to cancel your purchase or didn’t
+              proceed with your order, we’d love to know why. Whether it’s a product issue or something else, please
+              share your feedback — it helps us improve and serve you better.
+            </p>
+            <p style="color: red;font-size: 18px;">
+              👉
+              <b
+                >If you still want to purchase this product, simply close this survey popup and continue with your
+                order.</b
+              >
+            </p>
+            {%- render 'ask-survey-report' -%}
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
