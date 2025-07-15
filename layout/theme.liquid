@@ -354,66 +354,67 @@
 
     <script>
             document.addEventListener("DOMContentLoaded", function () {
-        const htmlTag = document.documentElement;
-        const renderCode = document.querySelector(".render_code");
+  const htmlTag = document.documentElement;
+  const renderCode = document.querySelector(".render_code");
 
-        function waitForRazorpayContainer(callback) {
-          const checkExist = setInterval(function () {
-            const container = document.querySelector(".razorpay-container");
-            if (container) {
-              clearInterval(checkExist);
-              callback(container);
-            }
-          }, 100);
-        }
+  function waitForElements(callback) {
+    const checkExist = setInterval(function () {
+      const container = document.querySelector(".razorpay-container");
+      const confirmDialog = document.querySelector('[data-testid="dialog-confirm-close"]');
 
-        function showRenderCode() {
-          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            waitForRazorpayContainer((container) => {
-              setTimeout(() => {
-                const confirmDialog = document.querySelector('[data-testid="dialog-confirm-close"]');
+      if (container && confirmDialog) {
+        clearInterval(checkExist);
+        callback(container, confirmDialog);
+      }
+    }, 100);
+  }
 
-                // ✅ Add class if confirm dialog is present
-                if (confirmDialog) {
-                  container.classList.add("razorpay-container-active");
-                }
-
-                if (!container.contains(renderCode)) {
-                  container.appendChild(renderCode);
-                }
-                renderCode.style.display = "block";
-              }, 3000);
-            });
-          } else {
-            renderCode.style.display = "none";
-          }
-        }
-
-        const observer = new MutationObserver(showRenderCode);
-        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
-
-        showRenderCode(); // Run on load
-
-        // 🔴 Handle clicks for closing
-        document.addEventListener("click", function (e) {
-          const closeBtn = e.target.closest(".tingle-modal__close");
-          const modalBox = document.querySelector(".tingle-modal-box");
-
-          // Case 1: Close button clicked
-          if (closeBtn) {
-            renderCode.style.display = "none";
+  function showRenderCode() {
+    if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+      waitForElements((container, confirmDialog) => {
+        setTimeout(() => {
+          // ✅ Add class if dialog-confirm-close exists
+          if (confirmDialog) {
+            container.classList.add("razorpay-container-active");
           }
 
-          // Case 2: Clicked outside modal box but inside popup
-          if (
-            renderCode.style.display === "block" &&
-            !modalBox.contains(e.target) &&
-            renderCode.contains(e.target)
-          ) {
-            renderCode.style.display = "none";
+          // ✅ Render popup
+          if (!container.contains(renderCode)) {
+            container.appendChild(renderCode);
           }
-        });
+          renderCode.style.display = "block";
+        }, 0); // No delay since we're already waiting
       });
+    } else {
+      renderCode.style.display = "none";
+    }
+  }
+
+  // 🔄 Watch for Razorpay popup open
+  const observer = new MutationObserver(showRenderCode);
+  observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
+
+  showRenderCode(); // Run on initial load
+
+  // ❌ Handle popup close
+  document.addEventListener("click", function (e) {
+    const closeBtn = e.target.closest(".tingle-modal__close");
+    const modalBox = document.querySelector(".tingle-modal-box");
+
+    if (closeBtn) {
+      renderCode.style.display = "none";
+    }
+
+    if (
+      renderCode.style.display === "block" &&
+      !modalBox.contains(e.target) &&
+      renderCode.contains(e.target)
+    ) {
+      renderCode.style.display = "none";
+    }
+  });
+});
+
     </script>
   </body>
 </html>
