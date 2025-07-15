@@ -361,7 +361,7 @@
           const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
             const checkCode = container.querySelector('iframe');
-            console.log(container,'kk');
+            console.log(checkCode,'kk');
             if (container) {
               clearInterval(checkExist);
               callback(container);
