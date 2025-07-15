@@ -354,90 +354,59 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-  const htmlTag = document.documentElement;
-  const renderCode = document.querySelector(".render_code");
+        const htmlTag = document.documentElement;
+        const renderCode = document.querySelector(".render_code");
 
-  // Wait until .razorpay-container appears
-  function waitForRazorpayContainer(callback) {
-    const checkExist = setInterval(function () {
-      const container = document.querySelector(".razorpay-container");
-      if (container) {
-        clearInterval(checkExist);
-        callback(container);
-      }
-    }, 100);
-  }
-
-  // Show renderCode only if conditions are met
-  function showRenderCode() {
-    if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-      waitForRazorpayContainer((container) => {
-        setTimeout(() => {
-          if (!container.contains(renderCode)) {
-            container.appendChild(renderCode);
-          }
-          renderCode.style.display = "block";
-        }, 3000);
-      });
-    } else {
-      renderCode.style.display = "none";
-    }
-  }
-
-  // Watch HTML class changes
-  const observer = new MutationObserver(showRenderCode);
-  observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
-
-  showRenderCode(); // Initial call
-
-  // Close logic
-  document.addEventListener("click", function (e) {
-    const closeBtn = e.target.closest(".tingle-modal__close");
-    const modalBox = document.querySelector(".tingle-modal-box");
-
-    if (closeBtn) {
-      renderCode.style.display = "none";
-    }
-
-    if (
-      renderCode.style.display === "block" &&
-      !modalBox.contains(e.target) &&
-      renderCode.contains(e.target)
-    ) {
-      renderCode.style.display = "none";
-    }
-  });
-
-  // 🔴 Protect `.z-[60]` from losing `.hidden`
-  const protectZIndexDiv = () => {
-    const target = document.querySelector(".z-[60]");
-    if (!target) return;
-
-    const zObserver = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (
-          mutation.attributeName === "class" &&
-          !target.classList.contains("hidden")
-        ) {
-          // 🔄 Instead of removing hidden, re-add it and add active
-          target.classList.add("hidden");
-          target.classList.add("active");
+        function waitForRazorpayContainer(callback) {
+          const checkExist = setInterval(function () {
+            const container = document.querySelector(".razorpay-container");
+            if (container) {
+              clearInterval(checkExist);
+              callback(container);
+            }
+          }, 100);
         }
+
+        function showRenderCode() {
+          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+            waitForRazorpayContainer((container) => {
+              setTimeout(() => {
+                if (!container.contains(renderCode)) {
+                  container.appendChild(renderCode);
+                }
+                renderCode.style.display = "block";
+              }, 3000);
+            });
+          } else {
+            renderCode.style.display = "none";
+          }
+        }
+
+        const observer = new MutationObserver(showRenderCode);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
+
+        showRenderCode(); // Run on load
+
+        // 🔴 Handle clicks for closing
+        document.addEventListener("click", function (e) {
+          const closeBtn = e.target.closest(".tingle-modal__close");
+          const modalBox = document.querySelector(".tingle-modal-box");
+
+          // Case 1: Close button clicked
+          if (closeBtn) {
+            renderCode.style.display = "none";
+          }
+
+          // Case 2: Clicked outside modal box but inside popup
+          if (
+            renderCode.style.display === "block" &&
+            !modalBox.contains(e.target) &&
+            renderCode.contains(e.target)
+          ) {
+            renderCode.style.display = "none";
+          }
+        });
       });
-    });
-
-    zObserver.observe(target, { attributes: true, attributeFilter: ["class"] });
-  };
-
-  // Watch for .z-[60] to appear in DOM
-  const waitForZDiv = setInterval(() => {
-    const zDiv = document.querySelector(".z-[60]");
-    if (zDiv) {
-      clearInterval(waitForZDiv);
-      protectZIndexDiv();
-    }
-  }, 100);
-});
     </script>
   </body>
 </html>
