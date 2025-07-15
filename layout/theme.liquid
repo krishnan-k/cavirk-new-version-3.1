@@ -353,7 +353,7 @@
     </div>
 
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
@@ -361,20 +361,6 @@
           const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
             if (container) {
-              const containerClass = container.querySelector(".z-[60].hidden");
-              const containerClassTwo = container.querySelector(".z-[60]");
-
-              // Add or remove 'active' class based on visibility
-              if (containerClass) {
-                renderCode.classList.add("active");
-              } else {
-                renderCode.classList.remove("active");
-              }
-
-              if (containerClassTwo) {
-                renderCode.classList.add("active");
-              }
-
               clearInterval(checkExist);
               callback(container);
             }
@@ -399,19 +385,19 @@
         const observer = new MutationObserver(showRenderCode);
         observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        showRenderCode(); // Initial check
+        showRenderCode(); // Run on load
 
-        // Close popup logic
+        // 🔴 Handle clicks for closing
         document.addEventListener("click", function (e) {
           const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
 
-          // Close via button
+          // Case 1: Close button clicked
           if (closeBtn) {
             renderCode.style.display = "none";
           }
 
-          // Close if clicked outside modal box
+          // Case 2: Clicked outside modal box but inside popup
           if (
             renderCode.style.display === "block" &&
             !modalBox.contains(e.target) &&
