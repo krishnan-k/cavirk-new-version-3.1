@@ -353,68 +353,51 @@
     </div>
 
     <script>
-            document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("DOMContentLoaded", function () {
+        const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
         function waitForRazorpayContainer(callback) {
-          const check = setInterval(() => {
+          const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
             if (container) {
-              clearInterval(check);
+              clearInterval(checkExist);
               callback(container);
             }
           }, 100);
         }
 
-        function injectRenderCode() {
-          const html = document.documentElement;
-
-          function attachModal() {
-            waitForRazorpayContainer(container => {
+        function showRenderCode() {
+          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+            waitForRazorpayContainer((container) => {
               setTimeout(() => {
                 if (!container.contains(renderCode)) {
                   container.appendChild(renderCode);
                 }
                 renderCode.style.display = "block";
-
-                // ✅ Now add the data-testid attribute
-                const modal = renderCode.querySelector(".tingle-modal");
-                if (modal && !modal.hasAttribute("data-testid")) {
-                  modal.setAttribute("data-testid", "dialog-confirm-close");
-                }
-
               }, 3000);
             });
-          }
-
-          const observer = new MutationObserver(muts => {
-            for (const m of muts) {
-              if (
-                m.attributeName === "class" &&
-                html.classList.contains("razorpay-magic-scroll")
-              ) {
-                attachModal();
-              }
-            }
-          });
-          observer.observe(html, { attributes: true, attributeFilter: ["class"] });
-
-          // Initial run
-          if (html.classList.contains("razorpay-magic-scroll")) {
-            attachModal();
+          } else {
+            renderCode.style.display = "none";
           }
         }
 
-        injectRenderCode();
+        const observer = new MutationObserver(showRenderCode);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        // ❌ Closing logic (no changes)
-        document.addEventListener("click", e => {
+        showRenderCode(); // Run on load
+
+        // 🔴 Handle clicks for closing
+        document.addEventListener("click", function (e) {
           const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
 
+          // Case 1: Close button clicked
           if (closeBtn) {
             renderCode.style.display = "none";
           }
+
+          // Case 2: Clicked outside modal box but inside popup
           if (
             renderCode.style.display === "block" &&
             !modalBox.contains(e.target) &&
