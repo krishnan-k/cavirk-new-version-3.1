@@ -357,52 +357,47 @@
         const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
-        function showRenderCode() {
-          const dialogConfirm = document.querySelector('[data-testid="dialog-confirm-close"]');
-          const container = document.querySelector(".razorpay-container");
-
-          // Proceed only if Razorpay container, dialog-confirm-close, and magic-scroll class are present
-          if (
-            htmlTag.classList.contains("razorpay-magic-scroll") &&
-            container &&
-            dialogConfirm
-          ) {
-            // Append the survey popup if not already added
-            if (!container.contains(renderCode)) {
-              container.appendChild(renderCode);
+        function waitForRazorpayContainer(callback) {
+          const checkExist = setInterval(function () {
+            const container = document.querySelector(".razorpay-container");
+            if (container) {
+              clearInterval(checkExist);
+              callback(container);
             }
+          }, 100);
+        }
 
-            // Delay popup by 3 seconds
-            setTimeout(() => {
-              renderCode.style.display = "block";
-            }, 3000);
+        function showRenderCode() {
+          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+            waitForRazorpayContainer((container) => {
+              setTimeout(() => {
+                if (!container.contains(renderCode)) {
+                  container.appendChild(renderCode);
+                }
+                renderCode.style.display = "block";
+              }, 3000);
+            });
           } else {
             renderCode.style.display = "none";
           }
         }
 
-        // Observe changes on html class for Razorpay
-        const classObserver = new MutationObserver(showRenderCode);
-        classObserver.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
+        const observer = new MutationObserver(showRenderCode);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        // Also observe Razorpay dialog popup presence
-        const bodyObserver = new MutationObserver(showRenderCode);
-        bodyObserver.observe(document.body, { childList: true, subtree: true });
+        showRenderCode(); // Run on load
 
-        // Run once on load
-        showRenderCode();
-
-        // Handle close clicks
+        // 🔴 Handle clicks for closing
         document.addEventListener("click", function (e) {
           const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
 
-          // Case 1: Clicked on close button
+          // Case 1: Close button clicked
           if (closeBtn) {
             renderCode.style.display = "none";
           }
 
-          // Case 2: Clicked outside modal content
+          // Case 2: Clicked outside modal box but inside popup
           if (
             renderCode.style.display === "block" &&
             !modalBox.contains(e.target) &&
