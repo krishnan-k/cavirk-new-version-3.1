@@ -363,38 +363,58 @@
 {% endif %}
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<!-- Your custom feedback popup (hidden by default) -->
+<div id="drop-survey" style="display:none; position:fixed; top:20%; left:30%; width:40%; background:#fff; z-index:9999; padding:20px; border:1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+  <h3>Before you go...</h3>
+  <p>Can you tell us why you didn’t complete the payment?</p>
+  <textarea id="feedback" rows="4" style="width:100%;"></textarea>
+  <button onclick="submitSurvey()">Submit</button>
+</div>
+
 <script>
+  function showDropSurvey() {
+    document.getElementById("drop-survey").style.display = "block";
+  }
+
+  function submitSurvey() {
+    const feedback = document.getElementById("feedback").value;
+    console.log("User feedback:", feedback);
+
+    // Optionally send feedback to your server
+    // fetch("/save-feedback", { method: "POST", body: JSON.stringify({ feedback }), headers: { "Content-Type": "application/json" } });
+
+    alert("Thank you for your feedback!");
+    document.getElementById("drop-survey").style.display = "none";
+  }
+
   var options = {
     key: "rzp_live_Tfgu2auTqmsFVL",
-    amount: "50000", // Amount in paise = INR 500
+    amount: "50000", // 500.00 INR
     currency: "INR",
-    name: "Your Company",
-    description: "Test Transaction",
-    image: "https://example.com/your_logo",
+    name: "Your Brand",
+    description: "Test Order",
     handler: function (response) {
-      // Payment successful
-      console.log(response);
+      console.log("Payment success", response);
     },
     modal: {
+      // 👇 This will trigger your drop survey directly when user closes the Razorpay popup
       ondismiss: function () {
-        // Razorpay popup closed — trigger your drop survey
         showDropSurvey();
       }
     },
-    prefill: {
-      name: "Customer Name",
-      email: "customer@example.com",
-      contact: "9999999999"
-    },
     theme: {
-      color: "#3399cc"
+      color: "#F37254"
     }
   };
 
-  var rzp1 = new Razorpay(options);
+  var rzp = new Razorpay(options);
 
-  document.getElementById('pay-button').onclick = function (e) {
-    rzp1.open();
+  document.getElementById("pay-button").onclick = function (e) {
+    rzp.open();
     e.preventDefault();
   };
 </script>
+
+<button id="pay-button">Pay Now</button>
+
