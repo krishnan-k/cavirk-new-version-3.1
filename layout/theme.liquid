@@ -353,17 +353,17 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
         function waitForRazorpayContainer(callback) {
           const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
-            const containerOne = container.querySelector(".razorpay-container iframe");
-            if (container) {
+            const iframe = container?.querySelector("iframe");
+            if (container && iframe) {
               clearInterval(checkExist);
-              callback(container);
+              callback(container, iframe);
             }
           }, 100);
         }
@@ -371,20 +371,28 @@
         function showRenderCode() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
             waitForRazorpayContainer((container, iframe) => {
+              // Create observer on Razorpay container (not iframe)
               const observer = new MutationObserver(() => {
-          try {
-            // 🚫 This part will throw on cross-origin
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-            const zClass = iframeDoc.querySelector("[class*='z-[60]']");
-            if (zClass) {
-              console.log("z-[60] detected!");
-              renderCode.style.display = "block";
-            }
-          } catch (err) {
-            // ✅ Instead, rely on outer container mutation
-            console.log("Can't access iframe internals due to cross-origin. Watching parent instead.");
-          }
-        });
+                try {
+                  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                  const zClass = iframeDoc.querySelector("[class*='z-[60]']");
+                  if (zClass) {
+                    console.log("z-[60] detected in iframe!");
+                    renderCode.style.display = "block";
+                  }
+                } catch (err) {
+                  console.log("Cross-origin iframe, falling back to container watch.");
+                  renderCode.style.display = "block"; // Fallback display
+                }
+              });
+
+              // Observe changes to the container
+              observer.observe(container, {
+                childList: true,
+                subtree: true
+              });
+
+              // Append after delay if not already appended
               setTimeout(() => {
                 if (!container.contains(renderCode)) {
                   container.appendChild(renderCode);
@@ -402,17 +410,15 @@
 
         showRenderCode(); // Run on load
 
-        // 🔴 Handle clicks for closing
+        // Click to close logic
         document.addEventListener("click", function (e) {
           const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
 
-          // Case 1: Close button clicked
           if (closeBtn) {
             renderCode.style.display = "none";
           }
 
-          // Case 2: Clicked outside modal box but inside popup
           if (
             renderCode.style.display === "block" &&
             !modalBox.contains(e.target) &&
