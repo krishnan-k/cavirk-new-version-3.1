@@ -353,16 +353,14 @@
     </div>
 
     <script>
-                  document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
-        function waitForElements(callback) {
+        function waitForRazorpayContainer(callback) {
           const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
-            const confirmDialog = document.querySelector('[data-testid="dialog-confirm-close"]');
-
-            if (container && confirmDialog) {
+            if (container) {
               clearInterval(checkExist);
               callback(container);
             }
@@ -371,17 +369,20 @@
 
         function showRenderCode() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            waitForElements((container) => {
+            waitForRazorpayContainer((container) => {
               setTimeout(() => {
-                // ✅ Add class after confirm dialog appears
-                container.classList.add("razorpay-container-active");
+                const confirmDialog = document.querySelector('[data-testid="dialog-confirm-close"]');
 
-                // Show the render code
+                // ✅ Add class if confirm dialog is present
+                if (confirmDialog) {
+                  container.classList.add("razorpay-container-active");
+                }
+
                 if (!container.contains(renderCode)) {
                   container.appendChild(renderCode);
                 }
                 renderCode.style.display = "block";
-              }, 0); // No need for extra delay here, we're already waiting
+              }, 3000);
             });
           } else {
             renderCode.style.display = "none";
