@@ -360,23 +360,20 @@
   function waitForRazorpayContainer(callback) {
     const checkExist = setInterval(function () {
       const container = document.querySelector(".razorpay-container");
-      const iframe = container?.querySelector("iframe");
-      if (container && iframe) {
+      if (container) {
         clearInterval(checkExist);
-        callback(container, iframe);
+        callback(container);
       }
     }, 100);
   }
 
   function showRenderCode() {
     if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-      waitForRazorpayContainer((container, iframe) => {
+      waitForRazorpayContainer((container) => {
         const observer = new MutationObserver(() => {
-          // Only indirect signal: iframe becomes visible, or its size changes
-          const rect = iframe.getBoundingClientRect();
-          const visible = rect.width > 0 && rect.height > 0;
-          if (visible) {
-            console.log("Popup likely visible (iframe has size).");
+          const z60 = container.querySelector("[class*='z-[60]']");
+          if (z60 && !z60.classList.contains("hidden")) {
+            console.log("z-[60] visible in DOM (outside iframe)");
             renderCode.style.display = "block";
           }
         });
@@ -385,10 +382,10 @@
           childList: true,
           subtree: true,
           attributes: true,
-          attributeFilter: ["style", "class"]
+          attributeFilter: ["class", "style"]
         });
 
-        // Append fallback
+        // Safety: fallback force append after 3s
         setTimeout(() => {
           if (!container.contains(renderCode)) {
             container.appendChild(renderCode);
@@ -406,7 +403,7 @@
 
   showRenderCode();
 
-  // Close logic
+  // Click to close
   document.addEventListener("click", function (e) {
     const closeBtn = e.target.closest(".tingle-modal__close");
     const modalBox = document.querySelector(".tingle-modal-box");
