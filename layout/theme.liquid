@@ -353,7 +353,7 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
@@ -371,6 +371,13 @@
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
             waitForRazorpayContainer((container) => {
               setTimeout(() => {
+                const confirmDialog = document.querySelector('[data-testid="dialog-confirm-close"]');
+
+                // ✅ Add class if confirm dialog is present
+                if (confirmDialog) {
+                  container.classList.add("razorpay-container-active");
+                }
+
                 if (!container.contains(renderCode)) {
                   container.appendChild(renderCode);
                 }
