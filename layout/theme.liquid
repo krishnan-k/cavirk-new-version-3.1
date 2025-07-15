@@ -353,49 +353,55 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("DOMContentLoaded", () => {
         const renderCode = document.querySelector(".render_code");
+        const htmlTag = document.documentElement;
 
-        let popupTimeout = null;
+        function checkAndRenderPopup() {
+          const razorpayContainer = document.querySelector(".razorpay-container");
+          const dialogConfirmClose = document.querySelector('[data-testid="dialog-confirm-close"]');
 
-        const observer = new MutationObserver(() => {
-          const razorpayExitPopup = document.querySelector('[data-testid="dialog-confirm-close"]');
-
-          if (razorpayExitPopup && razorpayExitPopup.offsetParent !== null) {
-            // If Razorpay popup is found and visible, wait 3 seconds before showing your survey
-            if (!popupTimeout) {
-              popupTimeout = setTimeout(() => {
-                // Double-check Razorpay popup still exists after 3 seconds
-                const stillThere = document.querySelector('[data-testid="dialog-confirm-close"]');
-                if (stillThere && stillThere.offsetParent !== null) {
-                  // Hide Razorpay's popup
-                  stillThere.closest(".stack-overlay")?.remove();
-
-                  // Show your custom modal
-                  renderCode.style.display = "block";
-                }
-              }, 3000);
-            }
+          if (
+            htmlTag.classList.contains("razorpay-magic-scroll") &&
+            razorpayContainer &&
+            dialogConfirmClose
+          ) {
+            // Wait a bit before injecting, if needed
+            setTimeout(() => {
+              if (!razorpayContainer.contains(renderCode)) {
+                razorpayContainer.appendChild(renderCode);
+              }
+              renderCode.style.display = "block";
+            }, 300); // Shorter delay since popup already confirmed
           } else {
-            // If the Razorpay modal disappears, clear timer
-            clearTimeout(popupTimeout);
-            popupTimeout = null;
+            renderCode.style.display = "none";
           }
-        });
+        }
 
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
+        // Watch for changes on <html class=""> (for razorpay-magic-scroll)
+        const observer = new MutationObserver(checkAndRenderPopup);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-        // Allow user to close your modal
-        document.addEventListener("click", function (e) {
+        // Also watch for DOM changes (to detect dialog-confirm-close popup)
+        const domObserver = new MutationObserver(checkAndRenderPopup);
+        domObserver.observe(document.body, { childList: true, subtree: true });
+
+        // Initial check
+        checkAndRenderPopup();
+
+        // Handle close events
+        document.addEventListener("click", (e) => {
           const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
 
+          if (closeBtn) {
+            renderCode.style.display = "none";
+          }
+
           if (
-            closeBtn ||
-            (renderCode.style.display === "block" && !modalBox.contains(e.target) && renderCode.contains(e.target))
+            renderCode.style.display === "block" &&
+            !modalBox.contains(e.target) &&
+            renderCode.contains(e.target)
           ) {
             renderCode.style.display = "none";
           }
