@@ -354,59 +354,77 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const htmlTag = document.documentElement;
-        const renderCode = document.querySelector(".render_code");
+  const htmlTag = document.documentElement;
+  const renderCode = document.querySelector(".render_code");
 
-        function waitForRazorpayContainer(callback) {
-          const checkExist = setInterval(function () {
-            const container = document.querySelector(".razorpay-container");
-            if (container) {
-              clearInterval(checkExist);
-              callback(container);
-            }
-          }, 100);
-        }
+  // Step 1: Wait until Razorpay container exists
+  function waitForRazorpayContainer(callback) {
+    const checkExist = setInterval(function () {
+      const container = document.querySelector(".razorpay-container");
+      if (container) {
+        clearInterval(checkExist);
+        callback(container);
+      }
+    }, 100);
+  }
 
-        function showRenderCode() {
-          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            waitForRazorpayContainer((container) => {
-              setTimeout(() => {
-                if (!container.contains(renderCode)) {
-                  container.appendChild(renderCode);
-                }
-                renderCode.style.display = "block";
-              }, 3000);
-            });
-          } else {
-            renderCode.style.display = "none";
+  // Step 2: Logic to show renderCode inside Razorpay container
+  function showRenderCode() {
+    if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+      waitForRazorpayContainer((container) => {
+        setTimeout(() => {
+          if (!container.contains(renderCode)) {
+            container.appendChild(renderCode);
           }
-        }
-
-        const observer = new MutationObserver(showRenderCode);
-        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
-
-        showRenderCode(); // Run on load
-
-        // 🔴 Handle clicks for closing
-        document.addEventListener("click", function (e) {
-          const closeBtn = e.target.closest(".tingle-modal__close");
-          const modalBox = document.querySelector(".tingle-modal-box");
-
-          // Case 1: Close button clicked
-          if (closeBtn) {
-            renderCode.style.display = "none";
-          }
-
-          // Case 2: Clicked outside modal box but inside popup
-          if (
-            renderCode.style.display === "block" &&
-            !modalBox.contains(e.target) &&
-            renderCode.contains(e.target)
-          ) {
-            renderCode.style.display = "none";
-          }
-        });
+          renderCode.style.display = "block";
+        }, 3000); // Wait for Razorpay to fully render
       });
+    } else {
+      renderCode.style.display = "none";
+    }
+  }
+
+  // Step 3: MutationObserver to detect Razorpay confirm button and handle click
+  const observer = new MutationObserver(() => {
+    const confirmButton = document.querySelector('[data-testid="confirm-positive"]');
+    const container = document.querySelector(".razorpay-container");
+
+    if (confirmButton && container) {
+      // Avoid duplicate listeners
+      confirmButton.removeEventListener("click", onConfirmClick);
+      confirmButton.addEventListener("click", onConfirmClick);
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+
+  // Step 4: Button click handler
+  function onConfirmClick() {
+    console.log("✅ Confirm button clicked");
+
+    setTimeout(() => {
+      const container = document.querySelector(".razorpay-container");
+      if (container) {
+        console.log("📦 Razorpay container:", container);
+        console.log("🔍 classList:", container.classList.value);
+        console.log("🔍 z-index:", container.style.zIndex);
+
+        // Re-run render code logic (if needed)
+        if (!container.contains(renderCode)) {
+          container.appendChild(renderCode);
+        }
+        renderCode.style.display = "block";
+      }
+    }, 500); // Wait for Razorpay DOM to settle
+  }
+
+  // Step 5: Initial call
+  showRenderCode();
+});
+
     </script>
   </body>
 </html>
