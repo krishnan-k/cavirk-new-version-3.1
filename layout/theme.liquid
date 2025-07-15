@@ -367,14 +367,6 @@
           }, 100);
         }
 
-        const containerClass = container.querySelector(".z-[60].hidden");
-        const containerClassTwo = container.querySelector(".z-[60]");
-
-        if (containerClass) {
-          container.classList.add("active");
-        } else {
-          container.classList.remove("active");
-        }
         function showRenderCode() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
             waitForRazorpayContainer((container) => {
