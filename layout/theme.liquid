@@ -354,68 +354,59 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-  const htmlTag = document.documentElement;
-  const renderCode = document.querySelector(".render_code");
+        const htmlTag = document.documentElement;
+        const renderCode = document.querySelector(".render_code");
 
-  let observerStarted = false;
-
-  function waitForPopupAndDialog() {
-    const checkInterval = setInterval(() => {
-      const razorpayContainer = document.querySelector(".razorpay-container");
-      const confirmDialog = document.querySelector('[data-testid="dialog-confirm-close"]');
-
-      if (razorpayContainer && confirmDialog) {
-        // ✅ Add class when dialog is detected
-        razorpayContainer.classList.add("razorpay-container-active");
-
-        // ✅ Append .render_code inside container if not already
-        if (!razorpayContainer.contains(renderCode)) {
-          razorpayContainer.appendChild(renderCode);
+        function waitForRazorpayContainer(callback) {
+          const checkExist = setInterval(function () {
+            const container = document.querySelector(".razorpay-container");
+            if (container) {
+              clearInterval(checkExist);
+              callback(container);
+            }
+          }, 100);
         }
 
-        // ✅ Show the render_code after 3 seconds
-        setTimeout(() => {
-          renderCode.style.display = "block";
-        }, 3000);
+        function showRenderCode() {
+          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+            waitForRazorpayContainer((container) => {
+              setTimeout(() => {
+                if (!container.contains(renderCode)) {
+                  container.appendChild(renderCode);
+                }
+                renderCode.style.display = "block";
+              }, 3000);
+            });
+          } else {
+            renderCode.style.display = "none";
+          }
+        }
 
-        clearInterval(checkInterval); // ✅ Stop checking
-      }
-    }, 200);
-  }
+        const observer = new MutationObserver(showRenderCode);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
 
-  function handleClassChange() {
-    if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-      waitForPopupAndDialog();
-    } else {
-      renderCode.style.display = "none";
-    }
-  }
+        showRenderCode(); // Run on load
 
-  // 🔁 Observe html tag class change to detect Razorpay popup open
-  const observer = new MutationObserver(handleClassChange);
-  observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
+        // 🔴 Handle clicks for closing
+        document.addEventListener("click", function (e) {
+          const closeBtn = e.target.closest(".tingle-modal__close");
+          const modalBox = document.querySelector(".tingle-modal-box");
 
-  handleClassChange(); // Run on initial load
+          // Case 1: Close button clicked
+          if (closeBtn) {
+            renderCode.style.display = "none";
+          }
 
-  // ❌ Handle popup close via close icon or outside click
-  document.addEventListener("click", function (e) {
-    const closeBtn = e.target.closest(".tingle-modal__close");
-    const modalBox = document.querySelector(".tingle-modal-box");
-
-    if (closeBtn) {
-      renderCode.style.display = "none";
-    }
-
-    if (
-      renderCode.style.display === "block" &&
-      !modalBox?.contains(e.target) &&
-      renderCode.contains(e.target)
-    ) {
-      renderCode.style.display = "none";
-    }
-  });
-});
-
+          // Case 2: Clicked outside modal box but inside popup
+          if (
+            renderCode.style.display === "block" &&
+            !modalBox.contains(e.target) &&
+            renderCode.contains(e.target)
+          ) {
+            renderCode.style.display = "none";
+          }
+        });
+      });
     </script>
   </body>
 </html>
