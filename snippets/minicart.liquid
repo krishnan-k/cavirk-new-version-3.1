@@ -31,6 +31,7 @@
 %}
 {% if template != 'cart' and action_after_add_cart != 'go_to_cart_page' %}
   <cart-notification id="minicart_wrapper" class="minicart {{ action_after_add_cart }} bls-image-js">
+     
     <div class="minicart__wrapper flex flex-column color-default {% if action_after_add_cart == 'open_drawer' %} bls__drawer fixed z-15 inset-y-0 h-full transition-popup{% if enable_rtl %} right left-0{% else %} left right-0{% endif %}{% endif %}{% if action_after_add_cart == 'show_popup' %} popup_cart invisible absolute z-10 transition-popup right-0 rounded shadow{% endif %}{% if settings.option_show_minicart == 'beside' %} minicart-beside{% endif %}">
       {% if action_after_add_cart == 'show_popup' %}
         <icon-close
@@ -342,7 +343,6 @@
                   <span>{{ 'general.cart.viewcart' | t }}</span>
                 </a>
                 <button
-                  id="pay-button"
                   type="submit"
                   class="btn-primary w-full btn-checkout"
                   name="checkout"
@@ -360,61 +360,7 @@
       </div>
     </div>
   </cart-notification>
-  <div class="overlayminicart"></div>
+  <div class="overlayminicart">
+
+  </div>
 {% endif %}
-
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
-<!-- Your custom feedback popup (hidden by default) -->
-<div id="drop-survey" style="display:none; position:fixed; top:20%; left:30%; width:40%; background:#fff; z-index:9999; padding:20px; border:1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-  <h3>Before you go...</h3>
-  <p>Can you tell us why you didn’t complete the payment?</p>
-  <textarea id="feedback" rows="4" style="width:100%;"></textarea>
-  <button onclick="submitSurvey()">Submit</button>
-</div>
-
-<script>
-  function showDropSurvey() {
-    document.getElementById("drop-survey").style.display = "block";
-  }
-
-  function submitSurvey() {
-    const feedback = document.getElementById("feedback").value;
-    console.log("User feedback:", feedback);
-
-    // Optionally send feedback to your server
-    // fetch("/save-feedback", { method: "POST", body: JSON.stringify({ feedback }), headers: { "Content-Type": "application/json" } });
-
-    alert("Thank you for your feedback!");
-    document.getElementById("drop-survey").style.display = "none";
-  }
-
-  var options = {
-    key: "rzp_live_Tfgu2auTqmsFVL",
-    amount: "50000", // 500.00 INR
-    currency: "INR",
-    name: "Your Brand",
-    description: "Test Order",
-    handler: function (response) {
-      console.log("Payment success", response);
-    },
-    modal: {
-      // 👇 This will trigger your drop survey directly when user closes the Razorpay popup
-      ondismiss: function () {
-        showDropSurvey();
-      }
-    },
-    theme: {
-      color: "#F37254"
-    }
-  };
-
-  var rzp = new Razorpay(options);
-
-  document.getElementById("pay-button").onclick = function (e) {
-    rzp.open();
-    e.preventDefault();
-  };
-</script>
-
-
