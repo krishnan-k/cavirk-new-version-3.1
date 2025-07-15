@@ -360,6 +360,7 @@
         function waitForRazorpayContainer(callback) {
           const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
+            const containerOne = container.querySelector(".razorpay-container iframe");
             if (container) {
               clearInterval(checkExist);
               callback(container);
@@ -370,6 +371,21 @@
         function showRenderCode() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
             waitForRazorpayContainer((container) => {
+              const observer = new MutationObserver(() => {
+          try {
+            // 🚫 This part will throw on cross-origin
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const zClass = iframeDoc.querySelector("[class*='z-[60]']");
+            if (zClass) {
+              console.log("z-[60] detected!");
+            }
+          } catch (err) {
+            // ✅ Instead, rely on outer container mutation
+            console.log("Can't access iframe internals due to cross-origin. Watching parent instead.");
+          }
+        });
+
+        observer.observe(iframe, { attributes: true, childList: true, subtree: true });
               setTimeout(() => {
                 if (!container.contains(renderCode)) {
                   container.appendChild(renderCode);
