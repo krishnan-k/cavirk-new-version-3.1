@@ -354,70 +354,80 @@
 
     <script>
             document.addEventListener("DOMContentLoaded", function () {
-  const htmlTag = document.documentElement;
-  const renderCode = document.querySelector(".render_code");
+        const htmlTag = document.documentElement;
+        const renderCode = document.querySelector(".render_code");
 
-  function waitForRazorpayContainer(callback) {
-    const checkExist = setInterval(function () {
-      const container = document.querySelector(".razorpay-container");
-      if (container) {
-        clearInterval(checkExist);
-        callback(container);
-      }
-    }, 100);
-  }
+        function waitForRazorpayContainer(callback) {
+          const checkExist = setInterval(function () {
+            const container = document.querySelector(".razorpay-container");
+            const iframe = container?.querySelector("iframe");
+            if (container && iframe) {
+              clearInterval(checkExist);
+              callback(container, iframe);
+            }
+          }, 100);
+        }
 
-  function showRenderCode() {
-    if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-      waitForRazorpayContainer((container) => {
-        const observer = new MutationObserver(() => {
-          const z60 = container.querySelector("[class*='z-[60]']");
-          if (z60 && !z60.classList.contains("hidden")) {
-            console.log("z-[60] visible in DOM (outside iframe)");
-            renderCode.style.display = "block";
+        function showRenderCode() {
+          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+            waitForRazorpayContainer((container, iframe) => {
+              // Create observer on Razorpay container (not iframe)
+              const observer = new MutationObserver(() => {
+                try {
+                  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                  const zClass = iframeDoc.querySelector("[class*='z-[60]']");
+                  if (zClass) {
+                    console.log("z-[60] detected in iframe!");
+                    renderCode.style.display = "block";
+                  }
+                } catch (err) {
+                  console.log("Cross-origin iframe, falling back to container watch.");
+                  renderCode.style.display = "block"; // Fallback display
+                }
+              });
+
+              // Observe changes to the container
+              observer.observe(container, {
+                childList: true,
+                subtree: true
+              });
+
+              // Append after delay if not already appended
+              setTimeout(() => {
+                if (!container.contains(renderCode)) {
+                  container.appendChild(renderCode);
+                }
+                renderCode.style.display = "block";
+              }, 3000);
+            });
+          } else {
+            renderCode.style.display = "none";
+          }
+        }
+
+        const observer = new MutationObserver(showRenderCode);
+        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
+
+        showRenderCode(); // Run on load
+
+        // Click to close logic
+        document.addEventListener("click", function (e) {
+          const closeBtn = e.target.closest(".tingle-modal__close");
+          const modalBox = document.querySelector(".tingle-modal-box");
+
+          if (closeBtn) {
+            renderCode.style.display = "none";
+          }
+
+          if (
+            renderCode.style.display === "block" &&
+            !modalBox.contains(e.target) &&
+            renderCode.contains(e.target)
+          ) {
+            renderCode.style.display = "none";
           }
         });
-
-        observer.observe(container, {
-          childList: true,
-          subtree: true,
-          attributes: true,
-          attributeFilter: ["class", "style"]
-        });
-
-        // Safety: fallback force append after 3s
-        setTimeout(() => {
-          if (!container.contains(renderCode)) {
-            container.appendChild(renderCode);
-          }
-          renderCode.style.display = "block";
-        }, 3000);
       });
-    } else {
-      renderCode.style.display = "none";
-    }
-  }
-
-  const htmlObserver = new MutationObserver(showRenderCode);
-  htmlObserver.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
-
-  showRenderCode();
-
-  // Click to close
-  document.addEventListener("click", function (e) {
-    const closeBtn = e.target.closest(".tingle-modal__close");
-    const modalBox = document.querySelector(".tingle-modal-box");
-
-    if (closeBtn || (
-      renderCode.style.display === "block" &&
-      !modalBox.contains(e.target) &&
-      renderCode.contains(e.target)
-    )) {
-      renderCode.style.display = "none";
-    }
-  });
-});
-
     </script>
   </body>
 </html>
