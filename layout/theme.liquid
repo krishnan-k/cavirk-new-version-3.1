@@ -370,7 +370,7 @@
 
         function showRenderCode() {
           if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            waitForRazorpayContainer((container) => {
+            waitForRazorpayContainer((container, iframe) => {
               const observer = new MutationObserver(() => {
           try {
             // 🚫 This part will throw on cross-origin
@@ -378,14 +378,13 @@
             const zClass = iframeDoc.querySelector("[class*='z-[60]']");
             if (zClass) {
               console.log("z-[60] detected!");
+              renderCode.style.display = "block";
             }
           } catch (err) {
             // ✅ Instead, rely on outer container mutation
             console.log("Can't access iframe internals due to cross-origin. Watching parent instead.");
           }
         });
-
-        observer.observe(iframe, { attributes: true, childList: true, subtree: true });
               setTimeout(() => {
                 if (!container.contains(renderCode)) {
                   container.appendChild(renderCode);
