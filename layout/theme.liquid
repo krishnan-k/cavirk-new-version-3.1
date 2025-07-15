@@ -354,20 +354,6 @@
 
     <script>
             document.addEventListener("DOMContentLoaded", function () {
-              const htmlTag = document.documentElement;
-              const renderCode = document.querySelector(".render_code");
-
-              function waitForRazorpayContainer(callback) {
-                const checkExist = setInterval(function () {
-                  const container = document.querySelector(".razorpay-container");
-                  if (container) {
-                    clearInterval(checkExist);
-                    callback(container);
-                  }
-                }, 100);
-              }
-
-              document.addEventListener("DOMContentLoaded", function () {
         function waitForElement(selector, callback) {
           const interval = setInterval(() => {
             const el = document.querySelector(selector);
@@ -388,6 +374,19 @@
         });
       });
 
+            document.addEventListener("DOMContentLoaded", function () {
+              const htmlTag = document.documentElement;
+              const renderCode = document.querySelector(".render_code");
+
+              function waitForRazorpayContainer(callback) {
+                const checkExist = setInterval(function () {
+                  const container = document.querySelector(".razorpay-container");
+                  if (container) {
+                    clearInterval(checkExist);
+                    callback(container);
+                  }
+                }, 100);
+              }
 
               function showRenderCode() {
                 if (htmlTag.classList.contains("razorpay-magic-scroll")) {
