@@ -353,82 +353,85 @@
     </div>
 
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
-        const htmlTag = document.documentElement;
-        const renderCode = document.querySelector(".render_code");
+                  document.addEventListener("DOMContentLoaded", function () {
+              const htmlTag = document.documentElement;
+              const renderCode = document.querySelector(".render_code");
 
-        function waitForRazorpayContainer(callback) {
-          const checkExist = setInterval(function () {
-            const container = document.querySelector(".razorpay-container");
-            const iframe = container?.querySelector("iframe");
-            if (container && iframe) {
-              clearInterval(checkExist);
-              callback(container, iframe);
-            }
-          }, 100);
-        }
-
-        function showRenderCode() {
-          if (htmlTag.classList.contains("razorpay-magic-scroll")) {
-            waitForRazorpayContainer((container, iframe) => {
-              // Create observer on Razorpay container (not iframe)
-              const observer = new MutationObserver(() => {
-                try {
-                  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                  const zClass = iframeDoc.querySelector("[class*='z-[60]']");
-                  if (zClass) {
-                    console.log("z-[60] detected in iframe!");
-                    renderCode.style.display = "block";
+              function waitForRazorpayContainer(callback) {
+                const checkExist = setInterval(function () {
+                  const container = document.querySelector(".razorpay-container");
+                  const iframe = container?.querySelector("iframe");
+                  if (container && iframe) {
+                    clearInterval(checkExist);
+                    callback(container, iframe);
                   }
-                } catch (err) {
-                  console.log("Cross-origin iframe, falling back to container watch.");
-                  renderCode.style.display = "block"; // Fallback display
-                  console.log("z-[60] detected in iframe!");
-                }
-              });
+                }, 100);
+              }
 
-              // Observe changes to the container
-              observer.observe(container, {
-                childList: true,
-                subtree: true
-              });
+              function showRenderCode() {
+                if (htmlTag.classList.contains("razorpay-magic-scroll")) {
+                  waitForRazorpayContainer((container, iframe) => {
+        // Log iframe reference
+        console.log("📌 iframe found:", iframe);
 
-              // Append after delay if not already appended
-              setTimeout(() => {
-                if (!container.contains(renderCode)) {
-                  container.appendChild(renderCode);
-                }
-                renderCode.style.display = "block";
-              }, 3000);
-            });
-          } else {
-            renderCode.style.display = "none";
-          }
-        }
+        const observer = new MutationObserver(() => {
+          try {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            console.log("📄 iframe.contentDocument accessed:", iframeDoc);
 
-        const observer = new MutationObserver(showRenderCode);
-        observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
-
-        showRenderCode(); // Run on load
-
-        // Click to close logic
-        document.addEventListener("click", function (e) {
-          const closeBtn = e.target.closest(".tingle-modal__close");
-          const modalBox = document.querySelector(".tingle-modal-box");
-
-          if (closeBtn) {
-            renderCode.style.display = "none";
-          }
-
-          if (
-            renderCode.style.display === "block" &&
-            !modalBox.contains(e.target) &&
-            renderCode.contains(e.target)
-          ) {
-            renderCode.style.display = "none";
+            const zClass = iframeDoc.querySelector("[class*='z-[60]']");
+            if (zClass) {
+              console.log("✅ z-[60] class found inside iframe");
+              renderCode.style.display = "block";
+            }
+          } catch (err) {
+            console.warn("⚠️ Cross-origin error while accessing iframe:", err);
+            // Fallback if you can't access iframe internals
+            renderCode.style.display = "block";
           }
         });
+
+        observer.observe(container, {
+          childList: true,
+          subtree: true
+        });
+
+        setTimeout(() => {
+          if (!container.contains(renderCode)) {
+            container.appendChild(renderCode);
+          }
+          renderCode.style.display = "block";
+        }, 3000);
       });
+
+                } else {
+                  renderCode.style.display = "none";
+                }
+              }
+
+              const observer = new MutationObserver(showRenderCode);
+              observer.observe(htmlTag, { attributes: true, attributeFilter: ["class"] });
+
+              showRenderCode(); // Run on load
+
+              // Click to close logic
+              document.addEventListener("click", function (e) {
+                const closeBtn = e.target.closest(".tingle-modal__close");
+                const modalBox = document.querySelector(".tingle-modal-box");
+
+                if (closeBtn) {
+                  renderCode.style.display = "none";
+                }
+
+                if (
+                  renderCode.style.display === "block" &&
+                  !modalBox.contains(e.target) &&
+                  renderCode.contains(e.target)
+                ) {
+                  renderCode.style.display = "none";
+                }
+              });
+            });
     </script>
   </body>
 </html>
