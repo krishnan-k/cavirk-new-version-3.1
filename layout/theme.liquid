@@ -361,7 +361,7 @@
           const checkExist = setInterval(function () {
             const container = document.querySelector(".razorpay-container");
             const checkCode = document.querySelector('.razorpay-container._z-\\[60\\].hidden');
-            console.log(checkCode,'kk');
+            console.log(container,'kk');
             if (container) {
               clearInterval(checkExist);
               callback(container);
