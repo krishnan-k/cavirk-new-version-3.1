@@ -354,24 +354,32 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
-        // Function to show your custom modal
-        function showSurveyModal() {
-          renderCode.style.display = "block";
-        }
+        let popupTimeout = null;
 
-        // Detect Razorpay exit modal (the second popup)
         const observer = new MutationObserver(() => {
           const razorpayExitPopup = document.querySelector('[data-testid="dialog-confirm-close"]');
 
           if (razorpayExitPopup && razorpayExitPopup.offsetParent !== null) {
-            // Hide Razorpay's popup
-            razorpayExitPopup.closest(".stack-overlay")?.remove();
+            // If Razorpay popup is found and visible, wait 3 seconds before showing your survey
+            if (!popupTimeout) {
+              popupTimeout = setTimeout(() => {
+                // Double-check Razorpay popup still exists after 3 seconds
+                const stillThere = document.querySelector('[data-testid="dialog-confirm-close"]');
+                if (stillThere && stillThere.offsetParent !== null) {
+                  // Hide Razorpay's popup
+                  stillThere.closest(".stack-overlay")?.remove();
 
-            // Show your custom popup instead
-            showSurveyModal();
+                  // Show your custom modal
+                  renderCode.style.display = "block";
+                }
+              }, 3000);
+            }
+          } else {
+            // If the Razorpay modal disappears, clear timer
+            clearTimeout(popupTimeout);
+            popupTimeout = null;
           }
         });
 
@@ -380,12 +388,15 @@
           subtree: true,
         });
 
-        // Allow closing the survey modal
+        // Allow user to close your modal
         document.addEventListener("click", function (e) {
           const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
 
-          if (closeBtn || (renderCode.style.display === "block" && !modalBox.contains(e.target) && renderCode.contains(e.target))) {
+          if (
+            closeBtn ||
+            (renderCode.style.display === "block" && !modalBox.contains(e.target) && renderCode.contains(e.target))
+          ) {
             renderCode.style.display = "none";
           }
         });
