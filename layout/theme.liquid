@@ -353,7 +353,7 @@
     </div>
 
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const htmlTag = document.documentElement;
         const renderCode = document.querySelector(".render_code");
 
@@ -387,36 +387,23 @@
 
         showRenderCode(); // Run on load
 
-        // 🔴 Click handler
+        // 🔴 Handle clicks for closing
         document.addEventListener("click", function (e) {
-          const container = document.querySelector(".razorpay-container");
+          const closeBtn = e.target.closest(".tingle-modal__close");
           const modalBox = document.querySelector(".tingle-modal-box");
-          const closeBtn = e.target.closest("[data-testid='checkout-close']");
-          const isInsideRender = renderCode.contains(e.target);
 
-          if (!container) return;
-
-          // ✅ Case 1: Close button clicked
+          // Case 1: Close button clicked
           if (closeBtn) {
-            container.classList.add("close-clicked");
             renderCode.style.display = "none";
-            return;
           }
 
-          // ✅ Case 2: Clicked outside modal box but inside renderCode
+          // Case 2: Clicked outside modal box but inside popup
           if (
             renderCode.style.display === "block" &&
             !modalBox.contains(e.target) &&
-            isInsideRender
+            renderCode.contains(e.target)
           ) {
-            container.classList.remove("close-clicked");
             renderCode.style.display = "none";
-            return;
-          }
-
-          // ✅ Case 3: Any other click (cleanup class)
-          if (!isInsideRender) {
-            container.classList.remove("close-clicked");
           }
         });
       });
