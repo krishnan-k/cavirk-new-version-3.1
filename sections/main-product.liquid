@@ -707,11 +707,8 @@
                       </div>
                     </product-addons>
                   {% endif %}
-                  <product-addons>
-                    <a
-                      href="#judgeme_product_reviews"
-                      class="inline-flex align-center gap-10 lh-normal hover-heading-color pointer no-underline"
-                    >
+                  <div class="custom_review_button" style="line-height: normal;">
+                    <a href="#judgeme_product_reviews" class="inline-flex align-center gap-10 lh-normal hover-heading-color pointer no-underline">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18px"
@@ -723,7 +720,7 @@
                       </svg>
                       {{- 'general.write_a_review' | t -}}
                     </a>
-                  </product-addons>
+                  </div>
                 </div>
               {% endif %}
             {% endif %}
