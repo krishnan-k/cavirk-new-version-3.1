@@ -211,11 +211,6 @@
         "disabled": false,
         "settings": {}
       },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
       "6615124273980966592": {
         "type": "shopify://apps/chatty/blocks/app-embed/1c0e135d-e8e1-4fe2-86be-1c36def46675",
         "disabled": false,
@@ -231,10 +226,69 @@
         "disabled": false,
         "settings": {}
       },
-      "1721301647844767814": {
-        "type": "shopify://apps/ait-loyalty-review-affiliate/blocks/app-aioEmbeddedBlock/0ac2ae90-3cb2-4597-b945-a3b33462ea90",
+      "4697538150380142411": {
+        "type": "shopify://apps/stamped-reviews/blocks/reviews-popup/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": true,
+        "settings": {
+          "layout": "horizontal",
+          "effect": "slidetop",
+          "delay_seconds": 3,
+          "show_seconds": 10,
+          "pause_seconds": 10,
+          "position": "bottomleft",
+          "color_background": "",
+          "color_star": "",
+          "color_text": "",
+          "review_ids": "",
+          "product_ids": "",
+          "category": "",
+          "product_brand": "",
+          "tags": "",
+          "min_rating": "none",
+          "fill_empty": false,
+          "random": false,
+          "with_photos": false
+        }
+      },
+      "1575957009345749421": {
+        "type": "shopify://apps/stamped-reviews/blocks/side-drawer/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": true,
+        "settings": {
+          "show_avatar": true,
+          "position": "left",
+          "text": "",
+          "title": "",
+          "link": "",
+          "link_text": "",
+          "background_color": "",
+          "style_color_button_text": "",
+          "style_color_star": "",
+          "style_color_text": "",
+          "style_color_link": "",
+          "review_ids": "",
+          "product_ids": "",
+          "category": "",
+          "product_brand": "",
+          "tags": "",
+          "min_rating": "none",
+          "fill_empty": false,
+          "random": false,
+          "with_photos": false
+        }
+      },
+      "7612553728132747764": {
+        "type": "shopify://apps/stamped-reviews/blocks/net-promoter-score-form-modal/a103faaf-2125-4b0e-89fa-de5149736723",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "email": "",
+          "name": "",
+          "title": "",
+          "message": "Enable advanced features and increase your monthly order limit to match your business's needs.",
+          "reason": "",
+          "thank_you": "",
+          "label_name": "",
+          "label_email": ""
+        }
       }
     },
     "color_schemes": {
