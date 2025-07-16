@@ -204,89 +204,36 @@
       })(window, document, "clarity", "script", "q5hwcpn59e");
     </script>
 
-    <!-- GA4 Client ID Retrieval Script -->
-    <script>
-      (function() {
-        try {
-          if (typeof gtag === 'function') {
-            gtag('get', 'G-82P61PP9VE', 'client_id', function(clientId) {
-              if (clientId) {
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({
-                  'event': 'gaClientIdRetrieved',
-                  'ga_client_id': clientId
-                });
-              }
-            });
-          }
-        } catch (e) {
-          // console.error('Error retrieving GA4 client_id:', e);
-        }
-      })();
-    </script>
-
-    <!-- Add GA4 Client ID as Cart Attribute -->
-    <script>
-      function addGaClientIdToCart(ga4ClientId) {
-        if (!ga4ClientId) return;
-
-        if (typeof jQuery !== 'undefined') {
-          jQuery.ajax({
-            type: 'POST',
-            url: '/cart/update.js',
-            data: {
-              attributes: {
-                'ga_client_id': ga4ClientId
-              }
-            },
-            dataType: 'json'
-          });
-        }
-      }
-
-      window.dataLayer = window.dataLayer || [];
-
-      window.addEventListener('DOMContentLoaded', function () {
-        var ga4ClientId = window.dataLayer.find(item => item.ga_client_id !== undefined)?.ga_client_id;
-
-        if (ga4ClientId) {
-          addGaClientIdToCart(ga4ClientId);
-        } else {
-          // Wait for the ga_client_id to be pushed to the dataLayer
-          var originalPush = window.dataLayer.push;
-
-          window.dataLayer.push = function () {
-            for (var i = 0; i < arguments.length; i++) {
-              var item = arguments[i];
-              if (item && item.ga_client_id) {
-                addGaClientIdToCart(item.ga_client_id);
-              }
-            }
-            return originalPush.apply(window.dataLayer, arguments);
-          };
-        }
-      });
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-54L5K3MH');
-    </script>
-    <!-- End Google Tag Manager -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GT-WVGTBJBD"></script>
+  <!-- Load gtag.js -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82P61PP9VE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
 
-  gtag('config', 'GT-WVGTBJBD');
+  // Configure GA4
+  gtag('config', 'G-82P61PP9VE');  // ✅ THIS IS ESSENTIAL
+
+  // GA4 Client ID Retrieval Script
+  (function() {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('get', 'G-82P61PP9VE', 'client_id', function(clientId) {
+          if (clientId) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'gaClientIdRetrieved',
+              'ga_client_id': clientId
+            });
+          }
+        });
+      }
+    } catch (e) {
+      // console.error('Error retrieving GA4 client_id:', e);
+    }
+  })();
 </script>
+
     
   </head>
   <body
