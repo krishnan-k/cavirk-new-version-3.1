@@ -341,39 +341,5 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const interval = setInterval(() => {
-      const form = document.querySelector("form.jdgm-form");
-      const rating = document.querySelector("input[name='review[rating]']");
-      const reviewText = document.querySelector("textarea[name='review_body']");
-
-      if (form && reviewText) {
-        clearInterval(interval);
-
-        // Remove Judge.me required validation
-        reviewText.removeAttribute("aria-required");
-        reviewText.removeAttribute("required");
-        reviewText.setAttribute("aria-invalid", "false");
-
-        if (rating) {
-          rating.removeAttribute("aria-required");
-          rating.removeAttribute("required");
-          rating.setAttribute("aria-invalid", "false");
-        }
-
-        // Override Judge.me's submit validation
-        form.addEventListener("submit", function (e) {
-          // Optional: skip client validation (leave empty or submit dummy if needed)
-          reviewText.setAttribute("aria-invalid", "false");
-          if (rating) {
-            rating.setAttribute("aria-invalid", "false");
-          }
-        }, true);
-      }
-    }, 300);
-  });
-</script>
-
   </body>
 </html>
