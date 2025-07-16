@@ -2973,7 +2973,7 @@ mobile-navigation-bar > * {
     background: var(--btn-bg-gradient);
 }
 .restock-alerts-sms-channel-form .selectBoxStyle{
-  height: auto;
+  height: -webkit-fill-available;
   border-radius: var(--input-border-radius);
 }
 /* Loading effect */
