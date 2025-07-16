@@ -30,11 +30,6 @@
             "show_vendor": true
           }
         },
-        "judge_me_reviews_preview_badge_xqdnWi": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
-        },
         "review_and_sold_AAbJC9": {
           "type": "review_and_sold",
           "disabled": true,
@@ -224,7 +219,6 @@
       "block_order": [
         "badges_RwfTMp",
         "title_G6tU8U",
-        "judge_me_reviews_preview_badge_xqdnWi",
         "review_and_sold_AAbJC9",
         "price_VJ4N8m",
         "short_description_9BGxVm",
@@ -415,14 +409,21 @@
     },
     "17489513408397acfd": {
       "type": "apps",
+      "settings": {}
+    },
+    "1752651491ca516266": {
+      "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_TPCqtd": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "trustshop_reviews_widget_box_UnCrVC": {
+          "type": "shopify://apps/trustshop-reviews/blocks/widget-box/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
+          "settings": {
+            "selected_product": "",
+            "wrapper_class": ""
+          }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_TPCqtd"
+        "trustshop_reviews_widget_box_UnCrVC"
       ],
       "settings": {}
     }
@@ -439,6 +440,7 @@
     "related_products",
     "divider_HtLXd3",
     "products_recently_viewed_GdCNUL",
-    "17489513408397acfd"
+    "17489513408397acfd",
+    "1752651491ca516266"
   ]
 }
