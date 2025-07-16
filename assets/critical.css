@@ -2972,6 +2972,10 @@ mobile-navigation-bar > * {
     background: var(--btn-bg);
     background: var(--btn-bg-gradient);
 }
+.restock-alerts-sms-channel-form .selectBoxStyle{
+  height: auto;
+  border-radius: var(--input-border-radius);
+}
 /* Loading effect */
 .product__color-swatch:not([style*='background']),
 .skeleton .thumbnail-slide [class*='media-gallery__'],
