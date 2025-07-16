@@ -226,77 +226,13 @@
         "disabled": false,
         "settings": {}
       },
-      "4697538150380142411": {
-        "type": "shopify://apps/stamped-reviews/blocks/reviews-popup/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": true,
-        "settings": {
-          "layout": "horizontal",
-          "effect": "slidetop",
-          "delay_seconds": 3,
-          "show_seconds": 10,
-          "pause_seconds": 10,
-          "position": "bottomleft",
-          "color_background": "",
-          "color_star": "",
-          "color_text": "",
-          "review_ids": "",
-          "product_ids": "",
-          "category": "",
-          "product_brand": "",
-          "tags": "",
-          "min_rating": "none",
-          "fill_empty": false,
-          "random": false,
-          "with_photos": false
-        }
-      },
-      "1575957009345749421": {
-        "type": "shopify://apps/stamped-reviews/blocks/side-drawer/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": true,
-        "settings": {
-          "show_avatar": true,
-          "position": "left",
-          "text": "",
-          "title": "",
-          "link": "",
-          "link_text": "",
-          "background_color": "",
-          "style_color_button_text": "",
-          "style_color_star": "",
-          "style_color_text": "",
-          "style_color_link": "",
-          "review_ids": "",
-          "product_ids": "",
-          "category": "",
-          "product_brand": "",
-          "tags": "",
-          "min_rating": "none",
-          "fill_empty": false,
-          "random": false,
-          "with_photos": false
-        }
-      },
-      "7612553728132747764": {
-        "type": "shopify://apps/stamped-reviews/blocks/net-promoter-score-form-modal/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": true,
-        "settings": {
-          "email": "",
-          "name": "",
-          "title": "",
-          "message": "Enable advanced features and increase your monthly order limit to match your business's needs.",
-          "reason": "",
-          "thank_you": "",
-          "label_name": "",
-          "label_email": ""
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+      "5028733920296764920": {
+        "type": "shopify://apps/poptin-exit-popup-email-pop-up/blocks/poptin/182272aa-99b0-4fe3-a6ce-2aa49aed1d90",
         "disabled": false,
         "settings": {}
       },
-      "5028733920296764920": {
-        "type": "shopify://apps/poptin-exit-popup-email-pop-up/blocks/poptin/182272aa-99b0-4fe3-a6ce-2aa49aed1d90",
+      "4935202709820522637": {
+        "type": "shopify://apps/trustshop-reviews/blocks/review-embed/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
         "disabled": false,
         "settings": {}
       }
