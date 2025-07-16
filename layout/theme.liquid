@@ -342,27 +342,38 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const interval = setInterval(() => {
-          const reviewTextarea = document.querySelector('textarea[name="review_body"]');
-          if (reviewTextarea) {
-            clearInterval(interval);
+  document.addEventListener("DOMContentLoaded", function () {
+    const interval = setInterval(() => {
+      const form = document.querySelector("form.jdgm-form");
+      const rating = document.querySelector("input[name='review[rating]']");
+      const reviewText = document.querySelector("textarea[name='review_body']");
 
-            // Remove visual warning and force allow empty submission
-            reviewTextarea.removeAttribute("aria-required");
-            reviewTextarea.setAttribute("aria-invalid", "false");
+      if (form && reviewText) {
+        clearInterval(interval);
 
-            // Optional: remove Judge.me validation listener (breaks their JS check)
-            const form = reviewTextarea.closest("form");
-            if (form) {
-              form.addEventListener("submit", function (e) {
-                reviewTextarea.removeAttribute("aria-required");
-                reviewTextarea.setAttribute("aria-invalid", "false");
-              }, true);
-            }
+        // Remove Judge.me required validation
+        reviewText.removeAttribute("aria-required");
+        reviewText.removeAttribute("required");
+        reviewText.setAttribute("aria-invalid", "false");
+
+        if (rating) {
+          rating.removeAttribute("aria-required");
+          rating.removeAttribute("required");
+          rating.setAttribute("aria-invalid", "false");
+        }
+
+        // Override Judge.me's submit validation
+        form.addEventListener("submit", function (e) {
+          // Optional: skip client validation (leave empty or submit dummy if needed)
+          reviewText.setAttribute("aria-invalid", "false");
+          if (rating) {
+            rating.setAttribute("aria-invalid", "false");
           }
-        }, 200);
-      });
-    </script>
+        }, true);
+      }
+    }, 300);
+  });
+</script>
+
   </body>
 </html>
