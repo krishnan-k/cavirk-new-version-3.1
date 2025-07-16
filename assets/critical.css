@@ -2964,6 +2964,14 @@ mobile-navigation-bar > * {
 .multi-content-js {
   background-color: var(--content_bg_color);
 }
+.restock-alerts-notify-button{
+  --btn-bg: var(--btn-primary-bg-color);
+    --btn-bg-gradient: var(--btn-primary-bg-graident-color);
+    --btn-color: var(--btn-primary-color);
+    --btn-border-color: var(--btn-primary-bg-color);
+    background: var(--btn-bg);
+    background: var(--btn-bg-gradient);
+}
 /* Loading effect */
 .product__color-swatch:not([style*='background']),
 .skeleton .thumbnail-slide [class*='media-gallery__'],
