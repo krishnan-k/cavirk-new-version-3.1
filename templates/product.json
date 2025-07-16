@@ -389,6 +389,7 @@
     },
     "products_recently_viewed_GdCNUL": {
       "type": "products-recently-viewed",
+      "disabled": true,
       "settings": {
         "section_width": "container",
         "color_scheme": "",
@@ -434,15 +435,6 @@
     },
     "opinew-reviews-product-page-code": {
       "type": "apps",
-      "blocks": {
-        "opinew-reviews-widget": {
-          "type": "shopify://apps/opinew-reviews/blocks/product-widget/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "opinew-reviews-widget"
-      ],
       "settings": {}
     }
   },
