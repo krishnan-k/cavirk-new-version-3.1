@@ -505,7 +505,7 @@
                   <div
                     class="product-addons flex flex-wrap gap-30 align-center pb-25 mb-20 border-bottom row-gap-custom{% if enable_skeleton_loading %} skeleton-loading{% endif %}"
                     style="--row-gap: 15px;"
-                    {{ block.shopify_attributes }}
+                    {{ block.shopify_attributes }} 
                   >
                     {% if block_st.show_compare_color == true and color %}
                       <product-addons
@@ -697,6 +697,9 @@
                         </div>
                       </product-addons>
                     {% endif %}
+                    <div class="custom_review_button">
+                      <button> <a href=""></a></button>
+                    </div>
                   </div>
                 {% endif %}
               {% endif %}
