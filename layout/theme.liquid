@@ -343,15 +343,23 @@
     {%- render 'content-bottom' -%}
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Wait until the form is available
         const interval = setInterval(() => {
-          const ratingField = document.querySelector("input[required]");
-          const contentField = document.querySelector("textarea[required]");
-
-          if (ratingField || contentField) {
+          const reviewTextarea = document.querySelector('textarea[name="review_body"]');
+          if (reviewTextarea) {
             clearInterval(interval);
-            if (ratingField) ratingField.removeAttribute("required");
-            if (contentField) contentField.removeAttribute("required");
+
+            // Remove visual warning and force allow empty submission
+            reviewTextarea.removeAttribute("aria-required");
+            reviewTextarea.setAttribute("aria-invalid", "false");
+
+            // Optional: remove Judge.me validation listener (breaks their JS check)
+            const form = reviewTextarea.closest("form");
+            if (form) {
+              form.addEventListener("submit", function (e) {
+                reviewTextarea.removeAttribute("aria-required");
+                reviewTextarea.setAttribute("aria-invalid", "false");
+              }, true);
+            }
           }
         }, 200);
       });
