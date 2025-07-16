@@ -2964,7 +2964,7 @@ mobile-navigation-bar > * {
 .multi-content-js {
   background-color: var(--content_bg_color);
 }
-.restock-alerts-notify-button{
+.restock-alerts-notify-button, .restock-alerts-submit-button{
   --btn-bg: var(--btn-primary-bg-color);
     --btn-bg-gradient: var(--btn-primary-bg-graident-color);
     --btn-color: var(--btn-primary-color);
