@@ -2975,6 +2975,7 @@ mobile-navigation-bar > * {
 .restock-alerts-sms-channel-form .selectBoxStyle{
   height: -webkit-fill-available;
   border-radius: var(--input-border-radius);
+  padding-left: 20px;
 }
 /* Loading effect */
 .product__color-swatch:not([style*='background']),
