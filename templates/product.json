@@ -431,6 +431,19 @@
         "judge_me_reviews_review_widget_e3k7WK"
       ],
       "settings": {}
+    },
+    "opinew-reviews-product-page-code": {
+      "type": "apps",
+      "blocks": {
+        "opinew-reviews-widget": {
+          "type": "shopify://apps/opinew-reviews/blocks/product-widget/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "opinew-reviews-widget"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -448,6 +461,7 @@
     "products_recently_viewed_GdCNUL",
     "17489513408397acfd",
     "1752651491ca516266",
-    "175265255890db3f6f"
+    "175265255890db3f6f",
+    "opinew-reviews-product-page-code"
   ]
 }
