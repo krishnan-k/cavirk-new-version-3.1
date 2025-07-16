@@ -389,7 +389,6 @@
     },
     "products_recently_viewed_GdCNUL": {
       "type": "products-recently-viewed",
-      "disabled": true,
       "settings": {
         "section_width": "container",
         "color_scheme": "",
