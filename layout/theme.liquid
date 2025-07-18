@@ -341,14 +341,5 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <script>
-            window.addEventListener('beforeunload', function (e) {
-          // Customize your message below
-          const message = 'Are you sure you want to leave this page?';
-          e.preventDefault(); // Required for Chrome
-          e.returnValue = message; // Required for other browsers
-          return message;
-      });
-    </script>
   </body>
 </html>
