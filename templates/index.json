@@ -478,11 +478,10 @@
       "blocks": {
         "testimonials_items_D4xR7G": {
           "type": "testimonials_items",
-          "disabled": true,
           "settings": {
             "author_rating": 5,
             "author_text": "<p>I’m truly mesmerized by the Pattachitra saree ,’Festive Threads’ I bought from your collection. The visual storytelling on the pallu is nothing short of captivating — every motif feels like a scene from folklore brought to life through vibrant colors and fine craftsmanship. It’s not just attire, I’ll call it wearable art. The silk is lush and comfortable, and the saree drapes effortlessly, giving it a graceful fall. I wore it to a cultural event, and it turned heads all evening — so many people asked where it was from! Thank you for the wonderful addition to my wardrobe.</p>",
-            "select_product": "",
+            "select_product": "festive-threads",
             "author_name": "Shivani Sharma,Perth, Australia"
           }
         },
