@@ -571,7 +571,7 @@
         "show_excerpt": true,
         "content_alignment": "left",
         "design": "default",
-        "items_to_show": 5,
+        "items_to_show": 8,
         "items_per_row": 4,
         "column_gap": 30,
         "show_arrow": true,
