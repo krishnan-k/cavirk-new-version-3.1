@@ -342,31 +342,15 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-    let isUserNavigating = false;
-
-    // Detect refresh (F5 or Ctrl+R)
-    window.addEventListener('keydown', function (e) {
-      if (e.key === 'F5' || (e.ctrlKey && e.key.toLowerCase() === 'r')) {
-        isUserNavigating = true;
-      }
-    });
-
-    // Detect clicks on links
-    document.addEventListener('click', function (e) {
-      const anchor = e.target.closest('a');
-      if (anchor && anchor.href) {
-        isUserNavigating = true;
-      }
-    });
-
-    // Detect beforeunload
     window.addEventListener('beforeunload', function (e) {
-      if (!isUserNavigating) {
-        // Tab close only
-        e.preventDefault();
-        e.returnValue = ''; // Required for alert to show
-      }
-    });
+    // Cancel the event to trigger the browser's confirmation prompt
+    e.preventDefault();
+    // Chrome requires returnValue to be set.
+    e.returnValue = '';
+    // Optionally, perform some last-minute actions (e.g., saving data)
+    // Be aware that these actions might not always complete due to timing constraints.
+    console.log('User is attempting to leave the page.');
+});
   </script>
   </body>
 </html>
