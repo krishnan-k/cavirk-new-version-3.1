@@ -341,6 +341,22 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    
+    <script>
+  // Flag to show alert only once
+  let isExitIntentShown = false;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("mouseout", function (e) {
+      // If mouse leaves at the top of the page (possible tab close)
+      if (e.clientY < 0 && !isExitIntentShown) {
+        isExitIntentShown = true;
+
+        // Show your custom alert message
+        alert("Wait! You haven't completed your purchase. Are you sure you want to leave?");
+      }
+    });
+  });
+</script>
+
   </body>
 </html>
