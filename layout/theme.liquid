@@ -342,7 +342,31 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      
-    </script>
+    let isReloadOrNavigate = false;
+
+    // Detect page refresh (F5 or Ctrl+R)
+    window.addEventListener('keydown', function(e) {
+      if ((e.key === 'F5') || (e.ctrlKey && e.key.toLowerCase() === 'r')) {
+        isReloadOrNavigate = true;
+      }
+    });
+
+    // Detect page navigation via link clicks
+    document.addEventListener('click', function(e) {
+      const target = e.target.closest('a');
+      if (target && target.href) {
+        isReloadOrNavigate = true;
+      }
+    });
+
+    // Detect navigation using browser back/forward or typing URL
+    window.addEventListener('beforeunload', function (e) {
+      if (!isReloadOrNavigate) {
+        // This is likely a tab or window close
+        e.preventDefault();
+        e.returnValue = ''; // Triggers the browser's default alert
+      }
+    });
+  </script>
   </body>
 </html>
