@@ -341,23 +341,5 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Check if the current page is cart or checkout
-    const currentPath = window.location.pathname;
-
-    const isCartOrCheckoutPage =
-      currentPath.includes('/cart') || currentPath.includes('/checkout');
-
-    if (isCartOrCheckoutPage) {
-      window.addEventListener("beforeunload", function (e) {
-        // Required for some browsers to trigger the dialog
-        e.preventDefault();
-        e.returnValue = ''; // Show browser's default confirmation popup
-      });
-    }
-  });
-</script>
-
   </body>
 </html>
