@@ -342,19 +342,20 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-  // Flag to show alert only once
-  let isExitIntentShown = false;
-
   document.addEventListener("DOMContentLoaded", function () {
-    document.addEventListener("mouseout", function (e) {
-      // If mouse leaves at the top of the page (possible tab close)
-      if (e.clientY < 0 && !isExitIntentShown) {
-        isExitIntentShown = true;
+    // Check if the current page is cart or checkout
+    const currentPath = window.location.pathname;
 
-        // Show your custom alert message
-        alert("Wait! You haven't completed your purchase. Are you sure you want to leave?");
-      }
-    });
+    const isCartOrCheckoutPage =
+      currentPath.includes('/cart') || currentPath.includes('/checkout');
+
+    if (isCartOrCheckoutPage) {
+      window.addEventListener("beforeunload", function (e) {
+        // Required for some browsers to trigger the dialog
+        e.preventDefault();
+        e.returnValue = ''; // Show browser's default confirmation popup
+      });
+    }
   });
 </script>
 
