@@ -341,16 +341,5 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <script>
-    window.addEventListener('beforeunload', function (e) {
-    // Cancel the event to trigger the browser's confirmation prompt
-    e.preventDefault();
-    // Chrome requires returnValue to be set.
-    e.returnValue = '';
-    // Optionally, perform some last-minute actions (e.g., saving data)
-    // Be aware that these actions might not always complete due to timing constraints.
-    console.log('User is attempting to leave the page.');
-});
-  </script>
   </body>
 </html>
