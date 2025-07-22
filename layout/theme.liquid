@@ -341,5 +341,15 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
+    window.addEventListener('beforeunload', function (e) {
+  // Optional: check if cart has items or user is mid-checkout
+  const cartHasItems = true; // Replace with actual logic if needed
+
+  if (cartHasItems) {
+    e.preventDefault(); // Some browsers require this
+    e.returnValue = ''; // This shows the default confirmation dialog
+  }
+});
+
   </body>
 </html>
