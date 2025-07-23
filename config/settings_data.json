@@ -39,6 +39,7 @@
     "button_font": "body_font",
     "btn_text_transform": "capitalize",
     "button_radius": 30,
+    "enable_browser_tab_notifications": false,
     "sale_badge_type": "percent",
     "sale_badge_addons": "countdown",
     "new_color": "#ffffff",
