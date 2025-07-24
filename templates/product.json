@@ -284,10 +284,6 @@
       ],
       "settings": {}
     },
-    "f6f708612c06b69ceae2": {
-      "type": "apps",
-      "settings": {}
-    },
     "product-set": {
       "type": "product-set",
       "settings": {
@@ -369,10 +365,6 @@
         "reset_spacing": false
       }
     },
-    "1716793714ce89e457": {
-      "type": "apps",
-      "settings": {}
-    },
     "divider_TKLM6L": {
       "type": "divider",
       "settings": {
@@ -444,6 +436,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_e3k7WK"
       ],
+      "disabled": true,
       "settings": {}
     }
   },
@@ -451,12 +444,10 @@
     "breadcrumb",
     "main",
     "ba73a483af001e901683",
-    "f6f708612c06b69ceae2",
     "product-set",
     "divider_E3r6ih",
     "scrolling_text_b38KNQ",
     "divider_8KXwgr",
-    "1716793714ce89e457",
     "divider_TKLM6L",
     "related_products",
     "divider_HtLXd3",
