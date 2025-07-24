@@ -3322,6 +3322,9 @@ nav.mobile {
 .product .jdgm-rev-widg .jdgm-rev-widg__summary:not(.active){
   display: none !important;
 }
+.jdgm-rev-widg__summary ~ .jdgm-widget-actions-wrapper {
+    border: none !important;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
