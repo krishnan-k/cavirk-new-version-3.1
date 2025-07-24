@@ -3328,6 +3328,11 @@ nav.mobile {
 .product #judgeme_product_reviews h2.jdgm-rev-widg__title{
   margin: 0 !important;
 }
+.Avada-Survey-Box.Avada-Survey .Avada-Survey__Heading {
+    font-family: var(--body-font);
+    line-height: 1.2;
+    font-size: 18px;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
