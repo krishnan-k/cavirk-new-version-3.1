@@ -3310,7 +3310,7 @@ nav.mobile {
   width: 100%;
   background: none;
 }
-.product .jdgm-prev-badge__stars .jdgm-star{
+.product .product-detail__information .jdgm-prev-badge__stars .jdgm-star{
   font-size: 15px;
 }
 @media (min-width: 479px) {
