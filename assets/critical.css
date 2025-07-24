@@ -3329,9 +3329,9 @@ nav.mobile {
   margin: 0 !important;
 }
 .Avada-Survey-Box.Avada-Survey .Avada-Survey__Heading {
-    font-family: var(--body-font);
-    line-height: 1.2;
-    font-size: 18px;
+    font-family: var(--body-font) !important;
+    line-height: 1.2 !important;
+    font-size: 18px !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
