@@ -3334,7 +3334,7 @@ nav.mobile {
     font-size: 18px !important;
 }
 body .jdgm-form textarea{
-  border: var(--inputs-border-width) solid var(--color-border);
+  border: var(--inputs-border-width) solid var(--color-border) !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
