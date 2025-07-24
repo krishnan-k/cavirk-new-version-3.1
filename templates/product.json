@@ -44,6 +44,10 @@
           "type": "price",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_wn8Mtq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "8c326821-935a-418f-b812-2bbdbac39298": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
@@ -227,6 +231,7 @@
         "title_G6tU8U",
         "review_and_sold_AAbJC9",
         "price_VJ4N8m",
+        "judge_me_reviews_preview_badge_wn8Mtq",
         "8c326821-935a-418f-b812-2bbdbac39298",
         "short_description_9BGxVm",
         "custom_liquid_GKeQdr",
@@ -431,13 +436,13 @@
     "175265255890db3f6f": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_e3k7WK": {
+        "judge_me_reviews_review_widget_hUNKdG": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_e3k7WK"
+        "judge_me_reviews_review_widget_hUNKdG"
       ],
       "settings": {}
     }
