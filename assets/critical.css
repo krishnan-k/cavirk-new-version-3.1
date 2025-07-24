@@ -3336,6 +3336,9 @@ nav.mobile {
 body .jdgm-form textarea, body .jdgm-form input[type=text], body .jdgm-form input[type=email], body .jdgm-form input[type=url]{
   border: var(--inputs-border-width) solid var(--color-border) !important;
 }
+body .jdgm-picture-fieldset__box-wrapper{
+  border: 1px dashed solid var(--color-border) !important;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
