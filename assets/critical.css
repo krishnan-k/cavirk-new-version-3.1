@@ -3310,8 +3310,8 @@ nav.mobile {
   width: 100%;
   background: none;
 }
-.product #yotpo-main-widget-btn[data-v-4f716a87]{
-  min-height: 50px;
+.product .jdgm-prev-badge__stars .jdgm-star{
+  font-size: 15px;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
