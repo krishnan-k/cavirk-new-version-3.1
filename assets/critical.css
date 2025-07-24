@@ -3325,6 +3325,9 @@ nav.mobile {
 .jdgm-rev-widg__summary ~ .jdgm-widget-actions-wrapper {
     border: none !important;
 }
+.product #judgeme_product_reviews h2.jdgm-rev-widg__title{
+  margin: 0 !important;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
