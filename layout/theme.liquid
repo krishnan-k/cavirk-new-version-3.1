@@ -342,16 +342,15 @@
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-  const summaryBlock = document.querySelector(".jdgm-rev-widg__summary");
-        const judgeReview = document.querySelector(".jdgm-all-reviews__summary-text--verified");
-        if(judgeReview){
-          summaryBlock.classList.add("active");
-        }
-        else{
-          summaryBlock.classList.remove("active");
-        }
-});
+const summaryBlock = document.querySelector(".jdgm-rev-widg__summary");
+const judgeReview = document.querySelector(".jdgm-all-reviews__summary-text--verified");
+
+if (judgeReview) {
+  summaryBlock.classList.add("active");
+} else {
+  summaryBlock.classList.remove("active");
+}
+
 
 
     </script>
