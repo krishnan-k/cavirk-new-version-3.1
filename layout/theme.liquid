@@ -345,10 +345,12 @@
       document.addEventListener("DOMContentLoaded", function() {
   const summaryBlock = document.querySelector(".jdgm-rev-widg__summary");
         const judgeReview = document.querySelector(".jdgm-all-reviews__summary-text--verified");
-        console.log(judgeReview);
-  if (summaryBlock) {
-    summaryBlock.classList.add("active");
-  }
+        if(judgeReview){
+          summaryBlock.classList.add("active");
+        }
+        else{
+          summaryBlock.classList.remove("active");
+        }
 });
 
 
