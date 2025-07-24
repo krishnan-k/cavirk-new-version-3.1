@@ -3314,7 +3314,7 @@ nav.mobile {
   font-size: 15px;
 }
 .product .product-detail__information .jdgm-prev-badge__text{
-  padding-left: 5px;
+  padding-left: 5px;text-transform: capitalize;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
