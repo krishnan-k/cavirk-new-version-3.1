@@ -352,6 +352,7 @@
     },
     "divider_TKLM6L": {
       "type": "divider",
+      "disabled": true,
       "settings": {
         "section_width": "container",
         "border_height": 1,
