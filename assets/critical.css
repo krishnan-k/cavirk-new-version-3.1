@@ -3333,7 +3333,7 @@ nav.mobile {
     line-height: 1.2 !important;
     font-size: 18px !important;
 }
-body .jdgm-form textarea{
+body .jdgm-form textarea, body .jdgm-form input[type=text], body .jdgm-form input[type=email], body .jdgm-form input[type=url]{
   border: var(--inputs-border-width) solid var(--color-border) !important;
 }
 @media (min-width: 479px) {
