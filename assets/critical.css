@@ -3337,7 +3337,7 @@ body .jdgm-form textarea, body .jdgm-form input[type=text], body .jdgm-form inpu
   border: var(--inputs-border-width) solid var(--color-border) !important;
 }
 body .jdgm-picture-fieldset__box-wrapper{
-  border: 1px dashed solid var(--color-border) !important;
+  border: 1px dashed var(--color-border) !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
