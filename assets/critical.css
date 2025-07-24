@@ -3322,7 +3322,7 @@ nav.mobile {
 .product .jdgm-rev-widg .jdgm-rev-widg__summary:not(.active){
   display: none !important;
 }
-.jdgm-rev-widg__summary ~ .jdgm-widget-actions-wrapper {
+.jdgm-rev-widg__summary:not(.active) ~ .jdgm-widget-actions-wrapper {
     border: none !important;
 }
 .product #judgeme_product_reviews h2.jdgm-rev-widg__title{
