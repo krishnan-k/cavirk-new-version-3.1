@@ -561,7 +561,7 @@
         "show_view_all": false,
         "header_size": "medium",
         "header_alignment": "center",
-        "blog": "blog",
+        "blog": "blogs",
         "image_ratio": "adapt",
         "custom_ratio": "",
         "show_category": false,
