@@ -160,6 +160,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.sec__shopable-video .price{
+.sec__shopable-video :where(.price){
   color: var(--color-white);
 }
