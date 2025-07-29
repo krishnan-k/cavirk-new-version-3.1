@@ -160,6 +160,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.sec__shopable-video .shopable-video__product-information .price{
+.sec__shopable-video .price{
   color: var(--color-white);
 }
