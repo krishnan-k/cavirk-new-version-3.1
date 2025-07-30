@@ -227,11 +227,6 @@
         "disabled": false,
         "settings": {}
       },
-      "14876220180117712452": {
-        "type": "shopify://apps/sea-customer-survey/blocks/app-embed/c7c6d466-0f8e-412d-b0b9-db9b3387aa92",
-        "disabled": false,
-        "settings": {}
-      },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
@@ -239,6 +234,11 @@
       },
       "2444530731727059222": {
         "type": "shopify://apps/likely-like-me-button/blocks/app-embed/ce654961-f31a-4847-9231-ca9568540ced",
+        "disabled": false,
+        "settings": {}
+      },
+      "14876220180117712452": {
+        "type": "shopify://apps/sea-customer-survey/blocks/app-embed/c7c6d466-0f8e-412d-b0b9-db9b3387aa92",
         "disabled": false,
         "settings": {}
       }
