@@ -114,7 +114,7 @@
         {%- if show_date -%}
           <div class="blog-posts-date">
             <span>
-              {{ article.published_at | date: format: 'long' }}
+              {{ article.published_at | date: '%b %d %Y' }}
             </span>
           </div>
         {%- endif -%}
