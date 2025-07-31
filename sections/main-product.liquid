@@ -276,7 +276,7 @@
             {% comment %} Price {% endcomment %}
             <div
               id="price-{{ section.id }}"
-              class="product-detail__price mb-10{% if enable_skeleton_loading %} skeleton-loading{% endif %}"
+              class="product-detail__price{% if enable_skeleton_loading %} skeleton-loading{% endif %}"
               {{ block.shopify_attributes }}
             >
               {%- render 'price', scope: 'detail', product: product, class: 'price-large', show_badges: false -%}
