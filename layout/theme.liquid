@@ -431,6 +431,23 @@
     }, 200);
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const interval = setInterval(() => {
+      const label = document.querySelector("label.likely-count-label");
+      
+      if (label) {
+        const count = parseInt(label.textContent.trim(), 10);
+        if (!isNaN(count)) {
+          label.textContent = count + (count === 1 ? " Like" : " Likes");
+        }
+
+        clearInterval(interval); // Stop checking once it's updated
+      }
+    }, 200);
+  });
+</script>
+
 
   </body>
 </html>
