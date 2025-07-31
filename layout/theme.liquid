@@ -403,5 +403,32 @@
       });
     </script>
     <!-- Judjme review app active class end-->
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Wait until both app blocks are present
+    const interval = setInterval(() => {
+      const block1 = document.getElementById("shopify-block-AcStK9XhOxeFNNlfjb_likely_like_me_button_app_block_4HALdy");
+      const block2 = document.getElementById("shopify-block-2cKHjUVDb3XjDUP_ndge_reviews_preview_badge_snWfB4");
+
+      if (block1 && block2) {
+        // Create a flex container
+        const flexContainer = document.createElement("div");
+        flexContainer.style.display = "flex";
+        flexContainer.style.alignItems = "center";
+        flexContainer.style.gap = "12px";
+
+        // Insert before the first block
+        block1.parentNode.insertBefore(flexContainer, block1);
+
+        // Move both blocks inside the flex container
+        flexContainer.appendChild(block1);
+        flexContainer.appendChild(block2);
+
+        clearInterval(interval);
+      }
+    }, 200);
+  });
+</script>
+
   </body>
 </html>
