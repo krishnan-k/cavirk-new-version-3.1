@@ -3352,6 +3352,7 @@ body .jdgm-picture-fieldset__box-wrapper{
 }
 .likely-svg-wrapper span {
     border: none !important;
+    margin-right: 8px;
 }
 .likely-block-wrapper{
   margin: 0 !important;
