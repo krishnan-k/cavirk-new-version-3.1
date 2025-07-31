@@ -3343,7 +3343,7 @@ body .jdgm-picture-fieldset__box-wrapper{
   width: 25px;
 }
 .likely-svg-wrapper span{
-  padding: 5px 10px 5px 5px;
+  padding: 5px 10px 5px 5px !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
