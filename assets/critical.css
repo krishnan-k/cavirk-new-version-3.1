@@ -3340,14 +3340,29 @@ body .jdgm-form textarea, body .jdgm-form input[type=text], body .jdgm-form inpu
 body .jdgm-picture-fieldset__box-wrapper{
   border: 1px dashed var(--color-border) !important;
 }
+.likely-svg-wrapper {
+    background: #EBEEF7;
+    border: 2px solid #C1CBDB;
+    padding: 3px 5px !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
 .likely-svg-wrapper svg{
   width: 25px;
+  fill: #4267a9;
 }
-.likely-svg-wrapper span{
-  padding: 5px 10px 5px 5px !important;
+.likely-svg-wrapper span {
+    border: none !important;
 }
 .likely-block-wrapper{
   margin: 0 !important;
+}
+label.likely-count-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+.likely-wrapper{
+  width: 125px !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
