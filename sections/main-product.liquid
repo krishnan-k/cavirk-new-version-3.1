@@ -1388,6 +1388,63 @@
     </div>
   {% endif %}
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Wait until both app blocks are present
+    const interval = setInterval(() => {
+      const block1 = document.getElementById("shopify-block-AcStkQXhoeFNtN1lFb__likely_like_me_button_app_block_4HALdy");
+      const block2 = document.getElementById("shopify-block-AekdHLy9XbDVJd3pBM__judge_me_reviews_preview_badge_wn8Mtq");
+
+      if (block1 && block2) {
+        // Create a flex container
+        const flexContainer = document.createElement("div");
+        flexContainer.style.display = "flex";
+        flexContainer.style.alignItems = "center";
+        flexContainer.style.gap = "12px";
+        flexContainer.style.flexDirection = "row-reverse";
+        flexContainer.style.justifyContent = "flex-end";
+
+        // Insert before the first block
+        block1.parentNode.insertBefore(flexContainer, block1);
+
+        // Move both blocks inside the flex container
+        flexContainer.appendChild(block1);
+        flexContainer.appendChild(block2);
+
+        clearInterval(interval);
+      }
+    }, 200);
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function updateLikesText(label) {
+      if (!label) return;
+      const raw = label.textContent.trim();
+      const count = parseInt(raw);
+      if (!isNaN(count) && !raw.includes("Like")) {
+        label.textContent = count + (count === 1 ? " Likes" : " Like");
+      }
+    }
+
+    const fixLikesText = () => {
+      const label = document.querySelector("label.likely-count-label");
+      updateLikesText(label);
+    };
+
+    // Run immediately once loaded
+    const waitForLabel = setInterval(() => {
+      const label = document.querySelector("label.likely-count-label");
+      if (label) {
+        updateLikesText(label);
+        clearInterval(waitForLabel);
+
+        // Start continuous watcher after first render
+        setInterval(fixLikesText, 100); // checks every 300ms
+      }
+    }, 200);
+  });
+</script>
 {% schema %}
 {
   "name": "t:sections.main-product.name",
