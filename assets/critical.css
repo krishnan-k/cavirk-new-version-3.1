@@ -3339,6 +3339,9 @@ body .jdgm-form textarea, body .jdgm-form input[type=text], body .jdgm-form inpu
 body .jdgm-picture-fieldset__box-wrapper{
   border: 1px dashed var(--color-border) !important;
 }
+.likely-svg-wrapper svg{
+  width: 25px;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
