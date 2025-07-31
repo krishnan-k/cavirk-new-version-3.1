@@ -3349,6 +3349,9 @@ body .jdgm-picture-fieldset__box-wrapper{
 .likely-block-wrapper{
   margin: 0 !important;
 }
+.likely-wrapper{
+  width: 110px;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
