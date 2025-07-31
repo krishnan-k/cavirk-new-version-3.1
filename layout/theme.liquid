@@ -433,20 +433,34 @@
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const interval = setInterval(() => {
-      const label = document.querySelector("label.likely-count-label");
-      
-      if (label) {
-        const count = parseInt(label.textContent.trim(), 10);
-        if (!isNaN(count)) {
-          label.textContent = count + (count === 1 ? " Like" : " Likes");
-        }
+    function updateLikesText(label) {
+      if (!label) return;
+      const raw = label.textContent.trim();
+      const count = parseInt(raw);
+      if (!isNaN(count) && !raw.includes("Like")) {
+        label.textContent = count + (count === 1 ? " Like" : " Likes");
+      }
+    }
 
-        clearInterval(interval); // Stop checking once it's updated
+    const fixLikesText = () => {
+      const label = document.querySelector("label.likely-count-label");
+      updateLikesText(label);
+    };
+
+    // Run immediately once loaded
+    const waitForLabel = setInterval(() => {
+      const label = document.querySelector("label.likely-count-label");
+      if (label) {
+        updateLikesText(label);
+        clearInterval(waitForLabel);
+
+        // Start continuous watcher after first render
+        setInterval(fixLikesText, 300); // checks every 300ms
       }
     }, 200);
   });
 </script>
+
 
 
   </body>
