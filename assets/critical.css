@@ -3340,6 +3340,9 @@ body .jdgm-form textarea, body .jdgm-form input[type=text], body .jdgm-form inpu
 body .jdgm-picture-fieldset__box-wrapper{
   border: 1px dashed var(--color-border) !important;
 }
+.likely-svg-wrapper{
+  background: #EBEEF7;
+}
 .likely-svg-wrapper svg{
   width: 25px;
 }
