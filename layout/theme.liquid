@@ -438,7 +438,7 @@
       const raw = label.textContent.trim();
       const count = parseInt(raw);
       if (!isNaN(count) && !raw.includes("Like")) {
-        label.textContent = count + (count === 1 ? " Like" : " Likes");
+        label.textContent = count + (count === 1 ? " Likes" : " Like");
       }
     }
 
