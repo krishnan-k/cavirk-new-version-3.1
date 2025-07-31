@@ -433,24 +433,16 @@
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    function updateLikesText(label) {
-      const count = parseInt(label.textContent.trim(), 10);
-      if (!isNaN(count)) {
-        label.textContent = count + (count === 1 ? " Like" : " Likes");
-      }
-    }
-
-    // Watch for changes in the like count
-    const observerInterval = setInterval(() => {
+    const interval = setInterval(() => {
       const label = document.querySelector("label.likely-count-label");
+      
       if (label) {
-        updateLikesText(label);
+        const count = parseInt(label.textContent.trim(), 10);
+        if (!isNaN(count)) {
+          label.textContent = count + (count === 1 ? " Like" : " Likes");
+        }
 
-        // Set up MutationObserver to watch for count changes
-        const observer = new MutationObserver(() => updateLikesText(label));
-        observer.observe(label, { childList: true });
-
-        clearInterval(observerInterval);
+        clearInterval(interval); // Stop checking once it's updated
       }
     }, 200);
   });
