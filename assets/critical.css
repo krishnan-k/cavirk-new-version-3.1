@@ -3360,6 +3360,7 @@ body .jdgm-picture-fieldset__box-wrapper{
 }
 label.likely-count-label {
     font-weight: 500;
+    line-height: normal;
     font-size: 16px;
 }
 .likely-wrapper{
