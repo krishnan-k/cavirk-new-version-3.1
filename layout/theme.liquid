@@ -433,48 +433,33 @@
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    function updateLabelStructure() {
-      const label = document.querySelector("label.likely-count-label");
+    function updateLikesText(label) {
       if (!label) return;
-
-      // If already modified, skip
-      if (label.querySelector(".like-count")) return;
-
-      // Match number at beginning (e.g., "0 Likes")
-      const match = label.textContent.trim().match(/^(\d+)\s*(.*)$/);
-      if (!match) return;
-
-      const count = match[1];
-      const text = match[2] || "Likes";
-
-      // Clear old label content
-      label.textContent = "";
-
-      // Create count span
-      const countSpan = document.createElement("span");
-      countSpan.className = "like-count";
-      countSpan.textContent = count;
-
-      // Create text span
-      const textSpan = document.createElement("span");
-      textSpan.className = "like-text";
-      textSpan.textContent = " " + text;
-
-      // Append both
-      label.appendChild(countSpan);
-      label.appendChild(textSpan);
+      const raw = label.textContent.trim();
+      const count = parseInt(raw);
+      if (!isNaN(count) && !raw.includes("Like")) {
+        label.textContent = count + (count === 1 ? " Like" : " Likes");
+      }
     }
 
-    // Try until label is found (max ~10s)
-    let attempts = 0;
-    const interval = setInterval(() => {
-      updateLabelStructure();
-      attempts++;
-      if (attempts > 50) clearInterval(interval); // Stop after 10s
+    const fixLikesText = () => {
+      const label = document.querySelector("label.likely-count-label");
+      updateLikesText(label);
+    };
+
+    // Run immediately once loaded
+    const waitForLabel = setInterval(() => {
+      const label = document.querySelector("label.likely-count-label");
+      if (label) {
+        updateLikesText(label);
+        clearInterval(waitForLabel);
+
+        // Start continuous watcher after first render
+        setInterval(fixLikesText, 300); // checks every 300ms
+      }
     }, 200);
   });
 </script>
-
 
 
 
