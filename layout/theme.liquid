@@ -403,19 +403,5 @@
       });
     </script>
     <!-- Judjme review app active class end-->
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const label = document.querySelector(".likely-count-label");
-    if (label) {
-      console.log(label);
-      const count = label.textContent.trim();
-      const num = parseInt(count, 10);
-      if (!isNaN(num)) {
-        label.textContent = num + (num === 1 ? " Like" : " Likes");
-      }
-    }
-  });
-</script>
-
   </body>
 </html>
