@@ -3354,6 +3354,10 @@ body .jdgm-picture-fieldset__box-wrapper{
 .likely-block-wrapper{
   margin: 0 !important;
 }
+label.likely-count-label {
+    font-weight: 500;
+    font-size: 16px;
+}
 .likely-wrapper{
   width: 125px !important;
 }
