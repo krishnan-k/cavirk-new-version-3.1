@@ -3350,7 +3350,7 @@ body .jdgm-picture-fieldset__box-wrapper{
   margin: 0 !important;
 }
 .likely-wrapper{
-  width: 110px;
+  width: 110px !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
