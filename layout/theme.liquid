@@ -433,33 +433,66 @@
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    function updateLikesText(label) {
+    const labelSelector = "label.likely-count-label";
+
+    function formatLabel(label) {
       if (!label) return;
-      const raw = label.textContent.trim();
-      const count = parseInt(raw);
-      if (!isNaN(count) && !raw.includes("Like")) {
-        label.textContent = count + (count === 1 ? " Like" : " Likes");
-      }
+
+      // Get text like "3 Likes"
+      const text = label.textContent.trim();
+      const match = text.match(/^(\d+)\s*(.+)$/);
+
+      if (!match) return;
+
+      const [_, count, labelText] = match;
+
+      // Clear label
+      label.textContent = "";
+
+      // Create span for count
+      const countSpan = document.createElement("span");
+      countSpan.className = "like-count";
+      countSpan.textContent = count;
+
+      // Create span for text
+      const textSpan = document.createElement("span");
+      textSpan.className = "like-text";
+      textSpan.textContent = " " + labelText;
+
+      // Append
+      label.appendChild(countSpan);
+      label.appendChild(textSpan);
     }
 
-    const fixLikesText = () => {
-      const label = document.querySelector("label.likely-count-label");
-      updateLikesText(label);
-    };
+    function observeLabel(label) {
+      if (!label) return;
 
-    // Run immediately once loaded
+      // Format once initially
+      formatLabel(label);
+
+      // Watch for changes (e.g. after clicking like)
+      const observer = new MutationObserver(() => {
+        formatLabel(label);
+      });
+
+      observer.observe(label, {
+        childList: true,
+        characterData: true,
+        subtree: true,
+      });
+    }
+
+    // Wait until label appears
     const waitForLabel = setInterval(() => {
-      const label = document.querySelector("label.likely-count-label");
+      const label = document.querySelector(labelSelector);
       if (label) {
-        updateLikesText(label);
         clearInterval(waitForLabel);
-
-        // Start continuous watcher after first render
-        setInterval(fixLikesText, 300); // checks every 300ms
+        observeLabel(label);
       }
     }, 200);
   });
 </script>
+
 
 
 
