@@ -3348,9 +3348,7 @@ body .jdgm-picture-fieldset__box-wrapper{
 .likely-svg-wrapper svg{
   width: 25px;
 }
-.likely-svg-wrapper span{
-  padding: 5px 10px 5px 5px !important;
-}
+
 .likely-block-wrapper{
   margin: 0 !important;
 }
