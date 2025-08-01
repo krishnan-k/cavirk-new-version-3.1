@@ -217,11 +217,6 @@
         "disabled": false,
         "settings": {}
       },
-      "3557650678667880288": {
-        "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/magicx-script/c13c688d-5c45-4054-b95f-1edd63faa705",
-        "disabled": false,
-        "settings": {}
-      },
       "11349500561483629931": {
         "type": "shopify://apps/notify-me/blocks/app-embed/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
@@ -242,8 +237,8 @@
         "disabled": false,
         "settings": {}
       },
-      "3785952246085055792": {
-        "type": "shopify://apps/avada-seo-suite/blocks/avada-seo/15507c6e-1aa3-45d3-b698-7e175e033440",
+      "3557650678667880288": {
+        "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/magicx-script/c13c688d-5c45-4054-b95f-1edd63faa705",
         "disabled": false,
         "settings": {}
       }
