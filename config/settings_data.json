@@ -241,6 +241,11 @@
         "type": "shopify://apps/sea-customer-survey/blocks/app-embed/c7c6d466-0f8e-412d-b0b9-db9b3387aa92",
         "disabled": false,
         "settings": {}
+      },
+      "3785952246085055792": {
+        "type": "shopify://apps/avada-seo-suite/blocks/avada-seo/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
