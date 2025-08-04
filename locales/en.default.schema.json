@@ -2895,6 +2895,9 @@
           "sorting": "Enable sorting",
           "grid_list": "Enable grid, list"
         },
+        "collection-description":{
+          "label":"Collection content"
+        },
         "promotion": {
           "image": "Image upload image",
           "link": "Link",
