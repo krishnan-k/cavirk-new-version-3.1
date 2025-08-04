@@ -3342,8 +3342,6 @@ body .jdgm-picture-fieldset__box-wrapper{
   border: 1px dashed var(--color-border) !important;
 }
 .likely-svg-wrapper {
-    background: #EBEEF7;
-    border: 2px solid #C1CBDB;
     padding: 3px 5px !important;
     justify-content: center !important;
 }
