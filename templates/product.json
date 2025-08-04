@@ -367,7 +367,6 @@
     },
     "related_products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "section_width": "container",
         "color_scheme": "",
