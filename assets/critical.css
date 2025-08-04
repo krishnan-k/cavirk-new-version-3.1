@@ -3343,7 +3343,7 @@ body .jdgm-picture-fieldset__box-wrapper{
 }
 .likely-svg-wrapper {
     padding: 3px 5px !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
 }
 .likely-svg-wrapper svg{
   width: 25px;
