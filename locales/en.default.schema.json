@@ -2871,6 +2871,7 @@
         "header": {
           "toolbar": "Toolbar settings",
           "product_grid": "Product grid",
+          "collection-description": "Collection description",
           "promotion": "Promotion image",
           "info": "Only work with Grid layout",
           "mobile_options": "Mobile options"
