@@ -116,7 +116,7 @@
         "column_gap": 30,
         "pagination": "default",
         "button_show_more": "Load more",
-        "collection_content": "",
+        "collection_content": "<p>{{ collection.metafields.custom.custom_collection_description | metafield_tag }}</p>",
         "promotion_link": "shopify://products/floral-harmony-in-tangerine",
         "promotion_postion": 5,
         "items_per_row_mobile": "2",
