@@ -3307,7 +3307,7 @@ nav.mobile {
     gap: var(--coloumn-gap);  
 }
 product-form.product-item__product-form .likely-svg-wrapper {
-    display: none;
+    display: none !important;
 }
 .section-slide-with-banner .section__block-inner{
   width: 100%;
