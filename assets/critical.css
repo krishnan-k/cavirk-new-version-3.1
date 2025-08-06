@@ -3306,7 +3306,7 @@ nav.mobile {
     display: flex;
     gap: var(--coloumn-gap);  
 }
-product-form.product-item__product-form .likely-svg-wrapper {
+.product-grid-container .grid__item product-form.product-item__product-form .likely-svg-wrapper {
     display: none !important;
 }
 .section-slide-with-banner .section__block-inner{
