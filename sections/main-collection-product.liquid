@@ -289,9 +289,11 @@
 </section>
 
 <!-- dynamic collection code start -->
+{% if collection.description != blank %}
 <div class="container py-1025-40">
   <div class="">{{ collection.description }}</div>
 </div>
+{% endif %}
 <!-- dynamic collection code end -->
 <style>
   {% if request.page_type == 'collection' %}
