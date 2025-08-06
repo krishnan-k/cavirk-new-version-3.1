@@ -3365,7 +3365,7 @@ label.likely-count-label {
   width: 125px !important;
 }
 .product-grid-container.relative .grid__item .likely-svg-wrapper {
-    display: none;
+    display: none !important;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,
