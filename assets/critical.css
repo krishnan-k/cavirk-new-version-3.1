@@ -3364,9 +3364,6 @@ label.likely-count-label {
 .likely-wrapper{
   width: 125px !important;
 }
-product-form.product-item__product-form .likely-svg-wrapper {
-    display: none;
-}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
