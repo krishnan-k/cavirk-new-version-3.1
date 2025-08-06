@@ -287,6 +287,12 @@
     </div>
   </grid-list>
 </section>
+
+<!-- dynamic collection code start -->
+<div class="container py-1025-40">
+  <div class="">{{ collection.description }}</div>
+</div>
+<!-- dynamic collection code end -->
 <style>
   {% if request.page_type == 'collection' %}
     @media screen and (max-width: 575px) {
