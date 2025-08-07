@@ -404,4 +404,7 @@ body .dmp_discount-form input {
       flex-wrap: wrap;
       gap: 10px;
   }
+  body .dmp_discount-form button {
+    width: 100% !important;
+  }
 }
