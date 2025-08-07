@@ -41,7 +41,7 @@
         "alignment": "center",
         "background_image": "shopify://shop_images/Frame_1000009792.png",
         "overlay_opacity": 0,
-        "height": "adapt",
+        "height": "based_on_content",
         "padding_top": 50,
         "padding_bottom": 50
       }
