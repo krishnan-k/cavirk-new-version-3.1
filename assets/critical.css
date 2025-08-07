@@ -3404,9 +3404,3 @@ label.likely-count-label {
     --col-width: 100% !important;
   }
 }
-@media (max-width: 479px) {
-  .dmp_discount-form{
-      flex-wrap: wrap;
-      gap: 10px;
-  }
-}

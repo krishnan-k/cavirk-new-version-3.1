@@ -399,3 +399,9 @@ body .dmp_discount-form input {
   background-color: #fff;
   pointer-events: none; 
 }
+@media (max-width: 479px) {
+  .dmp_discount-form{
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+}
