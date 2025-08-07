@@ -3367,6 +3367,10 @@ label.likely-count-label {
 .likely-wrapper{
   width: 125px !important;
 }
+.dmp_discount-form{
+    flex-wrap: wrap;
+    gap: 10px;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
