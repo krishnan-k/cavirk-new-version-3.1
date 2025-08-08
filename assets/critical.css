@@ -3367,6 +3367,9 @@ label.likely-count-label {
 .likely-wrapper{
   width: 125px !important;
 }
+.product-detail__custom-liquid >* {
+    font-family: var(--body-font) !important;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
