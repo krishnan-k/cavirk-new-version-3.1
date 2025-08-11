@@ -42,64 +42,48 @@
     "main": {
       "type": "main-list-collections",
       "blocks": {
-        "collection_GawBmm": {
+        "collection_7aXHL3": {
           "type": "collection",
           "settings": {
-            "collection": "mulberry-silk",
+            "collection": "muslin-cotton",
             "collection_title": ""
           }
         },
-        "collection_N8m4tg": {
+        "collection_KF78hX": {
           "type": "collection",
           "settings": {
-            "collection": "tussar-silk",
+            "collection": "bengal-handwoven-cotton",
             "collection_title": ""
           }
         },
-        "collection_ntkFtH": {
+        "collection_RFNyid": {
           "type": "collection",
           "settings": {
-            "collection": "bangalore-silk",
+            "collection": "gamcha",
             "collection_title": ""
           }
         },
-        "collection_HGqtp3": {
+        "collection_8kmwUB": {
           "type": "collection",
           "settings": {
-            "collection": "matka-silk",
+            "collection": "begampur-cotton",
             "collection_title": ""
           }
         },
-        "collection_xeQJ4a": {
+        "collection_aDKLR4": {
           "type": "collection",
           "settings": {
-            "collection": "modal-silk",
-            "collection_title": ""
-          }
-        },
-        "collection_63dpDA": {
-          "type": "collection",
-          "settings": {
-            "collection": "murshidabadi-silk",
-            "collection_title": ""
-          }
-        },
-        "collection_7eFG7r": {
-          "type": "collection",
-          "settings": {
-            "collection": "kanchivaram",
+            "collection": "dhonekhali-cotton",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm",
-        "collection_N8m4tg",
-        "collection_ntkFtH",
-        "collection_HGqtp3",
-        "collection_xeQJ4a",
-        "collection_63dpDA",
-        "collection_7eFG7r"
+        "collection_7aXHL3",
+        "collection_KF78hX",
+        "collection_RFNyid",
+        "collection_8kmwUB",
+        "collection_aDKLR4"
       ],
       "settings": {
         "section_width": "container",
