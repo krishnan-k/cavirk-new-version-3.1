@@ -45,13 +45,45 @@
         "collection_BQGLmR": {
           "type": "collection",
           "settings": {
-            "collection": "bridal-lehengas",
+            "collection": "pashmina-shawls-and-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_fpjqU3": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinnuari-shawls-and-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_HCAmbw": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-shawls-and-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_Ah4yLG": {
+          "type": "collection",
+          "settings": {
+            "collection": "duppattas",
+            "collection_title": ""
+          }
+        },
+        "collection_BHhQpd": {
+          "type": "collection",
+          "settings": {
+            "collection": "ajrakh-stole",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_BQGLmR"
+        "collection_BQGLmR",
+        "collection_fpjqU3",
+        "collection_HCAmbw",
+        "collection_Ah4yLG",
+        "collection_BHhQpd"
       ],
       "settings": {
         "section_width": "container",
