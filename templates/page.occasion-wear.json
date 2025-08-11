@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Silk",
+            "page_title": "Lehengas",
             "header_size": "default"
           }
         }
@@ -48,10 +48,26 @@
             "collection": "lehengas-collection",
             "collection_title": ""
           }
+        },
+        "collection_KnnppR": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaftans",
+            "collection_title": ""
+          }
+        },
+        "collection_B3ATNx": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
-        "collection_a4ead3"
+        "collection_a4ead3",
+        "collection_KnnppR",
+        "collection_B3ATNx"
       ],
       "settings": {
         "section_width": "container",
