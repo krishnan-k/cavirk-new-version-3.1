@@ -41,6 +41,18 @@
     },
     "main": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_BQGLmR": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-lehengas",
+            "collection_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_BQGLmR"
+      ],
       "settings": {
         "section_width": "container",
         "color_scheme": "default",
