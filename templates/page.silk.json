@@ -45,13 +45,61 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "kurta-sets",
+            "collection": "mulberry-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_N8m4tg": {
+          "type": "collection",
+          "settings": {
+            "collection": "tussar-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_ntkFtH": {
+          "type": "collection",
+          "settings": {
+            "collection": "bangalore-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_HGqtp3": {
+          "type": "collection",
+          "settings": {
+            "collection": "matka-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_xeQJ4a": {
+          "type": "collection",
+          "settings": {
+            "collection": "modal-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_63dpDA": {
+          "type": "collection",
+          "settings": {
+            "collection": "murshidabadi-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_7eFG7r": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm"
+        "collection_GawBmm",
+        "collection_N8m4tg",
+        "collection_ntkFtH",
+        "collection_HGqtp3",
+        "collection_xeQJ4a",
+        "collection_63dpDA",
+        "collection_7eFG7r"
       ],
       "settings": {
         "section_width": "container",
