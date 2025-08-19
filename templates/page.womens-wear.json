@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Women's wear",
+            "page_title": "Brass Statues",
             "header_size": "default"
           }
         }
@@ -45,117 +45,13 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "pattachitra-painting",
-            "collection_title": ""
-          }
-        },
-        "collection_jhjwB8": {
-          "type": "collection",
-          "settings": {
-            "collection": "madhubani-paintings-sarees",
-            "collection_title": ""
-          }
-        },
-        "collection_JYKQ9r": {
-          "type": "collection",
-          "settings": {
-            "collection": "kantha-saree",
-            "collection_title": ""
-          }
-        },
-        "collection_ezbkhP": {
-          "type": "collection",
-          "settings": {
-            "collection": "bridal-wear",
-            "collection_title": ""
-          }
-        },
-        "collection_bCzQMw": {
-          "type": "collection",
-          "settings": {
-            "collection": "dhakai",
-            "collection_title": ""
-          }
-        },
-        "collection_iJzVwn": {
-          "type": "collection",
-          "settings": {
-            "collection": "indo-western",
-            "collection_title": ""
-          }
-        },
-        "collection_CGTTY9": {
-          "type": "collection",
-          "settings": {
-            "collection": "bridal-lehengas",
-            "collection_title": ""
-          }
-        },
-        "collection_G84npm": {
-          "type": "collection",
-          "settings": {
-            "collection": "pre-draped-sarees-collection",
-            "collection_title": ""
-          }
-        },
-        "collection_RFcTBE": {
-          "type": "collection",
-          "settings": {
-            "collection": "ajrakh-craft",
-            "collection_title": ""
-          }
-        },
-        "collection_hjiwb7": {
-          "type": "collection",
-          "settings": {
-            "collection": "muslin-collection",
-            "collection_title": ""
-          }
-        },
-        "collection_CahQaQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "kaftans",
-            "collection_title": ""
-          }
-        },
-        "collection_R39AjE": {
-          "type": "collection",
-          "settings": {
-            "collection": "pashmina-shawls-and-stoles",
-            "collection_title": ""
-          }
-        },
-        "collection_6wmkBT": {
-          "type": "collection",
-          "settings": {
-            "collection": "kinnuari-shawls-and-stoles",
-            "collection_title": ""
-          }
-        },
-        "collection_yAKKCq": {
-          "type": "collection",
-          "settings": {
-            "collection": "cashmere-shawls-and-stoles",
+            "collection": "brass-and-metal-collection",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm",
-        "collection_jhjwB8",
-        "collection_JYKQ9r",
-        "collection_ezbkhP",
-        "collection_bCzQMw",
-        "collection_iJzVwn",
-        "collection_CGTTY9",
-        "collection_G84npm",
-        "collection_RFcTBE",
-        "collection_hjiwb7",
-        "collection_CahQaQ",
-        "collection_R39AjE",
-        "collection_6wmkBT",
-        "collection_yAKKCq"
+        "collection_GawBmm"
       ],
       "settings": {
         "section_width": "container",
@@ -163,14 +59,14 @@
         "type": "selected",
         "sort_collections": "alphabetical",
         "image_ratio": "portrait",
-        "show_product_count": false,
+        "show_product_count": true,
         "design": "default",
         "text_alignment": "center",
         "font_size": 16,
-        "items_to_show": 24,
+        "items_to_show": 8,
         "items_per_row": 4,
         "column_gap": 30,
-        "pagination": "default",
+        "pagination": "load_more_button",
         "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0

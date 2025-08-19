@@ -392,7 +392,7 @@
               class="level0{% if link.links.size > 0 %} menu-parent menu-parent__horizontal dropdown-menu{% else %} single{% endif %}"
               {{ block.shopify_attributes }}
             >
-              <menu-item class="relative static-1025 flex justify-between align-center border-bottom border-bottom-1025-0 header-color  px-15">
+              <menu-item class="relative static-1025 flex justify-between align-center border-bottom border-bottom-1025-0 header-color  px-10">
                 <a
                   class="{{ link.title }} {% if link.title =='Sell with us' %} btn-primary {% endif %} {% if link.links.size > 0 and section_st.redirect_to_link == false %}redirect-to-link {% endif %}no-underline py-10 relative lh-normal inline-flex min-h-45 z-1 align-center{% if theme_st.menu_font == 'heading_font' %} heading-style{% endif %}{% if uppercase_first %} uppercase{% endif %}"
                   href="{{ link.url }}"

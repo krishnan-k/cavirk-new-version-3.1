@@ -12,18 +12,46 @@
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
+        "slider_item_nJa9XY": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/CAVIRK-01-01-01.png",
+            "image_mobile": "shopify://shop_images/final-01-01.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
         "slider_item_YipJd4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/cavirk_banner_1.jpg",
-            "image_mobile": "shopify://shop_images/M1_png.jpg",
+            "image": "shopify://shop_images/collage_7-01-01-01-01-01-01-01.png",
+            "image_mobile": "shopify://shop_images/M11-01-01_1_-01.png",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeinup",
             "subheading": "",
-            "heading": "Weaving Heritage, Crafting Futures",
+            "heading": "One marketplace, countless stories",
             "description": "",
             "first_button_label": "shop now",
-            "first_button_link": "shopify://collections/bridal-wear",
+            "first_button_link": "shopify://collections",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
@@ -43,15 +71,15 @@
         "slider_item_iAiXpe": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/cavirk_banner_2_fe43a95c-8919-4674-bda8-c48e654d11c3.jpg",
-            "image_mobile": "shopify://shop_images/m2.jpg",
+            "image": "shopify://shop_images/Untitled-1-01.png",
+            "image_mobile": "shopify://shop_images/M2-01-01-01-01-01-01-01_1_-01.png",
             "overlay_opacity": 0,
             "slider_effect": "effect_fadeindown",
             "subheading": "",
-            "heading": "Timeless Elegance,<br>Handcrafted for You",
+            "heading": "The Curated Marketplace for India’s Finest Craft",
             "description": "",
             "first_button_label": "shop now",
-            "first_button_link": "shopify://collections/lehengas-collection",
+            "first_button_link": "shopify://collections/madhubani-painting",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
@@ -65,6 +93,62 @@
             "show_content_background": false,
             "content_background": "#e0d1cc",
             "content_box_opacity": 23,
+            "content_alignment_mobile": "center"
+          }
+        },
+        "slider_item_gxX3ak": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/collage_7-01-01-01-01-01-01-01-01.png",
+            "image_mobile": "shopify://shop_images/ss-01-01-01-01-01-01-01-01-01.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "Curated Collection from Multi-Brands",
+            "description": "",
+            "first_button_label": "shop now",
+            "first_button_link": "shopify://collections/all-product",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "center",
+            "content_position": "bottom-center",
+            "content_width": "full_width",
+            "content_max_width": 40,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#e0d1cc",
+            "content_box_opacity": 40,
+            "content_alignment_mobile": "center"
+          }
+        },
+        "slider_item_AyhUnU": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/jewellery-01-01-01-01-01-01-01-01.png",
+            "image_mobile": "shopify://shop_images/jm-01-01-01-01.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "Handcrafted Excellence, Crafted for You",
+            "description": "",
+            "first_button_label": "shop now",
+            "first_button_link": "shopify://pages/jewellery",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "center",
+            "content_position": "middle-right",
+            "content_width": "full_width",
+            "content_max_width": 40,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
+            "show_content_background": false,
+            "content_background": "#e0d1cc",
+            "content_box_opacity": 40,
             "content_alignment_mobile": "center"
           }
         },
@@ -94,76 +178,21 @@
             "content_box_opacity": 100,
             "content_alignment_mobile": "center"
           }
-        },
-        "slider_item_gxX3ak": {
-          "type": "slider_item",
-          "settings": {
-            "image": "shopify://shop_images/b4.jpg",
-            "image_mobile": "shopify://shop_images/m4.jpg",
-            "overlay_opacity": 0,
-            "slider_effect": "effect_fadeindown",
-            "subheading": "",
-            "heading": "Timeless Pieces for<br> Inspired Spaces",
-            "description": "",
-            "first_button_label": "shop now",
-            "first_button_link": "shopify://collections/home-and-living",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "center",
-            "content_position": "bottom-center",
-            "content_width": "full_width",
-            "content_max_width": 40,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
-            "show_content_background": false,
-            "content_background": "#e0d1cc",
-            "content_box_opacity": 40,
-            "content_alignment_mobile": "center"
-          }
-        },
-        "slider_item_AyhUnU": {
-          "type": "slider_item",
-          "settings": {
-            "image": "shopify://shop_images/banner_5.jpg",
-            "image_mobile": "shopify://shop_images/M5_png.jpg",
-            "overlay_opacity": 0,
-            "slider_effect": "effect_fadeindown",
-            "subheading": "",
-            "heading": "Effortless Style, <br>Redefined",
-            "description": "",
-            "first_button_label": "shop now",
-            "first_button_link": "shopify://collections/kurta-sets",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "center",
-            "content_position": "bottom-center",
-            "content_width": "full_width",
-            "content_max_width": 40,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
-            "show_content_background": false,
-            "content_background": "#e0d1cc",
-            "content_box_opacity": 40,
-            "content_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
+        "slider_item_nJa9XY",
         "slider_item_YipJd4",
         "slider_item_iAiXpe",
-        "slider_item_jiLA39",
         "slider_item_gxX3ak",
-        "slider_item_AyhUnU"
+        "slider_item_AyhUnU",
+        "slider_item_jiLA39"
       ],
       "settings": {
         "section_width": "full_width",
-        "slide_height": "custom",
-        "desktop_height": 500,
-        "mobile_height": 450,
+        "slide_height": "adapt",
+        "desktop_height": 580,
+        "mobile_height": 500,
         "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
         "subheading_font_size": 16,
         "subheading_font_weight": "subheading_weight",
@@ -179,7 +208,7 @@
         "show_arrow": false,
         "carousel_pagination": "show_dots",
         "pagination_position": "right",
-        "autoplay": true,
+        "autoplay": false,
         "autorotate_speed": 5,
         "content_below_image": false,
         "padding_top": 0,
@@ -296,7 +325,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify://shop_images/women-wear.gif",
+            "collection_image": "shopify://shop_images/women-wear-1.gif",
             "collection_title": "Women's wear",
             "first_button_link": "shopify://pages/womens-wear"
           }
@@ -305,18 +334,54 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify://shop_images/jewellery.gif",
-            "collection_title": "Accessories",
-            "first_button_link": "shopify://pages/accessories"
+            "collection_image": "shopify://shop_images/potteryy.gif",
+            "collection_title": "Pottery",
+            "first_button_link": "shopify://pages/pottery"
           }
         },
         "collection_ctTBpd": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify://shop_images/home-decoor.gif",
-            "collection_title": "Home and Living",
-            "first_button_link": "shopify://pages/home-and-living"
+            "collection_image": "shopify://shop_images/Brass-Statues.gif",
+            "collection_title": "Brass Statues",
+            "first_button_link": "shopify://pages/brass-statues"
+          }
+        },
+        "collection_eR4Tj7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/j11.gif",
+            "collection_title": "Jewellery",
+            "first_button_link": "shopify://pages/jewellery"
+          }
+        },
+        "collection_TdHk3V": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/painting.gif",
+            "collection_title": "Paintings",
+            "first_button_link": "shopify://pages/paintings"
+          }
+        },
+        "collection_Ww7i9H": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Sarees.gif",
+            "collection_title": "Sarees",
+            "first_button_link": "shopify://pages/sarees"
+          }
+        },
+        "collection_TemkFR": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/leather_8f05069b-a2f0-452f-a98e-7964d42a54aa.gif",
+            "collection_title": "Leather Products",
+            "first_button_link": "shopify://pages/leather-products"
           }
         }
       },
@@ -324,7 +389,11 @@
         "collection_r7aTxN",
         "collection_FUAzK4",
         "collection_kUA3MH",
-        "collection_ctTBpd"
+        "collection_ctTBpd",
+        "collection_eR4Tj7",
+        "collection_TdHk3V",
+        "collection_Ww7i9H",
+        "collection_TemkFR"
       ],
       "settings": {
         "section_width": "container",
@@ -467,7 +536,7 @@
         "autoplay": false,
         "autorotate_speed": 5,
         "reveal": false,
-        "items_per_row_mobile": 1,
+        "items_per_row_mobile": 1.5,
         "padding_top": 60,
         "padding_bottom": 0,
         "reset_spacing": false
