@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Brass Statues",
+            "page_title": "women's wear",
             "header_size": "default"
           }
         }
@@ -45,13 +45,109 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "brass-and-metal-collection",
+            "collection": "cashmere-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_cEb7bf": {
+          "type": "collection",
+          "settings": {
+            "collection": "ajrakh-craft",
+            "collection_title": ""
+          }
+        },
+        "collection_PyfPYT": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-wear",
+            "collection_title": ""
+          }
+        },
+        "collection_jdWWrx": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-fine-wool-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_ycbpkV": {
+          "type": "collection",
+          "settings": {
+            "collection": "cavirk-curates",
+            "collection_title": ""
+          }
+        },
+        "collection_7rUk4e": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhakai",
+            "collection_title": ""
+          }
+        },
+        "collection_WaTgbj": {
+          "type": "collection",
+          "settings": {
+            "collection": "fine-wool-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_xqLac8": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western",
+            "collection_title": ""
+          }
+        },
+        "collection_pG66ng": {
+          "type": "collection",
+          "settings": {
+            "collection": "gen-z-meets-heritage",
+            "collection_title": ""
+          }
+        },
+        "collection_7DyzbD": {
+          "type": "collection",
+          "settings": {
+            "collection": "jamdani",
+            "collection_title": ""
+          }
+        },
+        "collection_NjYDGg": {
+          "type": "collection",
+          "settings": {
+            "collection": "kantha-saree",
+            "collection_title": ""
+          }
+        },
+        "collection_XPLYKX": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinnauri-shawls",
+            "collection_title": ""
+          }
+        },
+        "collection_cPMY4i": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinnauri-stoles",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm"
+        "collection_GawBmm",
+        "collection_cEb7bf",
+        "collection_PyfPYT",
+        "collection_jdWWrx",
+        "collection_ycbpkV",
+        "collection_7rUk4e",
+        "collection_WaTgbj",
+        "collection_xqLac8",
+        "collection_pG66ng",
+        "collection_7DyzbD",
+        "collection_NjYDGg",
+        "collection_XPLYKX",
+        "collection_cPMY4i"
       ],
       "settings": {
         "section_width": "container",
@@ -66,7 +162,7 @@
         "items_to_show": 8,
         "items_per_row": 4,
         "column_gap": 30,
-        "pagination": "load_more_button",
+        "pagination": "default",
         "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0
