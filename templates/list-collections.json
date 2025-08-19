@@ -83,7 +83,7 @@
       "settings": {
         "section_width": "container",
         "color_scheme": "default",
-        "type": "selected",
+        "type": "all",
         "sort_collections": "alphabetical",
         "image_ratio": "portrait",
         "show_product_count": true,
@@ -93,7 +93,7 @@
         "items_to_show": 8,
         "items_per_row": 4,
         "column_gap": 30,
-        "pagination": "load_more_button",
+        "pagination": "infinit_scrolling",
         "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0
