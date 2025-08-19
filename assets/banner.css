@@ -196,6 +196,13 @@ video-section.h-full video {
     grid-row-start: 1;
     grid-row-end: 4;
   }
+  .swiper.slideshow .swiper-slide .banner__media::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, #00000021 -100%, #fff0);
+    z-index: 1;
+  }
 }
 @media screen and (min-width:576px) and (max-width:1024.993px) {
   .banner-packery{

@@ -3175,6 +3175,21 @@ nav.mobile {
     margin: auto;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1540px){
+  .navigation__menu-content ul.horizontal-list li.menu-parent menu-item{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .custom-scrollbar ul.subchildmenu li menu-item {
+    padding-left: 0 !important;
+  }
+  .header-color > a {
+    font-size: 13px;
+  }
+  .fluid_container{
+    width: 100%;
+  }
+}
 .header_search-mega .search__input{
   --max-width: 100% !important; 
   background-color: var(--color-background);

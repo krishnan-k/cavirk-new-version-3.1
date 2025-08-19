@@ -255,7 +255,11 @@
     transform: scale(1);
   }
 }
-
+@media screen and (max-width: 767px){
+  .slideshow .swiper-slide .middle-right{
+    align-items: flex-end;
+  }
+}
 
 
 

@@ -331,7 +331,7 @@
   }
   .dropdown-menu .sub-children-menu {
     left: 100%;
-    top: -1rem;
+    top: -18px;
   }
   .dropdown-menu .level-1 open-children-toggle {
     position: relative;
