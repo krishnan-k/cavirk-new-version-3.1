@@ -35,8 +35,8 @@ blockquote .light-dark-grey {
   margin-right: auto;
 }
 .article-template__content p {
-  margin-block-start: clamp(2rem, 2vw, 2.6rem);
-  margin-bottom: clamp(2rem, 2vw, 2.6rem);
+  margin-block-start: clamp(1rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2vw, 1rem);
 }
 .article_meta {
   --dot-width: 4px;
