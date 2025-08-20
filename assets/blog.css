@@ -42,9 +42,6 @@ blockquote .light-dark-grey {
   --dot-width: 4px;
   --dot-space: 0 10px;
 }
-.blog-post-related .blog-posts-title {
-  font-size: 1.6rem;
-}
 .article-template__hero-small {
   height: clamp(35rem, 30vw, 50rem);
 }
