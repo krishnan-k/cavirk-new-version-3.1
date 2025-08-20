@@ -116,7 +116,7 @@ body {
   --size: clamp(
     3.6rem,
     calc(3.6rem + (40 - 36) * var(--responsive-rate)),
-    4rem
+    3.5rem
   );
 }
 :where(h2, .h2) {
