@@ -42,72 +42,64 @@
     "main": {
       "type": "main-list-collections",
       "blocks": {
-        "collection_GawBmm": {
-          "type": "collection",
-          "settings": {
-            "collection": "kantha-saree",
-            "collection_title": ""
-          }
-        },
-        "collection_MQcBpG": {
-          "type": "collection",
-          "settings": {
-            "collection": "madhubani-saree",
-            "collection_title": ""
-          }
-        },
-        "collection_DkAgwQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "pattachitra-saree",
-            "collection_title": ""
-          }
-        },
-        "collection_G3TkjL": {
-          "type": "collection",
-          "settings": {
-            "collection": "sarees",
-            "collection_title": ""
-          }
-        },
-        "collection_xELDRe": {
-          "type": "collection",
-          "settings": {
-            "collection": "bangalore-silk",
-            "collection_title": ""
-          }
-        },
-        "collection_8acYGT": {
+        "collection_YHTFgd": {
           "type": "collection",
           "settings": {
             "collection": "mulberry-silk",
             "collection_title": ""
           }
         },
-        "collection_yLB8k4": {
+        "collection_Q4Rpbh": {
           "type": "collection",
           "settings": {
-            "collection": "pre-draped-sarees-collection",
+            "collection": "tussar-silk",
             "collection_title": ""
           }
         },
-        "collection_9P3yAk": {
+        "collection_iQiww9": {
+          "type": "collection",
+          "settings": {
+            "collection": "bangalore-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_FgnVjh": {
           "type": "collection",
           "settings": {
             "collection": "matka-silk",
             "collection_title": ""
           }
+        },
+        "collection_3V7dXm": {
+          "type": "collection",
+          "settings": {
+            "collection": "modal-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_pUKr7d": {
+          "type": "collection",
+          "settings": {
+            "collection": "murshidabadi-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_hYmbp3": {
+          "type": "collection",
+          "settings": {
+            "collection": "kanchivaram",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
-        "collection_GawBmm",
-        "collection_MQcBpG",
-        "collection_DkAgwQ",
-        "collection_G3TkjL",
-        "collection_xELDRe",
-        "collection_8acYGT",
-        "collection_yLB8k4",
-        "collection_9P3yAk"
+        "collection_YHTFgd",
+        "collection_Q4Rpbh",
+        "collection_iQiww9",
+        "collection_FgnVjh",
+        "collection_3V7dXm",
+        "collection_pUKr7d",
+        "collection_hYmbp3"
       ],
       "settings": {
         "section_width": "container",
