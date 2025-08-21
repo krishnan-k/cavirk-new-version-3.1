@@ -45,13 +45,22 @@
         "collection_GawBmm": {
           "type": "collection",
           "settings": {
-            "collection": "leather-products",
+            "collection": "laptop-bags",
+            "collection_image": "shopify://shop_images/laptop_bags.jpg",
+            "collection_title": ""
+          }
+        },
+        "collection_Fjw9jP": {
+          "type": "collection",
+          "settings": {
+            "collection": "ladies-purses",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm"
+        "collection_GawBmm",
+        "collection_Fjw9jP"
       ],
       "settings": {
         "section_width": "container",

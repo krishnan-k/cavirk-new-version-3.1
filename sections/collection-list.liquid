@@ -50,6 +50,15 @@
     }
   {%- endstyle -%}
 {% endif %}
+{% if items_per_row > 5 %}
+  {% style %}
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    .custom_grid_row:is(.grid-cols, .flex-cols){
+      --col: calc(var(--col-desktop) - 2);
+    }
+  }
+  {% endstyle %}
+{% endif %}
 <div
   class="section{% if section_st.padding_top < 30 %} pt-min{% endif %} {% if section_st.background_image != blank %} bg-transparent relative{% endif %} {% if section_st.padding_bottom < 30 %} pb-min{% endif %} sec__collection-list color-{{ color_scheme }} gradient{{ reset_spacing }}{% if reveal %} overflow-hidden{% endif %}"
   style="{{ style | strip | strip_newlines }}"

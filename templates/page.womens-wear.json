@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "women's wear",
+            "page_title": "Women's wear",
             "header_size": "default"
           }
         }
@@ -42,112 +42,248 @@
     "main": {
       "type": "main-list-collections",
       "blocks": {
-        "collection_GawBmm": {
+        "collection_CG6gtF": {
           "type": "collection",
           "settings": {
-            "collection": "cashmere-shawl",
+            "collection": "pattachitra-painting",
             "collection_title": ""
           }
         },
-        "collection_cEb7bf": {
+        "collection_rU7kyf": {
           "type": "collection",
           "settings": {
-            "collection": "ajrakh-craft",
+            "collection": "madhubani-paintings-sarees",
             "collection_title": ""
           }
         },
-        "collection_PyfPYT": {
-          "type": "collection",
-          "settings": {
-            "collection": "bridal-wear",
-            "collection_title": ""
-          }
-        },
-        "collection_jdWWrx": {
-          "type": "collection",
-          "settings": {
-            "collection": "cashmere-fine-wool-stoles",
-            "collection_title": ""
-          }
-        },
-        "collection_ycbpkV": {
-          "type": "collection",
-          "settings": {
-            "collection": "cavirk-curates",
-            "collection_title": ""
-          }
-        },
-        "collection_7rUk4e": {
-          "type": "collection",
-          "settings": {
-            "collection": "dhakai",
-            "collection_title": ""
-          }
-        },
-        "collection_WaTgbj": {
-          "type": "collection",
-          "settings": {
-            "collection": "fine-wool-stoles",
-            "collection_title": ""
-          }
-        },
-        "collection_xqLac8": {
-          "type": "collection",
-          "settings": {
-            "collection": "indo-western",
-            "collection_title": ""
-          }
-        },
-        "collection_pG66ng": {
-          "type": "collection",
-          "settings": {
-            "collection": "gen-z-meets-heritage",
-            "collection_title": ""
-          }
-        },
-        "collection_7DyzbD": {
-          "type": "collection",
-          "settings": {
-            "collection": "jamdani",
-            "collection_title": ""
-          }
-        },
-        "collection_NjYDGg": {
+        "collection_UeMRgW": {
           "type": "collection",
           "settings": {
             "collection": "kantha-saree",
             "collection_title": ""
           }
         },
-        "collection_XPLYKX": {
+        "collection_FefQHk": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-lehengas",
+            "collection_title": ""
+          }
+        },
+        "collection_iKDNJh": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhakai",
+            "collection_title": ""
+          }
+        },
+        "collection_e8UyJJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western",
+            "collection_title": ""
+          }
+        },
+        "collection_iMFCbt": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-wear",
+            "collection_title": ""
+          }
+        },
+        "collection_8ENErK": {
+          "type": "collection",
+          "settings": {
+            "collection": "pre-draped-sarees-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_GU9EBr": {
+          "type": "collection",
+          "settings": {
+            "collection": "ajrakh-craft",
+            "collection_title": ""
+          }
+        },
+        "collection_azQ8ab": {
+          "type": "collection",
+          "settings": {
+            "collection": "muslin-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_4e44gm": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaftans",
+            "collection_title": ""
+          }
+        },
+        "collection_6PAbbY": {
+          "type": "collection",
+          "settings": {
+            "collection": "pashmina-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_pYrQhk": {
           "type": "collection",
           "settings": {
             "collection": "kinnauri-shawls",
             "collection_title": ""
           }
         },
-        "collection_cPMY4i": {
+        "collection_nkCQKb": {
           "type": "collection",
           "settings": {
-            "collection": "kinnauri-stoles",
+            "collection": "ajrakh-stole",
+            "collection_title": ""
+          }
+        },
+        "collection_jziEWz": {
+          "type": "collection",
+          "settings": {
+            "collection": "bangalore-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_6FzdyN": {
+          "type": "collection",
+          "settings": {
+            "collection": "begampur-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_TJprDn": {
+          "type": "collection",
+          "settings": {
+            "collection": "bengal-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_j7LJFt": {
+          "type": "collection",
+          "settings": {
+            "collection": "bengal-handwoven-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_nd6j8t": {
+          "type": "collection",
+          "settings": {
+            "collection": "blouse",
+            "collection_title": ""
+          }
+        },
+        "collection_MgV9Dr": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-fine-wool-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_hawV66": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_qFt3ib": {
+          "type": "collection",
+          "settings": {
+            "collection": "cavirk-curates",
+            "collection_title": ""
+          }
+        },
+        "collection_WfwYG4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhonekhali-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_KQUDxy": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "collection_title": ""
+          }
+        },
+        "collection_BK3nNB": {
+          "type": "collection",
+          "settings": {
+            "collection": "duppattas",
+            "collection_title": ""
+          }
+        },
+        "collection_bcaX6d": {
+          "type": "collection",
+          "settings": {
+            "collection": "fine-wool-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_EfeHnK": {
+          "type": "collection",
+          "settings": {
+            "collection": "madhubani-saree",
+            "collection_title": ""
+          }
+        },
+        "collection_qFUPV9": {
+          "type": "collection",
+          "settings": {
+            "collection": "pashmina-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_3bqY3U": {
+          "type": "collection",
+          "settings": {
+            "collection": "gen-z-meets-heritage",
+            "collection_title": ""
+          }
+        },
+        "collection_KM8bxm": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_GawBmm",
-        "collection_cEb7bf",
-        "collection_PyfPYT",
-        "collection_jdWWrx",
-        "collection_ycbpkV",
-        "collection_7rUk4e",
-        "collection_WaTgbj",
-        "collection_xqLac8",
-        "collection_pG66ng",
-        "collection_7DyzbD",
-        "collection_NjYDGg",
-        "collection_XPLYKX",
-        "collection_cPMY4i"
+        "collection_CG6gtF",
+        "collection_rU7kyf",
+        "collection_UeMRgW",
+        "collection_FefQHk",
+        "collection_iKDNJh",
+        "collection_e8UyJJ",
+        "collection_iMFCbt",
+        "collection_8ENErK",
+        "collection_GU9EBr",
+        "collection_azQ8ab",
+        "collection_4e44gm",
+        "collection_6PAbbY",
+        "collection_pYrQhk",
+        "collection_nkCQKb",
+        "collection_jziEWz",
+        "collection_6FzdyN",
+        "collection_TJprDn",
+        "collection_j7LJFt",
+        "collection_nd6j8t",
+        "collection_MgV9Dr",
+        "collection_hawV66",
+        "collection_qFt3ib",
+        "collection_WfwYG4",
+        "collection_KQUDxy",
+        "collection_BK3nNB",
+        "collection_bcaX6d",
+        "collection_EfeHnK",
+        "collection_qFUPV9",
+        "collection_3bqY3U",
+        "collection_KM8bxm"
       ],
       "settings": {
         "section_width": "container",
@@ -162,7 +298,7 @@
         "items_to_show": 24,
         "items_per_row": 4,
         "column_gap": 30,
-        "pagination": "default",
+        "pagination": "infinit_scrolling",
         "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0

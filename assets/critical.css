@@ -120,7 +120,7 @@ body {
   );
 }
 :where(h2, .h2) {
-  --size: clamp(3rem, calc(3rem + (36 - 30) * var(--responsive-rate)), 3.6rem);
+  --size: clamp(2.5rem, calc(2.5rem + (36 - 30) * var(--responsive-rate)), 3.6rem);
 }
 :where(h3, .h3) {
   --size: clamp(
@@ -3387,6 +3387,9 @@ label.likely-count-label {
 }
 .product-detail__custom-liquid >* {
     font-family: var(--body-font) !important;
+}
+.collection-sidebar .filter-blocks .filter-item:nth-last-child(2) .collapsible-content ul.items li:nth-child(n+7) {
+    display: none;
 }
 @media (min-width: 479px) {
   .banner__inner.grid-1,

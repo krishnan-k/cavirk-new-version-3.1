@@ -15,10 +15,10 @@
         "slider_item_nJa9XY": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/CAVIRK-01-01-01.png",
-            "image_mobile": "shopify://shop_images/final-01-01.png",
+            "image": "shopify://shop_images/final_banner-01-01.png",
+            "image_mobile": "shopify://shop_images/fff111-01-01-01.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_fadeindown",
+            "slider_effect": "effect_zoomout",
             "subheading": "",
             "heading": "",
             "description": "",
@@ -29,7 +29,7 @@
             "second_button_link": "",
             "second_button_style": false,
             "content_alignment": "left",
-            "content_position": "bottom-left",
+            "content_position": "middle-center",
             "content_width": "container",
             "content_max_width": 100,
             "content_padding_block": 60,
@@ -37,18 +37,18 @@
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
+            "content_alignment_mobile": "center"
           }
         },
         "slider_item_YipJd4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/collage_7-01-01-01-01-01-01-01.png",
-            "image_mobile": "shopify://shop_images/M11-01-01_1_-01.png",
+            "image": "shopify://shop_images/final_main_banner-01-01.png",
+            "image_mobile": "shopify://shop_images/mobile_final.jpg",
             "overlay_opacity": 0,
-            "slider_effect": "effect_fadeinup",
+            "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "One marketplace, countless stories",
+            "heading": "",
             "description": "",
             "first_button_label": "shop now",
             "first_button_link": "shopify://collections",
@@ -70,13 +70,14 @@
         },
         "slider_item_iAiXpe": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Untitled-1-01.png",
-            "image_mobile": "shopify://shop_images/M2-01-01-01-01-01-01-01_1_-01.png",
+            "image": "shopify://shop_images/111_1c.png",
+            "image_mobile": "shopify://shop_images/M2-01-01-01-01-01-01-01_1_-01_c3ca246f-d8f1-425f-81b9-15676980f867.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_fadeindown",
+            "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "The Curated Marketplace for India’s Finest Craft",
+            "heading": "Cavirk: Handcrafted Excellence, Crafted for You.",
             "description": "",
             "first_button_label": "shop now",
             "first_button_link": "shopify://collections/madhubani-painting",
@@ -98,13 +99,14 @@
         },
         "slider_item_gxX3ak": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/collage_7-01-01-01-01-01-01-01-01.png",
             "image_mobile": "shopify://shop_images/ss-01-01-01-01-01-01-01-01-01.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_fadeindown",
+            "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "Curated Collection from Multi-Brands",
+            "heading": "Cavirk — The Curated Marketplace for India’s Finest Craft",
             "description": "",
             "first_button_label": "shop now",
             "first_button_link": "shopify://collections/all-product",
@@ -126,13 +128,14 @@
         },
         "slider_item_AyhUnU": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/jewellery-01-01-01-01-01-01-01-01.png",
             "image_mobile": "shopify://shop_images/jm-01-01-01-01.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_fadeindown",
+            "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "Handcrafted Excellence, Crafted for You",
+            "heading": "One Marketplace, Endless Choices",
             "description": "",
             "first_button_label": "shop now",
             "first_button_link": "shopify://pages/jewellery",
@@ -197,7 +200,7 @@
         "subheading_font_size": 16,
         "subheading_font_weight": "subheading_weight",
         "subheading_spacing_bottom": 0,
-        "heading_font_size": 45,
+        "heading_font_size": 38,
         "heading_font_weight": "heading_weight",
         "heading_uppercase": false,
         "heading_spacing_bottom": 20,
@@ -208,9 +211,21 @@
         "show_arrow": false,
         "carousel_pagination": "show_dots",
         "pagination_position": "right",
-        "autoplay": false,
+        "autoplay": true,
         "autorotate_speed": 5,
         "content_below_image": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "custom_html_F4d7pD": {
+      "type": "custom-html",
+      "name": "t:sections.html_custom.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "html_custom": "<div class=\"text-center py-10 px-15\" style=\"\"><h2 class=\"section__header-heading heading-letter-spacing  mt-0  mb-0\">A Curated Marketplace for Authentic, Affordable, <br>  and Handcrafted Excellence from across India</h2></div>",
         "padding_top": 0,
         "padding_bottom": 0,
         "reset_spacing": false
@@ -303,9 +318,9 @@
         "autoplay": false,
         "autorotate_speed": 5,
         "reveal": false,
-        "items_per_row_mobile": 3,
-        "padding_top": 30,
-        "padding_bottom": 0,
+        "items_per_row_mobile": 2.5,
+        "padding_top": 0,
+        "padding_bottom": 10,
         "reset_spacing": false
       }
     },
@@ -317,25 +332,61 @@
           "settings": {
             "collection": "",
             "collection_image": "shopify://shop_images/mens-wear.gif",
-            "collection_title": "Men's Wear",
+            "collection_title": "Kurta Sets",
             "first_button_link": "shopify://pages/mens-wear"
           }
         },
-        "collection_FUAzK4": {
+        "collection_Ww7i9H": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify://shop_images/women-wear-1.gif",
-            "collection_title": "Women's wear",
-            "first_button_link": "shopify://pages/womens-wear"
+            "collection_image": "shopify://shop_images/Sarees.gif",
+            "collection_title": "Sarees",
+            "first_button_link": "shopify://pages/sarees"
           }
         },
-        "collection_kUA3MH": {
+        "collection_KEzEtT": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Indo-western.gif",
+            "collection_title": "Indo Western Wear",
+            "first_button_link": "shopify://pages/indo-western"
+          }
+        },
+        "collection_r9PFjD": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Lehengas.gif",
+            "collection_title": "Lehengas",
+            "first_button_link": "shopify://pages/lehengas"
+          }
+        },
+        "collection_QaJByq": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Dresses.gif",
+            "collection_title": "Dresses",
+            "first_button_link": "shopify://pages/dresses"
+          }
+        },
+        "collection_xx63QR": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Stoles-and-Shawls.gif",
+            "collection_title": "Stoles and Shawls",
+            "first_button_link": "shopify://pages/stoles-and-shawls"
+          }
+        },
+        "collection_Fbm9Cz": {
           "type": "collection",
           "settings": {
             "collection": "",
             "collection_image": "shopify://shop_images/potteryy.gif",
-            "collection_title": "Pottery",
+            "collection_title": "Studio Pottery",
             "first_button_link": "shopify://pages/pottery"
           }
         },
@@ -348,15 +399,6 @@
             "first_button_link": "shopify://pages/brass-statues"
           }
         },
-        "collection_eR4Tj7": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/j11.gif",
-            "collection_title": "Jewellery",
-            "first_button_link": "shopify://pages/jewellery"
-          }
-        },
         "collection_TdHk3V": {
           "type": "collection",
           "settings": {
@@ -366,13 +408,13 @@
             "first_button_link": "shopify://pages/paintings"
           }
         },
-        "collection_Ww7i9H": {
+        "collection_yxXfwB": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify://shop_images/Sarees.gif",
-            "collection_title": "Sarees",
-            "first_button_link": "shopify://pages/sarees"
+            "collection_image": "shopify://shop_images/Pots-and-Planters.gif",
+            "collection_title": "Pots and Planters",
+            "first_button_link": "shopify://pages/pots-and-planters"
           }
         },
         "collection_TemkFR": {
@@ -383,20 +425,33 @@
             "collection_title": "Leather Products",
             "first_button_link": "shopify://pages/leather-products"
           }
+        },
+        "collection_eR4Tj7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/j11.gif",
+            "collection_title": "Jewellery",
+            "first_button_link": "shopify://pages/jewellery"
+          }
         }
       },
       "block_order": [
         "collection_r7aTxN",
-        "collection_FUAzK4",
-        "collection_kUA3MH",
-        "collection_ctTBpd",
-        "collection_eR4Tj7",
-        "collection_TdHk3V",
         "collection_Ww7i9H",
-        "collection_TemkFR"
+        "collection_KEzEtT",
+        "collection_r9PFjD",
+        "collection_QaJByq",
+        "collection_xx63QR",
+        "collection_Fbm9Cz",
+        "collection_ctTBpd",
+        "collection_TdHk3V",
+        "collection_yxXfwB",
+        "collection_TemkFR",
+        "collection_eR4Tj7"
       ],
       "settings": {
-        "section_width": "container",
+        "section_width": "fluid_container",
         "color_scheme": "scheme-3d10de96-a479-49bd-819c-e044746b4f3e",
         "background_image": "shopify://shop_images/bg.png",
         "heading": "Shop by Category",
@@ -407,13 +462,13 @@
         "display_mode": "grid",
         "image_ratio": "adapt",
         "custom_ratio": "",
-        "items_per_row": 4,
+        "items_per_row": 6,
         "column_gap": 20,
         "collection_information_position": "overlay_image",
-        "design": "morden",
-        "text_alignment": "left",
+        "design": "default",
+        "text_alignment": "center",
         "show_product_count": false,
-        "show_icon": true,
+        "show_icon": false,
         "show_description": false,
         "font_size": 16,
         "font_weight": "heading_weight",
@@ -685,6 +740,7 @@
   },
   "order": [
     "slideshow_8KKtNU",
+    "custom_html_F4d7pD",
     "collection_list_VmEYkJ",
     "collection_list_mrVidg",
     "divider_yjcjBV",

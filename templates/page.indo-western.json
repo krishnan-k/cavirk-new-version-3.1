@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Indo western",
+            "page_title": "Indo Western Wear",
             "header_size": "default"
           }
         }
@@ -49,17 +49,9 @@
             "collection_title": ""
           }
         },
-        "collection_47XfiB": {
-          "type": "collection",
-          "settings": {
-            "collection": "indo-western-dresses",
-            "collection_title": ""
-          }
-        }
       },
       "block_order": [
         "collection_GawBmm",
-        "collection_47XfiB"
       ],
       "settings": {
         "section_width": "container",
