@@ -33,7 +33,7 @@
     "heading_font_scale": 100,
     "heading_font_weight": 400,
     "subheading_font_weight": 400,
-    "heading_text_transform": "capitalize",
+    "heading_text_transform": "unset",
     "heading_letter_spacing": "negative",
     "menu_font": "body_font",
     "button_font": "body_font",
