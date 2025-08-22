@@ -403,7 +403,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify://shop_images/painting.gif",
+            "collection_image": "shopify://shop_images/paintaing.gif",
             "collection_title": "Paintings",
             "first_button_link": "shopify://pages/paintings"
           }
