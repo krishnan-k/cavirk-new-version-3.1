@@ -366,10 +366,10 @@
         "collection_QaJByq": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "dresses",
             "collection_image": "shopify://shop_images/Dresses.gif",
             "collection_title": "Dresses",
-            "first_button_link": "shopify://pages/dresses"
+            "first_button_link": ""
           }
         },
         "collection_xx63QR": {
