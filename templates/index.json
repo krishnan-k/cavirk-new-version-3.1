@@ -330,10 +330,10 @@
         "collection_r7aTxN": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "kurta-sets",
             "collection_image": "shopify://shop_images/mens-wear.gif",
             "collection_title": "Kurta Sets",
-            "first_button_link": "shopify://pages/mens-wear"
+            "first_button_link": ""
           }
         },
         "collection_Ww7i9H": {
