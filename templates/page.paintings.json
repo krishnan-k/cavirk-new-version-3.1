@@ -51,6 +51,7 @@
         },
         "collection_3KeEjE": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "manish-thakur",
             "collection_title": ""
