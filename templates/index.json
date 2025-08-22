@@ -348,10 +348,10 @@
         "collection_KEzEtT": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "indo-western",
             "collection_image": "shopify://shop_images/Indo-western.gif",
             "collection_title": "Indo Western Wear",
-            "first_button_link": "shopify://pages/indo-western"
+            "first_button_link": ""
           }
         },
         "collection_r9PFjD": {
