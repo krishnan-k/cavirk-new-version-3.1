@@ -90,6 +90,41 @@
             "collection": "kanchivaram",
             "collection_title": ""
           }
+        },
+        "collection_a4WcVe": {
+          "type": "collection",
+          "settings": {
+            "collection": "muslin-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_x7qdKt": {
+          "type": "collection",
+          "settings": {
+            "collection": "bengal-handwoven-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_MiytzG": {
+          "type": "collection",
+          "settings": {
+            "collection": "gamcha",
+            "collection_title": ""
+          }
+        },
+        "collection_yb6PNV": {
+          "type": "collection",
+          "settings": {
+            "collection": "begampur-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_DLNxH8": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhonekhali-cotton",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
@@ -99,7 +134,12 @@
         "collection_FgnVjh",
         "collection_3V7dXm",
         "collection_pUKr7d",
-        "collection_hYmbp3"
+        "collection_hYmbp3",
+        "collection_a4WcVe",
+        "collection_x7qdKt",
+        "collection_MiytzG",
+        "collection_yb6PNV",
+        "collection_DLNxH8"
       ],
       "settings": {
         "section_width": "container",
