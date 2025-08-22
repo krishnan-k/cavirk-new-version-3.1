@@ -505,7 +505,7 @@
         "section_width": "container",
         "color_scheme": "scheme-7b36d545-db22-4522-b7e3-6022401b54ef",
         "column_gap": 15,
-        "heading": "Shop by price",
+        "heading": "Shop by Price",
         "description": "Quickly find products that fit your budget. Browse collections based on price ranges and discover the best items in your preferred price bracket.",
         "description_width": 500,
         "header_size": "medium",
@@ -646,7 +646,7 @@
       "settings": {
         "section_width": "container",
         "color_scheme": "",
-        "heading": "Happy customers",
+        "heading": "Happy Customers",
         "description": "",
         "header_alignment": "center",
         "header_size": "medium",
