@@ -420,10 +420,10 @@
         "collection_TemkFR": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "leather-products",
             "collection_image": "shopify://shop_images/leather_8f05069b-a2f0-452f-a98e-7964d42a54aa.gif",
             "collection_title": "Leather Products",
-            "first_button_link": "shopify://pages/leather-products"
+            "first_button_link": ""
           }
         },
         "collection_eR4Tj7": {
