@@ -384,10 +384,10 @@
         "collection_Fbm9Cz": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "studio-pottery",
             "collection_image": "shopify://shop_images/potteryy.gif",
             "collection_title": "Studio Pottery",
-            "first_button_link": "shopify://pages/pottery"
+            "first_button_link": ""
           }
         },
         "collection_ctTBpd": {
