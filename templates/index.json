@@ -393,10 +393,10 @@
         "collection_ctTBpd": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "brass-and-metal-collection",
             "collection_image": "shopify://shop_images/Brass-Statues.gif",
             "collection_title": "Brass Statues",
-            "first_button_link": "shopify://pages/brass-statues"
+            "first_button_link": ""
           }
         },
         "collection_TdHk3V": {
