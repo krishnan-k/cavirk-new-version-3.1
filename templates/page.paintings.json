@@ -48,10 +48,26 @@
             "collection": "madhubani-painting",
             "collection_title": ""
           }
+        },
+        "collection_3KeEjE": {
+          "type": "collection",
+          "settings": {
+            "collection": "manish-thakur",
+            "collection_title": ""
+          }
+        },
+        "collection_ipXREJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "kuldeep-verma",
+            "collection_title": ""
+          }
         }
       },
       "block_order": [
-        "collection_GawBmm"
+        "collection_GawBmm",
+        "collection_3KeEjE",
+        "collection_ipXREJ"
       ],
       "settings": {
         "section_width": "container",
