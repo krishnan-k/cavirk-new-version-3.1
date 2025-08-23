@@ -94,7 +94,7 @@
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
+            "content_alignment_mobile": "center"
           }
         },
         "slider_item_gxX3ak": {
@@ -195,7 +195,7 @@
         "section_width": "full_width",
         "slide_height": "custom",
         "desktop_height": 500,
-        "mobile_height": 500,
+        "mobile_height": 480,
         "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
         "subheading_font_size": 16,
         "subheading_font_weight": "subheading_weight",
@@ -210,7 +210,7 @@
         "slide_effect": "fade",
         "show_arrow": false,
         "carousel_pagination": "show_dots",
-        "pagination_position": "right",
+        "pagination_position": "center",
         "autoplay": true,
         "autorotate_speed": 5,
         "content_below_image": false,
