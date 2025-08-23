@@ -2645,7 +2645,7 @@ header.active li.visible .submenu:not(.submenu-vertical) {
     width: calc((100% - (var(--gap, 3rem) * 3)) / 4);
   }
   .custom_heading_responsive{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .w-75{
     width: 100%;
