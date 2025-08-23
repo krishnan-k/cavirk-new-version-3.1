@@ -97,7 +97,7 @@
         "autoplay": false,
         "autorotate_speed": 5,
         "reveal": false,
-        "rows": 2,
+        "rows": 3,
         "show_load_more_button": false,
         "button_label": "Load more",
         "carousel_on_mobile": true,
