@@ -14,6 +14,7 @@
       "blocks": {
         "slider_item_nJa9XY": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/final_banner-01-01.png",
             "image_mobile": "shopify://shop_images/fff111-01-01-01.png",
@@ -68,33 +69,32 @@
             "content_alignment_mobile": "center"
           }
         },
-        "slider_item_iAiXpe": {
+        "slider_item_KFyzRa": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/111_1c.png",
-            "image_mobile": "shopify://shop_images/M2-01-01-01-01-01-01-01_1_-01_c3ca246f-d8f1-425f-81b9-15676980f867.png",
+            "image": "shopify://shop_images/cavirk_banner_1.jpg",
+            "image_mobile": "shopify://shop_images/M1_png.jpg",
             "overlay_opacity": 0,
             "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "Cavirk: Handcrafted Excellence, Crafted for You.",
+            "heading": "",
             "description": "",
-            "first_button_label": "shop now",
-            "first_button_link": "shopify://collections/madhubani-painting",
+            "first_button_label": "Shop now",
+            "first_button_link": "shopify://collections/lehengas-collection",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
             "content_alignment": "center",
             "content_position": "bottom-center",
-            "content_width": "full_width",
-            "content_max_width": 40,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
             "show_content_background": false,
-            "content_background": "#e0d1cc",
-            "content_box_opacity": 23,
-            "content_alignment_mobile": "center"
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
           }
         },
         "slider_item_gxX3ak": {
@@ -186,7 +186,7 @@
       "block_order": [
         "slider_item_nJa9XY",
         "slider_item_YipJd4",
-        "slider_item_iAiXpe",
+        "slider_item_KFyzRa",
         "slider_item_gxX3ak",
         "slider_item_AyhUnU",
         "slider_item_jiLA39"
