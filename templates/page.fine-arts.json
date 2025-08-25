@@ -41,18 +41,6 @@
     },
     "main": {
       "type": "main-list-collections",
-      "blocks": {
-        "collection_GawBmm": {
-          "type": "collection",
-          "settings": {
-            "collection": "kurta-sets",
-            "collection_title": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_GawBmm"
-      ],
       "settings": {
         "section_width": "container",
         "color_scheme": "default",
