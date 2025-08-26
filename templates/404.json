@@ -23,7 +23,9 @@
       "blocks": {
         "image_VQTRFT": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/404.png"
+          }
         },
         "heading_6nj4md": {
           "type": "heading",
@@ -48,7 +50,7 @@
         "button_4yrfiE": {
           "type": "button",
           "settings": {
-            "first_button_label": "Back to Collection",
+            "first_button_label": "Back to Collections",
             "first_button_link": "https://cavirk.com/collections",
             "open_link": false,
             "first_button_type": "primary",
