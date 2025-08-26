@@ -226,6 +226,9 @@ video-section.h-full video {
   display: flex !important;
 }
 @media screen and (max-width: 1024px){
+  .slideshow .sec__inner .banner__media :is(picture,source,img){
+    object-position: top;
+  }
   /* .swiper.slideshow .swiper-slide .banner__media .image-picture:before {
     content: '';
     position: absolute;
