@@ -116,16 +116,11 @@
         "padding_top": 0,
         "padding_bottom": 30
       }
-    },
-    "f19e65bc-bc65-4bb4-b4cf-5aa21c51729f": {
-      "type": "apps",
-      "settings": {}
     }
   },
   "order": [
     "banner",
     "subcollection",
-    "main",
-    "f19e65bc-bc65-4bb4-b4cf-5aa21c51729f"
+    "main"
   ]
 }
