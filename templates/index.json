@@ -99,6 +99,7 @@
         },
         "slider_item_KFyzRa": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/cavirk_banner_1.jpg",
             "image_mobile": "shopify://shop_images/M1_png.jpg",
