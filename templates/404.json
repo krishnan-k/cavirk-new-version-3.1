@@ -48,7 +48,7 @@
         "button_4yrfiE": {
           "type": "button",
           "settings": {
-            "first_button_label": "Back to Homepage",
+            "first_button_label": "Back to Collection",
             "first_button_link": "https://cavirk.com/collections",
             "open_link": false,
             "first_button_type": "primary",
