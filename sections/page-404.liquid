@@ -42,7 +42,7 @@
           {% if image != blank %}
             <div
               class="mb-40 max-w-100"
-              style="{%- if image != blank -%}--aspect-ratio: {{ image.aspect_ratio }};{% endif %}; width: 440px"
+              style="{%- if image != blank -%}--aspect-ratio: {{ image.aspect_ratio }};{% endif %}; width: 100px"
             >
               {%- assign image_alt = image.alt | escape | default: 'image' -%}
               {% render 'responsive-image', image: image, image_alt: image_alt, no_animate: true %}
