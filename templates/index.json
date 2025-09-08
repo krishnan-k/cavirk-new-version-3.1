@@ -498,27 +498,83 @@
         "reset_spacing": true
       }
     },
-    "shop_by_price_efBym8": {
+    "shop_by_price_gwxF7M": {
       "type": "shop-by-price",
+      "blocks": {
+        "below_range_gWbpcb": {
+          "type": "below-range",
+          "settings": {
+            "shop_by_price_image": "shopify://shop_images/s1_f8cad884-760f-4750-9ba4-0eacf7651344.png",
+            "below_range_value": "4000"
+          }
+        },
+        "mid_range_gYpdee": {
+          "type": "mid-range",
+          "settings": {
+            "shop_by_price_image": "shopify://shop_images/iPDQXsF5Ls_6e9bf6b7-8749-4ebd-a779-767c541fcbf3.png",
+            "start_value": "4000",
+            "end_value": "8000"
+          }
+        },
+        "mid_range_KczpTm": {
+          "type": "mid-range",
+          "settings": {
+            "shop_by_price_image": "shopify://shop_images/s3_f5ee50d8-d6ca-4021-9b15-104eeefb7ff5.png",
+            "start_value": "8000",
+            "end_value": "15000"
+          }
+        },
+        "mid_range_EfTcQx": {
+          "type": "mid-range",
+          "settings": {
+            "shop_by_price_image": "shopify://shop_images/s4_e390e124-31cf-480f-bd2e-892cc5176451.png",
+            "start_value": "15000",
+            "end_value": "30000"
+          }
+        },
+        "mid_range_3Txmxz": {
+          "type": "mid-range",
+          "settings": {
+            "shop_by_price_image": "shopify://shop_images/s5_7dd82076-94fb-449a-83b3-3d50ffb8a5e8.png",
+            "start_value": "30000",
+            "end_value": "50000"
+          }
+        },
+        "above_range_QLphqR": {
+          "type": "above-range",
+          "settings": {
+            "shop_by_price_image": "shopify://shop_images/s6_ac93a659-3828-4ec9-9200-f382639a7dd3.png",
+            "above_range_value": "50000"
+          }
+        }
+      },
+      "block_order": [
+        "below_range_gWbpcb",
+        "mid_range_gYpdee",
+        "mid_range_KczpTm",
+        "mid_range_EfTcQx",
+        "mid_range_3Txmxz",
+        "above_range_QLphqR"
+      ],
       "name": "t:sections.shop-by-price.name",
       "settings": {
         "section_width": "container",
         "display_mode": "carousel",
-        "items_per_row": 4,
-        "column_gap": 15,
+        "items_per_row": 6,
+        "column_gap": 30,
         "show_arrow": false,
         "carousel_pagination": "disable",
         "infinite": false,
         "autoplay": false,
         "autorotate_speed": 5,
         "reveal": false,
-        "color_scheme": "scheme-7b36d545-db22-4522-b7e3-6022401b54ef",
+        "color_scheme": "",
         "heading": "Shop by Price",
         "description": "Quickly find products that fit your budget. Browse collections based on price ranges and discover the best items in your preferred price bracket.",
         "description_width": 500,
         "header_size": "medium",
         "header_alignment": "center",
-        "items_per_row_mobile": "1",
+        "items_per_row_mobile": "2",
         "padding_top": 50,
         "padding_bottom": 50,
         "reset_spacing": true
@@ -752,7 +808,7 @@
     "collection_list_VmEYkJ",
     "collection_list_mrVidg",
     "divider_yjcjBV",
-    "shop_by_price_efBym8",
+    "shop_by_price_gwxF7M",
     "divider_VTmCBm",
     "shopable_video_Yq73J7",
     "product_testimonials_ADpfgF",
