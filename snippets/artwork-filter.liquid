@@ -1,0 +1,49 @@
+{% assign art_tags = 'Pattachitra Painting, Madhubani Painting, Ajrakh Modal Stole, Kantha Stitch, Bengal Muslin'
+  | split: ', '
+%}
+<div class="filter-item px-30 px-1025-0">
+  <collapsible-block class="collection {% if first_block and forloop.first and active_filter contains "active" and filter_layout != 'horizontal' %} active {% endif %} {% if enable_filtering and filter_layout != 'horizontal' and default_filter != "first_open" %} {{ active_filter }} {% endif %} border-bottom block pb-5{% if enable_filtering and filter_layout == 'horizontal' %} relative border-1025-bottom-0 pb-1025-0{% endif %}">
+    <h3
+      class="collapsible-heading w-full relative my-0 heading-letter-spacing h6 pt-25 pb-20"
+      style="font-family: var(--body-font);font-weight: 600;"
+    >
+      <span class="inline-flex gap-10 align-center lh-normal">Art Work</span>
+      <span class="open-children-toggle absolute inset-0 flex flex-end pointer">
+        <span class="icon_plus-animation"> </span>
+      </span>
+    </h3>
+    <div class="collapsible-content filter-content custom-scrollbar pb-20">
+      <ul class="items list-none p-0 m-0 custom-scrollbar">
+        {% for tag in art_tags %}
+          {% assign tag_handle = tag | downcase | replace: ' ', '-' %}
+          {% assign is_active = false %}
+          {% if current_tags contains tag %}
+            {% assign is_active = true %}
+          {% endif %}
+          <li class="item mb-10 last-0">
+            <a
+              href="https://cavirk.com/collections/all/{{ tag_handle }}"
+              class="link-filter pointer inline-flex lh-normal gap-10 hover-heading-color transition no-underline items-center"
+            >
+              <span class="checkbox radio border rounded-2 bg-white inline-flex justify-center items-center transition relative">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  class="{% if is_active %}visible{% else %}invisible{% endif %} absolute inset-0 z-0 m-auto"
+                >
+                  <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1"></circle>
+                  {% if is_active %}
+                    <circle cx="7" cy="7" r="3" fill="currentColor"></circle>
+                  {% endif %}
+                </svg>
+              </span>
+              {{ tag }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </collapsible-block>
+</div>

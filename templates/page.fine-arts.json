@@ -9,126 +9,220 @@
  */
 {
   "sections": {
-    "page-heading": {
-      "type": "page-heading",
+    "slideshow_B6Jm9z": {
+      "type": "slideshow",
       "blocks": {
-        "breadcrumb_kg6gTP": {
-          "type": "breadcrumb",
-          "settings": {}
-        },
-        "heading_k374p7": {
-          "type": "heading",
+        "slider_item_ThfjPJ": {
+          "type": "slider_item",
           "settings": {
-            "page_title": "Fine Arts",
-            "header_size": "default"
+            "image": "shopify://shop_images/a1.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_G9NjmV": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/a2.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_zMmQMT": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/a3.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_ABnT7U": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/a4.png",
+            "overlay_opacity": 0,
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
           }
         }
       },
       "block_order": [
-        "breadcrumb_kg6gTP",
-        "heading_k374p7"
+        "slider_item_ThfjPJ",
+        "slider_item_G9NjmV",
+        "slider_item_zMmQMT",
+        "slider_item_ABnT7U"
       ],
+      "name": "t:sections.slideshow.name",
       "settings": {
-        "section_width": "container",
-        "color_scheme": "",
-        "alignment": "center",
-        "background_image": "shopify://shop_images/Frame_1000009792.png",
-        "overlay_opacity": 0,
-        "height": "based_on_content",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "main": {
-      "type": "main-list-collections",
-      "disabled": true,
-      "settings": {
-        "section_width": "container",
-        "color_scheme": "default",
-        "type": "selected",
-        "sort_collections": "alphabetical",
-        "image_ratio": "portrait",
-        "show_product_count": true,
-        "design": "default",
-        "text_alignment": "center",
-        "font_size": 16,
-        "items_to_show": 8,
-        "items_per_row": 4,
-        "column_gap": 30,
-        "pagination": "load_more_button",
-        "button_show_more": "Load more",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "collection_list_6mRfCX": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_CfXpTM": {
-          "type": "collection",
-          "settings": {
-            "collection": "madhubani-painting",
-            "collection_image": "shopify://shop_images/ujOuKdPYp1_1_03827f03-3463-42a0-bb1a-aa19899670b8.png",
-            "collection_title": "Madhubani Painting",
-            "first_button_link": ""
-          }
-        },
-        "collection_67a9kG": {
-          "type": "collection",
-          "settings": {
-            "collection": "kuldeep-verma",
-            "collection_image": "shopify://shop_images/84NT4ShUFo_3ab84aee-2ddb-4750-b694-bbe2b61b1b38.jpg",
-            "collection_title": "Modern Art",
-            "first_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_CfXpTM",
-        "collection_67a9kG"
-      ],
-      "name": "t:sections.collection-list.name",
-      "settings": {
-        "section_width": "fluid_container",
-        "color_scheme": "",
-        "heading": "",
-        "description": "",
-        "show_view_all_button": false,
-        "header_size": "medium",
-        "header_alignment": "left",
-        "display_mode": "carousel",
-        "image_ratio": "portrait",
-        "custom_ratio": "",
-        "items_per_row": 4,
-        "column_gap": 30,
-        "collection_information_position": "overlay_image",
-        "design": "default",
-        "text_alignment": "center",
-        "show_product_count": false,
-        "show_icon": false,
-        "show_description": false,
-        "font_size": 16,
-        "font_weight": "heading_weight",
-        "information_spacing": 12,
-        "rounded_image": false,
-        "image_custom_width": false,
-        "image_width": 200,
+        "section_width": "full_width",
+        "slide_height": "adapt",
+        "desktop_height": 800,
+        "mobile_height": 360,
+        "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
+        "subheading_font_size": 14,
+        "subheading_font_weight": "body_weight",
+        "subheading_spacing_bottom": 10,
+        "heading_font_size": 70,
+        "heading_font_weight": "heading_weight",
+        "heading_uppercase": false,
+        "heading_spacing_bottom": 10,
+        "des_font_size": 14,
+        "des_font_weight": "body_weight",
+        "des_spacing_bottom": 40,
+        "slide_effect": "fade",
         "show_arrow": false,
-        "carousel_pagination": "disable",
-        "infinite": false,
+        "carousel_pagination": "show_dots",
+        "pagination_position": "center",
         "autoplay": false,
         "autorotate_speed": 5,
-        "reveal": false,
-        "items_per_row_mobile": 1,
+        "content_below_image": false,
         "padding_top": 0,
         "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "rich_text_R3TBJx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JaBA6U": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contemporary Indian Art & Handcrafts",
+            "font_size": 36,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
+          }
+        },
+        "description_yNm3BD": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Cavirk celebrates the richness of Indian artistry by curating an exclusive collection of authentic handwoven textiles, traditional crafts, and contemporary artworks. Each piece is thoughtfully selected from skilled artisans and creators across India, ensuring originality and cultural depth.<br/>Located online, Cavirk brings the spirit of India’s heritage to a global audience, making it easy to explore and own timeless works of art from anywhere in the world.</p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 20
+          }
+        },
+        "button_4qiX4n": {
+          "type": "button",
+          "settings": {
+            "first_button_label": "ARTISTS",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "ARTWORKS",
+            "second_button_link": "shopify://collections/manish-thakur",
+            "second_button_type": "primary",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_JaBA6U",
+        "description_yNm3BD",
+        "button_4qiX4n"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_max_width": 100,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "divider_xKUUBm": {
+      "type": "divider",
+      "name": "t:sections.divider.name",
+      "settings": {
+        "section_width": "full_width",
+        "border_height": 1,
+        "border_color": "#c5b27b",
         "reset_spacing": false
       }
     }
   },
   "order": [
-    "page-heading",
-    "main",
-    "collection_list_6mRfCX"
+    "slideshow_B6Jm9z",
+    "rich_text_R3TBJx",
+    "divider_xKUUBm"
   ]
 }

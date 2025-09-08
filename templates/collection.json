@@ -82,6 +82,10 @@
           "type": "filter",
           "settings": {}
         },
+        "art_work_9HgN4f": {
+          "type": "art_work",
+          "settings": {}
+        },
         "popular_product_Xwjqcf": {
           "type": "popular_product",
           "settings": {
@@ -93,6 +97,7 @@
       },
       "block_order": [
         "filter_giBtHK",
+        "art_work_9HgN4f",
         "popular_product_Xwjqcf"
       ],
       "settings": {

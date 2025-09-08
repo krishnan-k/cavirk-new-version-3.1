@@ -3394,6 +3394,10 @@ label.likely-count-label {
 .product-detail__custom-liquid >* {
     font-family: var(--body-font) !important;
 }
+.shop_by_price_image .hover-effect motion-element {
+    display: flex;
+    overflow: hidden;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,

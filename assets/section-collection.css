@@ -22,7 +22,7 @@
 }
 
 .collection-item__information.absolute .collection-item__name-inner {
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

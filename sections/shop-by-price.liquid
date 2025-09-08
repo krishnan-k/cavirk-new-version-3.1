@@ -7,6 +7,7 @@
   if section_st.reset_spacing
     assign reset_spacing = ' remove_spacing'
   endif
+
   assign heading = section_st.heading
   assign description = section_st.description
   assign header_size = ''
@@ -15,47 +16,77 @@
   elsif section_st.header_size == 'large'
     assign header_size = 'h1-size'
   endif
+
   assign scroll_animation = settings.scroll_animation
-  assign carousel_on_mobile = section_st.carousel_on_mobile
+  assign show_arrow = section_st.show_arrow
+  assign carousel_pagination = section_st.carousel_pagination
+  assign infinite = section_st.infinite
+  assign autoplay = section_st.autoplay
+  assign autorotate_speed = section_st.autorotate_speed
+  assign reveal = section_st.reveal
+  assign display_mode = section_st.display_mode
   assign items_per_row_mobile = section_st.items_per_row_mobile
+  assign column_gap = section_st.column_gap
+  assign items_per_row = section_st.items_per_row
+
+  comment
+    Bring shop‑by‑price in line with collection-list behavior.
+    — remove undefined vars (e.g., `range`)
+    — unify grid/slider props & classes
+    — support free-scroll on fractional mobile cols
+    — build URLs with routes helper
+  endcomment
+
+  assign data_free_scroll = ''
+  if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2
+    assign data_free_scroll = 'true'
+  elsif section_st.items_per_row_mobile > 2 and section_st.items_per_row_mobile < 3
+    assign data_free_scroll = 'true'
+  endif
 -%}
+
+{%- capture col_style -%}
+--col-desktop: {{ items_per_row }};--col-number:{{ items_per_row_mobile }};{% if items_per_row > 3 %}--col-tablet: 3;{% else %}--col-tablet: {{ items_per_row }};{% endif %}
+{% if column_gap < 15 %}--col-gap: {{ column_gap }}px;{% else %}--col-gap: 15px;--col-gap-desktop: {{ column_gap }}px;{% endif %}--repeat: {{ section.blocks.size }}; --col-mobile: {{ items_per_row_mobile }}
+{%- endcapture -%}
+
+{% if items_per_row > 5 %}
+  {% style %}
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      .custom_grid_row:is(.grid-cols, .flex-cols) {
+        --col: calc(var(--col-desktop) - 2);
+      }
+    }
+  {% endstyle %}
+{% endif %}
+
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }}
 {%- endcapture -%}
 
-{% capture price_box_style %}
---col-gap: {{ section_st.column_gap }}px; --col-number: 2; --col-tablet: 3;--col-desktop-small: 4;--col-desktop: 4;
-
-{% endcapture %}
 <div
-  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} color-{{ color_scheme }} gradient{{ reset_spacing }} {{ reset_spacing }}"
+  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} color-{{ color_scheme }} gradient{{ reset_spacing }}"
   style="{{ style | strip | strip_newlines }}"
 >
   <div class="{{ section_width }}">
     {%- if heading != blank or description != blank -%}
       <div class="section__header mb-33 mb-sm-20 text-{{ section_st.header_alignment }}{% if section_st.section_width == 'full_width' %} px-20{% endif %}">
-        {%- if section_st.heading != blank -%}
+        {%- if heading != blank -%}
           <motion-element
             data-motion="fade-up-lg"
             data-motion-delay="50"
             {% if scroll_animation != 'slide_in' %}
               hold
             {% endif %}
-            class="block  {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %}"
-            style="
-              {%- if scroll_animation != 'none' -%}
-                --animation-order: 0;
-              {% endif %}
-            "
+            class="block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %}"
+            style="{%- if scroll_animation != 'none' -%}--animation-order: 0;{% endif %}"
           >
-            <h2
-              class="section__header-heading heading-letter-spacing {{ header_size  }} mt-0{% if section_st.description != blank %} mb-10{% else %} mb-0{% endif %}"
-            >
-              {{ section_st.heading }}
+            <h2 class="section__header-heading heading-letter-spacing {{ header_size }} mt-0{% if description != blank %} mb-10{% else %} mb-0{% endif %}">
+              {{ heading }}
             </h2>
           </motion-element>
         {% endif %}
-        {%- if section_st.description != blank -%}
+        {%- if description != blank -%}
           <motion-element
             data-motion="fade-up-lg"
             data-motion-delay="150"
@@ -63,101 +94,195 @@
               hold
             {% endif %}
             class="section__header-des block {% if scroll_animation != 'none' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0 w-custom max-767-w-full"
-            style="
-              {%- if scroll_animation != 'none' -%}
-                --animation-order: 1
-              {% endif %};--custom-width: {{ section_st.description_width }}px;margin-left: auto;margin-right: auto;
-            "
+            style="{%- if scroll_animation != 'none' -%}--animation-order: 1;{% endif %} --custom-width: {{ section_st.description_width }}px; margin-left: auto; margin-right: auto;"
           >
-            {{ section_st.description }}
+            {{ description }}
           </motion-element>
         {% endif %}
       </div>
     {% endif %}
+
     <div class="price-range-filter">
-      <div
-        class="price_filter_range grid grid-cols gap"
-        data-enable="{{ carousel_on_mobile }}"
-        data-mobile="{{ items_per_row_mobile }}"
-        data-spacing="{{ section_st.column_gap }}"
-        style="{{ price_box_style | strip | strip_newlines }}"
-      >
-        {%- comment -%} This is responsive 000 code {%- endcomment -%}
-        {%- comment -%}
-          {% assign price_ranges = '0-500,500-1000,1000-3500,3500-6000,6000-10000,10000-30000,30000-50000,50000-60000,60000-70000,70000-80000'
-            | split: ','
-          %}
-          {% for range in price_ranges %}
-            {% assign parts = range | split: '-' %}
-            <div class="price_range_btn text-center">
-              <a
-                href="collections/all?filter.v.price.gte={{ parts[0] }}&filter.v.price.lte={{ parts[1] }}"
-                class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-full"
-                target="_blank"
-                style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;border: 1px solid var(--color-border)"
-              >
-                ₹{{ parts[0] }} – ₹{{ parts[1] }}
-              </a>
-            </div>
-          {% endfor %}
-          <div class="price_range_btn text-center">
-            <a
-              href="collections/all?filter.v.price.gte=80001"
-              class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-full"
-              target="_blank"
-              style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;"
-            >
-              Above ₹80000
-            </a>
-          </div>
-        {%- endcomment -%}
-        {% assign price_ranges = '350-5000,5000-25000,25000-80000,'
-          | split: ','
-        %}
-        {% for range in price_ranges %}
-          {% assign parts = range | split: '-' %}
-          {% assign label_from = parts[0] | plus: 0 %}
-          {% assign label_to = parts[1] | plus: 0 %}
-
-          {%- comment -%} Format display_from {%- endcomment -%}
-          {% if label_from >= 1000 and label_from < 100000 %}
-            {% assign display_from = label_from | divided_by: 1000 | append: 'k' %}
-          {% else %}
-            {% assign display_from = label_from %}
-          {% endif %}
-
-          {%- comment -%} Format display_to {%- endcomment -%}
-          {% if label_to >= 1000 and label_to < 100000 %}
-            {% assign display_to = label_to | divided_by: 1000 | append: 'k' %}
-          {% else %}
-            {% assign display_to = label_to %}
-          {% endif %}
-
-          <div class="price_range_btn text-center">
-            <a
-              href="collections/all?filter.v.price.gte={{ parts[0] }}&filter.v.price.lte={{ parts[1] }}"
-              class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-75"
-              target="_blank"
-              style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;border: 1px solid var(--color-border)"
-            >
-              ₹{{ display_from }} – ₹{{ display_to }}
-            </a>
-          </div>
-        {% endfor %}
-        <div class="price_range_btn text-center">
-          <a
-            href="collections/all?filter.v.price.gte=80001"
-            class="price-range-link text-decoration-underline btn-primary inline-flex no-underline justify-content-center w-75"
-            target="_blank"
-            style="--btn-padding-x: 2.5rem;--btn-padding-y: 1.5rem;"
+      {% if section.blocks.size > 0 %}
+        {% if display_mode == 'grid' %}
+          <grid-custom
+            class="{% if section.blocks.size > 5 %} custom_grid_row {% endif %} collection-list--grid grid grid-cols gap{% if items_per_row_mobile > 1 and items_per_row_mobile < 2 %} grid_scroll{% elsif items_per_row_mobile > 2 and items_per_row_mobile < 3 %} grid_scroll{% endif %}"
+            style="{{ col_style | strip | strip_newlines }}"
+            data-mobile="{{ items_per_row_mobile }}"
+            data-spacing="{{ column_gap }}"
+            data-free-scroll="{{ data_free_scroll }}"
           >
-            Above ₹80000
-          </a>
-        </div>
-      </div>
+            {%- for block in section.blocks -%}
+              {% assign b = block.settings %}
+              {% assign type = block.type %}
+
+              {%- comment -%}
+                Build target URL
+              {%- endcomment -%}
+              {% assign base_url = routes.all_products_collection_url %}
+              {% if type == 'below-range' %}
+                {% assign below_val = b.below_range_value %}
+                {% assign target = base_url | append: '?filter.v.price.lte=' | append: b.below_range_value %}
+                {% assign label = below_val | prepend: 'Under ₹' | append: 'k' %}
+              {% elsif type == 'mid-range' %}
+                {% assign start_val = b.start_value %}
+                {% assign end_val = b.end_value %}
+                {% assign target = base_url
+                  | append: '?filter.v.price.gte='
+                  | append: b.start_value
+                  | append: '&filter.v.price.lte='
+                  | append: b.end_value
+                %}
+                 {% assign label = '₹' | append: start_val | append: 'k to ₹' | append: end_val | append: 'k' %}
+              {% elsif type == 'above-range' %}
+                {% assign above_val = b.above_range_value %}
+                {%- assign start_above = b.above_range_value | plus: 1 -%}
+                {% assign target = base_url | append: '?filter.v.price.gte=' | append: start_above %}
+                {% assign label = above_val | prepend: 'Above ₹ ' | append: 'k' %}
+              {% endif %}
+
+              <motion-element
+                data-motion="fade-up-lg"
+                data-motion-delay="{{ forloop.index0 | times: 50 }}"
+                {% if scroll_animation != 'slide_in' %}
+                  hold
+                {% endif %}
+                class="grid-custom-item {% if scroll_animation != 'none' and scroll_animation != null %} scroll-trigger {{ scroll_animation }} {% endif %} {{ settings.hover_effect }}"
+                {{ block.shopify_attributes }}
+                {%- if scroll_animation != 'none' -%}
+                  style="--animation-order: {{ forloop.index }};"
+                {%- endif -%}
+              >
+                <div class="price-card">
+                  <div class="shop_by_price_image">
+                    {% if b.shop_by_price_image != blank %}
+                      <a class="hover-effect" href="{{ target }}">
+                        {% render 'responsive-image',
+                          type: 'banner',
+                          image: b.shop_by_price_image,
+                          image_alt: b.alt_text
+                        %}
+                      </a>
+                    {% endif %}
+                  </div>
+                  <a
+                    href="{{ target }}"
+                    class="price-range-link text-decoration-underline inline-flex no-underline w-75 py-10"
+                    aria-label="Filter products by price: {{ label }}"
+                    style="font-size: 14px;font-weight: 500;"
+                  >
+                    {{ label }}
+                  </a>
+                </div>
+              </motion-element>
+            {%- endfor -%}
+          </grid-custom>
+        {% else %}
+          <slide-section
+            class="swiper{% if reveal %} reveal_on_scroll{% endif %}{% if section.index == 1 %} lazy-loading-swiper-before{% endif %}"
+            data-section-id="{{ section.id }}"
+            data-autoplay="{{ autoplay }}"
+            data-effect="slide"
+            data-loop="{{ infinite }}"
+            data-speed="500"
+            data-autoplay-speed="{{ autorotate_speed }}"
+            data-spacing="{{ column_gap }}"
+            data-mobile="{{ items_per_row_mobile }}"
+            data-desktop="{{ items_per_row }}"
+            data-tablet="{% if items_per_row > 5 %}4{% elsif items_per_row > 4 %}3{% elsif items_per_row > 3 %}3{% else %}{{ items_per_row }}{% endif %}"
+            data-free-scroll="{{ data_free_scroll }}"
+            data-pagination-progressbar="{% if carousel_pagination == 'show_progress_bar' %}true{% else %}false{% endif %}"
+            style="{{ col_style | strip | strip_newlines }}"
+          >
+            {% if show_arrow %}
+              {%- render 'swiper-navigation' -%}
+            {% endif %}
+
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                {% assign b = block.settings %}
+                {% assign type = block.type %}
+
+                {% assign base_url = routes.all_products_collection_url %}
+                {% if type == 'below-range' %}
+                  {% assign below_val = b.below_range_value %}
+                  {% assign target = base_url | append: '?filter.v.price.lte=' | append: b.below_range_value %}
+                  {% assign label = below_val | prepend: 'Under ₹' %}
+                {% elsif type == 'mid-range' %}
+                  {% assign start_val = b.start_value %}
+                  {% assign end_val = b.end_value %}
+                  {% assign target = base_url
+                    | append: '?filter.v.price.gte='
+                    | append: b.start_value
+                    | append: '&filter.v.price.lte='
+                    | append: b.end_value
+                  %}
+                   {% assign label = '₹' | append: start_val | append: ' to ₹' | append: end_val %}
+                {% elsif type == 'above-range' %}
+                  {% assign above_val = b.above_range_value %}
+                  {%- assign start_above = b.above_range_value | plus: 1 -%}
+                  {% assign target = base_url | append: '?filter.v.price.gte=' | append: start_above %}
+                  {% assign label = above_val | prepend: 'Above ₹ ' %}
+                {% endif %}
+
+                <motion-element
+                  data-motion="fade-up-lg"
+                  data-motion-delay="{{ forloop.index0 | times: 50 }}"
+                  {% if scroll_animation != 'slide_in' %}
+                    hold
+                  {% endif %}
+                  class="swiper-slide {% if scroll_animation != 'none' and scroll_animation != null %} scroll-trigger {{ scroll_animation }} {% endif %} {{ settings.hover_effect }}"
+                  {{ block.shopify_attributes }}
+                  {%- if scroll_animation != 'none' -%}
+                    style="--animation-order: {{ forloop.index }};"
+                  {%- endif -%}
+                >
+                  <div class="price-card">
+                    <div class="shop_by_price_image">
+                      {% if b.shop_by_price_image != blank %}
+                        <a class="hover-effect" href="{{ target }}">
+                          {% render 'responsive-image',
+                            type: 'banner',
+                            image: b.shop_by_price_image,
+                            image_alt: b.alt_text
+                          %}
+                        </a>
+                      {% endif %}
+                    </div>
+                    <a
+                      href="{{ target }}"
+                      class="price-range-link text-decoration-underline inline-flex no-underline w-75 py-10"
+                      aria-label="Filter products by price: {{ label }}"
+                      style="font-size: 14px;font-weight: 500;"
+                    >
+                      {{ label }}
+                    </a>
+                  </div>
+                </motion-element>
+              {%- endfor -%}
+            </div>
+
+            {%- if carousel_pagination == 'show_dots'
+              or carousel_pagination == 'show_dots_on_mobile'
+              or carousel_pagination == 'show_progress_bar'
+            -%}
+              <motion-element
+                data-motion="fade-up-sm"
+                {% if scroll_animation != 'slide_in' %}
+                  hold
+                {% endif %}
+                data-motion-delay="150"
+                class="swiper-pagination flex flex-wrap {% if scroll_animation == 'slide_in' %} slide_in scroll-trigger {% endif %} px-15 lh-1 bottom-30 {% if carousel_pagination == 'show_dots_on_mobile' %} hidden-md{% endif %} justify-content-center{% if section_st.content_below_image %} absolute-md-impo{% endif %}"
+                style="--swiper-pagination-bottom: 3rem; --swiper-pagination-position: static; z-index: 2"
+              ></motion-element>
+            {% endif %}
+          </slide-section>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
 </div>
+
 {% schema %}
 {
   "name": "t:sections.shop-by-price.name",
@@ -191,20 +316,107 @@
       ]
     },
     {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.color_scheme.label",
-      "default": "scheme-1"
+      "type": "select",
+      "id": "display_mode",
+      "label": "t:sections.all.display_mode.label",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.all.display_mode.grid"
+        },
+        {
+          "value": "carousel",
+          "label": "t:sections.all.display_mode.carousel"
+        }
+      ],
+      "default": "carousel"
+    },
+    {
+      "type": "range",
+      "id": "items_per_row",
+      "label": "t:sections.all.items.items_per_row.label",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "default": 4
     },
     {
       "type": "range",
       "id": "column_gap",
       "label": "t:sections.all.items.column_gap.label",
-      "default": 30,
       "min": 0,
       "max": 50,
       "step": 5,
+      "default": 30,
       "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.carousel_settings.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow",
+      "label": "t:sections.all.carousel_settings.show-next-back.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "carousel_pagination",
+      "label": "t:sections.all.carousel_settings.pagination.label",
+      "options": [
+        {
+          "value": "disable",
+          "label": "t:sections.all.carousel_settings.pagination.disable.label"
+        },
+        {
+          "value": "show_dots",
+          "label": "t:sections.all.carousel_settings.pagination.show_dots.label"
+        },
+        {
+          "value": "show_dots_on_mobile",
+          "label": "t:sections.all.carousel_settings.pagination.show_dots_on_mobile.label"
+        },
+        {
+          "value": "show_progress_bar",
+          "label": "t:sections.all.carousel_settings.pagination.show_progress_bar.label"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "infinite",
+      "label": "t:sections.all.carousel_settings.infinite.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "t:sections.all.carousel_settings.auto_change.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autorotate_speed",
+      "label": "t:sections.all.carousel_settings.change_slides_every.label",
+      "max": 6,
+      "min": 2,
+      "step": 1,
+      "unit": "s",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "reveal",
+      "label": "t:sections.all.carousel_settings.reveal.label",
+      "info": "t:sections.all.carousel_settings.reveal.info",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.color_scheme.label",
+      "default": "scheme-1"
     },
     {
       "type": "header",
@@ -277,12 +489,6 @@
       "content": "t:sections.all.mobile_options.label"
     },
     {
-      "type": "checkbox",
-      "id": "carousel_on_mobile",
-      "label": "t:sections.all.mobile_options.carousel_on_mobile.label",
-      "default": false
-    },
-    {
       "type": "select",
       "id": "items_per_row_mobile",
       "label": "t:sections.all.items.items_per_row.label",
@@ -329,9 +535,82 @@
       "default": false
     }
   ],
+  "blocks": [
+    {
+      "type": "below-range",
+      "name": "Below range",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "shop_by_price_image",
+          "label": "t:sections.collection-list.blocks.collection_image.label",
+          "info": "t:sections.collection-list.blocks.collection_image.info"
+        },
+        {
+          "type": "text",
+          "id": "below_range_value",
+          "label": "Below value",
+          "default": "4000"
+        }
+      ]
+    },
+    {
+      "type": "mid-range",
+      "name": "Mid range",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "shop_by_price_image",
+          "label": "t:sections.collection-list.blocks.collection_image.label",
+          "info": "t:sections.collection-list.blocks.collection_image.info"
+        },
+        {
+          "type": "text",
+          "id": "start_value",
+          "label": "Start value",
+          "default": "5000"
+        },
+        {
+          "type": "text",
+          "id": "end_value",
+          "label": "End value",
+          "default": "45000"
+        }
+      ]
+    },
+    {
+      "type": "above-range",
+      "name": "Above range",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "shop_by_price_image",
+          "label": "t:sections.collection-list.blocks.collection_image.label",
+          "info": "t:sections.collection-list.blocks.collection_image.info"
+        },
+        {
+          "type": "text",
+          "id": "above_range_value",
+          "label": "Above value",
+          "default": "50000"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "t:sections.shop-by-price.name"
+      "name": "t:sections.shop-by-price.name",
+      "blocks": [
+        {
+          "type": "below-range"
+        },
+        {
+          "type": "mid-range"
+        },
+        {
+          "type": "above-range"
+        }
+      ]
     }
   ]
 }
