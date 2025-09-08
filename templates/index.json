@@ -237,45 +237,45 @@
         "collection_FUAzK4": {
           "type": "collection",
           "settings": {
-            "collection": "curated-festive-collection",
-            "collection_image": "shopify://shop_images/SAR181-D_1.jpg",
-            "collection_title": "Curated Festive Collection",
+            "collection": "pattachitra-painting",
+            "collection_image": "shopify://shop_images/SAR131-E_37653960-06ec-43b6-97b4-db541e825eb4.jpg",
+            "collection_title": "Pattachitra Sarees",
             "first_button_link": ""
           }
         },
         "collection_THd6NU": {
           "type": "collection",
           "settings": {
-            "collection": "fusion-edit",
-            "collection_image": "shopify://shop_images/Indo-WesternGildedGraceA_1b03714f-6bb9-48d7-8891-3b4b35ec873b.jpg",
-            "collection_title": "Fusion Edit",
+            "collection": "indo-western",
+            "collection_image": "shopify://shop_images/indo.png",
+            "collection_title": "Indo Western",
             "first_button_link": ""
           }
         },
         "collection_kUA3MH": {
           "type": "collection",
           "settings": {
-            "collection": "the-crafted-home",
-            "collection_image": "shopify://shop_images/oHqR37d2g0_7e71ef7d-ed06-4c6c-911b-f44ca3b2222b.png",
-            "collection_title": "The Crafted Home",
+            "collection": "kurta-sets",
+            "collection_image": "shopify://shop_images/BKpkU1UIpx_ae901dae-8245-4d42-8e67-20e3d1884de0.png",
+            "collection_title": "Kurta Sets",
             "first_button_link": ""
           }
         },
         "collection_fyfMEN": {
           "type": "collection",
           "settings": {
-            "collection": "gifting-joys",
-            "collection_image": "shopify://shop_images/ecXyBanOcV_8963210c-d912-4ef7-b335-7477eb924ca5.jpg",
-            "collection_title": "Gifting Joys",
+            "collection": "bridal-wear",
+            "collection_image": "shopify://shop_images/gA1Iqvc2gF_1b6b6953-4d1b-4747-8977-75c508bb71cb.png",
+            "collection_title": "Bridal Wear",
             "first_button_link": ""
           }
         },
         "collection_ctTBpd": {
           "type": "collection",
           "settings": {
-            "collection": "art-collective",
-            "collection_image": "shopify://shop_images/Wt0taUDdiO_36b46b3a-f4b8-4891-9248-b58191c2d679.png",
-            "collection_title": "Art Collective",
+            "collection": "home-and-living",
+            "collection_image": "shopify://shop_images/Brass_Statues.png",
+            "collection_title": "Home and Living",
             "first_button_link": ""
           }
         }
