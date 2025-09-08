@@ -161,6 +161,7 @@
         "collection_Pj9CBk",
         "collection_GnMzMP"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.name",
       "settings": {
         "section_width": "fluid_container",
@@ -201,6 +202,7 @@
     },
     "divider_Pww7hX": {
       "type": "divider",
+      "disabled": true,
       "name": "t:sections.divider.name",
       "settings": {
         "section_width": "full_width",
