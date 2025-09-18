@@ -427,23 +427,7 @@
       document.querySelectorAll('.shawl-qa-heading').forEach((heading) => {
         heading.addEventListener('click', () => {
           const item = heading.closest('.shawl-qa-item');
-          const content = item.querySelector('.shawl-qa-content');
-
-          // Collapse all others if needed (optional)
-          // document.querySelectorAll(".shawl-qa-item").forEach(i => {
-          //   if (i !== item) {
-          //     i.classList.remove("active");
-          //     i.querySelector(".shawl-qa-content").style.maxHeight = null;
-          //   }
-          // });
-
-          if (item.classList.contains('active')) {
-            content.style.maxHeight = null;
-            item.classList.remove('active');
-          } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
-            item.classList.add('active');
-          }
+          item.classList.toggle('active');
         });
       });
     </script>
