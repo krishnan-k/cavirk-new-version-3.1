@@ -3423,6 +3423,17 @@ label.likely-count-label {
 .shawl-qa-item.active .shawl-icon::before {
   content: "-";
 }
+.shawl-qa-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding-left: 10px;
+}
+
+/* When open (parent has .active), allow expansion */
+.shawl-qa-item.active .shawl-qa-content {
+  max-height: 1000px; /* Big enough to accommodate content */
+}
 
 /* Default collapsed icon is '+' */
 .shawl-qa-icon::before,
