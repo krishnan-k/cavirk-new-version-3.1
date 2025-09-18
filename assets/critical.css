@@ -3398,21 +3398,7 @@ label.likely-count-label {
     display: flex;
     overflow: hidden;
 }
-.faq-question {
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.faq-question:hover {
-  background-color: #ddd;
-}
 
 .faq-answer {
   padding: 0 15px 15px 15px;
