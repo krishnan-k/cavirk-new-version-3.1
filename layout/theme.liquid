@@ -423,13 +423,13 @@
     </script>
     <!-- Judjme review app active class end -->
     <!-- faq -->
-    <script>
+    {% comment %} <script>
       document.querySelectorAll('.faq-section-title').forEach((heading) => {
         heading.addEventListener('click', () => {
           const item = heading.closest('.faq-item');
           item.classList.toggle('active');
         });
       });
-    </script>
+    </script> {% endcomment %}
   </body>
 </html>
