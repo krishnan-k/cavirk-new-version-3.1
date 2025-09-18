@@ -3414,7 +3414,7 @@ label.likely-count-label {
 }
 .shawl-icon {
   float: right;
-  font-size: 18px;
+  font-size: 24px;
   transition: transform 0.3s ease;
   color: #6b4f1d; /* Optional: Matches brownish theme */
 }
