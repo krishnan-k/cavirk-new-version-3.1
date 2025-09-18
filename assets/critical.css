@@ -3401,15 +3401,20 @@ label.likely-count-label {
 
 
 .faq-answer {
-  padding: 0 15px 15px 15px;
   display: none;
+  padding: 10px 0;
+  border-left: 2px solid #e0e0e0;
   background-color: #fafafa;
-  border-left: 3px solid #ccc;
 }
 
 .faq-item.active .faq-answer {
   display: block;
 }
+
+.faq-section-title {
+  cursor: pointer;
+}
+
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
