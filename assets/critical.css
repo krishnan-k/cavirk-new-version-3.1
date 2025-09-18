@@ -3399,18 +3399,19 @@ label.likely-count-label {
     overflow: hidden;
 }
 
-
-.faq_content-inner {
+.shawl-qa-content {
   display: none;
   padding-left: 10px;
+  border-left: 2px solid #eee;
+  background-color: #fafafa;
   transition: all 0.3s ease;
 }
 
-.faq-item.active .faq_content-inner {
+.shawl-qa-item.active .shawl-qa-content {
   display: block;
 }
 
-.faq-section-title {
+.shawl-qa-heading {
   cursor: pointer;
 }
 
