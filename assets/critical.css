@@ -3400,13 +3400,13 @@ label.likely-count-label {
 }
 
 
-.faq-answer {
+.dynamic-faq .faq_content-inner{
   display: none;
   padding: 10px 0;
   border-left: 2px solid #e0e0e0;
 }
 
-.faq-item.active .faq-answer {
+.dynamic-faq .faq-item.active .faq-answer {
   display: block;
 }
 
