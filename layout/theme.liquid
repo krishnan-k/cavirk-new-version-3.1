@@ -424,10 +424,10 @@
     <!-- Judjme review app active class end -->
     <!-- faq -->
     <script>
-      document.querySelectorAll('.faq-question').forEach((h3) => {
-        h3.addEventListener('click', () => {
-          const faqItem = button.parentElement;
-          faqItem.classList.toggle('active');
+      document.querySelectorAll('.faq-section-title').forEach((title) => {
+        title.addEventListener('click', () => {
+          const item = title.parentElement;
+          item.classList.toggle('active');
         });
       });
     </script>
