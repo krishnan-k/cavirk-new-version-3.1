@@ -14,9 +14,9 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-	<!-- Added by AVADA SEO Suite -->
-	{% include 'avada-seo' %}
-	<!-- /Added by AVADA SEO Suite -->
+    <!-- Added by AVADA SEO Suite -->
+    {% include 'avada-seo' %}
+    <!-- /Added by AVADA SEO Suite -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -200,18 +200,27 @@
     </script>
 
     <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "q5hwcpn59e");
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'q5hwcpn59e');
     </script>
 
     <!-- Global site tag (gtag.js) - Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16781409924"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
       // CONFIG TAG – must come first
       gtag('js', new Date());
@@ -219,9 +228,9 @@
 
       // EVENT TAG – can come after config
       gtag('event', 'conversion', {
-          'send_to': 'AW-16781409924/XYZ123abc45',  // use your actual conversion ID
-          'value': 100.0,
-          'currency': 'USD'
+        send_to: 'AW-16781409924/XYZ123abc45', // use your actual conversion ID
+        value: 100.0,
+        currency: 'USD',
       });
     </script>
 
@@ -229,7 +238,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WVGTBJBD"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'GT-WVGTBJBD');
@@ -237,22 +248,22 @@
 
     <!-- GA4 Client ID Retrieval Script -->
     <script>
-      (function() {
+      (function () {
         try {
           if (typeof gtag === 'function') {
-            gtag('get', 'G-82P61PP9VE', 'client_id', function(clientId) {
+            gtag('get', 'G-82P61PP9VE', 'client_id', function (clientId) {
               if (clientId) {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
-                  'event': 'gaClientIdRetrieved',
-                  'ga_client_id': clientId
+                  event: 'gaClientIdRetrieved',
+                  ga_client_id: clientId,
                 });
-               // console.log('GA4 client:',clientId);
+                // console.log('GA4 client:',clientId);
               }
             });
           }
         } catch (e) {
-           console.error('Error retrieving GA4 client_id:', e);
+          console.error('Error retrieving GA4 client_id:', e);
         }
       })();
     </script>
@@ -260,7 +271,7 @@
     <!-- Add GA4 Client ID as Cart Attribute -->
     <script>
       function addGaClientIdToCart(ga4ClientId) {
-       // console.log('GA4 client - add:', ga4ClientId); 
+        // console.log('GA4 client - add:', ga4ClientId);
         if (!ga4ClientId) return;
 
         if (typeof jQuery !== 'undefined') {
@@ -269,10 +280,10 @@
             url: '/cart/update.js',
             data: {
               attributes: {
-                'ga_client_id': ga4ClientId
-              }
+                ga_client_id: ga4ClientId,
+              },
             },
-            dataType: 'json'
+            dataType: 'json',
           });
         }
       }
@@ -280,7 +291,7 @@
       window.dataLayer = window.dataLayer || [];
 
       window.addEventListener('DOMContentLoaded', function () {
-        var ga4ClientId = window.dataLayer.find(item => item.ga_client_id !== undefined)?.ga_client_id;
+        var ga4ClientId = window.dataLayer.find((item) => item.ga_client_id !== undefined)?.ga_client_id;
 
         if (ga4ClientId) {
           addGaClientIdToCart(ga4ClientId);
@@ -303,49 +314,54 @@
 
     <!-- Google Tag Manager -->
     <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-54L5K3MH');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-54L5K3MH');
     </script>
     <!-- End Google Tag Manager -->
 
     <!-- debug script -->
     <script>
-      window.googletag = window.googletag || {cmd: []};
+      window.googletag = window.googletag || { cmd: [] };
 
-      googletag.cmd.push(function() {
+      googletag.cmd.push(function () {
         // Enable GPT debug mode
         googletag.pubads().enableVideoAds(); // optional if using video
 
         // Listen to key ad events
-        googletag.pubads().addEventListener('slotRequested', function(e) {
+        googletag.pubads().addEventListener('slotRequested', function (e) {
           console.log('[GPT] Slot Requested:', e.slot.getSlotElementId());
         });
 
-        googletag.pubads().addEventListener('slotRenderEnded', function(e) {
+        googletag.pubads().addEventListener('slotRenderEnded', function (e) {
           console.log('[GPT] Slot Rendered:', {
             divId: e.slot.getSlotElementId(),
             size: e.size,
             isEmpty: e.isEmpty,
             advertiserId: e.advertiserId,
-            creativeId: e.creativeId
+            creativeId: e.creativeId,
           });
         });
 
-        googletag.pubads().addEventListener('impressionViewable', function(e) {
+        googletag.pubads().addEventListener('impressionViewable', function (e) {
           console.log('[GPT] Impression Viewable for:', e.slot.getSlotElementId());
         });
 
-        googletag.pubads().addEventListener('slotOnload', function(e) {
+        googletag.pubads().addEventListener('slotOnload', function (e) {
           console.log('[GPT] Slot Loaded:', e.slot.getSlotElementId());
         });
 
-        googletag.pubads().addEventListener('slotVisibilityChanged', function(e) {
+        googletag.pubads().addEventListener('slotVisibilityChanged', function (e) {
           console.log('[GPT] Slot Visibility Changed:', {
             divId: e.slot.getSlotElementId(),
-            visible: e.inViewPercentage + '%'
+            visible: e.inViewPercentage + '%',
           });
         });
       });
@@ -388,23 +404,32 @@
     {%- render 'scripts-tag' -%}
     {%- render 'sprite-svg' -%}
     {%- render 'content-bottom' -%}
-    <!-- Judjme review app active class start-->
+    <!-- Judjme review app active class start -->
     <script>
       const observer = new MutationObserver(() => {
-        const summaryBlock = document.querySelector(".jdgm-rev-widg__summary");
-        const verifiedText = document.querySelector(".jdgm-all-reviews__summary-text--verified");
+        const summaryBlock = document.querySelector('.jdgm-rev-widg__summary');
+        const verifiedText = document.querySelector('.jdgm-all-reviews__summary-text--verified');
 
         if (summaryBlock && verifiedText) {
-          summaryBlock.classList.add("active");
+          summaryBlock.classList.add('active');
           observer.disconnect(); // stop watching once applied
         }
       });
 
       observer.observe(document.body, {
         childList: true,
-        subtree: true
+        subtree: true,
       });
     </script>
-    <!-- Judjme review app active class end-->
+    <!-- Judjme review app active class end -->
+    <!-- faq -->
+    <script>
+      document.querySelectorAll('.faq-question').forEach((button) => {
+        button.addEventListener('click', () => {
+          const faqItem = button.parentElement;
+          faqItem.classList.toggle('active');
+        });
+      });
+    </script>
   </body>
 </html>
