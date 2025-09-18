@@ -3402,8 +3402,6 @@ label.likely-count-label {
 .shawl-qa-content {
   display: none;
   padding-left: 10px;
-  border-left: 2px solid #eee;
-  background-color: #fafafa;
   transition: all 0.3s ease;
 }
 
