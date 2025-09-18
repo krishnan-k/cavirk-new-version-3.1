@@ -424,9 +424,9 @@
     <!-- Judjme review app active class end -->
     <!-- faq -->
     <script>
-      document.querySelectorAll('.faq-section-title').forEach((title) => {
-        title.addEventListener('click', () => {
-          const item = title.parentElement;
+      document.querySelectorAll('.faq-section-title').forEach((heading) => {
+        heading.addEventListener('click', () => {
+          const item = heading.closest('.faq-item');
           item.classList.toggle('active');
         });
       });
