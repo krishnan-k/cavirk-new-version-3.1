@@ -3412,6 +3412,23 @@ label.likely-count-label {
 .shawl-qa-heading {
   cursor: pointer;
 }
+.shawl-icon {
+  float: right;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  color: #6b4f1d; /* Optional: Matches brownish theme */
+}
+
+/* When expanded (parent has .active), show '-' instead of '+' */
+.shawl-qa-item.active .shawl-icon::before {
+  content: "-";
+}
+
+/* Default collapsed icon is '+' */
+.shawl-qa-icon::before,
+.shawl-icon::before {
+  content: "+";
+}
 
 @media (min-width: 479px) {
   .banner__inner.grid-1,
