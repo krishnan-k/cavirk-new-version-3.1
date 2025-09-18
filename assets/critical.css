@@ -3398,6 +3398,32 @@ label.likely-count-label {
     display: flex;
     overflow: hidden;
 }
+.faq-question {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #ddd;
+}
+
+.faq-answer {
+  padding: 0 15px 15px 15px;
+  display: none;
+  background-color: #fafafa;
+  border-left: 3px solid #ccc;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
