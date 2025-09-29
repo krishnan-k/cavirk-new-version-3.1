@@ -83,13 +83,6 @@
             "collection": "murshidabadi-silk",
             "collection_title": ""
           }
-        },
-        "collection_7eFG7r": {
-          "type": "collection",
-          "settings": {
-            "collection": "kanchivaram",
-            "collection_title": ""
-          }
         }
       },
       "block_order": [
@@ -98,8 +91,7 @@
         "collection_ntkFtH",
         "collection_HGqtp3",
         "collection_xeQJ4a",
-        "collection_63dpDA",
-        "collection_7eFG7r"
+        "collection_63dpDA"
       ],
       "settings": {
         "section_width": "container",
