@@ -12,12 +12,13 @@
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
-        "slider_item_niXKaE": {
+        "slider_item_fJjFU4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/Untitled-3_33ebab88-e456-41c2-88ab-b6e74baae90c.png",
-            "image_mobile": "shopify://shop_images/Untitled_design_1.png",
+            "image": "shopify://shop_images/50_off_1.png",
+            "image_mobile": "shopify://shop_images/Offer_Valid_10-25_Oc_2030_7_1.jpg",
             "overlay_opacity": 0,
+            "first_button_link_image": "shopify://collections",
             "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
@@ -40,14 +41,14 @@
             "content_alignment_mobile": "left"
           }
         },
-        "slider_item_nJa9XY": {
+        "slider_item_g8Brtx": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/final_banner-01-01.png",
-            "image_mobile": "shopify://shop_images/fff111-01-01-01.png",
+            "image": "shopify://shop_images/Offer_Valid_10-25_October_2025_2_a73078ee-e6ab-49b3-8fed-b53b89dbb0b2.png",
+            "image_mobile": "shopify://shop_images/Offer_Valid_10-25_October_2025_3.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_zoomout",
+            "first_button_link_image": "shopify://collections/bridal-lehengas",
+            "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
             "description": "",
@@ -58,7 +59,7 @@
             "second_button_link": "",
             "second_button_style": false,
             "content_alignment": "left",
-            "content_position": "middle-center",
+            "content_position": "bottom-left",
             "content_width": "container",
             "content_max_width": 100,
             "content_padding_block": 60,
@@ -66,56 +67,28 @@
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "center"
+            "content_alignment_mobile": "left"
           }
         },
-        "slider_item_YipJd4": {
+        "slider_item_niXKaE": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/final_main_banner-01-01.png",
-            "image_mobile": "shopify://shop_images/mobile_final.jpg",
+            "image": "shopify://shop_images/2-min.png",
+            "image_mobile": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner_3.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_zoomout",
+            "first_button_link_image": "shopify://pages/silk",
+            "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
             "description": "",
-            "first_button_label": "shop now",
-            "first_button_link": "shopify://collections",
+            "first_button_label": "",
+            "first_button_link": "",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
-            "content_alignment": "center",
-            "content_position": "bottom-center",
-            "content_width": "full_width",
-            "content_max_width": 40,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
-            "show_content_background": false,
-            "content_background": "#151515",
-            "content_box_opacity": 50,
-            "content_alignment_mobile": "center"
-          }
-        },
-        "slider_item_KFyzRa": {
-          "type": "slider_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/cavirk_banner_1.jpg",
-            "image_mobile": "shopify://shop_images/M1_png.jpg",
-            "overlay_opacity": 0,
-            "slider_effect": "effect_zoomout",
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "first_button_label": "Shop now",
-            "first_button_link": "shopify://collections/lehengas-collection",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "center",
-            "content_position": "bottom-center",
+            "content_alignment": "left",
+            "content_position": "bottom-left",
             "content_width": "container",
             "content_max_width": 100,
             "content_padding_block": 60,
@@ -123,36 +96,67 @@
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "center"
+            "content_alignment_mobile": "left"
           }
         },
-        "slider_item_AyhUnU": {
+        "slider_item_BCmGBC": {
           "type": "slider_item",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/jewellery-01-01-01-01-01-01-01-01.png",
-            "image_mobile": "shopify://shop_images/jm-01-01-01-01.png",
+            "image": "shopify://shop_images/Neutral_Modern_Fashion_Collection_Banner_6.png",
+            "image_mobile": "shopify://shop_images/Neutral_Modern_Fashion_Collection_Banner_7.png",
             "overlay_opacity": 0,
-            "slider_effect": "effect_zoomout",
+            "first_button_link_image": "shopify://collections/indo-western",
+            "slider_effect": "effect_fadeindown",
             "subheading": "",
-            "heading": "One Marketplace, Endless Choices",
+            "heading": "",
             "description": "",
-            "first_button_label": "shop now",
-            "first_button_link": "shopify://pages/jewellery",
+            "first_button_label": "",
+            "first_button_link": "",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
-            "content_alignment": "center",
-            "content_position": "middle-right",
-            "content_width": "full_width",
-            "content_max_width": 40,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
             "show_content_background": false,
-            "content_background": "#e0d1cc",
-            "content_box_opacity": 40,
-            "content_alignment_mobile": "center"
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_6aLFii": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner_2_-min.png",
+            "image_mobile": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner.png",
+            "overlay_opacity": 0,
+            "first_button_link_image": "shopify://pages/silk",
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
           }
         },
         "slider_item_jiLA39": {
@@ -160,6 +164,7 @@
           "settings": {
             "local_video": "shopify://files/videos/CAVIRK REEL 01 (1).mp4",
             "overlay_opacity": 20,
+            "first_button_link_image": "",
             "slider_effect": "effect_zoomout",
             "subheading": "",
             "heading": "Explore Madhubani Sarees",
@@ -184,16 +189,16 @@
         }
       },
       "block_order": [
+        "slider_item_fJjFU4",
+        "slider_item_g8Brtx",
         "slider_item_niXKaE",
-        "slider_item_nJa9XY",
-        "slider_item_YipJd4",
-        "slider_item_KFyzRa",
-        "slider_item_AyhUnU",
+        "slider_item_BCmGBC",
+        "slider_item_6aLFii",
         "slider_item_jiLA39"
       ],
       "settings": {
         "section_width": "full_width",
-        "slide_height": "custom",
+        "slide_height": "adapt",
         "desktop_height": 600,
         "mobile_height": 520,
         "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",

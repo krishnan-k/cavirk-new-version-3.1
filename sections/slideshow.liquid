@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ 'slideshow.css' | asset_url }}" media="print" onload="this.media='all'">
 {% liquid
   assign section_st = section.settings
-  assign theme_st  = settings
+  assign theme_st = settings
   assign section_width = section_st.section_width
   assign slide_height = section_st.slide_height
   assign color_scheme = section_st.color_scheme
@@ -121,6 +121,7 @@
                           assign image_alt = block.settings.image.alt
                         endif
                       -%}
+                      <a href="{{ block_st.first_button_link_image | default: "#" }}">
                         {% render 'responsive-image',
                           type: 'banner',
                           container: section_width,
@@ -130,6 +131,7 @@
                           lazy_load: lazy_load,
                           first: forloop.first
                         %}
+                      </a>
                     {% endif %}
                   {%- else -%}
                     {%- render 'placeholder-render', class: 'absolute inset-0 w-full h-full object-fit-cover' -%}
@@ -151,20 +153,19 @@
                     >
                       {% if block_st.subheading != blank %}
                         <motion-element
-                          data-motion="fade-up-lg"                   
-                              hold                                     
+                          data-motion="fade-up-lg"
+                          hold
                           data-motion-delay="100"
                           class="sec__content-subheading  {% if block_st.slider_effect == 'effect_fadeinup' %} opacity-0  {{ slider_effect }}  {% endif %}  block heading{% if section_st.subheading_spacing_bottom > 41 %} mb-big{% elsif section_st.subheading_spacing_bottom > 30 %} mb-medium {% else %} mb-custom{% endif %} fs-custom {{ section_st.subheading_font_weight }}"
                           style="--font-size: {{ section_st.subheading_font_size }};--space-bottom: {{ section_st.subheading_spacing_bottom }}"
                         >
-                          
                           {{ block_st.subheading | escape }}
                         </motion-element>
                       {% endif %}
                       {% if block_st.heading != blank %}
                         <motion-element
                           data-motion="fade-up-lg"
-                            hold
+                          hold
                           data-motion-delay="200"
                           class="block  {% if block_st.slider_effect == 'effect_fadeinup' %} opacity-0 {{ slider_effect }} {% endif %}"
                         >
@@ -179,8 +180,8 @@
                       {% endif %}
                       {% if block_st.description != blank %}
                         <motion-element
-                          data-motion="fade-up-lg"                     
-                            hold                 
+                          data-motion="fade-up-lg"
+                          hold
                           data-motion-delay="300"
                           class="sec__content-des {% if block_st.slider_effect == 'effect_fadeinup' %} opacity-0  {{ slider_effect }}  {% endif %} block rich__text-m0 {% if section_st.des_spacing_bottom > 41 %} mb-big{% elsif section_st.des_spacing_bottom > 30 %} mb-medium {% else %} mb-custom{% endif %}{% if section_st.des_font_size > 24 %} fs-medium{% else %} fs-custom{% endif %} {{ section_st.des_font_weight }}"
                           style="--font-size: {{ section_st.des_font_size }};--space-bottom: {{ section_st.des_spacing_bottom }}"
@@ -191,8 +192,8 @@
                       {% endif %}
                       {% if block_st.first_button_label != blank or block_st.second_button_label != blank %}
                         <motion-element
-                          data-motion="fade-up-lg"                    
-                            hold                   
+                          data-motion="fade-up-lg"
+                          hold
                           data-motion-delay="400"
                           class="sec__content-btn {% if block_st.slider_effect == 'effect_fadeinup' %} opacity-0  {{ slider_effect }}  {% endif %} align-center flex flex-wrap gap-15 justify-content-{{ block_st.content_alignment_mobile }} justify-content-md-{{ block_st.content_alignment }}"
                         >
@@ -627,6 +628,11 @@
           "unit": "%",
           "label": "t:sections.all.image.image_overlay_opacity.label",
           "default": 0
+        },
+        {
+          "type": "url",
+          "id": "first_button_link_image",
+          "label": "Image link"
         },
         {
           "type": "header",

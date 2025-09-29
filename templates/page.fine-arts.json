@@ -162,17 +162,17 @@
         "heading_JaBA6U": {
           "type": "heading",
           "settings": {
-            "heading": "Contemporary Indian Art & Handcrafts",
+            "heading": "A Note from Cavirk",
             "font_size": 36,
             "font_weight": "heading_weight",
             "uppercase": false,
-            "spacing_bottom": 24
+            "spacing_bottom": 10
           }
         },
         "description_yNm3BD": {
           "type": "description",
           "settings": {
-            "description": "<p>Cavirk celebrates the richness of Indian artistry by curating an exclusive collection of authentic handwoven textiles, traditional crafts, and contemporary artworks. Each piece is thoughtfully selected from skilled artisans and creators across India, ensuring originality and cultural depth.<br/>Located online, Cavirk brings the spirit of India’s heritage to a global audience, making it easy to explore and own timeless works of art from anywhere in the world.</p>",
+            "description": "<p>The artworks you see here are captured and uploaded by the artists themselves. They may not be polished with professional photography, but that’s the beauty of it—what you see is as real as the hands that created it. At Cavirk, we believe in giving these creators a platform to showcase their work as it is—raw, real, and made with mastery. The artistry speaks for itself, even if the pictures don’t always.</p>",
             "font_size": 14,
             "font_weight": "body_weight",
             "spacing_bottom": 20
