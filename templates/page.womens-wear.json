@@ -9,59 +9,6 @@
  */
 {
   "sections": {
-    "175981172465738d57": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_e3b7faf_BLqibg": {
-          "type": "ai_gen_block_e3b7faf",
-          "settings": {
-            "section_width": "fluid_container",
-            "heading": "Featured Gallery",
-            "subheading": "Discover our collection",
-            "description": "<p>Explore our carefully curated selection of premium products designed to enhance your lifestyle.</p>",
-            "text_alignment": "center",
-            "title_1": "First Collection",
-            "button_text_1": "Shop Now",
-            "button_link_1": "",
-            "title_2": "Second Collection",
-            "button_text_2": "Explore",
-            "button_link_2": "",
-            "image_aspect_ratio": "portrait",
-            "grid_gap": 30,
-            "content_alignment": "center",
-            "background_color": "#ffffff",
-            "heading_color": "#523d00",
-            "subheading_color": "#444444",
-            "text_color": "#444444",
-            "card_background_color": "#ffffff",
-            "title_color": "#523d00",
-            "button_background_color": "#111111",
-            "button_text_color": "#ffffff",
-            "button_hover_background_color": "#523d00",
-            "button_hover_text_color": "#ffffff",
-            "heading_size": 36,
-            "heading_text_transform": "none",
-            "subheading_size": 20,
-            "description_size": 16,
-            "title_size": 20,
-            "title_text_transform": "capitalize",
-            "button_text_size": 14,
-            "button_text_transform": "capitalize",
-            "section_padding_top": 50,
-            "section_padding_bottom": 50,
-            "card_padding": 20,
-            "card_border_radius": 8,
-            "button_border_radius": 30
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_e3b7faf_BLqibg"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
     "page-heading": {
       "type": "page-heading",
       "blocks": {
@@ -359,7 +306,6 @@
     }
   },
   "order": [
-    "175981172465738d57",
     "page-heading",
     "main"
   ]
