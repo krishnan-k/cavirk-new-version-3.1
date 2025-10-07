@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/50_off_2.png",
             "image_mobile": "shopify://shop_images/Offer_Valid_10-25_Oc_2030_7_1.jpg",
             "overlay_opacity": 0,
-            "first_button_link_image": "shopify://collections",
+            "first_button_link_image": "",
             "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
@@ -163,7 +163,7 @@
           "type": "slider_item",
           "settings": {
             "local_video": "shopify://files/videos/CAVIRK REEL 01 (1).mp4",
-            "overlay_opacity": 20,
+            "overlay_opacity": 0,
             "first_button_link_image": "",
             "slider_effect": "effect_zoomout",
             "subheading": "",
