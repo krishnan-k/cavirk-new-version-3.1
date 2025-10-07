@@ -11,33 +11,32 @@
   }
 
   .ai-image-gallery-container-{{ ai_gen_id }} {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
   .ai-image-gallery-header-{{ ai_gen_id }} {
     text-align: {{ block.settings.text_alignment }};
-    margin-bottom: {{ block.settings.content_spacing }}px;
+    margin-bottom: 40px;
   }
 
   .ai-image-gallery-heading-{{ ai_gen_id }} {
     color: {{ block.settings.heading_color }};
     font-size: {{ block.settings.heading_size }}px;
-    font-weight: {{ block.settings.heading_weight }};
-    margin: 0 0 {{ block.settings.heading_spacing }}px;
-    text-transform: {{ block.settings.heading_transform }};
+    margin: 0 0 16px;
+    font-weight: 400;
+    text-transform: {{ block.settings.heading_text_transform }};
   }
 
   .ai-image-gallery-subheading-{{ ai_gen_id }} {
     color: {{ block.settings.subheading_color }};
     font-size: {{ block.settings.subheading_size }}px;
-    font-weight: {{ block.settings.subheading_weight }};
-    margin: 0 0 {{ block.settings.subheading_spacing }}px;
+    margin: 0 0 16px;
+    font-weight: 400;
   }
 
   .ai-image-gallery-description-{{ ai_gen_id }} {
-    color: {{ block.settings.description_color }};
+    color: {{ block.settings.text_color }};
     font-size: {{ block.settings.description_size }}px;
     line-height: 1.6;
     margin: 0;
@@ -45,23 +44,21 @@
 
   .ai-image-gallery-grid-{{ ai_gen_id }} {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: {{ block.settings.grid_gap }}px;
-    margin-top: {{ block.settings.content_spacing }}px;
   }
 
   .ai-image-gallery-item-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
-    background-color: {{ block.settings.card_background }};
+    background-color: {{ block.settings.card_background_color }};
     border-radius: {{ block.settings.card_border_radius }}px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .ai-image-gallery-item-{{ ai_gen_id }}:hover {
-    transform: translateY(-{{ block.settings.hover_lift }}px);
-    box-shadow: 0 {{ block.settings.hover_lift | times: 2 }}px {{ block.settings.hover_lift | times: 4 }}px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
 
   .ai-image-gallery-image-wrapper-{{ ai_gen_id }} {
@@ -89,9 +86,6 @@
     transition: transform 0.3s ease;
   }
 
-  .ai-image-gallery-item-{{ ai_gen_id }}:hover .ai-image-gallery-image-{{ ai_gen_id }} {
-    transform: scale(1.05);
-  }
 
   .ai-image-gallery-placeholder-{{ ai_gen_id }} {
     width: 100%;
@@ -125,39 +119,39 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    text-align: {{ block.settings.card_text_alignment }};
+    text-align: {{ block.settings.content_alignment }};
   }
 
   .ai-image-gallery-title-{{ ai_gen_id }} {
     color: {{ block.settings.title_color }};
     font-size: {{ block.settings.title_size }}px;
-    font-weight: {{ block.settings.title_weight }};
-    margin: 0 0 {{ block.settings.title_spacing }}px;
-    flex-grow: 1;
+    margin: 0 0 12px;
+    font-weight: 400;
+    text-transform: {{ block.settings.title_text_transform }};
   }
 
   .ai-image-gallery-button-{{ ai_gen_id }} {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
-    background-color: {{ block.settings.button_background }};
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_background_color }};
     color: {{ block.settings.button_text_color }};
     text-decoration: none;
     border-radius: {{ block.settings.button_border_radius }}px;
-    font-size: {{ block.settings.button_font_size }}px;
-    font-weight: {{ block.settings.button_font_weight }};
+    font-size: {{ block.settings.button_text_size }}px;
     text-transform: {{ block.settings.button_text_transform }};
     transition: all 0.3s ease;
+    margin: auto;
+    width: fit-content;
     border: none;
     cursor: pointer;
-    margin-top: auto;
+
   }
 
   .ai-image-gallery-button-{{ ai_gen_id }}:hover {
-    background-color: {{ block.settings.button_hover_background }};
+    background-color: {{ block.settings.button_hover_background_color }};
     color: {{ block.settings.button_hover_text_color }};
-    transform: translateY(-2px);
   }
 
   @media screen and (max-width: 768px) {
@@ -165,16 +159,13 @@
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      gap: {{ block.settings.mobile_gap }}px;
+      gap: 20px;
       padding-bottom: 10px;
-      margin-left: -20px;
-      margin-right: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
+      -webkit-overflow-scrolling: touch;
     }
 
     .ai-image-gallery-item-{{ ai_gen_id }} {
-      flex: 0 0 {{ block.settings.mobile_item_width }}%;
+      flex: 0 0 280px;
       scroll-snap-align: start;
     }
 
@@ -188,12 +179,8 @@
     }
 
     .ai-image-gallery-grid-{{ ai_gen_id }}::-webkit-scrollbar-thumb {
-      background: {{ block.settings.scrollbar_color }};
+      background: {{ block.settings.button_background_color }};
       border-radius: 2px;
-    }
-
-    .ai-image-gallery-grid-{{ ai_gen_id }}::-webkit-scrollbar-thumb:hover {
-      background: {{ block.settings.scrollbar_hover_color }};
     }
 
     .ai-image-gallery-heading-{{ ai_gen_id }} {
@@ -210,14 +197,22 @@
   }
 
   @media screen and (max-width: 480px) {
+    .ai-image-gallery-container-{{ ai_gen_id }} {
+      padding: 0 15px;
+    }
+
     .ai-image-gallery-item-{{ ai_gen_id }} {
-      flex: 0 0 {{ block.settings.mobile_item_width | plus: 10 }}%;
+      flex: 0 0 250px;
+    }
+
+    .ai-image-gallery-content-{{ ai_gen_id }} {
+      padding: {{ block.settings.card_padding | times: 0.8 }}px;
     }
   }
 {% endstyle %}
 
-<div class="ai-image-gallery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
-  <div class="ai-image-gallery-container-{{ ai_gen_id }}">
+<div class="ai-image-gallery-{{ ai_gen_id }} {{ block.settings.section_width }}" {{ block.shopify_attributes }}>
+  <div class="ai-image-gallery-container-{{ ai_gen_id }} {% if block.settings.section_width == 'full_width' %} px-20 {% endif %}">
     {% if block.settings.heading != blank or block.settings.subheading != blank or block.settings.description != blank %}
       <div class="ai-image-gallery-header-{{ ai_gen_id }}">
         {% if block.settings.heading != blank %}
@@ -235,7 +230,7 @@
     {% endif %}
 
     <div class="ai-image-gallery-grid-{{ ai_gen_id }}">
-      {% for i in (1..3) %}
+      {% for i in (1..2) %}
         {% liquid
           assign image_key = 'image_' | append: i
           assign title_key = 'title_' | append: i
@@ -249,7 +244,7 @@
         %}
         
         <div class="ai-image-gallery-item-{{ ai_gen_id }}">
-          <div class="ai-image-gallery-image-wrapper-{{ ai_gen_id }} ai-image-gallery-image-wrapper-{{ ai_gen_id }}--{{ block.settings.image_ratio }}">
+          <div class="ai-image-gallery-image-wrapper-{{ ai_gen_id }} ai-image-gallery-image-wrapper-{{ ai_gen_id }}--{{ block.settings.image_aspect_ratio }}">
             {% if image %}
               <img
                 src="{{ image | image_url: width: 600 }}"
@@ -275,12 +270,15 @@
             {% endif %}
             
             {% if button_text != blank %}
-              <a
-                href="{{ button_link | default: '#' }}"
-                class="ai-image-gallery-button-{{ ai_gen_id }}"
-              >
-                {{ button_text }}
-              </a>
+              {% if button_link != blank %}
+                <a href="{{ button_link }}" class="ai-image-gallery-button-{{ ai_gen_id }} btn">
+                  {{ button_text }}
+                </a>
+              {% else %}
+                <button class="ai-image-gallery-button-{{ ai_gen_id }} btn">
+                  {{ button_text }}
+                </button>
+              {% endif %}
             {% endif %}
           </div>
         </div>
@@ -294,6 +292,30 @@
   "name": "Image gallery",
   "tag": null,
   "settings": [
+  {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:sections.all.section_width.label",
+      "default": "fluid_container",
+      "options": [
+        {
+          "value": "container",
+          "label": "t:sections.all.section_width.container.label"
+        },
+        {
+          "value": "fluid_container",
+          "label": "t:sections.all.section_width.fluid_container.label"
+        },
+        {
+          "value": "stretch_width",
+          "label": "t:sections.all.section_width.stretch_width.label"
+        },
+        {
+          "value": "full_width",
+          "label": "t:sections.all.section_width.full_width.label"
+        }
+      ]
+    },
     {
       "type": "header",
       "content": "Section content"
@@ -349,7 +371,7 @@
       "type": "text",
       "id": "title_1",
       "label": "Title",
-      "default": "First Collection"
+      "default": "Premium Collection"
     },
     {
       "type": "text",
@@ -375,7 +397,7 @@
       "type": "text",
       "id": "title_2",
       "label": "Title",
-      "default": "Second Collection"
+      "default": "New Arrivals"
     },
     {
       "type": "text",
@@ -390,37 +412,11 @@
     },
     {
       "type": "header",
-      "content": "Image 3"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_3",
-      "label": "Image"
-    },
-    {
-      "type": "text",
-      "id": "title_3",
-      "label": "Title",
-      "default": "Third Collection"
-    },
-    {
-      "type": "text",
-      "id": "button_text_3",
-      "label": "Button text",
-      "default": "View All"
-    },
-    {
-      "type": "url",
-      "id": "button_link_3",
-      "label": "Button link"
-    },
-    {
-      "type": "header",
       "content": "Layout settings"
     },
     {
       "type": "select",
-      "id": "image_ratio",
+      "id": "image_aspect_ratio",
       "label": "Image aspect ratio",
       "options": [
         {
@@ -449,84 +445,92 @@
       "default": 30
     },
     {
-      "type": "range",
-      "id": "content_spacing",
-      "min": 20,
-      "max": 80,
-      "step": 5,
-      "unit": "px",
-      "label": "Content spacing",
-      "default": 40
+      "type": "select",
+      "id": "content_alignment",
+      "label": "Content alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
     },
     {
       "type": "header",
-      "content": "Mobile settings"
-    },
-    {
-      "type": "range",
-      "id": "mobile_item_width",
-      "min": 70,
-      "max": 90,
-      "step": 5,
-      "unit": "%",
-      "label": "Mobile item width",
-      "default": 80
-    },
-    {
-      "type": "range",
-      "id": "mobile_gap",
-      "min": 10,
-      "max": 30,
-      "step": 5,
-      "unit": "px",
-      "label": "Mobile gap",
-      "default": 20
-    },
-    {
-      "type": "color",
-      "id": "scrollbar_color",
-      "label": "Scrollbar color",
-      "default": "#cccccc"
-    },
-    {
-      "type": "color",
-      "id": "scrollbar_hover_color",
-      "label": "Scrollbar hover color",
-      "default": "#999999"
-    },
-    {
-      "type": "header",
-      "content": "Section style"
-    },
-    {
-      "type": "range",
-      "id": "section_padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "label": "Top padding",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "section_padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "label": "Bottom padding",
-      "default": 50
+      "content": "Colors"
     },
     {
       "type": "color",
       "id": "background_color",
       "label": "Background color",
+      "default": "#eaded0"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#523d00"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#523d00"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#444444"
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Card background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#523d00"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button background color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Button hover background color",
+      "default": "#523d00"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text color",
       "default": "#ffffff"
     },
     {
       "type": "header",
-      "content": "Heading style"
+      "content": "Typography"
     },
     {
       "type": "range",
@@ -539,17 +543,8 @@
       "default": 36
     },
     {
-      "type": "range",
-      "id": "heading_weight",
-      "min": 300,
-      "max": 700,
-      "step": 100,
-      "label": "Heading weight",
-      "default": 600
-    },
-    {
       "type": "select",
-      "id": "heading_transform",
+      "id": "heading_text_transform",
       "label": "Heading text transform",
       "options": [
         {
@@ -569,62 +564,13 @@
     },
     {
       "type": "range",
-      "id": "heading_spacing",
-      "min": 5,
-      "max": 30,
-      "step": 5,
-      "unit": "px",
-      "label": "Heading spacing",
-      "default": 15
-    },
-    {
-      "type": "color",
-      "id": "heading_color",
-      "label": "Heading color",
-      "default": "#523d00"
-    },
-    {
-      "type": "header",
-      "content": "Subheading style"
-    },
-    {
-      "type": "range",
       "id": "subheading_size",
       "min": 14,
       "max": 30,
-      "step": 2,
+      "step": 1,
       "unit": "px",
       "label": "Subheading size",
       "default": 20
-    },
-    {
-      "type": "range",
-      "id": "subheading_weight",
-      "min": 300,
-      "max": 700,
-      "step": 100,
-      "label": "Subheading weight",
-      "default": 500
-    },
-    {
-      "type": "range",
-      "id": "subheading_spacing",
-      "min": 5,
-      "max": 30,
-      "step": 5,
-      "unit": "px",
-      "label": "Subheading spacing",
-      "default": 10
-    },
-    {
-      "type": "color",
-      "id": "subheading_color",
-      "label": "Subheading color",
-      "default": "#444444"
-    },
-    {
-      "type": "header",
-      "content": "Description style"
     },
     {
       "type": "range",
@@ -634,165 +580,47 @@
       "step": 1,
       "unit": "px",
       "label": "Description size",
-      "default": 16
-    },
-    {
-      "type": "color",
-      "id": "description_color",
-      "label": "Description color",
-      "default": "#444444"
-    },
-    {
-      "type": "header",
-      "content": "Card style"
-    },
-    {
-      "type": "color",
-      "id": "card_background",
-      "label": "Card background",
-      "default": "#ffffff"
-    },
-    {
-      "type": "range",
-      "id": "card_border_radius",
-      "min": 0,
-      "max": 20,
-      "step": 2,
-      "unit": "px",
-      "label": "Card border radius",
-      "default": 8
-    },
-    {
-      "type": "range",
-      "id": "card_padding",
-      "min": 10,
-      "max": 40,
-      "step": 5,
-      "unit": "px",
-      "label": "Card padding",
-      "default": 20
-    },
-    {
-      "type": "select",
-      "id": "card_text_alignment",
-      "label": "Card text alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "center"
-    },
-    {
-      "type": "range",
-      "id": "hover_lift",
-      "min": 0,
-      "max": 10,
-      "step": 2,
-      "unit": "px",
-      "label": "Hover lift effect",
-      "default": 4
-    },
-    {
-      "type": "header",
-      "content": "Title style"
+      "default": 15
     },
     {
       "type": "range",
       "id": "title_size",
       "min": 14,
       "max": 28,
-      "step": 2,
+      "step": 1,
       "unit": "px",
       "label": "Title size",
-      "default": 20
+      "default": 18
+    },
+    {
+      "type": "select",
+      "id": "title_text_transform",
+      "label": "Title text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ],
+      "default": "capitalize"
     },
     {
       "type": "range",
-      "id": "title_weight",
-      "min": 300,
-      "max": 700,
-      "step": 100,
-      "label": "Title weight",
-      "default": 600
-    },
-    {
-      "type": "range",
-      "id": "title_spacing",
-      "min": 10,
-      "max": 30,
-      "step": 5,
-      "unit": "px",
-      "label": "Title spacing",
-      "default": 15
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "Title color",
-      "default": "#523d00"
-    },
-    {
-      "type": "header",
-      "content": "Button style"
-    },
-    {
-      "type": "range",
-      "id": "button_padding_vertical",
-      "min": 8,
-      "max": 20,
-      "step": 2,
-      "unit": "px",
-      "label": "Button vertical padding",
-      "default": 12
-    },
-    {
-      "type": "range",
-      "id": "button_padding_horizontal",
-      "min": 15,
-      "max": 40,
-      "step": 5,
-      "unit": "px",
-      "label": "Button horizontal padding",
-      "default": 25
-    },
-    {
-      "type": "range",
-      "id": "button_border_radius",
-      "min": 0,
-      "max": 30,
-      "step": 2,
-      "unit": "px",
-      "label": "Button border radius",
-      "default": 30
-    },
-    {
-      "type": "range",
-      "id": "button_font_size",
+      "id": "button_text_size",
       "min": 12,
       "max": 18,
       "step": 1,
       "unit": "px",
-      "label": "Button font size",
+      "label": "Button text size",
       "default": 14
-    },
-    {
-      "type": "range",
-      "id": "button_font_weight",
-      "min": 300,
-      "max": 700,
-      "step": 100,
-      "label": "Button font weight",
-      "default": 500
     },
     {
       "type": "select",
@@ -815,28 +643,58 @@
       "default": "capitalize"
     },
     {
-      "type": "color",
-      "id": "button_background",
-      "label": "Button background",
-      "default": "#111111"
+      "type": "header",
+      "content": "Spacing"
     },
     {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Button text color",
-      "default": "#ffffff"
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding top",
+      "default": 50
     },
     {
-      "type": "color",
-      "id": "button_hover_background",
-      "label": "Button hover background",
-      "default": "#523d00"
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding bottom",
+      "default": 50
     },
     {
-      "type": "color",
-      "id": "button_hover_text_color",
-      "label": "Button hover text color",
-      "default": "#ffffff"
+      "type": "range",
+      "id": "card_padding",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card padding",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 30
     }
   ],
   "presets": [
