@@ -15,10 +15,10 @@
         "slider_item_fJjFU4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/50_off_2.png",
-            "image_mobile": "shopify://shop_images/Offer_Valid_10-25_Oc_2030_7_1.jpg",
+            "image": "shopify://shop_images/1_2db6524b-5d49-4b53-9fe9-f5b3c9a77dc7.png",
+            "image_mobile": "shopify://shop_images/2_4d5e855c-99d9-4a3a-8d53-d0ed3fe949b9.png",
             "overlay_opacity": 0,
-            "first_button_link_image": "shopify://collections/all",
+            "first_button_link_image": "shopify://collections/offer-products",
             "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
@@ -44,8 +44,8 @@
         "slider_item_g8Brtx": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/Offer_Valid_10-25_October_2025_2_a73078ee-e6ab-49b3-8fed-b53b89dbb0b2.png",
-            "image_mobile": "shopify://shop_images/Offer_Valid_10-25_October_2025_3.png",
+            "image": "shopify://shop_images/1_e1089a29-b06b-43bb-bb50-2e5d943a465c.png",
+            "image_mobile": "shopify://shop_images/2_0156a6ed-a929-4617-8aa5-bf0020219f29.png",
             "overlay_opacity": 0,
             "first_button_link_image": "https://cavirk.com/collections/vendors?q=Sequins%20%26%20Pearls%20By%20Vivek",
             "slider_effect": "effect_fadeindown",
@@ -503,6 +503,61 @@
         "reset_spacing": true
       }
     },
+    "175981172465738d57": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e3b7faf_BLqibg": {
+          "type": "ai_gen_block_e3b7faf",
+          "settings": {
+            "section_width": "fluid_container",
+            "heading": "Branding",
+            "subheading": "",
+            "description": "",
+            "text_alignment": "center",
+            "image_1": "shopify://shop_images/1_d1d91b1a-117f-4329-9649-522ef84f6754.png",
+            "title_1": "Cavirk Select",
+            "button_text_1": "Explore",
+            "button_link_1": "shopify://pages/cavirk-select-premium",
+            "image_2": "shopify://shop_images/2_d65d5628-0b20-448b-9faf-2923b757782b.png",
+            "title_2": "Cavirk Everyday",
+            "button_text_2": "Shop now",
+            "button_link_2": "shopify://pages/cavirk-everyday-affordable",
+            "image_aspect_ratio": "adaptive",
+            "grid_gap": 30,
+            "content_alignment": "center",
+            "background_color": "rgba(0,0,0,0)",
+            "heading_color": "#523d00",
+            "subheading_color": "#444444",
+            "text_color": "#444444",
+            "card_background_color": "#ffffff",
+            "title_color": "#523d00",
+            "button_background_color": "#111111",
+            "button_text_color": "#ffffff",
+            "button_hover_background_color": "#523d00",
+            "button_hover_text_color": "#ffffff",
+            "heading_size": 36,
+            "heading_text_transform": "none",
+            "subheading_size": 20,
+            "description_size": 16,
+            "title_size": 20,
+            "title_text_transform": "capitalize",
+            "button_text_size": 14,
+            "button_text_transform": "capitalize",
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "card_padding": 20,
+            "card_border_radius": 8,
+            "button_border_radius": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e3b7faf_BLqibg"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
     "shop_by_price_gwxF7M": {
       "type": "shop-by-price",
       "blocks": {
@@ -812,6 +867,7 @@
     "collection_list_VmEYkJ",
     "collection_list_mrVidg",
     "divider_yjcjBV",
+    "175981172465738d57",
     "shop_by_price_gwxF7M",
     "divider_VTmCBm",
     "shopable_video_Yq73J7",
