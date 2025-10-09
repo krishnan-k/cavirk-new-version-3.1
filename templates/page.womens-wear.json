@@ -51,17 +51,27 @@
             "uppercase": false,
             "spacing_bottom": 24
           }
+        },
+        "description_cTHNm8": {
+          "type": "description",
+          "settings": {
+            "description": "<p>This Diwali 2025, light up your celebrations with elegance and style through Cavirk’s Diwali dress collection for women 2025. Our festive range of Diwali clothes for women 2025 blends traditional artistry with modern designs to bring out the true spirit of the festival. Whether you are attending family gatherings festive parties or wedding celebrations our Diwali ethnic wear for women 2025 combines heritage craftsmanship luxurious fabrics and contemporary silhouettes. From hand-painted sarees to designer lehengas and Indo Western outfits every piece is designed to make you feel confident radiant and beautifully festive<br/><br/></p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
         }
       },
       "block_order": [
-        "heading_3M8fC4"
+        "heading_3M8fC4",
+        "description_cTHNm8"
       ],
       "name": "t:sections.rich_text.name",
       "settings": {
         "section_width": "container",
         "color_scheme": "",
         "content_alignment": "center",
-        "content_max_width": 100,
+        "content_max_width": 86,
         "enable_expand_content": false,
         "expand_content_button": "See all Information",
         "padding_top": 0,
