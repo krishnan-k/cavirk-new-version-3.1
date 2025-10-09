@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Women's wear",
+            "page_title": "",
             "header_size": "default"
           }
         }
@@ -67,7 +67,6 @@
         "heading_3M8fC4",
         "description_cTHNm8"
       ],
-      "disabled": true,
       "name": "t:sections.rich_text.name",
       "settings": {
         "section_width": "container",
@@ -374,7 +373,6 @@
         "heading_VgkCxN",
         "description_tpgMqP"
       ],
-      "disabled": true,
       "name": "t:sections.rich_text.name",
       "settings": {
         "section_width": "container",
