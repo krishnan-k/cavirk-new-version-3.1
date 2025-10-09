@@ -75,8 +75,8 @@
         "enable_expand_content": false,
         "expand_content_button": "See all Information",
         "padding_top": 0,
-        "padding_bottom": 0,
-        "reset_spacing": false
+        "padding_bottom": 20,
+        "reset_spacing": true
       }
     },
     "main": {
