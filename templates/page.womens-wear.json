@@ -375,7 +375,7 @@
       "settings": {
         "section_width": "container",
         "color_scheme": "",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "content_max_width": 100,
         "enable_expand_content": false,
         "expand_content_button": "See all Information",
