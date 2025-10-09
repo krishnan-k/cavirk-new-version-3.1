@@ -45,26 +45,16 @@
         "heading_3M8fC4": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Diwali Dress for Women 2025 | Diwali Outfits For Women 2025",
             "font_size": 36,
             "font_weight": "heading_weight",
             "uppercase": false,
             "spacing_bottom": 24
           }
-        },
-        "description_cTHNm8": {
-          "type": "description",
-          "settings": {
-            "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "font_size": 14,
-            "font_weight": "body_weight",
-            "spacing_bottom": 10
-          }
         }
       },
       "block_order": [
-        "heading_3M8fC4",
-        "description_cTHNm8"
+        "heading_3M8fC4"
       ],
       "name": "t:sections.rich_text.name",
       "settings": {
