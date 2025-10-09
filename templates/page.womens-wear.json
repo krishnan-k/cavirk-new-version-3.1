@@ -47,6 +47,7 @@
           "settings": {
             "heading": "Diwali Dress for Women 2025 | Diwali Outfits For Women 2025",
             "font_size": 36,
+            "content_alignment": "center",
             "font_weight": "heading_weight",
             "uppercase": false,
             "spacing_bottom": 24
@@ -66,6 +67,7 @@
         "heading_3M8fC4",
         "description_cTHNm8"
       ],
+      "disabled": true,
       "name": "t:sections.rich_text.name",
       "settings": {
         "section_width": "container",
@@ -352,6 +354,7 @@
           "settings": {
             "heading": "Diwali Dress for Women 2025",
             "font_size": 36,
+            "content_alignment": "center",
             "font_weight": "heading_weight",
             "uppercase": false,
             "spacing_bottom": 24
@@ -371,6 +374,7 @@
         "heading_VgkCxN",
         "description_tpgMqP"
       ],
+      "disabled": true,
       "name": "t:sections.rich_text.name",
       "settings": {
         "section_width": "container",
