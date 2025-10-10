@@ -285,13 +285,6 @@
             "collection": "gen-z-meets-heritage",
             "collection_title": ""
           }
-        },
-        "collection_KM8bxm": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "collection_title": ""
-          }
         }
       },
       "block_order": [
@@ -323,8 +316,7 @@
         "collection_bcaX6d",
         "collection_EfeHnK",
         "collection_qFUPV9",
-        "collection_3bqY3U",
-        "collection_KM8bxm"
+        "collection_3bqY3U"
       ],
       "settings": {
         "section_width": "container",
