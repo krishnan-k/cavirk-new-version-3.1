@@ -423,7 +423,7 @@ input[type='password'] {
 }
 textarea {
   --input-border-radius: calc(var(--btn-radius) - 10px);
-  min-height: 15rem;
+  min-height: 10rem;
   resize: none;
   --input-padding: 2rem;
 }
