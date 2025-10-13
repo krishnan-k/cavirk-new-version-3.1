@@ -758,13 +758,23 @@
             "select_product": "regal-prism-drape",
             "author_name": "Himani Tyagi, Bangalore"
           }
+        },
+        "testimonials_items_neqkM4": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>I would like to mention how much I appreciate the work of the <em>immensely skilled </em>artisans who toil behind these exquisite creations. It might just be a small stole, but the many days of labour, and clever craftsmanship that goes behind the production of <em><strong>each</strong></em> of these stoles ought to be greatly rewarded and appreciated. </p>",
+            "select_product": "ajrakh-modal-stole-18876305",
+            "author_name": "Sharon Alexander"
+          }
         }
       },
       "block_order": [
         "testimonials_items_D4xR7G",
         "testimonials_items_7na7pp",
         "testimonials_items_M8Nm79",
-        "testimonials_items_cBDEfL"
+        "testimonials_items_cBDEfL",
+        "testimonials_items_neqkM4"
       ],
       "settings": {
         "section_width": "container",
