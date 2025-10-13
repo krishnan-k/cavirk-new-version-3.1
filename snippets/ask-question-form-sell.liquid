@@ -199,21 +199,21 @@
         <option value="Others">Others</option>
       </select>
     </div>
-    <div class="field mb-10 form-floating textarea">
-      <textarea
-        rows="10"
-        id="AskMessage"
-        class="text-area field__input w-full form-control"
-        name="contact[{{ 'templates.contact.form.comment' | t }}]"
-        placeholder="{{ 'templates.contact.form.comment' | t }}"
-        required
-      >
+  </div>
+  <div class="field mb-10 form-floating textarea">
+    <textarea
+      rows="10"
+      id="AskMessage"
+      class="text-area field__input w-full form-control"
+      name="contact[{{ 'templates.contact.form.comment' | t }}]"
+      placeholder="{{ 'templates.contact.form.comment' | t }}"
+      required
+    >
         {{- form.body -}}
       </textarea>
-      <label class="form__label" for="AskMessage">
-        {{ 'templates.contact.form.comment' | t }}
-      </label>
-    </div>
+    <label class="form__label" for="AskMessage">
+      {{ 'templates.contact.form.comment' | t }}
+    </label>
   </div>
   <div class="note my-25"><span class="required px-5">*</span>{{ 'templates.contact.form.note' | t }}</div>
   <button type="submit" class="button w-full btn-primary">
