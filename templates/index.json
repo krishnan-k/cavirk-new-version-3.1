@@ -766,6 +766,15 @@
             "select_product": "ajrakh-modal-stole-18876305",
             "author_name": "Sharon Alexander"
           }
+        },
+        "testimonials_items_gEYT6W": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>Absolutely in love with my Kantha work silk saree from Cavirk! The craftsmanship and attention to detail reflect true artisan skill n every thread tells a story of perfection. The colors are rich n the drape feels luxurious. Trendy,timeless n twirl-worthy! The delivery was swift n packaging highly impressive n personalised. Do chk out their latest authentic collections.</p>",
+            "select_product": "emerald-reverie",
+            "author_name": "Priya Sharma"
+          }
         }
       },
       "block_order": [
@@ -773,7 +782,8 @@
         "testimonials_items_7na7pp",
         "testimonials_items_M8Nm79",
         "testimonials_items_cBDEfL",
-        "testimonials_items_neqkM4"
+        "testimonials_items_neqkM4",
+        "testimonials_items_gEYT6W"
       ],
       "settings": {
         "section_width": "container",
