@@ -15,7 +15,8 @@
       "settings": {
         "section_width": "full_width",
         "color_scheme": "",
-        "image": "shopify://shop_images/1_d1d91b1a-117f-4329-9649-522ef84f6754.png",
+        "image": "shopify://shop_images/1_b3b6cb37-ca49-4e1d-89b1-22b92b66bfa8.png",
+        "image_mobile": "shopify://shop_images/3_79fdae3c-8b71-4e63-b827-67b51399eb0d.png",
         "image_behavior": "none",
         "overlay_opacity": 0,
         "image_height": "adapt",
@@ -76,6 +77,7 @@
           "settings": {
             "heading": "Cavirk Select (Premium)",
             "font_size": 36,
+            "content_alignment": "center",
             "font_weight": "heading_weight",
             "uppercase": false,
             "spacing_bottom": 15
@@ -114,7 +116,7 @@
       "settings": {
         "section_width": "full_width",
         "border_height": 1,
-        "border_color": "#C5B27B",
+        "border_color": "#c5b27b",
         "reset_spacing": false
       }
     },
@@ -157,6 +159,7 @@
         "collection_KVXHVF",
         "collection_mywfby"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "container",
         "color_scheme": "default",
@@ -175,6 +178,88 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "collection_list_B8T73U": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_wwkgFP": {
+          "type": "collection",
+          "settings": {
+            "collection": "preminum-accessories",
+            "collection_title": "Preminum Accessories",
+            "first_button_link": ""
+          }
+        },
+        "collection_QUH7ed": {
+          "type": "collection",
+          "settings": {
+            "collection": "premium-apparel",
+            "collection_title": "Premium Apparel",
+            "first_button_link": ""
+          }
+        },
+        "collection_D3DJdg": {
+          "type": "collection",
+          "settings": {
+            "collection": "premium-home-decor-furnishing",
+            "collection_title": "Premium Home Décor & Furnishing",
+            "first_button_link": ""
+          }
+        },
+        "collection_hwzq8r": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/coming_soon_1.jpg",
+            "collection_title": "Premium Collectibles / Art",
+            "first_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_wwkgFP",
+        "collection_QUH7ed",
+        "collection_D3DJdg",
+        "collection_hwzq8r"
+      ],
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "heading": "",
+        "description": "",
+        "show_view_all_button": false,
+        "header_size": "medium",
+        "header_alignment": "left",
+        "display_mode": "carousel",
+        "image_ratio": "portrait",
+        "custom_ratio": "",
+        "items_per_row": 4,
+        "column_gap": 30,
+        "collection_information_position": "overlay_image",
+        "design": "default",
+        "text_alignment": "center",
+        "show_product_count": false,
+        "show_icon": false,
+        "show_description": false,
+        "font_size": 16,
+        "font_weight": "heading_weight",
+        "title_hide": false,
+        "information_spacing": 12,
+        "rounded_image": false,
+        "image_custom_width": false,
+        "image_width": 200,
+        "show_arrow": false,
+        "carousel_pagination": "disable",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 1.5,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
@@ -182,6 +267,7 @@
     "page-heading",
     "rich_text_fkpDFa",
     "divider_JEQXVC",
-    "main"
+    "main",
+    "collection_list_B8T73U"
   ]
 }

@@ -156,12 +156,13 @@
 
   @media screen and (max-width: 768px) {
     .ai-image-gallery-grid-{{ ai_gen_id }} {
-      display: flex;
+      {% comment %} display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       gap: 20px;
       padding-bottom: 10px;
-      -webkit-overflow-scrolling: touch;
+      -webkit-overflow-scrolling: touch; {% endcomment %}
+      grid-template-columns: repeat(1, 1fr);
     }
 
     .ai-image-gallery-item-{{ ai_gen_id }} {
