@@ -244,7 +244,6 @@
         "show_description": false,
         "font_size": 16,
         "font_weight": "heading_weight",
-        "title_hide": false,
         "information_spacing": 12,
         "rounded_image": false,
         "image_custom_width": false,
