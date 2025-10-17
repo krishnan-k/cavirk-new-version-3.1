@@ -319,6 +319,16 @@
         "column_gap": 30,
         "padding_top": 0,
         "padding_bottom": 60,
+        "reset_spacing": true
+      }
+    },
+    "divider_QRz8Nz": {
+      "type": "divider",
+      "name": "t:sections.divider.name",
+      "settings": {
+        "section_width": "full_width",
+        "border_height": 1,
+        "border_color": "#C5B27B",
         "reset_spacing": false
       }
     },
@@ -344,6 +354,7 @@
         "banner_width": 30,
         "position": "left",
         "banner_type": "image",
+        "video_url": "",
         "banner_text_color": "",
         "banner_heading": "",
         "banner_subheading": "",
@@ -363,6 +374,7 @@
     "rich_text_nkcJ8x",
     "collection_list_9az7TX",
     "label_showcase_h6Lb6e",
+    "divider_QRz8Nz",
     "products_grid_fNDETh"
   ]
 }
