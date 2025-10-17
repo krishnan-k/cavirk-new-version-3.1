@@ -9,12 +9,32 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-default",
+    "image_with_text_overlay_ikW4Lp": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image_with_text_overlay.name",
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "full_width",
+        "color_scheme": "",
+        "image": "shopify://shop_images/freepicdownloader.com_-painting-womans-hand-is-working-palette-large.jpg",
+        "image_behavior": "none",
+        "overlay_opacity": 0,
+        "image_height": "custom",
+        "desktop_height": 400,
+        "mobile_height": 500,
+        "content_alignment": "left",
+        "content_position": "top-left",
+        "content_width": "container",
+        "content_max_width": 100,
+        "content_padding_block": 50,
+        "content_padding_inline": 50,
+        "show_content_background": false,
+        "content_background": "#fff",
+        "content_box_opacity": 100,
+        "content_below_image": false,
+        "content_alignment_mobile": "left",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "reset_spacing": false
       }
     },
     "multi_content_eHxqrx": {
@@ -34,11 +54,11 @@
           "settings": {
             "color_scheme": "scheme-1",
             "content_width": "50%",
-            "vertical_align": "start",
+            "vertical_align": "center",
             "image_link": "",
             "subheading": "",
             "heading": "Journeyas an artisan",
-            "description": "<p>Book Your Crafts was born from a deep love for art, culture,<br/>and meaningful design. I’ve always been fascinated by how handcrafted pieces<br/>carry stories — of people, places, and traditions. The idea was to create a<br/>space where art meets utility, where every piece adds not just beauty, but<br/>emotion to a home. My inspiration came from India’s rich artisanal heritage and<br/>the desire to make timeless craftsmanship accessible in a modern, elegant way.</p>",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories — of people, places, and traditions. The idea was to create a space where art meets utility, where every piece adds not just beauty, but emotion to a home. My inspiration came from India’s rich artisanal heritage and the desire to make timeless craftsmanship accessible in a modern, elegant way.</p>",
             "description_width_text": 500,
             "collection": "",
             "timer": "",
@@ -61,7 +81,7 @@
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 20,
-            "des_font_size": 14,
+            "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
@@ -87,10 +107,298 @@
         "padding_bottom": 0,
         "reset_spacing": false
       }
+    },
+    "multi_content_wTmpgh": {
+      "type": "multi-content",
+      "blocks": {
+        "text_jdmrYD": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "About your craft",
+            "description": "<p>At Book Your Crafts, we curate and design handcrafted décor and spiritual pieces that blend tradition with contemporary aesthetics. From intricate <strong>Vastu-inspired figurines</strong> to <strong>luxury brass urlis</strong>, every reation reflects a balance of art and energy. What makes our work special is the attention to detail and the human touch — each piece is thoughtfully designed to evoke emotion, positivity, and a sense of connection with our roots.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
+        "image_L9XYwz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TPBlZMQt2H.webp",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_jdmrYD",
+        "image_L9XYwz"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_QyVdgW": {
+      "type": "multi-content",
+      "blocks": {
+        "image_ET7WYW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/itnwGNXYIu.webp",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_3dPxbe": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Inspiration for your designs",
+            "description": "<p>Inspiration comes from everywhere — from nature’s patterns, cultural motifs, temple architecture, and even the quiet beauty of everyday life. Each design begins with an emotion — peace, abundance, love, or light — and then we translate that into form. The goal is always to create pieces that don’t just decorate a space, but <em>elevate</em> it spiritually and aesthetically.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_ET7WYW",
+        "text_3dPxbe"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_73CbcQ": {
+      "type": "multi-content",
+      "blocks": {
+        "text_cPMrkR": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Traditional craftsmanship",
+            "description": "<p>For me, handmade is not just a method — it’s a philosophy. It represents patience, precision, and soul. Traditional raftsmanship keeps alive the legacy of generations of artisans who pour their heart and skill into their work. Every handcrafted piece carries a unique identity — a warmth that machines can’t replicate. It’s a celebration of imperfection, individuality, and authenticity.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
+        "image_qR89iy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NvzQNcVBd2.webp",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_cPMrkR",
+        "image_qR89iy"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_Wk3b8z": {
+      "type": "multi-content",
+      "blocks": {
+        "image_wt9KUF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/90jAWwVnrW.webp",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_ieMYKi": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Sell your creations",
+            "description": "<p>Cavirk resonates with our vision of celebrating craftsmanship and storytelling. It’s a platform that values creativity and connects discerning customers with genuine handmade art. We see Cavirk not just as a marketplace, but as a community that honors artisans, design, and the cultural heritage behind every creation. It felt like the perfect place for Book Your Crafts to share its story and creations with a wider audience that truly  appreciates the art of handmade living.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_wt9KUF",
+        "text_ieMYKi"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
     }
   },
   "order": [
-    "main",
-    "multi_content_eHxqrx"
+    "image_with_text_overlay_ikW4Lp",
+    "multi_content_eHxqrx",
+    "multi_content_wTmpgh",
+    "multi_content_QyVdgW",
+    "multi_content_73CbcQ",
+    "multi_content_Wk3b8z"
   ]
 }
