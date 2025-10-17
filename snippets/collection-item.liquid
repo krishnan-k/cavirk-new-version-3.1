@@ -271,7 +271,7 @@
         style="--font-size: {{ font_size }};--space-bottom: {{ section_st.spacing }}"
         role="link"
       >
-        <span class="collection-item__name-inner lh-normal inline-block{% if collection_information_position == 'overlay_image' and design == 'morden' %} heading_weight{% endif %}" {% if collection_information_position == 'overlay_image' and design == 'morden' %} style="color: var(--color-link);" {% endif %}>
+        <span class="collection-item__name-inner lh-normal {% unless collection_title_hide  != blank %} inline-block {% else %} hidden  {% endunless %} {% if collection_information_position == 'overlay_image' and design == 'morden' %} heading_weight{% endif %}" {% if collection_information_position == 'overlay_image' and design == 'morden' %} style="color: var(--color-link);" {% endif %}>
           {% if collection_title != blank %}
             {{ collection_title }}
           {% else %}

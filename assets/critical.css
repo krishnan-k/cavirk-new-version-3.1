@@ -538,7 +538,7 @@ button[disabled],
   font-size: calc(var(--body-font-size) + 1px);
   cursor: pointer;
 }
-.btn-link::before {
+.btn-link:not(.showcase-link.btn-link)::before {
   content: '';
   position: absolute;
   height: var(--height, 1px);

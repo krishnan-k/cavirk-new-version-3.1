@@ -11,176 +11,322 @@
   "sections": {
     "main": {
       "type": "page-default",
+      "disabled": true,
       "settings": {
         "section_width": "stretch_width",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "multi_content_7qypkM": {
-      "type": "multi-content",
+    "rich_text_nkcJ8x": {
+      "type": "rich-text",
       "blocks": {
-        "image_DGTz4q": {
-          "type": "image",
+        "heading_HKXYkT": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/e1.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "text_ycBmbU": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Craftsmanship",
-            "heading": "Artistry in every thread.",
-            "description": "<p>Each piece is handcrafted with precision, honouring age-old techniques while embracing contemporary design.</p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
+            "heading": "Creators Corner",
             "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 15
           }
         },
-        "text_e4jLdk": {
-          "type": "text",
+        "description_9qbrCx": {
+          "type": "description",
           "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Luxury",
-            "heading": "Elegance, thoughtfully crafted.",
-            "description": "<p>Our idea of luxury is quiet refinement — curated details, rich textures, and timeless simplicity.</p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "image_cjATFG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e2.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "image_gYkVwb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e3.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "text_zfLhhy": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Heritage",
-            "heading": "Tradition, reimagined.",
-            "description": "<p>Rooted in culture, our designs revive legacy through a modern lens, season after season. </p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "description": "<p>Cavirk is an ecosystem of entrepreneurs, artisans, and values-driven businesses. Discover who they are and what they believe in!</p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
           }
         }
       },
       "block_order": [
-        "image_DGTz4q",
-        "text_ycBmbU",
-        "text_e4jLdk",
-        "image_cjATFG",
-        "image_gYkVwb",
-        "text_zfLhhy"
+        "heading_HKXYkT",
+        "description_9qbrCx"
       ],
-      "name": "t:sections.multi_content.name",
+      "name": "t:sections.rich_text.name",
       "settings": {
-        "section_width": "fluid_container",
-        "heading": "Brand Ethos",
-        "description": "<p>At Cavirk, we stand on three timeless pillars —<strong>Craftsmanship, Luxury, and Heritage</strong>—<br/> blending tradition with modern elegance to create a distinctive brand <br/>experience. Together, these values make Cavirk not just a brand, but a <br/>story of legacy and artistry.</p>",
+        "section_width": "container",
+        "color_scheme": "scheme-3d10de96-a479-49bd-819c-e044746b4f3e",
+        "content_alignment": "center",
+        "content_max_width": 50,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 50,
+        "padding_bottom": 20,
+        "reset_spacing": true
+      }
+    },
+    "collection_list_9az7TX": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_FkQyT7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_8BpdTW": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_fC4YRK": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_34WmCi": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_LzthDY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_9eYyip": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_kQfjpn": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        },
+        "collection_AUWXfB": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify://shop_images/Icons_3_Outline_Makers_page_-23.webp",
+            "collection_title": "",
+            "first_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_FkQyT7",
+        "collection_8BpdTW",
+        "collection_fC4YRK",
+        "collection_34WmCi",
+        "collection_LzthDY",
+        "collection_9eYyip",
+        "collection_kQfjpn",
+        "collection_AUWXfB"
+      ],
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "scheme-3d10de96-a479-49bd-819c-e044746b4f3e",
+        "heading": "",
+        "description": "",
+        "show_view_all_button": false,
         "header_size": "medium",
-        "header_alignment": "center",
+        "header_alignment": "left",
+        "display_mode": "carousel",
+        "image_ratio": "adapt",
+        "custom_ratio": "",
+        "items_per_row": 8,
         "column_gap": 30,
-        "content_background_color": "",
-        "equal_height_adjustment": false,
-        "carousel_on_mobile": false,
-        "items_per_row_mobile": 1,
+        "collection_information_position": "below_image",
+        "design": "morden",
+        "text_alignment": "center",
+        "show_product_count": false,
+        "show_icon": false,
+        "show_description": false,
+        "font_size": 16,
+        "font_weight": "heading_weight",
+        "title_hide": true,
+        "information_spacing": 12,
+        "rounded_image": true,
+        "image_custom_width": true,
+        "image_width": 200,
+        "show_arrow": false,
+        "carousel_pagination": "disable",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 2,
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 60,
+        "reset_spacing": true
+      }
+    },
+    "label_showcase_h6Lb6e": {
+      "type": "label-showcase",
+      "blocks": {
+        "showcase_cw7brz": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/wl4ZW2gXcw.webp",
+            "link": "shopify://collections",
+            "heading": "Twaksati",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "shopify://pages/twaksati",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
+        "showcase_Fz3JiX": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/NvzQNcVBd2.webp",
+            "link": "shopify://collections",
+            "heading": "Cavirk",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
+        "showcase_4cx7Np": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/itnwGNXYIu.webp",
+            "link": "shopify://collections",
+            "heading": "Bagaan",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
+        "showcase_Rpd8Cx": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/t2Jl0lYKzJ.webp",
+            "link": "shopify://collections",
+            "heading": "Nava India",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
+        "showcase_JGcPgf": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/90jAWwVnrW.webp",
+            "link": "shopify://collections",
+            "heading": "Sequins & Pearls",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
+        "showcase_aTJhFG": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/UZeSyoDZam.webp",
+            "link": "shopify://collections",
+            "heading": "Nandikas",
+            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        }
+      },
+      "block_order": [
+        "showcase_cw7brz",
+        "showcase_Fz3JiX",
+        "showcase_4cx7Np",
+        "showcase_Rpd8Cx",
+        "showcase_JGcPgf",
+        "showcase_aTJhFG"
+      ],
+      "name": "t:sections.label-showcase.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "scheme-3d10de96-a479-49bd-819c-e044746b4f3e",
+        "image_ratio": "adapt",
+        "custom_ratio": "",
+        "column_gap": 30,
+        "padding_top": 0,
+        "padding_bottom": 60,
         "reset_spacing": false
       }
     }
   },
   "order": [
     "main",
-    "multi_content_7qypkM"
+    "rich_text_nkcJ8x",
+    "collection_list_9az7TX",
+    "label_showcase_h6Lb6e"
   ]
 }

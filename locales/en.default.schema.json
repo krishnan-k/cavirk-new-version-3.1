@@ -3861,6 +3861,19 @@
     "banner-packery": {
       "name": "Banner packery"
     },
+    "label-showcase": {
+      "name": "Label showcase",
+      "settings":{
+
+      },
+      "blocks":{
+        "name":"Showcase"
+      },
+      "presets": {
+        "name": "Label showcase"
+      }
+    },
+
     "product-single-layout": {
       "blocks": {
         "title": {

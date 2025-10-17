@@ -230,6 +230,7 @@
                   colunm_mobile: section_st.items_per_row_mobile,
                   padding: column_gap,
                   collectoin_page: collection_landing_page
+                  collection_title_hide: section_st.title_hide
                 %}
               </motion-element>
             {% endfor %}
@@ -556,6 +557,12 @@
           "label": "t:sections.all.content_settings.font_weight.heading_weight.label"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "title_hide",
+      "label": "Collection title hide",
+      "default":false,
     },
     {
       "type": "header",
