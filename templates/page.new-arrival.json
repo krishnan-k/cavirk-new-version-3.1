@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "New arrival",
+            "page_title": "New Arrivals",
             "header_size": "default"
           }
         }
@@ -69,19 +69,27 @@
             "collection": "accessories-dynamic-collections",
             "collection_title": "Accessories"
           }
+        },
+        "collection_9J8zLg": {
+          "type": "collection",
+          "settings": {
+            "collection": "crochet-collection",
+            "collection_title": "Home and Living"
+          }
         }
       },
       "block_order": [
         "collection_TxeiAw",
         "collection_wHyjV3",
         "collection_MbWARG",
-        "collection_nddLVN"
+        "collection_nddLVN",
+        "collection_9J8zLg"
       ],
       "name": "t:sections.collection-tab.name",
       "settings": {
         "section_width": "fluid_container",
         "color_scheme": "",
-        "heading": "New Arrivals",
+        "heading": "",
         "description": "",
         "header_size": "medium",
         "header_alignment": "center",
