@@ -108,11 +108,11 @@
             "content_alignment": "left",
             "subheading_font_size": 12,
             "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 5,
+            "subheading_spacing_bottom": 7,
             "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
+            "heading_spacing_bottom": 10,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 0
@@ -174,7 +174,7 @@
             "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
+            "heading_spacing_bottom": 10,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 0
@@ -254,7 +254,7 @@
             "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
+            "heading_spacing_bottom": 10,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 0
@@ -316,7 +316,7 @@
             "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
+            "heading_spacing_bottom": 10,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 0
@@ -396,7 +396,7 @@
             "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
+            "heading_spacing_bottom": 10,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 0
