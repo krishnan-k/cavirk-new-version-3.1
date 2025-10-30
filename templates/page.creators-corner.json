@@ -66,7 +66,7 @@
           "type": "showcase",
           "settings": {
             "image": "shopify://shop_images/IHweUSn7fW_1.jpg",
-            "link": "shopify://collections",
+            "link": "",
             "heading": "Twaksati",
             "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
             "first_button_label": "Read more",
@@ -85,7 +85,7 @@
           "type": "showcase",
           "settings": {
             "image": "shopify://shop_images/m1.png",
-            "link": "shopify://collections",
+            "link": "",
             "heading": "Monika Shukla",
             "description": "<p>My journey as an artist began from a place of healing and self-discovery. When I was diagnosed with chronic kidney disease, art became my voice — a way to express my pain, faith, and hope.</p>",
             "first_button_label": "Read more",
@@ -104,7 +104,7 @@
           "type": "showcase",
           "settings": {
             "image": "shopify://shop_images/Jpb24S0TWF_1.jpg",
-            "link": "shopify://collections",
+            "link": "",
             "heading": "Kuldeep Verma",
             "description": "<p>My art works explicate the representational picturesque of  performance art which is specially associated with the foundation of Buddhism in high Himalayan areas of India and the basic elements that Buddhism followed.</p>",
             "first_button_label": "Read more",
