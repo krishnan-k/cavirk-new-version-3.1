@@ -149,7 +149,7 @@
         "collection_KM8bxm": {
           "type": "collection",
           "settings": {
-            "collection": "affordable-collectibles-art",
+            "collection": "collectibles-art",
             "collection_title": ""
           }
         }
@@ -212,7 +212,7 @@
         "collection_WifWjF": {
           "type": "collection",
           "settings": {
-            "collection": "affordable-collectibles-art",
+            "collection": "collectibles-art",
             "collection_title": "Collectibles / Art",
             "first_button_link": ""
           }
