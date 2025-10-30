@@ -35,7 +35,7 @@
         "description_9qbrCx": {
           "type": "description",
           "settings": {
-            "description": "<p>Cavirk is an ecosystem of entrepreneurs, artisans, and values-driven businesses. Discover who they are and what they believe in!</p>",
+            "description": "<p><em>Creators Corner</em> — an exclusive space dedicated to the exceptional minds shaping Cavirk’s world of craftsmanship. Each creator showcased here embodies artistry, authenticity, and refinement. Discover the stories behind their signature styles, the inspirations that drive their creations, and the timeless elegance they bring to Cavirk’s curated collection.</p>",
             "font_size": 14,
             "font_weight": "body_weight",
             "spacing_bottom": 10
@@ -51,7 +51,7 @@
         "section_width": "container",
         "color_scheme": "scheme-3d10de96-a479-49bd-819c-e044746b4f3e",
         "content_alignment": "center",
-        "content_max_width": 50,
+        "content_max_width": 70,
         "enable_expand_content": false,
         "expand_content_button": "See all Information",
         "padding_top": 50,
