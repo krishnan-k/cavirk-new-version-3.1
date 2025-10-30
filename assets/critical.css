@@ -2496,7 +2496,7 @@ header.active li.visible .submenu:not(.submenu-vertical) {
     flex-wrap:wrap;
   }
   .sm-p-15{
-    padding: 1rem;
+    padding: 0;
   }
   .sm-row-gap {
     row-gap: calc(var(--col-gap)/2);
