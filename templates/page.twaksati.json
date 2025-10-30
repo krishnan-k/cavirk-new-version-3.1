@@ -439,7 +439,7 @@
         "items_per_row": 4,
         "column_gap": 30,
         "rows_on_desktop": 2,
-        "action_with_additional_products": "load_more",
+        "action_with_additional_products": "view_all",
         "button_label": "Load more",
         "show_banner": false,
         "sticky_banner": false,
