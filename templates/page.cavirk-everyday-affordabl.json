@@ -134,7 +134,7 @@
         "collection_eCkxRF": {
           "type": "collection",
           "settings": {
-            "collection": "affordable-apparel",
+            "collection": "apparel",
             "collection_title": ""
           }
         },
@@ -195,7 +195,7 @@
         "collection_pVEGcX": {
           "type": "collection",
           "settings": {
-            "collection": "affordable-apparel",
+            "collection": "apparel",
             "collection_title": "Apparel",
             "first_button_link": ""
           }
