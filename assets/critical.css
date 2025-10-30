@@ -2495,6 +2495,12 @@ header.active li.visible .submenu:not(.submenu-vertical) {
   .flex-sm-wrap{
     flex-wrap:wrap;
   }
+  .sm-p-15{
+    padding: 1rem;
+  }
+  .sm-row-gap {
+    row-gap: calc(var(--col-gap)/2);
+  }
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {

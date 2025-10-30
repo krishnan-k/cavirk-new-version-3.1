@@ -327,7 +327,7 @@
         "items_per_row_mobile": 2.5,
         "padding_top": 0,
         "padding_bottom": 10,
-        "reset_spacing": false
+        "reset_spacing": true
       }
     },
     "175981172465738d57": {
@@ -382,7 +382,6 @@
       "block_order": [
         "ai_gen_block_e3b7faf_BLqibg"
       ],
-      "disabled": true,
       "settings": {}
     },
     "collection_list_mrVidg": {

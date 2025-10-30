@@ -9,170 +9,451 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-default",
+    "image_with_text_overlay_ikW4Lp": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image_with_text_overlay.name",
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "full_width",
+        "color_scheme": "scheme-accf3b11-ba40-4a3e-bafb-243ece6683ec",
+        "image": "shopify://shop_images/m2_362c40e4-a553-48be-ab84-b732c0058e62.png",
+        "image_behavior": "none",
+        "overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_height": 400,
+        "mobile_height": 500,
+        "content_alignment": "center",
+        "content_position": "middle-center",
+        "content_width": "container",
+        "content_max_width": 100,
+        "content_padding_block": 50,
+        "content_padding_inline": 50,
+        "show_content_background": false,
+        "content_background": "#ffffff",
+        "content_box_opacity": 100,
+        "content_below_image": false,
+        "content_alignment_mobile": "left",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "reset_spacing": true
       }
     },
-    "multi_content_7qypkM": {
-      "type": "multi-content",
+    "rich_text_a7ENAF": {
+      "type": "rich-text",
       "blocks": {
-        "image_DGTz4q": {
-          "type": "image",
+        "heading_gD6UPz": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/e1.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "text_ycBmbU": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Craftsmanship",
-            "heading": "Artistry in every thread.",
-            "description": "<p>Each piece is handcrafted with precision, honouring age-old techniques while embracing contemporary design.</p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
+            "heading": "Monika shukla",
             "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "text_e4jLdk": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Luxury",
-            "heading": "Elegance, thoughtfully crafted.",
-            "description": "<p>Our idea of luxury is quiet refinement — curated details, rich textures, and timeless simplicity.</p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "image_cjATFG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e2.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "image_gYkVwb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e3.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "text_zfLhhy": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Heritage",
-            "heading": "Tradition, reimagined.",
-            "description": "<p>Rooted in culture, our designs revive legacy through a modern lens, season after season. </p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
           }
         }
       },
       "block_order": [
-        "image_DGTz4q",
-        "text_ycBmbU",
-        "text_e4jLdk",
-        "image_cjATFG",
-        "image_gYkVwb",
-        "text_zfLhhy"
+        "heading_gD6UPz"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "default",
+        "content_alignment": "center",
+        "content_max_width": 100,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 60,
+        "padding_bottom": 20,
+        "reset_spacing": true
+      }
+    },
+    "multi_content_eHxqrx": {
+      "type": "multi-content",
+      "blocks": {
+        "image_e3JtdT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/m1.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_YEUxW9": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "My journey as an Artist",
+            "description": "<p>My journey as an artist began from a place of healing and self-discovery. When I was diagnosed with chronic kidney disease, art became my voice — a way to express my pain, faith, and hope. Over time, it turned into my passion and purpose, inspiring me to start my brand that reflects resilience and spiritual transformation through art.</p>",
+            "description_width_text": 460,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_e3JtdT",
+        "text_YEUxW9"
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "fluid_container",
-        "heading": "Brand Ethos",
-        "description": "<p>At Cavirk, we stand on three timeless pillars —<strong>Craftsmanship, Luxury, and Heritage</strong>—<br/> blending tradition with modern elegance to create a distinctive brand <br/>experience. Together, these values make Cavirk not just a brand, but a <br/>story of legacy and artistry.</p>",
+        "section_width": "container",
+        "heading": "",
+        "description": "",
         "header_size": "medium",
         "header_alignment": "center",
         "column_gap": 30,
         "content_background_color": "",
-        "equal_height_adjustment": false,
+        "equal_height_adjustment": true,
         "carousel_on_mobile": false,
         "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_wTmpgh": {
+      "type": "multi-content",
+      "blocks": {
+        "text_jdmrYD": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Emotions and Materials",
+            "description": "<p>I create mixed-media textured artworks that blend abstract expression with spiritual symbolism. Each piece is layered with colors, emotions, and materials that tell stories of strength, light, and divine energy. What makes my craft special is that every artwork carries a soulful vibration — a reminder that even in struggle, beauty and hope can emerge.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        },
+        "image_L9XYwz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/m6.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_jdmrYD",
+        "image_L9XYwz"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_QyVdgW": {
+      "type": "multi-content",
+      "blocks": {
+        "image_ET7WYW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/m4.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_3dPxbe": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Turning pain into Peace",
+            "description": "<p>I am inspired by life itself — its struggles, transformations, and the unseen spiritual energy that guides us through it all. Every emotion, experience, and moment of silence becomes a source of creation for me. Nature, divine symbols, and the strength found in healing deeply move me. My inspiration comes from turning pain into peace, and expressing the beauty of resilience through colors, textures, and light.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_ET7WYW",
+        "text_3dPxbe"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_73CbcQ": {
+      "type": "multi-content",
+      "blocks": {
+        "text_cPMrkR": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Handmade or Traditional",
+            "description": "<p>To me, handmade or traditional craftsmanship means pouring a part of my soul into every creation — where each texture, mark, and imperfection carries emotion, intention, and authenticity. It’s a connection between the artist’s heart and the viewer’s spirit, something no machine can replicate.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        },
+        "image_qR89iy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/m3.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_cPMrkR",
+        "image_qR89iy"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_Wk3b8z": {
+      "type": "multi-content",
+      "blocks": {
+        "image_wt9KUF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/m5.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_ieMYKi": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Creativity and craftsmanship",
+            "description": "<p>I chose Carvik as my selling platform because it beautifully supports and celebrates handmade and artistic creations. It gives artists like me a meaningful space to showcase authentic, soulful work while connecting directly with people who value creativity and craftsmanship.</p>",
+            "description_width_text": 500,
+            "collection": "",
+            "timer": "",
+            "expired_message": "",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_wt9KUF",
+        "text_ieMYKi"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "products_grid_7BXbUz": {
+      "type": "products-grid",
+      "name": "t:sections.products-grid.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "heading": "Shop Monika shukla",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "left",
+        "collection": "monika-shukla",
+        "items_to_show": 8,
+        "items_per_row": 4,
+        "column_gap": 30,
+        "rows_on_desktop": 2,
+        "action_with_additional_products": "load_more",
+        "button_label": "Load more",
+        "show_banner": false,
+        "sticky_banner": false,
+        "banner_width": 30,
+        "position": "left",
+        "banner_type": "image",
+        "video_url": "",
+        "banner_text_color": "",
+        "banner_heading": "",
+        "banner_subheading": "",
+        "banner_description": "",
+        "banner_button_label": "",
+        "banner_link": "",
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": 1.5,
         "padding_top": 0,
         "padding_bottom": 0,
         "reset_spacing": false
@@ -180,7 +461,13 @@
     }
   },
   "order": [
-    "main",
-    "multi_content_7qypkM"
+    "image_with_text_overlay_ikW4Lp",
+    "rich_text_a7ENAF",
+    "multi_content_eHxqrx",
+    "multi_content_wTmpgh",
+    "multi_content_QyVdgW",
+    "multi_content_73CbcQ",
+    "multi_content_Wk3b8z",
+    "products_grid_7BXbUz"
   ]
 }

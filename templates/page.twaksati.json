@@ -11,26 +11,11 @@
   "sections": {
     "image_with_text_overlay_ikW4Lp": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_xEBdFn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Twaksati",
-            "font_size": 50,
-            "font_weight": "heading_weight",
-            "uppercase": false,
-            "spacing_bottom": 24
-          }
-        }
-      },
-      "block_order": [
-        "heading_xEBdFn"
-      ],
       "name": "t:sections.image_with_text_overlay.name",
       "settings": {
         "section_width": "full_width",
         "color_scheme": "scheme-accf3b11-ba40-4a3e-bafb-243ece6683ec",
-        "image": "shopify://shop_images/freepicdownloader.com_-painting-womans-hand-is-working-palette-large.jpg",
+        "image": "shopify://shop_images/photo_collage_-_desktop_wallpaper_1920_x_600_px_1920_x_500_px_c8a4d013-0b70-4e69-9d14-d876a3276f1a.png",
         "image_behavior": "none",
         "overlay_opacity": 0,
         "image_height": "adapt",
@@ -49,7 +34,38 @@
         "content_alignment_mobile": "left",
         "padding_top": 0,
         "padding_bottom": 0,
-        "reset_spacing": false
+        "reset_spacing": true
+      }
+    },
+    "rich_text_a7ENAF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gD6UPz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Twaksati",
+            "font_size": 36,
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading_gD6UPz"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "default",
+        "content_alignment": "center",
+        "content_max_width": 100,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 60,
+        "padding_bottom": 20,
+        "reset_spacing": true
       }
     },
     "multi_content_eHxqrx": {
@@ -58,7 +74,7 @@
         "image_e3JtdT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/NvzQNcVBd2.webp",
+            "image": "shopify://shop_images/2_1bcdc6a2-1344-495c-89d1-9504d7917fd4.png",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "start"
@@ -72,9 +88,9 @@
             "vertical_align": "center",
             "image_link": "",
             "subheading": "",
-            "heading": "Journeyas an artisan",
+            "heading": "Journeyas an Artisan",
             "description": "<p> Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories — of people, places, and traditions. The idea was to create a space where art meets utility, where every piece adds not just beauty, but emotion to a home. My inspiration came from India’s rich artisanal heritage and the desire to make timeless craftsmanship accessible in a modern, elegant way.</p>",
-            "description_width_text": 500,
+            "description_width_text": 460,
             "collection": "",
             "timer": "",
             "expired_message": "",
@@ -98,7 +114,7 @@
             "heading_spacing_bottom": 20,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "des_spacing_bottom": 0
           }
         }
       },
@@ -136,7 +152,7 @@
             "subheading": "",
             "heading": "About your craft",
             "description": "<p>At Book Your Crafts, we curate and design handcrafted décor and spiritual pieces that blend tradition with contemporary aesthetics. From intricate <strong>Vastu-inspired figurines</strong> to <strong>luxury brass urlis</strong>, every reation reflects a balance of art and energy. What makes our work special is the attention to detail and the human touch — each piece is thoughtfully designed to evoke emotion, positivity, and a sense of connection with our roots.</p>",
-            "description_width_text": 500,
+            "description_width_text": 480,
             "collection": "",
             "timer": "",
             "expired_message": "",
@@ -160,13 +176,13 @@
             "heading_spacing_bottom": 20,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "des_spacing_bottom": 0
           }
         },
         "image_L9XYwz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TPBlZMQt2H.webp",
+            "image": "shopify://shop_images/B326t3bFzS_0240f293-d6c5-4c3e-a905-bc23468bb8c4.jpg",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "start"
@@ -200,7 +216,7 @@
         "image_ET7WYW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/itnwGNXYIu.webp",
+            "image": "shopify://shop_images/NBCnJhPEmf_6df25355-180a-45a6-9e37-fbe64d896099.jpg",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "start"
@@ -216,7 +232,7 @@
             "subheading": "",
             "heading": "Inspiration for your designs",
             "description": "<p>Inspiration comes from everywhere — from nature’s patterns, cultural motifs, temple architecture, and even the quiet beauty of everyday life. Each design begins with an emotion — peace, abundance, love, or light — and then we translate that into form. The goal is always to create pieces that don’t just decorate a space, but <em>elevate</em> it spiritually and aesthetically.</p>",
-            "description_width_text": 500,
+            "description_width_text": 460,
             "collection": "",
             "timer": "",
             "expired_message": "",
@@ -240,7 +256,7 @@
             "heading_spacing_bottom": 20,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "des_spacing_bottom": 0
           }
         }
       },
@@ -278,7 +294,7 @@
             "subheading": "",
             "heading": "Traditional craftsmanship",
             "description": "<p>For me, handmade is not just a method — it’s a philosophy. It represents patience, precision, and soul. Traditional raftsmanship keeps alive the legacy of generations of artisans who pour their heart and skill into their work. Every handcrafted piece carries a unique identity — a warmth that machines can’t replicate. It’s a celebration of imperfection, individuality, and authenticity.</p>",
-            "description_width_text": 500,
+            "description_width_text": 480,
             "collection": "",
             "timer": "",
             "expired_message": "",
@@ -302,13 +318,13 @@
             "heading_spacing_bottom": 20,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "des_spacing_bottom": 0
           }
         },
         "image_qR89iy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/NvzQNcVBd2.webp",
+            "image": "shopify://shop_images/QfLwYSpgT7_07451a7b-9f7d-4b52-b378-bced4694cfda.jpg",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "start"
@@ -342,7 +358,7 @@
         "image_wt9KUF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/90jAWwVnrW.webp",
+            "image": "shopify://shop_images/Untitled-2_2551d67e-595d-4b5b-823e-8761b3ce545a.png",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "start"
@@ -358,7 +374,7 @@
             "subheading": "",
             "heading": "Sell your creations",
             "description": "<p>Cavirk resonates with our vision of celebrating craftsmanship and storytelling. It’s a platform that values creativity and connects discerning customers with genuine handmade art. We see Cavirk not just as a marketplace, but as a community that honors artisans, design, and the cultural heritage behind every creation. It felt like the perfect place for Book Your Crafts to share its story and creations with a wider audience that truly  appreciates the art of handmade living.</p>",
-            "description_width_text": 500,
+            "description_width_text": 480,
             "collection": "",
             "timer": "",
             "expired_message": "",
@@ -382,7 +398,7 @@
             "heading_spacing_bottom": 20,
             "des_font_size": 15,
             "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "des_spacing_bottom": 0
           }
         }
       },
@@ -429,14 +445,15 @@
         "banner_width": 30,
         "position": "left",
         "banner_type": "image",
+        "video_url": "",
         "banner_text_color": "",
         "banner_heading": "",
         "banner_subheading": "",
         "banner_description": "",
         "banner_button_label": "",
         "banner_link": "",
-        "carousel_on_mobile": false,
-        "items_per_row_mobile": 1,
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": 1.5,
         "padding_top": 0,
         "padding_bottom": 0,
         "reset_spacing": false
@@ -445,6 +462,7 @@
   },
   "order": [
     "image_with_text_overlay_ikW4Lp",
+    "rich_text_a7ENAF",
     "multi_content_eHxqrx",
     "multi_content_wTmpgh",
     "multi_content_QyVdgW",

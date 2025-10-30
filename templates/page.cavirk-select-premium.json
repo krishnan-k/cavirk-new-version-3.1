@@ -75,7 +75,7 @@
         "heading_D8f7ph": {
           "type": "heading",
           "settings": {
-            "heading": "Cavirk Select (Premium)",
+            "heading": "Cavirk Select",
             "font_size": 36,
             "content_alignment": "center",
             "font_weight": "heading_weight",
@@ -126,7 +126,6 @@
         "collection_KM8bxm": {
           "type": "collection",
           "settings": {
-            "collection": "preminum-accessories",
             "collection_title": ""
           }
         },
@@ -186,7 +185,8 @@
           "type": "collection",
           "settings": {
             "collection": "preminum-accessories",
-            "collection_title": "Preminum Accessories",
+            "collection_image": "shopify://shop_images/IHweUSn7fW_84cbae17-7c90-47dd-b3ea-f4dca2f1d1cc.jpg",
+            "collection_title": "Premium Accessories",
             "first_button_link": ""
           }
         },
@@ -194,6 +194,7 @@
           "type": "collection",
           "settings": {
             "collection": "premium-apparel",
+            "collection_image": "shopify://shop_images/LpPuCe44AB.png",
             "collection_title": "Premium Apparel",
             "first_button_link": ""
           }
@@ -202,6 +203,7 @@
           "type": "collection",
           "settings": {
             "collection": "premium-home-decor-furnishing",
+            "collection_image": "shopify://shop_images/h2UIarfHWw.jpg",
             "collection_title": "Premium Home Décor & Furnishing",
             "first_button_link": ""
           }
@@ -209,8 +211,7 @@
         "collection_hwzq8r": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/coming_soon_1.jpg",
+            "collection": "premium-collectibles-art",
             "collection_title": "Premium Collectibles / Art",
             "first_button_link": ""
           }
@@ -244,6 +245,7 @@
         "show_description": false,
         "font_size": 16,
         "font_weight": "heading_weight",
+        "title_hide": false,
         "information_spacing": 12,
         "rounded_image": false,
         "image_custom_width": false,

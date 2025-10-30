@@ -65,7 +65,7 @@
         "showcase_cw7brz": {
           "type": "showcase",
           "settings": {
-            "image": "shopify://shop_images/wl4ZW2gXcw.webp",
+            "image": "shopify://shop_images/IHweUSn7fW_1.jpg",
             "link": "shopify://collections",
             "heading": "Twaksati",
             "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
@@ -81,8 +81,47 @@
             "des_spacing_bottom": 18
           }
         },
+        "showcase_4cx7Np": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/m1.png",
+            "link": "shopify://collections",
+            "heading": "Monika Shukla",
+            "description": "<p>My journey as an artist began from a place of healing and self-discovery. When I was diagnosed with chronic kidney disease, art became my voice — a way to express my pain, faith, and hope.</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "shopify://pages/monika-shukla",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
+        "showcase_Rpd8Cx": {
+          "type": "showcase",
+          "settings": {
+            "image": "shopify://shop_images/Jpb24S0TWF_1.jpg",
+            "link": "shopify://collections",
+            "heading": "Kuldeep Verma",
+            "description": "<p>My art works explicate the representational picturesque of  performance art which is specially associated with the foundation of Buddhism in high Himalayan areas of India and the basic elements that Buddhism followed.</p>",
+            "first_button_label": "Read more",
+            "first_button_link": "shopify://pages/kuldeep-verma",
+            "first_button_type": "link",
+            "heading_font_size": 35,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 16,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 18
+          }
+        },
         "showcase_Fz3JiX": {
           "type": "showcase",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NvzQNcVBd2.webp",
             "link": "shopify://collections",
@@ -100,46 +139,9 @@
             "des_spacing_bottom": 18
           }
         },
-        "showcase_4cx7Np": {
-          "type": "showcase",
-          "settings": {
-            "image": "shopify://shop_images/itnwGNXYIu.webp",
-            "link": "shopify://collections",
-            "heading": "Bagaan",
-            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
-            "first_button_label": "Read more",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "heading_font_size": 35,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 10,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 18
-          }
-        },
-        "showcase_Rpd8Cx": {
-          "type": "showcase",
-          "settings": {
-            "image": "shopify://shop_images/t2Jl0lYKzJ.webp",
-            "link": "shopify://collections",
-            "heading": "Nava India",
-            "description": "<p>Book Your Crafts was born from a deep love for art, culture, and meaningful design. I’ve always been fascinated by how handcrafted pieces carry stories of people, places, and traditions</p>",
-            "first_button_label": "Read more",
-            "first_button_link": "",
-            "first_button_type": "link",
-            "heading_font_size": 35,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 10,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 18
-          }
-        },
         "showcase_JGcPgf": {
           "type": "showcase",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/90jAWwVnrW.webp",
             "link": "shopify://collections",
@@ -159,6 +161,7 @@
         },
         "showcase_aTJhFG": {
           "type": "showcase",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/UZeSyoDZam.webp",
             "link": "shopify://collections",
@@ -179,9 +182,9 @@
       },
       "block_order": [
         "showcase_cw7brz",
-        "showcase_Fz3JiX",
         "showcase_4cx7Np",
         "showcase_Rpd8Cx",
+        "showcase_Fz3JiX",
         "showcase_JGcPgf",
         "showcase_aTJhFG"
       ],

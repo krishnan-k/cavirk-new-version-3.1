@@ -9,36 +9,218 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-default",
+    "image_with_text_overlay_tJwRTN": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "image_block_KLkdbc": {
+          "type": "image_block",
+          "settings": {
+            "image_block": "shopify://shop_images/DRW29iaG74.webp",
+            "image_width": 80,
+            "spacing_bottom": 30
+          }
+        },
+        "subheading_NJhQiU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Trust. Authenticity. Craftsmanship.",
+            "font_size": 15,
+            "font_weight": "body_weight",
+            "uppercase": false,
+            "spacing_bottom": 10
+          }
+        },
+        "heading_eQwBqE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Project VERA – Verified Artisan Initiative by Cavirk",
+            "font_size": 36,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 15
+          }
+        },
+        "description_ENaGwc": {
+          "type": "description",
+          "settings": {
+            "description": "<p>At <strong>Cavirk</strong>, we believe that every and crafted product carries a story — of artistry, radition, and human skill. To honour that story and ensure complete transparency for our customers, we’ve introduced <strong>Project VERA – the Verified Artisan Initiative.</strong></p>",
+            "font_size": 15,
+            "font_weight": "body_weight",
+            "spacing_bottom": 25
+          }
+        }
+      },
+      "block_order": [
+        "image_block_KLkdbc",
+        "subheading_NJhQiU",
+        "heading_eQwBqE",
+        "description_ENaGwc"
+      ],
+      "name": "t:sections.image_with_text_overlay.name",
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "full_width",
+        "color_scheme": "scheme-accf3b11-ba40-4a3e-bafb-243ece6683ec",
+        "image": "shopify://shop_images/Blue_Modern_Technology_Cybersecurity_Presentation_1920_x_500_px_1_2_b3944701-308e-46d6-96b4-a9cfce917357.png",
+        "image_mobile": "shopify://shop_images/vera_banner_2.png",
+        "image_behavior": "none",
+        "overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_height": 600,
+        "mobile_height": 500,
+        "content_alignment": "left",
+        "content_position": "middle-center",
+        "content_width": "container",
+        "content_max_width": 45,
+        "content_padding_block": 50,
+        "content_padding_inline": 50,
+        "show_content_background": false,
+        "content_background": "#ffffff",
+        "content_box_opacity": 100,
+        "content_below_image": false,
+        "content_alignment_mobile": "center",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "reset_spacing": true
       }
     },
-    "multi_content_7qypkM": {
+    "divider_MMn38m": {
+      "type": "divider",
+      "name": "t:sections.divider.name",
+      "settings": {
+        "section_width": "full_width",
+        "border_height": 1,
+        "border_color": "#c5b27b",
+        "reset_spacing": false
+      }
+    },
+    "rich_text_b33DHg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nbffKw": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is Project VERA?",
+            "font_size": 36,
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 20
+          }
+        },
+        "description_Y8D3A4": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Project VERA is Cavirk’s <strong>trust and authenticity program</strong> designed to verify every seller and artisan on our platform.</p><p>It ensures that every product sold on Cavirk is <strong>genuinely handcrafted</strong> and created by <strong>verified artisans, boutique owners, or small manufacturers</strong> who uphold the values of craftsmanship and integrity.</p><p>When you see the <strong>“Cavirk Verified” badge</strong>, you can be confident that the product has been sourced from a trusted, authenticated seller — verified personally by our team.</p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_nbffKw",
+        "description_Y8D3A4"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_max_width": 70,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "divider_K44cGF": {
+      "type": "divider",
+      "name": "t:sections.divider.name",
+      "settings": {
+        "section_width": "full_width",
+        "border_height": 1,
+        "border_color": "#c5b27b",
+        "reset_spacing": false
+      }
+    },
+    "multi_content_DnqtmY": {
       "type": "multi-content",
       "blocks": {
-        "image_DGTz4q": {
+        "image_XMTUAX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/e1.png",
+            "image": "shopify://shop_images/verification.png",
             "image_link": "",
             "content_width": "50%",
             "vertical_align": "center"
           }
         },
-        "text_ycBmbU": {
+        "icon_box_68yUPy": {
+          "type": "icon_box",
+          "settings": {
+            "content_width": "50%",
+            "vertical_align": "start",
+            "box_alignment": "left",
+            "flex_direction": true,
+            "icon_image": "shopify://shop_images/user.png",
+            "icon_size": 32,
+            "heading": "Seller Identification:",
+            "description": "<p>Each seller is first shortlisted by our Seller Acquisition Team based on their craft, category, and quality of work.</p>",
+            "description_width": 500,
+            "icon_image2": "shopify://shop_images/video-camera.png",
+            "icon_size2": 32,
+            "heading2": "Identity Verification:",
+            "description2": "<p>Every artisan or seller completes a short <strong>video verification</strong> where a Cavirk representative (COO or Seller Head) confirms their identity using a valid government photo ID (such as<br/>Aadhaar, PAN, or Passport).</p><p>⚠️ We do not store or retain any ID information to ensure privacy and data protection.</p>",
+            "description_width2": 500,
+            "icon_image3": "shopify://shop_images/approve.png",
+            "icon_size3": 32,
+            "heading3": "Craft Validation",
+            "description3": "<p>Our Product Team reviews the seller’s work — photos, videos, or sample items — to confirm that each product is <strong>handmade, original</strong>, and <strong>authentic </strong>to the craft it represents.</p>",
+            "description_width3": 500,
+            "icon_image4": "shopify://shop_images/validation.png",
+            "icon_size4": 32,
+            "heading4": "Approval & Badge",
+            "description4": "<p>Once verified, the seller receives the <strong>“Cavirk Verified”</strong> <strong>badge</strong>, displayed on their product pages and seller profile.</p><p>This badge signifies that the seller’s identity and craftsmanship have been verified by Cavirk.</p>",
+            "description_width4": 500
+          }
+        }
+      },
+      "block_order": [
+        "image_XMTUAX",
+        "icon_box_68yUPy"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "How the Verification Works",
+        "description": "<p>Our verification process is <strong>simple, transparent</strong>, and <strong>human-led</strong></p>",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": true,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_cWrAVT": {
+      "type": "multi-content",
+      "blocks": {
+        "text_iznYix": {
           "type": "text",
           "settings": {
             "color_scheme": "scheme-1",
             "content_width": "50%",
             "vertical_align": "center",
             "image_link": "",
-            "subheading": "Craftsmanship",
-            "heading": "Artistry in every thread.",
-            "description": "<p>Each piece is handcrafted with precision, honouring age-old techniques while embracing contemporary design.</p>",
+            "subheading": "When you buy from a Cavirk Verified Seller, you’re supporting",
+            "heading": "What “Cavirk Verified” Means",
+            "description": "<ul><li>Authentic handcrafted products made with skill and care</li><li>Verified artisans, boutiques, and small enterprises</li><li>Transparent and ethical sourcing practices</li><li>A growing ecosystem that preserves traditional craftsmanship</li></ul>",
+            "description_width_text": 500,
             "collection": "",
             "timer": "",
             "expired_message": "Time expired",
@@ -51,29 +233,74 @@
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
+            "use_popup": false,
             "content_alignment": "left",
-            "subheading_font_size": 14,
+            "subheading_font_size": 15,
             "subheading_font_weight": "subheading_weight",
             "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
+            "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 20,
-            "des_font_size": 16,
+            "des_font_size": 14,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
         },
-        "text_e4jLdk": {
+        "image_y4L6eW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/means.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_iznYix",
+        "image_y4L6eW"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_GUdWPx": {
+      "type": "multi-content",
+      "blocks": {
+        "image_wxijYa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/commitment.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_4GAdnY": {
           "type": "text",
           "settings": {
             "color_scheme": "scheme-1",
             "content_width": "50%",
             "vertical_align": "center",
             "image_link": "",
-            "subheading": "Luxury",
-            "heading": "Elegance, thoughtfully crafted.",
-            "description": "<p>Our idea of luxury is quiet refinement — curated details, rich textures, and timeless simplicity.</p>",
+            "subheading": "Verification is not a one-time process — it’s an ongoing partnership.",
+            "heading": "Ongoing Commitment",
+            "description": "<p>Cavirk continuously monitors verified sellers through</p><ul><li>Product quality and customer reviews</li><li>Delivery and service reliability</li><li>Ethical and sustainable practices</li></ul><p>Our goal is to make “<strong>Cavirk Verified” the global mark of trust for handcrafted excellence.</strong></p>",
+            "description_width_text": 500,
             "collection": "",
             "timer": "",
             "expired_message": "Time expired",
@@ -86,86 +313,89 @@
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
+            "use_popup": false,
             "content_alignment": "left",
-            "subheading_font_size": 14,
+            "subheading_font_size": 15,
             "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
+            "subheading_spacing_bottom": 3,
+            "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 20,
-            "des_font_size": 16,
-            "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
-          }
-        },
-        "image_cjATFG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e2.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "image_gYkVwb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/e3.png",
-            "image_link": "",
-            "content_width": "50%",
-            "vertical_align": "center"
-          }
-        },
-        "text_zfLhhy": {
-          "type": "text",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "content_width": "50%",
-            "vertical_align": "center",
-            "image_link": "",
-            "subheading": "Heritage",
-            "heading": "Tradition, reimagined.",
-            "description": "<p>Rooted in culture, our designs revive legacy through a modern lens, season after season. </p>",
-            "collection": "",
-            "timer": "",
-            "expired_message": "Time expired",
-            "style": "default",
-            "font_size": 36,
-            "spacing_bottom": 30,
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_type": "primary",
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_type": "primary",
-            "content_alignment": "left",
-            "subheading_font_size": 14,
-            "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
-            "heading_font_size": 32,
-            "heading_font_weight": "heading_weight",
-            "heading_uppercase": false,
-            "heading_spacing_bottom": 20,
-            "des_font_size": 16,
+            "des_font_size": 14,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
         }
       },
       "block_order": [
-        "image_DGTz4q",
-        "text_ycBmbU",
-        "text_e4jLdk",
-        "image_cjATFG",
-        "image_gYkVwb",
-        "text_zfLhhy"
+        "image_wxijYa",
+        "text_4GAdnY"
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "fluid_container",
-        "heading": "Brand Ethos",
-        "description": "<p>At Cavirk, we stand on three timeless pillars —<strong>Craftsmanship, Luxury, and Heritage</strong>—<br/> blending tradition with modern elegance to create a distinctive brand <br/>experience. Together, these values make Cavirk not just a brand, but a <br/>story of legacy and artistry.</p>",
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_XQyzbA": {
+      "type": "multi-content",
+      "blocks": {
+        "icon_box_7JqaPx": {
+          "type": "icon_box",
+          "settings": {
+            "content_width": "50%",
+            "vertical_align": "center",
+            "box_alignment": "left",
+            "flex_direction": false,
+            "icon_size": 32,
+            "heading": "",
+            "description": "<p>If you are an artisan, boutique, or craft entrepreneur, we invite you to become a part of the Cavirk Verified community.</p>",
+            "description_width": 500,
+            "icon_size2": 32,
+            "heading2": "",
+            "description2": "<p>You can express your interest by reaching out to our team at <a href=\"mailto:hello@cavirk.com\" target=\"_blank\"><strong>hello@cavirk.com</strong></a> or filling out the <a href=\"/pages/contact\" title=\"Contact\"><strong>on boarding form</strong></a> on our Seller page.</p>",
+            "description_width2": 500,
+            "icon_size3": 32,
+            "heading3": "",
+            "description3": "<p>Join us in redefining the future of handcrafted commerce — where technology meets tradition, and authenticity builds trust.</p>",
+            "description_width3": 500,
+            "icon_size4": 32,
+            "heading4": "",
+            "description4": "",
+            "description_width4": 250
+          }
+        },
+        "image_KyyULz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pink_and_Purple_Colorful_Gradient_Modern_Spring_Sale_Flyer_1080_x_1080_px.png",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_7JqaPx",
+        "image_KyyULz"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "container",
+        "heading": "For Sellers",
+        "description": "",
         "header_size": "medium",
         "header_alignment": "center",
         "column_gap": 30,
@@ -180,7 +410,13 @@
     }
   },
   "order": [
-    "main",
-    "multi_content_7qypkM"
+    "image_with_text_overlay_tJwRTN",
+    "divider_MMn38m",
+    "rich_text_b33DHg",
+    "divider_K44cGF",
+    "multi_content_DnqtmY",
+    "multi_content_cWrAVT",
+    "multi_content_GUdWPx",
+    "multi_content_XQyzbA"
   ]
 }

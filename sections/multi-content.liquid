@@ -88,7 +88,7 @@
         data-enable="{{ carousel_on_mobile }}"
         data-mobile="{{ section_st.items_per_row_mobile }}"
         data-spacing="{{ section_st.column_gap }}"
-        class="{% if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2 %} grid_scroll {% endif %}multi-content-js relative flex flex-col-custom flex-wrap{% if column_gap > 30 %} row-gap-30{% else %} row-gap{% endif %}{% if section.blocks.size == 2 and column_gap == 0 %}{% if  carousel_on_mobile == false %} rounded {% else %} rounded-md{% endif %}{% endif %}"
+        class="{% if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2 %} grid_scroll {% endif %}multi-content-js relative flex flex-col-custom flex-wrap{% if column_gap > 30 %} row-gap-30{% else %} row-gap sm-row-gap {% endif %}{% if section.blocks.size == 2 and column_gap == 0 %}{% if  carousel_on_mobile == false %} rounded {% else %} rounded-md{% endif %}{% endif %}"
         style="--col-number: {{ section_st.items_per_row_mobile }};--swiper-pagination-mt: 2rem;--content_bg_color: {{ content_background_color }};"
         {% if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2 %}
           data-free-scroll="{{ data_free_scroll }}"
@@ -268,9 +268,9 @@
                   </a>
                 </div>
               {%- when 'text' -%}
-                <div class="p-20 py-30 section__block-inner{% if section.blocks.size == 2 and column_gap == 0 %} remove-rounded{% endif %} gradient color-{{ color_scheme }}{% if section_st.equal_height_adjustment %} h-full flex align-{{ block_st.vertical_align}} rounded{% endif %} {% if block_st.image_link != blank %} relative{% endif %}">
+                <div class="p-20 py-30 sm-p-15 section__block-inner{% if section.blocks.size == 2 and column_gap == 0 %} remove-rounded{% endif %} gradient color-{{ color_scheme }}{% if section_st.equal_height_adjustment %} h-full flex align-{{ block_st.vertical_align}} rounded{% endif %} {% if block_st.image_link != blank %} relative{% endif %}">
                   <div
-                    class="sec__content w-full text-{{ block_st.content_alignment }}{% if section_st.equal_height_adjustment %} p-30{% endif %}"
+                    class="sec__content w-full text-{{ block_st.content_alignment }}{% if section_st.equal_height_adjustment %} p-30 sm-p-15{% endif %}"
                     style="--padding-inline: {{ block_st.content_padding_inline }};--padding-block: {{ block_st.content_padding_block }};"
                   >
                     <div class="sec__content-inner py-custom px-custom">
