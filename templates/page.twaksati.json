@@ -108,7 +108,7 @@
             "content_alignment": "left",
             "subheading_font_size": 12,
             "subheading_font_weight": "subheading_weight",
-            "subheading_spacing_bottom": 15,
+            "subheading_spacing_bottom": 5,
             "heading_font_size": 36,
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
