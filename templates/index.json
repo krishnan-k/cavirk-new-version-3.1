@@ -44,8 +44,8 @@
         "slider_item_g8Brtx": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/1_e1089a29-b06b-43bb-bb50-2e5d943a465c.png",
-            "image_mobile": "shopify://shop_images/2_0156a6ed-a929-4617-8aa5-bf0020219f29.png",
+            "image": "shopify://shop_images/1_5afca755-aa34-4333-b761-96f2bf52436f.png",
+            "image_mobile": "shopify://shop_images/2_c4bc0056-4898-4fee-bb05-ddf6ffed38cd.png",
             "overlay_opacity": 0,
             "first_button_link_image": "https://cavirk.com/collections/vendors?q=Sequins%20%26%20Pearls%20By%20Vivek",
             "slider_effect": "effect_fadeindown",
@@ -72,6 +72,7 @@
         },
         "slider_item_niXKaE": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2-min.png",
             "image_mobile": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner_3.png",
