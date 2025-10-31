@@ -426,6 +426,7 @@
     },
     "products_grid_7BXbUz": {
       "type": "products-grid",
+      "disabled": true,
       "name": "t:sections.products-grid.name",
       "settings": {
         "section_width": "container",
