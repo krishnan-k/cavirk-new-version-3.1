@@ -126,6 +126,7 @@
         "collection_KM8bxm": {
           "type": "collection",
           "settings": {
+            "collection": "",
             "collection_title": ""
           }
         },
@@ -212,6 +213,7 @@
           "type": "collection",
           "settings": {
             "collection": "premium-collectibles-art",
+            "collection_image": "shopify://shop_images/Jpb24S0TWF_e270acc3-d8cd-4f51-818c-91d3c651d68a.jpg",
             "collection_title": "Premium Collectibles / Art",
             "first_button_link": ""
           }
