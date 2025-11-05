@@ -15,7 +15,7 @@
       "settings": {
         "section_width": "full_width",
         "color_scheme": "",
-        "image": "shopify://shop_images/1_aa9efa06-c5e4-4f09-bf35-721d1487ea15.png",
+        "image": "shopify://shop_images/Beige_and_Brown_Aesthetic_Fashion_Facebook_Cover_1920_x_500_px.png",
         "image_mobile": "shopify://shop_images/2_9038e214-ce15-4a0a-969d-a99886aedf2c.png",
         "image_behavior": "none",
         "overlay_opacity": 0,
@@ -29,7 +29,7 @@
         "content_padding_block": 50,
         "content_padding_inline": 50,
         "show_content_background": false,
-        "content_background": "#fff",
+        "content_background": "#ffffff",
         "content_box_opacity": 100,
         "content_below_image": false,
         "content_alignment_mobile": "left",
