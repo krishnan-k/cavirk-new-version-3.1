@@ -98,7 +98,7 @@
     {%- endif -%}
     {%- if show_excerpt -%}
       <div class="blog-posts-content mb-20 word-break">
-        {{ article.content | strip_html | truncatewords: 24, '...' }}
+        {{ article.excerpt | strip_html | truncatewords: 24, '...' }}
       </div>
     {%- endif -%}
     <div class="blog-posts-bottom flex gap-10 flex-wrap justify-content-{{ content_alignment }}">
