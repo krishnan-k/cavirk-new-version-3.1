@@ -691,7 +691,7 @@
                   </div>
                 </div>
               {%- when 'image_with_text_below' -%}
-                <div class="section__block-inner gradient color-{{ color_scheme }}{% if section_st.equal_height_adjustment %} h-full flex flex-column justify-{{ block_st.vertical_align}} align-{{ block_st.vertical_align}}{% endif %}">
+                <div class="{% if block_st.box_design != blank %} custom_image_text_below {% endif %} section__block-inner gradient color-{{ color_scheme }}{% if section_st.equal_height_adjustment %} h-full flex flex-column justify-{{ block_st.vertical_align}} align-{{ block_st.vertical_align}}{% endif %}">
                   <div
                     class="banner__media w-full{% if section.blocks.size == 2 and column_gap == 0 %} remove-rounded{% endif %} rounded{% if content_width < 50 %} hover-effect{% endif %}"
                     style="{%- if block_st.image != blank -%}--aspect-ratio: {{ block_st.image.aspect_ratio }};{%- else -%}--aspect-ratio: 5/2; {% endif %}{%- if block_st.mobile_image -%} --aspect-ratio-mb: {{ block_st.mobile_image.aspect_ratio }};{% endif %}"
@@ -1846,6 +1846,12 @@
           "unit": "px",
           "default": 0,
           "label": "t:sections.all.content_settings.content_padding_inline.label"
+        },
+        {
+        "type": "checkbox",
+        "id": "box_design",
+        "label": "Box design",
+        "default": false
         },
         {
           "type": "header",
