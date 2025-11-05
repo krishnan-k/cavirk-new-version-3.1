@@ -72,12 +72,11 @@
         },
         "slider_item_niXKaE": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/2-min.png",
-            "image_mobile": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner_3.png",
+            "image": "shopify://shop_images/Discount_up_to_20_1920_x_600_px.png",
+            "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
             "overlay_opacity": 0,
-            "first_button_link_image": "shopify://pages/silk",
+            "first_button_link_image": "shopify://pages/stoles-and-shawls",
             "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
