@@ -48,6 +48,9 @@
     {% if request.design_mode %}
       {{ 'design-mode.css' | asset_url | stylesheet_tag: preload: true }}
     {% endif %}
+    {% if blog.handle == 'blogs' %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endif %}
     {% style %}
       {% for scheme in settings.color_schemes -%}
         {% # theme-check-disable UndefinedObject %}
