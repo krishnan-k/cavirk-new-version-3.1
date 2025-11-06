@@ -48,7 +48,7 @@
     {% if request.design_mode %}
       {{ 'design-mode.css' | asset_url | stylesheet_tag: preload: true }}
     {% endif %}
-    {% if blog.handle == 'blogs' %}
+    {% if blog.handle == 'news' %}
     <meta name="robots" content="noindex, nofollow">
     {% endif %}
     {% style %}
