@@ -777,6 +777,15 @@
             "select_product": "emerald-reverie",
             "author_name": "Priya Sharma"
           }
+        },
+        "testimonials_items_CBc6PV": {
+          "type": "testimonials_items",
+          "settings": {
+            "author_rating": 5,
+            "author_text": "<p>I am truly in love with this Pattachitra saree,’ Tantalising Troupe’ from Cavirk! The craftsmanship is exquisite, the fabric feels luxurious, and the detailing is breathtaking. I received endless compliments when I wore it — it’s a masterpiece that beautifully blends heritage with elegance.</p>",
+            "select_product": "tantalising-troupe",
+            "author_name": "Pooja"
+          }
         }
       },
       "block_order": [
@@ -785,7 +794,8 @@
         "testimonials_items_M8Nm79",
         "testimonials_items_cBDEfL",
         "testimonials_items_neqkM4",
-        "testimonials_items_gEYT6W"
+        "testimonials_items_gEYT6W",
+        "testimonials_items_CBc6PV"
       ],
       "settings": {
         "section_width": "container",
