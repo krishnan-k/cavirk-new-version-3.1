@@ -86,7 +86,7 @@
         "enable_sidebar": true,
         "sidebar_position": "right",
         "layout": "grid",
-        "items_to_show": 9,
+        "items_to_show": 18,
         "items_per_row": 3,
         "column_gap": 20,
         "pagination": "default",
