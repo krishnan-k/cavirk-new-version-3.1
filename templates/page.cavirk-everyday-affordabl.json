@@ -126,7 +126,7 @@
         "collection_9iDbqz": {
           "type": "collection",
           "settings": {
-            "collection": "affordable-accessories",
+            "collection": "accessories",
             "collection_image": "shopify://shop_images/2iXvYhIJt0_e6f9aca8-4a00-41ea-8158-f412a3156c6a.png",
             "collection_title": ""
           }
@@ -186,7 +186,7 @@
         "collection_mmea8G": {
           "type": "collection",
           "settings": {
-            "collection": "affordable-accessories",
+            "collection": "accessories",
             "collection_image": "shopify://shop_images/2iXvYhIJt0_e6f9aca8-4a00-41ea-8158-f412a3156c6a.png",
             "collection_title": "Accessories",
             "first_button_link": ""
@@ -205,7 +205,7 @@
           "settings": {
             "collection": "home-decor-furnishing",
             "collection_image": "shopify://shop_images/LR7nQMKrST_e288ca23-fe6f-47fe-a627-2032cd5dbdfb.jpg",
-            "collection_title": "Home Décor & Furnishing",
+            "collection_title": "Home Decor & Furnishing",
             "first_button_link": ""
           }
         },
