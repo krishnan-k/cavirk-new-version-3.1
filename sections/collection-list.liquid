@@ -136,7 +136,7 @@
     {% if section.blocks.size > 0 %}
       {% if display_mode == 'grid' %}
         <grid-custom
-          class="{% if section.blocks.size > 6 %} custom_grid_row {% endif %} collection-list--grid grid grid-cols gap{% if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2 %} grid_scroll{% elsif section_st.items_per_row_mobile > 2 and section_st.items_per_row_mobile < 3 %} grid_scroll{% endif %}"
+          class="{% if section.blocks.size > 6 %} custom_grid_row {% endif %} {% if section.blocks.size >= 3 %} grid_row_3 {% endif %} collection-list--grid grid grid-cols gap{% if section_st.items_per_row_mobile > 1 and section_st.items_per_row_mobile < 2 %} grid_scroll{% elsif section_st.items_per_row_mobile > 2 and section_st.items_per_row_mobile < 3 %} grid_scroll{% endif %}"
           style="{{ col_style | strip | strip_newlines }}"
           data-mobile="{{ items_per_row_mobile }}"
           data-spacing="{{ column_gap }}"
