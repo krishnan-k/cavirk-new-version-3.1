@@ -58,6 +58,9 @@
 .grid_row_3 .collection-item.grid-custom-item:first-child {
     justify-content: end;
 }
+.grid_row_3 .collection-item.grid-custom-item:last-child {
+    justify-content: flex-start;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {}
 
 @media (max-width: 575.98px) {
