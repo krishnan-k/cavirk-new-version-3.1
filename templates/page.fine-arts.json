@@ -115,24 +115,6 @@
             "first_button_link": ""
           }
         },
-        "collection_P99QtD": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/Usha_Singh.png",
-            "collection_title": "Usha Singh",
-            "first_button_link": ""
-          }
-        },
-        "collection_aym3my": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/Usha_Singh.png",
-            "collection_title": "Pooja Jha",
-            "first_button_link": ""
-          }
-        },
         "collection_yFQBNe": {
           "type": "collection",
           "settings": {
@@ -154,8 +136,6 @@
       },
       "block_order": [
         "collection_Dg7ERR",
-        "collection_P99QtD",
-        "collection_aym3my",
         "collection_yFQBNe",
         "collection_N4RxXx"
       ],
@@ -168,7 +148,7 @@
         "show_view_all_button": false,
         "header_size": "medium",
         "header_alignment": "center",
-        "display_mode": "carousel",
+        "display_mode": "grid",
         "image_ratio": "adapt",
         "custom_ratio": "",
         "items_per_row": 5,
