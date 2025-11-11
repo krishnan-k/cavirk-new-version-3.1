@@ -19,6 +19,7 @@
 {%- assign page_query_string = page_url | split: '?' | last -%}
 {%- liquid
   assign section_st = section.settings
+  assign color_scheme = section_st.color_scheme
   assign section_block = section.blocks
   assign section_width = section_st.section_width
   assign enable_filtering = section_st.enable_filtering
@@ -48,7 +49,7 @@
 {% if enable_filtering and filter_layout == 'vertical' %}--col-width: 27rem;--col-gap: 3rem;{% endif %} {% if enable_filtering and filter_layout == 'vertical' and section_width != 'default' %}--col-gap-desktop: 6rem;{% endif %}{% if enable_filtering and filter_layout == 'vertical' and section_width == 'default' %}--col-gap: 3rem;{% endif %}  --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }};
 {%- endcapture -%}
 <section
-  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} sec__collection-main {{ scroll_animation }} bls-image-js"
+  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} sec__collection-main {{ scroll_animation }} bls-image-js color-{{ color_scheme }} gradient"
   data-section-id="{{ section.id }}"
   style="{{ style_padding | strip | strip_newlines }}"
 >
@@ -337,6 +338,12 @@
     {
       "type": "header",
       "content": "t:sections.collection-main.settings.filter"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.color_scheme.label",
+      "default": "scheme-1"
     },
     {
       "type": "checkbox",
