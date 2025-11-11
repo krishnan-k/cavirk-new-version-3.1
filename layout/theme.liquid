@@ -49,8 +49,16 @@
       {{ 'design-mode.css' | asset_url | stylesheet_tag: preload: true }}
     {% endif %}
     {% if blog.handle == 'news' %}
-    <meta name="robots" content="noindex, nofollow">
-    {% endif %}
+      <meta name="robots" content="noindex, nofollow">
+    {% endif %}
+    {% if collection.handle == 'madhubani-painting-collections' %}
+      <style>
+        .mb-60 {
+          margin-bottom: 0 !important;
+        }
+      </style>
+    {% endif %}
+
     {% style %}
       {% for scheme in settings.color_schemes -%}
         {% # theme-check-disable UndefinedObject %}
@@ -425,7 +433,7 @@
       });
     </script>
     <!-- Judjme review app active class end -->
-    <!-- dynamic faq script start-->
+    <!-- dynamic faq script start -->
     <script>
       document.querySelectorAll('.shawl-qa-heading').forEach((heading) => {
         heading.addEventListener('click', () => {
@@ -434,6 +442,6 @@
         });
       });
     </script>
-    <!-- dynamic faq script end-->
+    <!-- dynamic faq script end -->
   </body>
 </html>
