@@ -61,6 +61,13 @@
         }
       </style>
     {% endif %}
+    {% if page.handle =='fine-arts' %}
+      <style>
+        .footer.border-top:not(.remove_spacing-on-home){
+          margin-top: 0;
+        }
+        </style>
+    {% endif %}
 
     {% style %}
       {% for scheme in settings.color_schemes -%}
