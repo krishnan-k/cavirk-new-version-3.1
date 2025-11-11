@@ -193,6 +193,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "heading": "How the Verification Works",
         "description": "<p>Our verification process is <strong>simple, transparent</strong>, and <strong>human-led</strong></p>",
         "header_size": "medium",
@@ -217,7 +218,7 @@
             "content_width": "50%",
             "vertical_align": "center",
             "image_link": "",
-            "subheading": "When you buy from a Cavirk Verified Seller, you’re supporting",
+            "subheading": "",
             "heading": "What “Cavirk Verified” Means",
             "description": "<ul><li>Authentic handcrafted products made with skill and care</li><li>Verified artisans, boutiques, and small enterprises</li><li>Transparent and ethical sourcing practices</li><li>A growing ecosystem that preserves traditional craftsmanship</li></ul>",
             "description_width_text": 500,
@@ -264,6 +265,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "medium",
@@ -335,6 +337,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "medium",
@@ -394,6 +397,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "heading": "For Sellers",
         "description": "",
         "header_size": "medium",
