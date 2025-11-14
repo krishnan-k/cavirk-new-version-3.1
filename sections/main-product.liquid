@@ -311,6 +311,7 @@
                 {{- product.metafields.custom.external_affiliate.value.button_text -}}
               </a>
             {%- endif -%}
+            <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
           {%- when 'live_view' -%}
             {% comment %} live_view {% endcomment %}
             {% if block_st.content %}
