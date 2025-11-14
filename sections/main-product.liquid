@@ -223,7 +223,7 @@
               class="block opacity-0"
             >
               <h1
-                class="product-detail__title heading-letter-spacing fs-26 mt-0 mb-8{% if enable_skeleton_loading %} skeleton-loading{% endif %} ss"
+                class="product-detail__title heading-letter-spacing fs-26 mt-0 mb-8{% if enable_skeleton_loading %} skeleton-loading{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {%- if product.title != blank -%}
@@ -232,6 +232,8 @@
                   {{ 'onboarding.product_title_example' | t }}
                 {% endif %}
               </h1>
+              <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+
             </motion-element>
           {%- when 'badges' -%}
             <div
