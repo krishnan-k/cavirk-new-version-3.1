@@ -676,7 +676,7 @@ collapsible-block + product-recommendations {
 .sec__products-set .swiper-pagination {
   width: auto;
 }
-.product-detail__media + .product-detail__information .badge_div > div {
+.product-detail__media + .product-detail__information .wk_seller_badge_div .badge_div > div {
     float: none !important;
 }
 @media (max-width: 767px) {
