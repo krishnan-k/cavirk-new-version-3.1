@@ -691,6 +691,12 @@ collapsible-block + product-recommendations {
     display: flex;
     align-items: center;
 }
+.product-detail__information .wk_seller_badge_div .badge_name {
+    padding: 0 !important;
+}
+.product-detail__information .wk_seller_badge_div .badge_div {
+    margin: 0 !important;
+}
 @media (max-width: 767px) {
   .product_set.grid.reset-layout-mobile {
     grid-template-columns: repeat(4, minmax(0, 1fr));
