@@ -204,8 +204,8 @@
       {%- assign product_form_id = 'product-form-' | append: section.id -%}
       {% if section.settings.image_zoom == 'external_zoom' %}
         <div class="zoom-external-area"></div>
-      {% endif %}.
-      
+      {% endif %}
+      {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div> {% endcomment %}
       {%- for block in section.blocks -%}
         {% assign block_st = block.settings %}
         {%- case block.type -%}
@@ -313,7 +313,6 @@
                 {{- product.metafields.custom.external_affiliate.value.button_text -}}
               </a>
             {%- endif -%}
-            <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
           {%- when 'live_view' -%}
             {% comment %} live_view {% endcomment %}
             {% if block_st.content %}
