@@ -690,11 +690,11 @@ collapsible-block + product-recommendations {
 .product-detail__information .wk_seller_badge_div .mp-badge-logo {
     display: inline-flex;
     align-items: center;
-    margin: 0 !important;
+    margin: 10px 0 0 0 !important;
     background: #2f773d;
-    padding: 5px 8px;
-    border-radius: 11px;
-    gap: 10px;
+    padding: 7px 12px 7px 8px;
+    border-radius: 12px;
+    gap: 8px;
 }
 .product-detail__information .wk_seller_badge_div .badge_name {
     padding: 0 !important;
