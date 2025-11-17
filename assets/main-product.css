@@ -676,6 +676,9 @@ collapsible-block + product-recommendations {
 .sec__products-set .swiper-pagination {
   width: auto;
 }
+.product-detail__media + .product-detail__information .badge_div > div {
+    float: none !important;
+}
 @media (max-width: 767px) {
   .product_set.grid.reset-layout-mobile {
     grid-template-columns: repeat(4, minmax(0, 1fr));
