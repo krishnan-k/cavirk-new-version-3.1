@@ -283,7 +283,7 @@
             >
               {%- render 'price', scope: 'detail', product: product, class: 'price-large', show_badges: false -%}
             </div>
-            {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div> {% endcomment %}
+            <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
           {%- when 'buy_buttons' -%}
             {% comment %} Buy button {% endcomment %}
             {%- if product.metafields.custom.external_affiliate == blank -%}
