@@ -205,7 +205,7 @@
       {% if section.settings.image_zoom == 'external_zoom' %}
         <div class="zoom-external-area"></div>
       {% endif %}
-      <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+      {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div> {% endcomment %}
       {%- for block in section.blocks -%}
         {% assign block_st = block.settings %}
         {%- case block.type -%}
