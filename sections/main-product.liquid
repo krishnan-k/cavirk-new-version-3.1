@@ -216,7 +216,7 @@
               <p class="product-detail__meta-value heading-color mt-0 mb-2 no-underline {% if enable_skeleton_loading %} skeleton-loading{% endif %}">
                 <span class="me-5">Sold by:</span>
                  {{- product.vendor | link_to_vendor -}}
-                 <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+                 {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div> {% endcomment %}
               </p>
             {% endif %}
             <motion-element
