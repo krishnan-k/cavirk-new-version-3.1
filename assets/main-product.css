@@ -690,7 +690,8 @@ collapsible-block + product-recommendations {
 .product-detail__information .wk_seller_badge_div .mp-badge-logo {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 3px;
+    margin: 0 0 0 8px !important;
 }
 .product-detail__information .wk_seller_badge_div .badge_name {
     padding: 0 !important;
