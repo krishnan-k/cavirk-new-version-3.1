@@ -205,7 +205,7 @@
       {% if section.settings.image_zoom == 'external_zoom' %}
         <div class="zoom-external-area"></div>
       {% endif %}
-      
+
       {%- for block in section.blocks -%}
         {% assign block_st = block.settings %}
         {%- case block.type -%}
@@ -213,15 +213,15 @@
             {% comment %} Title {% endcomment %}
 
             {% if block_st.show_vendor and product.vendor != blank %}
-              <div class="badge_seller_config">
-              <p class="product-detail__meta-value heading-color mt-0 mb-2 no-underline {% if enable_skeleton_loading %} skeleton-loading{% endif %}">
-                <span class="me-5">Sold by:</span>
-                 {{- product.vendor | link_to_vendor -}}
-              </p>
-              <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
-            </div>
+              <div class="badge_seller_config flex">
+                <p class="product-detail__meta-value heading-color mt-0 mb-2 no-underline {% if enable_skeleton_loading %} skeleton-loading{% endif %}">
+                  <span class="me-5">Sold by:</span>
+                  {{- product.vendor | link_to_vendor -}}
+                </p>
+                <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+              </div>
             {% endif %}
-            
+
             <motion-element
               data-motion="fade-up"
               data-motion-delay="50"
@@ -286,7 +286,7 @@
             >
               {%- render 'price', scope: 'detail', product: product, class: 'price-large', show_badges: false -%}
             </div>
-            
+
           {%- when 'buy_buttons' -%}
             {% comment %} Buy button {% endcomment %}
             {%- if product.metafields.custom.external_affiliate == blank -%}
@@ -1395,21 +1395,23 @@
   {% endif %}
 </div>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     // Wait until both app blocks are present
     const interval = setInterval(() => {
-      const block1 = document.getElementById("shopify-block-AcStkQXhoeFNtN1lFb__likely_like_me_button_app_block_4HALdy");
-      const block2 = document.getElementById("shopify-block-AekdHLy9XbDVJd3pBM__judge_me_reviews_preview_badge_wn8Mtq");
+      const block1 = document.getElementById(
+        'shopify-block-AcStkQXhoeFNtN1lFb__likely_like_me_button_app_block_4HALdy'
+      );
+      const block2 = document.getElementById('shopify-block-AekdHLy9XbDVJd3pBM__judge_me_reviews_preview_badge_wn8Mtq');
 
       if (block1 && block2) {
         // Create a flex container
-        const flexContainer = document.createElement("div");
-        flexContainer.style.display = "flex";
-        flexContainer.style.alignItems = "center";
-        flexContainer.style.gap = "0";
-        flexContainer.style.marginBottom = "15px";
-        flexContainer.style.flexDirection = "row-reverse";
-        flexContainer.style.justifyContent = "flex-end";
+        const flexContainer = document.createElement('div');
+        flexContainer.style.display = 'flex';
+        flexContainer.style.alignItems = 'center';
+        flexContainer.style.gap = '0';
+        flexContainer.style.marginBottom = '15px';
+        flexContainer.style.flexDirection = 'row-reverse';
+        flexContainer.style.justifyContent = 'flex-end';
 
         // Insert before the first block
         block1.parentNode.insertBefore(flexContainer, block1);
@@ -1424,24 +1426,24 @@
   });
 </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     function updateLikesText(label) {
       if (!label) return;
       const raw = label.textContent.trim();
       const count = parseInt(raw);
-      if (!isNaN(count) && !raw.includes("Like")) {
-        label.textContent = count + (count === 1 ? " Likes" : " Like");
+      if (!isNaN(count) && !raw.includes('Like')) {
+        label.textContent = count + (count === 1 ? ' Likes' : ' Like');
       }
     }
 
     const fixLikesText = () => {
-      const label = document.querySelector("label.likely-count-label");
+      const label = document.querySelector('label.likely-count-label');
       updateLikesText(label);
     };
 
     // Run immediately once loaded
     const waitForLabel = setInterval(() => {
-      const label = document.querySelector("label.likely-count-label");
+      const label = document.querySelector('label.likely-count-label');
       if (label) {
         updateLikesText(label);
         clearInterval(waitForLabel);
@@ -2050,7 +2052,7 @@
           "id": "secure_content",
           "label": "t:sections.main-product.blocks.delivery_return.settings.secure_content.content",
           "default": "<p>Free shipping and returns: <strong>On all orders over $150.</strong></p>"
-        },
+        }
       ]
     },
     {
