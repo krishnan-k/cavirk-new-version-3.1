@@ -211,7 +211,6 @@
         {%- case block.type -%}
           {%- when 'title' -%}
             {% comment %} Title {% endcomment %}
-
             {% if block_st.show_vendor and product.vendor != blank %}
               <div class="badge_seller_config flex">
                 <p class="product-detail__meta-value heading-color mt-0 mb-2 no-underline {% if enable_skeleton_loading %} skeleton-loading{% endif %}">
@@ -219,7 +218,7 @@
                   {{- product.vendor | link_to_vendor -}}
                 </p>
                 {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>{% endcomment %}
-                {%- render 'seller-customer-badge' -%}
+                {% comment %} {%- render 'seller-customer-badge' -%} {% endcomment %}
               </div>
             {% endif %}
 
