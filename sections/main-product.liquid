@@ -218,7 +218,10 @@
                   <span class="me-5">Sold by:</span>
                   {{- product.vendor | link_to_vendor -}}
                 </p>
-                <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+                {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div> {% endcomment %}
+                {% if product.vendor == 'Cavirk' %}
+                  <span class="verified">✔ Cavirk Verified</span>
+                {% endif %}
               </div>
             {% endif %}
 
