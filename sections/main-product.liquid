@@ -218,7 +218,7 @@
                   {{- product.vendor | link_to_vendor -}}
                 </p>
                 {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>{% endcomment %}
-                {%- render 'seller-customer-badge' -%}
+                {% comment %} {%- render 'seller-customer-badge' -%} {% endcomment %}
               </div>
             {% endif %}
 
