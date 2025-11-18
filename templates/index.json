@@ -12,11 +12,40 @@
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
+        "slider_item_niXKaE": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/Discount_up_to_20_1920_x_600_px.png",
+            "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
+            "overlay_opacity": 0,
+            "first_button_link_image": "shopify://pages/stoles-and-shawls",
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
         "slider_item_fJjFU4": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/1_2db6524b-5d49-4b53-9fe9-f5b3c9a77dc7.png",
-            "image_mobile": "shopify://shop_images/2_4d5e855c-99d9-4a3a-8d53-d0ed3fe949b9.png",
+            "image": "shopify://shop_images/1_c2f534ef-7273-4c95-b90a-855ac32569e1.png",
+            "image_mobile": "shopify://shop_images/2_6092bf6a-d2a8-4cb9-b8da-f6bd00411864.png",
             "overlay_opacity": 0,
             "first_button_link_image": "shopify://collections/offer-products",
             "slider_effect": "effect_fadeindown",
@@ -48,35 +77,6 @@
             "image_mobile": "shopify://shop_images/2_c4bc0056-4898-4fee-bb05-ddf6ffed38cd.png",
             "overlay_opacity": 0,
             "first_button_link_image": "https://cavirk.com/collections/vendors?q=Sequins%20%26%20Pearls%20By%20Vivek",
-            "slider_effect": "effect_fadeindown",
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "container",
-            "content_max_width": 100,
-            "content_padding_block": 60,
-            "content_padding_inline": 30,
-            "show_content_background": false,
-            "content_background": "#ffffff",
-            "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
-          }
-        },
-        "slider_item_niXKaE": {
-          "type": "slider_item",
-          "settings": {
-            "image": "shopify://shop_images/Discount_up_to_20_1920_x_600_px.png",
-            "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
-            "overlay_opacity": 0,
-            "first_button_link_image": "shopify://pages/stoles-and-shawls",
             "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
@@ -189,9 +189,9 @@
         }
       },
       "block_order": [
+        "slider_item_niXKaE",
         "slider_item_fJjFU4",
         "slider_item_g8Brtx",
-        "slider_item_niXKaE",
         "slider_item_BCmGBC",
         "slider_item_6aLFii",
         "slider_item_jiLA39"
