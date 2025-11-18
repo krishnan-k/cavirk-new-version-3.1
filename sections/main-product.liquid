@@ -213,13 +213,15 @@
             {% comment %} Title {% endcomment %}
 
             {% if block_st.show_vendor and product.vendor != blank %}
-
+              <div class="badge_seller_config">
               <p class="product-detail__meta-value heading-color mt-0 mb-2 no-underline {% if enable_skeleton_loading %} skeleton-loading{% endif %}">
                 <span class="me-5">Sold by:</span>
                  {{- product.vendor | link_to_vendor -}}
               </p>
+              <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+            </div>
             {% endif %}
-            <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
+            
             <motion-element
               data-motion="fade-up"
               data-motion-delay="50"
