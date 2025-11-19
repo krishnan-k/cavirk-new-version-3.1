@@ -341,7 +341,7 @@
                     </div>
                     <div class="price-lable flex gap-5 flex-wrap">
                       <div class="label">{{ filter.label | escape }}:</div>
-                      <div class="price heading-style">
+                      <div class="price">
                         {%- assign min_value = filter.min_value.value | default: 0 -%}
                         {%- assign max_value = filter.max_value.value | default: filter.range_max -%}
                         <span class="min">
