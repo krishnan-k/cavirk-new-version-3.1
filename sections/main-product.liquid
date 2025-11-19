@@ -217,8 +217,8 @@
                   <span class="me-5">Sold by:</span>
                   {{- product.vendor | link_to_vendor -}}
                 </p>
-                <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div>
-                {% comment %} {%- render 'seller-customer-badge' -%} {% endcomment %}
+                {% comment %} <div class="wk_seller_badge_div" data-productid="{{ product.id }}"></div> {% endcomment %}
+                {%- render 'seller-customer-badge' -%}
               </div>
             {% endif %}
 
