@@ -654,11 +654,11 @@
     "shopable_video_Yq73J7": {
       "type": "shopable-video",
       "blocks": {
-        "video_BAkjKB": {
+        "video_djLJgH": {
           "type": "video",
           "settings": {
-            "product": "ivory-harmony",
-            "local_video": "shopify://files/videos/Ivory Harmony video (1).mp4"
+            "product": "celestial-lace",
+            "local_video": "shopify://files/videos/Adobe Express - WhatsApp Video 2025-11-24 at 10.16.11_439e9d61.mp4"
           }
         },
         "video_KLmzFE": {
@@ -668,11 +668,11 @@
             "local_video": "shopify://files/videos/Golden Vows video (1).mp4"
           }
         },
-        "video_djLJgH": {
+        "video_BAkjKB": {
           "type": "video",
           "settings": {
-            "product": "vows-in-motion",
-            "local_video": "shopify://files/videos/Vows in Motion video (1).mp4"
+            "product": "black-ember",
+            "local_video": "shopify://files/videos/Adobe Express - WhatsApp Video 2025-11-24 at 10.16.11_ca54f2fc (1).mp4"
           }
         },
         "video_tRxLUb": {
@@ -691,9 +691,9 @@
         }
       },
       "block_order": [
-        "video_BAkjKB",
-        "video_KLmzFE",
         "video_djLJgH",
+        "video_KLmzFE",
+        "video_BAkjKB",
         "video_tRxLUb",
         "video_iprWEj"
       ],
