@@ -50,7 +50,7 @@
                 class="article-card-date dot-between inline-flex align-center"
                 itemprop="dateCreated pubdate datePublished"
               >
-                {{ article.published_at | date: '%b %d %Y' }}
+                {{ article.published_at | date: '%b %d, %Y' }}
               </div>
               {%- if blog.comments_enabled? -%}
                 <div class="article-card-comments dot-between inline-flex align-center">
