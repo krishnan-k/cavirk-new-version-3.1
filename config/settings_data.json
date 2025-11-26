@@ -337,10 +337,10 @@
       "scheme-2b5c6c91-201d-4fb1-aba3-e6d562656976": {
         "settings": {
           "background": "rgba(0,0,0,0)",
-          "background_gradient": "linear-gradient(270deg, rgba(7, 40, 3, 1), rgba(249, 208, 163, 1) 100%)",
+          "background_gradient": "linear-gradient(270deg, rgba(7, 40, 3, 1), rgba(7, 40, 3, 1) 100%)",
           "primary_color": "#d0473e",
-          "text_color": "#444444",
-          "heading_color": "#111111",
+          "text_color": "#ffffff",
+          "heading_color": "#ffffff",
           "border_color": "#c5b27b",
           "btn_primary_color": "#ffffff",
           "btn_primary_background": "#111111",
