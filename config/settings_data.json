@@ -336,8 +336,8 @@
       },
       "scheme-2b5c6c91-201d-4fb1-aba3-e6d562656976": {
         "settings": {
-          "background": "#f5f5f5",
-          "background_gradient": "",
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "linear-gradient(270deg, rgba(7, 40, 3, 1), rgba(249, 208, 163, 1) 100%)",
           "primary_color": "#d0473e",
           "text_color": "#444444",
           "heading_color": "#111111",
