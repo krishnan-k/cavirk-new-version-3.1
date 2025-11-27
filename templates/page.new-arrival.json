@@ -101,7 +101,7 @@
         "column_gap": 30,
         "show_arrow": true,
         "carousel_pagination": "disable",
-        "infinite": false,
+        "infinite": true,
         "autoplay": false,
         "autorotate_speed": 5,
         "reveal": false,
