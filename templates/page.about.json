@@ -42,7 +42,79 @@
     "multi_content_AHdcCj": {
       "type": "multi-content",
       "blocks": {
+        "text_UVRgWU": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Pooja  Vaidya Gupta",
+            "description": "<p>leads <strong>Cavirk Marketplace</strong> with a clear conviction that the future of luxury lies in authenticity, cultural lineage, and craftsmanship. With a deep-rooted passion for fashion and heritage, she is reimagining how handcrafted products are discovered, valued, and experienced.<br/><br/>Under her leadership, Cavirk Marketplace defines luxury through <strong>authenticity and provenance</strong>—championing products that carry a traceable story, uncompromised workmanship, and fair, transparent value. By working closely with creators and curators, she ensures that every piece on the platform reflects integrity, refinement, and a genuine connection to its origins.</p><p>Her vision is to position Cavirk as the world’s most credible destination for handcrafted luxury: a platform that elevates artistry, builds trust with discerning consumers, and brings meaningful, story-rich products to a contemporary global audience.</p><p>Pooja’s leadership is driven by purpose—honouring craftsmanship, protecting heritage, and shaping a modern luxury ecosystem where every exceptional creation finds the recognition it deserves.<br/><br/></p>",
+            "description_width_text": 600,
+            "collection": "",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 38,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 18,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
         "image_MfJjAq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1146_1.jpg",
+            "image_link": "",
+            "content_width": "45%",
+            "vertical_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_UVRgWU",
+        "image_MfJjAq"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_gmmePT": {
+      "type": "multi-content",
+      "blocks": {
+        "image_bW3GYm": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/cavirk-founders.jpg",
@@ -51,7 +123,7 @@
             "vertical_align": "center"
           }
         },
-        "text_UVRgWU": {
+        "text_X4CWKD": {
           "type": "text",
           "settings": {
             "color_scheme": "scheme-1",
@@ -74,6 +146,7 @@
             "second_button_label": "",
             "second_button_link": "",
             "second_button_type": "primary",
+            "use_popup": false,
             "content_alignment": "left",
             "subheading_font_size": 12,
             "subheading_font_weight": "subheading_weight",
@@ -89,12 +162,13 @@
         }
       },
       "block_order": [
-        "image_MfJjAq",
-        "text_UVRgWU"
+        "image_bW3GYm",
+        "text_X4CWKD"
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "medium",
@@ -133,6 +207,7 @@
             "spacing_top": 25,
             "spacing_bottom": 0,
             "content_padding_inline": 0,
+            "box_design": false,
             "subheading_font_size": 12,
             "subheading_font_weight": "subheading_weight",
             "subheading_spacing_bottom": 15,
@@ -166,6 +241,7 @@
             "spacing_top": 25,
             "spacing_bottom": 0,
             "content_padding_inline": 0,
+            "box_design": false,
             "subheading_font_size": 12,
             "subheading_font_weight": "subheading_weight",
             "subheading_spacing_bottom": 15,
@@ -186,6 +262,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "medium",
@@ -249,6 +326,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
+        "color_scheme": "",
         "heading": "Cavirk: A Multi-Store Management Marketplace for Heritage and Luxury ",
         "description": "<p>Cavirk Marketplace is designed to serve as a distinguished platform for authentic handcrafted goods, ensuring: </p>",
         "header_size": "small",
@@ -312,6 +390,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
+        "color_scheme": "",
         "heading": "Commitment to Craftsmanship ",
         "description": "<p>The artisans and sellers on Cavirk adhere to the highest standards of craftsmanship, incorporating</p>",
         "header_size": "small",
@@ -552,6 +631,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "fluid_container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "small",
@@ -570,6 +650,7 @@
   "order": [
     "page-heading",
     "multi_content_AHdcCj",
+    "multi_content_gmmePT",
     "multi_content_4TMyPx",
     "multi_content_EPA9gP",
     "multi_content_izDQLW",
