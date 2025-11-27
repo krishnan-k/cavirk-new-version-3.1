@@ -42,11 +42,11 @@
     "collection_tab_ApTJUB": {
       "type": "collection-tab",
       "blocks": {
-        "collection_TxeiAw": {
+        "collection_MbWARG": {
           "type": "collection",
           "settings": {
-            "collection": "kurta-sets",
-            "collection_title": "Men's Ethnic"
+            "collection": "sarees",
+            "collection_title": "Sarees"
           }
         },
         "collection_wHyjV3": {
@@ -56,11 +56,11 @@
             "collection_title": "Women's Designer Wear"
           }
         },
-        "collection_MbWARG": {
+        "collection_TxeiAw": {
           "type": "collection",
           "settings": {
-            "collection": "sarees",
-            "collection_title": "Sarees"
+            "collection": "kurta-sets",
+            "collection_title": "Men's Ethnic"
           }
         },
         "collection_nddLVN": {
@@ -79,9 +79,9 @@
         }
       },
       "block_order": [
-        "collection_TxeiAw",
-        "collection_wHyjV3",
         "collection_MbWARG",
+        "collection_wHyjV3",
+        "collection_TxeiAw",
         "collection_nddLVN",
         "collection_9J8zLg"
       ],
