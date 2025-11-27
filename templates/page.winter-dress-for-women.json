@@ -19,7 +19,7 @@
         "heading_k374p7": {
           "type": "heading",
           "settings": {
-            "page_title": "Winter Dress for Women",
+            "page_title": "",
             "header_size": "default"
           }
         }
@@ -39,51 +39,284 @@
         "padding_bottom": 50
       }
     },
+    "rich_text_Ecbydn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3M8fC4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Diwali Dress for Women 2025 | Diwali Outfits For Women 2025",
+            "font_size": 36,
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
+          }
+        },
+        "description_cTHNm8": {
+          "type": "description",
+          "settings": {
+            "description": "<p>This Diwali 2025, light up your celebrations with elegance and style through Cavirk’s <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dress collection for women 2025</span></a>. Our festive range of <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali clothes for women 2025</span></a> blends traditional artistry with modern designs to bring out the true spirit of the festival. Whether you are attending family gatherings festive parties or wedding celebrations our <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali ethnic wear for women 2025</span></a> combines heritage craftsmanship luxurious fabrics and contemporary silhouettes. From hand-painted sarees to designer lehengas and Indo Western outfits every piece is designed to make you feel confident radiant and beautifully festive</p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_3M8fC4",
+        "description_cTHNm8"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_max_width": 86,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 20,
+        "reset_spacing": true
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "blocks": {
-        "collection_BQGLmR": {
+        "collection_CG6gtF": {
           "type": "collection",
           "settings": {
-            "collection": "pashmina-shawls-and-stoles",
+            "collection": "pattachitra-painting",
             "collection_title": ""
           }
         },
-        "collection_fpjqU3": {
+        "collection_rU7kyf": {
           "type": "collection",
           "settings": {
-            "collection": "kinnuari-shawls-and-stoles",
+            "collection": "madhubani-paintings-sarees",
             "collection_title": ""
           }
         },
-        "collection_HCAmbw": {
+        "collection_UeMRgW": {
           "type": "collection",
           "settings": {
-            "collection": "cashmere-shawls-and-stoles",
+            "collection": "kantha-saree",
             "collection_title": ""
           }
         },
-        "collection_Ah4yLG": {
+        "collection_FefQHk": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-lehengas",
+            "collection_title": ""
+          }
+        },
+        "collection_iKDNJh": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhakai",
+            "collection_title": ""
+          }
+        },
+        "collection_e8UyJJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "indo-western",
+            "collection_title": ""
+          }
+        },
+        "collection_iMFCbt": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-wear",
+            "collection_title": ""
+          }
+        },
+        "collection_8ENErK": {
+          "type": "collection",
+          "settings": {
+            "collection": "pre-draped-sarees-collection",
+            "collection_title": ""
+          }
+        },
+        "collection_GU9EBr": {
+          "type": "collection",
+          "settings": {
+            "collection": "ajrakh-craft",
+            "collection_title": ""
+          }
+        },
+        "collection_azQ8ab": {
+          "type": "collection",
+          "settings": {
+            "collection": "muslin-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_4e44gm": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaftans",
+            "collection_title": ""
+          }
+        },
+        "collection_6PAbbY": {
+          "type": "collection",
+          "settings": {
+            "collection": "pashmina-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_pYrQhk": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinnauri-shawls",
+            "collection_title": ""
+          }
+        },
+        "collection_nkCQKb": {
+          "type": "collection",
+          "settings": {
+            "collection": "ajrakh-stole",
+            "collection_title": ""
+          }
+        },
+        "collection_jziEWz": {
+          "type": "collection",
+          "settings": {
+            "collection": "bangalore-silk",
+            "collection_title": ""
+          }
+        },
+        "collection_6FzdyN": {
+          "type": "collection",
+          "settings": {
+            "collection": "begampur-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_TJprDn": {
+          "type": "collection",
+          "settings": {
+            "collection": "bengal-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_j7LJFt": {
+          "type": "collection",
+          "settings": {
+            "collection": "bengal-handwoven-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_nd6j8t": {
+          "type": "collection",
+          "settings": {
+            "collection": "blouses",
+            "collection_title": ""
+          }
+        },
+        "collection_MgV9Dr": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-fine-wool-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_hawV66": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_qFt3ib": {
+          "type": "collection",
+          "settings": {
+            "collection": "cavirk-curates",
+            "collection_title": ""
+          }
+        },
+        "collection_WfwYG4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dhonekhali-cotton",
+            "collection_title": ""
+          }
+        },
+        "collection_KQUDxy": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "collection_title": ""
+          }
+        },
+        "collection_BK3nNB": {
           "type": "collection",
           "settings": {
             "collection": "duppattas",
             "collection_title": ""
           }
         },
-        "collection_BHhQpd": {
+        "collection_bcaX6d": {
           "type": "collection",
           "settings": {
-            "collection": "ajrakh-stole",
+            "collection": "fine-wool-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_EfeHnK": {
+          "type": "collection",
+          "settings": {
+            "collection": "madhubani-saree",
+            "collection_title": ""
+          }
+        },
+        "collection_qFUPV9": {
+          "type": "collection",
+          "settings": {
+            "collection": "pashmina-shawl",
+            "collection_title": ""
+          }
+        },
+        "collection_3bqY3U": {
+          "type": "collection",
+          "settings": {
+            "collection": "gen-z-meets-heritage",
             "collection_title": ""
           }
         }
       },
       "block_order": [
-        "collection_BQGLmR",
-        "collection_fpjqU3",
-        "collection_HCAmbw",
-        "collection_Ah4yLG",
-        "collection_BHhQpd"
+        "collection_CG6gtF",
+        "collection_rU7kyf",
+        "collection_UeMRgW",
+        "collection_FefQHk",
+        "collection_iKDNJh",
+        "collection_e8UyJJ",
+        "collection_iMFCbt",
+        "collection_8ENErK",
+        "collection_GU9EBr",
+        "collection_azQ8ab",
+        "collection_4e44gm",
+        "collection_6PAbbY",
+        "collection_pYrQhk",
+        "collection_nkCQKb",
+        "collection_jziEWz",
+        "collection_6FzdyN",
+        "collection_TJprDn",
+        "collection_j7LJFt",
+        "collection_nd6j8t",
+        "collection_MgV9Dr",
+        "collection_hawV66",
+        "collection_qFt3ib",
+        "collection_WfwYG4",
+        "collection_KQUDxy",
+        "collection_BK3nNB",
+        "collection_bcaX6d",
+        "collection_EfeHnK",
+        "collection_qFUPV9",
+        "collection_3bqY3U"
       ],
       "settings": {
         "section_width": "container",
@@ -95,18 +328,61 @@
         "design": "default",
         "text_alignment": "center",
         "font_size": 16,
-        "items_to_show": 8,
+        "items_to_show": 24,
         "items_per_row": 4,
         "column_gap": 30,
-        "pagination": "load_more_button",
+        "pagination": "infinit_scrolling",
         "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "rich_text_bG8kLb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VgkCxN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Diwali Dress for Women 2025",
+            "font_size": 36,
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
+          }
+        },
+        "description_tpgMqP": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Celebrate the joy of Diwali 2025 with Cavirk’s elegant <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dress collection for women</span></a> where tradition meets modern design. This festive season step into timeless elegance with outfits that reflect India’s rich artistry and contemporary style. Whether you are attending family gatherings festive events or grand celebrations our <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dresses for women 2025</span></a> are crafted to make every moment shine. From intricate handloom sarees to designer lehengas and Indo Western styles Cavirk brings you the perfect blend of heritage craftsmanship and festive glamour</p><p>Enjoy the beauty of <a href=\"https://cavirk.com/collections/pattachitra-painting\"><span style=\"text-decoration:underline\">Pattachitra Painting Sarees</span></a>, <a href=\"https://cavirk.com/collections/madhubani-paintings-sarees\"><span style=\"text-decoration:underline\">Madhubani Painting Sarees</span></a>, and <a href=\"https://cavirk.com/collections/kantha-saree\"><span style=\"text-decoration:underline\">Kantha Sarees</span></a> each handwoven with exquisite detail and artistry. Experience the timeless appeal of <a href=\"https://cavirk.com/collections/dhakai\"><span style=\"text-decoration:underline\">Dhakai Sarees</span></a>, graceful <a href=\"https://cavirk.com/collections/bangalore-silk\"><span style=\"text-decoration:underline\">Bangalore Silk Sarees</span></a>, and soft <a href=\"https://cavirk.com/collections/begampur-cotton\"><span style=\"text-decoration:underline\">Begampuri Cotton Sarees</span></a> that define elegance. For brides and festive occasions our <a href=\"https://cavirk.com/collections/bridal-lehengas\"><span style=\"text-decoration:underline\">Bridal Lehengas</span></a> and <a href=\"https://cavirk.com/collections/bridal-wear\"><span style=\"text-decoration:underline\">Bridal Wear Collections</span></a> add a royal touch to your Diwali celebrations. If you prefer effortless drapes choose from our <a href=\"https://cavirk.com/collections/pre-draped-sarees-collection\"><span style=\"text-decoration:underline\">Pre Draped Sarees Collection</span></a> or chic <a href=\"https://cavirk.com/collections/indo-western\"><span style=\"text-decoration:underline\">Indo Western Dress</span></a> that combine traditional motifs with modern silhouettes</p><p>Cavirk also presents a wide selection of authentic weaves such as <a href=\"https://cavirk.com/collections/ajrakh-craft\"><span style=\"text-decoration:underline\">Ajrakh Collections</span></a>, <a href=\"https://cavirk.com/collections/bengal-cotton\"><span style=\"text-decoration:underline\">Bengal Cotton Sarees</span></a>, and <a href=\"https://cavirk.com/collections/bengal-handwoven-cotton\"><span style=\"text-decoration:underline\">Bengal Handwoven Cotton Sarees</span></a> perfect for both festive and everyday wear. Add charm and comfort with breathable <a href=\"https://cavirk.com/collections/muslin-cotton\"><span style=\"text-decoration:underline\">Muslin Cotton Sarees</span></a>, <a href=\"https://cavirk.com/collections/kaftans\"><span style=\"text-decoration:underline\">stylish Kaftans</span></a>, and beautifully tailored Blouses. Complete your festive look with luxurious layers from our <a href=\"https://cavirk.com/collections/pashmina-shawl\"><span style=\"text-decoration:underline\">Pashmina Shawls</span></a>, <a href=\"https://cavirk.com/collections/cashmere-shawl\"><span style=\"text-decoration:underline\">Cashmere Shawls</span></a>, <a href=\"https://cavirk.com/collections/cashmere-fine-wool-stoles\"><span style=\"text-decoration:underline\">Fine Wool Stoles</span></a>, and <a href=\"https://cavirk.com/collections/kinnauri-shawls\"><span style=\"text-decoration:underline\">Kinnauri Shawls</span></a>. Each piece is thoughtfully curated to complement your unique Diwali style. Do not miss signature lines like <a href=\"https://cavirk.com/collections/cavirk-curates\"><span style=\"text-decoration:underline\">Cavirk Curates</span></a>, <a href=\"https://cavirk.com/collections/gen-z-meets-heritage\"><span style=\"text-decoration:underline\">Gen Z Meets Heritage</span></a>, and our <a href=\"https://cavirk.com/collections/ajrakh-stole\"><span style=\"text-decoration:underline\">hand-crafted Ajrakh Stoles</span></a> which bridge classic Indian artistry with youthful creativity</p><p>At Cavirk every creation tells a story of art culture and craftsmanship. Our <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali ethnic wear for women 2025</span></a> celebrates the spirit of the festival through vibrant fabrics intricate embroidery and handwoven textures. Whether you choose a soft <a href=\"https://cavirk.com/collections/muslin-cotton\"><span style=\"text-decoration:underline\">Muslin saree</span></a> a bold Ajrakh design or a rich bridal ensemble your outfit will reflect the beauty of tradition with a modern twist</p><p>This Diwali 2025 illuminate your celebrations with Cavirk’s <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali special dresses for women</span></a> designed to make you feel confident graceful and radiant. Enjoy joy in every weave elegance in every drape and make this Diwali your most beautiful one yet with Cavirk</p><h3>FAQs – Diwali Dress for Women 2025</h3><p><strong>1. </strong>What are the best <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dresses for women 2025</span></a> at Cavirk?<strong><br/></strong> Cavirk offers a wide range of <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dresses for women 2025</span></a>, including hand-painted sarees, designer lehengas, Indo Western outfits, and elegant ethnic wear perfect for festive celebrations.</p><p><strong>2. </strong>Which fabrics are popular for <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali clothes for women 2025</span></a>?<strong><br/></strong> Popular fabrics for <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali clothes for women 2025</span></a> include Muslin cotton, Bengal cotton, Pashmina, Cashmere, Bangalore silk, and handwoven Ajrakh and Kantha fabrics.</p><p><strong>3. </strong>Can I find <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali ethnic wear for women 2025</span></a> online at Cavirk?<strong><br/></strong> Yes, Cavirk provides a curated collection of <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali ethnic wear for women 2025</span></a> online, featuring sarees, lehengas, Pre Draped Sarees, Kaftans, and shawls for every festive occasion.</p><p><strong>4. </strong>What styles of <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali outfits for women 2025</span></a> are available?<strong><br/></strong> Our <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali outfits for women 2025</span></a> include traditional sarees, bridal lehengas, Indo Western dresses, Pre Draped Sarees, and curated collections like Gen Z Meets Heritage and Cavirk Curates.</p><p><strong>5. </strong>How can I choose <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali special dresses for women 2025</span></a> for celebrations?<strong><br/></strong> Choose <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali special dresses for women 2025</span></a> based on your comfort, style, and the occasion. You can mix handloom sarees, designer lehengas, or Indo Western outfits with elegant stoles and accessories for a festive look.</p><p><strong>6. </strong>Are there options for both casual and grand <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dresses for women 2025</span></a>?<strong><br/></strong> Yes, Cavirk offers <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali dresses for women 2025</span></a> suitable for casual family gatherings, festive parties, and grand wedding celebrations, ensuring every outfit makes you look radiant.</p><p><strong>7. </strong>Does Cavirk offer accessories with <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali ethnic wear for women 2025</span></a>? Cavirk complements your <a href=\"https://cavirk.com/blogs/news/diwali-dress-for-women-2025-in-india\"><span style=\"text-decoration:underline\">Diwali ethnic wear for women 2025</span></a> with matching stoles, shawls, and blouses to complete your festive ensemble beautifully.</p>",
+            "font_size": 15,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_VgkCxN",
+        "description_tpgMqP"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_max_width": 100,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
       }
     }
   },
   "order": [
     "page-heading",
-    "main"
+    "rich_text_Ecbydn",
+    "main",
+    "rich_text_bG8kLb"
   ]
 }
