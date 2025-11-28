@@ -161,7 +161,6 @@
         },
         "slider_item_jiLA39": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
             "local_video": "shopify://files/videos/Adobe Express - CAVIRK REEL 03.mp4",
             "overlay_opacity": 0,
