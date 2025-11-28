@@ -397,7 +397,7 @@
               {% liquid
                 assign block_st = block.settings
                 assign all_products_to_show = 0
-                if block_st.collection.products.size >= items_to_show
+                if block_st.collection.products.size <= items_to_show
                   assign all_products_to_show = items_to_show
                 else
                   assign all_products_to_show = block_st.collection.products.size
