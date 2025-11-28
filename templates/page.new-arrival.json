@@ -99,7 +99,7 @@
         "items_to_show": 50,
         "items_per_row": 5,
         "column_gap": 30,
-        "show_arrow": true,
+        "show_arrow": false,
         "carousel_pagination": "disable",
         "infinite": false,
         "autoplay": false,
