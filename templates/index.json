@@ -99,66 +99,6 @@
             "content_alignment_mobile": "left"
           }
         },
-        "slider_item_BCmGBC": {
-          "type": "slider_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Neutral_Modern_Fashion_Collection_Banner_6.png",
-            "image_mobile": "shopify://shop_images/Neutral_Modern_Fashion_Collection_Banner_7.png",
-            "overlay_opacity": 0,
-            "first_button_link_image": "shopify://collections/indo-western",
-            "slider_effect": "effect_fadeindown",
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "container",
-            "content_max_width": 100,
-            "content_padding_block": 60,
-            "content_padding_inline": 30,
-            "show_content_background": false,
-            "content_background": "#ffffff",
-            "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
-          }
-        },
-        "slider_item_6aLFii": {
-          "type": "slider_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner_2_-min.png",
-            "image_mobile": "shopify://shop_images/Purple_Gold_Gradient_Diwali_Jewellery_Banner.png",
-            "overlay_opacity": 0,
-            "first_button_link_image": "shopify://pages/silk",
-            "slider_effect": "effect_fadeindown",
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "container",
-            "content_max_width": 100,
-            "content_padding_block": 60,
-            "content_padding_inline": 30,
-            "show_content_background": false,
-            "content_background": "#ffffff",
-            "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
-          }
-        },
         "slider_item_jiLA39": {
           "type": "slider_item",
           "settings": {
@@ -192,8 +132,6 @@
         "slider_item_niXKaE",
         "slider_item_fJjFU4",
         "slider_item_g8Brtx",
-        "slider_item_BCmGBC",
-        "slider_item_6aLFii",
         "slider_item_jiLA39"
       ],
       "settings": {
