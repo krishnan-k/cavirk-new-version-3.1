@@ -397,11 +397,8 @@
               {% liquid
                 assign block_st = block.settings
                 assign all_products_to_show = 0
-                if block_st.collection.products.size >= items_to_show
-                  assign all_products_to_show = items_to_show
-                else
-                  assign all_products_to_show = block_st.collection.products.size
-                endif
+                assign all_products_to_show = block_st.collection.products.size
+                
                 assign all_product_visible = rows | times: items_per_row
               %}
               {% if block_st.collection.products.size > 0 %}
