@@ -162,15 +162,15 @@
         "slider_item_jiLA39": {
           "type": "slider_item",
           "settings": {
-            "local_video": "shopify://files/videos/CAVIRK REEL 01 (1).mp4",
+            "local_video": "shopify://files/videos/Adobe Express - CAVIRK REEL 03.mp4",
             "overlay_opacity": 0,
             "first_button_link_image": "",
             "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "Explore Madhubani Sarees",
+            "heading": "Explore Mulberry Silk",
             "description": "",
             "first_button_label": "Shop Now",
-            "first_button_link": "shopify://collections/madhubani-saree",
+            "first_button_link": "shopify://collections/mulberry-silk",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
@@ -201,7 +201,7 @@
         "slide_height": "adapt",
         "desktop_height": 600,
         "mobile_height": 520,
-        "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
+        "color_scheme": "scheme-accf3b11-ba40-4a3e-bafb-243ece6683ec",
         "subheading_font_size": 16,
         "subheading_font_weight": "subheading_weight",
         "subheading_spacing_bottom": 0,
@@ -216,7 +216,7 @@
         "show_arrow": false,
         "carousel_pagination": "show_dots",
         "pagination_position": "right",
-        "autoplay": true,
+        "autoplay": false,
         "autorotate_speed": 5,
         "content_below_image": false,
         "padding_top": 0,
@@ -465,7 +465,7 @@
             "collection": "",
             "collection_image": "shopify://shop_images/paintaing.gif",
             "collection_title": "Paintings",
-            "first_button_link": "shopify://pages/paintings-collections"
+            "first_button_link": "shopify://pages/paintings"
           }
         },
         "collection_yxXfwB": {
