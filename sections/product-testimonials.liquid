@@ -261,6 +261,7 @@
                   <div class="testimonials-quote my-15 mx-0 rich__text-m0">
                     {{ block_st.author_text }}
                   </div>
+                  {% if block_st.select_product != blank %} 
                   <div class="testimonial-product {% if design == "default" %} border-top {% endif %} {% if section_st.show_image and design == "default" %} pt-30 mt-22{% else %} pt-20 mt-12{% endif %}">
                     {% render 'product-item',
                       card_product: block_st.select_product,
@@ -272,6 +273,7 @@
                       testimonial_hidden_price: testimonial_hide_price,
                     %}
                   </div>
+                  {% endif %}
                 </div>
               </div>
             </motion-element>
