@@ -260,6 +260,7 @@
               {{- option.name }}: <span class="option_value heading-style capitalize">{{ op_value }}</span></span
             >
 
+            <!-- old size guide code start -->
             {% comment %}
               {%- if option_size contains option_name_nospace -%}
                 {%- if block.settings.show_size_guide -%}
@@ -295,7 +296,9 @@
                 {%- endif -%}
               {%- endif -%}
             {% endcomment %}
+            <!-- old size guide code end --> 
 
+            <!-- new size guide code start -->
             {%- assign option_name_lower = option.name | downcase -%}
 
             {%- if option_name_lower == 'size'
@@ -334,6 +337,7 @@
                 {% endif %}
               {%- endif -%}
             {%- endif -%}
+            <!-- new size guide code end -->
 
           </div>
           {% render 'product-variant-options',
