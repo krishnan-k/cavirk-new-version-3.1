@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "page-default",
+      "disabled": true,
       "settings": {
         "section_width": "stretch_width",
         "padding_top": 0,
