@@ -94,7 +94,7 @@
             <span class="tooltip-content invisible rounded-3 absolute pointer-none">{{ value }}</span>
           </div>
         {%- endfor -%}
-        {% if limit_color != "default" and color_left > 0 and is_compare != true  %}
+        {% if limit_color != 'default' and color_left > 0 and is_compare != true %}
           <span class="show_color_swatch pointer"> + {{ color_left }} </span>
         {% endif %}
       {%- endif -%}
@@ -155,7 +155,7 @@
           endfor
           assign op = 'option' | append: option.position
           assign op_value = product.selected_or_first_available_variant[op]
-          assign option_name_nospace = option.name | replace: ' ' , ''
+          assign option_name_nospace = option.name | replace: ' ', ''
         -%}
         <fieldset class="product-form__input product-form__input--dropdown flex flex-wrap gap-15 row-gap-0 mb-22 relative p-0 border-0 m-0">
           <div class="flex align-center gap-15 flex-wrap w-full justify-between row-gap-0">
@@ -252,7 +252,7 @@
           endfor
           assign op = 'option' | append: option.position
           assign op_value = product.selected_or_first_available_variant[op]
-          assign option_name_nospace = option.name | replace: ' ' , ''
+          assign option_name_nospace = option.name | replace: ' ', ''
         -%}
         <fieldset class="js product-form__input flex flex-wrap mb-25 mx-0 p-0 border-0{% if is_color_option == true %} product-form__input_color{% if settings.enable_color_swatches %} gap-20{% else %} gap-10{% endif %}{% else %} gap-10{% endif %}{% if option_size contains option_name_nospace %} product-form__input_size{% endif %}">
           <div class="form__label gap-10 w-full lh-normal flex gap-15 justify-between">
@@ -260,46 +260,82 @@
               {{- option.name }}: <span class="option_value heading-style capitalize">{{ op_value }}</span></span
             >
 
+            {% comment %}
+              {%- if option_size contains option_name_nospace -%}
+                {%- if block.settings.show_size_guide -%}
+                  {%- liquid
+                    assign product_collections = product.collections
+                    assign collection_size_chart = ''
+                    for productCollection in product_collections
+                      if productCollection.metafields.custom.size_chart != blank
+                        assign collection_size_chart = productCollection.metafields.custom.size_chart
+                      endif
+                    endfor
+                  -%}
+                  {% if block.settings.size_guide_page != blank
+                    or product.metafields.custom.size_chart != blank
+                    or collection_size_chart != ''
+                  %}
+                    <product-addons
+                      data-text-header="{{ 'general.product.size_guide' | t }}"
+                      data-custom-class="size_chart"
+                      class="product-addons__ask-question pointer underline hover-heading-color transition skeleton-loading ss"
+                    >
+                      {{ block.settings.size_guide_label }}
+                      <div class="product-addons__content ask-question__content hidden">
+                        {% if product.metafields.custom.size_chart != blank %}
+                          {% assign size_chart_html = product.metafields.custom.size_chart %}
+                          {{ pages[size_chart_html].content }}
+                        {%- else -%}
+                          {{ pages[block.settings.size_guide_page].content }}
+                        {% endif %}
+                      </div>
+                    </product-addons>
+                  {% endif %}
+                {%- endif -%}
+              {%- endif -%}
+            {% endcomment %}
+
             {%- assign option_name_lower = option.name | downcase -%}
 
-{%- if option_name_lower == 'size'
-  or option_name_lower == 'shoe size'
-  or option_name_lower == 'shoesize'
--%}
-  {%- if block.settings.show_size_guide -%}
-    {%- liquid
-      assign product_collections = product.collections
-      assign collection_size_chart = ''
-      for productCollection in product_collections
-        if productCollection.metafields.custom.size_chart != blank
-          assign collection_size_chart = productCollection.metafields.custom.size_chart
-        endif
-      endfor
-    -%}
+            {%- if option_name_lower == 'size'
+              or option_name_lower == 'shoe size'
+              or option_name_lower == 'shoesize'
+            -%}
+              {%- if block.settings.show_size_guide -%}
+                {%- liquid
+                  assign product_collections = product.collections
+                  assign collection_size_chart = ''
+                  for productCollection in product_collections
+                    if productCollection.metafields.custom.size_chart != blank
+                      assign collection_size_chart = productCollection.metafields.custom.size_chart
+                    endif
+                  endfor
+                -%}
 
-    {% if block.settings.size_guide_page != blank
-      or product.metafields.custom.size_chart != blank
-      or collection_size_chart != ''
-    %}
-      <product-addons
-        data-text-header="{{ 'general.product.size_guide' | t }}"
-        data-custom-class="size_chart"
-        class="product-addons__ask-question pointer underline hover-heading-color transition skeleton-loading ss"
-      >
-        {{ block.settings.size_guide_label }}
-        <div class="product-addons__content ask-question__content hidden">
-          {% if product.metafields.custom.size_chart != blank %}
-            {% assign size_chart_html = product.metafields.custom.size_chart %}
-            {{ pages[size_chart_html].content }}
-          {%- else -%}
-            {{ pages[block.settings.size_guide_page].content }}
-          {% endif %}
-        </div>
-      </product-addons>
-    {% endif %}
-  {%- endif -%}
-{%- endif -%}
-
+                {% if block.settings.size_guide_page != blank
+                  or product.metafields.custom.size_chart != blank
+                  or collection_size_chart != ''
+                %}
+                  <product-addons
+                    data-text-header="{{ 'general.product.size_guide' | t }}"
+                    data-custom-class="size_chart"
+                    class="product-addons__ask-question pointer underline hover-heading-color transition skeleton-loading ss"
+                  >
+                    {{ block.settings.size_guide_label }}
+                    <div class="product-addons__content ask-question__content hidden">
+                      {% if product.metafields.custom.size_chart != blank %}
+                        {% assign size_chart_html = product.metafields.custom.size_chart %}
+                        {{ pages[size_chart_html].content }}
+                      {%- else -%}
+                        {{ pages[block.settings.size_guide_page].content }}
+                      {% endif %}
+                    </div>
+                  </product-addons>
+                {% endif %}
+              {%- endif -%}
+            {%- endif -%}
+            
           </div>
           {% render 'product-variant-options',
             product: product,
@@ -345,7 +381,7 @@
           endfor
           assign op = 'option' | append: option.position
           assign op_value = product.selected_or_first_available_variant[op]
-          assign option_name_nospace = option.name | replace: ' ' , ''
+          assign option_name_nospace = option.name | replace: ' ', ''
         -%}
         <fieldset class="js product-form__input flex flex-wrap mb-20 mx-0 p-0 border-0{% if is_color_option == true %} product-form__input_color gap-20{% else %} gap-10{% endif %}{% if option_size contains option_name_nospace %} product-form__input_size{% endif %}">
           <div class="form__label gap-10 w-full lh-normal flex gap-15 justify-between">
