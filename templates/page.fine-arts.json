@@ -132,7 +132,7 @@
         "image_custom_width": false,
         "image_width": 200,
         "show_arrow": false,
-        "carousel_pagination": "disable",
+        "carousel_pagination": "show_dots_on_mobile",
         "infinite": false,
         "autoplay": false,
         "autorotate_speed": 5,
