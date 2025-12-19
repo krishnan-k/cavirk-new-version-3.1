@@ -300,7 +300,6 @@
 
             {%- if option_name_lower == 'size'
               or option_name_lower == 'shoe size'
-              or option_name_lower == 'shoesize'
             -%}
               {%- if block.settings.show_size_guide -%}
                 {%- liquid
@@ -335,7 +334,7 @@
                 {% endif %}
               {%- endif -%}
             {%- endif -%}
-            
+
           </div>
           {% render 'product-variant-options',
             product: product,
