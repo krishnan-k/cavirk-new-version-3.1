@@ -9,17 +9,188 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-default",
-      "disabled": true,
+    "page-heading": {
+      "type": "page-heading",
+      "blocks": {
+        "breadcrumb_kg6gTP": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
+        "heading_k374p7": {
+          "type": "heading",
+          "settings": {
+            "page_title": "",
+            "header_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_kg6gTP",
+        "heading_k374p7"
+      ],
       "settings": {
-        "section_width": "stretch_width",
+        "section_width": "container",
+        "color_scheme": "",
+        "alignment": "center",
+        "background_image": "shopify://shop_images/Frame_1000009792.png",
+        "overlay_opacity": 0,
+        "height": "based_on_content",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "rich_text_Ecbydn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3M8fC4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium Winter Dress for Women – Luxury Shawls, Stoles & Winter Wear by Cavirk",
+            "font_size": 36,
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
+          }
+        },
+        "description_cTHNm8": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Winter fashion is all about elegance, comfort, and warmth. At Cavirk, we bring you a curated selection of winter essentials that pair beautifully with every winter dress for women. Explore our handcrafted shawls, stoles, and dupattas designed to elevate your seasonal wardrobe with timeless style.</p><p>From luxurious Pashmina to heritage Kinnuari weaves, ultra-soft Cashmere, artisanal Ajrakh prints, and naturally dyed dupattas — our collections are crafted to complement all types of winter clothes for women.</p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_3M8fC4",
+        "description_cTHNm8"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_max_width": 86,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 20,
+        "reset_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_BQGLmR": {
+          "type": "collection",
+          "settings": {
+            "collection": "pashmina-shawls-and-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_fpjqU3": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinnuari-shawls-and-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_HCAmbw": {
+          "type": "collection",
+          "settings": {
+            "collection": "cashmere-shawls-and-stoles",
+            "collection_title": ""
+          }
+        },
+        "collection_Ah4yLG": {
+          "type": "collection",
+          "settings": {
+            "collection": "duppattas",
+            "collection_title": ""
+          }
+        },
+        "collection_BHhQpd": {
+          "type": "collection",
+          "settings": {
+            "collection": "ajrakh-stole",
+            "collection_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_BQGLmR",
+        "collection_fpjqU3",
+        "collection_HCAmbw",
+        "collection_Ah4yLG",
+        "collection_BHhQpd"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "default",
+        "type": "selected",
+        "sort_collections": "alphabetical",
+        "image_ratio": "portrait",
+        "show_product_count": true,
+        "design": "default",
+        "text_alignment": "center",
+        "font_size": 16,
+        "items_to_show": 8,
+        "items_per_row": 3,
+        "column_gap": 30,
+        "pagination": "load_more_button",
+        "button_show_more": "Load more",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "rich_text_bG8kLb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VgkCxN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elegant Winter Clothes for Women – Explore Our Premium Collections",
+            "font_size": 36,
+            "content_alignment": "center",
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 24
+          }
+        },
+        "description_tpgMqP": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Enhance your winter wardrobe with Cavirk’s handcrafted selections, curated to match traditional, modern, and Indo-western winter clothes for women.</p><p>Our winter collection includes:</p><ul><li><a href=\"https://cavirk.com/collections/pashmina-shawls-and-stoles\"><span style=\"text-decoration:underline\">Pashmina Shawls and Stoles</span></a></li><li><a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\">Kinnuari Shawls and Stoles</span></a></li><li><a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a></li><li><a href=\"https://cavirk.com/collections/duppattas\"><span style=\"text-decoration:underline\">Duppattas</span></a></li><li><a href=\"https://cavirk.com/collections/ajrakh-stole\"><span style=\"text-decoration:underline\">Ajrakh Stoles</span></a></li></ul><p>Each category offers unique craftsmanship, soft textures, and winter-ready comfort.</p><h3>Refined Winter Dress for Ladies – Perfect Pairings for Every Outfit</h3><p>Whether you’re styling a festive outfit or a casual winter look, our winter accessories add sophistication to every winter dress for ladies.</p><p>Pair your outfits with:</p><ul><li>Luxury from <a href=\"https://cavirk.com/collections/pashmina-shawls-and-stoles\"><span style=\"text-decoration:underline\">Pashmina Shawls and Stoles</span></a></li><li>Tradition from <a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\">Kinnuari Shawls and Stoles</span></a></li><li>Soft warmth from <a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a></li><li>Lightweight layers from <a href=\"https://cavirk.com/collections/duppattas\"><span style=\"text-decoration:underline\">Duppattas</span></a></li><li>Artistic prints from <a href=\"https://cavirk.com/collections/ajrakh-stole\"><span style=\"text-decoration:underline\">Ajrakh Stoles</span></a></li></ul><p>Each collection enhances your winter outfits with charm and comfort.</p><h3>Luxury Winter Shawls for Women – Pashmina, Cashmere & Kinnuari</h3><p>Our premium shawl collections are designed to offer the right balance of warmth and elegance.</p><ul><li><a href=\"https://cavirk.com/collections/pashmina-shawls-and-stoles\"><span style=\"text-decoration:underline\"><strong>Pashmina Shawls and Stoles</strong></span></a><strong> – </strong>Feather-light, luxurious, ideal for celebrations</li><li><a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\"><strong>Cashmere Shawls and Stoles</strong></span></a><strong> – </strong>Soft, breathable, and the perfect warm shawl for winter</li><li><a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\"><strong>Kinnuari Shawls and Stoles</strong></span></a> – Traditional designs with bold patterns<br/><br/></li></ul><p>These are the finest winter shawls for women, suitable for festivals, weddings, gifting, and daily stylish layering.</p><h3>Best Winter Shawl for Ladies – Handcrafted & Stylish</h3><p>Cavirk brings you shawls that seamlessly match every winter outfit. Choose from:</p><ul><li>The elegance of <a href=\"https://cavirk.com/blogs/blogs/pashmina-shawls-in-india\"><span style=\"text-decoration:underline\">Pashmina Shawls and Stoles</span></a></li><li>The heritage craftsmanship of Kinnuari Shawls and Stoles</li><li>The soft warmth of <a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a></li><li>Each winter shawl for ladies is created to deliver beauty, warmth, and long-lasting comfort.</li></ul><h3>Warm Shawl for Winter – Soft, Cozy & Naturally Crafted</h3><p>If you're looking for a dependable warm shawl for winter, explore our winter-ready collections:</p><ul><li><a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a></li><li><a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\">Kinnuari Shawls and Stoles</span></a></li><li><a href=\"https://cavirk.com/blogs/blogs/pashmina-shawls-in-india\"><span style=\"text-decoration:underline\">Pashmina Shawls and Stoles</span><span style=\"text-decoration:underline\"><strong><br/><br/></strong></span></a></li></ul><p>These fabrics provide exceptional insulation while remaining soft and breathable — ideal for harsh winters or mild chill.</p><h3>Why Cavirk is the Best Choice for Winter Fashion</h3><h4>Handcrafted by Skilled Artisans</h4><p>Our collections — Pashmina Shawls and Stoles, <a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\">Kinnuari Shawls and Stoles</span></a>, <a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a>, <a href=\"https://cavirk.com/collections/duppattas\"><span style=\"text-decoration:underline\">Duppattas</span></a>, and <a href=\"https://cavirk.com/collections/ajrakh-stole\"><span style=\"text-decoration:underline\">Ajrakh Stoles</span></a> — are made using authentic weaving techniques.</p><h4>Soft, Comfortable Winter Fabrics</h4><p>Perfect for sensitive winter skin and everyday use.</p><h4>Ideal for All Occasions</h4><p>Festivals, office wear, gifting, casual outings, or weddings — our winter styles fit every moment.</p><h4>Easy to Mix & Match</h4><p>Each collection effortlessly complements any winter dress for women.</p><h4>Style Your Winter Dress for Women with Cavirk Collections</h4><ul><li>Pair Pashmina Shawls and Stoles with premium ethnic wear</li><li>Match <a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a> with western winter outfits</li><li>Choose <a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\">Kinnuari Shawls and Stoles</span></a> for festive winter looks</li><li>Use <a href=\"https://cavirk.com/collections/duppattas\"><span style=\"text-decoration:underline\">Duppattas </span></a>for soft winter layering</li><li>Add vibrant charm with <a href=\"https://cavirk.com/collections/ajrakh-stole\"><span style=\"text-decoration:underline\">Ajrakh Stoles</span></a> for daily wear<br/><br/></li></ul><h4>Your Trusted Store for Winter Dress for Women & Shawls</h4><p>At Cavirk, winter elegance meets craftsmanship. Whether you're looking for a luxurious wrap, a soft stole, or a stylish layering accessory, our collections — <a href=\"https://cavirk.com/blogs/blogs/pashmina-shawls-in-india\"><span style=\"text-decoration:underline\">Pashmina Shawls and Stoles</span></a>, <a href=\"https://cavirk.com/collections/kinnuari-shawls-and-stoles\"><span style=\"text-decoration:underline\">Kinnuari Shawls and Stoles</span></a>, <a href=\"https://cavirk.com/collections/cashmere-shawls-and-stoles\"><span style=\"text-decoration:underline\">Cashmere Shawls and Stoles</span></a>, <a href=\"https://cavirk.com/collections/duppattas\"><span style=\"text-decoration:underline\">Duppattas</span></a>, and <a href=\"https://cavirk.com/collections/ajrakh-stole\"><span style=\"text-decoration:underline\">Ajrakh Stoles</span></a> — ensure that you stay warm, stylish, and confident all winter long.</p><p>Stay warm. Stay elegant. Stay Cavirk.</p><h3>FAQs – Winter Dress for Women & Shawls at Cavirk</h3><h5>1. Which shawl is best to pair with a winter dress for women?</h5><p>The best shawls to pair with a winter dress for women are Pashmina, Cashmere, and Kinnuari Shawls from Cavirk. These offer excellent warmth, lightweight comfort, and elegant detailing suitable for festive and casual winter outfits.</p><h5>2. Are shawls from Cavirk suitable for harsh winter weather?</h5><p>Yes. Our Cashmere Shawls and Stoles and Kinnuari Shawls and Stoles provide superior insulation, making them ideal for cold climates. They are soft, breathable, and perfect as a warm shawl for winter.</p><h5>3. What makes Cavirk’s winter shawls for women unique?</h5><p>Cavirk’s winter shawls for women are handwoven by skilled artisans using authentic weaving techniques. Each collection—Pashmina, Kinnuari, Cashmere, Ajrakh Stoles, and Duppattas—combines traditional craftsmanship with premium winter-ready fabrics.</p><h5>4. Can I style Cavirk shawls with both ethnic and western winter clothes for women?</h5><p>Absolutely. Cavirk shawls are versatile and pair beautifully with sarees, kurtis, long dresses, coats, sweaters, and western outfits. Whether it’s an ethnic event or a winter outing, our shawls complement all styles of winter clothes for women.</p><h5>5. Are the shawls and stoles suitable for gifting during winter festivals and weddings?</h5><p>Yes. Cavirk’s Pashmina Shawls and Stoles, Cashmere Shawls and Stoles, and Kinnuari Shawls and Stoles are among the most loved winter gift options. Their premium quality, softness, and craftsmanship make them perfect gifts for weddings, festivals, and special winter celebrations.<br/><br/></p>",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_VgkCxN",
+        "description_tpgMqP"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_max_width": 100,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
       }
     }
   },
   "order": [
-    "main"
+    "page-heading",
+    "rich_text_Ecbydn",
+    "main",
+    "rich_text_bG8kLb"
   ]
 }
