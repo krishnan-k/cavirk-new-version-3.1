@@ -102,6 +102,7 @@
       ],
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "enable_filtering": true,
         "show_filter_counts": true,
         "default_filter": "open_all",
