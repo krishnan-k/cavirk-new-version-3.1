@@ -11,8 +11,8 @@
   "current": {
     "purchase_code": "6521b9fe-faba-4dba-a65a-4b9574ad4fd3",
     "favicon": "shopify://shop_images/cavirk-favicon.png",
-    "logo": "shopify://shop_images/cavirk_logo_-_Echoes_of_Artistry-new.png",
-    "logo_on_transparent": "shopify://shop_images/cavirk_logo_-_Echoes_of_Artistry-new.png",
+    "logo": "shopify://shop_images/SAAJKARI-logo.png",
+    "logo_on_transparent": "shopify://shop_images/SAAJKARI-logo.png",
     "desktop_logo_width": 166,
     "mobile_logo_width": 160,
     "page_width": 1300,
@@ -249,11 +249,6 @@
       },
       "1232542678405107163": {
         "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
-        "disabled": false,
-        "settings": {}
-      },
-      "12439146293631897289": {
-        "type": "shopify://apps/blockify-fraud-filter/blocks/app_embed/2e3e0ba5-0e70-447a-9ec5-3bf76b5ef12e",
         "disabled": false,
         "settings": {}
       },
