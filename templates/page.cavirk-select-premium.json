@@ -85,9 +85,8 @@
         },
         "description_ccA6RV": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "description": "<p>Premium, high-quality products designed for style, durability, and superior performance. Perfect for those who value excellence in everyday life.</p>",
+            "description": "",
             "font_size": 14,
             "font_weight": "body_weight",
             "spacing_bottom": 30
