@@ -85,6 +85,7 @@
         },
         "description_ccA6RV": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "description": "",
             "font_size": 14,
@@ -106,7 +107,7 @@
         "enable_expand_content": false,
         "expand_content_button": "See all Information",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 5,
         "reset_spacing": true
       }
     },
