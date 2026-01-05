@@ -108,6 +108,78 @@
         "items_per_row_mobile": 1,
         "padding_top": 0,
         "padding_bottom": 0,
+        "reset_spacing": true
+      }
+    },
+    "multi_content_NAWcK8": {
+      "type": "multi-content",
+      "blocks": {
+        "image_zKEUrF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/anand.jpg",
+            "image_link": "",
+            "content_width": "45%",
+            "vertical_align": "center"
+          }
+        },
+        "text_pmXUgT": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Anand Iyer",
+            "description": "<p>Anand Iyer is the<strong>Strategy and Operations Lead for Cavirk Marketplace</strong>, where he drives the development and execution of the platform’s operational strategy. He is responsible for strengthening process excellence, optimizing seller management, and transforming data into strategic insights that enable robust decisions across the organization.</p><p>At Cavirk, Anand plays a pivotal role in building a scalable, efficient, and trust-driven marketplace for India’s handloom and handicraft ecosystem. He oversees key operational function - from seller onboarding and performance governance to end-to-end workflow optimization - ensuring artisans and sellers experience seamless support as they grow their businesses on the platform.</p><p>Anand is deeply committed to creating an environment where marketplace partners can thrive. His focus on structured processes and continuous improvement helps establish Cavirk as a reliable and growth-oriented partner for handicraft sellers and artisans.</p><p>A strong advocate for data-driven decision-making, he leads initiatives that translate operational intelligence into measurable business gains—in efficiency, customer experience, and revenue growth.</p><p>As Cavirk continues its journey toward becoming a globally recognized destination for handcrafted excellence, Anand brings a combination of strategic clarity, operational discipline, and a deep passion for empowering India’s artisan communities<br/><br/></p>",
+            "description_width_text": 580,
+            "collection": "",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 38,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 17,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_zKEUrF",
+        "text_pmXUgT"
+      ],
+      "name": "t:sections.multi_content.name",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "reset_spacing": false
       }
     },
@@ -652,6 +724,7 @@
   "order": [
     "page-heading",
     "multi_content_AHdcCj",
+    "multi_content_NAWcK8",
     "multi_content_gmmePT",
     "multi_content_4TMyPx",
     "multi_content_EPA9gP",
