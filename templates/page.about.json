@@ -115,7 +115,7 @@
       "type": "divider",
       "name": "t:sections.divider.name",
       "settings": {
-        "section_width": "container",
+        "section_width": "fluid_container",
         "border_height": 1,
         "border_color": "#C5B27B",
         "reset_spacing": true
