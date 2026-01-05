@@ -111,16 +111,6 @@
         "reset_spacing": false
       }
     },
-    "divider_GHBpix": {
-      "type": "divider",
-      "name": "t:sections.divider.name",
-      "settings": {
-        "section_width": "full_width",
-        "border_height": 1,
-        "border_color": "#C5B27B",
-        "reset_spacing": true
-      }
-    },
     "multi_content_NAWcK8": {
       "type": "multi-content",
       "blocks": {
@@ -734,7 +724,6 @@
   "order": [
     "page-heading",
     "multi_content_AHdcCj",
-    "divider_GHBpix",
     "multi_content_NAWcK8",
     "multi_content_gmmePT",
     "multi_content_4TMyPx",
