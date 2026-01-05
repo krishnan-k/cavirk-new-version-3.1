@@ -118,7 +118,7 @@
         "section_width": "container",
         "border_height": 1,
         "border_color": "#C5B27B",
-        "reset_spacing": false
+        "reset_spacing": true
       }
     },
     "multi_content_NAWcK8": {
