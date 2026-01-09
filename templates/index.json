@@ -41,6 +41,36 @@
             "content_alignment_mobile": "left"
           }
         },
+        "slider_item_bffQBQ": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Enjoy_up_to_40_off_on_select_handcrafted_pieces_10th_11th_January_Shop_Now.png",
+            "image_mobile": "shopify://shop_images/Untitled_design_2.png",
+            "overlay_opacity": 0,
+            "first_button_link_image": "shopify://collections/flash-sale",
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
         "slider_item_wNUQX6": {
           "type": "slider_item",
           "disabled": true,
@@ -163,6 +193,7 @@
       },
       "block_order": [
         "slider_item_niXKaE",
+        "slider_item_bffQBQ",
         "slider_item_wNUQX6",
         "slider_item_fJjFU4",
         "slider_item_g8Brtx",
