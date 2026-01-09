@@ -15,6 +15,36 @@
         "slider_item_niXKaE": {
           "type": "slider_item",
           "settings": {
+            "image": "shopify://shop_images/Untitled_design_3.png",
+            "image_mobile": "shopify://shop_images/Untitled_design_1_ede8b634-c056-40ea-bbe2-efb0b7c00f9a.png",
+            "overlay_opacity": 0,
+            "first_button_link_image": "shopify://collections/all",
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
+        "slider_item_wNUQX6": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
             "image": "shopify://shop_images/Discount_up_to_20_1920_x_600_px.png",
             "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
             "overlay_opacity": 0,
@@ -43,6 +73,7 @@
         },
         "slider_item_fJjFU4": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_c2f534ef-7273-4c95-b90a-855ac32569e1.png",
             "image_mobile": "shopify://shop_images/2_6092bf6a-d2a8-4cb9-b8da-f6bd00411864.png",
@@ -72,6 +103,7 @@
         },
         "slider_item_g8Brtx": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_5afca755-aa34-4333-b761-96f2bf52436f.png",
             "image_mobile": "shopify://shop_images/2_c4bc0056-4898-4fee-bb05-ddf6ffed38cd.png",
@@ -101,6 +133,7 @@
         },
         "slider_item_jiLA39": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "local_video": "shopify://files/videos/Adobe Express - CAVIRK REEL 03.mp4",
             "overlay_opacity": 0,
@@ -130,6 +163,7 @@
       },
       "block_order": [
         "slider_item_niXKaE",
+        "slider_item_wNUQX6",
         "slider_item_fJjFU4",
         "slider_item_g8Brtx",
         "slider_item_jiLA39"
