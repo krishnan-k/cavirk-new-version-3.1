@@ -14,6 +14,7 @@
       "blocks": {
         "slider_item_niXKaE": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Untitled_design_3.png",
             "image_mobile": "shopify://shop_images/Untitled_design_1_ede8b634-c056-40ea-bbe2-efb0b7c00f9a.png",
@@ -43,7 +44,6 @@
         },
         "slider_item_bffQBQ": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Enjoy_up_to_40_off_on_select_handcrafted_pieces_10th_11th_January_Shop_Now.png",
             "image_mobile": "shopify://shop_images/Untitled_design_2.png",
