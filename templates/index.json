@@ -44,6 +44,7 @@
         },
         "slider_item_bffQBQ": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Enjoy_up_to_40_off_on_select_handcrafted_pieces_10th_11th_January_Shop_Now.png",
             "image_mobile": "shopify://shop_images/Untitled_design_2.png",
@@ -73,7 +74,6 @@
         },
         "slider_item_wNUQX6": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Discount_up_to_20_1920_x_600_px.png",
             "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
@@ -103,7 +103,6 @@
         },
         "slider_item_fJjFU4": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_c2f534ef-7273-4c95-b90a-855ac32569e1.png",
             "image_mobile": "shopify://shop_images/2_6092bf6a-d2a8-4cb9-b8da-f6bd00411864.png",
@@ -133,7 +132,6 @@
         },
         "slider_item_g8Brtx": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_5afca755-aa34-4333-b761-96f2bf52436f.png",
             "image_mobile": "shopify://shop_images/2_c4bc0056-4898-4fee-bb05-ddf6ffed38cd.png",
@@ -163,7 +161,6 @@
         },
         "slider_item_jiLA39": {
           "type": "slider_item",
-          "disabled": true,
           "settings": {
             "local_video": "shopify://files/videos/Adobe Express - CAVIRK REEL 03.mp4",
             "overlay_opacity": 0,
