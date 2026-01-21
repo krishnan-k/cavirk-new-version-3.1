@@ -46,7 +46,7 @@
           "type": "text",
           "settings": {
             "color_scheme": "scheme-1",
-            "content_width": "50%",
+            "content_width": "100%",
             "vertical_align": "start",
             "image_link": "",
             "subheading": "",
