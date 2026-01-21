@@ -42,6 +42,43 @@
     "multi_content_AHdcCj": {
       "type": "multi-content",
       "blocks": {
+        "text_4Wi9D9": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "start",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Saajkari Leadership",
+            "description": "",
+            "description_width_text": 250,
+            "collection": "",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "use_popup": false,
+            "content_alignment": "left",
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 20,
+            "des_font_size": 14,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
         "text_UVRgWU": {
           "type": "text",
           "settings": {
@@ -49,7 +86,7 @@
             "content_width": "50%",
             "vertical_align": "center",
             "image_link": "",
-            "subheading": "Saajkari Leadership",
+            "subheading": "",
             "heading": "Pooja  Vaidya Gupta",
             "description": "<p>Leads <strong>Saajkari</strong>, the<strong> </strong>curated <strong>Marketplace by Cavirk</strong> with a clear conviction that the future of luxury lies in authenticity, cultural lineage, and craftsmanship. With a deep-rooted passion for fashion and heritage, she is reimagining how handcrafted products are discovered, valued, and experienced. </p><p>Under her leadership, Saajkari defines luxury through <strong>authenticity and provenance</strong>—championing products that carry a traceable story, uncompromised workmanship, and fair, transparent value. By working closely with creators and curators, she ensures that every piece on the platform reflects integrity, refinement, and a genuine connection to its origins.</p><p>Pooja's vision is to position Saajkari as the world’s most credible destination for handcrafted luxury: a platform that elevates artistry, builds trust with discerning consumers, and brings meaningful, story-rich products to a contemporary global audience.</p><p>Pooja’s leadership is driven by purpose—honouring craftsmanship, protecting heritage, and shaping a modern luxury ecosystem where every exceptional creation finds the recognition it deserves.<br/><br/></p>",
             "description_width_text": 580,
@@ -90,6 +127,7 @@
         }
       },
       "block_order": [
+        "text_4Wi9D9",
         "text_UVRgWU",
         "image_MfJjAq"
       ],
