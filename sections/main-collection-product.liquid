@@ -118,7 +118,7 @@
           {% endfor %}
 
           <div
-            class="product-grid-container relative {% if has_frills_vendor %}dd{% endif %}"
+            class="product-grid-container relative {% if has_frills_vendor %}badge_remove{% endif %}"
           >
             {%- paginate collection.products by number_products -%}
               {%- if collection.products.size == 0 -%}
