@@ -209,15 +209,6 @@
             {{ 'products.product.label.sale_label' | t }}
           {%- endif %}
         </div>
-      {% else %}
-        {%- if product.vendor == 'Cavirk' -%}
-        <div
-          class="product__badges-sale product__badges-type-percent product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
-          style="--badges-color: {{ settings.sale_color }}; --badges-bg: {{ settings.sale_background }};"
-        >
-          -20%
-        </div>
-      {%- endif -%}
       {%- endif -%}
       {%- if product.vendor == 'Cavirk' -%}
         <div
