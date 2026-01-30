@@ -240,7 +240,7 @@
 
         {%- if offer != blank -%}
           <div
-            class="product__badges-sale {% if vendor == 'frillsandfalls' %} frill_badge {% endif %} product__badges-type-percent product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
+            class="product__badges-sale badge_show_vendor product__badges-type-percent product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
             style="--badges-color: {{ settings.sale_color }}; --badges-bg: {{ settings.sale_background }};"
           >
             {{ offer }}
