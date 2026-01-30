@@ -108,8 +108,17 @@
             {%- render 'filter-current', class: 'mb-30' -%}
           {% endif %}
 
+          {% assign has_frills_vendor = false %}
+
+          {% for product in collection.products %}
+            {% if product.vendor == 'FrillsandFalls' %}
+              {% assign has_frills_vendor = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
           <div
-            class="product-grid-container relative {% for product in collection.products %} {% if product.vendor == 'FrillsandFalls' %} dd {% endif %} {% endfor %}"
+            class="product-grid-container relative {% if has_frills_vendor %}dd{% endif %}"
           >
             {%- paginate collection.products by number_products -%}
               {%- if collection.products.size == 0 -%}
@@ -291,9 +300,9 @@
 
 <!-- dynamic collection code start -->
 {% if collection.description != blank %}
-<div class="container py-1025-40">
-  <div class="">{{ collection.description }}</div>
-</div>
+  <div class="container py-1025-40">
+    <div class="">{{ collection.description }}</div>
+  </div>
 {% endif %}
 <!-- dynamic collection code end -->
 <style>
@@ -626,8 +635,7 @@
       "type": "art_work",
       "name": "Art work",
       "limit": 1,
-      "settings": [
-      ]
+      "settings": []
     },
     {
       "type": "image_banner",
