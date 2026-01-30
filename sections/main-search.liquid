@@ -173,17 +173,8 @@
         {%- if enable_filtering and filter_layout == 'drawer' -%}
           {%- render 'search-filter-current', class: 'mb-30' -%}
         {% endif %}
-
-        {% assign has_frills_vendor = false %}
-
-          {% for product in collection.products %}
-            {% if product.vendor == 'FrillsandFalls' %}
-              {% assign has_frills_vendor = true %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
         <div
-          class="product-grid-container relative {% if has_frills_vendor %}badge_remove{% endif %}"
+          class="product-grid-container relative"
         >
           {%- paginate search.results by number_products -%}
             {%- if search.results.size > 0 -%}
