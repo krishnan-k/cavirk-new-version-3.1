@@ -190,7 +190,6 @@
       data-show-preorder="{{ show_pre_order }}"
     >
       {%- if sale and show_sale and sale_badge_type != 'scrolling' -%}
-        {%- assign vendor = p.vendor | downcase -%}
         <div
           class="product__badges-sale {%- if vendor == 'frillsandfalls' -%} remove_badge {% endif %} {% if sale_badge_type == 'price' %}product__badges-type-price{% elsif sale_badge_type == 'percent' %}product__badges-type-percent{% endif %} product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
           style="--badges-color: {{ settings.sale_color }};--badges-bg:{{ settings.sale_background }};"
@@ -248,6 +247,38 @@
           </div>
         {%- endif -%}
       {%- endif -%}
+      <!-- SELLER FrillsandFalls CUSTOM BADGE START -->
+
+{%- assign p = product | default: card_product | default: item -%}
+
+{%- if p -%}
+  {%- assign vendor = p.vendor | downcase -%}
+
+  {%- comment %}
+    Conditions:
+    1. Vendor must be frillsandfalls
+    2. Product must be available
+    3. compare_at_price must be blank or <= price (no existing discount)
+  {% endcomment -%}
+
+  {%- if vendor == 'frillsandfalls'
+        and p.available
+        and p.compare_at_price <= p.price
+  -%}
+
+    <div
+      class="product__badges-sale product__badges-type-percent product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
+      style="--badges-color: {{ settings.sale_color }}; --badges-bg: {{ settings.sale_background }};"
+    >
+      -15%
+    </div>
+
+  {%- endif -%}
+
+{%- endif -%}
+
+<!-- SELLER FrillsandFalls CUSTOM BADGE END -->
+
 
       <!-- SELLER PRODUCT PERCENTAGE END -->
 
