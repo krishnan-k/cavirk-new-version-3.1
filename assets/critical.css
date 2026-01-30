@@ -3435,7 +3435,9 @@ label.likely-count-label {
 .shawl-icon::before {
   content: "+";
 }
-
+.badge_remove .product__badges-sale{
+  display: none;
+}
 @media (min-width: 479px) {
   .banner__inner.grid-1,
   .banner__inner.grid-2,
