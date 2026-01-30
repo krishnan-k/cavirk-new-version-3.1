@@ -211,7 +211,7 @@
         </div>
       {%- endif -%}
       <!-- SELLER CAVRIK PRODCUT PERCENTAGE START -->
-      {%- if product.vendor == 'Cavirk' or product.vendor == 'Bagaan' -%}
+      {%- if product.vendor == 'Cavirk' -%}
         <div
           class="product__badges-sale product__badges-type-percent product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
           style="--badges-color: {{ settings.sale_color }}; --badges-bg: {{ settings.sale_background }};"
@@ -223,7 +223,7 @@
 
       {%- assign vendor_name = p.vendor | downcase -%}
 
-      {%- if vendor_name == 'cavirk' and p.available or vendor_name == 'bagaan' and p.available -%}
+      {%- if vendor_name == 'cavirk' and p.available -%}
         <div
           class="product__badges-sale product__badges-type-percent product__badges-inner align-self-start px-15 sale inline-flex content-center subheading_weight text-center lh-normal"
           style="--badges-color: {{ settings.sale_color }}; --badges-bg: {{ settings.sale_background }};"
