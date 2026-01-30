@@ -109,7 +109,7 @@
           {% endif %}
 
           <div
-            class="product-grid-container relative"
+            class="product-grid-container relative {% if product.vendor == 'FrillsandFalls' %} dd {% endif %}"
           >
             {%- paginate collection.products by number_products -%}
               {%- if collection.products.size == 0 -%}
