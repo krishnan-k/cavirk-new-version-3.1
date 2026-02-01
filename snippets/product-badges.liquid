@@ -213,7 +213,7 @@
 
       <!-- SELLER PRODUCT PERCENTAGE START -->
 
-      {%- assign p = product | default: card_product | default: item -%}
+      {% comment %} {%- assign p = product | default: card_product | default: item -%}
 
       {%- if p and p.available -%}
         {%- assign vendor = p.vendor | downcase -%}
@@ -246,7 +246,7 @@
             {{ offer }}
           </div>
         {%- endif -%}
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
 
       <!-- SELLER PRODUCT PERCENTAGE END -->
 
