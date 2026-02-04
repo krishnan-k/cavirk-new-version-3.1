@@ -119,9 +119,51 @@
         "padding_top": 10,
         "padding_bottom": 10
       }
+    },
+    "top_bar_YtWmeW": {
+      "type": "top-bar",
+      "blocks": {
+        "text_slider_eycwVL": {
+          "type": "text_slider",
+          "settings": {
+            "text1": "Cavirk Marketplace is now Saajkari: Same team, new name",
+            "text2": "Cavirk Marketplace is now <strong>Saajkari</strong>: Same team, new name",
+            "text3": "",
+            "change_every": 3,
+            "hidden_on_mobile": false
+          }
+        },
+        "cur_lang_7VxWcM": {
+          "type": "cur_lang",
+          "settings": {
+            "menu_link": "footer",
+            "show_currency": true,
+            "show_language": true,
+            "show_our_store": false,
+            "hidden_on_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "text_slider_eycwVL",
+        "cur_lang_7VxWcM"
+      ],
+      "name": "t:sections.top-bar.name",
+      "settings": {
+        "section_width": "stretch_width",
+        "color_scheme": "",
+        "show_mobile": false,
+        "show_separator_line": false,
+        "uppercase": false,
+        "font_size": 12,
+        "font_weight": "body_weight",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "top_bar_YtWmeW"
   ]
 }
