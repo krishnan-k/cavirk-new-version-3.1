@@ -150,7 +150,7 @@
             "show_barcode": false,
             "show_sku": true,
             "show_available": true,
-            "show_tags": true,
+            "show_tags": false,
             "show_type": true,
             "show_collections": false
           }
