@@ -165,17 +165,23 @@
     }
     .custom_popup_flex_direction .custom_image_popup_section .custom_flex{
       display: flex;
+      
+    }
+    .custom_image_popup_section + .promotion__popup-content .content-promotion{
+      padding: 34px 18px;
+    }
+  }
+  @media screen and (max-width: 479px){
+    .custom_popup_flex_direction .custom_image_popup_section .custom_flex{
       height: 38vh;
       object-fit: cover;
       object-position: top;
     }
-    .custom_image_popup_section + .promotion__popup-content .content-promotion{
-      padding: 20px 18px;
-    }
-  }
-  @media screen and (max-width: 479px){
     .custom_popup_flex_direction{
       flex-direction: column;
+    }
+    .custom_image_popup_section + .promotion__popup-content .content-promotion{
+      padding: 20px 18px;
     }
   }
 </style>
