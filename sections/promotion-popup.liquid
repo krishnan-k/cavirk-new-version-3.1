@@ -66,7 +66,7 @@
     {% if show_image != blank %}
       <div class="custom_image_popup_section">
         {%- assign image_alt = background_image.alt | default: 'product' | escape -%}
-        {% render 'responsive-image', type: 'other', image: background_image, image_alt: image_alt, class: '' %}
+        {% render 'responsive-image', type: 'other', image: background_image, image_alt: image_alt, class: 'custom_flex' %}
       </div>
     {% endif %}
     <div class="promotion__popup-content flex-1 relative">
@@ -157,6 +157,9 @@
   @media screen and (min-width: 480px) and (max-width: 767px){
     .custom_popup_flex_direction .custom_image_popup_section{
       width: 50%;
+    }
+    .custom_popup_flex_direction .custom_image_popup_section .custom_flex{
+      display: flex;
     }
   }
   @media screen and (max-width: 479px){
