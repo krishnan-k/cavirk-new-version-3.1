@@ -103,7 +103,7 @@
             </a>
           {% else %}
             <button
-              class="btn btn-primary"
+              class="promotion_btn btn btn-primary"
               style="
                 margin: 10px 10px 20px 10px;
                 background: linear-gradient(270deg, #e3c22b, #b67f22);
@@ -123,6 +123,14 @@
     </div>
   </div>
 </promotion-popup>
+
+<style>
+  .promotion_btn:hover{
+  background-position: right;
+    background-size: 200%;
+    color: #000;
+  }
+</style>
 {% schema %}
 {
   "name": "t:sections.promotion-popup.name",
