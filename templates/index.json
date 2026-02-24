@@ -258,6 +258,7 @@
           "type": "collection",
           "settings": {
             "collection": "design-led-graphic-tee",
+            "collection_image": "shopify://shop_images/Design-Led_Graphic_Tee.jpg",
             "collection_title": "Design-Led Graphic Tee",
             "first_button_link": ""
           }
