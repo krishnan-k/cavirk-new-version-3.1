@@ -1,5 +1,6 @@
 {%- liquid
   assign section_st = section.settings
+  assign show_image = section_st.show_image_mobile
   assign show_promotion_mobile = section_st.show_promotion_mobile
   assign code = section_st.promotion_code
   assign width = section_st.promotion_width
@@ -45,7 +46,7 @@
   {% endif %}
 >
   <div
-    class="popup-content {% if show_image_mobile != blank %} custom_popup_flex_direction {% endif %} flex{% if enable_rtl %} flex-row-reverse{% endif %}"
+    class="popup-content {% if show_image != blank %} custom_popup_flex_direction {% endif %} flex{% if enable_rtl %} flex-row-reverse{% endif %}"
     style="{{ style | strip | strip_newlines }}"
   >
     {% if background_image != blank %}
