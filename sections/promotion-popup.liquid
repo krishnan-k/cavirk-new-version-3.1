@@ -63,10 +63,12 @@
         %}
       </div>
     {% endif %}
-    <div class="custom_image_popup_section">
-      {%- assign image_alt = background_image.alt | default: 'product' | escape -%}
-      {% render 'responsive-image', type: 'other', image: background_image, image_alt: image_alt, class: '' %}
-    </div>
+    {% if show_image != blank %}
+      <div class="custom_image_popup_section">
+        {%- assign image_alt = background_image.alt | default: 'product' | escape -%}
+        {% render 'responsive-image', type: 'other', image: background_image, image_alt: image_alt, class: '' %}
+      </div>
+    {% endif %}
     <div class="promotion__popup-content flex-1 relative">
       <div class="content-promotion text-center p-1025-40 p-30 {% if background_image != blank %}absolute-md inset-0 flex flex-column{% endif %} overflow-y-auto custom-scrollbar h-full w-full">
         <div class="my-auto">
@@ -253,7 +255,7 @@
       "id": "show_image_mobile",
       "label": "Show image mobile",
       "default": true
-    },
+    }
   ],
   "presets": [
     {
