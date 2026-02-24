@@ -179,7 +179,7 @@
                   style="--height: 2px;"
                 >
                   {% if collection_title != blank %}
-                    <a href="#">
+                    <a href="{{ forloop.index }}--tab-count">
                     {{ collection_title }}
                     </a>
                   {% else %}
