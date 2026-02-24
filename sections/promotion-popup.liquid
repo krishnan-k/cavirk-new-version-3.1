@@ -80,6 +80,7 @@
               {{ promotion_content | replace: '[promotion_code]', code }}
             </div>
           {% endif %}
+          {% if code != blank %}
           <a
             href="#"
             class="btn-primary w-full discount btn-promotion my-25 inline-flex content-center gap-5 no-underline uppercase"
@@ -98,6 +99,9 @@
               </span>
             </span>
           </a>
+        {% else %}
+          <button>kk</button>
+        {% endif %}
           <div class="do-not-show-again pointer fs-small">
             <span class="border-bottom">{{ 'popup.do_not' | t }}</span>
           </div>
