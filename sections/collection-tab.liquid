@@ -173,7 +173,6 @@
 
               {% if tab_header_style == 'horizontal' -%}
                 <div
-                  <a href="{{ forloop.index }}--tab-count"></a>
                   data-block-id="{{ block.id }}"
                   class="collection-tab__tab-item whitespace-nowrap pointer px-20 pb-8 transition text-center {% if horizontal_tab_style == 'underline' %} fs-16 border-animation{% else %} grey-bg btn-hover btn-rounded px-20 py-10 btn-active{% endif %}{% if forloop.first %} active{% endif %}"
                   {{ block.shopify_attributes }}
