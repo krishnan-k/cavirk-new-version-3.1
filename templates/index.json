@@ -253,6 +253,14 @@
             "collection_title": "Art Collective",
             "first_button_link": ""
           }
+        },
+        "collection_rg63mG": {
+          "type": "collection",
+          "settings": {
+            "collection": "design-led-graphic-tee",
+            "collection_title": "Design-Led Graphic Tee",
+            "first_button_link": ""
+          }
         }
       },
       "block_order": [
@@ -260,7 +268,8 @@
         "collection_THd6NU",
         "collection_kUA3MH",
         "collection_fyfMEN",
-        "collection_ctTBpd"
+        "collection_ctTBpd",
+        "collection_rg63mG"
       ],
       "settings": {
         "section_width": "container",
