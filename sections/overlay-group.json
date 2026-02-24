@@ -65,6 +65,7 @@
     },
     "promotion_popup_fNjNCM": {
       "type": "promotion-popup",
+      "disabled": true,
       "name": "t:sections.promotion-popup.name",
       "settings": {
         "show_promotion_select": "show_promotion_all_page",
