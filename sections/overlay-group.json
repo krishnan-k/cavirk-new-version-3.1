@@ -62,10 +62,25 @@
         "collection": "pattachitra-saree",
         "recommended_button_label": "Continue Shopping"
       }
+    },
+    "promotion_popup_fNjNCM": {
+      "type": "promotion-popup",
+      "name": "t:sections.promotion-popup.name",
+      "settings": {
+        "show_promotion_select": "show_promotion_homepage",
+        "show_promotion_mobile": false,
+        "promotion_code": "",
+        "promotion_width": 690,
+        "promotion_sub_title": "Special Offer",
+        "promotion_title": "Cyber <br> Monday",
+        "promotion_content": "Up to <span>50% Off</span> when using code [promotion_code]",
+        "banner_width": 36.5
+      }
     }
   },
   "order": [
     "mobile_navigation_bar_YYHikp",
-    "before_you_leave_JgxUcA"
+    "before_you_leave_JgxUcA",
+    "promotion_popup_fNjNCM"
   ]
 }
