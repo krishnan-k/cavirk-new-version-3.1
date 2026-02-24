@@ -45,7 +45,7 @@
   {% endif %}
 >
   <div
-    class="popup-content custom_popup_flex_direction flex{% if enable_rtl %} flex-row-reverse{% endif %}"
+    class="popup-content {% if show_image_mobile != blank %} custom_popup_flex_direction {% endif %} flex{% if enable_rtl %} flex-row-reverse{% endif %}"
     style="{{ style | strip | strip_newlines }}"
   >
     {% if background_image != blank %}
