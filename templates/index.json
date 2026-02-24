@@ -44,6 +44,7 @@
         },
         "slider_item_wNUQX6": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Discount_up_to_20_1920_x_600_px.png",
             "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
