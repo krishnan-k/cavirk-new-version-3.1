@@ -62,6 +62,7 @@
         %}
       </div>
     {% endif %}
+    <div class="custom_image_popup_section"></div>
     <div class="promotion__popup-content flex-1 relative">
       <div class="content-promotion text-center p-1025-40 p-30 {% if background_image != blank %}absolute-md inset-0 flex flex-column{% endif %} overflow-y-auto custom-scrollbar h-full w-full">
         <div class="my-auto">
@@ -143,6 +144,17 @@
 <style>
   .promotion_btn:hover{
     background-size: 200% !important;
+  }
+  @media screen and (min-width: 768px){
+  .custom_image_popup_section{
+  display: none;
+  }
+  }
+  @media screen and (max-width: 767px){
+  .custom_image_popup_section{
+    width: 100vw;
+    height: 50vh;
+  }
   }
 </style>
 {% schema %}
