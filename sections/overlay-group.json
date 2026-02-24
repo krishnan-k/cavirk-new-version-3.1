@@ -67,13 +67,14 @@
       "type": "promotion-popup",
       "name": "t:sections.promotion-popup.name",
       "settings": {
-        "show_promotion_select": "show_promotion_homepage",
+        "show_promotion_select": "show_promotion_all_page",
         "show_promotion_mobile": false,
         "promotion_code": "",
         "promotion_width": 690,
         "promotion_sub_title": "Special Offer",
-        "promotion_title": "Cyber <br> Monday",
+        "promotion_title": "Cyber  Monday",
         "promotion_content": "Up to <span>50% Off</span> when using code [promotion_code]",
+        "promotion_banner": "shopify://shop_images/Design-Led_Graphic_Tee.jpg",
         "banner_width": 36.5
       }
     }
