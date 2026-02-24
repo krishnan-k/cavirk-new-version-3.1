@@ -3060,7 +3060,7 @@ class PromotionPopup extends HTMLElement {
     super();
     setTimeout(() => {
       this.init();
-    }, 15000);
+    }, 2000);
   }
 
   init() {
