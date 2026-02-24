@@ -64,7 +64,7 @@
       </div>
     {% endif %}
     {% if show_image != blank %}
-      <div class="custom_image_popup_section">
+      <div class="custom_image_popup_section" style="width: 50%;">
         {%- assign image_alt = background_image.alt | default: 'product' | escape -%}
         {% render 'responsive-image', type: 'other', image: background_image, image_alt: image_alt, class: '' %}
       </div>
@@ -154,7 +154,7 @@
   display: none;
   }
   }
-  @media screen and (max-width: 380px){
+  @media screen and (max-width: 480px){
     .custom_popup_flex_direction{
       flex-direction: column;
     }
