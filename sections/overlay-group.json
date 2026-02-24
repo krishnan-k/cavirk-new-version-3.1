@@ -75,7 +75,8 @@
         "promotion_title": "Digitally Printed, Premium Cotton Tees",
         "promotion_content": "",
         "promotion_banner": "shopify://shop_images/Design-Led_Graphic_Tee.jpg",
-        "banner_width": 50
+        "banner_width": 50,
+        "show_image_mobile": false
       }
     }
   },
