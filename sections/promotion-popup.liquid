@@ -67,7 +67,12 @@
         <div class="my-auto">
           <div class="section-header">
             {%- if sub_title != blank -%}
-              <div class="section-des mb-10 lh-normal h6 mt-0" {% if code == blank %} style="color: #ffffff;background-color: #523d00;padding: 8px 25px;border-radius: var(--bages-radius);display: inline-flex;font-family: var(--body-font);" {% endif %}>
+              <div
+                class="section-des mb-10 lh-normal h6 mt-0"
+                {% if code == blank %}
+                  style="color: #ffffff;background-color: #523d00;padding: 8px 25px;border-radius: var(--bages-radius);display: inline-flex;font-family: var(--body-font);"
+                {% endif %}
+              >
                 {{ sub_title }}
               </div>
             {% endif %}
@@ -81,27 +86,38 @@
             </div>
           {% endif %}
           {% if code != blank %}
-          <a
-            href="#"
-            class="btn-primary w-full discount btn-promotion my-25 inline-flex content-center gap-5 no-underline uppercase"
-            data-code="{{ code }}"
-            aria-label="{{ 'popup.copy' | t }}"
-          >
-            <svg width="16" height="14" fill="none">
-              <path fill="currentColor" fill-rule="evenodd" d="M14.286 4.667v7.583H4.57V4.667h9.715ZM16 4.375c0-.805-.64-1.458-1.429-1.458H4.286c-.79 0-1.429.653-1.429 1.458v8.167c0 .805.64 1.458 1.429 1.458H14.57c.79 0 1.429-.653 1.429-1.458V4.375Z" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M13.43.875A.866.866 0 0 0 12.573 0H1.43C1.05 0 .687.154.42.427A1.474 1.474 0 0 0 0 1.458V10.5c0 .484.384.875.857.875a.866.866 0 0 0 .857-.875V1.75h10.857a.866.866 0 0 0 .858-.874Z" clip-rule="evenodd"/>
-            </svg>
-            <span class="text relative">
-              <span class="copied-action">
-                {{ code }}
+            <a
+              href="#"
+              class="btn-primary w-full discount btn-promotion my-25 inline-flex content-center gap-5 no-underline uppercase"
+              data-code="{{ code }}"
+              aria-label="{{ 'popup.copy' | t }}"
+            >
+              <svg width="16" height="14" fill="none">
+                <path fill="currentColor" fill-rule="evenodd" d="M14.286 4.667v7.583H4.57V4.667h9.715ZM16 4.375c0-.805-.64-1.458-1.429-1.458H4.286c-.79 0-1.429.653-1.429 1.458v8.167c0 .805.64 1.458 1.429 1.458H14.57c.79 0 1.429-.653 1.429-1.458V4.375Z" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M13.43.875A.866.866 0 0 0 12.573 0H1.43C1.05 0 .687.154.42.427A1.474 1.474 0 0 0 0 1.458V10.5c0 .484.384.875.857.875a.866.866 0 0 0 .857-.875V1.75h10.857a.866.866 0 0 0 .858-.874Z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text relative">
+                <span class="copied-action">
+                  {{ code }}
+                </span>
+                <span class="copied-success absolute invisible inset-y-0 left-0 inline-flex content-center">
+                  {{- 'popup.copied' | t -}}
+                </span>
               </span>
-              <span class="copied-success absolute invisible inset-y-0 left-0 inline-flex content-center">
-                {{- 'popup.copied' | t -}}
-              </span>
-            </span>
-          </a>
-        {% else %}
-          <button class="btn btn-primary" style="margin: 10px 10px 20px 10px;"><a href="https://cavirk.com/pages/new-arrival">Shop Now</a></button>
-        {% endif %}
+            </a>
+          {% else %}
+            <button
+              class="btn btn-primary"
+              style="
+                margin: 10px 10px 20px 10px;
+                background: linear-gradient(270deg, #e3c22b, #b67f22);
+                color: #fff;
+                transition: all .3s linear;
+                border-width: 0px;
+              "
+            >
+              <a href="https://cavirk.com/pages/new-arrival">Shop Now</a>
+            </button>
+          {% endif %}
           <div class="do-not-show-again pointer fs-small">
             <span class="border-bottom">{{ 'popup.do_not' | t }}</span>
           </div>
