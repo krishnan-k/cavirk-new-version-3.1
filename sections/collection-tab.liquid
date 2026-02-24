@@ -179,7 +179,9 @@
                   style="--height: 2px;"
                 >
                   {% if collection_title != blank %}
+                    <a href="#">
                     {{ collection_title }}
+                    </a>
                   {% else %}
                     {{- 'onboarding.collection_title' | t -}}
                   {% endif %}
