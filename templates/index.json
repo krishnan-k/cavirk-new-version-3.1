@@ -200,7 +200,7 @@
       "settings": {
         "section_width": "container",
         "color_scheme": "",
-        "html_custom": "<div class=\"text-center py-10 px-15\" style=\"\">\n  <h2 class=\"section__header-heading heading-letter-spacing mt-0 mb-0 custom_heading_responsive\">\n    Discover Thousands of Handcrafted Fashion, Art &amp; Home Treasures —<br>\n    Each Piece Tells a Story from India’s Makers\n  </h2>\n</div>",
+        "html_custom": "<div class=\"text-center py-10 px-15\" style=\"\">\n  <h2 class=\"section__header-heading heading-letter-spacing mt-0 mb-0 custom_heading_responsive\">\n    Discover Thousands of Fashion, Art &amp; Home creations —<br>\n    Each Piece Tells a Story from India’s Makers, directly showcasing their creations on Saajkari, for you!\n  </h2>\n</div>",
         "padding_top": 0,
         "padding_bottom": 0,
         "reset_spacing": false
