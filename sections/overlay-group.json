@@ -67,7 +67,7 @@
       "type": "promotion-popup",
       "name": "t:sections.promotion-popup.name",
       "settings": {
-        "show_promotion_select": "show_promotion_all_page",
+        "show_promotion_select": "show_promotion_homepage",
         "show_promotion_mobile": true,
         "promotion_code": "",
         "promotion_width": 800,
