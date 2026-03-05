@@ -72,33 +72,32 @@
             "content_alignment_mobile": "left"
           }
         },
-        "slider_item_fJjFU4": {
+        "slider_item_jiLA39": {
           "type": "slider_item",
           "settings": {
-            "image": "shopify://shop_images/1_c2f534ef-7273-4c95-b90a-855ac32569e1.png",
-            "image_mobile": "shopify://shop_images/2_6092bf6a-d2a8-4cb9-b8da-f6bd00411864.png",
+            "local_video": "shopify://files/videos/Adobe Express - CAVIRK REEL 03.mp4",
             "overlay_opacity": 0,
-            "first_button_link_image": "shopify://collections/offer-products",
-            "slider_effect": "effect_fadeindown",
+            "first_button_link_image": "",
+            "slider_effect": "effect_zoomout",
             "subheading": "",
-            "heading": "",
+            "heading": "Explore Mulberry Silk",
             "description": "",
-            "first_button_label": "",
-            "first_button_link": "",
+            "first_button_label": "Shop Now",
+            "first_button_link": "shopify://collections/mulberry-silk",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "container",
+            "content_alignment": "center",
+            "content_position": "bottom-center",
+            "content_width": "full_width",
             "content_max_width": 100,
-            "content_padding_block": 60,
-            "content_padding_inline": 30,
+            "content_padding_block": 50,
+            "content_padding_inline": 50,
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
+            "content_alignment_mobile": "center"
           }
         },
         "slider_item_g8Brtx": {
@@ -130,41 +129,42 @@
             "content_alignment_mobile": "left"
           }
         },
-        "slider_item_jiLA39": {
+        "slider_item_fJjFU4": {
           "type": "slider_item",
           "settings": {
-            "local_video": "shopify://files/videos/Adobe Express - CAVIRK REEL 03.mp4",
+            "image": "shopify://shop_images/1_c2f534ef-7273-4c95-b90a-855ac32569e1.png",
+            "image_mobile": "shopify://shop_images/2_6092bf6a-d2a8-4cb9-b8da-f6bd00411864.png",
             "overlay_opacity": 0,
-            "first_button_link_image": "",
-            "slider_effect": "effect_zoomout",
+            "first_button_link_image": "shopify://collections/offer-products",
+            "slider_effect": "effect_fadeindown",
             "subheading": "",
-            "heading": "Explore Mulberry Silk",
+            "heading": "",
             "description": "",
-            "first_button_label": "Shop Now",
-            "first_button_link": "shopify://collections/mulberry-silk",
+            "first_button_label": "",
+            "first_button_link": "",
             "first_button_style": false,
             "second_button_label": "",
             "second_button_link": "",
             "second_button_style": false,
-            "content_alignment": "center",
-            "content_position": "bottom-center",
-            "content_width": "full_width",
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
             "content_max_width": 100,
-            "content_padding_block": 50,
-            "content_padding_inline": 50,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
             "show_content_background": false,
             "content_background": "#ffffff",
             "content_box_opacity": 100,
-            "content_alignment_mobile": "center"
+            "content_alignment_mobile": "left"
           }
         }
       },
       "block_order": [
         "slider_item_niXKaE",
         "slider_item_wNUQX6",
-        "slider_item_fJjFU4",
+        "slider_item_jiLA39",
         "slider_item_g8Brtx",
-        "slider_item_jiLA39"
+        "slider_item_fJjFU4"
       ],
       "settings": {
         "section_width": "full_width",
