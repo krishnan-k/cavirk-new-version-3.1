@@ -168,9 +168,9 @@
         "slider_item_g8Brtx"
       ],
       "settings": {
-        "section_width": "full_width",
+        "section_width": "container",
         "slide_height": "adapt",
-        "desktop_height": 600,
+        "desktop_height": 350,
         "mobile_height": 520,
         "color_scheme": "scheme-accf3b11-ba40-4a3e-bafb-243ece6683ec",
         "subheading_font_size": 16,
