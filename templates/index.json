@@ -131,6 +131,7 @@
         },
         "slider_item_g8Brtx": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_5afca755-aa34-4333-b761-96f2bf52436f.png",
             "image_mobile": "shopify://shop_images/2_c4bc0056-4898-4fee-bb05-ddf6ffed38cd.png",
