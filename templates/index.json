@@ -76,7 +76,7 @@
           "type": "slider_item",
           "settings": {
             "image": "shopify://shop_images/Welcome_to_Saajkari_The_Makers_Market_1.png",
-            "image_mobile": "shopify://shop_images/Welcome_to_Saajkari_The_Makers_Market.png",
+            "image_mobile": "shopify://shop_images/Welcome_to_Saajkari_The_Makers_Market_1.png",
             "overlay_opacity": 0,
             "first_button_link_image": "shopify://collections",
             "slider_effect": "effect_fadeindown",
