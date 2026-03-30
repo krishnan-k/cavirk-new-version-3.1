@@ -12,6 +12,35 @@
     "slideshow_8KKtNU": {
       "type": "slideshow",
       "blocks": {
+        "slider_item_fJjFU4": {
+          "type": "slider_item",
+          "settings": {
+            "image": "shopify://shop_images/4_f06453ab-9212-4a7c-9bea-e9fa8b5eed3e.png",
+            "image_mobile": "shopify://shop_images/5_e9f60105-12e2-48f5-af5f-5ab52bc39389.png",
+            "overlay_opacity": 0,
+            "first_button_link_image": "shopify://collections",
+            "slider_effect": "effect_fadeindown",
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_style": false,
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_style": false,
+            "content_alignment": "left",
+            "content_position": "bottom-left",
+            "content_width": "container",
+            "content_max_width": 100,
+            "content_padding_block": 60,
+            "content_padding_inline": 30,
+            "show_content_background": false,
+            "content_background": "#ffffff",
+            "content_box_opacity": 100,
+            "content_alignment_mobile": "left"
+          }
+        },
         "slider_item_niXKaE": {
           "type": "slider_item",
           "disabled": true,
@@ -50,35 +79,6 @@
             "image_mobile": "shopify://shop_images/Discount_up_to_20_1920_x_600_px_1.png",
             "overlay_opacity": 0,
             "first_button_link_image": "shopify://pages/stoles-and-shawls",
-            "slider_effect": "effect_fadeindown",
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "first_button_label": "",
-            "first_button_link": "",
-            "first_button_style": false,
-            "second_button_label": "",
-            "second_button_link": "",
-            "second_button_style": false,
-            "content_alignment": "left",
-            "content_position": "bottom-left",
-            "content_width": "container",
-            "content_max_width": 100,
-            "content_padding_block": 60,
-            "content_padding_inline": 30,
-            "show_content_background": false,
-            "content_background": "#ffffff",
-            "content_box_opacity": 100,
-            "content_alignment_mobile": "left"
-          }
-        },
-        "slider_item_fJjFU4": {
-          "type": "slider_item",
-          "settings": {
-            "image": "shopify://shop_images/Welcome_to_Saajkari_The_Makers_Market_1920_x_800_mm.png",
-            "image_mobile": "shopify://shop_images/Welcome_to_Saajkari_The_Makers_Market_1920_x_800_mm.png",
-            "overlay_opacity": 0,
-            "first_button_link_image": "shopify://collections",
             "slider_effect": "effect_fadeindown",
             "subheading": "",
             "heading": "",
@@ -161,9 +161,9 @@
         }
       },
       "block_order": [
+        "slider_item_fJjFU4",
         "slider_item_niXKaE",
         "slider_item_wNUQX6",
-        "slider_item_fJjFU4",
         "slider_item_jiLA39",
         "slider_item_g8Brtx"
       ],
