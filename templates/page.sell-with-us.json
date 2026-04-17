@@ -34,8 +34,8 @@
         "button_pizzw8": {
           "type": "button",
           "settings": {
-            "first_button_label": "",
-            "first_button_link": "",
+            "first_button_label": "Start selling",
+            "first_button_link": "https://zorio.app",
             "first_button_type": "primary",
             "second_button_label": "",
             "second_button_link": "",
@@ -134,6 +134,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "medium",
@@ -433,6 +434,7 @@
       "name": "t:sections.multi_content.name",
       "settings": {
         "section_width": "container",
+        "color_scheme": "",
         "heading": "",
         "description": "",
         "header_size": "medium",
