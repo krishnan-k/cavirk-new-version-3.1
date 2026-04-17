@@ -199,7 +199,7 @@
                         {% if block_st.first_button_link == blank %}
                           role="link" aria-disabled="true"
                         {% else %}
-                          href="{{ block_st.first_button_link | default: "#" }}"
+                          href="{{ block_st.first_button_link | default: "#" }}" target="_blank"
                         {% endif %}
                         aria-label="{{ block_st.first_button_label }}"
                         class="inline-flex no-underline btn-{{ block_st.first_button_type }} relative"
