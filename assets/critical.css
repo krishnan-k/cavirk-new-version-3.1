@@ -1748,7 +1748,7 @@ header.active li.visible .submenu:not(.submenu-vertical) {
 .bottom-left {
   align-items: flex-end;
 }
-.bottom-center {
+.bottom-center,.mobile-bottom-center {
   align-items: flex-end;
   justify-content: center;
 }
