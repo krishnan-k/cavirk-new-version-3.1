@@ -1748,7 +1748,7 @@ header.active li.visible .submenu:not(.submenu-vertical) {
 .bottom-left {
   align-items: flex-end;
 }
-.bottom-center,.mobile-bottom-center {
+.bottom-center {
   align-items: flex-end;
   justify-content: center;
 }
@@ -2500,6 +2500,10 @@ header.active li.visible .submenu:not(.submenu-vertical) {
   }
   .sm-row-gap {
     row-gap: calc(var(--col-gap)/2);
+  }
+  .mobile-bottom-center {
+    align-items: flex-end;
+    justify-content: center;
   }
 }
 
