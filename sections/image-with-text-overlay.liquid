@@ -55,7 +55,7 @@
         {% endif %}
       </div>
       <div
-        class="sec__content relative z-1 flex{% if section_st.content_width == 'full_width' %} w-full{% else %} w-1024-full{% endif %} {{ section_st.content_position }} {{ section_st.content_width }} text-{{section_st.content_alignment_mobile}} text-md-{{ section_st.content_alignment }}{% if section_st.show_content_background %} show-content-box py-custom px-custom{% if section_st.content_padding_inline < 15 %} min-value{% endif %}{% endif %}"
+        class="sec__content relative z-1 {% if section_st.mobile_bottom_center %} mobile-bottom-center {% endif %} flex{% if section_st.content_width == 'full_width' %} w-full{% else %} w-1024-full{% endif %} {{ section_st.content_position }} {{ section_st.content_width }} text-{{section_st.content_alignment_mobile}} text-md-{{ section_st.content_alignment }}{% if section_st.show_content_background %} show-content-box py-custom px-custom{% if section_st.content_padding_inline < 15 %} min-value{% endif %}{% endif %}"
         style="--padding-inline: {{ section_st.content_padding_inline }};--padding-block: {{ section_st.content_padding_block }};"
       >
         <div
