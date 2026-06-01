@@ -231,7 +231,7 @@
             "second_button_link": "",
             "second_button_type": "primary",
             "use_popup": false,
-            "content_alignment": "left",
+            "content_alignment": "center",
             "subheading_font_size": 18,
             "subheading_font_weight": "subheading_weight",
             "subheading_spacing_bottom": 15,
