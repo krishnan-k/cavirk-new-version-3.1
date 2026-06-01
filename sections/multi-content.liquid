@@ -313,7 +313,7 @@
                             hold
                           {% endif %}
                           data-motion-delay="{{  forloop.index0  | times: 200 }}"
-                          class="sec__content-des block  {% if block_st.description_width_text == '500px' %} kk {% endif %} {% if scroll_animation == 'slide_in' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0 {% if block_st.des_spacing_bottom > 41 %} mb-big{% elsif block_st.des_spacing_bottom > 30 %} mb-medium {% else %} mb-custom{% endif %}{% if block_st.des_font_size > 24 %} fs-medium {% else %} fs-custom{% endif %} {{ block_st.des_font_weight }} w-custom max-767-w-full"
+                          class="sec__content-des block  {% if block_st.description_width_text == 500 %} kk {% endif %} {% if scroll_animation == 'slide_in' %} scroll-trigger {{ scroll_animation }}{% endif %} rich__text-m0 {% if block_st.des_spacing_bottom > 41 %} mb-big{% elsif block_st.des_spacing_bottom > 30 %} mb-medium {% else %} mb-custom{% endif %}{% if block_st.des_font_size > 24 %} fs-medium {% else %} fs-custom{% endif %} {{ block_st.des_font_weight }} w-custom max-767-w-full"
                           style="--font-size: {{ block_st.des_font_size }};--space-bottom: {{ block_st.des_spacing_bottom }};--custom-width: {{ block_st.description_width_text }}px;"
                           {{ block.shopify_attributes }}
                         >
