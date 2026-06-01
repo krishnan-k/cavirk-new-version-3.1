@@ -216,8 +216,8 @@
             "image_link": "",
             "subheading": "Subheading",
             "heading": "Text block",
-            "description": "",
-            "description_width_text": 250,
+            "description": "<p>Discover handcrafted sarees, elegant ethnic wear, and artisan-made fashion at special clearance prices. Limited pieces, exceptional savings, and styles you'll cherish forever.<br/><br/></p>",
+            "description_width_text": 500,
             "collection": "",
             "timer": "",
             "expired_message": "Time expired",
@@ -239,7 +239,7 @@
             "heading_font_weight": "heading_weight",
             "heading_uppercase": false,
             "heading_spacing_bottom": 20,
-            "des_font_size": 14,
+            "des_font_size": 16,
             "des_font_weight": "body_weight",
             "des_spacing_bottom": 30
           }
