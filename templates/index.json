@@ -201,7 +201,7 @@
         "image_b6XUKw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Collage.png",
+            "image": "shopify://shop_images/Collage_1_5f4210ac-b14b-42b2-9522-830a2f649e55.png",
             "image_link": "",
             "content_width": "45%",
             "vertical_align": "start"
@@ -214,7 +214,7 @@
             "content_width": "50%",
             "vertical_align": "center",
             "image_link": "",
-            "subheading": "Upto 50% Offer",
+            "subheading": "",
             "heading": "Clearance Sale",
             "description": "<p>Discover handcrafted sarees, elegant ethnic wear, and artisan-made fashion at special clearance prices. Limited pieces, exceptional savings, and styles you'll cherish forever.<br/><br/></p>",
             "description_width_text": 500,
@@ -241,7 +241,7 @@
             "heading_spacing_bottom": 20,
             "des_font_size": 16,
             "des_font_weight": "body_weight",
-            "des_spacing_bottom": 30
+            "des_spacing_bottom": 10
           }
         }
       },
