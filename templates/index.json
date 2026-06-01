@@ -251,7 +251,7 @@
       ],
       "name": "t:sections.multi_content.name",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "container",
         "color_scheme": "",
         "heading": "",
         "description": "",
